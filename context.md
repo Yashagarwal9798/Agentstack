@@ -4,6 +4,27 @@
 
 ---
 
+## Phase 2 — Core local infrastructure ✅ (2026-07-17)
+
+**What was built**
+- `cli/src/core/stateStore.ts` — `~/.agentstack/` JSON state: `paths` map (config/catalog/releases/projects/feedback/installs per slug), `readJson`/`writeJson` (atomic tmp+rename), `loadConfig`/`saveConfig`, `resolveSupermemoryKey` + `resolveLlm` (env > config precedence: `SUPERMEMORY_API_KEY`, `AGENTSTACK_LLM_BASE_URL/MODEL/API_KEY`, fallback `GEMINI_API_KEY`), `loadLocalCatalog`/`saveLocalCatalog`, `loadFeedback`/`appendFeedback`. Defaults: Gemini OpenAI-compat baseURL + `gemini-flash-latest`.
+- `cli/src/core/memory.ts` — `Memory` class pinned to `http://localhost:6767`: `health()`, `upsertCard()` (narrative via `cardToNarrative`, `customId = toCustomId(id)`, **metadata carries capabilityId/type/status/trust/localCloud**), `addProjectMemory`, `addExperience` (metadata.projectSlug), `searchCatalog/Experience/Project` → normalized `SearchHit {id, memory, similarity, capabilityId, metadata}`. `CONTAINERS = catalog / project_<slug> / experience`.
+- `cli/src/core/llm.ts` — provider-agnostic OpenAI-compat client: `complete()` and `completeJson(prompt, zodSchema)` with fence-stripping, one schema-repair retry, and **backoff retries (4 attempts, 5s·2ⁿ) on 429/5xx** (Gemini threw a real 503 during smoke).
+- `cli/src/index.ts` re-exports all three; `scripts/smoke-phase2.ts` wired as `npm run smoke:phase2`.
+
+**Verification:** `npm run smoke:phase2` → PASS: health ✔; 15 cards upserted twice ✔; semantic search "debug my web frontend in a real browser" returned playwright-mcp + webapp-testing + frontend-design ✔; no duplicated memory texts after double import ✔; `completeJson` → schema-valid `{language: "TypeScript"}` ✔.
+
+**Deviations:** zod pinned to ^3.25 in cli (npm auto-picked v4 which conflicts with shared; required deleting package-lock + full reinstall to dedupe).
+
+**Gotchas for later phases**
+- **customId rules (server v0.0.5):** only `[a-zA-Z0-9_:-]` — colons ALLOWED, dots/slashes NOT (contradicts SDK docs). `toCustomId()` replaces illegal chars with `_`.
+- **One card ⇒ MULTIPLE atomic memories.** The server splits/rewrites each document via LLM extraction. Search hits are chunks; **group by `metadata.capabilityId`, never assume 1 hit = 1 card**. Duplicate capabilityIds across hits are normal; duplicated *identical memory text* would indicate a real dupe.
+- **Indexing is slow + async:** 15 cards took ~4 min to fully index on first import (2 concurrent ingest workers, Gemini extraction per doc). `update` digests must not promise instant searchability; smoke/tests need generous polling.
+- **Supermemory's own Gemini usage shares the user's key/quota** — concurrent extraction can trigger 429/503 on our CLI calls; llm.ts retries handle it.
+- Node's `process.loadEnvFile(path)` works for `.env.local` in scripts (no dotenv dep needed).
+
+---
+
 ## Phase 1 — Monorepo scaffold + shared schemas + starter content ✅ (2026-07-17)
 
 **What was built**

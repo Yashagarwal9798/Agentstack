@@ -21,14 +21,14 @@
 **Source of truth:** architecture.md §3 (Windows-first), hackathon.md §4 (quickstart, Windows consideration).
 
 - [x] Start Supermemory Local (`npx supermemory local`); if native Windows fails, try WSL, then Docker — record which path works → **installer auto-ran in WSL** (linux-x64 binary, `/home/yash/.supermemory/`)
-- [ ] Capture: base URL responds at `http://localhost:6767`, the generated `sm_` key, where `./.supermemory/` data lands, what LLM-provider config it asked for → *blocked: first-run requires an LLM API key; user fetching a Gemini key*
-- [ ] Scratch script (scratchpad, not the repo): `memories.add` one fact with a `containerTag`, then `search.memories` with *differently-worded* query → relevant hit comes back
-- [ ] Test the `customId` upsert behavior (add same customId twice → one memory, updated) — architecture §1.1 depends on this
-- [x] Write findings to `docs/phase0-findings.md`: launch command that worked, key handling, any API surprises vs the docs (partial — resume plan documented)
+- [x] Capture: base URL responds at `http://localhost:6767`, the generated `sm_` key, where data lands (`/home/yash/.supermemory`, encrypted), what LLM-provider config it asked for (GEMINI_API_KEY)
+- [x] Scratch script: add one fact with a `containerTag`, then search with *differently-worded* query → hit at similarity 0.67 (~10s, async indexing)
+- [x] Test the `customId` upsert behavior → confirmed: double-add = ONE memory, no duplicates
+- [x] Write findings to `docs/phase0-findings.md`: launch command, key handling, API surprises (SDK v4 surface differs from docs; server rewrites memory content; embeddings are LOCAL)
 
 **Done when:** add → semantic search round-trip works against `localhost:6767` and findings are written down.
 **Not in this phase:** any repo scaffolding, any CLI code.
-**Notes:** ⏸ PAUSED at server start — needs `GEMINI_API_KEY` in `.env.local` from user. Runs in WSL, not native Windows. Blocks Phase 2, not Phase 1 (which has no Supermemory dependency), so Phase 1 proceeded with user's go-ahead. See docs/phase0-findings.md + context.md.
+**Notes:** ✅ Done 2026-07-17 (resumed after user supplied Gemini key). Server runs in WSL, reachable from Windows. Key API surprises recorded in docs/phase0-findings.md — READ IT before Phase 2 (client.add is top-level; metadata must carry capabilityId; gemini-flash-latest not 2.5-flash).
 
 ---
 
@@ -54,14 +54,14 @@
 **Goal:** The three clients every command depends on, each proven by a smoke script.
 **Source of truth:** architecture.md §1.3 (state layout), §1.4 (memory.ts, llm.ts contracts).
 
-- [ ] `cli/src/core/stateStore.ts`: read/write `~/.agentstack/` config.json, catalog.json mirror, releases.json, projects.json, installs/, feedback.json — all upsert-safe, all `path.join`
-- [ ] `cli/src/core/memory.ts`: Supermemory wrapper — `health()`, `upsertCard()` (customId=id), `addProjectMemory()`, `addExperience()`, `searchCatalog()`, `searchExperience()`; baseURL hard-pinned to `http://localhost:6767`
-- [ ] `cli/src/core/llm.ts`: OpenAI-compatible `complete(prompt, {json?: zodSchema})` with one repair retry on validation failure; provider from env/config (baseURL, model, key — nothing else)
-- [ ] Smoke script: import starter catalog through `upsertCard()`, `searchCatalog("help me debug a web frontend")` returns a sensible card; run twice → no duplicates
+- [x] `cli/src/core/stateStore.ts`: read/write `~/.agentstack/` config.json, catalog.json mirror, releases.json, projects.json, installs/, feedback.json — all upsert-safe, all `path.join` (atomic tmp+rename writes)
+- [x] `cli/src/core/memory.ts`: Supermemory wrapper — `health()`, `upsertCard()` (customId=id), `addProjectMemory()`, `addExperience()`, `searchCatalog()`, `searchExperience()`; baseURL hard-pinned to `http://localhost:6767`
+- [x] `cli/src/core/llm.ts`: OpenAI-compatible `complete`/`completeJson(prompt, zodSchema)` with one repair retry on validation failure + backoff retries on 429/5xx; provider from env/config (baseURL, model, key — nothing else)
+- [x] Smoke script: import starter catalog through `upsertCard()` twice, semantic search returns browser/frontend cards; no duplicated memory texts; `completeJson` returns schema-valid answer
 
 **Done when:** smoke script passes; re-running it is idempotent; `llm.ts` returns schema-valid JSON from a trivial prompt (any OpenAI-compatible key).
 **Not in this phase:** commands, prompts UX, ranking.
-**Notes:** —
+**Notes:** ✅ Done 2026-07-17. `npm run smoke:phase2` → PASS (search hit playwright/webapp-testing/frontend-design for a browser-debug query; idempotency + LLM JSON verified). Server quirks discovered: customId forbids dots but allows colons; one card ⇒ MULTIPLE atomic memories (chunks); indexing of 15 cards took ~4 min first time. See context.md.
 
 ---
 
