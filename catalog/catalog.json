@@ -1,6 +1,6 @@
 {
-  "version": "2026.07.16.2",
-  "updatedAt": "2026-07-16T21:51:33.674Z",
+  "version": "2026.07.16.3",
+  "updatedAt": "2026-07-16T22:48:57.556Z",
   "capabilities": [
     {
       "id": "mcp:io.carbone/carbone-mcp",
@@ -3941,33 +3941,32 @@
       "id": "mcp:io.github.ShaftHQ/shaft-mcp",
       "name": "shaft-mcp",
       "type": "mcp",
-      "summary": "SHAFT browser automation for capture and offline deterministic failure diagnosis",
+      "summary": "Provides SHAFT browser automation, capture, and offline deterministic failure diagnosis.",
       "useWhen": [
-        "automating browser tasks",
-        "debugging browser issues",
-        "capturing browser interactions"
+        "need browser automation",
+        "require failure diagnosis",
+        "want to use SHAFT"
       ],
       "doNotUseWhen": [
-        "non-browser based tasks"
+        "do not need browser automation"
       ],
       "categories": [
-        "browser",
-        "automation",
-        "testing"
+        "browser-automation",
+        "failure-diagnosis",
+        "shaft"
       ],
       "agents": [
         "claude-code"
       ],
       "languages": [],
       "permissions": [
-        "filesystem",
-        "shell"
+        "browser"
       ],
       "installation": {
         "requiredSecrets": []
       },
       "localCloud": "local",
-      "version": "10.3.20260715",
+      "version": "10.3.20260716",
       "status": "active",
       "trust": "community",
       "sources": [
@@ -3978,8 +3977,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "contentHash": "68d6a745c0d6d9f385efc7012d9cc927c067914534839da6fba1a6821d6f90ff",
-      "sourceHash": "85df7303e4aa98cf87f4d5e8bd264c3af56b281db76832e2689417d26958677f"
+      "sourceHash": "ef45ea8aa44887bd131e476073f670973dec8f353e914ccf587f3b686b88490f",
+      "contentHash": "39673d4b7b7999f65b34dd137386d4880823af24052fc2f2980d6a4e493d3103"
     },
     {
       "id": "mcp:io.github.Shreyas-Profile/browser-mcp",
@@ -5961,8 +5960,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "8cd19e2538fd052f661e722525468f59ec93cfec9d5b701641fc51f7ec3d674d",
-      "contentHash": "42ee151208e4c6732e5fdb6e83dc12072c3a7a11be06736668f1ca51a347750d"
+      "contentHash": "42ee151208e4c6732e5fdb6e83dc12072c3a7a11be06736668f1ca51a347750d",
+      "sourceHash": "8cd19e2538fd052f661e722525468f59ec93cfec9d5b701641fc51f7ec3d674d"
     },
     {
       "id": "mcp:io.github.benseverndev-oss/infermap",
@@ -6008,8 +6007,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "76d8fc03b5a3cf6f33030e3511312cf0e22d00f360adf72a9430e51111e31540",
-      "contentHash": "186793567bf60549cced00383faf08d9f52a15336cd989a703707e3fde268ca4"
+      "contentHash": "186793567bf60549cced00383faf08d9f52a15336cd989a703707e3fde268ca4",
+      "sourceHash": "76d8fc03b5a3cf6f33030e3511312cf0e22d00f360adf72a9430e51111e31540"
     },
     {
       "id": "mcp:io.github.berntpopp/genefoundry",
@@ -6055,8 +6054,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "6bdc3ef90fcbf86392ff512b602835425505081fb4ccf810e96baf17ef26d2a8",
-      "contentHash": "47b96abd7493cfcfc4dd99d5b619bcfbd1910203bbffa8ec73fb7195a138f48f"
+      "contentHash": "47b96abd7493cfcfc4dd99d5b619bcfbd1910203bbffa8ec73fb7195a138f48f",
+      "sourceHash": "6bdc3ef90fcbf86392ff512b602835425505081fb4ccf810e96baf17ef26d2a8"
     },
     {
       "id": "mcp:io.github.bluetouff/compatair",
@@ -6102,8 +6101,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "5ac27c74985a7fcbc87c8027eb68d5a9ebd59335551f401a0395e4bd858417b8",
-      "contentHash": "5b72282d07f84b7a911bfac188af2a5e5f1b42f0ff97917ccf8d0d6481c3a94f"
+      "contentHash": "5b72282d07f84b7a911bfac188af2a5e5f1b42f0ff97917ccf8d0d6481c3a94f",
+      "sourceHash": "5ac27c74985a7fcbc87c8027eb68d5a9ebd59335551f401a0395e4bd858417b8"
     },
     {
       "id": "mcp:io.github.bluetouff/l0g",
@@ -6149,8 +6148,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "ce53eff146ba319c5014348092d34eeadba4234087140d64f84c056753c21b4e",
-      "contentHash": "3cf95387938f92e94466a578c30ca3936d7b3f45b9a9ea4c953f032dcd309d72"
+      "contentHash": "3cf95387938f92e94466a578c30ca3936d7b3f45b9a9ea4c953f032dcd309d72",
+      "sourceHash": "ce53eff146ba319c5014348092d34eeadba4234087140d64f84c056753c21b4e"
     },
     {
       "id": "mcp:io.github.bm1016bm-svg/evidrift",
@@ -6202,8 +6201,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "57530633632a199df75e184ba4b2f481e5c673e7c8410d37495a214425d906b1",
-      "contentHash": "b757e8fd9b6fb3ca9330be2d76dfcc8fb443e3268c5a785d321c9c41a857295d"
+      "contentHash": "b757e8fd9b6fb3ca9330be2d76dfcc8fb443e3268c5a785d321c9c41a857295d",
+      "sourceHash": "57530633632a199df75e184ba4b2f481e5c673e7c8410d37495a214425d906b1"
     },
     {
       "id": "mcp:io.github.bmoldo/terraback",
@@ -6251,8 +6250,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "bd90511b03c0d9955d8659adb4a698911bda78f49ce073e892303274ab67c318",
-      "contentHash": "64c095a26da79c2d6b0a270783500a2b19b9fb9bf7869c86fc4b3d216bfde36a"
+      "contentHash": "64c095a26da79c2d6b0a270783500a2b19b9fb9bf7869c86fc4b3d216bfde36a",
+      "sourceHash": "bd90511b03c0d9955d8659adb4a698911bda78f49ce073e892303274ab67c318"
     },
     {
       "id": "mcp:io.github.brac/meshcheck-mcp",
@@ -6302,33 +6301,34 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "854c7d3d459cb5263e307129b1a92f082029b65609b31bed61e746f2da0cd752",
-      "contentHash": "a4ee77a3b739a1ad77bc535353acbfd4d9d436bb76d18be2de7297ca1b0fab37"
+      "contentHash": "a4ee77a3b739a1ad77bc535353acbfd4d9d436bb76d18be2de7297ca1b0fab37",
+      "sourceHash": "854c7d3d459cb5263e307129b1a92f082029b65609b31bed61e746f2da0cd752"
     },
     {
       "id": "mcp:io.github.brilliantdirectories/brilliant-directories-mcp",
       "name": "io.github.brilliantdirectories/brilliant-directories-mcp",
       "type": "mcp",
-      "summary": "Brilliant Directories MCP server manages members, posts, leads, reviews, and more.",
+      "summary": "Manages members, posts, leads, reviews, and more for Brilliant Directories.",
       "useWhen": [
-        "directory management",
-        "member management",
-        "post management"
+        "need to manage Brilliant Directories data",
+        "require member and post management",
+        "want to track leads and reviews"
       ],
       "doNotUseWhen": [
-        "non-directory applications"
+        "do not have Brilliant Directories account"
       ],
       "categories": [
-        "directory",
-        "management",
-        "members"
+        "directory-management",
+        "brilliant-directories",
+        "member-management"
       ],
       "agents": [
         "claude-code"
       ],
-      "languages": [],
+      "languages": [
+        "javascript"
+      ],
       "permissions": [
-        "filesystem",
         "credentials"
       ],
       "installation": {
@@ -6345,8 +6345,8 @@
           "BD_SITE_URL"
         ]
       },
-      "localCloud": "local",
-      "version": "6.58.214",
+      "localCloud": "cloud",
+      "version": "6.58.221",
       "status": "active",
       "trust": "community",
       "sources": [
@@ -6357,8 +6357,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "27562aeccf45886453baa92bf23f2186b53599a81cbd95fdc64ebfdc8956ad90",
-      "contentHash": "264f17ccf261959a5dcb0deac6a6fb7fb8a3d3533069d6ba3e673f0cad4a3479"
+      "sourceHash": "654e2b0ca8ac8968c052b4c12cefa3c2457a8886e1a3fb3dc5720e04f300d631",
+      "contentHash": "6dcafe9dbf816bf678922628520ada85c6c87d50b732429bb5025cef58a7d35f"
     },
     {
       "id": "mcp:io.github.cerebrixos-org/tuning-engines",
@@ -6411,8 +6411,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "5e4502a1443a657353a7205ff756f2798f2d05b6a409a51e444daa83f3f68841",
-      "contentHash": "4189bf5a4fa12890cb5e888e7ae2578760d2964f97eadee335c77a1f83a6f15c"
+      "contentHash": "4189bf5a4fa12890cb5e888e7ae2578760d2964f97eadee335c77a1f83a6f15c",
+      "sourceHash": "5e4502a1443a657353a7205ff756f2798f2d05b6a409a51e444daa83f3f68841"
     },
     {
       "id": "mcp:io.github.churichard/fluxmail",
@@ -6469,8 +6469,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "3e3b7e2f246e53f9a5036e2d253cb4fe7c1bdfefa73826966027ee8e8e39707f",
-      "contentHash": "a60b5ad730d9ef53be53c7281ae638f3fb5f5a76b9c6cdbf9cb1a0c62ace3390"
+      "contentHash": "a60b5ad730d9ef53be53c7281ae638f3fb5f5a76b9c6cdbf9cb1a0c62ace3390",
+      "sourceHash": "3e3b7e2f246e53f9a5036e2d253cb4fe7c1bdfefa73826966027ee8e8e39707f"
     },
     {
       "id": "mcp:io.github.civdotiq/civiq",
@@ -6516,8 +6516,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "385dc6894d12f1af956bf89a7722e9029c22e29d50295627fc60558cbc197897",
-      "contentHash": "7bf9958209b64b313bfc091b7caaf1c65f05ad62983655562d72e7c4a3bf8781"
+      "contentHash": "7bf9958209b64b313bfc091b7caaf1c65f05ad62983655562d72e7c4a3bf8781",
+      "sourceHash": "385dc6894d12f1af956bf89a7722e9029c22e29d50295627fc60558cbc197897"
     },
     {
       "id": "mcp:io.github.cmendezs/mcp-facture-electronique-fr",
@@ -6559,8 +6559,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "3c2fbfb4e93a330a76d6e89ca8e6484fcbf179a03ddb955f7d52338b6c82b074",
-      "contentHash": "58d10715506c572066dd12095c6b096347e08476e04dbefa95057e65a56042e2"
+      "contentHash": "58d10715506c572066dd12095c6b096347e08476e04dbefa95057e65a56042e2",
+      "sourceHash": "3c2fbfb4e93a330a76d6e89ca8e6484fcbf179a03ddb955f7d52338b6c82b074"
     },
     {
       "id": "mcp:io.github.contextium-io/mcp-server",
@@ -6610,8 +6610,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "cf930bc24f04c5ac10c44709405b99169bd47eb1ba43dc0679864e9e0aa90eaf",
-      "contentHash": "0fe6c765936f3361505c57ab7b4a24caf2fb9e7647c5d4f0dba8769e7ca20969"
+      "contentHash": "0fe6c765936f3361505c57ab7b4a24caf2fb9e7647c5d4f0dba8769e7ca20969",
+      "sourceHash": "cf930bc24f04c5ac10c44709405b99169bd47eb1ba43dc0679864e9e0aa90eaf"
     },
     {
       "id": "mcp:io.github.corewebvitals/state-of-cwv",
@@ -6657,8 +6657,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "184df088e31d8bd9900546b89392e4662ceaa701da660a749ff8be35219c7203",
-      "contentHash": "e9f42d466473fca46997ba5c97b2d054021499fd8fdb30ab421232e0d69c4d71"
+      "contentHash": "e9f42d466473fca46997ba5c97b2d054021499fd8fdb30ab421232e0d69c4d71",
+      "sourceHash": "184df088e31d8bd9900546b89392e4662ceaa701da660a749ff8be35219c7203"
     },
     {
       "id": "mcp:io.github.crane-valley/framedash-mcp-server",
@@ -6713,8 +6713,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "6f700602d5ea31ea73f7b8e24e16642a8366b408bff16c367c0cb3513d45e772",
-      "contentHash": "e0eefb651fc18ade77d3e5f716e7eec29e7ab9a8e653780cfd85f1cd945298c8"
+      "contentHash": "e0eefb651fc18ade77d3e5f716e7eec29e7ab9a8e653780cfd85f1cd945298c8",
+      "sourceHash": "6f700602d5ea31ea73f7b8e24e16642a8366b408bff16c367c0cb3513d45e772"
     },
     {
       "id": "mcp:io.github.creator35lwb-web/verifimind-genesis",
@@ -6760,8 +6760,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "8fcd2734aefc05f349a7f673dceb6342be2048c30e1962c58fec75f47f30407a",
-      "contentHash": "44fc0421cd394293ab7463843d258be89b964d995b9fe9938df98d8dbfafd0cc"
+      "contentHash": "44fc0421cd394293ab7463843d258be89b964d995b9fe9938df98d8dbfafd0cc",
+      "sourceHash": "8fcd2734aefc05f349a7f673dceb6342be2048c30e1962c58fec75f47f30407a"
     },
     {
       "id": "mcp:io.github.cwooddgr/bezelbub-mcp",
@@ -6811,8 +6811,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "3fddd672739d2c653de3b4dc1535a37928a166c372bdbef4509d382b49faed28",
-      "contentHash": "f72a9129a40eec3cb939f08bc85d0f87f4b5cf3113ade370f1a8a9a78a2f2e41"
+      "contentHash": "f72a9129a40eec3cb939f08bc85d0f87f4b5cf3113ade370f1a8a9a78a2f2e41",
+      "sourceHash": "3fddd672739d2c653de3b4dc1535a37928a166c372bdbef4509d382b49faed28"
     },
     {
       "id": "mcp:io.github.cyanheads/brapi-mcp-server",
@@ -6873,8 +6873,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "7e6be44f3379dcfae8a0e68fc8a201969ab11781908482fa4bdf9b47cd3dce8e",
-      "contentHash": "10f7966100a994f53f62695c283d0b7606430a0ec1293bb473c7c1e6082629e8"
+      "contentHash": "10f7966100a994f53f62695c283d0b7606430a0ec1293bb473c7c1e6082629e8",
+      "sourceHash": "7e6be44f3379dcfae8a0e68fc8a201969ab11781908482fa4bdf9b47cd3dce8e"
     },
     {
       "id": "mcp:io.github.cyanheads/courtlistener-mcp-server",
@@ -6932,8 +6932,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "4ec702e4d3289f6736eb813e02b6807c6ef692c9a21e3a202058604ce51bf9fe",
-      "contentHash": "ddda334bc1d7dae4a3feed64807932b6ff3bc8210a3d074a747952371388c3ea"
+      "contentHash": "ddda334bc1d7dae4a3feed64807932b6ff3bc8210a3d074a747952371388c3ea",
+      "sourceHash": "4ec702e4d3289f6736eb813e02b6807c6ef692c9a21e3a202058604ce51bf9fe"
     },
     {
       "id": "mcp:io.github.cyanheads/ris-austria-mcp-server",
@@ -6990,8 +6990,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "c6cfe95608de1f45d898ff19bc0f0b2772a66def05d830a5a6edb93e124973bc",
-      "contentHash": "85c8215d842673a628bdcc8559316d095e19b69d5f535c42c49d18ec05ba09c1"
+      "contentHash": "85c8215d842673a628bdcc8559316d095e19b69d5f535c42c49d18ec05ba09c1",
+      "sourceHash": "c6cfe95608de1f45d898ff19bc0f0b2772a66def05d830a5a6edb93e124973bc"
     },
     {
       "id": "mcp:io.github.cyanheads/usgs-water-mcp-server",
@@ -7049,8 +7049,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "d83d0afffbfa78285e6027b110b7190e172128359251a48a8b8fcef0fd8915bf",
-      "contentHash": "248dc6d51b479b6966b62667480aa3598d73fb052d689b0dad61a5f0d0435b23"
+      "contentHash": "248dc6d51b479b6966b62667480aa3598d73fb052d689b0dad61a5f0d0435b23",
+      "sourceHash": "d83d0afffbfa78285e6027b110b7190e172128359251a48a8b8fcef0fd8915bf"
     },
     {
       "id": "mcp:io.github.darknodebros/elesync",
@@ -7094,8 +7094,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "995da59cd93af00e86ba244247c6361b4078cda9c2a5dbaadf98f1a02986a67e",
-      "contentHash": "13259389401793519ced40c93e9f66237ee5fd22fdb68e3348b482f6c5c4960c"
+      "contentHash": "13259389401793519ced40c93e9f66237ee5fd22fdb68e3348b482f6c5c4960c",
+      "sourceHash": "995da59cd93af00e86ba244247c6361b4078cda9c2a5dbaadf98f1a02986a67e"
     },
     {
       "id": "mcp:io.github.darrenjrobinson/entra-news-podcast",
@@ -7143,8 +7143,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "e6d3ea24039fe24ba8f9f19a5c37c710b352111f4ee2b2e27ba969ede2a99121",
-      "contentHash": "a61566dc6f0d920a418d80e2c18559f23ab8a6380d45385b98ce72eded722982"
+      "contentHash": "a61566dc6f0d920a418d80e2c18559f23ab8a6380d45385b98ce72eded722982",
+      "sourceHash": "e6d3ea24039fe24ba8f9f19a5c37c710b352111f4ee2b2e27ba969ede2a99121"
     },
     {
       "id": "mcp:io.github.darrenjrobinson/microsoft-ai-roundup",
@@ -7192,8 +7192,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "c2a0fe1ab25760096523741971729807d694e3d3a9284b560ef2e182e2f3586a",
-      "contentHash": "fa78b47846addf29d8036063a6df132e3357700a36d6d7ce717db1e6febaefbd"
+      "contentHash": "fa78b47846addf29d8036063a6df132e3357700a36d6d7ce717db1e6febaefbd",
+      "sourceHash": "c2a0fe1ab25760096523741971729807d694e3d3a9284b560ef2e182e2f3586a"
     },
     {
       "id": "mcp:io.github.decantr-ai/mcp-server",
@@ -7241,8 +7241,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "549fc76e8a90c5c748a5ddd0111191fc0c4c5fc393a9ca434305d26b4f7a6138",
-      "contentHash": "c9fb81d23290b7e223a54a83158fa22ca6a82362d2702390bb8614273c7780bb"
+      "contentHash": "c9fb81d23290b7e223a54a83158fa22ca6a82362d2702390bb8614273c7780bb",
+      "sourceHash": "549fc76e8a90c5c748a5ddd0111191fc0c4c5fc393a9ca434305d26b4f7a6138"
     },
     {
       "id": "mcp:io.github.decidefyi/policy-notaries",
@@ -7288,8 +7288,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "2d18b163d523eab23b8b358470b2b0d87f738ea75a8ec86b02659f9cd8cc3ebb",
-      "contentHash": "da79f26e3e165186436822b629a44e771cd260e4b5e293efdee3ecdd2a2fe657"
+      "contentHash": "da79f26e3e165186436822b629a44e771cd260e4b5e293efdee3ecdd2a2fe657",
+      "sourceHash": "2d18b163d523eab23b8b358470b2b0d87f738ea75a8ec86b02659f9cd8cc3ebb"
     },
     {
       "id": "mcp:io.github.devantler-tech/ksail",
@@ -7331,8 +7331,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "8a732c11d385048889a960fe558fe862f61c3aa9b1471acb93b1c6baf8854452",
-      "contentHash": "735eecc6a6d72904536633bcc3898540395ff6b9c6b1780033b9361e03557ce8"
+      "contentHash": "735eecc6a6d72904536633bcc3898540395ff6b9c6b1780033b9361e03557ce8",
+      "sourceHash": "8a732c11d385048889a960fe558fe862f61c3aa9b1471acb93b1c6baf8854452"
     },
     {
       "id": "mcp:io.github.diagrammo/dgmo-mcp",
@@ -7382,8 +7382,8 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "5b2f81d0f60a24ac8faa960ff155e4b8de934a784f8495472ebbe5e91b626f33",
-      "contentHash": "6cd736e024249ce3f644b553769c127f97c78ab7911e35c75fa9e24b654deb08"
+      "contentHash": "6cd736e024249ce3f644b553769c127f97c78ab7911e35c75fa9e24b654deb08",
+      "sourceHash": "5b2f81d0f60a24ac8faa960ff155e4b8de934a784f8495472ebbe5e91b626f33"
     },
     {
       "id": "mcp:io.github.dumbspacecookie/stickies",
@@ -7437,8 +7437,377 @@
       ],
       "firstSeen": "2026-07-16",
       "lastChecked": "2026-07-16",
-      "sourceHash": "ffa319698f470684bc1da1ca70083b0a55f4e34f9ab1100504de1eaace625a23",
-      "contentHash": "82761f4431d19d616b69fe38216d1c581d4ed911129785519e38aac88084a1d3"
+      "contentHash": "82761f4431d19d616b69fe38216d1c581d4ed911129785519e38aac88084a1d3",
+      "sourceHash": "ffa319698f470684bc1da1ca70083b0a55f4e34f9ab1100504de1eaace625a23"
+    },
+    {
+      "id": "mcp:com.crosbynews/weather",
+      "name": "Crosby, TX Weather",
+      "type": "mcp",
+      "summary": "Provides live Crosby, TX weather information and other local data.",
+      "useWhen": [
+        "need local weather information",
+        "require flood level data",
+        "want to track road conditions"
+      ],
+      "doNotUseWhen": [
+        "require global weather information"
+      ],
+      "categories": [
+        "weather",
+        "news",
+        "local-info"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://crosbynews.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.2.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/reloru/new-relo",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "59430429ffd57cfcff66b38f9b71b9ad5ad997f80660bbbc65b1ce7102f64db0",
+      "contentHash": "0dc9c75c294eeeea6637ac0eb0a1ccdde7d31d6b2931032ea271d35606b82b4e"
+    },
+    {
+      "id": "mcp:com.foxfiver/state-transfer-tracker",
+      "name": "com.foxfiver/state-transfer-tracker",
+      "type": "mcp",
+      "summary": "Tracks Whiteout Survival State Transfer phases and remaining pass chances.",
+      "useWhen": [
+        "playing Whiteout Survival",
+        "need state transfer phase information",
+        "want to track pass chances"
+      ],
+      "doNotUseWhen": [
+        "not playing Whiteout Survival"
+      ],
+      "categories": [
+        "gaming",
+        "tracking",
+        "survival"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://transfer.foxfiver.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.foxfiver%2Fstate-transfer-tracker",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "26c01f3bfc6f2d1dc797e7054dedfad2162537387d18d9dc73462444ab6a9bc9",
+      "contentHash": "91cf2f0547398a898c43265bac6660eef8c24885ba9572fe023fb111c8aa661d"
+    },
+    {
+      "id": "mcp:dev.servonaut/servonaut",
+      "name": "Servonaut",
+      "type": "mcp",
+      "summary": "Manages AWS, Hetzner, OVH, and SSH servers, including status, logs, and command execution.",
+      "useWhen": [
+        "need to manage servers",
+        "require server monitoring",
+        "want to execute safe commands"
+      ],
+      "doNotUseWhen": [
+        "do not have server management needs"
+      ],
+      "categories": [
+        "server-management",
+        "cloud",
+        "ssh"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "network",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "2.23.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://servonaut.dev",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "92202cfd8c6f0e96ee166a1cbcb8cae89aa5cc85c981e36afb18f5769f15553d",
+      "contentHash": "f266128cf85d7365e634b5be45d30ab09b5a4bc7073bc82043f3bab9d2e813d7"
+    },
+    {
+      "id": "mcp:io.github.AparajeetS/traintools",
+      "name": "TrainTools",
+      "type": "mcp",
+      "summary": "Recommends paper-backed diagnostics for PyTorch and Hugging Face training problems.",
+      "useWhen": [
+        "training machine learning models",
+        "need diagnostic tools",
+        "using PyTorch or Hugging Face"
+      ],
+      "doNotUseWhen": [
+        "not training machine learning models"
+      ],
+      "categories": [
+        "machine-learning",
+        "diagnostics",
+        "training"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.6.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/AparajeetS/Traintools",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "506996cd4e0dc2058c19ee7aea642a19e244fa9a7593501bdadecd483e4749e2",
+      "contentHash": "b068f714b1e4368f4d81c55b601d125554f277cf8bff9580618ce45826d9aeb6"
+    },
+    {
+      "id": "mcp:io.github.KSym04/limpet",
+      "name": "io.github.KSym04/limpet",
+      "type": "mcp",
+      "summary": "Provides persistent engineering memory for AI coding agents, surviving refactors and knowing when it is stale.",
+      "useWhen": [
+        "need persistent memory for AI coding agents",
+        "require refactoring support",
+        "want to track memory staleness"
+      ],
+      "doNotUseWhen": [
+        "do not need persistent memory"
+      ],
+      "categories": [
+        "memory",
+        "ai",
+        "engineering"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.14.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/KSym04/limpet",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "54ba96e67a865ac5e52a359a4a950adac45c890ffe934c1c484a45c6bfc5a9e9",
+      "contentHash": "dab34893f02cac5f80f73c6e542e3573d05b5972d9cdffbbb04a131cfd7eb896"
+    },
+    {
+      "id": "mcp:io.github.SchematicHQ/schematic-mcp",
+      "name": "Schematic",
+      "type": "mcp",
+      "summary": "Manages companies, plans, features, and billing through SchematicHQ.",
+      "useWhen": [
+        "need to manage companies",
+        "require plan and feature management",
+        "want to track billing"
+      ],
+      "doNotUseWhen": [
+        "do not have SchematicHQ account"
+      ],
+      "categories": [
+        "company-management",
+        "billing",
+        "schematic"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @schematichq/schematic-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@schematichq/schematic-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "SCHEMATIC_API_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "0.4.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://schematichq.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "d28a528f8bd0ec96ea07de2954db0e3a07464571f6b574572069bb9262c12e34",
+      "contentHash": "d971c5e8c3a9892626622f515e61ae746ce08408080a29044cc0d4bb4e44a3f5"
+    },
+    {
+      "id": "mcp:io.github.VonderVuflya/yggdrasil",
+      "name": "io.github.VonderVuflya/yggdrasil",
+      "type": "mcp",
+      "summary": "Provides one shared, durable memory for AI coding agents, local-first and zero-dependency.",
+      "useWhen": [
+        "need shared memory for AI coding agents",
+        "require local-first solution",
+        "want zero-dependency"
+      ],
+      "doNotUseWhen": [
+        "do not need shared memory"
+      ],
+      "categories": [
+        "memory",
+        "ai",
+        "local-first"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "YGG_ENGINE_URL",
+          "YGG_ENGINE_TOKEN"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.12.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/VonderVuflya/yggdrasil",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "0654e38720149feb391592f50bc51ef2ee36e9e3a9a166086b20e0becc321a55",
+      "contentHash": "907aecd2ab711cb7fc1bfb86d678f6e8e6b3f867d42b0ea71ac9f37a72d6c822"
+    },
+    {
+      "id": "mcp:io.github.ashfordeOU/kshana-mcp",
+      "name": "Kshana PNT-resilience simulator",
+      "type": "mcp",
+      "summary": "Runs the validated Kshana PNT-resilience simulator from an AI agent.",
+      "useWhen": [
+        "need to run Kshana PNT-resilience simulator",
+        "require PNT-resilience simulation",
+        "want to use AI agent"
+      ],
+      "doNotUseWhen": [
+        "do not need PNT-resilience simulation"
+      ],
+      "categories": [
+        "simulation",
+        "pnt-resilience",
+        "kshana"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.25.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://kshana.dev",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "28d77861a298cf4ce94081365ad81ed401171ec9ae420b578ad95e2786701950",
+      "contentHash": "daca24df46c045bcc617461b0b300d0d6bdaff036b4b9a533ca843d9391bd764"
     }
   ]
 }

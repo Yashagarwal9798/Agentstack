@@ -7,12 +7,15 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/lib.d.ts",
+      "import": "./dist/lib.js"
     }
   },
   "dependencies": {
     "@agentstack/shared": "*",
+    "@clack/prompts": "^1.7.0",
+    "commander": "^15.0.0",
+    "picocolors": "^1.1.1",
     "supermemory": "^4.24.12",
     "zod": "^3.25.0"
   }

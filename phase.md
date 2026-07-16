@@ -88,17 +88,17 @@
 **Goal:** Candidates become validated, deduplicated, versioned Capability Cards published as a catalog release.
 **Source of truth:** architecture.md §2.1 steps 3–8; prd.md §6.2, §10.
 
-- [ ] `classify.ts`: cheap LLM call → zod-validated `{relevant, type, possibleName, officialUrls, confidence}`; thresholds ≥.8 auto / .5–.8 hold / <.5 drop
-- [ ] `verify.ts`: HTTP-only checks — official URL resolves, install/usage instructions exist; unverifiable → `trust: "unverified"`
-- [ ] `extract.ts`: evidence → `CapabilityCard` via LLM, zod parse, one repair retry; unknowns stay unknown
-- [ ] `canonical.ts`: id = `type:namespace/name`; multi-source merge into one card; contentHash → new version vs lastChecked bump
-- [ ] `release.ts`: write `catalog/deltas/<version>.json`, rewrite `catalog/catalog.json`, append to `manifest.json` with sha256; no changes → no release
-- [ ] `.github/workflows/discover.yml`: cron (daily) + workflow_dispatch → run pipeline → commit `catalog/`
-- [ ] Full local run: `npm run pipeline:run` produces a real release; re-run → no new release (idempotent)
+- [x] Classification (in `process/rss.ts`): batched LLM call → zod-validated; thresholds ≥.8 auto / .5–.8 hold (review.log) / <.5 drop; registry/skills skip classification (capabilities by construction — deterministic skeleton + batched LLM enrichment instead)
+- [x] Verification: HTTP URL checks for RSS-discovered items; unverifiable → held, never published
+- [x] Extraction: evidence → `CapabilityCard` via LLM, zod parse, one repair retry; RSS-only full extraction, registry/skills enriched in batches of 10
+- [x] `canonical.ts`: id = `type:namespace/name`; multi-source merge into one card; contentHash → update vs lastChecked bump; sourceHash skips re-extraction of unchanged evidence
+- [x] `release.ts`: write `catalog/deltas/<version>.json`, rewrite `catalog/catalog.json`, append to `manifest.json` with sha256; no changes → no release
+- [x] `.github/workflows/discover.yml`: cron (daily 03:30 UTC) + workflow_dispatch → run pipeline → commit `catalog/`
+- [x] Full local runs: 3 real releases published (2026.07.16.1 +120, .2 +30, .3 +8/~2 — 158 cards); "no changes → no release" path exercised on the run that produced 0 cards
 
 **Done when:** a real catalog release exists in `catalog/` from real sources; re-run produces no duplicate release; every published card passes the shared schema; Actions workflow runs green via workflow_dispatch after the repo is pushed (may be re-checked in Phase 10).
 **Not in this phase:** CLI consumption of the catalog.
-**Notes:** —
+**Notes:** ✅ Done 2026-07-17. `validate-catalog.ts` → 158/158 valid, all delta sha256 ok. Backlog policy: initial-window backfill CUT at 158 cards (user call — free-tier LLM throughput made full drain slow); 6 items remain queued and drain via the daily cron. Hardening earned from real failures: bare-array JSON preprocess, Retry-After-aware backoff, 30s batch pacing, requeue-on-batch-failure. One run wedged silently for 38 min (alive, no CPU) — killed; suspect long retry-wait pileup. Actions green check deferred to Phase 10 (needs pushed repo).
 
 ---
 

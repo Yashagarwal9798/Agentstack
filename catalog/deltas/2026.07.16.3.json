@@ -1,0 +1,477 @@
+{
+  "version": "2026.07.16.3",
+  "createdAt": "2026-07-16T22:48:57.556Z",
+  "added": [
+    {
+      "id": "mcp:com.crosbynews/weather",
+      "name": "Crosby, TX Weather",
+      "type": "mcp",
+      "summary": "Provides live Crosby, TX weather information and other local data.",
+      "useWhen": [
+        "need local weather information",
+        "require flood level data",
+        "want to track road conditions"
+      ],
+      "doNotUseWhen": [
+        "require global weather information"
+      ],
+      "categories": [
+        "weather",
+        "news",
+        "local-info"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://crosbynews.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.2.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/reloru/new-relo",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "59430429ffd57cfcff66b38f9b71b9ad5ad997f80660bbbc65b1ce7102f64db0",
+      "contentHash": "0dc9c75c294eeeea6637ac0eb0a1ccdde7d31d6b2931032ea271d35606b82b4e"
+    },
+    {
+      "id": "mcp:com.foxfiver/state-transfer-tracker",
+      "name": "com.foxfiver/state-transfer-tracker",
+      "type": "mcp",
+      "summary": "Tracks Whiteout Survival State Transfer phases and remaining pass chances.",
+      "useWhen": [
+        "playing Whiteout Survival",
+        "need state transfer phase information",
+        "want to track pass chances"
+      ],
+      "doNotUseWhen": [
+        "not playing Whiteout Survival"
+      ],
+      "categories": [
+        "gaming",
+        "tracking",
+        "survival"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://transfer.foxfiver.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.foxfiver%2Fstate-transfer-tracker",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "26c01f3bfc6f2d1dc797e7054dedfad2162537387d18d9dc73462444ab6a9bc9",
+      "contentHash": "91cf2f0547398a898c43265bac6660eef8c24885ba9572fe023fb111c8aa661d"
+    },
+    {
+      "id": "mcp:dev.servonaut/servonaut",
+      "name": "Servonaut",
+      "type": "mcp",
+      "summary": "Manages AWS, Hetzner, OVH, and SSH servers, including status, logs, and command execution.",
+      "useWhen": [
+        "need to manage servers",
+        "require server monitoring",
+        "want to execute safe commands"
+      ],
+      "doNotUseWhen": [
+        "do not have server management needs"
+      ],
+      "categories": [
+        "server-management",
+        "cloud",
+        "ssh"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "network",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "2.23.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://servonaut.dev",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "92202cfd8c6f0e96ee166a1cbcb8cae89aa5cc85c981e36afb18f5769f15553d",
+      "contentHash": "f266128cf85d7365e634b5be45d30ab09b5a4bc7073bc82043f3bab9d2e813d7"
+    },
+    {
+      "id": "mcp:io.github.AparajeetS/traintools",
+      "name": "TrainTools",
+      "type": "mcp",
+      "summary": "Recommends paper-backed diagnostics for PyTorch and Hugging Face training problems.",
+      "useWhen": [
+        "training machine learning models",
+        "need diagnostic tools",
+        "using PyTorch or Hugging Face"
+      ],
+      "doNotUseWhen": [
+        "not training machine learning models"
+      ],
+      "categories": [
+        "machine-learning",
+        "diagnostics",
+        "training"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.6.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/AparajeetS/Traintools",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "506996cd4e0dc2058c19ee7aea642a19e244fa9a7593501bdadecd483e4749e2",
+      "contentHash": "b068f714b1e4368f4d81c55b601d125554f277cf8bff9580618ce45826d9aeb6"
+    },
+    {
+      "id": "mcp:io.github.KSym04/limpet",
+      "name": "io.github.KSym04/limpet",
+      "type": "mcp",
+      "summary": "Provides persistent engineering memory for AI coding agents, surviving refactors and knowing when it is stale.",
+      "useWhen": [
+        "need persistent memory for AI coding agents",
+        "require refactoring support",
+        "want to track memory staleness"
+      ],
+      "doNotUseWhen": [
+        "do not need persistent memory"
+      ],
+      "categories": [
+        "memory",
+        "ai",
+        "engineering"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.14.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/KSym04/limpet",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "54ba96e67a865ac5e52a359a4a950adac45c890ffe934c1c484a45c6bfc5a9e9",
+      "contentHash": "dab34893f02cac5f80f73c6e542e3573d05b5972d9cdffbbb04a131cfd7eb896"
+    },
+    {
+      "id": "mcp:io.github.SchematicHQ/schematic-mcp",
+      "name": "Schematic",
+      "type": "mcp",
+      "summary": "Manages companies, plans, features, and billing through SchematicHQ.",
+      "useWhen": [
+        "need to manage companies",
+        "require plan and feature management",
+        "want to track billing"
+      ],
+      "doNotUseWhen": [
+        "do not have SchematicHQ account"
+      ],
+      "categories": [
+        "company-management",
+        "billing",
+        "schematic"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @schematichq/schematic-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@schematichq/schematic-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "SCHEMATIC_API_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "0.4.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://schematichq.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "d28a528f8bd0ec96ea07de2954db0e3a07464571f6b574572069bb9262c12e34",
+      "contentHash": "d971c5e8c3a9892626622f515e61ae746ce08408080a29044cc0d4bb4e44a3f5"
+    },
+    {
+      "id": "mcp:io.github.VonderVuflya/yggdrasil",
+      "name": "io.github.VonderVuflya/yggdrasil",
+      "type": "mcp",
+      "summary": "Provides one shared, durable memory for AI coding agents, local-first and zero-dependency.",
+      "useWhen": [
+        "need shared memory for AI coding agents",
+        "require local-first solution",
+        "want zero-dependency"
+      ],
+      "doNotUseWhen": [
+        "do not need shared memory"
+      ],
+      "categories": [
+        "memory",
+        "ai",
+        "local-first"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "YGG_ENGINE_URL",
+          "YGG_ENGINE_TOKEN"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.12.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/VonderVuflya/yggdrasil",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "0654e38720149feb391592f50bc51ef2ee36e9e3a9a166086b20e0becc321a55",
+      "contentHash": "907aecd2ab711cb7fc1bfb86d678f6e8e6b3f867d42b0ea71ac9f37a72d6c822"
+    },
+    {
+      "id": "mcp:io.github.ashfordeOU/kshana-mcp",
+      "name": "Kshana PNT-resilience simulator",
+      "type": "mcp",
+      "summary": "Runs the validated Kshana PNT-resilience simulator from an AI agent.",
+      "useWhen": [
+        "need to run Kshana PNT-resilience simulator",
+        "require PNT-resilience simulation",
+        "want to use AI agent"
+      ],
+      "doNotUseWhen": [
+        "do not need PNT-resilience simulation"
+      ],
+      "categories": [
+        "simulation",
+        "pnt-resilience",
+        "kshana"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.25.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://kshana.dev",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "28d77861a298cf4ce94081365ad81ed401171ec9ae420b578ad95e2786701950",
+      "contentHash": "daca24df46c045bcc617461b0b300d0d6bdaff036b4b9a533ca843d9391bd764"
+    }
+  ],
+  "updated": [
+    {
+      "id": "mcp:io.github.ShaftHQ/shaft-mcp",
+      "name": "shaft-mcp",
+      "type": "mcp",
+      "summary": "Provides SHAFT browser automation, capture, and offline deterministic failure diagnosis.",
+      "useWhen": [
+        "need browser automation",
+        "require failure diagnosis",
+        "want to use SHAFT"
+      ],
+      "doNotUseWhen": [
+        "do not need browser automation"
+      ],
+      "categories": [
+        "browser-automation",
+        "failure-diagnosis",
+        "shaft"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "browser"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "10.3.20260716",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://ShaftHQ.github.io/",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "ef45ea8aa44887bd131e476073f670973dec8f353e914ccf587f3b686b88490f",
+      "contentHash": "39673d4b7b7999f65b34dd137386d4880823af24052fc2f2980d6a4e493d3103"
+    },
+    {
+      "id": "mcp:io.github.brilliantdirectories/brilliant-directories-mcp",
+      "name": "io.github.brilliantdirectories/brilliant-directories-mcp",
+      "type": "mcp",
+      "summary": "Manages members, posts, leads, reviews, and more for Brilliant Directories.",
+      "useWhen": [
+        "need to manage Brilliant Directories data",
+        "require member and post management",
+        "want to track leads and reviews"
+      ],
+      "doNotUseWhen": [
+        "do not have Brilliant Directories account"
+      ],
+      "categories": [
+        "directory-management",
+        "brilliant-directories",
+        "member-management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y brilliant-directories-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "brilliant-directories-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "BD_API_KEY",
+          "BD_SITE_URL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "6.58.221",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/brilliantdirectories/brilliant-directories-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-16",
+      "sourceHash": "654e2b0ca8ac8968c052b4c12cefa3c2457a8886e1a3fb3dc5720e04f300d631",
+      "contentHash": "6dcafe9dbf816bf678922628520ada85c6c87d50b732429bb5025cef58a7d35f"
+    }
+  ],
+  "deprecated": []
+}

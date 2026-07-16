@@ -4,6 +4,30 @@
 
 ---
 
+## Phase 4 — Pipeline LLM stages + catalog releases ✅ (2026-07-17)
+
+**What was built**
+- `shared/src/llm.ts` — generic `chat`/`chatJson(prompt, schema, settings)` moved here (pipeline + cli both need it; **deviation** from architecture.md which placed it in cli only — cli/core/llm.ts is now a thin config-bound wrapper). Retry-After-aware backoff (6 attempts) on 429/5xx.
+- `pipeline/src/process/enrich.ts` — registry/skills candidates: deterministic skeleton (id, install command/mcpConfig from registry packages/remotes, trust tier, secrets) + batched LLM judgment fields (10/call, 30s pacing). `sourceHash` computed per candidate.
+- `pipeline/src/process/rss.ts` — classify (15/batch, confidence gates ≥.8/.5) → URL verify → single-item full extraction; held items → review.log; RSS-discovered cards always `trust: community`.
+- `pipeline/src/canonical.ts` — contentHash versioning (volatile fields excluded), multi-source merge, firstSeen preserved on update.
+- `pipeline/src/release.ts` — immutable delta + catalog.json rewrite + manifest append (sha256); validates catalog before write; returns null when nothing changed.
+- `pipeline/src/run.ts` — orchestrator: collect → enqueue(pending) → bounded batch (`AGENTSTACK_PIPELINE_MAX`=120) → route by source → canonicalize → release → persist queue+cursors LAST. Batch failures requeue.
+- `.github/workflows/discover.yml` — daily cron 03:30 UTC + dispatch; commits catalog/; needs secrets `AGENTSTACK_LLM_*`.
+- `scripts/validate-catalog.ts` — full catalog schema + manifest checksum sweep.
+
+**Verification:** 3 real releases (2026.07.16.1 +120 / .2 +30 / .3 +8~2) = **158 cards**; `validate-catalog.ts` → 158/158 valid, all sha256 ok; no-release path exercised. Actions green check deferred to Phase 10.
+
+**Deviations:** LLM client lives in shared (see above). Registry initial window 7d→24h (env `AGENTSTACK_REGISTRY_WINDOW_HOURS`). Backfill cut at 158 cards (user decision — time), 6 items left queued for the cron.
+
+**Gotchas**
+- llama-3.3 via Groq returns **bare JSON arrays** despite instructions — schemas use `z.preprocess` to wrap; prompts say `{"items": [...]}` explicitly.
+- Groq free tier: 12k TPM / ~1000 req/hr observed in headers; sustained batching needs the 30s pacing; a wedged run (alive, zero CPU, 38 min silent) had to be killed — suspect stacked Retry-After waits; watch for it in Actions (job timeout recommended).
+- Registry activity is high (~16 new entries/hour observed!) — the daily cron will always have material.
+- PowerShell `| Select-Object -Last N` buffers ALL output — background runs look silent until exit; don't diagnose by empty output file.
+
+---
+
 ## Phase 3 — Pipeline source adapters + cursors ✅ (2026-07-17)
 
 **What was built**
