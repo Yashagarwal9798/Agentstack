@@ -20,15 +20,15 @@
 **Goal:** Prove the single hard dependency works on this Windows machine before writing any product code.
 **Source of truth:** architecture.md §3 (Windows-first), hackathon.md §4 (quickstart, Windows consideration).
 
-- [ ] Start Supermemory Local (`npx supermemory local`); if native Windows fails, try WSL, then Docker — record which path works
-- [ ] Capture: base URL responds at `http://localhost:6767`, the generated `sm_` key, where `./.supermemory/` data lands, what LLM-provider config it asked for
+- [x] Start Supermemory Local (`npx supermemory local`); if native Windows fails, try WSL, then Docker — record which path works → **installer auto-ran in WSL** (linux-x64 binary, `/home/yash/.supermemory/`)
+- [ ] Capture: base URL responds at `http://localhost:6767`, the generated `sm_` key, where `./.supermemory/` data lands, what LLM-provider config it asked for → *blocked: first-run requires an LLM API key; user fetching a Gemini key*
 - [ ] Scratch script (scratchpad, not the repo): `memories.add` one fact with a `containerTag`, then `search.memories` with *differently-worded* query → relevant hit comes back
 - [ ] Test the `customId` upsert behavior (add same customId twice → one memory, updated) — architecture §1.1 depends on this
-- [ ] Write findings to `docs/phase0-findings.md`: launch command that worked, key handling, any API surprises vs the docs
+- [x] Write findings to `docs/phase0-findings.md`: launch command that worked, key handling, any API surprises vs the docs (partial — resume plan documented)
 
 **Done when:** add → semantic search round-trip works against `localhost:6767` and findings are written down.
 **Not in this phase:** any repo scaffolding, any CLI code.
-**Notes:** —
+**Notes:** ⏸ PAUSED at server start — needs `GEMINI_API_KEY` in `.env.local` from user. Runs in WSL, not native Windows. Blocks Phase 2, not Phase 1 (which has no Supermemory dependency), so Phase 1 proceeded with user's go-ahead. See docs/phase0-findings.md + context.md.
 
 ---
 
@@ -37,15 +37,15 @@
 **Goal:** A compiling workspace where both packages share one source of type truth, and all static content exists.
 **Source of truth:** architecture.md §1.2 (layout), prd.md §10 (data models), prd.md §6.4 (starter content).
 
-- [ ] Scaffold monorepo: `cli/`, `pipeline/`, `shared/`, `starter/`, `catalog/` (empty), `.github/workflows/` (empty); npm workspaces; TypeScript strict config; build scripts
-- [ ] `shared/src/schema.ts`: zod schemas + inferred types for `CapabilityCard`, `Manifest`, `Delta`, `ProjectProfile`, `Recommendation`, `StackLock`, `FeedbackRecord`
-- [ ] Author `starter/catalog.json`: ~10–15 hand-written capability cards (planning, debugging, testing, frontend, security, docs, APIs, databases, performance) — every card passes the zod schema
-- [ ] Author the 3 bundled core skills in `starter/skills/`: Project Planning, Root-Cause Debugging, Verification Before Completion (each a `SKILL.md`)
-- [ ] git init + first commits (public repo can be created now or in Phase 10 — fresh history matters, hackathon.md rule 3)
+- [x] Scaffold monorepo: `cli/`, `pipeline/`, `shared/`, `starter/`, `catalog/` (empty), `.github/workflows/` (empty); npm workspaces; TypeScript strict config; build scripts
+- [x] `shared/src/schema.ts`: zod schemas + inferred types for `CapabilityCard`, `Manifest`, `Delta`, `ProjectProfile`, `Recommendation`, `StackLock`, `FeedbackRecord`
+- [x] Author `starter/catalog.json`: 15 hand-written capability cards — every card passes the zod schema (15/15)
+- [x] Author the 3 bundled core skills in `starter/skills/`: Project Planning, Root-Cause Debugging, Verification Before Completion (each a `SKILL.md`)
+- [x] git init + first commits (public repo can be created now or in Phase 10 — fresh history matters, hackathon.md rule 3)
 
 **Done when:** `npm run build` passes across the workspace; a script validates every starter card against the schema with zero errors.
 **Not in this phase:** any runtime logic, network calls, LLM calls.
-**Notes:** —
+**Notes:** ✅ Done 2026-07-17. `npm run validate:starter` → 15/15 valid, build green. Commits `4750c7f` (docs) + `482200b` (scaffold). See context.md for gotchas (Node 22.16, dist-based workspace imports, placeholder starter source URLs).
 
 ---
 
