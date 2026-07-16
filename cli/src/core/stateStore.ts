@@ -1,15 +1,11 @@
 import { homedir } from "node:os";
 import { dirname, join } from "node:path";
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
-import type { Catalog, FeedbackRecord } from "@agentstack/shared";
+import type { Catalog, FeedbackRecord, LlmSettings } from "@agentstack/shared";
 
 export const AGENTSTACK_DIR = join(homedir(), ".agentstack");
 
-export interface LlmSettings {
-  baseURL: string;
-  model: string;
-  apiKey?: string;
-}
+export type { LlmSettings };
 
 export interface Config {
   llm: LlmSettings;

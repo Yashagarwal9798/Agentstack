@@ -37,10 +37,11 @@ export const Installation = z.object({
 });
 export type Installation = z.infer<typeof Installation>;
 
-/** Canonical id: `${type}:${namespace}/${name}`, e.g. "mcp:microsoft/playwright-mcp". */
+/** Canonical id: `${type}:${namespace}/${name}`, e.g. "mcp:microsoft/playwright-mcp".
+ *  Namespace may be reverse-DNS (registry names like "io.github.foo/bar" — probed live). */
 export const CapabilityId = z
   .string()
-  .regex(/^(mcp|skill|cli|plugin):[a-z0-9-]+\/[a-z0-9-]+$/i, "expected `type:namespace/name`");
+  .regex(/^(mcp|skill|cli|plugin):[a-z0-9._-]+\/[a-z0-9._-]+$/i, "expected `type:namespace/name`");
 
 export const CapabilityCard = z.object({
   id: CapabilityId,
@@ -63,6 +64,8 @@ export const CapabilityCard = z.object({
   lastChecked: z.string(),
   /** sha256 of the card content; filled by the pipeline, absent on starter cards. */
   contentHash: z.string().optional(),
+  /** sha256 of the raw source evidence — unchanged evidence skips re-extraction. */
+  sourceHash: z.string().optional(),
 });
 export type CapabilityCard = z.infer<typeof CapabilityCard>;
 

@@ -13,7 +13,8 @@
     "clean": "tsc -b cli pipeline --clean",
     "validate:starter": "npm run build && tsx scripts/validate-starter.ts",
     "smoke:phase2": "npm run build && tsx scripts/smoke-phase2.ts",
-    "pipeline:collect": "tsx pipeline/src/collect.ts"
+    "pipeline:collect": "tsx pipeline/src/collect.ts",
+    "pipeline:run": "tsx pipeline/src/run.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

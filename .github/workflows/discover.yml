@@ -1,0 +1,46 @@
+name: Daily capability discovery
+
+on:
+  schedule:
+    - cron: "30 3 * * *" # 09:00 IST daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run discovery pipeline
+        env:
+          AGENTSTACK_LLM_BASE_URL: ${{ secrets.AGENTSTACK_LLM_BASE_URL }}
+          AGENTSTACK_LLM_MODEL: ${{ secrets.AGENTSTACK_LLM_MODEL }}
+          AGENTSTACK_LLM_API_KEY: ${{ secrets.AGENTSTACK_LLM_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx tsx pipeline/src/run.ts
+
+      - name: Commit catalog release
+        run: |
+          git config user.name "agentstack-pipeline[bot]"
+          git config user.email "pipeline@agentstack.invalid"
+          git add catalog/
+          if git diff --cached --quiet; then
+            echo "no catalog changes to commit"
+          else
+            git commit -m "catalog: automated discovery release $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

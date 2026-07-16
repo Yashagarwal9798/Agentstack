@@ -3,8 +3,10 @@ import type { AdapterResult, RawCandidate } from "../types.js";
 const BASE = "https://registry.modelcontextprotocol.io";
 const PAGE_LIMIT = 100;
 const MAX_PAGES = 10;
-/** First run has no cursor — bound it to the last 7 days instead of paging the whole registry. */
-const INITIAL_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+/** First run has no cursor — bound it (default 24h; env-tunable) instead of paging
+ *  the whole registry. The registry gets ~90 updates/day (measured 2026-07-17). */
+const INITIAL_WINDOW_MS =
+  Number(process.env.AGENTSTACK_REGISTRY_WINDOW_HOURS ?? 24) * 60 * 60 * 1000;
 
 interface RegistryEntry {
   server: {
