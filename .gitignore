@@ -1,0 +1,16 @@
+# dependencies / build output
+node_modules/
+dist/
+*.tsbuildinfo
+
+# secrets — never commit keys
+.env
+.env.*
+
+# local runtime state (never part of the repo)
+.supermemory/
+.agentstack/
+
+# local dev tooling (installed skills for the coding agent, not product code)
+.agents/
+.claude/

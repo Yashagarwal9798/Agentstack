@@ -1,0 +1,17 @@
+{
+  "name": "@agentstack/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "agentstack": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@agentstack/shared": "*"
+  }
+}

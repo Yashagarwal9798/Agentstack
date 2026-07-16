@@ -1,0 +1,14 @@
+{
+  "name": "@agentstack/shared",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  }
+}

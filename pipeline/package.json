@@ -1,0 +1,14 @@
+{
+  "name": "@agentstack/pipeline",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@agentstack/shared": "*"
+  }
+}
