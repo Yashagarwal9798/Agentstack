@@ -107,15 +107,15 @@
 **Goal:** The catalog reaches a user's machine: bootstrap, sync, and read-only views all work.
 **Source of truth:** architecture.md §2.2–§2.4; prd.md §6.1.
 
-- [ ] CLI entry (`commander`) + shared pre-flight (Supermemory health, staleness nudge stub)
-- [ ] `init`: checks → provider prompts (@clack) → write config → import starter catalog (state + Supermemory) → offer 3 core skills → run update once → health summary; re-runnable without duplication
-- [ ] `update`: manifest fetch → delta chain → sha256 verify → JSON upsert → `upsertCard()` per added/updated → deprecation flips → releases.json append → lastSync commit LAST → digest print (architecture §2.3 ordering exactly)
-- [ ] `discoveries` (latest release + `--since`) and `inspect <id>` (full card + provenance + installed-where)
-- [ ] Staleness nudge: any command warns once when lastSync > 24h
+- [x] CLI entry (`commander`) + `ui.ts` theme (palette, badges, banner, box/table/kv — CLAUDE.md styling requirement)
+- [x] `init`: checks → provider prompts (@clack; `--yes` uses env) → write config → import starter catalog (state + Supermemory) → offer 3 core skills (installed to `~/.claude/skills`) → run update once → health summary box; re-runnable without duplication
+- [x] `update`: manifest fetch (env/config/repo-local base) → delta chain → sha256 verify → JSON upsert → `upsertCard()` per added/updated → deprecation flips → releases.json (version-deduped) → lastSync commit LAST → styled digest
+- [x] `discoveries` (latest release + `--since`, trust badges, tables) and `inspect <id>` (fuzzy match, full card, risk-highlighted permissions, provenance, installed-where)
+- [x] Staleness nudge (>24h) on discoveries/inspect outros
 
 **Done when:** on a machine-state wiped of `~/.agentstack/`: `init` → `update` → `discoveries` → `inspect <id>` all succeed against the real published catalog; killing `update` mid-run and re-running recovers cleanly.
 **Not in this phase:** projects, recommendation, apply.
-**Notes:** —
+**Notes:** ✅ Done 2026-07-17. Wiped-machine run: `init --yes` (15 starter + 3 skills + 160-card sync into Supermemory) → `update` ("already up to date") → `discoveries` (real fresh MCPs w/ badges) → `inspect playwright` (fuzzy match) — all styled, all pass. Crash recovery: lastSync wiped → re-run re-applied 3 releases, history stayed deduped at 3. Fixes en route: index.ts env path (one level shallower than core/), BOM-tolerant readJson (PS 5.1 writes BOMs).
 
 ---
 

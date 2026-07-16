@@ -9,7 +9,8 @@ import { discoveriesCommand } from "./commands/discoveries.js";
 import { inspectCommand } from "./commands/inspect.js";
 
 // Dev convenience: pick up .env.local from the repo root when present.
-const repoEnv = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..", ".env.local");
+// (index.js lives at cli/dist/ — two levels below the repo root, unlike core/.)
+const repoEnv = join(dirname(fileURLToPath(import.meta.url)), "..", "..", ".env.local");
 if (existsSync(repoEnv)) process.loadEnvFile(repoEnv);
 
 const program = new Command();

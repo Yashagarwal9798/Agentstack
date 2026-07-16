@@ -143,7 +143,9 @@ export async function runUpdate(
     if (done % 25 === 0) say(`writing cards to Supermemory (${done}/${touchedCards.length})`);
   }
 
-  const history = readJson<AppliedRelease[]>(paths.releases, []);
+  // Idempotent history: a crash-recovery re-run must not duplicate entries.
+  const appliedVersions = new Set(applied.map((a) => a.version));
+  const history = readJson<AppliedRelease[]>(paths.releases, []).filter((r) => !appliedVersions.has(r.version));
   history.push(...applied);
   writeJson(paths.releases, history);
 

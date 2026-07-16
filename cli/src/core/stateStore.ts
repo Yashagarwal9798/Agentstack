@@ -33,7 +33,8 @@ export const paths = {
 
 export function readJson<T>(path: string, fallback: T): T {
   if (!existsSync(path)) return fallback;
-  return JSON.parse(readFileSync(path, "utf8")) as T;
+  // Tolerate a UTF-8 BOM — Windows editors (and PowerShell 5.1) add one.
+  return JSON.parse(readFileSync(path, "utf8").replace(/^﻿/, "")) as T;
 }
 
 /** Write via temp file + rename so a crash mid-write never corrupts state. */

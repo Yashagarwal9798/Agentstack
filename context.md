@@ -4,6 +4,23 @@
 
 ---
 
+## Phase 5 — CLI: init, update, discoveries, inspect ✅ (2026-07-17)
+
+**What was built**
+- `cli/src/core/ui.ts` — shared theme: palette (`theme.*`), symbols, trust/status/localCloud badges, ASCII banner, `kv`/`box`/`table` helpers. Every command styled (CLAUDE.md hard requirement).
+- `cli/src/core/catalogSync.ts` — `resolveCatalogBase()` (env `AGENTSTACK_CATALOG_BASE` > config > repo-local checkout; GitHub raw URL becomes default at Phase 10), `runUpdate(memory, onProgress)` implementing §2.3 exactly (manifest → missing-delta chain → sha256 verify → mirror upsert → Supermemory upsert → version-deduped releases.json → lastSync LAST), `staleness()` nudge helper.
+- Commands (`cli/src/commands/`): `init` (env checks, sm-key + provider prompts with `--yes` env path, starter import that never overwrites live cards, core-skills multiselect → `~/.claude/skills`, first sync, health box), `update` (spinner + digest box + installed-affected warnings), `discoveries` (`--since`, badge tables), `inspect` (fuzzy id match, risk-colored permissions, provenance, installed-where).
+- Entry split: `cli/src/index.ts` = commander bin (loads repo `.env.local`); `cli/src/lib.ts` = library exports (package `exports` now points at lib).
+
+**Verification (Done-when):** wiped `~/.agentstack` → `init --yes` full flow ✔ (160 cards into Supermemory) → `update` "already up to date" ✔ → `discoveries` shows the fresh release with real MCPs ✔ → `inspect playwright` fuzzy-resolves ✔. Crash sim (lastSync removed) → re-run re-applies 3 releases, history stays 3 entries ✔. Bonus proof: the 3 installed core skills immediately appeared in Claude Code's available-skills list.
+
+**Gotchas**
+- `cli/dist/index.js` is one level shallower than `dist/core/*` — repo-root relative paths differ (2 vs 3 ups). Bit us once.
+- PowerShell 5.1 `Set-Content -Encoding utf8` writes a BOM → `readJson` now strips BOMs.
+- `init`'s Supermemory write of 160 cards takes ~2–3 min (sequential HTTP to localhost); server-side embedding/extraction continues in background afterward — searches enrich over minutes (message shown to user).
+
+---
+
 ## Phase 4 — Pipeline LLM stages + catalog releases ✅ (2026-07-17)
 
 **What was built**
