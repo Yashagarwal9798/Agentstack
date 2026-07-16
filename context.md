@@ -4,6 +4,27 @@
 
 ---
 
+## Phase 3 — Pipeline source adapters + cursors ✅ (2026-07-17)
+
+**What was built**
+- `pipeline/src/types.ts` — `RawCandidate {source, externalId, title, body, url, fetchedAt}`, `Cursors`, `AdapterResult` (adapter returns *staged* cursor; caller decides when to persist).
+- `pipeline/src/cursors.ts` — `catalog/state/cursors.json` load/save (atomic; state lives in git, no server).
+- `sources/mcpRegistry.ts` — `registry.modelcontextprotocol.io/v0/servers` with `updated_since` + `cursor` pagination (100/page, 10-page cap). **First run bounded to a 7-day window** (else it pages the whole registry). Skips `isLatest: false`, dedupes multi-version entries by name keeping newest. Cursor = max `updatedAt` seen.
+- `sources/skillsRepo.ts` — `anthropics/skills`: HEAD SHA via commits API; same SHA → 0 candidates; incremental via compare API (changed SKILL.md only, removed excluded); first run via recursive tree. Content from raw.githubusercontent (not API-rate-limited). `template/SKILL.md` excluded. `GITHUB_TOKEN` used if set.
+- `sources/rss.ts` — `hnrss.org/newest?q=MCP&count=30`, fast-xml-parser, GUID-set cursor (capped 500), HTML stripped, **3-attempt retry on non-OK** (hnrss threw real 502s twice today).
+- `collect.ts` — `collectAll(cursors)` with `Promise.allSettled`: failures isolated per source, cursor advances only for fulfilled sources. Standalone runner (`npm run pipeline:collect`) prints per-source counts, writes `catalog/state/candidates.json` (gitignored, debug), persists cursors, exits 1 only if ALL sources fail.
+
+**Verification (Done-when):** run 1 → 670 candidates (623 registry / 17 skills / 30 rss). Run 3 → 0/0/0 (run 2 caught 3 registry entries published *between runs* — live ecosystem). Failure isolation: sabotaged feed URL → `rss FAILED`, others advanced (2/3), exit 0, rss cursor preserved; restored URL → healthy.
+
+**Registry response shape (probed live):** `{servers: [{server: {name, title, description, version, websiteUrl, repository, remotes, packages}, _meta: {"io.modelcontextprotocol.registry/official": {status, updatedAt, isLatest}}}], metadata: {nextCursor, count}}`.
+
+**Gotchas for Phase 4**
+- 623 registry candidates in a 7-day window ⇒ classification volume is real. Free-tier Gemini rate limits (~10-15 RPM flash) make classifying ALL of them slow — Phase 4 should batch candidates per LLM call and/or cap per-run volume, and consider pre-filtering registry entries (they're already known-MCPs; classification is mainly for RSS noise).
+- `git checkout --` does NOT revert never-committed files — my sabotage revert failed silently (fixed by editing back). Don't "revert" untracked files with git.
+- Registry `updated_since` may be inclusive at the boundary; harmless (dedupe by name + customId upsert downstream).
+
+---
+
 ## Phase 2 — Core local infrastructure ✅ (2026-07-17)
 
 **What was built**

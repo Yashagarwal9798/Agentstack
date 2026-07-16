@@ -14,3 +14,7 @@ dist/
 # local dev tooling (installed skills for the coding agent, not product code)
 .agents/
 .claude/
+skills-lock.json
+
+# transient pipeline debug output (cursors.json IS committed)
+catalog/state/candidates.json

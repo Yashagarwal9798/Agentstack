@@ -70,16 +70,16 @@
 **Goal:** Real `RawCandidate[]` from all three sources, incrementally, with cursor state in git.
 **Source of truth:** architecture.md §2.1 steps 1–2; prd.md §6.2 (sources).
 
-- [ ] Pick the concrete skills repo + RSS feed (decision — confirm choices, record in todo.md)
-- [ ] `pipeline/src/sources/mcpRegistry.ts`: paginated fetch, updated-since cursor
-- [ ] `pipeline/src/sources/skillsRepo.ts`: commit-SHA compare → changed SKILL.md dirs → fetch contents
-- [ ] `pipeline/src/sources/rss.ts`: feed parse, GUID/pubDate cursor
-- [ ] `catalog/state/cursors.json` read/advance logic — a source's cursor advances only if that source fully succeeded; adapters fail independently
-- [ ] Runner script: `npm run pipeline:collect` prints candidate counts per source; second run with no upstream changes → 0 candidates
+- [x] Pick the concrete skills repo + RSS feed → `anthropics/skills` + `hnrss.org/newest?q=MCP` (recorded in todo.md)
+- [x] `pipeline/src/sources/mcpRegistry.ts`: paginated fetch, updated-since cursor (7-day initial window, isLatest filter, dedupe by name)
+- [x] `pipeline/src/sources/skillsRepo.ts`: commit-SHA compare → changed SKILL.md dirs → fetch contents (compare API incremental; GITHUB_TOKEN optional)
+- [x] `pipeline/src/sources/rss.ts`: feed parse (fast-xml-parser), GUID cursor capped at 500, 502-retry
+- [x] `catalog/state/cursors.json` read/advance logic — a source's cursor advances only if that source fully succeeded; adapters fail independently (Promise.allSettled in collectAll)
+- [x] Runner script: `npm run pipeline:collect` prints candidate counts per source; second run with no upstream changes → 0 candidates
 
 **Done when:** first run yields real candidates from all three sources; immediate re-run yields zero (cursors work); one adapter throwing doesn't stop the others.
 **Not in this phase:** LLM stages, releases, Actions.
-**Notes:** —
+**Notes:** ✅ Done 2026-07-17. Run 1: 670 candidates (623 registry / 17 skills / 30 rss). Run 3: 0/0/0 (run 2 caught 3 genuinely-fresh registry publishes — live data). Failure isolation verified with a sabotaged feed URL: rss FAILED, others advanced 2/3, exit 0. hnrss.org threw real 502s twice today → adapter retries.
 
 ---
 

@@ -1,5 +1,10 @@
 # AgentStack Radar — TODO & Locked Decisions
 
+## Decisions made during build
+
+- **LLM provider: Gemini** (user's key in `.env.local`), OpenAI-compat endpoint, model `gemini-flash-latest` (`gemini-2.5-flash` is closed to new API users). Still provider-agnostic via env/config.
+- **Phase 3 sources:** skills repo = `anthropics/skills`; RSS = `https://hnrss.org/newest?q=MCP&count=30` (noisy by design for the classifier; adapter retries transient 502s). Swap by editing one constant in each adapter.
+
 ## Open decisions
 
 - [ ] **LLM provider + API key** (Gemini / OpenAI / Anthropic) — user decides at testing time. Build is provider-agnostic (OpenAI-compatible client); switching = config/env change only. **No local model (Ollama) in v1.**
