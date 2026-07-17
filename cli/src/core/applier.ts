@@ -7,8 +7,9 @@ import { fileURLToPath } from "node:url";
 import type { CapabilityCard, ProjectProfile, Recommendation, StackLock } from "@agentstack/shared";
 import { claudeCode, type AgentAdapter } from "../adapters/claudeCode.js";
 
-const repoRoot = dirname(dirname(dirname(dirname(fileURLToPath(import.meta.url)))));
-const BUNDLED_SKILLS = join(repoRoot, "starter", "skills");
+import { resolveStarterDir } from "./starterDir.js";
+
+const BUNDLED_SKILLS = join(resolveStarterDir() ?? "no-starter", "skills");
 
 export interface PlanAction {
   capabilityId: string;

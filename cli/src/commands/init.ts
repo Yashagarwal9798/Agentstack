@@ -17,8 +17,9 @@ import {
 import { runUpdate } from "../core/catalogSync.js";
 import { banner, box, kv, sym, theme } from "../core/ui.js";
 
-const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
-const STARTER_DIR = join(repoRoot, "starter");
+import { resolveStarterDir } from "../core/starterDir.js";
+
+const STARTER_DIR = resolveStarterDir() ?? join(dirname(fileURLToPath(import.meta.url)), "no-starter");
 
 const PROVIDERS = [
   { value: "groq", label: "Groq (free tier, fast)", baseURL: "https://api.groq.com/openai/v1", model: "llama-3.3-70b-versatile" },

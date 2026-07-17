@@ -15,10 +15,12 @@
     "smoke:phase2": "npm run build && tsx scripts/smoke-phase2.ts",
     "pipeline:collect": "npm run build && tsx pipeline/src/collect.ts",
     "pipeline:run": "npm run build && tsx pipeline/src/run.ts",
-    "test:recommender": "npm run build && tsx scripts/test-recommender.ts"
+    "test:recommender": "npm run build && tsx scripts/test-recommender.ts",
+    "build:npm": "npm run build && tsx scripts/build-npm.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
+    "esbuild": "^0.28.1",
     "tsx": "^4.19.0",
     "typescript": "^5.6.0"
   },
