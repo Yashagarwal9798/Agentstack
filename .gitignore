@@ -16,5 +16,6 @@ dist/
 .claude/
 skills-lock.json
 
-# transient pipeline debug output (cursors.json IS committed)
+# transient pipeline debug output (cursors.json and pending.json ARE committed)
 catalog/state/candidates.json
+catalog/state/*.log
