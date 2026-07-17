@@ -1,0 +1,245 @@
+{
+  "io.github.brilliantdirectories/brilliant-directories-mcp": {
+    "summary": "Official MCP server for Brilliant Directories sites: manage members, posts, leads, and reviews from an agent.",
+    "useWhen": ["automating a Brilliant Directories membership site", "managing directory members, leads, or reviews from a workflow"],
+    "doNotUseWhen": ["the project does not use Brilliant Directories"],
+    "categories": ["cms", "business-automation"],
+    "languages": [],
+    "permissions": ["network", "credentials"],
+    "localCloud": "cloud"
+  },
+  "io.github.copperline-labs/rendex-mcp": {
+    "summary": "Renders HTML, Markdown, or URLs into images, PDFs, and branded artifacts, with page extraction and watching, via the Rendex cloud API.",
+    "useWhen": ["generating PDFs or images from web content in an agent workflow", "extracting or monitoring page content as rendered output"],
+    "doNotUseWhen": ["documents must not be processed by a third-party cloud service"],
+    "categories": ["rendering", "documents"],
+    "languages": [],
+    "permissions": ["network", "credentials"],
+    "localCloud": "cloud"
+  },
+  "io.github.getnable/finops-mcp": {
+    "summary": "Local-first FinOps copilot that answers AWS, Azure, GCP, Kubernetes, and SaaS cost questions inside your editor.",
+    "useWhen": ["investigating cloud spend or cost anomalies during development", "asking cost questions about AWS/Azure/GCP/Kubernetes without leaving the editor"],
+    "doNotUseWhen": ["the project has no cloud infrastructure costs to analyze"],
+    "categories": ["cloud-costs", "devops"],
+    "languages": ["python"],
+    "permissions": ["network", "credentials"],
+    "localCloud": "hybrid"
+  },
+  "io.github.kivanccakmak/yaver": {
+    "summary": "Phone-first local development MCP for Claude Code and Codex: pair a mobile device, then run, build, and deploy from the agent.",
+    "useWhen": ["driving mobile app run/build/deploy loops from a coding agent", "testing on a paired physical phone during development"],
+    "doNotUseWhen": ["the project has no mobile component"],
+    "categories": ["mobile", "deployment", "devops"],
+    "languages": [],
+    "permissions": ["network", "credentials", "shell"],
+    "localCloud": "hybrid"
+  },
+  "io.github.webmyc/respira-wordpress": {
+    "summary": "WordPress management MCP with 200+ tools and 16 builders, context-aware filtering, and SafeEdit protection for site changes.",
+    "useWhen": ["managing or building WordPress sites from an agent", "bulk content operations on a WordPress installation"],
+    "doNotUseWhen": ["the project does not involve WordPress"],
+    "categories": ["cms", "content"],
+    "languages": ["php"],
+    "permissions": ["network", "credentials"],
+    "localCloud": "hybrid"
+  },
+  "io.usefulapi/betterstack": {
+    "summary": "Hosted MCP for Better Stack Uptime: monitors, incidents, heartbeats, on-call schedules, and status pages.",
+    "useWhen": ["managing uptime monitors or incidents from an agent workflow", "checking on-call and status-page state during operations work"],
+    "doNotUseWhen": ["the project does not use Better Stack", "operational data must not flow through a hosted third-party proxy"],
+    "categories": ["monitoring", "devops"],
+    "languages": [],
+    "permissions": ["network", "credentials"],
+    "localCloud": "cloud"
+  },
+  "io.usefulapi/fireworks": {
+    "summary": "Hosted MCP for Fireworks AI: manage models, deployments, datasets, and fine-tuning jobs.",
+    "useWhen": ["operating Fireworks AI deployments or fine-tuning jobs from an agent"],
+    "doNotUseWhen": ["the project does not use Fireworks AI"],
+    "categories": ["ai-models", "mlops"],
+    "languages": [],
+    "permissions": ["network", "credentials"],
+    "localCloud": "cloud"
+  },
+  "io.usefulapi/loops": {
+    "summary": "Hosted MCP for Loops: contacts, mailing lists, and transactional or event-driven email.",
+    "useWhen": ["automating email contacts, lists, or transactional sends via Loops"],
+    "doNotUseWhen": ["the project does not use Loops for email"],
+    "categories": ["email", "marketing"],
+    "languages": [],
+    "permissions": ["network", "credentials"],
+    "localCloud": "cloud"
+  },
+  "io.usefulapi/mixpanel": {
+    "summary": "Hosted MCP for Mixpanel: query events, funnels, retention, segmentation, and insights.",
+    "useWhen": ["querying product analytics (funnels, retention, segments) from an agent"],
+    "doNotUseWhen": ["the project does not use Mixpanel", "analytics data must not flow through a hosted third-party proxy"],
+    "categories": ["analytics", "product"],
+    "languages": [],
+    "permissions": ["network", "credentials"],
+    "localCloud": "cloud"
+  },
+  "io.usefulapi/uploadcare": {
+    "summary": "Hosted MCP for Uploadcare: upload and store files, manage groups and webhooks.",
+    "useWhen": ["managing file uploads and storage via Uploadcare from an agent"],
+    "doNotUseWhen": ["the project does not use Uploadcare", "files must remain on the local machine"],
+    "categories": ["file-storage", "media"],
+    "languages": [],
+    "permissions": ["network", "credentials"],
+    "localCloud": "cloud"
+  },
+  "skills/algorithmic-art/SKILL.md": {
+    "summary": "Creates original algorithmic and generative art with p5.js using seeded randomness, flow fields, particle systems, and interactive parameter exploration.",
+    "useWhen": ["the user asks for generative or algorithmic art built with code", "creating flow fields, particle systems, or parameterized visual sketches"],
+    "doNotUseWhen": ["a static designed image is wanted rather than code-driven art"],
+    "categories": ["creative", "frontend"],
+    "languages": ["javascript"],
+    "permissions": ["filesystem"],
+    "localCloud": "local"
+  },
+  "skills/brand-guidelines/SKILL.md": {
+    "summary": "Applies Anthropic's official brand colors and typography to artifacts that should carry Anthropic's look-and-feel.",
+    "useWhen": ["styling an artifact to match Anthropic brand standards"],
+    "doNotUseWhen": ["the artifact belongs to a different brand or needs a custom identity"],
+    "categories": ["design", "branding"],
+    "languages": [],
+    "permissions": [],
+    "localCloud": "local"
+  },
+  "skills/canvas-design/SKILL.md": {
+    "summary": "Creates original posters, art pieces, and static visual designs as PNG or PDF using a structured design philosophy.",
+    "useWhen": ["the user asks for a poster, artwork, or polished static visual"],
+    "doNotUseWhen": ["the output should be an interactive web page rather than a static design"],
+    "categories": ["design", "creative"],
+    "languages": ["python"],
+    "permissions": ["filesystem", "shell"],
+    "localCloud": "local"
+  },
+  "skills/claude-api/SKILL.md": {
+    "summary": "Authoritative reference for the Claude API and Anthropic SDK: model ids, pricing, parameters, streaming, tool use, MCP, agents, caching, and migration.",
+    "useWhen": ["writing or reviewing code that calls the Claude/Anthropic API", "answering model choice, pricing, or rate-limit questions for Claude"],
+    "doNotUseWhen": ["the project targets a different LLM provider exclusively"],
+    "categories": ["api", "documentation", "llm"],
+    "languages": ["python", "typescript"],
+    "permissions": [],
+    "localCloud": "local"
+  },
+  "skills/doc-coauthoring/SKILL.md": {
+    "summary": "Structured co-authoring workflow for documentation, proposals, technical specs, and decision docs, from context transfer to reader verification.",
+    "useWhen": ["writing documentation, specs, proposals, or decision docs collaboratively"],
+    "doNotUseWhen": ["the text is a quick one-off message rather than a structured document"],
+    "categories": ["documentation", "writing"],
+    "languages": [],
+    "permissions": [],
+    "localCloud": "local"
+  },
+  "skills/docx/SKILL.md": {
+    "summary": "Creates, reads, edits, and manipulates Word (.docx) documents including tables of contents, headings, page numbers, and letterheads.",
+    "useWhen": ["any task where a Word document is the input or output", "producing professional formatted documents"],
+    "doNotUseWhen": ["plain markdown or text output is sufficient"],
+    "categories": ["documents", "office"],
+    "languages": ["python"],
+    "permissions": ["filesystem", "shell"],
+    "localCloud": "local"
+  },
+  "skills/frontend-design/SKILL.md": {
+    "summary": "Design-lead guidance for distinctive, intentional UI: aesthetic direction, typography, and choices that avoid templated defaults.",
+    "useWhen": ["building new UI or reshaping an existing interface", "the project needs a distinctive visual identity without a designer"],
+    "doNotUseWhen": ["the project has no user interface"],
+    "categories": ["frontend", "design"],
+    "languages": ["javascript", "typescript", "css"],
+    "permissions": [],
+    "localCloud": "local"
+  },
+  "skills/internal-comms/SKILL.md": {
+    "summary": "Writes internal communications in company formats: status reports, leadership updates, newsletters, FAQs, and incident reports.",
+    "useWhen": ["drafting internal status updates, reports, or announcements"],
+    "doNotUseWhen": ["the audience is external (marketing, public docs)"],
+    "categories": ["writing", "communication"],
+    "languages": [],
+    "permissions": [],
+    "localCloud": "local"
+  },
+  "skills/mcp-builder/SKILL.md": {
+    "summary": "Guide for building high-quality MCP servers in Python (FastMCP) or TypeScript (MCP SDK), with tool design best practices.",
+    "useWhen": ["creating a new MCP server to integrate an external API or service", "reviewing an MCP server design for tool quality"],
+    "doNotUseWhen": ["an existing MCP server already covers the target service"],
+    "categories": ["mcp-development", "api"],
+    "languages": ["python", "typescript"],
+    "permissions": [],
+    "localCloud": "local"
+  },
+  "skills/pdf/SKILL.md": {
+    "summary": "Full PDF toolkit: extract text and tables, merge, split, rotate, watermark, fill forms, encrypt/decrypt, extract images, and OCR scanned documents.",
+    "useWhen": ["any task involving reading, creating, or transforming PDF files", "OCR of scanned documents or PDF form filling"],
+    "doNotUseWhen": ["the document format is not PDF"],
+    "categories": ["documents", "data-extraction"],
+    "languages": ["python"],
+    "permissions": ["filesystem", "shell"],
+    "localCloud": "local"
+  },
+  "skills/pptx/SKILL.md": {
+    "summary": "Creates, reads, edits, and combines PowerPoint (.pptx) presentations, including pitch decks and slide extraction.",
+    "useWhen": ["any task where a .pptx file is input or output", "building slide decks or extracting content from presentations"],
+    "doNotUseWhen": ["a document or web page fits better than slides"],
+    "categories": ["presentations", "office"],
+    "languages": ["python"],
+    "permissions": ["filesystem", "shell"],
+    "localCloud": "local"
+  },
+  "skills/skill-creator/SKILL.md": {
+    "summary": "Creates and improves Agent Skills: authoring from scratch, optimizing descriptions for triggering, and benchmarking skill performance.",
+    "useWhen": ["writing a new SKILL.md or improving an existing skill", "testing whether a skill triggers reliably"],
+    "doNotUseWhen": ["the task is using skills rather than authoring them"],
+    "categories": ["skill-development", "tooling"],
+    "languages": [],
+    "permissions": ["filesystem"],
+    "localCloud": "local"
+  },
+  "skills/slack-gif-creator/SKILL.md": {
+    "summary": "Creates animated GIFs optimized for Slack, with size constraints, validation tools, and animation concepts.",
+    "useWhen": ["the user asks for an animated GIF, especially for Slack"],
+    "doNotUseWhen": ["a static image or video is wanted"],
+    "categories": ["creative", "media"],
+    "languages": ["python"],
+    "permissions": ["filesystem", "shell"],
+    "localCloud": "local"
+  },
+  "skills/theme-factory/SKILL.md": {
+    "summary": "Styles artifacts (slides, docs, reports, landing pages) with 10 preset color/font themes or generates a new theme on the fly.",
+    "useWhen": ["applying a consistent visual theme to a generated artifact"],
+    "doNotUseWhen": ["the artifact must follow an existing brand system exactly"],
+    "categories": ["design", "theming"],
+    "languages": [],
+    "permissions": [],
+    "localCloud": "local"
+  },
+  "skills/web-artifacts-builder/SKILL.md": {
+    "summary": "Builds elaborate multi-component claude.ai HTML artifacts with React, Tailwind CSS, and shadcn/ui, including state management and routing.",
+    "useWhen": ["creating complex interactive artifacts needing components, state, or routing"],
+    "doNotUseWhen": ["a simple single-file HTML/JSX artifact is enough"],
+    "categories": ["frontend", "artifacts"],
+    "languages": ["typescript", "javascript", "css"],
+    "permissions": ["filesystem", "shell"],
+    "localCloud": "local"
+  },
+  "skills/webapp-testing/SKILL.md": {
+    "summary": "Tests local web applications with Python Playwright scripts: verifying frontend behavior, debugging UI, capturing screenshots and browser logs.",
+    "useWhen": ["verifying a web app change actually works in a browser", "debugging UI behavior or collecting browser console logs"],
+    "doNotUseWhen": ["the project is a pure library or CLI with no web surface"],
+    "categories": ["testing", "frontend", "browser-automation"],
+    "languages": ["python"],
+    "permissions": ["filesystem", "shell", "browser"],
+    "localCloud": "local"
+  },
+  "skills/xlsx/SKILL.md": {
+    "summary": "Reads, creates, edits, and converts spreadsheets (.xlsx, .xlsm, .csv, .tsv): formulas, formatting, charts, and data cleaning.",
+    "useWhen": ["any task where a spreadsheet is the primary input or output", "computing formulas, charting, or cleaning tabular data"],
+    "doNotUseWhen": ["the data is unstructured text rather than tabular"],
+    "categories": ["spreadsheets", "data", "office"],
+    "languages": ["python"],
+    "permissions": ["filesystem", "shell"],
+    "localCloud": "local"
+  }
+}

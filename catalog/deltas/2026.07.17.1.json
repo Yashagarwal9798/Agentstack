@@ -1,0 +1,1216 @@
+{
+  "version": "2026.07.17.1",
+  "createdAt": "2026-07-17T00:40:51.788Z",
+  "added": [
+    {
+      "id": "mcp:io.github.copperline-labs/rendex-mcp",
+      "name": "Rendex: Rendering API for Images, PDFs & Content Extraction",
+      "type": "mcp",
+      "summary": "Renders HTML, Markdown, or URLs into images, PDFs, and branded artifacts, with page extraction and watching, via the Rendex cloud API.",
+      "useWhen": [
+        "generating PDFs or images from web content in an agent workflow",
+        "extracting or monitoring page content as rendered output"
+      ],
+      "doNotUseWhen": [
+        "documents must not be processed by a third-party cloud service"
+      ],
+      "categories": [
+        "rendering",
+        "documents"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @copperline/rendex-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@copperline/rendex-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "RENDEX_API_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.8.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://rendex.dev",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "8b2d97878cf87c36dab4c8e01c0c175f3bd1605ded937fafd6c155b5f1ec2082",
+      "contentHash": "eccd1511bc67c693af494d4ca3efc8eba8fbc9843691f68480755d3e46183708"
+    },
+    {
+      "id": "mcp:io.github.getnable/finops-mcp",
+      "name": "nable",
+      "type": "mcp",
+      "summary": "Local-first FinOps copilot that answers AWS, Azure, GCP, Kubernetes, and SaaS cost questions inside your editor.",
+      "useWhen": [
+        "investigating cloud spend or cost anomalies during development",
+        "asking cost questions about AWS/Azure/GCP/Kubernetes without leaving the editor"
+      ],
+      "doNotUseWhen": [
+        "the project has no cloud infrastructure costs to analyze"
+      ],
+      "categories": [
+        "cloud-costs",
+        "devops"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "hybrid",
+      "version": "0.8.180",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://getnable.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "dbe60d91614413ebf74a928cba440437bdfba038b0b47966bc496a9587531038",
+      "contentHash": "a927fbf4977a05dcfb336d1b59c03025fc6e7d8a780e0aab92d969264e02bbca"
+    },
+    {
+      "id": "mcp:io.github.kivanccakmak/yaver",
+      "name": "Yaver",
+      "type": "mcp",
+      "summary": "Phone-first local development MCP for Claude Code and Codex: pair a mobile device, then run, build, and deploy from the agent.",
+      "useWhen": [
+        "driving mobile app run/build/deploy loops from a coding agent",
+        "testing on a paired physical phone during development"
+      ],
+      "doNotUseWhen": [
+        "the project has no mobile component"
+      ],
+      "categories": [
+        "mobile",
+        "deployment",
+        "devops"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials",
+        "shell"
+      ],
+      "installation": {
+        "command": "npx -y yaver-cli",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "yaver-cli"
+          ]
+        },
+        "requiredSecrets": [
+          "YAVER_HEADLESS"
+        ]
+      },
+      "localCloud": "hybrid",
+      "version": "1.99.309",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://yaver.io/docs/mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "9d136b3c47bb6e7eca23ac5c52c565af0391fe87e977d91e4d09ab3c005003f7",
+      "contentHash": "312383f3465e475a83dd223a26ad69ceca46d741bdb9f2e9abd630cd394668bf"
+    },
+    {
+      "id": "mcp:io.github.webmyc/respira-wordpress",
+      "name": "Respira WordPress MCP",
+      "type": "mcp",
+      "summary": "WordPress management MCP with 200+ tools and 16 builders, context-aware filtering, and SafeEdit protection for site changes.",
+      "useWhen": [
+        "managing or building WordPress sites from an agent",
+        "bulk content operations on a WordPress installation"
+      ],
+      "doNotUseWhen": [
+        "the project does not involve WordPress"
+      ],
+      "categories": [
+        "cms",
+        "content"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "php"
+      ],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @respira/wordpress-mcp-server",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@respira/wordpress-mcp-server"
+          ]
+        },
+        "requiredSecrets": [
+          "WORDPRESS_URL",
+          "WORDPRESS_API_KEY",
+          "RESPIRA_CONFIG_B64",
+          "RESPIRA_CONFIG_FILE"
+        ]
+      },
+      "localCloud": "hybrid",
+      "version": "7.5.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://respira.press",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "df53aedfd0e5d7927a16c0a2e9227f72950243d6f1ddeea49c5c89fb6172bf33",
+      "contentHash": "01d25cb5d736e070fb083aff312ad84b7d33b27137ff16b22e230aea2d017195"
+    },
+    {
+      "id": "mcp:io.usefulapi/betterstack",
+      "name": "io.usefulapi/betterstack",
+      "type": "mcp",
+      "summary": "Hosted MCP for Better Stack Uptime: monitors, incidents, heartbeats, on-call schedules, and status pages.",
+      "useWhen": [
+        "managing uptime monitors or incidents from an agent workflow",
+        "checking on-call and status-page state during operations work"
+      ],
+      "doNotUseWhen": [
+        "the project does not use Better Stack",
+        "operational data must not flow through a hosted third-party proxy"
+      ],
+      "categories": [
+        "monitoring",
+        "devops"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://betterstack.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "d5208dc4ac554dcd9743c7a0a737b99d05d4ce99f766a6ad9e8e035ee1b24c1c",
+      "contentHash": "47ce4e39c547e677696dc9fee1884ff475bc61f35ad8b4d452ca55a043535204"
+    },
+    {
+      "id": "mcp:io.usefulapi/fireworks",
+      "name": "io.usefulapi/fireworks",
+      "type": "mcp",
+      "summary": "Hosted MCP for Fireworks AI: manage models, deployments, datasets, and fine-tuning jobs.",
+      "useWhen": [
+        "operating Fireworks AI deployments or fine-tuning jobs from an agent"
+      ],
+      "doNotUseWhen": [
+        "the project does not use Fireworks AI"
+      ],
+      "categories": [
+        "ai-models",
+        "mlops"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://fireworks.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "9ff3a3318941c14cd4615f1700ddbfb712d8104055beead000a4c8f2b8d3577c",
+      "contentHash": "386d9f3f81c99b7bc34799228436e9cb78cf9436876e110fef5b010e8291f9f8"
+    },
+    {
+      "id": "mcp:io.usefulapi/loops",
+      "name": "io.usefulapi/loops",
+      "type": "mcp",
+      "summary": "Hosted MCP for Loops: contacts, mailing lists, and transactional or event-driven email.",
+      "useWhen": [
+        "automating email contacts, lists, or transactional sends via Loops"
+      ],
+      "doNotUseWhen": [
+        "the project does not use Loops for email"
+      ],
+      "categories": [
+        "email",
+        "marketing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://loops.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "0cc149c679fcfe1ad3f59ac23eee8dac24f793197affcf1f09a0caeef98cdc9c",
+      "contentHash": "68930663f72f2f17a855df6f409baeabdbd715699e952df2b284f47fa00c117c"
+    },
+    {
+      "id": "mcp:io.usefulapi/mixpanel",
+      "name": "io.usefulapi/mixpanel",
+      "type": "mcp",
+      "summary": "Hosted MCP for Mixpanel: query events, funnels, retention, segmentation, and insights.",
+      "useWhen": [
+        "querying product analytics (funnels, retention, segments) from an agent"
+      ],
+      "doNotUseWhen": [
+        "the project does not use Mixpanel",
+        "analytics data must not flow through a hosted third-party proxy"
+      ],
+      "categories": [
+        "analytics",
+        "product"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mixpanel.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "2dabd13d7472f1343d5ff5f3624405504f8317d0b7db18c13f02ad2af05c291f",
+      "contentHash": "8e6c09e4c4ed9102ac1a48ae15eaeaad1b6148fd11fa904c691cc698346dec0e"
+    },
+    {
+      "id": "mcp:io.usefulapi/uploadcare",
+      "name": "io.usefulapi/uploadcare",
+      "type": "mcp",
+      "summary": "Hosted MCP for Uploadcare: upload and store files, manage groups and webhooks.",
+      "useWhen": [
+        "managing file uploads and storage via Uploadcare from an agent"
+      ],
+      "doNotUseWhen": [
+        "the project does not use Uploadcare",
+        "files must remain on the local machine"
+      ],
+      "categories": [
+        "file-storage",
+        "media"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://uploadcare.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "aa47db5aad60bffe685122117524937d25ef8f36dc2076941a9ab1d36dee2f51",
+      "contentHash": "768c5859bc5d39626436b9a046ce562c6839a2c58aae423046317d12fa21a0df"
+    },
+    {
+      "id": "skill:anthropics/algorithmic-art",
+      "name": "algorithmic-art",
+      "type": "skill",
+      "summary": "Creates original algorithmic and generative art with p5.js using seeded randomness, flow fields, particle systems, and interactive parameter exploration.",
+      "useWhen": [
+        "the user asks for generative or algorithmic art built with code",
+        "creating flow fields, particle systems, or parameterized visual sketches"
+      ],
+      "doNotUseWhen": [
+        "a static designed image is wanted rather than code-driven art"
+      ],
+      "categories": [
+        "creative",
+        "frontend"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/algorithmic-art/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "c410f079b7ef11701b6acbe63b4a2219b392e0d801df540c9073d4342ef8cc1f",
+      "contentHash": "8972952b88c0601eac528315bf6ae0b00217dd7ba5c9557e6d2a15de165512a7"
+    },
+    {
+      "id": "skill:anthropics/brand-guidelines",
+      "name": "brand-guidelines",
+      "type": "skill",
+      "summary": "Applies Anthropic's official brand colors and typography to artifacts that should carry Anthropic's look-and-feel.",
+      "useWhen": [
+        "styling an artifact to match Anthropic brand standards"
+      ],
+      "doNotUseWhen": [
+        "the artifact belongs to a different brand or needs a custom identity"
+      ],
+      "categories": [
+        "design",
+        "branding"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/brand-guidelines/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "0c57c13262c4c1912fe569602fc1c1696426d529e83559fff10ca844cc5f867f",
+      "contentHash": "2c8d6f81eff76a087548e99d3f57c77edff0946d847369f41cc174cf7d5560b2"
+    },
+    {
+      "id": "skill:anthropics/canvas-design",
+      "name": "canvas-design",
+      "type": "skill",
+      "summary": "Creates original posters, art pieces, and static visual designs as PNG or PDF using a structured design philosophy.",
+      "useWhen": [
+        "the user asks for a poster, artwork, or polished static visual"
+      ],
+      "doNotUseWhen": [
+        "the output should be an interactive web page rather than a static design"
+      ],
+      "categories": [
+        "design",
+        "creative"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/canvas-design/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "7191ba6d6f3fbf0740a163adab74193c3efbe1641cf71ae5523b11729b8bdaee",
+      "contentHash": "5f042ab7b8fa6389a15f8277849587a63e669b5eb02ce7b60885e8a049416628"
+    },
+    {
+      "id": "skill:anthropics/claude-api",
+      "name": "claude-api",
+      "type": "skill",
+      "summary": "Authoritative reference for the Claude API and Anthropic SDK: model ids, pricing, parameters, streaming, tool use, MCP, agents, caching, and migration.",
+      "useWhen": [
+        "writing or reviewing code that calls the Claude/Anthropic API",
+        "answering model choice, pricing, or rate-limit questions for Claude"
+      ],
+      "doNotUseWhen": [
+        "the project targets a different LLM provider exclusively"
+      ],
+      "categories": [
+        "api",
+        "documentation",
+        "llm"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python",
+        "typescript"
+      ],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/claude-api/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "61444ed5a858ab2dbbb56e779d92afadc865a84ffef45f0db3b79c00196139e8",
+      "contentHash": "1ea12fca1e92b34b1dc0bcbbd4944e13035515d867da334d6304e9d949ee3e23"
+    },
+    {
+      "id": "skill:anthropics/doc-coauthoring",
+      "name": "doc-coauthoring",
+      "type": "skill",
+      "summary": "Structured co-authoring workflow for documentation, proposals, technical specs, and decision docs, from context transfer to reader verification.",
+      "useWhen": [
+        "writing documentation, specs, proposals, or decision docs collaboratively"
+      ],
+      "doNotUseWhen": [
+        "the text is a quick one-off message rather than a structured document"
+      ],
+      "categories": [
+        "documentation",
+        "writing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/doc-coauthoring/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "e7336e7b6849b9ec57cdaa307961bac6fa3862d11bec735cad613a7b5ed93971",
+      "contentHash": "f2501dd3332b92e79955eccf4141e9ca2d7d3c0d2f13766a713e9015bd17ffad"
+    },
+    {
+      "id": "skill:anthropics/docx",
+      "name": "docx",
+      "type": "skill",
+      "summary": "Creates, reads, edits, and manipulates Word (.docx) documents including tables of contents, headings, page numbers, and letterheads.",
+      "useWhen": [
+        "any task where a Word document is the input or output",
+        "producing professional formatted documents"
+      ],
+      "doNotUseWhen": [
+        "plain markdown or text output is sufficient"
+      ],
+      "categories": [
+        "documents",
+        "office"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/docx/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "eff48c0a30fe6c13a94e8d991e268d78d9bd31eda9b8ccad0e77de78eb497821",
+      "contentHash": "73f7bbda35468c2f05ca64289a7bb4d120c65cfdf3d63b7104012fc6f0ccb226"
+    },
+    {
+      "id": "skill:anthropics/frontend-design",
+      "name": "frontend-design",
+      "type": "skill",
+      "summary": "Design-lead guidance for distinctive, intentional UI: aesthetic direction, typography, and choices that avoid templated defaults.",
+      "useWhen": [
+        "building new UI or reshaping an existing interface",
+        "the project needs a distinctive visual identity without a designer"
+      ],
+      "doNotUseWhen": [
+        "the project has no user interface"
+      ],
+      "categories": [
+        "frontend",
+        "design"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript",
+        "typescript",
+        "css"
+      ],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "cce60801f562f5525180d8633d0918b9d750e7987ced32d8bfa6902bf698816d",
+      "contentHash": "e0161170ba852a146f34b5bdcad8981f844499611eaac40bb078551626d5f4b5"
+    },
+    {
+      "id": "skill:anthropics/internal-comms",
+      "name": "internal-comms",
+      "type": "skill",
+      "summary": "Writes internal communications in company formats: status reports, leadership updates, newsletters, FAQs, and incident reports.",
+      "useWhen": [
+        "drafting internal status updates, reports, or announcements"
+      ],
+      "doNotUseWhen": [
+        "the audience is external (marketing, public docs)"
+      ],
+      "categories": [
+        "writing",
+        "communication"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/internal-comms/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "ef983fc855cef0e12bb47bf70016a72f62858f21aea9114dffd7352e0545b817",
+      "contentHash": "31b3bcaf4bddb3dce638a80a4b79efe5879d356c8a2790fe0661e2534660c5c5"
+    },
+    {
+      "id": "skill:anthropics/mcp-builder",
+      "name": "mcp-builder",
+      "type": "skill",
+      "summary": "Guide for building high-quality MCP servers in Python (FastMCP) or TypeScript (MCP SDK), with tool design best practices.",
+      "useWhen": [
+        "creating a new MCP server to integrate an external API or service",
+        "reviewing an MCP server design for tool quality"
+      ],
+      "doNotUseWhen": [
+        "an existing MCP server already covers the target service"
+      ],
+      "categories": [
+        "mcp-development",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python",
+        "typescript"
+      ],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/mcp-builder/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "861d79973f098aba185d0311126f65f95967103a7264be484c871f7ebb88fa64",
+      "contentHash": "fa22907c4c60c76c76912f42e11a7bca82635cbebc76974867372c7f5299d5a8"
+    },
+    {
+      "id": "skill:anthropics/pdf",
+      "name": "pdf",
+      "type": "skill",
+      "summary": "Full PDF toolkit: extract text and tables, merge, split, rotate, watermark, fill forms, encrypt/decrypt, extract images, and OCR scanned documents.",
+      "useWhen": [
+        "any task involving reading, creating, or transforming PDF files",
+        "OCR of scanned documents or PDF form filling"
+      ],
+      "doNotUseWhen": [
+        "the document format is not PDF"
+      ],
+      "categories": [
+        "documents",
+        "data-extraction"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "40ecccf531856c31f4007f6c98ab7733a8453e57b43ae897477561b44cd234d4",
+      "contentHash": "f6e6d309b7f8a49158cb030fd3998b0b968546f328651fd6ef6d70f030633caf"
+    },
+    {
+      "id": "skill:anthropics/pptx",
+      "name": "pptx",
+      "type": "skill",
+      "summary": "Creates, reads, edits, and combines PowerPoint (.pptx) presentations, including pitch decks and slide extraction.",
+      "useWhen": [
+        "any task where a .pptx file is input or output",
+        "building slide decks or extracting content from presentations"
+      ],
+      "doNotUseWhen": [
+        "a document or web page fits better than slides"
+      ],
+      "categories": [
+        "presentations",
+        "office"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/pptx/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "3040073f0b40ada63a42511a17dfa64e88a349df3f8ff466bbaad83add1edb7b",
+      "contentHash": "f5e0d87250852ff4881193c2e2ebf8ee3dc338e31fe2beb91bb13379912a28ce"
+    },
+    {
+      "id": "skill:anthropics/skill-creator",
+      "name": "skill-creator",
+      "type": "skill",
+      "summary": "Creates and improves Agent Skills: authoring from scratch, optimizing descriptions for triggering, and benchmarking skill performance.",
+      "useWhen": [
+        "writing a new SKILL.md or improving an existing skill",
+        "testing whether a skill triggers reliably"
+      ],
+      "doNotUseWhen": [
+        "the task is using skills rather than authoring them"
+      ],
+      "categories": [
+        "skill-development",
+        "tooling"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "43d56e2959a38008d6e931819107b344ab6cc590ec941f14a002c9b32d65e5c8",
+      "contentHash": "9c944d0d92aa5b33c9f6d2aee0d0a9382a812ef3d4dc7549dff632e05f10d538"
+    },
+    {
+      "id": "skill:anthropics/slack-gif-creator",
+      "name": "slack-gif-creator",
+      "type": "skill",
+      "summary": "Creates animated GIFs optimized for Slack, with size constraints, validation tools, and animation concepts.",
+      "useWhen": [
+        "the user asks for an animated GIF, especially for Slack"
+      ],
+      "doNotUseWhen": [
+        "a static image or video is wanted"
+      ],
+      "categories": [
+        "creative",
+        "media"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/slack-gif-creator/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "ca0720fe296ca43243e9619983c0f8424d91dfcecd6760ca48181b63b0cfb608",
+      "contentHash": "e496d0c597b4e0302af9cfa83762d90e69203e18b50ba2b3062842475d2756ef"
+    },
+    {
+      "id": "skill:anthropics/theme-factory",
+      "name": "theme-factory",
+      "type": "skill",
+      "summary": "Styles artifacts (slides, docs, reports, landing pages) with 10 preset color/font themes or generates a new theme on the fly.",
+      "useWhen": [
+        "applying a consistent visual theme to a generated artifact"
+      ],
+      "doNotUseWhen": [
+        "the artifact must follow an existing brand system exactly"
+      ],
+      "categories": [
+        "design",
+        "theming"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/theme-factory/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "5b715d3f0c59affe8f57b89beb3716e73f9d49aa0f523d45c76e8f130506f01f",
+      "contentHash": "41d65bbb9183f48a4555a0b771f85a49814d1eff712f78049ad128fd19d5dbad"
+    },
+    {
+      "id": "skill:anthropics/web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "type": "skill",
+      "summary": "Builds elaborate multi-component claude.ai HTML artifacts with React, Tailwind CSS, and shadcn/ui, including state management and routing.",
+      "useWhen": [
+        "creating complex interactive artifacts needing components, state, or routing"
+      ],
+      "doNotUseWhen": [
+        "a simple single-file HTML/JSX artifact is enough"
+      ],
+      "categories": [
+        "frontend",
+        "artifacts"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "typescript",
+        "javascript",
+        "css"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/web-artifacts-builder/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "cf5fbca9a26444794150e2c34110ec93d7fa497ed9d38b2251e0a5beff30f8a3",
+      "contentHash": "f86d232a927c211a4bc8670ac154b794daa36a8e0b8e1491f97624f8d09acb97"
+    },
+    {
+      "id": "skill:anthropics/webapp-testing",
+      "name": "webapp-testing",
+      "type": "skill",
+      "summary": "Tests local web applications with Python Playwright scripts: verifying frontend behavior, debugging UI, capturing screenshots and browser logs.",
+      "useWhen": [
+        "verifying a web app change actually works in a browser",
+        "debugging UI behavior or collecting browser console logs"
+      ],
+      "doNotUseWhen": [
+        "the project is a pure library or CLI with no web surface"
+      ],
+      "categories": [
+        "testing",
+        "frontend",
+        "browser-automation"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell",
+        "browser"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/webapp-testing/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "b6452c97de87ff0b9a6de028be028b054c6bee8c21224cca2ccced80d63acf04",
+      "contentHash": "83d4a7a21e34feb0aa7971e922a3080c46f9e2d7f9508ba9fe203c89463ef1e2"
+    },
+    {
+      "id": "skill:anthropics/xlsx",
+      "name": "xlsx",
+      "type": "skill",
+      "summary": "Reads, creates, edits, and converts spreadsheets (.xlsx, .xlsm, .csv, .tsv): formulas, formatting, charts, and data cleaning.",
+      "useWhen": [
+        "any task where a spreadsheet is the primary input or output",
+        "computing formulas, charting, or cleaning tabular data"
+      ],
+      "doNotUseWhen": [
+        "the data is unstructured text rather than tabular"
+      ],
+      "categories": [
+        "spreadsheets",
+        "data",
+        "office"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "main",
+      "status": "active",
+      "trust": "official",
+      "sources": [
+        {
+          "url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+          "kind": "repo"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "f62084b76127908114f40f1dea599f7f2bca79e13feda6941f02aaf25e5ea9a1",
+      "contentHash": "3bb95d9837f7c5692c8c8611d7999a912223e5f59670a6001ba227a455384565"
+    }
+  ],
+  "updated": [
+    {
+      "id": "mcp:io.github.brilliantdirectories/brilliant-directories-mcp",
+      "name": "io.github.brilliantdirectories/brilliant-directories-mcp",
+      "type": "mcp",
+      "summary": "Official MCP server for Brilliant Directories sites: manage members, posts, leads, and reviews from an agent.",
+      "useWhen": [
+        "automating a Brilliant Directories membership site",
+        "managing directory members, leads, or reviews from a workflow"
+      ],
+      "doNotUseWhen": [
+        "the project does not use Brilliant Directories"
+      ],
+      "categories": [
+        "cms",
+        "business-automation"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y brilliant-directories-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "brilliant-directories-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "BD_API_KEY",
+          "BD_SITE_URL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "6.58.223",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/brilliantdirectories/brilliant-directories-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-17",
+      "sourceHash": "8d761ac0b687fc6d52471cf364c0dc6aa5dfd04d96e17eba8d7a379952908daa",
+      "contentHash": "382c2d984f2e4520d36b7d37177c60394ced63485f0942c086b56ab762ee6789"
+    }
+  ],
+  "deprecated": []
+}

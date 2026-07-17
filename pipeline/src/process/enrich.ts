@@ -45,7 +45,7 @@ interface RegistryRemote {
 }
 
 /** Deterministic parts of a registry card (no LLM). */
-function registrySkeleton(c: RawCandidate) {
+export function registrySkeleton(c: RawCandidate) {
   const versionMatch = c.body.match(/Version: (\S+)/);
   let packages: RegistryPackage[] = [];
   let remotes: RegistryRemote[] = [];
@@ -85,7 +85,7 @@ function registrySkeleton(c: RawCandidate) {
 }
 
 /** Deterministic parts of a skills-repo card (no LLM). */
-function skillSkeleton(c: RawCandidate) {
+export function skillSkeleton(c: RawCandidate) {
   const fm = c.body.match(/^---\s*\n([\s\S]*?)\n---/);
   const name = fm?.[1]?.match(/^name:\s*(.+)$/m)?.[1]?.trim() ?? c.title;
   return {
