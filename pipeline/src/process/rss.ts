@@ -4,8 +4,10 @@ import { z } from "zod";
 import { chatJson, CapabilityCard, type LlmSettings } from "@agentstack/shared";
 import type { RawCandidate } from "../types.js";
 import { sourceHashOf } from "./enrich.js";
+import { withTimeout } from "../util.js";
 
 const CLASSIFY_BATCH = 15;
+const BATCH_TIMEOUT_MS = 5 * 60 * 1000;
 
 // Models often return a bare array instead of {items: [...]} — accept both.
 const Classification = z.preprocess(
@@ -74,7 +76,7 @@ Return per item: externalId (copy exactly), relevant (bool), type (mcp/skill/cli
 
 ${listing}`;
     try {
-      const result = await chatJson(prompt, Classification, llm);
+      const result = await withTimeout(chatJson(prompt, Classification, llm), BATCH_TIMEOUT_MS, "rss classify batch");
       const byId = new Map(result.items.map((r) => [r.externalId, r]));
       for (const c of batch) {
         const r = byId.get(c.externalId);
@@ -104,7 +106,7 @@ ${listing}`;
       continue;
     }
     try {
-      const extracted = await chatJson(
+      const extracted = await withTimeout(chatJson(
         `Extract a capability card for this ${type} announced on Hacker News. Use ONLY facts in the evidence; unknown stays conservative.
 Also return: namespace (author/org, lowercase, from the URL if possible), shortName (tool name, lowercase, hyphenated), installCommand if explicitly stated.
 
@@ -114,7 +116,7 @@ text: ${candidate.body.slice(0, 2000)}
 official URL: ${url}`,
         Extraction,
         llm,
-      );
+      ), BATCH_TIMEOUT_MS, "rss extract");
       const card = CapabilityCard.safeParse({
         id: `${type}:${extracted.namespace}/${extracted.shortName}`,
         name: extracted.name,

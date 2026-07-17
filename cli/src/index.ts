@@ -7,6 +7,7 @@ import { initCommand } from "./commands/init.js";
 import { updateCommand } from "./commands/update.js";
 import { discoveriesCommand } from "./commands/discoveries.js";
 import { inspectCommand } from "./commands/inspect.js";
+import { projectInitCommand } from "./commands/projectInit.js";
 
 // Dev convenience: pick up .env.local from the repo root when present.
 // (index.js lives at cli/dist/ — two levels below the repo root, unlike core/.)
@@ -42,6 +43,17 @@ program
   .description("full capability card with provenance and risk summary")
   .argument("<id>", "capability id (or a unique fragment of it)")
   .action(inspectCommand);
+
+const project = program.command("project").description("project-scoped commands");
+project
+  .command("init")
+  .description("profile this project (idea prompts + light scan) for recommendations")
+  .option("--goal <text>", "project description (skips prompts)")
+  .option("--stack <text>", "preferred stack")
+  .option("--constraints <text>", "hard constraints")
+  .option("--stage <stage>", "idea | early | active | maintenance")
+  .option("-y, --yes", "skip confirmations")
+  .action(projectInitCommand);
 
 program.parseAsync().catch((err) => {
   console.error(String(err instanceof Error ? err.message : err));

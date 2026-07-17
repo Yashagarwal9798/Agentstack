@@ -4,6 +4,19 @@
 
 ---
 
+## Phase 6 — Project loop I: profile + scan + adapter ✅ (2026-07-17)
+
+**What was built**
+- `cli/src/adapters/claudeCode.ts` — the `AgentAdapter` interface + Claude Code implementation: `skillsDir` (.claude/skills), `instructionFile` (CLAUDE.md), `mcpConfigPath` (.mcp.json), `renderMcpEntry(card)` (mcpConfig fragment + server key from id tail), `detectInstalled` (skill dirs with SKILL.md + mcpServers keys; BOM/parse tolerant). Only agent-specific file — Cursor/Codex = new adapter.
+- `cli/src/core/profiler.ts` — `lightScan(root, catalog)` (package.json/requirements.txt deps capped at 25, README first 100 lines, detectInstalled with **raw-name → catalog-id resolution** via id-tail/mcp-key match), `buildProfile` (answers + scan evidence → LLM → zod, privacy constraints inferred from wording), `profileNarrative` for the Supermemory twin.
+- `cli/src/commands/projectInit.ts` — prompts (or `--goal/--stack/--constraints/--stage/--yes` flags for scripting), overwrite confirm on existing profile, boxed profile display with warn-colored privacy constraints, triple persistence (project.json / registry / `project_<slug>` container).
+
+**Verification:** scratch project seeded with `.mcp.json` (playwright) + react/electron/ts package.json + README → `project init --goal … --yes` → scan detected 4 deps + resolved the server to `mcp:microsoft/playwright-mcp` (marked "will not be re-recommended"); LLM produced slug `pdf-chat-electron`, typed privacy + platform constraints; all three persistence spots verified on disk.
+
+**Notes for Phase 7:** the scratch project at scratchpad/pdf-chat-test is ready-made "project A" input. `profile.alreadyInstalled[].id` may be a raw name (unresolvable detections) — recommend's hard filter must match both ids and raw names.
+
+---
+
 ## Phase 5 — CLI: init, update, discoveries, inspect ✅ (2026-07-17)
 
 **What was built**

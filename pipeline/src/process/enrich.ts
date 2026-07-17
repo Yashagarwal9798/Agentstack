@@ -6,8 +6,10 @@ import { createHash } from "node:crypto";
 import { z } from "zod";
 import { chatJson, CapabilityCard, type LlmSettings } from "@agentstack/shared";
 import type { RawCandidate } from "../types.js";
+import { withTimeout } from "../util.js";
 
 const BATCH_SIZE = 10;
+const BATCH_TIMEOUT_MS = 5 * 60 * 1000;
 
 // Models often return a bare array instead of {items: [...]} — accept both.
 const Enrichment = z.preprocess(
@@ -128,8 +130,10 @@ Do not invent facts not implied by the description. If unsure about a field, be 
 
 ${listing}`;
 
+    const batchNo = Math.floor(i / BATCH_SIZE) + 1;
+    const batchTotal = Math.ceil(candidates.length / BATCH_SIZE);
     try {
-      const result = await chatJson(prompt, Enrichment, llm);
+      const result = await withTimeout(chatJson(prompt, Enrichment, llm), BATCH_TIMEOUT_MS, `enrich batch ${batchNo}`);
       const byId = new Map(result.items.map((i) => [i.externalId, i]));
       for (const c of batch) {
         const enriched = byId.get(c.externalId);
@@ -155,10 +159,12 @@ ${listing}`;
         if (card.success) cards.push(card.data);
         else failures.push(`${c.externalId}: ${card.error.issues[0]?.message ?? "schema error"}`);
       }
+      console.log(`  enrich batch ${batchNo}/${batchTotal} done (${cards.length} cards so far)`);
     } catch (err) {
-      // Whole-batch failure is transient (LLM shape/rate) — retry next run.
+      // Whole-batch failure is transient (LLM shape/rate/hang) — retry next run.
       for (const c of batch) failures.push(`${c.externalId}: batch failed — ${String(err).slice(0, 120)}`);
       requeue.push(...batch);
+      console.log(`  enrich batch ${batchNo}/${batchTotal} FAILED (requeued): ${String(err).slice(0, 100)}`);
     }
   }
 

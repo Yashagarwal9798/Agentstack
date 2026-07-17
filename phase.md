@@ -124,14 +124,14 @@
 **Goal:** A project can describe itself; existing installs are detected so they're never re-recommended.
 **Source of truth:** architecture.md §2.5, §1.4 (AgentAdapter); prd.md §6.1 (project init).
 
-- [ ] `adapters/claudeCode.ts`: full `AgentAdapter` — paths, `renderMcpEntry()`, `detectInstalled()` (reads `.claude/skills/*` + `.mcp.json`)
-- [ ] `profiler.ts`: @clack prompts (goal, stack, constraints, stage) + light scan (package.json / requirements.txt / README head / detectInstalled) → LLM → zod `ProjectProfile` → user confirms/edits
-- [ ] Persist: `<project>/.agentstack/project.json` + registry entry + narrative dual-write to `project_<slug>`
-- [ ] `project init` command wiring
+- [x] `adapters/claudeCode.ts`: full `AgentAdapter` — paths, `renderMcpEntry()`, `detectInstalled()` (reads `.claude/skills/*` + `.mcp.json`)
+- [x] `profiler.ts`: prompts (goal, stack, constraints, stage; `--goal` flags for scripting) + light scan (package.json / requirements.txt / README head / detectInstalled with catalog-id resolution) → LLM → zod `ProjectProfile`
+- [x] Persist: `<project>/.agentstack/project.json` + registry entry + narrative dual-write to `project_<slug>`
+- [x] `project init` command wiring (commander subcommand)
 
 **Done when:** running `project init` in a scratch project with a pre-seeded `.mcp.json` produces a confirmed profile whose `alreadyInstalled` lists the seeded server; profile exists in all three places (project JSON, registry, Supermemory).
 **Not in this phase:** ranking, apply.
-**Notes:** —
+**Notes:** ✅ Done 2026-07-17. Scratch run: seeded `.mcp.json` (playwright) + package.json (react/electron/ts) → scan resolved raw server key to `mcp:microsoft/playwright-mcp`; LLM typed the privacy constraint correctly; slug `pdf-chat-electron`; all three persistence spots verified. This scratch project doubles as "project A" material for Phase 9.
 
 ---
 
