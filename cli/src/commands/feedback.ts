@@ -24,12 +24,19 @@ export async function feedbackCommand(opts: Opts): Promise<void> {
   const verdicts: Array<{ id: string; verdict: "useful" | "not_useful"; note?: string }> = [];
 
   if (opts.verdict && opts.verdict.length > 0) {
+    const lockIds = new Set(lock.capabilities.map((c) => c.id));
     for (const spec of opts.verdict) {
       const eq = spec.indexOf("=");
-      if (eq === -1) continue;
-      const id = spec.slice(0, eq);
-      const [v, ...note] = spec.slice(eq + 1).split(":");
-      if (v !== "useful" && v !== "not_useful") continue;
+      const id = eq === -1 ? "" : spec.slice(0, eq);
+      const [v, ...note] = eq === -1 ? [""] : spec.slice(eq + 1).split(":");
+      if (eq === -1 || (v !== "useful" && v !== "not_useful")) {
+        console.log(`  ${sym.warn} bad --verdict "${spec.slice(0, 60)}" — expected <id>=useful|not_useful[:note], skipped`);
+        continue;
+      }
+      if (!lockIds.has(id)) {
+        console.log(`  ${sym.warn} "${id}" is not in this project's stack lock — skipped`);
+        continue;
+      }
       verdicts.push({ id, verdict: v, note: note.join(":") || undefined });
     }
   } else {

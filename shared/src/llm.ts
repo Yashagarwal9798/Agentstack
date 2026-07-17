@@ -19,40 +19,63 @@ export async function chat(prompt: string, settings: LlmSettings, system?: strin
     { role: "user", content: prompt },
   ];
   // Free tiers throw transient 429/5xx under load — retry with backoff and
-  // honor Retry-After on rate limits (Groq's 6k TPM sends it).
+  // honor Retry-After on rate limits. Thrown fetches (network reset, abort
+  // timeout — our most-observed failure mode) are retryable too.
+  const MAX_ATTEMPTS = 6;
   let lastError = "";
   let backoff = 5000;
-  for (let attempt = 0; attempt < 6; attempt++) {
-    const res = await fetch(`${settings.baseURL}/chat/completions`, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${settings.apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ model: settings.model, messages }),
-      signal: AbortSignal.timeout(120_000),
-    });
-    if (res.ok) {
-      const data = (await res.json()) as ChatResponse;
-      const content = data.choices[0]?.message.content;
-      if (typeof content !== "string") throw new Error("LLM response had no message content");
-      return content;
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+    let waitMs = backoff;
+    try {
+      const res = await fetch(`${settings.baseURL}/chat/completions`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${settings.apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ model: settings.model, messages }),
+        signal: AbortSignal.timeout(120_000),
+      });
+      if (res.ok) {
+        const data = (await res.json()) as ChatResponse;
+        const content = data.choices[0]?.message.content;
+        if (typeof content !== "string") throw new Error("LLM response had no message content");
+        return content;
+      }
+      const body = await res.text().catch(() => "");
+      lastError = `HTTP ${res.status} ${body.slice(0, 300)}`;
+      if (res.status !== 429 && res.status < 500) break; // non-retryable
+      const retryAfter = Number(res.headers.get("retry-after"));
+      if (Number.isFinite(retryAfter) && retryAfter > 0) waitMs = Math.min(retryAfter * 1000 + 1000, 90_000);
+    } catch (err) {
+      if (err instanceof Error && err.message === "LLM response had no message content") throw err;
+      lastError = `network: ${String(err).slice(0, 200)}`;
     }
-    const body = await res.text().catch(() => "");
-    lastError = `HTTP ${res.status} ${body.slice(0, 300)}`;
-    if (res.status !== 429 && res.status < 500) break; // non-retryable
-    const retryAfter = Number(res.headers.get("retry-after"));
-    const waitMs = Number.isFinite(retryAfter) && retryAfter > 0 ? Math.min(retryAfter * 1000 + 1000, 90_000) : backoff;
     backoff = Math.min(backoff * 2, 60_000);
-    await new Promise((r) => setTimeout(r, waitMs));
+    if (attempt < MAX_ATTEMPTS - 1) await new Promise((r) => setTimeout(r, waitMs)); // no dead sleep after the final attempt
   }
   throw new Error(`LLM request failed after retries: ${lastError}`);
 }
 
-/** Strip markdown fences some models wrap around JSON. */
-function extractJson(text: string): string {
-  const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/);
-  return (fenced?.[1] ?? text).trim();
+/** All plausible JSON payloads in a response: every fenced block, then the
+ *  fence-stripped text, then the raw text. Models often quote the OLD broken
+ *  JSON in one fence and the corrected version in another. */
+function jsonCandidates(text: string): string[] {
+  const fences = [...text.matchAll(/```(?:json)?\s*([\s\S]*?)```/g)].map((m) => m[1]!.trim());
+  return [...fences, text.replace(/```(?:json)?/g, "").trim(), text.trim()];
+}
+
+function parseFirstJson(text: string): unknown {
+  let lastErr: unknown;
+  for (const candidate of jsonCandidates(text)) {
+    if (!candidate) continue;
+    try {
+      return JSON.parse(candidate);
+    } catch (err) {
+      lastErr = err;
+    }
+  }
+  throw lastErr ?? new Error("no JSON candidates found");
 }
 
 /**
@@ -76,7 +99,7 @@ export async function chatJson<S extends z.ZodTypeAny>(
   for (let attempt = 0; attempt < 2; attempt++) {
     let parsed: unknown;
     try {
-      parsed = JSON.parse(extractJson(raw));
+      parsed = parseFirstJson(raw);
     } catch (err) {
       parsed = undefined;
       if (attempt === 1) throw new Error(`LLM returned unparseable JSON: ${String(err)}`);

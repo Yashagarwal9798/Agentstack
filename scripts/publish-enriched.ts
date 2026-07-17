@@ -33,6 +33,10 @@ const leftover: typeof pending = [];
 let failed = 0;
 
 for (const candidate of pending) {
+  if (candidate.source === "rss") {
+    leftover.push(candidate); // rss items need classify/verify — never skeleton-published
+    continue;
+  }
   const enrichment = enrichments[candidate.externalId];
   if (!enrichment) {
     leftover.push(candidate); // no judgment supplied — stays queued for the cron
@@ -62,8 +66,10 @@ const result = canonicalize(loadCatalog(), cards);
 const release = publishRelease(result.capabilities, result.added, result.updated, []);
 if (release) {
   console.log(`RELEASE ${release.version}: +${release.addedCount} added, ~${release.updatedCount} updated`);
-  savePending(leftover);
-  console.log(`pending queue now ${leftover.length}`);
 } else {
-  console.log("nothing to release");
+  console.log("nothing to release (all unchanged)");
 }
+// Consumed candidates leave the queue either way — otherwise "unchanged" items
+// would be reprocessed on every future run.
+savePending(leftover);
+console.log(`pending queue now ${leftover.length}`);

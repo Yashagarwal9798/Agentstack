@@ -36,17 +36,25 @@ export async function recommendCommand(): Promise<void> {
   const catalog = loadLocalCatalog();
   const config = loadConfig();
 
-  s.start("Searching the catalog semantically");
-  const hits = await memory.searchCatalog(buildQuery(profile), 30);
-  s.stop(`${sym.ok} ${hits.length} semantic hits across ${new Set(hits.map((h) => h.capabilityId)).size} capabilities`);
+  let hits: Awaited<ReturnType<typeof memory.searchCatalog>>;
+  let experience: Awaited<ReturnType<typeof memory.searchExperience>>;
+  try {
+    s.start("Searching the catalog semantically");
+    hits = await memory.searchCatalog(buildQuery(profile), 30);
+    s.stop(`${sym.ok} ${hits.length} semantic hits across ${new Set(hits.map((h) => h.capabilityId)).size} capabilities`);
 
-  s.start("Retrieving your past experience");
-  const experience = await memory.searchExperience(profileNarrative(profile), 8);
-  s.stop(
-    experience.length > 0
-      ? `${sym.ok} ${experience.length} relevant experience memories found`
-      : `${sym.ok} no past experience yet ${theme.dim("(first project?)")}`,
-  );
+    s.start("Retrieving your past experience");
+    experience = await memory.searchExperience(profileNarrative(profile), 8);
+    s.stop(
+      experience.length > 0
+        ? `${sym.ok} ${experience.length} relevant experience memories found`
+        : `${sym.ok} no past experience yet ${theme.dim("(first project?)")}`,
+    );
+  } catch (err) {
+    s.stop(`${sym.err} Supermemory search failed`);
+    p.cancel(String(err instanceof Error ? err.message : err));
+    process.exit(1);
+  }
 
   s.start("Ranking (deterministic gates + scores, then LLM)");
   const result = await recommend({

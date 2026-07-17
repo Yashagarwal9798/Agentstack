@@ -5,6 +5,14 @@
 - **LLM provider: Gemini** (user's key in `.env.local`), OpenAI-compat endpoint, model `gemini-flash-latest` (`gemini-2.5-flash` is closed to new API users). Still provider-agnostic via env/config.
 - **Phase 3 sources:** skills repo = `anthropics/skills`; RSS = `https://hnrss.org/newest?q=MCP&count=30` (noisy by design for the classifier; adapter retries transient 502s). Swap by editing one constant in each adapter.
 
+## Known issues deferred from the 2026-07-17 bug scan (low risk, post-hackathon)
+
+- Skill ids derive from the leaf directory name only (`skill:anthropics/<dir>`) — two SKILL.md files in different parent paths with the same leaf name would collide into one card.
+- GitHub compare API caps changed-file lists at ~300 entries; a massive push to the skills repo could silently miss some SKILL.md changes. A force-push that removes the cursor SHA from history 404s until `catalog/state/cursors.json` is hand-reset.
+- `publish-enriched.ts` has no sourceHash skip (unlike run.ts) — harmless (canonicalize drops unchanged) but wastes operator effort.
+- `init` resolves starter content repo-relatively; guarded now (graceful skip outside a checkout), but npm distribution should bundle `starter/` inside the cli package.
+- RSS items held for review (0.5–0.8 confidence) leave the queue; the audit trail is the now-committed `catalog/state/review.log`, but there's no automated re-processing of held items.
+
 ## Open decisions
 
 - [ ] **LLM provider + API key** (Gemini / OpenAI / Anthropic) — user decides at testing time. Build is provider-agnostic (OpenAI-compatible client); switching = config/env change only. **No local model (Ollama) in v1.**

@@ -31,6 +31,10 @@ const catalog = loadCatalog();
 // --- 1. collect --------------------------------------------------------------
 const outcome = await collectAll(loadCursors());
 for (const f of outcome.failures) console.error(`  source FAILED: ${f.source}: ${f.error}`);
+if (outcome.failures.length === 3) {
+  console.error("all sources failed — aborting so CI shows red instead of a silent no-op");
+  process.exit(1);
+}
 let queue = enqueue(loadPending(), outcome.candidates);
 console.log(`collected ${outcome.candidates.length} new; queue now ${queue.length}`);
 

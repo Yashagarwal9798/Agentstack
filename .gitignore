@@ -16,6 +16,6 @@ dist/
 .claude/
 skills-lock.json
 
-# transient pipeline debug output (cursors.json and pending.json ARE committed)
+# transient pipeline debug output (cursors.json and pending.json ARE committed;
+# failure/review logs are committed too — they're the audit trail on CI runners)
 catalog/state/candidates.json
-catalog/state/*.log

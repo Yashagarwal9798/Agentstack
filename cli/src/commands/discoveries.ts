@@ -13,6 +13,12 @@ export function discoveriesCommand(opts: { since?: string }): void {
     return;
   }
 
+  if (opts.since && !history.some((r) => r.version === opts.since)) {
+    p.cancel(
+      `version "${opts.since}" is not in your applied history — known versions: ${history.slice(-5).map((r) => r.version).join(", ")}`,
+    );
+    process.exit(1);
+  }
   const slice = opts.since
     ? history.slice(history.findIndex((r) => r.version === opts.since) + 1)
     : [history[history.length - 1]!];

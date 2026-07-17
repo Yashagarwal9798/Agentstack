@@ -32,7 +32,15 @@ export const claudeCode: AgentAdapter = {
     const cfg = card.installation.mcpConfig;
     if (!cfg) return null;
     const key = card.id.split("/").pop() ?? card.id;
-    return { key, entry: cfg as Record<string, unknown> };
+    // Translate registry vocabulary → Claude Code's .mcp.json vocabulary:
+    // remote transport is "http" (not "streamable-http"), and the registry's
+    // `headers` array is descriptor metadata, not real header values.
+    const entry = { ...(cfg as Record<string, unknown>) };
+    if (typeof entry.type === "string") {
+      if (entry.type === "streamable-http") entry.type = "http";
+      delete entry.headers;
+    }
+    return { key, entry };
   },
 
   detectInstalled(root) {

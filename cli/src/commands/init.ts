@@ -100,19 +100,30 @@ export async function initCommand(opts: { yes?: boolean }): Promise<void> {
 
   // --- starter catalog ------------------------------------------------------------
   s.start("Importing starter catalog");
-  const starter = Catalog.parse(JSON.parse(readFileSync(join(STARTER_DIR, "catalog.json"), "utf8")));
-  const mirror = loadLocalCatalog();
-  const byId = new Map(mirror.capabilities.map((c) => [c.id, c]));
-  let imported = 0;
-  for (const card of starter.capabilities) {
-    if (!byId.has(card.id)) {
-      byId.set(card.id, card); // never overwrite live catalog cards with starter data
-      imported++;
+  const starterPath = join(STARTER_DIR, "catalog.json");
+  if (!existsSync(starterPath)) {
+    // Installed outside the repo checkout — the live catalog sync below still
+    // gives a full catalog; starter content is only a cold-start convenience.
+    s.stop(`${sym.warn} Starter content not found ${theme.dim("(running outside a repo checkout — the catalog sync below covers it)")}`);
+  } else {
+    try {
+      const starter = Catalog.parse(JSON.parse(readFileSync(starterPath, "utf8")));
+      const mirror = loadLocalCatalog();
+      const byId = new Map(mirror.capabilities.map((c) => [c.id, c]));
+      let imported = 0;
+      for (const card of starter.capabilities) {
+        if (!byId.has(card.id)) {
+          byId.set(card.id, card); // never overwrite live catalog cards with starter data
+          imported++;
+        }
+        await memory.upsertCard(byId.get(card.id)!);
+      }
+      saveLocalCatalog({ ...mirror, capabilities: [...byId.values()] });
+      s.stop(`${sym.ok} Starter catalog imported ${theme.dim(`(${imported} new of ${starter.capabilities.length} cards)`)}`);
+    } catch (err) {
+      s.stop(`${sym.warn} Starter import failed ${theme.dim(String(err instanceof Error ? err.message : err).slice(0, 80))}`);
     }
-    await memory.upsertCard(byId.get(card.id)!);
   }
-  saveLocalCatalog({ ...mirror, capabilities: [...byId.values()] });
-  s.stop(`${sym.ok} Starter catalog imported ${theme.dim(`(${imported} new of ${starter.capabilities.length} cards)`)}`);
 
   // --- bundled core skills ----------------------------------------------------------
   const skillNames = ["project-planning", "root-cause-debugging", "verification-before-completion"];
@@ -129,8 +140,10 @@ export async function initCommand(opts: { yes?: boolean }): Promise<void> {
   }
   const skillsDir = join(homedir(), ".claude", "skills");
   for (const name of chosen) {
+    const src = join(STARTER_DIR, "skills", name);
+    if (!existsSync(src)) continue; // no bundled content outside the checkout
     mkdirSync(join(skillsDir, name), { recursive: true });
-    cpSync(join(STARTER_DIR, "skills", name), join(skillsDir, name), { recursive: true });
+    cpSync(src, join(skillsDir, name), { recursive: true });
   }
   if (chosen.length > 0) {
     p.log.success(`${sym.ok} ${chosen.length} core skill(s) installed to ${theme.dim(skillsDir)}`);

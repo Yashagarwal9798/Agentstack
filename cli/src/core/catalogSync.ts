@@ -31,7 +31,8 @@ export const GITHUB_CATALOG_BASE = "https://raw.githubusercontent.com/Yashagarwa
 export function resolveCatalogBase(config: Config): string {
   const fromEnv = process.env.AGENTSTACK_CATALOG_BASE;
   if (fromEnv) return fromEnv;
-  if (config.catalogManifestUrl) return config.catalogManifestUrl;
+  // Accept either a base URL or (as the field name suggests) the manifest URL itself.
+  if (config.catalogManifestUrl) return config.catalogManifestUrl.replace(/\/(catalog\/)?manifest\.json$/i, "");
   if (existsSync(join(repoRoot, "catalog", "manifest.json"))) return repoRoot;
   return GITHUB_CATALOG_BASE;
 }

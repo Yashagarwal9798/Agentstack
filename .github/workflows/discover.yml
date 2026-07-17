@@ -25,6 +25,10 @@ jobs:
 
       - run: npm ci
 
+      # @agentstack/shared resolves to its dist/ build (gitignored) — without
+      # this step every import dies with ERR_MODULE_NOT_FOUND on a fresh runner.
+      - run: npm run build
+
       - name: Run discovery pipeline
         env:
           AGENTSTACK_LLM_BASE_URL: ${{ secrets.AGENTSTACK_LLM_BASE_URL }}

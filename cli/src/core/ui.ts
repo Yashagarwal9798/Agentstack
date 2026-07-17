@@ -77,7 +77,7 @@ export function box(title: string, lines: string[]): string {
   const width = Math.max(strip(title).length, ...lines.map((l) => strip(l).length)) + 2;
   const top = `${pc.dim("╭─")} ${pc.bold(title)} ${pc.dim("─".repeat(Math.max(0, width - strip(title).length - 2)) + "╮")}`;
   const body = lines.map((l) => `${pc.dim("│")} ${l}${" ".repeat(Math.max(0, width - strip(l).length))}${pc.dim("│")}`);
-  const bottom = pc.dim(`╰${"─".repeat(width + 2)}╯`);
+  const bottom = pc.dim(`╰${"─".repeat(width + 1)}╯`);
   return [top, ...body, bottom].join("\n");
 }
 

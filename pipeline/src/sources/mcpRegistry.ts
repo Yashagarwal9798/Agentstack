@@ -71,17 +71,19 @@ export async function collectMcpRegistry(
 
   const candidates: RawCandidate[] = [...byName.values()].map(({ entry }) => {
     const s = entry.server;
+    // Truncate the free-text description only — never the structural lines
+    // (Version/Remotes/Packages) that enrichment parses back out.
     const bodyParts = [
-      s.description ?? "",
+      (s.description ?? "").slice(0, 3000),
       s.version ? `Version: ${s.version}` : "",
-      s.remotes ? `Remotes: ${JSON.stringify(s.remotes)}` : "",
-      s.packages ? `Packages: ${JSON.stringify(s.packages)}` : "",
+      s.remotes ? `Remotes: ${JSON.stringify(s.remotes).slice(0, 1500)}` : "",
+      s.packages ? `Packages: ${JSON.stringify(s.packages).slice(0, 1500)}` : "",
     ].filter(Boolean);
     return {
       source: "mcp-registry" as const,
       externalId: s.name,
       title: s.title ?? s.name,
-      body: bodyParts.join("\n").slice(0, 6000),
+      body: bodyParts.join("\n"),
       url: s.websiteUrl ?? s.repository?.url ?? `${BASE}/v0/servers?search=${encodeURIComponent(s.name)}`,
       fetchedAt,
     };

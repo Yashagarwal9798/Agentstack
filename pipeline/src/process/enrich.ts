@@ -46,14 +46,15 @@ interface RegistryRemote {
 
 /** Deterministic parts of a registry card (no LLM). */
 export function registrySkeleton(c: RawCandidate) {
-  const versionMatch = c.body.match(/Version: (\S+)/);
+  // Anchored to line starts: descriptions may themselves contain "Version: …".
+  const versionMatch = c.body.match(/^Version: (\S+)$/m);
   let packages: RegistryPackage[] = [];
   let remotes: RegistryRemote[] = [];
   try {
-    packages = JSON.parse(c.body.match(/Packages: (\[.*?\])$/m)?.[1] ?? "[]") as RegistryPackage[];
+    packages = JSON.parse(c.body.match(/^Packages: (\[.*\])$/m)?.[1] ?? "[]") as RegistryPackage[];
   } catch { /* malformed source JSON — treat as none */ }
   try {
-    remotes = JSON.parse(c.body.match(/Remotes: (\[.*?\])$/m)?.[1] ?? "[]") as RegistryRemote[];
+    remotes = JSON.parse(c.body.match(/^Remotes: (\[.*\])$/m)?.[1] ?? "[]") as RegistryRemote[];
   } catch { /* malformed source JSON — treat as none */ }
 
   const npm = packages.find((p) => p.registryType === "npm" && p.identifier);
@@ -138,7 +139,10 @@ ${listing}`;
       for (const c of batch) {
         const enriched = byId.get(c.externalId);
         if (!enriched) {
+          // Model output varies run to run — requeue instead of losing the item
+          // forever (the source cursor has already advanced past it).
           failures.push(`${c.externalId}: missing from enrichment response`);
+          requeue.push(c);
           continue;
         }
         const skeleton = c.source === "mcp-registry" ? registrySkeleton(c) : skillSkeleton(c);
@@ -156,8 +160,12 @@ ${listing}`;
           lastChecked: now,
           sourceHash: sourceHashOf(c),
         });
-        if (card.success) cards.push(card.data);
-        else failures.push(`${c.externalId}: ${card.error.issues[0]?.message ?? "schema error"}`);
+        if (card.success) {
+          cards.push(card.data);
+        } else {
+          failures.push(`${c.externalId}: ${card.error.issues[0]?.message ?? "schema error"}`);
+          requeue.push(c);
+        }
       }
       console.log(`  enrich batch ${batchNo}/${batchTotal} done (${cards.length} cards so far)`);
     } catch (err) {

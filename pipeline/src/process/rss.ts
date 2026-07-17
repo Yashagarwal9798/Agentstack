@@ -145,10 +145,15 @@ official URL: ${url}`,
         lastChecked: now,
         sourceHash: sourceHashOf(candidate),
       });
-      if (card.success) outcome.cards.push(card.data);
-      else outcome.failures.push(`${candidate.externalId}: ${card.error.issues[0]?.message ?? "schema error"}`);
+      if (card.success) {
+        outcome.cards.push(card.data);
+      } else {
+        outcome.failures.push(`${candidate.externalId}: ${card.error.issues[0]?.message ?? "schema error"}`);
+        outcome.requeue.push(candidate);
+      }
     } catch (err) {
       outcome.failures.push(`${candidate.externalId}: extract failed — ${String(err).slice(0, 120)}`);
+      outcome.requeue.push(candidate);
     }
   }
 

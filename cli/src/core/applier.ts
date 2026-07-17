@@ -212,25 +212,41 @@ export async function executePlan(
     applied.push(card);
   }
 
+  // Cumulative stack: capabilities applied in EARLIER runs stay in the lock
+  // and the CLAUDE.md section — recommend hard-filters installed items, so a
+  // second apply must never erase the first one's record.
+  const lockPath = join(root, ".agentstack", "stack.lock.json");
+  const prevLock = existsSync(lockPath)
+    ? (JSON.parse(readFileSync(lockPath, "utf8")) as StackLock)
+    : null;
+  const appliedIds = new Set(applied.map((c) => c.id));
+  const carried = (prevLock?.capabilities ?? []).filter((c) => !appliedIds.has(c.id));
+  const carriedCards = carried
+    .map((c) => cardById.get(c.id))
+    .filter((c): c is CapabilityCard => Boolean(c));
+  const fullStack = [...carriedCards, ...applied];
+
   const claudePath = adapter.instructionFile(root);
-  upsertClaudeMd(claudePath, claudeMdSection(profile, applied));
+  upsertClaudeMd(claudePath, claudeMdSection(profile, fullStack));
   written.push(claudePath);
 
   const aiStackPath = join(root, "AI_STACK.md");
-  writeFileSync(aiStackPath, aiStackMd(profile, recommendation, applied, rejectedByUser), "utf8");
+  writeFileSync(aiStackPath, aiStackMd(profile, recommendation, fullStack, rejectedByUser), "utf8");
   written.push(aiStackPath);
 
   const lock: StackLock = {
     catalogRelease: recommendation.catalogRelease,
-    capabilities: applied.map((c) => ({
-      id: c.id,
-      version: c.version,
-      installedAs: c.type === "skill" ? "skill" : "mcp-config",
-      approvedAt: new Date().toISOString(),
-      source: c.sources[0]?.url ?? "",
-    })),
+    capabilities: [
+      ...carried,
+      ...applied.map((c) => ({
+        id: c.id,
+        version: c.version,
+        installedAs: (c.type === "skill" ? "skill" : "mcp-config") as "skill" | "mcp-config",
+        approvedAt: new Date().toISOString(),
+        source: c.sources[0]?.url ?? "",
+      })),
+    ],
   };
-  const lockPath = join(root, ".agentstack", "stack.lock.json");
   mkdirSync(dirname(lockPath), { recursive: true });
   writeFileSync(lockPath, JSON.stringify(lock, null, 2) + "\n", "utf8");
   written.push(lockPath);

@@ -116,6 +116,8 @@ export async function applyCommand(opts: Opts): Promise<void> {
     root,
     appliedAt: new Date().toISOString(),
     catalogRelease: recommendation.catalogRelease,
+    // `capabilities` is the shape update/inspect read for "installed where" checks.
+    capabilities: [...approvedIds].map((id) => ({ id })),
     approved: [...approvedIds],
     rejected: rejectedByUser,
     files: written,

@@ -1,7 +1,7 @@
 // Immutable catalog releases: catalog.json (full), deltas/<version>.json,
 // manifest.json with sha256 checksums. No changes ⇒ no release.
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { Catalog, Manifest, type CapabilityCard, type Delta } from "@agentstack/shared";
@@ -61,13 +61,16 @@ export function publishRelease(
   // Validate everything we publish (defense before the wire).
   Catalog.parse({ version, updatedAt: now.toISOString(), capabilities });
 
+  // Atomic writes (tmp + rename): a crash mid-write must not leave a corrupt
+  // or inconsistent catalog state that a later run would commit.
+  const writeAtomic = (path: string, content: string) => {
+    const tmp = `${path}.tmp`;
+    writeFileSync(tmp, content, "utf8");
+    renameSync(tmp, path);
+  };
   mkdirSync(DELTAS_DIR, { recursive: true });
-  writeFileSync(join(DELTAS_DIR, `${version}.json`), deltaJson, "utf8");
-  writeFileSync(
-    CATALOG_PATH,
-    JSON.stringify({ version, updatedAt: now.toISOString(), capabilities }, null, 2) + "\n",
-    "utf8",
-  );
+  writeAtomic(join(DELTAS_DIR, `${version}.json`), deltaJson);
+  writeAtomic(CATALOG_PATH, JSON.stringify({ version, updatedAt: now.toISOString(), capabilities }, null, 2) + "\n");
   manifest.releases.push({
     version,
     deltaPath: `catalog/deltas/${version}.json`,
@@ -75,7 +78,7 @@ export function publishRelease(
     createdAt: now.toISOString(),
   });
   manifest.latestVersion = version;
-  writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + "\n", "utf8");
+  writeAtomic(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + "\n");
 
   return { version, addedCount: added.length, updatedCount: updated.length, deprecatedCount: deprecated.length };
 }
