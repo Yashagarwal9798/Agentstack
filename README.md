@@ -79,20 +79,27 @@ All memory lives in **Supermemory Local** on `http://localhost:6767` — storage
 
 **Prerequisites:** Node ≥ 22 · [Supermemory Local](https://supermemory.ai/docs/self-hosting/quickstart) running (`npx supermemory local` — on Windows it installs into WSL) · one OpenAI-compatible LLM key (Groq's free tier works great).
 
-```bash
-git clone https://github.com/Yashagarwal9798/Agentstack.git
-cd Agentstack
-npm install && npm run build
+### Install from npm (recommended)
 
-# environment (or enter interactively during init)
-export SUPERMEMORY_API_KEY=sm_...            # printed when the server starts
+```bash
+npm install -g agentstack-radar     # or run ad hoc: npx agentstack-radar <command>
+
+export SUPERMEMORY_API_KEY=sm_...   # printed when the supermemory server starts
 export AGENTSTACK_LLM_BASE_URL=https://api.groq.com/openai/v1
 export AGENTSTACK_LLM_MODEL=llama-3.3-70b-versatile
 export AGENTSTACK_LLM_API_KEY=gsk_...
 
-alias agentstack="node $(pwd)/cli/dist/index.js"
-
 agentstack init            # connect memory, import starter catalog, sync the live catalog
+```
+
+### Or run from source
+
+```bash
+git clone https://github.com/Yashagarwal9798/Agentstack.git
+cd Agentstack
+npm install && npm run build
+alias agentstack="node $(pwd)/cli/dist/index.js"
+agentstack init
 ```
 
 Then the loop, inside any project directory:
