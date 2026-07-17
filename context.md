@@ -4,6 +4,20 @@
 
 ---
 
+## Phases 7–9 — recommend, apply/feedback, hero proof ✅ (2026-07-17)
+
+**Phase 7 (recommend):** `recommender.ts` two-path core (semantic retrieve → hydrate → reasoned hard gates → PRD-weighted score → Path 1 feedback deltas → LLM rerank with Path 2 memories; contract enforced in code, deterministic fallback). 8/8 unit tests. Live run: privacy gates + already-installed + deprecated all fired. memoryInfluence junk-filter (only when memories retrieved, ≥20 chars).
+
+**Phase 8 (apply/feedback):** `applier.ts` plan/execute; skills copied from bundle or fetched from GitHub raw (text only); `.mcp.json` merge idempotent; CLAUDE.md managed section (begin/end markers, 1 section after re-apply); AI_STACK.md + stack.lock.json; stale-recommendation refusal; decisions + verdicts dual-written (installs/*.json + feedback.json + `experience` narratives). **Bug fixed:** `--reject` must match plan ids, not split on `:` (capability ids contain colons).
+
+**Phase 9 (hero proof):** A=pdf-chat-electron: recommend (frontend-design #1, score 71) → apply (reject DojoGenesis w/ reason) → feedback (frontend-design not_useful). B=field-notes-app (therapist journaling, privacy worded entirely differently): **frontend-design ABSENT from B's stack (Path 1 across projects ✔)**, 5 cloud tools gated ✔. Path 2 citations pending the supermemory ingest recovery (below). Clean-slate adapted: full wipe skipped (catalog re-ingest infeasible on free tiers) — feedback reset + targeted `documents.delete` cleanup instead.
+
+**⚠ SUPERMEMORY INCIDENT (read before demo):** the server's "memory agent" (doc → searchable memories) failed all day: first Gemini-native calls from WSL began stalling >10s against a 10s internal timeout (`GEMINI_FETCH_TIMEOUT_MS`); after provider switch, discovered via logging proxy that the agent defaults to model `gpt-5.1` and needs OpenAI-style tool calling. **Working config found:** `~/.supermemory/env` (WSL) = `OPENAI_BASE_URL=https://openrouter.ai/api/v1`, user's OpenRouter key, `OPENAI_MODEL/FAST_MODEL/TEXT_MODEL=meta-llama/llama-3.3-70b-instruct:free` (typewriter test indexed ✔; small gpt-oss-20b:free fumbled complex docs → 0 memories). Facts: plaintext env is consumed into env.enc at boot; identical content is deduped against dead docs (re-seed with different wording); doc pickup lag ~7 min; agent ~1–2 min/doc; OpenRouter free tier ≈ 50 req/day — don't waste on test docs. `pkill -f supermemory-server` self-matches the invoking shell — use `pkill -f "supermemory-serve[r]"`.
+
+**Key rotation after hackathon:** Groq key surfaced in a process listing; OpenRouter key pasted in chat + stored in WSL env. Rotate both.
+
+---
+
 ## Phase 6 — Project loop I: profile + scan + adapter ✅ (2026-07-17)
 
 **What was built**

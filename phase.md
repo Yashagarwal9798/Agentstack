@@ -157,16 +157,16 @@
 **Goal:** Recommendations become files; every decision and verdict becomes memory. The loop closes.
 **Source of truth:** architecture.md §2.7–§2.8; prd.md §6.3, §7.2.
 
-- [ ] `applier.ts` PLAN (pure): skill copies, `.mcp.json` merge, CLAUDE.md marked-section update, AI_STACK.md, stack.lock.json, executable-steps checklist — with risk summaries
-- [ ] `--dry-run` renders the plan and stops; interactive run: per-item approve/reject → EXECUTE file writes only
-- [ ] Refuse stale `recommendation.json` (catalog release moved)
-- [ ] Decision capture: every accept/reject dual-written (local record + `experience` narrative with reason)
-- [ ] `feedback`: list from stack.lock → y/n (+why) per item → dual-write (feedback.json + `experience`)
-- [ ] Idempotency: re-running `apply` doesn't duplicate `.mcp.json` entries or CLAUDE.md sections
+- [x] `applier.ts` PLAN (pure): skill copies (bundled or fetched from source repo), `.mcp.json` merge, CLAUDE.md marked-section update, AI_STACK.md, stack.lock.json, executable-steps checklist — with risk summaries
+- [x] `--dry-run` renders the plan and stops; interactive per-item approve/reject (+ `--yes` / `--reject <id:reason>` for scripting) → EXECUTE file writes only
+- [x] Refuse stale `recommendation.json` (catalog release moved)
+- [x] Decision capture: every accept/reject dual-written (local record + `experience` narrative with reason)
+- [x] `feedback`: list from stack.lock → y/n (+why) per item (+ `--verdict` flags) → dual-write (feedback.json + `experience`)
+- [x] Idempotency: re-running `apply` doesn't duplicate `.mcp.json` entries or CLAUDE.md sections (verified: 1 section before and after re-apply)
 
 **Done when:** in a scratch project: dry-run shows the plan, apply writes exactly the approved files (diff-verified), lock file records versions+release, and Supermemory `experience` contains the decision + feedback narratives (verified via search).
 **Not in this phase:** README, demo.
-**Notes:** —
+**Notes:** ✅ Done 2026-07-17. Dry-run showed risks/secrets checklist; apply wrote 3 skills (2 fetched from GitHub raw, 1 bundled) + CLAUDE.md/AI_STACK.md/stack.lock; DojoGenesis rejected with reason. Bug found+fixed: `--reject` parsing vs colons in capability ids. Decision/feedback narratives written to `experience` (indexing is slow — see supermemory incident in context.md).
 
 ---
 
@@ -175,16 +175,16 @@
 **Goal:** Verify the judging-critical claim: project B's recommendation visibly changes because of project A — through the real commands only, nothing hand-seeded.
 **Source of truth:** prd.md §3 (hero), §14 criterion 5; architecture.md §2.6.
 
-- [ ] Clean slate: wipe `~/.agentstack/` + Supermemory data; fresh `init` + `update`
-- [ ] Project A (e.g. privacy-first Electron PDF chat): `project init` → `recommend` → `apply` (reject a cloud item with a privacy reason, accept others) → `feedback` (mark one item not useful)
-- [ ] Project B (different domain, *differently worded* privacy need): `project init` → `recommend`
-- [ ] Assert: the not-useful capability is demoted/absent (Path 1); a cloud candidate is excluded/demoted with an explanation citing project A's experience in words that differ from the stored text (Path 2, semantic retrieval on display)
-- [ ] Capture terminal output/recordings of both recommends — raw material for the demo video
-- [ ] Fix whatever this exposes (prompt tuning for explanations is expected here); note fixes
+- [x] Clean slate: feedback.json reset, polluted experience docs deleted via documents API, scratch project regenerated (full Supermemory wipe skipped deliberately — re-ingesting 194 catalog cards through the rate-limited memory agent is infeasible; catalog is public knowledge, identical for every user)
+- [x] Project A (privacy-first Electron PDF chat): `project init` → `recommend` (frontend-design #1) → `apply --yes --reject DojoGenesis:reason` → `feedback` (frontend-design not_useful, 2 useful)
+- [x] Project B (therapist journaling app, privacy worded as "patient confidentiality… nothing to third-party services"): `project init` → `recommend`
+- [x] Assert Path 1: **frontend-design absent from B's stack** (was #1 in A's near-identical stack — the not_useful verdict crossed projects). Privacy gates blocked 5 cloud tools under the fresh wording.
+- [~] Path 2 citation: decision/feedback narratives are written to `experience`, but server-side indexing (memory agent) was in outage most of the day (see context.md); citations pending ingest. memoryInfluence junk-filter added (only accepted when memories were actually retrieved).
+- [x] Terminal outputs captured in transcript; bug fixed along the way (--reject colon parsing)
 
 **Done when:** the A→B run works from clean slate using only real commands, and the B output explicitly references A's experience. This is the demo's climax working for real.
 **Not in this phase:** video editing, submission.
-**Notes:** —
+**Notes:** ✅ Core proof done 2026-07-17: B's recommendation visibly changed by A's feedback via Path 1, using only real commands. Path 2 explanation-citation depends on supermemory ingest recovering (provider now OpenRouter llama-3.3-70b:free); re-run B's `recommend` before demo recording to check if citations appear.
 
 ---
 

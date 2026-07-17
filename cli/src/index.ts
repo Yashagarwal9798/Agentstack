@@ -9,6 +9,8 @@ import { discoveriesCommand } from "./commands/discoveries.js";
 import { inspectCommand } from "./commands/inspect.js";
 import { projectInitCommand } from "./commands/projectInit.js";
 import { recommendCommand } from "./commands/recommend.js";
+import { applyCommand } from "./commands/apply.js";
+import { feedbackCommand } from "./commands/feedback.js";
 
 // Dev convenience: pick up .env.local from the repo root when present.
 // (index.js lives at cli/dist/ — two levels below the repo root, unlike core/.)
@@ -49,6 +51,20 @@ program
   .command("recommend")
   .description("build a minimal explained capability stack for this project")
   .action(recommendCommand);
+
+program
+  .command("apply")
+  .description("apply the latest recommendation — file writes only, after approval")
+  .option("--dry-run", "preview every change without touching anything")
+  .option("-y, --yes", "approve all items (except --reject)")
+  .option("--reject <id[:reason]>", "reject a capability with an optional reason (repeatable)", (v: string, acc: string[]) => [...acc, v], [] as string[])
+  .action(applyCommand);
+
+program
+  .command("feedback")
+  .description("end-of-project review: was each installed capability useful?")
+  .option("--verdict <id=useful|not_useful[:note]>", "scripted verdict (repeatable)", (v: string, acc: string[]) => [...acc, v], [] as string[])
+  .action(feedbackCommand);
 
 const project = program.command("project").description("project-scoped commands");
 project

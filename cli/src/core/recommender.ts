@@ -187,7 +187,15 @@ Return {"recommended": [{id, explanation, memoryInfluence?}], "rejected": [{id, 
     const match = byId.get(item.id);
     if (!match || seen.has(item.id) || recommended.length >= 6) continue;
     seen.add(item.id);
-    recommended.push({ id: match.card.id, score: match.score, explanation: item.explanation, memoryInfluence: item.memoryInfluence });
+    // memoryInfluence is only meaningful when memories were actually supplied;
+    // models otherwise stuff junk ("low", "n/a") into the optional field.
+    const influence = item.memoryInfluence?.trim();
+    recommended.push({
+      id: match.card.id,
+      score: match.score,
+      explanation: item.explanation,
+      memoryInfluence: experienceMemories.length > 0 && influence && influence.length >= 20 ? influence : undefined,
+    });
   }
   for (const item of raw.rejected) {
     const match = byId.get(item.id);
