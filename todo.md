@@ -9,6 +9,8 @@
 
 - [ ] **LLM provider + API key** (Gemini / OpenAI / Anthropic) — user decides at testing time. Build is provider-agnostic (OpenAI-compatible client); switching = config/env change only. **No local model (Ollama) in v1.**
 - [ ] Confirm hackathon deadline/timezone + active Google Form link in latest Discord announcement.
+- [ ] **Flip GitHub repo to PUBLIC before submission** (hackathon rule 4). This also activates the raw-URL catalog source for users (`GITHUB_CATALOG_BASE` in catalogSync.ts — verified 404 while private, fetch path proven) and lets the Actions cron badge/discoveries be judged.
+- [ ] Add Actions secrets on GitHub (Settings → Secrets → Actions): `AGENTSTACK_LLM_BASE_URL`, `AGENTSTACK_LLM_MODEL`, `AGENTSTACK_LLM_API_KEY` — the daily discover.yml cron needs them.
 - [ ] Demo video script — deferred until after the build (arc proposal exists in grilling transcript).
 - [ ] Regenerate the 3 spec diagrams (AgentStack_Radar_assets) to match locked v1 decisions before README/Phase 10: 3 sources not 4, git-JSON catalog not Postgres, sha256 checksums not signatures, refresh folded into recommend, apply = file writes only.
 

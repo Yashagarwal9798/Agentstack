@@ -20,16 +20,20 @@ import type { Memory } from "./memory.js";
 /** Repo root when running from the monorepo (cli/{src,dist}/core → 3 up). */
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 
+/** Published catalog location — works for anonymous users once the repo is public. */
+export const GITHUB_CATALOG_BASE = "https://raw.githubusercontent.com/Yashagarwal9798/Agentstack/main";
+
 /**
  * Where catalog releases come from. Precedence: env > config > local repo
- * checkout (dev) — the GitHub raw URL becomes the default at ship time.
+ * checkout (dev/operator machines get the freshest data) > GitHub raw URL
+ * (the default for everyone who installed the CLI without a checkout).
  */
 export function resolveCatalogBase(config: Config): string {
   const fromEnv = process.env.AGENTSTACK_CATALOG_BASE;
   if (fromEnv) return fromEnv;
   if (config.catalogManifestUrl) return config.catalogManifestUrl;
   if (existsSync(join(repoRoot, "catalog", "manifest.json"))) return repoRoot;
-  throw new Error("No catalog source configured. Set AGENTSTACK_CATALOG_BASE or run `agentstack init`.");
+  return GITHUB_CATALOG_BASE;
 }
 
 async function fetchText(base: string, relPath: string): Promise<string> {
