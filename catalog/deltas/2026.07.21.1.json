@@ -1,0 +1,4753 @@
+{
+  "version": "2026.07.21.1",
+  "createdAt": "2026-07-21T06:17:12.866Z",
+  "added": [
+    {
+      "id": "mcp:io.github.shofer-dev/live-memory",
+      "name": "io.github.shofer-dev/live-memory",
+      "type": "mcp",
+      "summary": "Provides persistent, read-only codebase memory for Claude Code.",
+      "useWhen": [
+        "retrieving codebase information",
+        "avoiding file re-reading",
+        "improving code completion"
+      ],
+      "doNotUseWhen": [
+        "modifying codebase",
+        "writing files"
+      ],
+      "categories": [
+        "memory",
+        "docs",
+        "codebase"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.6.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/shofer-dev/claude-code-live-memory",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "389dc951ab921b099e0f954f98459db8c14525374b7f7d856cfee669c2556fe8",
+      "contentHash": "0bf0728497169c4444509159b669ecffcd253acf7c335b5424e25da7400ac5f5"
+    },
+    {
+      "id": "mcp:io.github.solhammer/agent-toolbox",
+      "name": "Agent Toolbox",
+      "type": "mcp",
+      "summary": "Offers 26 deterministic, offline pre-action safety gates for AI agents.",
+      "useWhen": [
+        "ensuring agent safety",
+        "pre-action checks",
+        "offline operations"
+      ],
+      "doNotUseWhen": [
+        "online operations"
+      ],
+      "categories": [
+        "safety",
+        "offline",
+        "agents"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "command": "npx -y agentoolbox-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "agentoolbox-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://agent-toolbox.ai",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "cced210d164f1c898b56c6741f603a71e2896b492e7954ceb54e13f33cb74f73",
+      "contentHash": "e9d506169317b98ff5180c7527733e0afe1d87005c07c3ab31bba61f83052fe4"
+    },
+    {
+      "id": "mcp:io.github.talktosims/sage-infinite-search",
+      "name": "SAGE Infinite Search",
+      "type": "mcp",
+      "summary": "Finds rare products at independent retailers using source-backed searches.",
+      "useWhen": [
+        "product research",
+        "independent retailers",
+        "rare products"
+      ],
+      "doNotUseWhen": [
+        "mainstream products"
+      ],
+      "categories": [
+        "web-search",
+        "products",
+        "research"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://indieco.shop/api/agent/network/v0/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://indieco.shop/infinite-search",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "635884fd5b7df22014f49043aa699caeb4afe2ec0ed2097709094409b8683ee5",
+      "contentHash": "b9d8816e448075a95ae7d4ef74e5ff495b026bcf12faa72789ec33f4080df15a"
+    },
+    {
+      "id": "mcp:io.github.taygunsavas/patina-unity-mcp",
+      "name": "Patina Unity MCP",
+      "type": "mcp",
+      "summary": "Controls the Unity Editor from MCP hosts through a local Rust server and C# Unity bridge.",
+      "useWhen": [
+        "Unity development",
+        "MCP hosts",
+        "local development"
+      ],
+      "doNotUseWhen": [
+        "non-Unity projects"
+      ],
+      "categories": [
+        "unity",
+        "development",
+        "mcp"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "c#",
+        "rust"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "command": "npx -y com.taygunsavas.patina-unity-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "com.taygunsavas.patina-unity-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "1.1.10",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/taygunsavas/patina-unity-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "20ea851c4c4fb075fc02a3c824b907473508669de95ab3f5ad505268de382bff",
+      "contentHash": "de0ab4f63f2fdc308165c624ebdbbd76ee7f7640d37e8d845c055a63248343c1"
+    },
+    {
+      "id": "mcp:io.github.techleadevelopers/chainfx-mcp",
+      "name": "io.github.techleadevelopers/chainfx-mcp",
+      "type": "mcp",
+      "summary": "Provides agent pay and planning graph for stablecoin commerce.",
+      "useWhen": [
+        "stablecoin commerce",
+        "agent pay",
+        "planning graph"
+      ],
+      "doNotUseWhen": [
+        "non-stablecoin transactions"
+      ],
+      "categories": [
+        "commerce",
+        "stablecoin",
+        "agents"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://api-production-bc748.up.railway.app/mcp/initialize"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.4.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/chainfx/payment-gateway",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "477c6362e37bf07311e9bce3a8d194099a3206eecca2857a1f183e60c64829a2",
+      "contentHash": "75e4569608bcb299e2d0178da0f41042a76b5b6ead82b8894ee3e8aea8e6ee4f"
+    },
+    {
+      "id": "mcp:io.github.tj-smith47/anodizer",
+      "name": "anodizer",
+      "type": "mcp",
+      "summary": "Offers drop-in GoReleaser parity and Rust extras for release tooling.",
+      "useWhen": [
+        "release tooling",
+        "Rust development",
+        "GoReleaser"
+      ],
+      "doNotUseWhen": [
+        "non-Rust projects"
+      ],
+      "categories": [
+        "rust",
+        "release",
+        "tooling"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.22.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/tj-smith47/anodizer",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "435898e15e72ba3610a50463f5629b8c216e71a75ff8c9a380583c9839c881a4",
+      "contentHash": "9dfd023038dba653346c2de28303e3a124dab3b18697deda01628608d79b5212"
+    },
+    {
+      "id": "mcp:io.github.trackly-app/trackly",
+      "name": "Trackly CLI",
+      "type": "mcp",
+      "summary": "Provides AI job search for Claude, ChatGPT, and Cursor with OAuth or stdio.",
+      "useWhen": [
+        "job search",
+        "AI applications",
+        "OAuth"
+      ],
+      "doNotUseWhen": [
+        "non-AI job search"
+      ],
+      "categories": [
+        "web-search",
+        "jobs",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y trackly-cli",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "trackly-cli"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.7.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://usetrackly.app/cli",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "899a0d652873d14018115abcaaaa605e476c0a1c229e9b005179990268cdaa02",
+      "contentHash": "4588e69fcabbef3b2ab1b89db345203a6b8c5f4b587d5b21be371345a2f91a7a"
+    },
+    {
+      "id": "mcp:io.github.typedb/typedb-mcp",
+      "name": "TypeDB",
+      "type": "mcp",
+      "summary": "Executes TypeQL queries and manages databases and users on a TypeDB server.",
+      "useWhen": [
+        "TypeDB development",
+        "database management",
+        "TypeQL queries"
+      ],
+      "doNotUseWhen": [
+        "non-TypeDB databases"
+      ],
+      "categories": [
+        "database",
+        "typedb",
+        "queries"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "shell",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "hybrid",
+      "version": "1.0.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://typedb.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "d02699d50197279ef5bd94dd6ad0698206dd87413227231b6dab44966527cad7",
+      "contentHash": "41e4283e80c8d308b9edbbd1218f705b2154e75215020f7bbef4359ec97167e7"
+    },
+    {
+      "id": "mcp:io.github.uarlouski/testrail-mcp-server",
+      "name": "io.github.uarlouski/testrail-mcp-server",
+      "type": "mcp",
+      "summary": "Enables LLMs to manage test artifacts on the TestRail platform.",
+      "useWhen": [
+        "test management",
+        "LLMs",
+        "TestRail"
+      ],
+      "doNotUseWhen": [
+        "non-TestRail platforms"
+      ],
+      "categories": [
+        "testing",
+        "testrail",
+        "llms"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "shell",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @uarlouski/testrail-mcp-server",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@uarlouski/testrail-mcp-server"
+          ]
+        },
+        "requiredSecrets": [
+          "TESTRAIL_INSTANCE_URL",
+          "TESTRAIL_USERNAME",
+          "TESTRAIL_API_KEY",
+          "TESTRAIL_ENABLE_SHARED_STEPS",
+          "TESTRAIL_ALLOW_WRITE_OPERATIONS",
+          "TESTRAIL_ALLOW_READ_OPERATIONS",
+          "TESTRAIL_ALLOW_DELETE_OPERATIONS"
+        ]
+      },
+      "localCloud": "local",
+      "version": "2.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/uarlouski/testrail-mcp-server",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "a6e9729b70b8cdce9e4b8ca41b0d5b249983c7bf66cf3e36024b60efb5a92b7f",
+      "contentHash": "55907d0357cde77a57c1c0ab3a90b04fcd9bb71bfd40b6c1c17e9a4976ef6f82"
+    },
+    {
+      "id": "mcp:io.github.us/crw",
+      "name": "CRW Web Scraper",
+      "type": "mcp",
+      "summary": "Provides open-source web scraping for AI agents with scrape, crawl, and map tools.",
+      "useWhen": [
+        "web scraping",
+        "AI agents",
+        "data extraction"
+      ],
+      "doNotUseWhen": [
+        "non-web scraping tasks"
+      ],
+      "categories": [
+        "web-scraping",
+        "ai",
+        "data"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "shell",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.26.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://us.github.io/crw",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "56ff050ff0081ec13d9ed3b1236e7498f1ee12b6407b9f072885f0e219ba7288",
+      "contentHash": "765955d2e88dd0ca70282c9ac4babb8b7fefefef364b3b7997500340e12e2d51"
+    },
+    {
+      "id": "mcp:io.github.vantioai/vantio-gate",
+      "name": "Vantio Gate",
+      "type": "mcp",
+      "summary": "Vantio Gate is a policy latch dry-run evaluator for agents.",
+      "useWhen": [
+        "evaluating policies",
+        "testing agent interactions",
+        "debugging policy enforcing"
+      ],
+      "doNotUseWhen": [
+        "live enforcing policies"
+      ],
+      "categories": [
+        "security",
+        "policy",
+        "testing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @vantio/gate-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@vantio/gate-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "VANTIO_API_KEY",
+          "VANTIO_API_BASE"
+        ]
+      },
+      "localCloud": "hybrid",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://vantio.ai/pro",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "149a5faae7a3bb1134fb1892c426e8b21ee5def51188faf378048704aab7cada",
+      "contentHash": "81363e6903c8c4eacf1d6cec646f67eb17c868f495fa6245ea677f5fef1f1d08"
+    },
+    {
+      "id": "mcp:io.github.vantioai/vantio-optics",
+      "name": "Vantio Optics",
+      "type": "mcp",
+      "summary": "Vantio Optics is a read-only Sight Loop observer for agents.",
+      "useWhen": [
+        "monitoring agent activity",
+        "tracking upgrades",
+        "observing proofs"
+      ],
+      "doNotUseWhen": [
+        "modifying agent state"
+      ],
+      "categories": [
+        "monitoring",
+        "security",
+        "testing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "command": "npx -y @vantio/optics-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@vantio/optics-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://vantio.ai/platform",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "1e9533cab7205d6e3ee0e6d6abd2ff88af12169fad6a6fab4d39f275761b9609",
+      "contentHash": "09a89ff07a71bf77d9cd427c4acc740ec7664259c0eab4892900d19bbc5b3380"
+    },
+    {
+      "id": "mcp:io.github.veracium-ai/veracium",
+      "name": "io.github.veracium-ai/veracium",
+      "type": "mcp",
+      "summary": "Veracium is a provenance-aware memory for AI agents.",
+      "useWhen": [
+        "managing agent memory",
+        "quarantining data",
+        "abstaining from decisions"
+      ],
+      "doNotUseWhen": [
+        "live processing sensitive data"
+      ],
+      "categories": [
+        "memory",
+        "security",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "ANTHROPIC_API_KEY",
+          "VERACIUM_DB_PATH",
+          "VERACIUM_USER"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.2.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://docs.veracium.ai",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "154eb23f0dddda6e57c71b6684998d2e83592aeaaac57a38bd0042e63a6bbeca",
+      "contentHash": "0db1e04553ac01ff5e93ea6e04bec7e4eedcad5ff25337014e1ec067817b0a32"
+    },
+    {
+      "id": "mcp:io.github.viralnote/mcp-server",
+      "name": "ViralNote",
+      "type": "mcp",
+      "summary": "ViralNote is a social post scheduler and analyzer.",
+      "useWhen": [
+        "scheduling social posts",
+        "publishing content",
+        "analyzing engagement"
+      ],
+      "doNotUseWhen": [
+        "handling sensitive user data"
+      ],
+      "categories": [
+        "social",
+        "marketing",
+        "web"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "command": "npx -y @viralnote/mcp-server",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@viralnote/mcp-server"
+          ]
+        },
+        "requiredSecrets": [
+          "VIRALNOTE_API_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "0.2.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://www.viralnote.app/mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "2528819693d0bee945ba1ab1eb8f2d0de54a6e8a4e29f9b6eac0488ceb3cd8c9",
+      "contentHash": "1bf52a7dfde596d23e040f5a5381dc0f48ca859566ed5fc60051d629c399dc51"
+    },
+    {
+      "id": "mcp:io.github.webdriverio/mcp",
+      "name": "io.github.webdriverio/mcp",
+      "type": "mcp",
+      "summary": "WebdriverIO is a browser and mobile app automation server.",
+      "useWhen": [
+        "automating browser interactions",
+        "testing mobile apps",
+        "integrating with CI/CD"
+      ],
+      "doNotUseWhen": [
+        "handling sensitive authentication data"
+      ],
+      "categories": [
+        "testing",
+        "automation",
+        "frontend"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "command": "npx -y @wdio/mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@wdio/mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "3.11.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/webdriverio/mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "92d93a53a98d90ee1417d81cc3b49c25dd6180b6b90b7af53dbc5ac473e533d4",
+      "contentHash": "1d5c1620747e86999055e19b2031835602e2aa88d01f2c6aa03bf378de574c1d"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/abnormal-mcp",
+      "name": "Abnormal Security",
+      "type": "mcp",
+      "summary": "Abnormal Security is an AI-powered email threat detection server.",
+      "useWhen": [
+        "detecting email threats",
+        "remediating security incidents",
+        "integrating with security tools"
+      ],
+      "doNotUseWhen": [
+        "handling non-email security threats"
+      ],
+      "categories": [
+        "security",
+        "email",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "ABNORMAL_API_TOKEN",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.2.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/abnormal-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "214d2dd7f27f90cca304cabdc7828e367f2f2f2fb53ea0879ce86c5da555949f",
+      "contentHash": "09afe52c54c0f40397b9c66a44444c5dfccaccd5bc5faeb086bb157ce1044b7e"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/action1-mcp",
+      "name": "Action1",
+      "type": "mcp",
+      "summary": "Action1 is an endpoint inventory and policy automation server.",
+      "useWhen": [
+        "managing endpoint inventory",
+        "automating policy enforcement",
+        "integrating with IT tools"
+      ],
+      "doNotUseWhen": [
+        "handling non-IT security tasks"
+      ],
+      "categories": [
+        "security",
+        "it",
+        "automation"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "ACTION1_CLIENT_ID",
+          "ACTION1_CLIENT_SECRET",
+          "ACTION1_TENANT",
+          "ACTION1_BASE_URL",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/action1-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "dc066d5f8d2059fe2ea8a98a027bed3f755a12bc4236673c2c97e05349cdbbdb",
+      "contentHash": "5e7605caeaa848c15ee6b53ef5c9e207d0c1ca8c05169663d96559d888142175"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/atera-mcp",
+      "name": "Atera",
+      "type": "mcp",
+      "summary": "Atera is a remote monitoring and management server.",
+      "useWhen": [
+        "monitoring customer systems",
+        "managing tickets",
+        "integrating with RMM tools"
+      ],
+      "doNotUseWhen": [
+        "handling non-RMM tasks"
+      ],
+      "categories": [
+        "rmm",
+        "security",
+        "it"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "ATERA_API_KEY",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.5.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/atera-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "c7405c9ec288c607657772bd99c3885c055f5eb498397e2c5b4606c163de73a0",
+      "contentHash": "7ffdaae511c51ce651d7714ea8469c1ddf22fee58dc1719af61da0041acea6a4"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/autotask-mcp",
+      "name": "Autotask",
+      "type": "mcp",
+      "summary": "Autotask is a professional services automation server.",
+      "useWhen": [
+        "managing companies",
+        "tracking tickets",
+        "integrating with PSA tools"
+      ],
+      "doNotUseWhen": [
+        "handling non-PSA tasks"
+      ],
+      "categories": [
+        "psa",
+        "security",
+        "it"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "AUTOTASK_USERNAME",
+          "AUTOTASK_SECRET",
+          "AUTOTASK_INTEGRATION_CODE",
+          "AUTOTASK_API_URL",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "2.30.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/autotask-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "fc087c3205b281495ddd7129efbdecdc4feec51e5329d5c0a87e693fbcf2c6be",
+      "contentHash": "1ee8174af306834e745ba951ce443cd04d96c75e0b77f15b7c7034d5948fe50c"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/avanan-legacy-mcp",
+      "name": "Avanan MSP (Legacy SmartAPI)",
+      "type": "mcp",
+      "summary": "Avanan is a cloud email security server.",
+      "useWhen": [
+        "managing child MSPs",
+        "tracking licenses",
+        "integrating with email security tools"
+      ],
+      "doNotUseWhen": [
+        "handling non-email security tasks"
+      ],
+      "categories": [
+        "security",
+        "email",
+        "cloud"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "AVANAN_APP_ID",
+          "AVANAN_TOKEN",
+          "AVANAN_SECRET",
+          "AVANAN_REGION",
+          "MCP_TRANSPORT",
+          "MCP_HTTP_PORT",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/avanan-legacy-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "3dc8eb52122e34548d7a4fb8e5f7b958c0b096e81fe5f791e21003758aea2f82",
+      "contentHash": "e315bb514cfd7f313b354c7bf0d5585f3619e92b7e3067a0bdeacc91d700b64d"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/cipp-mcp",
+      "name": "CIPP",
+      "type": "mcp",
+      "summary": "MCP server for CIPP, a M365 multi-tenant management solution for MSPs.",
+      "useWhen": [
+        "managing multiple M365 tenants",
+        "automating user and policy management",
+        "integrating with existing MSP tools"
+      ],
+      "doNotUseWhen": [
+        "single-tenant M365 management"
+      ],
+      "categories": [
+        "m365",
+        "msp",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "CIPP_API_URL",
+          "CIPP_CLIENT_ID",
+          "CIPP_CLIENT_SECRET",
+          "CIPP_TENANT_ID",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.6.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/cipp-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "2ee35e3eafc1cabbffa68f54fd9355f42f83a9058dc089f97212af3b3c15c976",
+      "contentHash": "2aad8d30ff52287e50c9864f43c228f788d1478f7af17b3b759c0212bb01103b"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/connectwise-automate-mcp",
+      "name": "ConnectWise Automate",
+      "type": "mcp",
+      "summary": "MCP server for ConnectWise Automate, a remote monitoring and management solution.",
+      "useWhen": [
+        "managing and monitoring client devices",
+        "automating tasks and workflows",
+        "integrating with existing PSA solutions"
+      ],
+      "doNotUseWhen": [
+        "non-technical workflows"
+      ],
+      "categories": [
+        "rmm",
+        "automation",
+        "monitoring"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "CW_AUTOMATE_SERVER_URL",
+          "CW_AUTOMATE_CLIENT_ID",
+          "CW_AUTOMATE_USERNAME",
+          "CW_AUTOMATE_PASSWORD",
+          "CW_AUTOMATE_2FA_CODE",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.7.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/connectwise-automate-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "9be724de468962cb15e639190b3f26ae6cf9a6d0961c87ca229a44292956325b",
+      "contentHash": "3decf390837b3d89e8eda34e0c2242124fd8b3bb0fa884de4ea274b010ecb6d7"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/connectwise-manage-mcp",
+      "name": "ConnectWise Manage",
+      "type": "mcp",
+      "summary": "MCP server for ConnectWise Manage, a professional services automation solution.",
+      "useWhen": [
+        "managing tickets and projects",
+        "tracking time and expenses",
+        "integrating with existing CRM solutions"
+      ],
+      "doNotUseWhen": [
+        "non-professional services automation"
+      ],
+      "categories": [
+        "psa",
+        "automation",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "CW_MANAGE_COMPANY_ID",
+          "CW_MANAGE_PUBLIC_KEY",
+          "CW_MANAGE_PRIVATE_KEY",
+          "CW_MANAGE_CLIENT_ID",
+          "CW_MANAGE_URL",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.8.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/connectwise-manage-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "11c0c8ece21c7640eed668fd9ba5a6484dfa10694e13af2a4829136bff20f96e",
+      "contentHash": "705c131f00b01dddf90a1c7ec2dd2bace66495c8e8383789abe197e8f2c54760"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/datto-bcdr-mcp",
+      "name": "Datto BCDR",
+      "type": "mcp",
+      "summary": "MCP server for Datto BCDR, a business continuity and disaster recovery solution.",
+      "useWhen": [
+        "managing and monitoring backup and disaster recovery",
+        "automating backup and restore processes",
+        "integrating with existing BCDR solutions"
+      ],
+      "doNotUseWhen": [
+        "non-BCDR workflows"
+      ],
+      "categories": [
+        "bcdr",
+        "backup",
+        "recovery"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "DATTO_BCDR_PUBLIC_KEY",
+          "DATTO_BCDR_PRIVATE_KEY",
+          "DATTO_BCDR_REGION",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/datto-bcdr-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "8a840c3cac4226576689053ea057f789c9a2264c54104ecb76a915d02c8324f9",
+      "contentHash": "2cbf2af728eb2e97eaa8241a8bfcde072d062d4019620ea6a9fe52c445c742b2"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/datto-rmm-mcp",
+      "name": "Datto RMM",
+      "type": "mcp",
+      "summary": "MCP server for Datto RMM, a remote monitoring and management solution.",
+      "useWhen": [
+        "managing and monitoring client devices",
+        "automating tasks and workflows",
+        "integrating with existing PSA solutions"
+      ],
+      "doNotUseWhen": [
+        "non-technical workflows"
+      ],
+      "categories": [
+        "rmm",
+        "automation",
+        "monitoring"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "DATTO_API_KEY",
+          "DATTO_API_SECRET",
+          "DATTO_PLATFORM",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.6.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/datto-rmm-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "822e7112a19e7dd29ef35376cff2d3c201b3d6072afac94de5b3ae9f00af1d7f",
+      "contentHash": "e4aaf14df7379e8d4d3f44365b2ef69908eb337790533485e00dc3269c8b9c79"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/datto-saas-protection-mcp",
+      "name": "Datto SaaS Protection",
+      "type": "mcp",
+      "summary": "MCP server for Datto SaaS Protection, a SaaS backup and recovery solution.",
+      "useWhen": [
+        "protecting and recovering SaaS data",
+        "automating backup and restore processes",
+        "integrating with existing SaaS solutions"
+      ],
+      "doNotUseWhen": [
+        "non-SaaS workflows"
+      ],
+      "categories": [
+        "saas",
+        "backup",
+        "recovery"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "DATTO_SAAS_API_KEY",
+          "DATTO_SAAS_REGION",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "2.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/datto-saas-protection-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "1496cb4c0b595f13a7ad3f59f81cf45990ecdea4d5702f52bcd2e66bdce050d2",
+      "contentHash": "908c59c0106b2247d69e11f15c1eec6707151734a0948dc93cd351b699da06c0"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/halopsa-mcp",
+      "name": "HaloPSA",
+      "type": "mcp",
+      "summary": "MCP server for HaloPSA, a professional services automation solution.",
+      "useWhen": [
+        "managing tickets and projects",
+        "tracking time and expenses",
+        "integrating with existing CRM solutions"
+      ],
+      "doNotUseWhen": [
+        "non-professional services automation"
+      ],
+      "categories": [
+        "psa",
+        "automation",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "HALOPSA_CLIENT_ID",
+          "HALOPSA_CLIENT_SECRET",
+          "HALOPSA_TENANT",
+          "HALOPSA_BASE_URL",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.7.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/halopsa-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "5728a41f63cea698981dec9c0cfcb70f6c3f1a1e122ac00f2db6ad840f4b2db9",
+      "contentHash": "2c1cbc4ecb1f64d9c399cf75f4e3658148242de62d619d2a6608c5787d34eb20"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/ironscales-mcp",
+      "name": "Ironscales",
+      "type": "mcp",
+      "summary": "MCP server for Ironscales, a phishing incident management solution.",
+      "useWhen": [
+        "managing and responding to phishing incidents",
+        "automating incident response processes",
+        "integrating with existing security solutions"
+      ],
+      "doNotUseWhen": [
+        "non-phishing related workflows"
+      ],
+      "categories": [
+        "security",
+        "incident response",
+        "phishing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "IRONSCALES_API_KEY",
+          "IRONSCALES_COMPANY_ID",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.2.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/ironscales-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "90a06e8bdcb1e1985ebbdd5e16d24399f54abcd3b2b9a10425f1151225d6d4a5",
+      "contentHash": "9252aaf2689e3cab5e8dfa95e82317a11fbe8d45aa2d15d70f918bfb369f3b81"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/itglue-mcp",
+      "name": "IT Glue",
+      "type": "mcp",
+      "summary": "MCP server for IT Glue, a documentation and automation solution.",
+      "useWhen": [
+        "documenting and automating IT workflows",
+        "managing and tracking IT assets",
+        "integrating with existing PSA solutions"
+      ],
+      "doNotUseWhen": [
+        "non-IT related workflows"
+      ],
+      "categories": [
+        "itglue",
+        "documentation",
+        "automation"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "ITGLUE_API_KEY",
+          "ITGLUE_REGION",
+          "ITGLUE_BASE_URL",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.15.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/itglue-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "84fbada8e154b02aef30824f976f53ae83ba5d9abc9dcfd4885910ae06439055",
+      "contentHash": "0d0e62d00fb4fe03c93ff313c1f9cff76db2f6d862f63b9001f6dd125e4eef50"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/kaseya-bms-mcp",
+      "name": "Kaseya BMS",
+      "type": "mcp",
+      "summary": "MCP server for Kaseya BMS, a professional services automation solution.",
+      "useWhen": [
+        "managing tickets and projects",
+        "tracking time and expenses",
+        "integrating with existing CRM solutions"
+      ],
+      "doNotUseWhen": [
+        "non-professional services automation"
+      ],
+      "categories": [
+        "psa",
+        "automation",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "KASEYA_BMS_TENANT_SUBDOMAIN",
+          "KASEYA_BMS_API_TOKEN",
+          "KASEYA_BMS_K1_TOKEN",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/kaseya-bms-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "8f76bbe8b69af30ba6087b79b44fc72c4ed0a81c295fd9c82d011081f0c1baae",
+      "contentHash": "733e7c74cc2aa73ffe9d42029bc9d6f05b409c5f901dc425e9b9c2657330e0c9"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/kaseya-vsa-mcp",
+      "name": "Kaseya VSA",
+      "type": "mcp",
+      "summary": "MCP server for Kaseya VSA RMM to manage agents, patches, procedures, alarms, and tickets.",
+      "useWhen": [
+        "managing remote monitoring and management",
+        "automating IT tasks",
+        "integrating with other tools"
+      ],
+      "doNotUseWhen": [
+        "on-premises only environments"
+      ],
+      "categories": [
+        "rmm",
+        "itmanagement",
+        "automation"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "KASEYA_VSA_TENANT_URL",
+          "KASEYA_VSA_USERNAME",
+          "KASEYA_VSA_PASSWORD",
+          "KASEYA_VSA_K1_TOKEN",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "local",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/kaseya-vsa-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "72eac90e2036c49bc211323e515077ab4579da367d0b2c24b30ab27eb3dcaec3",
+      "contentHash": "5758e48ce3848944c34559b9ffee8099dbcc15440c021e314a7f54b527c8b47c"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/knowbe4-mcp",
+      "name": "KnowBe4",
+      "type": "mcp",
+      "summary": "MCP server for KnowBe4 security awareness training to manage users, groups, training, and phishing campaigns.",
+      "useWhen": [
+        "conducting security awareness training",
+        "managing phishing campaigns",
+        "integrating with other security tools"
+      ],
+      "doNotUseWhen": [
+        "non-security related tasks"
+      ],
+      "categories": [
+        "security",
+        "awareness",
+        "training"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "KNOWBE4_API_KEY",
+          "KNOWBE4_REGION",
+          "KNOWBE4_BASE_URL",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/knowbe4-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "5778d0caae9f48a74dd1ff3da7a6297a549d3d1dfc28606099cef79d7ba45bf8",
+      "contentHash": "f97a61e9ffc049588adcfd7d728ec6dc4396ec5ed73b6eeb6662b01781d36109"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/liongard-mcp",
+      "name": "Liongard",
+      "type": "mcp",
+      "summary": "MCP server for Liongard to manage inspectors, environments, metrics, detections, and timeline data.",
+      "useWhen": [
+        "monitoring IT environments",
+        "detecting security issues",
+        "tracking metrics"
+      ],
+      "doNotUseWhen": [
+        "on-premises only environments"
+      ],
+      "categories": [
+        "itmanagement",
+        "monitoring",
+        "security"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "LIONGARD_API_KEY",
+          "LIONGARD_INSTANCE",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "local",
+      "version": "2.3.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/liongard-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "565576ab5700cbf05af16fe06d6424110152bb795c8d8a0d0b0c74961ec22e52",
+      "contentHash": "33264c0024c0a17e09c1fd24ca3718a5154b47ac3c92933a25d3bfedcf28b805"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/meraki-mcp",
+      "name": "Cisco Meraki",
+      "type": "mcp",
+      "summary": "MCP server for Cisco Meraki Dashboard to manage networks, devices, wireless, switch, and appliance.",
+      "useWhen": [
+        "managing network devices",
+        "configuring wireless settings",
+        "monitoring network activity"
+      ],
+      "doNotUseWhen": [
+        "non-network related tasks"
+      ],
+      "categories": [
+        "networking",
+        "management",
+        "configuration"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "MERAKI_API_KEY",
+          "MERAKI_ORG_ID",
+          "MERAKI_BASE_URL",
+          "READ_ONLY_MODE",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/meraki-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "28328d22d9e9ef06b900f3cb9125a4aea5f11aadd9a56f3cc4e4d61cb287de95",
+      "contentHash": "62928c276ad8523e09fde4e6e9237a7b7d5099a9291475a1a293d3adf88d489d"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/mimecast-mcp",
+      "name": "Mimecast",
+      "type": "mcp",
+      "summary": "MCP server for Mimecast email security to manage message queue, held messages, domains, and threats.",
+      "useWhen": [
+        "managing email security",
+        "monitoring email activity",
+        "detecting email threats"
+      ],
+      "doNotUseWhen": [
+        "non-email related tasks"
+      ],
+      "categories": [
+        "email",
+        "security",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "MIMECAST_CLIENT_ID",
+          "MIMECAST_CLIENT_SECRET",
+          "MIMECAST_REGION",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.3.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/mimecast-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "ff029dba121b84da255014fa2022e398cb20f73e22c9ddeac895fff91d21a0f6",
+      "contentHash": "e47e03a0bb3d929f8391d5b29b7595e69e66dd9097e227c703cbd688c6ede514"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/ninjaone-mcp",
+      "name": "NinjaOne",
+      "type": "mcp",
+      "summary": "MCP server for NinjaOne RMM to manage devices, organizations, alerts, and tickets.",
+      "useWhen": [
+        "managing remote monitoring and management",
+        "automating IT tasks",
+        "integrating with other tools"
+      ],
+      "doNotUseWhen": [
+        "on-premises only environments"
+      ],
+      "categories": [
+        "rmm",
+        "itmanagement",
+        "automation"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "NINJAONE_CLIENT_ID",
+          "NINJAONE_CLIENT_SECRET",
+          "NINJAONE_REGION",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "local",
+      "version": "2.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/ninjaone-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "fb7cbfc791f81644f7fd375c8f9e7ae5268dc1ebcc11b278bddbdafd65da1218",
+      "contentHash": "9d38268a8ce6eaf5decb4743136af0f627443391846946b8e3358574358f838b"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/proofpoint-mcp",
+      "name": "Proofpoint",
+      "type": "mcp",
+      "summary": "MCP server for Proofpoint TAP to manage threat intelligence, forensics, quarantine, and email security.",
+      "useWhen": [
+        "conducting threat intelligence",
+        "managing email security",
+        "integrating with other security tools"
+      ],
+      "doNotUseWhen": [
+        "non-security related tasks"
+      ],
+      "categories": [
+        "security",
+        "threatintelligence",
+        "email"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "PROOFPOINT_SERVICE_PRINCIPAL",
+          "PROOFPOINT_SERVICE_SECRET",
+          "PROOFPOINT_BASE_URL",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/proofpoint-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "419375c70d7e4ef6e00eba2d20984c8a9fce083e5ea65f917969595e590959c7",
+      "contentHash": "f324e418f3fa2f801eb09362de87f59c95fc15d76f689e678c24f87dc1809399"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/qbo-mcp",
+      "name": "QuickBooks Online",
+      "type": "mcp",
+      "summary": "MCP server for QuickBooks Online to manage accounts, customers, invoices, bills, and reports.",
+      "useWhen": [
+        "managing financial data",
+        "integrating with other accounting tools",
+        "generating reports"
+      ],
+      "doNotUseWhen": [
+        "non-financial related tasks"
+      ],
+      "categories": [
+        "accounting",
+        "financial",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "QBO_CLIENT_ID",
+          "QBO_CLIENT_SECRET",
+          "QBO_REFRESH_TOKEN",
+          "QBO_REALM_ID",
+          "QBO_ENVIRONMENT",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.6.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/qbo-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "14ecacb0425b6ae40f8b0d8ce2d0cc7e00d22ce24b981e4c4c1d587bccbd20a6",
+      "contentHash": "7712959d5ab69bc0c95a4661d24938174ab34d6e7a22ca01858c2bb9dc59d5c4"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/rootly-mcp",
+      "name": "Rootly",
+      "type": "mcp",
+      "summary": "MCP server for Rootly to manage incidents, alerts, escalations, and post-incident reports.",
+      "useWhen": [
+        "managing incidents",
+        "conducting post-incident reviews",
+        "integrating with other IT tools"
+      ],
+      "doNotUseWhen": [
+        "non-incident related tasks"
+      ],
+      "categories": [
+        "incidentmanagement",
+        "itmanagement",
+        "reporting"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "ROOTLY_API_TOKEN",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "local",
+      "version": "1.2.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/rootly-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "eee5d674d18a4b1ef20c3bb86c4846f19aeb70991a5cc71d97902b1b0b2d1f7e",
+      "contentHash": "4a211532ebfcd572251d5dc3c64517a40a28c1de0d8f4859740fdd3287667d0c"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/salesbuildr-mcp",
+      "name": "SalesBuildr",
+      "type": "mcp",
+      "summary": "MCP server for SalesBuildr to manage quoting and sales workflows for MSPs.",
+      "useWhen": [
+        "managing sales workflows",
+        "creating quotes",
+        "integrating with other sales tools"
+      ],
+      "doNotUseWhen": [
+        "non-sales related tasks"
+      ],
+      "categories": [
+        "sales",
+        "msp",
+        "workflow"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "SALESBUILDR_API_KEY",
+          "SALESBUILDR_BASE_URL",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "local",
+      "version": "1.5.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/salesbuildr-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "0b59bbc6e0e67bd1fc2ac77fb40376fa4141898a6fc4b84f1038a4c5b5b089a0",
+      "contentHash": "e59c5b2d1ce520f9482504ab4a2abecddd7077c05e2b92e1b8c1548d1042689a"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/sherweb-mcp",
+      "name": "Sherweb",
+      "type": "mcp",
+      "summary": "This MCP server provides access to Sherweb's billing, subscriptions, customers, and product catalog.",
+      "useWhen": [
+        "managing Sherweb subscriptions",
+        "integrating with Sherweb billing",
+        "automating customer interactions"
+      ],
+      "doNotUseWhen": [
+        "directly interacting with customers",
+        "replacing existing CRM systems"
+      ],
+      "categories": [
+        "billing",
+        "subscriptions",
+        "crm"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "SHERWEB_CLIENT_ID",
+          "SHERWEB_CLIENT_SECRET",
+          "SHERWEB_SUBSCRIPTION_KEY",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.4.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/sherweb-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "cc5084c83fb29720f69c361c79b42ecd370b769c8754faff576b2381cea104dc",
+      "contentHash": "6d7a12828e1defcbb84193afa81c8ee99fb25be2996f1f110131e92c835f042d"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/spamtitan-mcp",
+      "name": "SpamTitan",
+      "type": "mcp",
+      "summary": "This MCP server provides access to SpamTitan email security features, including quarantine and policy management.",
+      "useWhen": [
+        "managing email security",
+        "configuring SpamTitan settings",
+        "automating spam filtering"
+      ],
+      "doNotUseWhen": [
+        "directly interacting with email clients"
+      ],
+      "categories": [
+        "email",
+        "security",
+        "spam"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "SPAMTITAN_API_URL",
+          "SPAMTITAN_API_KEY",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.3.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/spamtitan-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "cd247cc28eea79ff6410ee0eb668b511514ef625a086b225e6732b78e0c216a1",
+      "contentHash": "bbcd4462f18473f7e859998383db322d9efcc33928d4c1c1b68d8670999dac11"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/spanning-mcp",
+      "name": "Spanning Cloud Backup",
+      "type": "mcp",
+      "summary": "This MCP server provides access to Spanning Cloud Backup features, including M365, GWS, and Salesforce backups.",
+      "useWhen": [
+        "configuring cloud backups",
+        "restoring data",
+        "auditing backup processes"
+      ],
+      "doNotUseWhen": [
+        "replacing existing backup solutions"
+      ],
+      "categories": [
+        "backup",
+        "cloud",
+        "storage"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "SPANNING_PLATFORM",
+          "SPANNING_ADMIN_EMAIL",
+          "SPANNING_API_TOKEN",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/spanning-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "7b5d32124eadb3b26f9ed0893754832e365000dc3070b3c429768a77bfc7fd62",
+      "contentHash": "e366fddd3a9f1bf27b4e238944675d069cb3edc2ace659dc79c046ada23fb0a4"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/superops-mcp",
+      "name": "SuperOps",
+      "type": "mcp",
+      "summary": "This MCP server provides access to SuperOps unified PSA+RMM features, including client, ticket, and asset management.",
+      "useWhen": [
+        "managing clients and tickets",
+        "automating asset tracking",
+        "integrating with SuperOps"
+      ],
+      "doNotUseWhen": [
+        "directly interacting with clients"
+      ],
+      "categories": [
+        "crm",
+        "psa",
+        "rmm"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "SUPEROPS_API_TOKEN",
+          "SUPEROPS_SUBDOMAIN",
+          "SUPEROPS_REGION",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.6.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/superops-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "d0b65deb0832bd0c3a8bf03c32de23c2a1891278998aa6ca580b164ed8aba5a3",
+      "contentHash": "dcf4ebe6aaba75c2e244cf723970350834f917e5f3aa8804de8d6db06254f5c8"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/syncro-mcp",
+      "name": "Syncro",
+      "type": "mcp",
+      "summary": "This MCP server provides access to Syncro MSP features, including customer, ticket, and asset management.",
+      "useWhen": [
+        "managing customers and tickets",
+        "automating asset tracking",
+        "integrating with Syncro"
+      ],
+      "doNotUseWhen": [
+        "directly interacting with customers"
+      ],
+      "categories": [
+        "msp",
+        "crm",
+        "asset"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "SYNCRO_SUBDOMAIN",
+          "SYNCRO_API_KEY",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.4.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/syncro-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "5d11b13e46796b66edf4f79c7a1f2268cddf5c29a6460db36d4fe54097c7dca3",
+      "contentHash": "777da4f8ef79770c85dac2d82b6c7fc8b97c9e3b74f7f1f8a42cba5a43cafcc0"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/timezest-mcp",
+      "name": "TimeZest",
+      "type": "mcp",
+      "summary": "This MCP server provides access to TimeZest appointment scheduling features, including agent and resource management.",
+      "useWhen": [
+        "managing appointments and schedules",
+        "integrating with TimeZest",
+        "automating appointment reminders"
+      ],
+      "doNotUseWhen": [
+        "directly interacting with clients"
+      ],
+      "categories": [
+        "scheduling",
+        "appointments",
+        "msp"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "TIMEZEST_API_TOKEN",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.2.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/timezest-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "ec5822926970723a7d42064393208415c91d83c1aaba9a5cf73fdda826714185",
+      "contentHash": "f049d667994827bee409ebdc63c601a4cc00a734e153a9ec1e554094a75d66cc"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/unitrends-mcp",
+      "name": "Unitrends Backup",
+      "type": "mcp",
+      "summary": "This MCP server provides access to Unitrends Backup features, including appliance, job, and recovery point management.",
+      "useWhen": [
+        "configuring backup jobs",
+        "restoring data",
+        "managing Unitrends appliances"
+      ],
+      "doNotUseWhen": [
+        "replacing existing backup solutions"
+      ],
+      "categories": [
+        "backup",
+        "storage",
+        "recovery"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials",
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "UNITRENDS_BASE_URL",
+          "UNITRENDS_USERNAME",
+          "UNITRENDS_PASSWORD",
+          "UNITRENDS_VERIFY_TLS",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/unitrends-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "81d47f8f4973bfaaf75f5a0b7dc7f9e09bdfec4bcd7e1c821e3c6abea59ca051",
+      "contentHash": "459163092d8b89273e8990c99b39ba28d80483f7c005974833f4cc759bdff9c9"
+    },
+    {
+      "id": "mcp:io.github.wyre-technology/xero-mcp",
+      "name": "Xero",
+      "type": "mcp",
+      "summary": "This MCP server provides access to Xero accounting features, including contact, invoice, and financial report management.",
+      "useWhen": [
+        "managing accounting data",
+        "integrating with Xero",
+        "automating financial reports"
+      ],
+      "doNotUseWhen": [
+        "directly interacting with financial institutions"
+      ],
+      "categories": [
+        "accounting",
+        "finance",
+        "invoices"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "XERO_TENANT_ID",
+          "XERO_ACCESS_TOKEN",
+          "MCP_TRANSPORT",
+          "AUTH_MODE",
+          "LOG_LEVEL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.5.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/wyre-technology/xero-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "9d36efd7996dd9466925fae329b24e091d10846265807ccf9dbf9e381ce5a3a8",
+      "contentHash": "a29e5684603d4173116b4d576e03716ef3d3c712e86885e8faeb54f2095cf684"
+    },
+    {
+      "id": "mcp:io.github.xbbg-org/xbbg-mcp",
+      "name": "xbbg MCP",
+      "type": "mcp",
+      "summary": "This MCP server provides access to local Bloomberg tools for xbbg users.",
+      "useWhen": [
+        "accessing Bloomberg data",
+        "integrating with xbbg",
+        "automating financial analysis"
+      ],
+      "doNotUseWhen": [
+        "directly interacting with Bloomberg terminals"
+      ],
+      "categories": [
+        "finance",
+        "bloomberg",
+        "data"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "XBBG_MCP_LIB_DIR",
+          "XBBG_MCP_HOST",
+          "XBBG_MCP_PORT",
+          "XBBG_MCP_AUTH_METHOD",
+          "XBBG_MCP_MAX_ROWS",
+          "XBBG_MCP_MAX_STRING_CHARS"
+        ]
+      },
+      "localCloud": "local",
+      "version": "1.4.5",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/xbbg-org/xbbg/tree/main/apps/xbbg-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "27ee29d7a7925274cfe3eaf446cf87c6b2594e3a7a0bc463eb7394ef450f4e3c",
+      "contentHash": "d5c18116f6d47a936631a18f372d38310c2536312714db8a9989451dc3783987"
+    },
+    {
+      "id": "mcp:io.github.ynishi/mlua-swarm",
+      "name": "io.github.ynishi/mlua-swarm",
+      "type": "mcp",
+      "summary": "This MCP server provides access to mlua-swarm engine features, including flow.ir Blueprint compilation and agent step dispatching.",
+      "useWhen": [
+        "compiling flow.ir Blueprints",
+        "dispatching agent steps",
+        "integrating with mlua-swarm"
+      ],
+      "doNotUseWhen": [
+        "directly interacting with agent steps"
+      ],
+      "categories": [
+        "mlua",
+        "swarm",
+        "engine"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "lua"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.14.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/ynishi/mlua-swarm",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "bce13237b4adb924e3857afe9ca48d83459848da7026b59b95d3ca8cbe0d2dd6",
+      "contentHash": "51ef290bdf454be739e55f45cf9c2385bdf9db314d3dbfbe14540acbf12bbf92"
+    },
+    {
+      "id": "mcp:io.github.yuanjian068yuan/ppxc-leads-mcp",
+      "name": "找客户 · Find Customers｜销售线索与评论区获客",
+      "type": "mcp",
+      "summary": "Finds sales leads in Douyin, Xiaohongshu, and Kuaishou comments",
+      "useWhen": [
+        "sales lead generation",
+        "social media monitoring",
+        "customer acquisition"
+      ],
+      "doNotUseWhen": [
+        "privacy concerns"
+      ],
+      "categories": [
+        "social media",
+        "sales",
+        "marketing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y ppxc-leads-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "ppxc-leads-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.28",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.yuanjian068yuan%2Fppxc-leads-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "fbd31c8e70cb03090083c970fc80db52b110b8a156c9266d8182373ce6667eb9",
+      "contentHash": "02feae91160d8b08c245b1dccdd98105d537464059d303e28663873674505550"
+    },
+    {
+      "id": "mcp:io.github.zoharbabin/web-researcher-mcp",
+      "name": "Web Researcher MCP",
+      "type": "mcp",
+      "summary": "AI research assistant that cites real sources and stays honest",
+      "useWhen": [
+        "research assistance",
+        "fact-checking",
+        "content creation"
+      ],
+      "doNotUseWhen": [
+        "plagiarism"
+      ],
+      "categories": [
+        "research",
+        "writing",
+        "education"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.43.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/zoharbabin/web-researcher-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "a1d6d78b8015ebe3162b93614ad74e0ce710925837423acb304a65a143be78db",
+      "contentHash": "43bf35e5f8093a54c546fc3578189d769b6072964d1b1c9bf341bdd7804cb888"
+    },
+    {
+      "id": "mcp:io.github.zyx77550/sparda-mcp",
+      "name": "SPARDA",
+      "type": "mcp",
+      "summary": "Deterministic, offline security gate for AI edits",
+      "useWhen": [
+        "AI content creation",
+        "security verification",
+        "content validation"
+      ],
+      "doNotUseWhen": [
+        "high-speed processing"
+      ],
+      "categories": [
+        "security",
+        "ai",
+        "content creation"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y sparda-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "sparda-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "SPARDA_FLYWHEEL",
+          "SPARDA_RECORD_SEQUENCES"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.66.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/zyx77550/sparda",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "5d38ccf017ca6a3801ca062f9f53cfdb40cc94fd4060281d23bda3f2cee0af39",
+      "contentHash": "b068dd9492d46e586febee7312611904e0751808898c3de66d072742f73637af"
+    },
+    {
+      "id": "mcp:io.gmapsscraper/mcp",
+      "name": "io.gmapsscraper/mcp",
+      "type": "mcp",
+      "summary": "Scrapes Google Maps business data",
+      "useWhen": [
+        "business research",
+        "marketing",
+        "data collection"
+      ],
+      "doNotUseWhen": [
+        "terms of service violations"
+      ],
+      "categories": [
+        "web scraping",
+        "business",
+        "data collection"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @gmapsscraper/mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@gmapsscraper/mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "GMAPSSCRAPER_API_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "0.1.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://gmapsscraper.io",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "8e86d596397590d29d51faca7c7e420df1667e6b4fa7818a198d5eb8a5f6c981",
+      "contentHash": "49cb71066cab28ac504c8d5209e05cada87bde2b3fdc7f09e2913daa4f6f15d9"
+    },
+    {
+      "id": "mcp:io.ihateinvoicing/ihateinvoicing",
+      "name": "I Hate Invoicing",
+      "type": "mcp",
+      "summary": "Sends invoices from Claude and ChatGPT",
+      "useWhen": [
+        "invoicing",
+        "payment processing",
+        "financial management"
+      ],
+      "doNotUseWhen": [
+        "non-standard payment methods"
+      ],
+      "categories": [
+        "invoicing",
+        "payment",
+        "finance"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://www.ihateinvoicing.io/api/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://www.ihateinvoicing.io",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "151d7a9b37022e31f7801943c3ac04397bd1dfdd4ba630897b76bb2b56090482",
+      "contentHash": "8d2a9111e3967aa6deaf008138b8d8354acc4fc9b50166375b4d6f8ea4bf0ef3"
+    },
+    {
+      "id": "mcp:io.indexone/mcp",
+      "name": "Index One",
+      "type": "mcp",
+      "summary": "Queries financial index data and runs backtests",
+      "useWhen": [
+        "financial analysis",
+        "backtesting",
+        "investment research"
+      ],
+      "doNotUseWhen": [
+        "real-time trading"
+      ],
+      "categories": [
+        "finance",
+        "investing",
+        "research"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://api.indexone.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.1.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://indexone.io/docs/mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "aac21b4ca654714efffe7f18382266b1b00af27479997037648f86a0773a825b",
+      "contentHash": "abecfaf106ae59513212a026ebbbb23fe3c387afdacad754b3d2eb0fdce6be04"
+    },
+    {
+      "id": "mcp:io.tendeta/tendeta",
+      "name": "Tendeta",
+      "type": "mcp",
+      "summary": "Manages a Tendeta store's catalogue and orders",
+      "useWhen": [
+        "e-commerce management",
+        "inventory management",
+        "order fulfillment"
+      ],
+      "doNotUseWhen": [
+        "non-Tendeta platforms"
+      ],
+      "categories": [
+        "e-commerce",
+        "inventory",
+        "order management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.tendeta.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "2.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://tendeta.io/agents",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "8abba1440ed273bd0b638d2ec53e07f6292d155f2c611858d3ec675feb5e8d2a",
+      "contentHash": "d325a7c3bab84588b1451f2dc145a06a83783780300711dcbdf507abc4048a0a"
+    },
+    {
+      "id": "mcp:io.unstructured/transform",
+      "name": "Unstructured Transform",
+      "type": "mcp",
+      "summary": "Turns documents into structured, AI-ready data",
+      "useWhen": [
+        "data transformation",
+        "document processing",
+        "AI data preparation"
+      ],
+      "doNotUseWhen": [
+        "non-document data"
+      ],
+      "categories": [
+        "data transformation",
+        "document processing",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.transform.unstructured.io"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.7.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://docs.unstructured.io/transform/overview",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "b5898e6bed698a176560223b94de88bdf1b996d9922a049017b7a3b77d492da9",
+      "contentHash": "772d1a3bf9512bf8579e46b73db96611bfc7abd7b6c346c16e0358a5959c2c7d"
+    },
+    {
+      "id": "mcp:io.usefulapi/maxmind-minfraud",
+      "name": "io.usefulapi/maxmind-minfraud",
+      "type": "mcp",
+      "summary": "This server enables scoring of transactions for fraud risk using MaxMind minFraud.",
+      "useWhen": [
+        "you need to detect fraudulent transactions",
+        "you want to score transactions for risk",
+        "you need to prevent online fraud"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "fraud-detection",
+        "risk-scoring",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://maxmind-minfraud.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "cf0803d89a4ebb285935f9108e09d305fc8b0c1419c272c94c5bffb332a48b24",
+      "contentHash": "6c191bfc35c9d77faf672f1006de60a80873f55c57dd3ffa6fc54a0ccb80314e"
+    },
+    {
+      "id": "mcp:io.usefulapi/metriport",
+      "name": "io.usefulapi/metriport",
+      "type": "mcp",
+      "summary": "Interact with Metriport to read and write medical data.",
+      "useWhen": [
+        "accessing patient records",
+        "managing medical facilities",
+        "consolidating FHIR records"
+      ],
+      "doNotUseWhen": [
+        "dealing with non-medical data"
+      ],
+      "categories": [
+        "healthcare",
+        "fhir",
+        "medical"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://metriport.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "651da9c4bfa5c538aa2e801630356ca6e87d05771912400e873bff1b61dd7728",
+      "contentHash": "14eacc58c66e8fa29c2fa266c5e5c8b010b32035e310b34637c8032f094f2419"
+    },
+    {
+      "id": "mcp:io.usefulapi/peopledatalabs",
+      "name": "io.usefulapi/peopledatalabs",
+      "type": "mcp",
+      "summary": "Enrich and search people and company data.",
+      "useWhen": [
+        "finding people and companies",
+        "resolving identities",
+        "enriching IP addresses"
+      ],
+      "doNotUseWhen": [
+        "using other data enrichment tools"
+      ],
+      "categories": [
+        "dataenrichment",
+        "people",
+        "companies"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://peopledatalabs.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "69fea24e85a89f3149045b60a72325f825223b84350e08dc7b4989036343b703",
+      "contentHash": "cea8bce4e3ee07df2bee8a1d27b417091d22c0a32752e9a8980768b2267ad5c8"
+    },
+    {
+      "id": "mcp:io.usefulapi/quaderno",
+      "name": "io.usefulapi/quaderno",
+      "type": "mcp",
+      "summary": "Interact with Quaderno for tax-rate calculation and invoicing.",
+      "useWhen": [
+        "calculating tax rates",
+        "creating invoices",
+        "managing contacts and products"
+      ],
+      "doNotUseWhen": [
+        "using other invoicing tools"
+      ],
+      "categories": [
+        "invoicing",
+        "taxes",
+        "ecommerce"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://quaderno.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "50bcd1c5c994ee4a26874e1079f8a7b84ac77ffcc16cc74536c841b53b866f3c",
+      "contentHash": "da6e02d361da749fba1a4c85d1d1f98b06d02e04462315511f7437de4ab5b984"
+    },
+    {
+      "id": "mcp:io.usefulapi/scalingo",
+      "name": "io.usefulapi/scalingo",
+      "type": "mcp",
+      "summary": "Manage Scalingo PaaS apps and deployments.",
+      "useWhen": [
+        "deploying apps",
+        "managing containers",
+        "tracking logs and env vars"
+      ],
+      "doNotUseWhen": [
+        "using other PaaS platforms"
+      ],
+      "categories": [
+        "paas",
+        "deployment",
+        "scaling"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials",
+        "filesystem"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://scalingo.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "9c20bcf202aacd093e8c5c6362cc3c4caf51b1583eafb5d128966cf08ad3a293",
+      "contentHash": "575fbd7a7e79ba3e84d1bfe524255eb844f662c1b76dbc57c488b4573e488901"
+    },
+    {
+      "id": "mcp:io.usefulapi/speechmatics",
+      "name": "io.usefulapi/speechmatics",
+      "type": "mcp",
+      "summary": "Transcribe audio and video using Speechmatics speech-to-text.",
+      "useWhen": [
+        "transcribing audio and video",
+        "enabling speech-to-text"
+      ],
+      "doNotUseWhen": [
+        "dealing with low-quality audio"
+      ],
+      "categories": [
+        "speechtotext",
+        "transcription",
+        "audio"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://speechmatics.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "bb76880cc03c5c5996bdd25ae0cad9892529f0010c0575defb4b537cfb82d167",
+      "contentHash": "b3c3a9080c2a879c9e1463e5e59b39c132a833aba6f84b34992417c79289614c"
+    },
+    {
+      "id": "mcp:io.usefulapi/stream",
+      "name": "io.usefulapi/stream",
+      "type": "mcp",
+      "summary": "Query Stream Chat data for channels and messages.",
+      "useWhen": [
+        "accessing chat channels",
+        "searching messages",
+        "reading threads and reactions"
+      ],
+      "doNotUseWhen": [
+        "using other chat platforms"
+      ],
+      "categories": [
+        "chat",
+        "messaging",
+        "streaming"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://stream.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "adf36d370dbf1e4255095f567a07338d636da508472181d4b39906f2ecb0b5a4",
+      "contentHash": "13b41ac6533898f78ae88090084291ffc5b392cf2eafe6f4903cbe62efbea9bd"
+    },
+    {
+      "id": "mcp:io.usefulapi/swell",
+      "name": "io.usefulapi/swell",
+      "type": "mcp",
+      "summary": "Manage a Swell headless-commerce store, including products, orders, customers, and subscriptions.",
+      "useWhen": [
+        "you need to manage an e-commerce store",
+        "you want to automate order processing",
+        "you need to integrate with a commerce platform"
+      ],
+      "doNotUseWhen": [
+        "you don't have a Swell store",
+        "you need to manage physical store operations"
+      ],
+      "categories": [
+        "ecommerce",
+        "store management",
+        "orders"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://swell.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "5c5d40bdfc95e6a7a7eba5d8fcc37fe251870e558717e553ff75ed261d0c9d12",
+      "contentHash": "872ddde88a17fd0e1428bc8398e105835921e774421c6f78aedfecf2ec39c684"
+    },
+    {
+      "id": "mcp:io.usefulapi/vital",
+      "name": "io.usefulapi/vital",
+      "type": "mcp",
+      "summary": "Read wearables and lab health data, including sleep, activity, workouts, timeseries, lab tests, and orders.",
+      "useWhen": [
+        "you need to access health and fitness data",
+        "you want to integrate with wearable devices",
+        "you need to manage health records"
+      ],
+      "doNotUseWhen": [
+        "you don't have access to wearables or lab data",
+        "you need to manage non-health related data"
+      ],
+      "categories": [
+        "health",
+        "fitness",
+        "wearables"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://vital.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "41dfc707ecf1a12c22c2e3cb4ed9a08334051b1be64878c429c4c8378a60d970",
+      "contentHash": "72d40031b066531bce85ce71eaef336a4b1f996a26ab03d89d35becf64065526"
+    },
+    {
+      "id": "mcp:io.zircular/zlab-stress-test",
+      "name": "źlab Operational Decision Stress Test",
+      "type": "mcp",
+      "summary": "Screen material decisions about physical assets and operational systems using evidence-governed methods.",
+      "useWhen": [
+        "you need to assess operational systems",
+        "you want to evaluate physical assets",
+        "you need to make data-driven decisions"
+      ],
+      "doNotUseWhen": [
+        "you don't have access to operational data",
+        "you need to manage non-physical assets"
+      ],
+      "categories": [
+        "operations",
+        "asset management",
+        "decision support"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.zircular.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://zircular.io",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "55eee3ea6319a7bb2284287d9d8d007c4521b7f950e6f361570114bec3cea70a",
+      "contentHash": "c6af89874587b4bfff91f4c7174c2bf14594bb9ae228e5c0d7a30c53d38174f2"
+    },
+    {
+      "id": "mcp:link.cyberelf.whetstone/tools",
+      "name": "Whetstone",
+      "type": "mcp",
+      "summary": "Promote AI agents using leakage audits, exact-statistics verdicts, and a live report card.",
+      "useWhen": [
+        "you need to evaluate AI agent performance",
+        "you want to identify potential issues",
+        "you need to track agent progress"
+      ],
+      "doNotUseWhen": [
+        "you don't have AI agents to evaluate",
+        "you need to manage non-AI related systems"
+      ],
+      "categories": [
+        "ai",
+        "evaluation",
+        "reporting"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://whetstone.cyberelf.link/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.4.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://whetstone.cyberelf.link/",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "5361cdc3f3f6bca12ce67f4552f60d1bbb969bf0aff62e69895c3525732db8e2",
+      "contentHash": "3a30845bb50ee9a920fad2d3a76436c37edae666d16197121b3237688cfbcb80"
+    },
+    {
+      "id": "mcp:llc.facet/ucp-shopping",
+      "name": "Facet UCP Shopping",
+      "type": "mcp",
+      "summary": "Enable AI-agent checkout on any online store using the independent agent-commerce protocol.",
+      "useWhen": [
+        "you need to integrate AI agents with online stores",
+        "you want to automate checkout processes",
+        "you need to manage e-commerce transactions"
+      ],
+      "doNotUseWhen": [
+        "you don't have an online store",
+        "you need to manage non-e-commerce related transactions"
+      ],
+      "categories": [
+        "ecommerce",
+        "checkout",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://api.facet.llc/ucp/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://facet.llc",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "891d18baf1c932815958274151c5cd24fb9f53e429ad377513b959b31f3d8ef3",
+      "contentHash": "e899f3787eabdc7bc6f6873c560899292b2a05f4628aa75fc0712404630f3fd0"
+    },
+    {
+      "id": "mcp:me.route6/netid",
+      "name": "Route6 — Agent Network Identity",
+      "type": "mcp",
+      "summary": "Give AI agents a public IPv6 identity, hostname, port forwarding, web fetch, and team mesh.",
+      "useWhen": [
+        "you need to give AI agents network identity",
+        "you want to enable agent communication",
+        "you need to manage agent networking"
+      ],
+      "doNotUseWhen": [
+        "you don't have AI agents to manage",
+        "you need to manage non-network related systems"
+      ],
+      "categories": [
+        "networking",
+        "identity",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials",
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://gw.route6.me/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "hybrid",
+      "version": "0.1.19",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://route6.me",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "506c575a94366672e6a1d56214ab5ca8b4b038a6ea41f7d69b521845d8419658",
+      "contentHash": "02a45f797d111514fd8f029c507c01a6f8ccdc4af3d28c3dd05a4650834aa990"
+    },
+    {
+      "id": "mcp:net.convertica/mcp",
+      "name": "net.convertica/mcp",
+      "type": "mcp",
+      "summary": "Convert various file formats, including PDF, Word, Excel, PowerPoint, EPUB, HEIC, and images.",
+      "useWhen": [
+        "you need to convert file formats",
+        "you want to automate file processing",
+        "you need to integrate with a file conversion platform"
+      ],
+      "doNotUseWhen": [
+        "you don't have files to convert",
+        "you need to manage non-file related data"
+      ],
+      "categories": [
+        "file conversion",
+        "formatting",
+        "processing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y convertica-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "convertica-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "CONVERTICA_API_KEY"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.1.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/convertica-net/convertica-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "67d20e3a32a1fff7262a454152e164ffed69c9eeaece5490ccc3a2f6d0a5535d",
+      "contentHash": "15dc7b1b4d4e805b1cc32359a4cdc4427f4a3d983249555ba9213838c4f62a67"
+    },
+    {
+      "id": "mcp:net.hogarmas/blindspot",
+      "name": "H/M Blindspot Challenge Platform",
+      "type": "mcp",
+      "summary": "Create AI using focused Machine Language Labs, open worlds, A2A, MCP, and x402.",
+      "useWhen": [
+        "you need to create AI models",
+        "you want to train AI agents",
+        "you need to integrate with AI development platforms"
+      ],
+      "doNotUseWhen": [
+        "you don't have AI development needs",
+        "you need to manage non-AI related systems"
+      ],
+      "categories": [
+        "ai",
+        "development",
+        "machine learning"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://agents.hogarmas.net/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.28.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://registry.modelcontextprotocol.io/v0/servers?search=net.hogarmas%2Fblindspot",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "b0e87273e698316d8b95fa3e4812662867facca81c19c84b254a81355ef5ad57",
+      "contentHash": "1281dfad67485336886cf437d3408173c27b4a7537b2fcf0f9a943818ee517f1"
+    },
+    {
+      "id": "mcp:net.k4tech/docs",
+      "name": "Medius Docs",
+      "type": "mcp",
+      "summary": "Provide documentation for the Medius binary control protocol, device behavior, and the Medius Rust library.",
+      "useWhen": [
+        "you need to understand Medius documentation",
+        "you want to learn about device behavior",
+        "you need to integrate with Medius devices"
+      ],
+      "doNotUseWhen": [
+        "you don't have Medius devices",
+        "you need to manage non-Medius related systems"
+      ],
+      "categories": [
+        "documentation",
+        "device management",
+        "rust"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "rust"
+      ],
+      "permissions": [],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://medius.k4tech.net/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://medius.k4tech.net",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "f0fce0ef1150578a95e9391b116b5985168ffaf7c7bbdf30fac009a5bad558a8",
+      "contentHash": "4848d1555fc6c3d127beb91c02224d86e541dd8d22b064b1ca008d47ca1fd8e0"
+    },
+    {
+      "id": "mcp:org.inkflowstudio/inkflow",
+      "name": "org.inkflowstudio/inkflow",
+      "type": "mcp",
+      "summary": "This AI-video LoRA packs provide royalty-free, brand-free content.",
+      "useWhen": [
+        "creating video content",
+        "needing royalty-free actors",
+        "requiring brand-free assets"
+      ],
+      "doNotUseWhen": [
+        "on a tight budget for small projects"
+      ],
+      "categories": [
+        "video",
+        "media",
+        "assets"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://api.inkflowstudio.org/api/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.9.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://inkflowstudio.org",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "62afd9f2fe99dd89cca1cd40b9258a0a9f52fcc699cb01ef1d7d6489c8c89032",
+      "contentHash": "cf53258b77623d56feccd0ceac7255ed924cf25fe3b8e55224b5ee640dbd62cf"
+    },
+    {
+      "id": "mcp:pro.laspi/directory",
+      "name": "Laspi Business Directory",
+      "type": "mcp",
+      "summary": "Search a directory of real, owner-confirmed small businesses.",
+      "useWhen": [
+        "researching small businesses",
+        "finding business contacts",
+        "verifying business information"
+      ],
+      "doNotUseWhen": [
+        "needing editable business data"
+      ],
+      "categories": [
+        "directory",
+        "search",
+        "business"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://laspi.pro/api/v1/mcp/directory"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://laspi.pro/directory",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "f20b7de11f936543123a38f6f9b8b95e292986b9b2b5e456846487e217621010",
+      "contentHash": "78460fd2f0ca43df4c7460eb74f19d96ff497ccf1e5feba6ce1aa95df298ff4b"
+    },
+    {
+      "id": "mcp:pro.publifye/currency",
+      "name": "pro.publifye/currency",
+      "type": "mcp",
+      "summary": "Get Norges Bank exchange rates for 38 currencies vs NOK, with history to 1980 and conversion features.",
+      "useWhen": [
+        "converting currencies",
+        "charting exchange rates",
+        "needing historical currency data"
+      ],
+      "doNotUseWhen": [
+        "requiring real-time exchange rates"
+      ],
+      "categories": [
+        "currency",
+        "exchange",
+        "finance"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://currency.publifye.pro/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://currency.publifye.pro",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "292ded891646bd0d5ac0cff4c53be87abffa04a5aaf6075773afb64af267e79c",
+      "contentHash": "5b513ea5e65128a5028825bf505acd62666eda45c10ad879c92d162dbf4227b1"
+    },
+    {
+      "id": "mcp:run.pantheon/mcp",
+      "name": "run.pantheon/mcp",
+      "type": "mcp",
+      "summary": "Search Pantheon contacts, read cross-channel message timelines, and query the AI brain.",
+      "useWhen": [
+        "integrating with Pantheon contacts",
+        "reading message timelines",
+        "using AI query features"
+      ],
+      "doNotUseWhen": [
+        "not having a Pantheon account"
+      ],
+      "categories": [
+        "contacts",
+        "messaging",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.pantheon.run/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://docs.pantheon.run",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "65932f5519dd70de6c0beaacb82d8d4eabf3891289b2903cd1201577cd129aa4",
+      "contentHash": "3993f932af12ccfb157dbf6685c51f383ce3eb6eb4b869e6c328467d3f06ca28"
+    },
+    {
+      "id": "mcp:so.pharaoh/pharaoh",
+      "name": "Pharaoh",
+      "type": "mcp",
+      "summary": "Codebase knowledge graph for AI coding agents via MCP, providing architectural awareness.",
+      "useWhen": [
+        "building codebase knowledge graphs",
+        "needing architectural awareness",
+        "using AI coding agents"
+      ],
+      "doNotUseWhen": [
+        "not having a codebase to analyze"
+      ],
+      "categories": [
+        "codebase",
+        "knowledge graph",
+        "architecture"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y @pharaoh-so/mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@pharaoh-so/mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "1.0.144",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://pharaoh.so",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "0bcb9c18f377de3d6826e709b5bd5f12ccf5b68dd7e30898558bf59928cd923a",
+      "contentHash": "e9c1c94f03c7ed37fb427f29cd4ff012031a6d88e97b7b0f3d0f331eed2564db"
+    },
+    {
+      "id": "mcp:superglue/sap-mcp-server",
+      "name": "SAP MCP Server",
+      "type": "mcp",
+      "summary": "Customizable SAP MCP server for connecting legacy systems",
+      "useWhen": [
+        "connecting to legacy systems",
+        "customizing MCP servers",
+        "deploying with one click"
+      ],
+      "doNotUseWhen": [],
+      "categories": [
+        "integration",
+        "legacy systems"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "unknown",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://superglue.ai/mcp/sap/",
+          "kind": "repo"
+        },
+        {
+          "url": "https://superglue.ai/mcp/sap/",
+          "kind": "rss"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "235fb449fad534da900ecc7f219a3772370cae91de8f8f7d3b9ecd4e4f1b0390",
+      "contentHash": "fd5d412eeb2a6a419936ebdce060f638cdd1ca6986693afcf796ccf7911a4831"
+    },
+    {
+      "id": "mcp:cwooddgr/bezelbub",
+      "name": "bezelbub",
+      "type": "mcp",
+      "summary": "frames screen recordings and shots in Apple bezels",
+      "useWhen": [
+        "creating device-framed screenshots and screen recordings",
+        "exporting videos with transparent backgrounds"
+      ],
+      "doNotUseWhen": [],
+      "categories": [
+        "image processing",
+        "video processing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "command": "brew install cwooddgr/bezelbub/bezelbub",
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "unknown",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/cwooddgr/bezelbub/tree/main/bezelbub-mcp",
+          "kind": "repo"
+        },
+        {
+          "url": "https://github.com/cwooddgr/bezelbub/tree/main/bezelbub-mcp",
+          "kind": "rss"
+        }
+      ],
+      "firstSeen": "2026-07-21",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "20d7559b4a0f7840c868dcb13a724fecb75f3efad2c6a6a2961827f64a0d4b26",
+      "contentHash": "8d411457c1f61b590b5db42658a3c7b21728d8fae55e05b83fbc98631646e463"
+    }
+  ],
+  "updated": [
+    {
+      "id": "mcp:io.usefulapi/betterstack",
+      "name": "io.usefulapi/betterstack",
+      "type": "mcp",
+      "summary": "Reads monitors, incidents, heartbeats, on-call and status pages",
+      "useWhen": [
+        "monitoring",
+        "incident management",
+        "status page management"
+      ],
+      "doNotUseWhen": [
+        "non-BetterStack platforms"
+      ],
+      "categories": [
+        "monitoring",
+        "incident management",
+        "status page"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://betterstack.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "11952ae87fdc40425a7932f9655c55312e7e1f91c427e0c2f293fece9beb5214",
+      "contentHash": "aab570dd0b34ef27b4cf6c5b4cc02085893dfdeaa00493a0346efc292bfd1393"
+    },
+    {
+      "id": "mcp:io.usefulapi/chargebee",
+      "name": "io.usefulapi/chargebee",
+      "type": "mcp",
+      "summary": "Reads Chargebee customers, subscriptions, invoices, and transactions",
+      "useWhen": [
+        "subscription management",
+        "invoice management",
+        "customer management"
+      ],
+      "doNotUseWhen": [
+        "non-Chargebee platforms"
+      ],
+      "categories": [
+        "subscription management",
+        "invoice management",
+        "customer management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://chargebee.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "1bcc016dc2b278ffcfb1689e00295e6012204bc89aa2c289c20c03b43c7fb9f8",
+      "contentHash": "69a97e9c757e939bfdf4aa126ebff628e1f3f9b07d64ddc316d870d3635c008c"
+    },
+    {
+      "id": "mcp:io.usefulapi/checkly",
+      "name": "io.usefulapi/checkly",
+      "type": "mcp",
+      "summary": "This server allows querying of Checkly synthetic monitoring data, including checks, statuses, results, alerts, reporting, and dashboards.",
+      "useWhen": [
+        "you need to monitor website uptime",
+        "you want to track website performance",
+        "you need to set up alerts for website issues"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "monitoring",
+        "web-performance",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://checkly.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "9b064d5ef8083dc31c2a11aefe6f00e1157ddd5e5e7c84fa886180463036cb3a",
+      "contentHash": "ccdcd40d9db1a78dbc2a671795ae3adeaf7d84a3eebd8e8c1f1c4df093021150"
+    },
+    {
+      "id": "mcp:io.usefulapi/cronitor",
+      "name": "io.usefulapi/cronitor",
+      "type": "mcp",
+      "summary": "This server enables management of Cronitor monitors, allowing for the creation, inspection, update, and deletion of monitors, as well as sending telemetry pings.",
+      "useWhen": [
+        "you need to monitor scheduled tasks",
+        "you want to track system performance",
+        "you need to set up alerts for system issues"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "monitoring",
+        "task-management",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://cronitor.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "758b004acd794f80967a49da709e01c7585f6511f97ecb79d29377b620420639",
+      "contentHash": "7bc37d0650c9b932006a21cdeb085b98093481895b681e9d9693483b166ab9fa"
+    },
+    {
+      "id": "mcp:io.usefulapi/docraptor",
+      "name": "io.usefulapi/docraptor",
+      "type": "mcp",
+      "summary": "This server can turn HTML or live URLs into polished PDF and Excel files, providing hosted downloads, async jobs, and history.",
+      "useWhen": [
+        "you need to generate PDFs from HTML",
+        "you want to create Excel files from URLs",
+        "you need to track document generation history"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "documents",
+        "pdf-generation",
+        "excel"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://docraptor.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "5d94fb9146d64d00fe59a8afbd0b93c9fcd044f9a3ff272097cca84d3d5067ad",
+      "contentHash": "552217143f9591453d61f209883f56eef54401090b050b8e2e97c08d9031ac8f"
+    },
+    {
+      "id": "mcp:io.usefulapi/fireworks",
+      "name": "io.usefulapi/fireworks",
+      "type": "mcp",
+      "summary": "This server allows inspection of Fireworks AI models, deployments, datasets, and fine-tuning jobs.",
+      "useWhen": [
+        "you need to manage AI models",
+        "you want to track model deployments",
+        "you need to fine-tune AI models"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "ai",
+        "machine-learning",
+        "model-management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://fireworks.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "cf2507905d56c9b922dd55bf4db4e20b2fc0d663878b0810931c81ed6f3b31e3",
+      "contentHash": "7b1ccad73b430b70d31768829b84b649dd48007b4e1e8d516ec391c0815c424a"
+    },
+    {
+      "id": "mcp:io.usefulapi/gocardless",
+      "name": "io.usefulapi/gocardless",
+      "type": "mcp",
+      "summary": "This server enables querying of GoCardless data, including customers, mandates, payments, subscriptions, payouts, refunds, and events.",
+      "useWhen": [
+        "you need to manage payments",
+        "you want to track customer data",
+        "you need to set up recurring payments"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "payments",
+        "e-commerce",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://gocardless.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "74b9dd2238497a2b2f43947aa33c1965db0497053672d80994816b310401f450",
+      "contentHash": "84771e0fc9f360c227674ff7051712f93636998873c58209ba4eb22e7a64eb40"
+    },
+    {
+      "id": "mcp:io.usefulapi/linear",
+      "name": "io.usefulapi/linear",
+      "type": "mcp",
+      "summary": "This server allows searching, reading, and creating Linear issues, projects, teams, and cycles.",
+      "useWhen": [
+        "you need to manage project issues",
+        "you want to track project progress",
+        "you need to create new project tasks"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "project-management",
+        "issue-tracking",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://linear.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "ba3e32d830a9faa32d6cd83988d810070cc5887d38d3cff629b5458cdadccfa4",
+      "contentHash": "0eafffcffc4674f5d8b06f045b3a1b34ed06674d7c7a326e8ae3096212f05452"
+    },
+    {
+      "id": "mcp:io.usefulapi/lob",
+      "name": "io.usefulapi/lob",
+      "type": "mcp",
+      "summary": "This server enables verification of US and international addresses and sending of physical mail via Lob.",
+      "useWhen": [
+        "you need to verify addresses",
+        "you want to send physical mail",
+        "you need to track mail delivery"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "mailing",
+        "address-verification",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://lob.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "95d18a27b3f2811515c76f7072c4b46141c4b8616e610f1933848ec063cb2253",
+      "contentHash": "bcdde5ae936bf352f11cfdffd1f103614c625a2346e2b448ae63c393841edbcc"
+    },
+    {
+      "id": "mcp:io.usefulapi/loops",
+      "name": "io.usefulapi/loops",
+      "type": "mcp",
+      "summary": "This server allows management of Loops contacts, mailing lists, and transactional/event emails.",
+      "useWhen": [
+        "you need to manage email contacts",
+        "you want to create mailing lists",
+        "you need to send transactional emails"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "email-marketing",
+        "contact-management",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://loops.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "ad2e43551d27cee92449d13e0a0ab130c8bd0d3535a67d2ce17f9b319412e1a8",
+      "contentHash": "37703dc204f0cb4841a90b5cfc794a39ec8d0b283d16d89ca311dc6785de616b"
+    },
+    {
+      "id": "mcp:io.usefulapi/mailerlite",
+      "name": "io.usefulapi/mailerlite",
+      "type": "mcp",
+      "summary": "This server enables reading of MailerLite subscribers, groups, campaigns, fields, segments, automations, and webhooks, as well as safe additive writes.",
+      "useWhen": [
+        "you need to manage email campaigns",
+        "you want to track subscriber data",
+        "you need to set up email automations"
+      ],
+      "doNotUseWhen": [
+        "you are looking for a self-hosted solution"
+      ],
+      "categories": [
+        "email-marketing",
+        "automation",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mailerlite.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "8502964af1169eac2f9f4e084fd5bea48fb5720efb98fde76f2d0e6d425bc8ef",
+      "contentHash": "fae3b071405e11322812adc2af566ac2232b2fb94c5eed26efe368059a706d1c"
+    },
+    {
+      "id": "mcp:io.usefulapi/mindee",
+      "name": "io.usefulapi/mindee",
+      "type": "mcp",
+      "summary": "Use Mindee OCR to extract data from PDFs and images.",
+      "useWhen": [
+        "extracting data from invoices",
+        "processing receipts",
+        "reading IDs"
+      ],
+      "doNotUseWhen": [
+        "dealing with handwritten text"
+      ],
+      "categories": [
+        "ocr",
+        "document",
+        "extraction"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mindee.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "dcef9b5fa5b590b9f90334ba5c9da49a2c01ff6d536519f609a0b73ebbb4cba9",
+      "contentHash": "cbb6d177a262b692f3abaf40c2185ec0dab94da80e4dd57f4c992b745007a93f"
+    },
+    {
+      "id": "mcp:io.usefulapi/mistral",
+      "name": "io.usefulapi/mistral",
+      "type": "mcp",
+      "summary": "Manage Mistral platform resources and models.",
+      "useWhen": [
+        "training models",
+        "managing files",
+        "running batch jobs"
+      ],
+      "doNotUseWhen": [
+        "using other AI platforms"
+      ],
+      "categories": [
+        "ai",
+        "machinelearning",
+        "models"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mistral.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "8499888c67c339bdc6f2a7a307c37fb9909e0722a91caab4b8804fa7341f5ebc",
+      "contentHash": "af2dcbb888a5cc17459c563b0b19fd0d1b51989cba7be3359b0cbb438b7720c2"
+    },
+    {
+      "id": "mcp:io.usefulapi/mixpanel",
+      "name": "io.usefulapi/mixpanel",
+      "type": "mcp",
+      "summary": "Query Mixpanel data for events and insights.",
+      "useWhen": [
+        "analyzing user behavior",
+        "tracking events",
+        "creating funnels"
+      ],
+      "doNotUseWhen": [
+        "using other analytics tools"
+      ],
+      "categories": [
+        "analytics",
+        "eventtracking",
+        "insights"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mixpanel.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "4150dad0cb80c0a42be535e6d6a52695c266bf5dbbbb7d8af7c6351eaf847289",
+      "contentHash": "48e96cfed87a75acdc5bef9ee29195eebf3d7557e69b6eca3d761f3f767be7e7"
+    },
+    {
+      "id": "mcp:io.usefulapi/orb",
+      "name": "io.usefulapi/orb",
+      "type": "mcp",
+      "summary": "Manage Orb customers and subscriptions.",
+      "useWhen": [
+        "tracking customer data",
+        "managing subscriptions",
+        "handling invoices"
+      ],
+      "doNotUseWhen": [
+        "using other customer management tools"
+      ],
+      "categories": [
+        "crm",
+        "customer",
+        "subscription"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://orb.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "c19e4d7b88bb322055a48ebcb287575ba021d2513da32378affa4f64c4bb2bef",
+      "contentHash": "ab097bb1ce0fcbf34eb7523ef99fff6c4a2cca8978fec57b18e5b5cda47407b6"
+    },
+    {
+      "id": "mcp:io.usefulapi/uploadcare",
+      "name": "io.usefulapi/uploadcare",
+      "type": "mcp",
+      "summary": "Manage Uploadcare files, groups, and webhooks, and upload and store files.",
+      "useWhen": [
+        "you need to manage files in the cloud",
+        "you want to automate file uploads",
+        "you need to integrate with a file storage platform"
+      ],
+      "doNotUseWhen": [
+        "you don't have an Uploadcare account",
+        "you need to manage local files"
+      ],
+      "categories": [
+        "file management",
+        "cloud storage",
+        "upload"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://uploadcare.usefulapi.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/m190/usefulapi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-17",
+      "lastChecked": "2026-07-21",
+      "sourceHash": "b13804df6541a4ca2605e05c9e4a23a91befbf161ed9e419ce82ee5b5fee4a04",
+      "contentHash": "73154f8e180962299a3b65748e38d94c59caf8e10af616944bf948b4ef486ef1"
+    }
+  ],
+  "deprecated": []
+}
