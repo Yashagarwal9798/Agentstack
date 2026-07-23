@@ -1,0 +1,5666 @@
+{
+  "version": "2026.07.23.1",
+  "createdAt": "2026-07-23T06:21:20.425Z",
+  "added": [
+    {
+      "id": "mcp:io.github.XRPL-Utilities/mcp",
+      "name": "XRPL-Utilities",
+      "type": "mcp",
+      "summary": "XRPL-Utilities is an MCP server that provides data tools for AI agents to interact with the XRP Ledger.",
+      "useWhen": [
+        "You need to classify wallets",
+        "You want to track RWA or ETF flows",
+        "You need to send signals"
+      ],
+      "doNotUseWhen": [
+        "You don't have an XRP Ledger account"
+      ],
+      "categories": [
+        "financial",
+        "blockchain",
+        "xrp"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y @xrpl-utilities/mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@xrpl-utilities/mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.2.174",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://mcp.xrpl-utilities.io",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "3e3bd1d36d9909b87159199667024922a80f92ed78eb4c37ef99c69b3b022123",
+      "contentHash": "867239c7d6fa78d5941e265cda2b0249f93c257f07448c56a6a6d043b9f2bce9"
+    },
+    {
+      "id": "mcp:io.github.Xerolo44/rpgmaker-mv-mcp",
+      "name": "io.github.Xerolo44/rpgmaker-mv-mcp",
+      "type": "mcp",
+      "summary": "RPG Maker MV MCP is a server for reading, editing, and playtesting RPG Maker MV projects.",
+      "useWhen": [
+        "You are developing an RPG Maker MV game",
+        "You need to test your game",
+        "You want to edit your game's data"
+      ],
+      "doNotUseWhen": [
+        "You don't have an RPG Maker MV project"
+      ],
+      "categories": [
+        "gamedev",
+        "rpgmaker"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y @xerolo44/rpgmaker-mv-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@xerolo44/rpgmaker-mv-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/Xerolo44/RPG-Maker-MV-MCP",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "4708a152d35334cf515e8a06ca261ec6814c4dcf789707f7427f3cd8381bd1f2",
+      "contentHash": "b839af0ebafb6de01feafab672d522b4be1c6af968b7565ca4ac6b4ed1b9d1c3"
+    },
+    {
+      "id": "mcp:io.github.alice51849/lumi-app-finder",
+      "name": "Lumi App Finder",
+      "type": "mcp",
+      "summary": "Lumi App Finder is an MCP server that helps AI agents find iOS apps by task across various Apple locales.",
+      "useWhen": [
+        "You need to find an iOS app for a specific task",
+        "You want to explore apps across different locales",
+        "You need to get direct App Store links"
+      ],
+      "doNotUseWhen": [
+        "You don't develop or use iOS apps"
+      ],
+      "categories": [
+        "ios",
+        "appstore",
+        "search"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "1.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://alice51849.github.io/ios-app-guide/",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "c1844cdd8f14e9411144fef6c94ef224ebd14ad1991ec4305547ecaf1a30e251",
+      "contentHash": "de3459847504e737291904f3642a2634ae138d2fd5a034ceacba50c3bf4b44dc"
+    },
+    {
+      "id": "mcp:io.github.alphasmo/alphasmo-tools",
+      "name": "io.github.alphasmo/alphasmo-tools",
+      "type": "mcp",
+      "summary": "Alphasmo Tools is a CLI and MCP server for SEC 13F institutional holdings, insider trading, and smart money convergence.",
+      "useWhen": [
+        "You need to analyze institutional holdings",
+        "You want to track insider trading",
+        "You need to understand smart money convergence"
+      ],
+      "doNotUseWhen": [
+        "You don't have an Alphasmo API key"
+      ],
+      "categories": [
+        "financial",
+        "sec",
+        "trading"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y alphasmo",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "alphasmo"
+          ]
+        },
+        "requiredSecrets": [
+          "ALPHASMO_API_KEY"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.2.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/alphasmo/alphasmo-tools",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "76c5f66e65d20f943fddcd0fd8d1d8b45d189e3c21699ce6ee690bd937044d17",
+      "contentHash": "9ca528e258101e7d58b485e34edece092a1ad715514d4fd3775b97b7e86bc691"
+    },
+    {
+      "id": "mcp:io.github.alvinjchoi/gtasks-mcp",
+      "name": "io.github.alvinjchoi/gtasks-mcp",
+      "type": "mcp",
+      "summary": "GTasks MCP is a server that allows AI agents to manage Google Tasks via MCP.",
+      "useWhen": [
+        "You use Google Tasks for task management",
+        "You need to list or search tasks",
+        "You want to create or update tasks"
+      ],
+      "doNotUseWhen": [
+        "You don't have a Google account"
+      ],
+      "categories": [
+        "task management",
+        "google"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @alvincrave/gtasks-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@alvincrave/gtasks-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "GOOGLE_CLIENT_ID",
+          "GOOGLE_CLIENT_SECRET",
+          "GOOGLE_REFRESH_TOKEN"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.2.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/alvinjchoi/gtasks-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "6d948f26dd0bf426e64b4277894c14a730e9a0ab7d345c39216b6a2f8f17ece0",
+      "contentHash": "e223e3efdcb4d904fa75eb2a8e0c70aedf7ef30c5392b36d2fc6ac49dc63f251"
+    },
+    {
+      "id": "mcp:io.github.amirj4m/jamgate",
+      "name": "io.github.amirj4m/jamgate",
+      "type": "mcp",
+      "summary": "Jamgate is a neutral memory quality-gate MCP server that provides save, recall, and forget memory operations.",
+      "useWhen": [
+        "You need to save memory",
+        "You want to recall memory",
+        "You need to forget memory"
+      ],
+      "doNotUseWhen": [
+        "You don't need memory management"
+      ],
+      "categories": [
+        "memory",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "command": "npx -y jamgate",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "jamgate"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/amirj4m/jamgate",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d4be1b9ec457203c8f5b39428b031df8e2f1f8913d974bbfff7b6c3b8cb51b8c",
+      "contentHash": "30697c93e6af23699819bbeb310f63cd99a29d53e9cb5913de6b5a01abfdc5e7"
+    },
+    {
+      "id": "mcp:io.github.anthonywlicausi/agentic-ai",
+      "name": "io.github.anthonywlicausi/agentic-ai",
+      "type": "mcp",
+      "summary": "Agentic AI is an MCP server that provides deal intelligence for agents, including SEC-verified financials and institutional deal scoring.",
+      "useWhen": [
+        "You need to analyze deals",
+        "You want to verify financials",
+        "You need to score deals"
+      ],
+      "doNotUseWhen": [
+        "You don't have an Agentic AI API key"
+      ],
+      "categories": [
+        "financial",
+        "deal intelligence"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://agentic-ai-production-e711.up.railway.app/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://dealithic.co",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "8469971393a0105fd7c6ab092f51ec5ad6aeeba4055816b5537247e999856100",
+      "contentHash": "62161284db11243a529bc3dd992cef0da5e261128c620d4481125ca9159ada5f"
+    },
+    {
+      "id": "mcp:io.github.antohins/seo-tools-mcp-xmlriver",
+      "name": "SEO Tools: XMLRiver SERP (Google + Yandex)",
+      "type": "mcp",
+      "summary": "SEO Tools: XMLRiver SERP is an MCP server that provides Google and Yandex SERP, image/news verticals, and URL indexation checks via XMLRiver.",
+      "useWhen": [
+        "You need to check SERP rankings",
+        "You want to analyze image or news verticals",
+        "You need to verify URL indexation"
+      ],
+      "doNotUseWhen": [
+        "You don't have an XMLRiver API key"
+      ],
+      "categories": [
+        "seo",
+        "serp",
+        "xmlriver"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "command": "npx -y seo-tools-mcp-xmlriver",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "seo-tools-mcp-xmlriver"
+          ]
+        },
+        "requiredSecrets": [
+          "XMLRIVER_USER",
+          "XMLRIVER_KEY"
+        ]
+      },
+      "localCloud": "local",
+      "version": "1.2.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/antohins/seo-tools-mcp#readme",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "a1705aa2224fe00d5e56de47e9c8d20460d23bb81b7500e746fb714d34e0d5ea",
+      "contentHash": "687a42fd41848f2928817249e5b1a1a794df57668e9728ea48001dd84c1bfcca"
+    },
+    {
+      "id": "mcp:io.github.aos-standard/mcp-agent-health",
+      "name": "MCP Agent Health Reporter",
+      "type": "mcp",
+      "summary": "The MCP Agent Health Reporter scans the health of an AOS agent before deployment.",
+      "useWhen": [
+        "before deploying an AOS agent",
+        "to scan an agent's manifest and services",
+        "to check an agent's immune loop and evidence"
+      ],
+      "doNotUseWhen": [
+        "after deployment",
+        "for non-AOS agents"
+      ],
+      "categories": [
+        "agent",
+        "health",
+        "deployment"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.3.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/aos-standard/catalog/main/catalog.json",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "6f3ed0dc2aeb5039ba07bee2f5fef8141ba346e41ec8d3c039a7a62177e4e372",
+      "contentHash": "8d46499c6197d3bcd1e8706a8886772708356e4ea489bccda427c7a431de6f90"
+    },
+    {
+      "id": "mcp:io.github.aryankumar06/infimium",
+      "name": "Infimium",
+      "type": "mcp",
+      "summary": "Infimium is a private AI context layer for semantic code search and dependency graphs.",
+      "useWhen": [
+        "for semantic code search",
+        "to manage dependency graphs",
+        "for private AI contexts"
+      ],
+      "doNotUseWhen": [
+        "for public AI contexts"
+      ],
+      "categories": [
+        "ai",
+        "search",
+        "dependency"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y infimium",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "infimium"
+          ]
+        },
+        "requiredSecrets": [
+          "SEARCH_API_KEY",
+          "SEARCH_PROVIDER",
+          "CODEBASE_PATH",
+          "LOCAL_DOCS_PATH",
+          "CHROMADB_HOST",
+          "OLLAMA_HOST",
+          "SHELL_ALLOWLIST"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.3.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/infimium-ai/infimium-agent",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "f5b6fecbe5c9745be628c3b192cd74ad375f6b39790043adade73824b0a3d3e2",
+      "contentHash": "9df1e10d1cc0e5e007cac5913b8149bb2a6f254f27d219de67721d08cb8d015d"
+    },
+    {
+      "id": "mcp:io.github.aybeeare/water-conditions",
+      "name": "io.github.aybeeare/water-conditions",
+      "type": "mcp",
+      "summary": "Water Conditions provides real-time water temperature and tides for various locations.",
+      "useWhen": [
+        "to get real-time water temperatures",
+        "to get tide information",
+        "for locations with water conditions"
+      ],
+      "doNotUseWhen": [
+        "for locations without water conditions"
+      ],
+      "categories": [
+        "water",
+        "temperature",
+        "tides"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/aybeeare/water-temp-fishing-guide",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "96fb4bd03138a785058d07b953835bdcbb3c238097e18c368e3b0c03613a99d1",
+      "contentHash": "dfef842f2a04d16846c3e9b6f7e436016335b4ac9006ec7b12880f203af40078"
+    },
+    {
+      "id": "mcp:io.github.ayda212/simceptor",
+      "name": "io.github.ayda212/simceptor",
+      "type": "mcp",
+      "summary": "Simceptor is an AI-native mock API server with MCP support.",
+      "useWhen": [
+        "for creating mock APIs",
+        "to test AI-native applications",
+        "with Claude, Cursor, or Windsurf"
+      ],
+      "doNotUseWhen": [
+        "without MCP support"
+      ],
+      "categories": [
+        "api",
+        "mock",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://simceptor.com/api/mcp/sse"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://simceptor.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "7ec07f7761d3c73a785d7892b4c6f1b243dac9cd4b8f8a31d03c2b954fdeb698",
+      "contentHash": "86055e6eb2b675e905d23860f81b77ccce5d3e9e4c1ceec42ffb9f76c41493b6"
+    },
+    {
+      "id": "mcp:io.github.b1ff/atlassian-dc-mcp-bitbucket",
+      "name": "io.github.b1ff/atlassian-dc-mcp-bitbucket",
+      "type": "mcp",
+      "summary": "The Atlassian Bitbucket MCP server interacts with repositories and code.",
+      "useWhen": [
+        "for interacting with Bitbucket repositories",
+        "to manage code",
+        "with Atlassian Data Center"
+      ],
+      "doNotUseWhen": [
+        "without Atlassian Data Center"
+      ],
+      "categories": [
+        "bitbucket",
+        "repository",
+        "code"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @atlassian-dc-mcp/bitbucket",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@atlassian-dc-mcp/bitbucket"
+          ]
+        },
+        "requiredSecrets": [
+          "ATLASSIAN_DC_MCP_CONFIG_FILE",
+          "BITBUCKET_HOST",
+          "BITBUCKET_API_BASE_PATH",
+          "BITBUCKET_API_TOKEN"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.28.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/b1ff/atlassian-dc-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "1b09608f4e391e3aae0e2ea2a99bb40585e0e39007af8a19771d0792cc044c15",
+      "contentHash": "02e503938a9d96475814d4dab09799d077d9fb7d3d25c40eb57cf3adef0e15f4"
+    },
+    {
+      "id": "mcp:io.github.b1ff/atlassian-dc-mcp-confluence",
+      "name": "io.github.b1ff/atlassian-dc-mcp-confluence",
+      "type": "mcp",
+      "summary": "The Atlassian Confluence MCP server accesses and manages content.",
+      "useWhen": [
+        "for accessing Confluence content",
+        "to manage content",
+        "with Atlassian Data Center"
+      ],
+      "doNotUseWhen": [
+        "without Atlassian Data Center"
+      ],
+      "categories": [
+        "confluence",
+        "content",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @atlassian-dc-mcp/confluence",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@atlassian-dc-mcp/confluence"
+          ]
+        },
+        "requiredSecrets": [
+          "ATLASSIAN_DC_MCP_CONFIG_FILE",
+          "CONFLUENCE_HOST",
+          "CONFLUENCE_API_BASE_PATH",
+          "CONFLUENCE_API_TOKEN"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.28.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/b1ff/atlassian-dc-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "afe2626c28545164e784839d803d19b7075882e02ebd9f6830652b6c85f275e8",
+      "contentHash": "990ca56cd2fa47380fea59584da45279d827146bb5262ad0efe0ec4e671179bb"
+    },
+    {
+      "id": "mcp:io.github.b1ff/atlassian-dc-mcp-jira",
+      "name": "io.github.b1ff/atlassian-dc-mcp-jira",
+      "type": "mcp",
+      "summary": "The Atlassian Jira MCP server searches, views, and creates issues.",
+      "useWhen": [
+        "for searching Jira issues",
+        "to view issues",
+        "to create new issues"
+      ],
+      "doNotUseWhen": [
+        "without Jira"
+      ],
+      "categories": [
+        "jira",
+        "issue",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @atlassian-dc-mcp/jira",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@atlassian-dc-mcp/jira"
+          ]
+        },
+        "requiredSecrets": [
+          "ATLASSIAN_DC_MCP_CONFIG_FILE",
+          "JIRA_HOST",
+          "JIRA_API_BASE_PATH",
+          "JIRA_API_TOKEN"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.28.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/b1ff/atlassian-dc-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "62414e9944eebb99da4ee60f23bee0ff12c35abde505f6032c06a6eee70d5931",
+      "contentHash": "a003cf8b4fae7c05bc8b4456968166a36bff723ab9c61c494d3fdba32ab56d5a"
+    },
+    {
+      "id": "mcp:io.github.beeswaxpat/chronoverify",
+      "name": "io.github.beeswaxpat/chronoverify",
+      "type": "mcp",
+      "summary": "ChronoVerify verifies a photo's capture time and provenance.",
+      "useWhen": [
+        "to verify photo capture time",
+        "to check photo provenance",
+        "with C2PA validation"
+      ],
+      "doNotUseWhen": [
+        "without photo verification needs"
+      ],
+      "categories": [
+        "photo",
+        "verification",
+        "provenance"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y chronoverify-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "chronoverify-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "CHRONOVERIFY_API_KEY"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.1.7",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://chronoverify.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "5624e1eb92ceb2fe06efc69ab93e881ddd81c6d949e509131e715f670afd8fdb",
+      "contentHash": "9bb7108baf862aa87ad5e297bb5aaec11dbeb95a75d856a352e73769a443f050"
+    },
+    {
+      "id": "mcp:io.github.benseverndev-oss/goldenmatch",
+      "name": "GoldenMatch",
+      "type": "mcp",
+      "summary": "GoldenMatch finds duplicate records in a short time.",
+      "useWhen": [
+        "to find duplicate records",
+        "for entity resolution",
+        "with zero-config setup"
+      ],
+      "doNotUseWhen": [
+        "without duplicate record needs"
+      ],
+      "categories": [
+        "duplicate",
+        "record",
+        "entity"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://goldenmatch-mcp-production.up.railway.app/mcp/"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "hybrid",
+      "version": "3.5.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://docs.bensevern.dev/",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "a62f4585642c567c9d0dc792f92500ddf971596428a5f9619406aa0e3434266c",
+      "contentHash": "f39f38177703065b36d176a1dd380f8c0ae65c3689a63e538864ff3d14aedda2"
+    },
+    {
+      "id": "mcp:io.github.blackboxfoundry/livedatalink",
+      "name": "io.github.blackboxfoundry/livedatalink",
+      "type": "mcp",
+      "summary": "Provides access to 257 tools across 56 US public-data domains.",
+      "useWhen": [
+        "needing data on sanctions",
+        "requiring FMCSA information",
+        "accessing SEC data"
+      ],
+      "doNotUseWhen": [
+        "data is not publicly available"
+      ],
+      "categories": [
+        "database",
+        "public-data",
+        "us-government"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://livedatalink.ai/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.4.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://livedatalink.ai",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d98eb9fccb3595694b0b4520193fb215fe7c47b593df5c63bb0f7f9974e07635",
+      "contentHash": "71cfb5f5532f8fea72e54e513d723501a130950572ed80b75e93d30e5af002db"
+    },
+    {
+      "id": "mcp:io.github.brave/brave-search-mcp-server",
+      "name": "io.github.brave/brave-search-mcp-server",
+      "type": "mcp",
+      "summary": "Brave Search MCP Server providing web results, images, videos, and rich results.",
+      "useWhen": [
+        "searching the web",
+        "needing image or video results",
+        "requiring AI summaries"
+      ],
+      "doNotUseWhen": [
+        "alternative search engines are preferred"
+      ],
+      "categories": [
+        "web-search",
+        "search-engine",
+        "browser"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "command": "npx -y @brave/brave-search-mcp-server",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@brave/brave-search-mcp-server"
+          ]
+        },
+        "requiredSecrets": [
+          "BRAVE_API_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "2.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/brave/brave-search-mcp-server",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "98c221a0ce09fb30aacd7201bd88a8ca3f6fc27f22c0e035b11f52f167c394eb",
+      "contentHash": "ad7062bae3df9a15f601f910bfdf89061d1f272ffc9acaccf044dfe9b61e8e79"
+    },
+    {
+      "id": "mcp:io.github.brendanlefebvre/spudcoach",
+      "name": "Brotato Coach",
+      "type": "mcp",
+      "summary": "Deterministic Brotato theorycrafter MCP server providing facts and math.",
+      "useWhen": [
+        "playing Brotato",
+        "needing Brotato strategy",
+        "requiring Brotato data"
+      ],
+      "doNotUseWhen": [
+        "alternative Brotato tools are preferred"
+      ],
+      "categories": [
+        "gaming",
+        "brotato",
+        "theorycrafting"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "SPUDCOACH_DATA"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.13.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://spudcoach.fyi",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "9c2331a27a66d8ed87b1811ede0b6e65f90ebaffd3530bc4ca5ef868c7a79549",
+      "contentHash": "39f3de06e2ce244abeec65fba429e3ba23d9a1664de31df506c9d9a4d2b479ee"
+    },
+    {
+      "id": "mcp:io.github.caelum29/calibre-mcp",
+      "name": "io.github.caelum29/calibre-mcp",
+      "type": "mcp",
+      "summary": "Calibre ebook library server for searching, reading, and curating metadata.",
+      "useWhen": [
+        "managing ebooks",
+        "needing ebook metadata",
+        "requiring ebook search"
+      ],
+      "doNotUseWhen": [
+        "alternative ebook management tools are preferred"
+      ],
+      "categories": [
+        "ebook-management",
+        "library-management",
+        "metadata"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y calibre-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "calibre-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "CALIBRE_MCP_SERVER_URL",
+          "CALIBRE_MCP_LIBRARY",
+          "CALIBRE_MCP_ENABLE_WRITE",
+          "CALIBRE_MCP_CALIBREDB_PATH"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.6.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/caelum29/calibre-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "2985248b44c18bd22e2209082c76f4a3f1d9c12fa95b4d85ee20554cea2c6058",
+      "contentHash": "c43c0a8ed07ab2fc01dbd9e6e4e70eb55105b388deacb6079153364b2ec50108"
+    },
+    {
+      "id": "mcp:io.github.chiranj/mcp",
+      "name": "io.github.chiranj/mcp",
+      "type": "mcp",
+      "summary": "Manage Google Ads from Claude, including reading metrics and drafting campaigns.",
+      "useWhen": [
+        "managing Google Ads",
+        "needing Google Ads metrics",
+        "requiring campaign management"
+      ],
+      "doNotUseWhen": [
+        "alternative Google Ads management tools are preferred"
+      ],
+      "categories": [
+        "google-ads",
+        "ad-management",
+        "campaign-management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y @vibeads/mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@vibeads/mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "VIBEADS_API_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "0.2.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/vibeads/mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "cd522650c38c1aa3f9a46e72185c4214beeb8d8cf130df06ac36579e15da1ca6",
+      "contentHash": "dba9c5aadf1f0b1edbf8500e58e6ea1b7ef97d9ffc9b9535a2d83476a11be2e5"
+    },
+    {
+      "id": "mcp:io.github.codework-lgtm/issuefoundry-agent-market",
+      "name": "IssueFoundry Agent Market",
+      "type": "mcp",
+      "summary": "Discover agent services and buy IssueFoundry's fractional-cent x402 reliability utilities.",
+      "useWhen": [
+        "needing agent services",
+        "requiring reliability utilities",
+        "buying IssueFoundry services"
+      ],
+      "doNotUseWhen": [
+        "alternative agent services are preferred"
+      ],
+      "categories": [
+        "agent-services",
+        "reliability-utilities",
+        "marketplace"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://issuefoundry-index.jadennuckels.chatgpt.site/api/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.codework-lgtm%2Fissuefoundry-agent-market",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "c22f8073a181168a6f62198d7e6ee7226e22eae3a2fe905f2c888b3212a9a089",
+      "contentHash": "d615440749e3be4da5a82c6fdf105ab766f3b104459481fd24a1a87c287e8333"
+    },
+    {
+      "id": "mcp:io.github.commet/argus-decision-mcp",
+      "name": "io.github.commet/argus-decision-mcp",
+      "type": "mcp",
+      "summary": "Save falsifiable predictions and record reality, with reality grading the model.",
+      "useWhen": [
+        "making predictions",
+        "needing prediction grading",
+        "requiring model evaluation"
+      ],
+      "doNotUseWhen": [
+        "alternative prediction tools are preferred"
+      ],
+      "categories": [
+        "prediction",
+        "model-evaluation",
+        "reality-grading"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y argus-decision-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "argus-decision-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "ARGUS_DIR",
+          "ARGUS_TOKEN",
+          "ARGUS_TZ"
+        ]
+      },
+      "localCloud": "local",
+      "version": "1.7.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://argus.voyage",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "fd7baffb967363b3eaedb2f19311ca9731a191f9acbc39f6a52de095b4b21d6c",
+      "contentHash": "cdab7a09020b3f2304ac0540a9a1a18e770313900353730c62bedb6f30c9c930"
+    },
+    {
+      "id": "mcp:io.github.constripacity/claude-code-bridge",
+      "name": "io.github.constripacity/claude-code-bridge",
+      "type": "mcp",
+      "summary": "MCP relay for Claude Code agents to exchange messages via named channels.",
+      "useWhen": [
+        "using Claude Code agents",
+        "needing agent communication",
+        "requiring message exchange"
+      ],
+      "doNotUseWhen": [
+        "alternative agent communication tools are preferred"
+      ],
+      "categories": [
+        "agent-communication",
+        "message-exchange",
+        "claude-code"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "CLAUDE_BRIDGE_DB",
+          "CLAUDE_BRIDGE_AUTH_TOKEN"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.9.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/constripacity/Claude-Bridge",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "43438475acd91d49623f99e8ecbb2cb62db2695bfb260d40f31642614f1c6ac2",
+      "contentHash": "f0b845759040516ffebf1030afa2d892b336020c60d49860a6bd799cadb23524"
+    },
+    {
+      "id": "mcp:io.github.cyanheads/ourairports-mcp-server",
+      "name": "io.github.cyanheads/ourairports-mcp-server",
+      "type": "mcp",
+      "summary": "Offline global aviation reference with airports, runways, navaids, and frequencies from OurAirports.",
+      "useWhen": [
+        "needing aviation data",
+        "requiring airport information",
+        "accessing OurAirports data"
+      ],
+      "doNotUseWhen": [
+        "alternative aviation data sources are preferred"
+      ],
+      "categories": [
+        "aviation",
+        "airport-data",
+        "ourairports"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y @cyanheads/ourairports-mcp-server",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@cyanheads/ourairports-mcp-server"
+          ]
+        },
+        "requiredSecrets": [
+          "MCP_LOG_LEVEL",
+          "MCP_HTTP_HOST",
+          "MCP_HTTP_PORT",
+          "MCP_HTTP_ENDPOINT_PATH",
+          "MCP_AUTH_MODE"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.2.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/cyanheads/ourairports-mcp-server",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "9eee72ee3ab4c2234472a814bb46968cbcb8f5095f697f50c9de36a32f4692d5",
+      "contentHash": "1c874e71eb033d2ca00d75e739ab6e5080c0a3e71449da7c3e07799caa966e49"
+    },
+    {
+      "id": "mcp:io.github.daniel3303/equibles",
+      "name": "io.github.daniel3303/equibles",
+      "type": "mcp",
+      "summary": "Provides US stock-market and financial data.",
+      "useWhen": [
+        "analyzing stock market trends",
+        "researching company financials",
+        "tracking insider trades"
+      ],
+      "doNotUseWhen": [
+        "dealing with non-US markets"
+      ],
+      "categories": [
+        "financial",
+        "data",
+        "stock-market"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.equibles.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/daniel3303/stock-market-mcp-server",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "8987389de6e5c5c3fa2d5758eda72ef54c19affb8911f0e344ba13a14ee72de9",
+      "contentHash": "28479c65c59d36255e1c7ffedaf7145914a2f2b0e862048c63fb2a48581d5a06"
+    },
+    {
+      "id": "mcp:io.github.danielinniss/boundr",
+      "name": "Boundr",
+      "type": "mcp",
+      "summary": "Offers UK administrative boundary data.",
+      "useWhen": [
+        "working with UK geographic data",
+        "retrieving boundary line information",
+        "searching for points of interest"
+      ],
+      "doNotUseWhen": [
+        "dealing with non-UK territories"
+      ],
+      "categories": [
+        "geographic",
+        "boundary",
+        "uk"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.boundr.dev/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://boundr.dev",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "01387df7740210d5316e0d99ed42104301bb25ea2b8801ed80acf9c4a4bbdb55",
+      "contentHash": "1a1ab9b0af1f62a2e31c28e833862c3e12dbb83409660d950e1380799a07e780"
+    },
+    {
+      "id": "mcp:io.github.dir-ai/repotector",
+      "name": "io.github.dir-ai/repotector",
+      "type": "mcp",
+      "summary": "Acts as a guardian AI agent for code repositories.",
+      "useWhen": [
+        "protecting code repositories",
+        "verifying agent interactions",
+        "securing AI-agents"
+      ],
+      "doNotUseWhen": [
+        "working with non-AI agents"
+      ],
+      "categories": [
+        "security",
+        "repository",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y repotector",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "repotector"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "1.6.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/dir-ai/repotector",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "b38b0bda7d49698805f0278f7523fbfa5befa69ffbc77d9e5ce23cff588637d3",
+      "contentHash": "bdc5561dbee83c8bb9516fd097842d00e0070d732870af610af27a337a8badf1"
+    },
+    {
+      "id": "mcp:io.github.donggyun112/keymem",
+      "name": "io.github.donggyun112/keymem",
+      "type": "mcp",
+      "summary": "Provides an associative key-graph memory for LLM agents.",
+      "useWhen": [
+        "recall by association",
+        "not vector similarity",
+        "memory management for LLM agents"
+      ],
+      "doNotUseWhen": [
+        "dealing with non-LLM agents"
+      ],
+      "categories": [
+        "memory",
+        "llm",
+        "associative"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [],
+      "installation": {
+        "command": "npx -y keymem",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "keymem"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.17.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/donggyun112/keymem",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "623fcda82fc2b1504682e8a6a69edeb779b71f9605c876b2c055633acef6808c",
+      "contentHash": "ab88f740018d55013ac156096319b7ceec3e3a851c2977d775cf0fabf82427b6"
+    },
+    {
+      "id": "mcp:io.github.eidetic-works/nucleus",
+      "name": "io.github.eidetic-works/nucleus",
+      "type": "mcp",
+      "summary": "Offers a sovereign agent OS with persistent memory and governance.",
+      "useWhen": [
+        "managing AI agent memories",
+        "governing AI agents",
+        "persistent memory management"
+      ],
+      "doNotUseWhen": [
+        "non-AI agent applications"
+      ],
+      "categories": [
+        "ai",
+        "os",
+        "governance"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://relay.nucleusos.dev/mcp"
+        },
+        "requiredSecrets": [
+          "NUCLEUS_BRAIN_PATH"
+        ]
+      },
+      "localCloud": "local",
+      "version": "1.15.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://nucleusos.dev",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d970574a0c1e777e7003781e9fee2562099e8443eac385c8327b75b27fff35af",
+      "contentHash": "34a4c4adfa3bc892efc93dc1087571077d881346f66092541ae70f34a293b61c"
+    },
+    {
+      "id": "mcp:io.github.endoflife-ai/endoflife-mcp",
+      "name": "endoflife.ai — Software Lifecycle Intelligence",
+      "type": "mcp",
+      "summary": "Provides EOL dates and risk scores for software products.",
+      "useWhen": [
+        "checking software EOL dates",
+        "auditing software stacks",
+        "risk scoring"
+      ],
+      "doNotUseWhen": [
+        "non-software applications"
+      ],
+      "categories": [
+        "software",
+        "eol",
+        "risk"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.endoflife.ai"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://endoflife.ai/mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "fece235208e022162e4791029cf79690141d3f1c0a7000f93ca8e1c2b81729f0",
+      "contentHash": "2b4653feddfa5e414c2a5afcf6f04a7eeeca4ae596ef30e612a7e108e9a5a611"
+    },
+    {
+      "id": "mcp:io.github.evvfebruary/kaiten-mcp",
+      "name": "Kaiten",
+      "type": "mcp",
+      "summary": "Manages Kaiten spaces, boards, cards, comments, and tags.",
+      "useWhen": [
+        "managing Kaiten workspaces",
+        "creating boards and cards",
+        "managing comments and tags"
+      ],
+      "doNotUseWhen": [
+        "non-Kaiten applications"
+      ],
+      "categories": [
+        "project",
+        "management",
+        "kaiten"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "KAITEN_API_TOKEN",
+          "KAITEN_WORKSPACE_SLUG",
+          "KAITEN_BASE_URL"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/evvfebruary/kaiten-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "dbffbfb24e9f0b984cd035ba97278c9829ef17fc80d94ff36d636f9f168719c9",
+      "contentHash": "f25d60a039a63f78de050ed14d7a1d00e5f09d17ea95718cac5f1afc62ba483f"
+    },
+    {
+      "id": "mcp:io.github.feelyday/kadlint",
+      "name": "io.github.feelyday/kadlint",
+      "type": "mcp",
+      "summary": "Acts as a Korean ad-compliance linter for cosmetics and health-food marketing copy.",
+      "useWhen": [
+        "checking ad compliance in Korea",
+        "validating marketing copy",
+        "cosmetics and health-food industries"
+      ],
+      "doNotUseWhen": [
+        "non-Korean ad compliance"
+      ],
+      "categories": [
+        "compliance",
+        "korean",
+        "advertising"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [],
+      "installation": {
+        "command": "npx -y kadlint",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "kadlint"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/feelyday/kadlint",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "82e3f0a28a87f0677e44df701de184691d2fee797493ca93a79c59288a4c712c",
+      "contentHash": "44f61b51232bf36606486fa61220b65e8eb57781bfcc043c4db9b24d6fb5d7e8"
+    },
+    {
+      "id": "mcp:io.github.firish/webfetch",
+      "name": "webfetch",
+      "type": "mcp",
+      "summary": "Provides self-hosted web search for LLM agents.",
+      "useWhen": [
+        "performing web searches for LLM agents",
+        "fetching web content",
+        "semantic caching"
+      ],
+      "doNotUseWhen": [
+        "non-LLM agent applications"
+      ],
+      "categories": [
+        "web",
+        "search",
+        "llm"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "network",
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": [
+          "BRAVE_API_KEY",
+          "SERPER_API_KEY",
+          "TAVILY_API_KEY",
+          "WEBFETCH_PROVIDER"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/firish/webfetch",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "4c92b92fcb7d35a88f9fa359ebb51120abccdfc5d001b1627452a4158032468c",
+      "contentHash": "5e63fe84c63876e2c3a192babadd65415589fdd9d5fd7b445cac7a8e85f18e2d"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/afya-mcp",
+      "name": "io.github.gabrielmahia/afya-mcp",
+      "type": "mcp",
+      "summary": "MCP server for health-service coordination in East Africa",
+      "useWhen": [
+        "healthcare service coordination",
+        "East African health services",
+        "medical record management"
+      ],
+      "doNotUseWhen": [
+        "non-healthcare applications"
+      ],
+      "categories": [
+        "healthcare",
+        "coordination",
+        "africa"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/afya-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "86968dcd530a4f5965c6180c86ac8a9ef75913d05f86e9d598130973543c583f",
+      "contentHash": "3089492819e3d1579dc57d2906c96ed8633840137760e29642d65c9bde2a48bb"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/afya-ya-akili-mcp",
+      "name": "io.github.gabrielmahia/afya-ya-akili-mcp",
+      "type": "mcp",
+      "summary": "MCP server for mental-health support coordination in East Africa",
+      "useWhen": [
+        "mental health support",
+        "East African mental health services",
+        "psychological counseling"
+      ],
+      "doNotUseWhen": [
+        "non-mental health applications"
+      ],
+      "categories": [
+        "mentalhealth",
+        "support",
+        "africa"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/afya-ya-akili-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "7a76e05f60c007670cf83f109fb82e68f4cd9e28f8d9a12c3ff01bcee8109d7a",
+      "contentHash": "9328fadb8e010a0455fed6adec5d3339ea0baef0a117a646b10970f614da7cf1"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/ardhi-mcp",
+      "name": "io.github.gabrielmahia/ardhi-mcp",
+      "type": "mcp",
+      "summary": "MCP server for land records and land-service coordination in Kenya",
+      "useWhen": [
+        "land record management",
+        "Kenyan land services",
+        "property registration"
+      ],
+      "doNotUseWhen": [
+        "non-land related applications"
+      ],
+      "categories": [
+        "land",
+        "records",
+        "kenya"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/ardhi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "7748feb1228d5155fbac50f5e47319f813b08e3e2e8d6354c61a057764803253",
+      "contentHash": "e0c92a7ddbf3f42e60b488c56ed878977480cde5c4e87414b7e8a7e00a439f13"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/bima-mcp",
+      "name": "io.github.gabrielmahia/bima-mcp",
+      "type": "mcp",
+      "summary": "MCP server for Kenya Insurance Intelligence",
+      "useWhen": [
+        "insurance services",
+        "Kenyan insurance market",
+        "risk management"
+      ],
+      "doNotUseWhen": [
+        "non-insurance applications"
+      ],
+      "categories": [
+        "insurance",
+        "kenya",
+        "intelligence"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/bima-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "3bbc5315052e600f25b5cdc49281283c2da093a81d1b6f48ff2bd840f7d23c32",
+      "contentHash": "5290d78d4ed466308bbaed2048fc514caf75e2a304545069095992a82d663f31"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/church-mcp",
+      "name": "io.github.gabrielmahia/church-mcp",
+      "type": "mcp",
+      "summary": "MCP server for congregation and community-organization coordination in East Africa",
+      "useWhen": [
+        "community organization",
+        "East African church services",
+        "congregation management"
+      ],
+      "doNotUseWhen": [
+        "non-community applications"
+      ],
+      "categories": [
+        "community",
+        "church",
+        "africa"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/church-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "839279de4c2d908e54ec34fdd2d59e12fa10414a51f132fd251f0297882e2123",
+      "contentHash": "aa1a39c972858fa96e4625cd2deee0da75b1c6da6618e0a3a80363bebcb0042c"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/county-mcp",
+      "name": "io.github.gabrielmahia/county-mcp",
+      "type": "mcp",
+      "summary": "MCP server for Kenyan county-government services and coordination",
+      "useWhen": [
+        "county government services",
+        "Kenyan local governance",
+        "public administration"
+      ],
+      "doNotUseWhen": [
+        "non-government applications"
+      ],
+      "categories": [
+        "government",
+        "kenya",
+        "local"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/county-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "9c13a606bc7a3195d1617bf88e82c24b31d47958a434b43949b4e619c0591ab3",
+      "contentHash": "f739845b75db8402dd8a447aa09ceaca220696c6d4aadfd1bb8e464ccabb5016"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/decision-intelligence-mcp",
+      "name": "io.github.gabrielmahia/decision-intelligence-mcp",
+      "type": "mcp",
+      "summary": "MCP server for classical strategy decision intelligence",
+      "useWhen": [
+        "strategic decision making",
+        "classical strategy",
+        "business intelligence"
+      ],
+      "doNotUseWhen": [
+        "non-strategic applications"
+      ],
+      "categories": [
+        "strategy",
+        "intelligence",
+        "decision"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/decision-intelligence-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "c125fc197b27a95cacae7d1d44a160e0c816c68688b98cddd4f5bb4acc8fd357",
+      "contentHash": "1b5a80c823754ce41102c3f9fea48006d706cafa84d6c64cdc46a487e19bcf88"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/diaspora-mcp",
+      "name": "io.github.gabrielmahia/diaspora-mcp",
+      "type": "mcp",
+      "summary": "MCP server for diaspora services coordination between East Africa and abroad",
+      "useWhen": [
+        "diaspora services",
+        "East African diaspora community",
+        "international coordination"
+      ],
+      "doNotUseWhen": [
+        "non-diaspora applications"
+      ],
+      "categories": [
+        "diaspora",
+        "africa",
+        "international"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/diaspora-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d233394b4e5b8fb1f1664331a19c4f84b40ded746b65ae865023d98b03cfa7f4",
+      "contentHash": "17c95af73906911bbcc997b6d66e5d29dbe7749544ee839e730754c02587bc95"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/elimu-mcp",
+      "name": "io.github.gabrielmahia/elimu-mcp",
+      "type": "mcp",
+      "summary": "MCP server for education coordination in East Africa",
+      "useWhen": [
+        "education services",
+        "East African education system",
+        "learning management"
+      ],
+      "doNotUseWhen": [
+        "non-education applications"
+      ],
+      "categories": [
+        "education",
+        "africa",
+        "learning"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.5",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/elimu-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "dc89bcfdbd4b1a45ea02556372278c56ca9ac164f970e5cfd1513f9bfe9f0703",
+      "contentHash": "8b1e5d2598f33da0c9a5cd37e51205560479ff2b6429bc89df4138d0a1d49455"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/faida-mcp",
+      "name": "io.github.gabrielmahia/faida-mcp",
+      "type": "mcp",
+      "summary": "MCP server for savings and investment coordination in East Africa",
+      "useWhen": [
+        "savings and investment services",
+        "East African financial market",
+        "wealth management"
+      ],
+      "doNotUseWhen": [
+        "non-financial applications"
+      ],
+      "categories": [
+        "finance",
+        "africa",
+        "investment"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/faida-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "8893b1a2bf832ca2a1a08158c38d2a28159b6c2045b42363944a45b615d7f120",
+      "contentHash": "c8bfa776f609db9524fbdafa2f5b975698241a41ec9c033e7d60e85449a45633"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/familia-mcp",
+      "name": "io.github.gabrielmahia/familia-mcp",
+      "type": "mcp",
+      "summary": "MCP server for family-services coordination in East Africa",
+      "useWhen": [
+        "coordinating family services",
+        "providing social support",
+        "managing community resources"
+      ],
+      "doNotUseWhen": [
+        "dealing with sensitive financial information"
+      ],
+      "categories": [
+        "community",
+        "social",
+        "family"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.5",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/familia-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "0053d12438ada4a13978e8a07cf92f264a32441a5c2839705e468e6e6b11040c",
+      "contentHash": "923bf3f652ee6f0415c59e81c96af83f8cb62e8a6664d581003f240a4da31100"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/fomu-mcp",
+      "name": "io.github.gabrielmahia/fomu-mcp",
+      "type": "mcp",
+      "summary": "MCP server for government forms and document workflows in Kenya",
+      "useWhen": [
+        "submitting government forms",
+        "managing document workflows",
+        "providing civic services"
+      ],
+      "doNotUseWhen": [
+        "handling confidential documents"
+      ],
+      "categories": [
+        "government",
+        "forms",
+        "documents"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/fomu-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d0eedcd4debd0678b3e9b60df1d883da99c64778eeaf22afddfc8140a9bd4576",
+      "contentHash": "e8c53d864a53c2199e009e8dcb6f1b7e2c4d5011e8a08dcce6bd6efedde48a0c"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/habari-mcp",
+      "name": "io.github.gabrielmahia/habari-mcp",
+      "type": "mcp",
+      "summary": "MCP server for news and public-information coordination in East Africa",
+      "useWhen": [
+        "disseminating news",
+        "coordinating public information",
+        "managing community updates"
+      ],
+      "doNotUseWhen": [
+        "sharing sensitive information"
+      ],
+      "categories": [
+        "news",
+        "information",
+        "community"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/habari-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "9247036499c3a96cffba2639188c425ec9f353766270c1aa0075f477116a0abc",
+      "contentHash": "326bc318486d8b1e4fdf81297b553ba3df994d16b421b523a2e1d8080a5adf46"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/haki-ya-kazi-mcp",
+      "name": "io.github.gabrielmahia/haki-ya-kazi-mcp",
+      "type": "mcp",
+      "summary": "MCP server for labor-rights information and coordination in Kenya",
+      "useWhen": [
+        "providing labor rights information",
+        "coordinating labor services",
+        "managing worker support"
+      ],
+      "doNotUseWhen": [
+        "dealing with sensitive employment information"
+      ],
+      "categories": [
+        "labor",
+        "rights",
+        "employment"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/haki-ya-kazi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "90f1d4a9c7970750f1f3231add7a5f9db7141892fdbf837d85646028402c2416",
+      "contentHash": "4c13aad13e97bbe48eb3aa807fa07bddd989ebe1fc8e92021b7d65f20de07cd1"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/historia-mcp",
+      "name": "io.github.gabrielmahia/historia-mcp",
+      "type": "mcp",
+      "summary": "MCP server grounding agents in East African historical sources",
+      "useWhen": [
+        "researching historical events",
+        "providing educational resources",
+        "developing cultural programs"
+      ],
+      "doNotUseWhen": [
+        "handling sensitive cultural information"
+      ],
+      "categories": [
+        "history",
+        "education",
+        "culture"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/historia-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "3543f00487a5b3d0c919dca32fa450037561feb47721fbd15efe7a9e2a8cfe3b",
+      "contentHash": "957edf09a3aa4c0feb0cd84c8b3a0dc93705bc3314f50097cc3916565f796f51"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/jumuia-mcp",
+      "name": "io.github.gabrielmahia/jumuia-mcp",
+      "type": "mcp",
+      "summary": "MCP server for community-group coordination in East Africa",
+      "useWhen": [
+        "coordinating community activities",
+        "managing group resources",
+        "providing social support"
+      ],
+      "doNotUseWhen": [
+        "dealing with sensitive community information"
+      ],
+      "categories": [
+        "community",
+        "group",
+        "social"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.5",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/jumuia-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "16a8608e7cfbc45d8a9b3694c84a98c75809bc07a9ffde46a146e1a241460d14",
+      "contentHash": "577b91b87c5ae18a94532ba262b73a109877a68ccd0d4345483fd021b4f4783d"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/kazi-mcp",
+      "name": "io.github.gabrielmahia/kazi-mcp",
+      "type": "mcp",
+      "summary": "MCP server for jobs and employment coordination in East Africa",
+      "useWhen": [
+        "providing job listings",
+        "coordinating employment services",
+        "managing career support"
+      ],
+      "doNotUseWhen": [
+        "handling sensitive employment information"
+      ],
+      "categories": [
+        "employment",
+        "jobs",
+        "career"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/kazi-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "1fe5a21bacd8a3c159f9b6c88e8bc425204af87269adb0b98e60725af0c6aa8b",
+      "contentHash": "4c5158930d1fc91fc30d6b2102d05ec2e1f0d457eef789d7bb0c0f0e5bbc9c94"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/kenya-health-mcp",
+      "name": "io.github.gabrielmahia/kenya-health-mcp",
+      "type": "mcp",
+      "summary": "MCP server for Kenya health services",
+      "useWhen": [
+        "providing health information",
+        "coordinating medical services",
+        "managing health support"
+      ],
+      "doNotUseWhen": [
+        "handling sensitive medical information"
+      ],
+      "categories": [
+        "health",
+        "medical",
+        "wellness"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/kenya-health-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "4004c13a6273543dff92fd62765170eef2205f482b41441ffd4f21a9d39a492a",
+      "contentHash": "2c9869b4279685eefb4d5fc55663b682dbe546bae68cbce90561cf48461ae736"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/kilimo-mcp",
+      "name": "io.github.gabrielmahia/kilimo-mcp",
+      "type": "mcp",
+      "summary": "MCP server for agriculture coordination in East Africa",
+      "useWhen": [
+        "providing agricultural information",
+        "coordinating farming services",
+        "managing agricultural support"
+      ],
+      "doNotUseWhen": [
+        "dealing with sensitive agricultural information"
+      ],
+      "categories": [
+        "agriculture",
+        "farming",
+        "rural"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/kilimo-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "51a131cf458e9c255d543953d2242e203f8014afc6945ad9b077d3c1ad511d5f",
+      "contentHash": "c721209bcca62d544e719765ce6ea36385cbc086918735affd10f399b349b61b"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/kra-mcp",
+      "name": "io.github.gabrielmahia/kra-mcp",
+      "type": "mcp",
+      "summary": "MCP server for Kenya Revenue Authority tax workflows and information",
+      "useWhen": [
+        "submitting tax forms",
+        "managing tax workflows",
+        "providing tax information"
+      ],
+      "doNotUseWhen": [
+        "handling sensitive financial information"
+      ],
+      "categories": [
+        "tax",
+        "finance",
+        "government"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/kra-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "373c57f94dfa1cea76998451265828b885bbf656130ef8cc085ab7904137a423",
+      "contentHash": "ef4bef87851169d741b6c71273dc914397a16684b7c07fdf9ea61b7ffdbb37f3"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/mazingira-mcp",
+      "name": "io.github.gabrielmahia/mazingira-mcp",
+      "type": "mcp",
+      "summary": "MCP server for environment and climate coordination in East Africa.",
+      "useWhen": [
+        "environmental monitoring",
+        "climate change research",
+        "sustainable development planning"
+      ],
+      "doNotUseWhen": [
+        "general-purpose computing"
+      ],
+      "categories": [
+        "environment",
+        "climate",
+        "sustainability"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/mazingira-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "2fac6c26b53b98fcc7e5c40eb59dca5b43ddfbef37e680b36172901a5fff5258",
+      "contentHash": "595cb9f4799cbe8d353b31337502076b6e30198970396f18b5fe3952a505c19c"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/mkopo-mcp",
+      "name": "io.github.gabrielmahia/mkopo-mcp",
+      "type": "mcp",
+      "summary": "Alternative Credit Scoring MCP Server.",
+      "useWhen": [
+        "credit scoring",
+        "financial analysis",
+        "lending decision-making"
+      ],
+      "doNotUseWhen": [
+        "personal financial planning"
+      ],
+      "categories": [
+        "finance",
+        "credit",
+        "lending"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/mkopo-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "a46774ed569b9317b6457a7b588a2b451a7a24c57f9001f7b0563792fad71672",
+      "contentHash": "79890db39fcc5604f32ad84f5cf7b3695436d1037a640356d721fa1e5926acba"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/mpesa-mcp",
+      "name": "io.github.gabrielmahia/mpesa-mcp",
+      "type": "mcp",
+      "summary": "MCP server for M-Pesa mobile-money integration in Kenya.",
+      "useWhen": [
+        "mobile payments",
+        "financial transactions",
+        "e-commerce"
+      ],
+      "doNotUseWhen": [
+        "non-monetary transactions"
+      ],
+      "categories": [
+        "mobile",
+        "payments",
+        "finance"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.2.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/mpesa-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "c2ad0a4925de38fd8ba264212721924a5ef51802a2fb9b41fc00a05b1d9a0d0e",
+      "contentHash": "75b7f09bb08b118fa0f41c32d05adc49c5db2ac60492cc838b200c6a5bed9c06"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/nishati-mcp",
+      "name": "io.github.gabrielmahia/nishati-mcp",
+      "type": "mcp",
+      "summary": "MCP server for energy coordination in East Africa.",
+      "useWhen": [
+        "energy management",
+        "resource allocation",
+        "sustainability planning"
+      ],
+      "doNotUseWhen": [
+        "general-purpose computing"
+      ],
+      "categories": [
+        "energy",
+        "sustainability",
+        "resource management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/nishati-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "f1a0cfa3f6b8612ab7635ba315db488baaab1f2259134d21f8a64f363d95d703",
+      "contentHash": "d36688064deff30ccb50ede23d0dec63475a01b50bc55244a5d03c19baa7cb87"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/nyumba-mcp",
+      "name": "io.github.gabrielmahia/nyumba-mcp",
+      "type": "mcp",
+      "summary": "MCP server for housing coordination in East Africa.",
+      "useWhen": [
+        "housing management",
+        "real estate",
+        "urban planning"
+      ],
+      "doNotUseWhen": [
+        "non-housing related activities"
+      ],
+      "categories": [
+        "housing",
+        "real estate",
+        "urban planning"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/nyumba-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "3e93f0029614a9ab07b2d867008f92c4ce8144ce1fac080ca28882e25db17ae9",
+      "contentHash": "7e12cea1a77b6288d86eac644fef3653f2baad40156ea2030a112f9af73cb5dd"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/offline-mcp",
+      "name": "io.github.gabrielmahia/offline-mcp",
+      "type": "mcp",
+      "summary": "MCP server enabling offline-first agent operation over intermittent connectivity.",
+      "useWhen": [
+        "offline data collection",
+        "intermittent connectivity",
+        "remote operations"
+      ],
+      "doNotUseWhen": [
+        "always-connected applications"
+      ],
+      "categories": [
+        "offline",
+        "intermittent connectivity",
+        "remote operations"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/offline-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "7c7ec24b19bc3dc3e87e6d35b2b2e3179110ac11f9fbb220112ea7c196caff33",
+      "contentHash": "a7e826e05b153508c202505478a914a371e1ba884f4b2d18f7fcef6842cf1ec9"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/remit-mcp",
+      "name": "io.github.gabrielmahia/remit-mcp",
+      "type": "mcp",
+      "summary": "Remit MCP server.",
+      "useWhen": [
+        "money transfers",
+        "remittances",
+        "cross-border payments"
+      ],
+      "doNotUseWhen": [
+        "non-monetary transactions"
+      ],
+      "categories": [
+        "remittance",
+        "payments",
+        "finance"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/remit-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "ea4ac601c8325162d248b4a096db023740161c505ea4f24ffe7230f11a405a8f",
+      "contentHash": "7288cbbd5514ebf2ed18d87ede823d1a21ba37c86e272404a00985303391ae29"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/sifa-mcp",
+      "name": "io.github.gabrielmahia/sifa-mcp",
+      "type": "mcp",
+      "summary": "Portable Reputation & Skills Passport MCP Server.",
+      "useWhen": [
+        "skill verification",
+        "reputation management",
+        "career development"
+      ],
+      "doNotUseWhen": [
+        "non-professional applications"
+      ],
+      "categories": [
+        "reputation",
+        "skills",
+        "career development"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/sifa-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "8b42e48e693de5e6301239b853b7519d8bce21298f4b4cc8992eb0ccfebd3d30",
+      "contentHash": "d1e5c5fb5f8add29a0cd9b0cbbc319bf8e7fa458fd4b75a3112f5aa0f5dbb3d8"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/soko-mcp",
+      "name": "io.github.gabrielmahia/soko-mcp",
+      "type": "mcp",
+      "summary": "Kenya Commodity Price Intelligence MCP Server.",
+      "useWhen": [
+        "commodity pricing",
+        "market research",
+        "supply chain management"
+      ],
+      "doNotUseWhen": [
+        "non-market related activities"
+      ],
+      "categories": [
+        "commodity prices",
+        "market research",
+        "supply chain"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/soko-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "3fb4d4fa8b9b6c0b9832d3629b55d21c62b5a2d73ca07ae92251d722e7475ed8",
+      "contentHash": "1dc305fa625d00c7f8703f4a01da8979ddb4781602a2a0f6d90ffa4c314d2a73"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/swahili-health-mcp",
+      "name": "io.github.gabrielmahia/swahili-health-mcp",
+      "type": "mcp",
+      "summary": "Swahili Health MCP server.",
+      "useWhen": [
+        "healthcare services",
+        "medical research",
+        "health education"
+      ],
+      "doNotUseWhen": [
+        "non-medical applications"
+      ],
+      "categories": [
+        "healthcare",
+        "medical research",
+        "health education"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/swahili-health-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d809a9dee6074b2dc86207ffe0a106828f99b434725c36d36e88a90f8949635e",
+      "contentHash": "7d39c29fb62dd203185bcff76c5c0236333b961d00343d90e0b3377fcb416753"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/tafsiri-mcp",
+      "name": "io.github.gabrielmahia/tafsiri-mcp",
+      "type": "mcp",
+      "summary": "This MCP server provides Swahili translation and language grounding capabilities.",
+      "useWhen": [
+        "translating text to Swahili",
+        "grounding language in Swahili context",
+        "needing Swahili language support"
+      ],
+      "doNotUseWhen": [
+        "requiring translations in other languages"
+      ],
+      "categories": [
+        "language",
+        "translation",
+        "nlp"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.4",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/tafsiri-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "b9c94b82c6f26ca645176f92e4bd013bcb1eb5920f3e10b9e4bfdbc267a268f0",
+      "contentHash": "351cae4db9d1fa3009ad925f53f90f84f5d44b78c9ccaa3eb95179aad99225a0"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/usafiri-mcp",
+      "name": "io.github.gabrielmahia/usafiri-mcp",
+      "type": "mcp",
+      "summary": "This MCP server provides transport coordination in East Africa.",
+      "useWhen": [
+        "coordinating transport in East Africa",
+        "needing transport information in East Africa",
+        "planning trips in East Africa"
+      ],
+      "doNotUseWhen": [
+        "requiring transport coordination outside East Africa"
+      ],
+      "categories": [
+        "transport",
+        "travel",
+        "logistics"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.6",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/usafiri-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "18333bd05b029c55dc691267b8cf1dceb8a20a83f5b650cb34c0995d82351974",
+      "contentHash": "4e47d8fc6f5ab2a3a1315e4088866dbb26fd674bf376c7170ba391215a9f524e"
+    },
+    {
+      "id": "mcp:io.github.gabrielmahia/wapimaji-mcp",
+      "name": "io.github.gabrielmahia/wapimaji-mcp",
+      "type": "mcp",
+      "summary": "This MCP server provides Kenya Water & Drought Intelligence.",
+      "useWhen": [
+        "monitoring water levels in Kenya",
+        "analyzing drought conditions in Kenya",
+        "needing water-related data in Kenya"
+      ],
+      "doNotUseWhen": [
+        "requiring water-related data outside Kenya"
+      ],
+      "categories": [
+        "water",
+        "drought",
+        "environment"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.6",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gabrielmahia/wapimaji-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "46fa4162bb267b3d6da2b678add9ec3c78ae08ead09746b7f19bc802d919734f",
+      "contentHash": "7293fd62de944a2a8b6828d4ff905480bfd0846df34b9bc8e5a6d064d7e763c0"
+    },
+    {
+      "id": "mcp:io.github.galavoxx/phaedo-mcp",
+      "name": "io.github.galavoxx/phaedo-mcp",
+      "type": "mcp",
+      "summary": "This MCP server provides style injection and decision consults based on cognitive fingerprints.",
+      "useWhen": [
+        "needing personalized style suggestions",
+        "requiring decision support based on cognitive profiles",
+        "using Phaedo cognitive fingerprints"
+      ],
+      "doNotUseWhen": [
+        "not having a Phaedo cognitive fingerprint"
+      ],
+      "categories": [
+        "ai",
+        "cognition",
+        "personalization"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "command": "npx -y phaedo-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "phaedo-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/galavoxx/phaedo-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "a33771fd9f4c1a539f0a9976f3b659891638eb345e39db8bb49e8b4754c2ff8f",
+      "contentHash": "34ddc2b570d992a71eed025ad79cb5c34774ff6f9b750e3cc0221bc183b75358"
+    },
+    {
+      "id": "mcp:io.github.geowire/geowire",
+      "name": "io.github.geowire/geowire",
+      "type": "mcp",
+      "summary": "This MCP server provides unified place search across OpenStreetMap, Google, and custom data.",
+      "useWhen": [
+        "searching for places across multiple maps",
+        "needing to merge place data from different sources",
+        "requiring fallback place search capabilities"
+      ],
+      "doNotUseWhen": [
+        "only needing place search for a single map provider"
+      ],
+      "categories": [
+        "geolocation",
+        "mapping",
+        "search"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y @geowirehq/mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@geowirehq/mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "GOOGLE_MAPS_API_KEY",
+          "GEOWIRE_INTERNAL_CSV",
+          "GEOWIRE_CONFIG"
+        ]
+      },
+      "localCloud": "hybrid",
+      "version": "0.4.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://geowire.dev",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "1dd37519095477c602fe5b6f4754d10c8ce59356cd85df0f60983109652bb4b1",
+      "contentHash": "ca0516ddc71b274700eb4b24933caaa2dc0a00a43a5816bb644268ab6db714dd"
+    },
+    {
+      "id": "mcp:io.github.gg13121/corent-mcp",
+      "name": "Corent",
+      "type": "mcp",
+      "summary": "This MCP server generates images and videos via the Corent API with auto model routing and provider fallback.",
+      "useWhen": [
+        "generating images or videos with Corent API",
+        "needing auto model routing for media generation",
+        "requiring provider fallback for media generation"
+      ],
+      "doNotUseWhen": [
+        "not having a Corent API key"
+      ],
+      "categories": [
+        "media",
+        "generation",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y corent-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "corent-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "CORENT_API_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "0.4.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://corent.tech",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "6a6b92e0eb3fd0fdc6dd2df5f07c7c822a2ddefc3242aad435b6a2b7e0b64673",
+      "contentHash": "4ca7a01af38880f1480e57ffae49f305f028f859ef1bed8b873c6c983b3c19ce"
+    },
+    {
+      "id": "mcp:io.github.gitlares/nuboo",
+      "name": "Nuboo",
+      "type": "mcp",
+      "summary": "This MCP server manages real estate inventory, quotes, prospects, and sales reporting in Nuboo.",
+      "useWhen": [
+        "managing real estate data in Nuboo",
+        "needing to track quotes and prospects in Nuboo",
+        "requiring sales reporting in Nuboo"
+      ],
+      "doNotUseWhen": [
+        "not using Nuboo for real estate management"
+      ],
+      "categories": [
+        "real estate",
+        "crm",
+        "sales"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://api.nuboohub.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://nuboohub.com/",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "c4c5bc3210b746a57adb0808c626d364a23d4309fe41852b39de8df677783488",
+      "contentHash": "8700b286a6097325b79d1dbe79ac986c630c5fc024dcb4c2d7f0f7acbf5b4012"
+    },
+    {
+      "id": "mcp:io.github.gulmezeren2-byte/acikpoz",
+      "name": "acikpoz",
+      "type": "mcp",
+      "summary": "This MCP server converts Turkish public construction unit-price catalog PDFs into structured data.",
+      "useWhen": [
+        "converting Turkish construction catalogs to structured data",
+        "needing to analyze Turkish construction unit prices",
+        "requiring structured data from Turkish construction catalogs"
+      ],
+      "doNotUseWhen": [
+        "not working with Turkish construction catalogs"
+      ],
+      "categories": [
+        "construction",
+        "data conversion",
+        "pdf"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.2.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gulmezeren2-byte/acikpoz",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "782eb0ebb5dc4534a558fed9313dccea5979ec1e01e953156f0be88ea48c709f",
+      "contentHash": "f02b7c63cfcfd425bf6653b3dac090f4a71b63024c9d84b80e3eb78d7635727f"
+    },
+    {
+      "id": "mcp:io.github.gulmezeren2-byte/andon",
+      "name": "andon",
+      "type": "mcp",
+      "summary": "This MCP server provides deterministic verification for AI-generated analysis and inspection of workbooks.",
+      "useWhen": [
+        "verifying AI-generated analysis",
+        "inspecting workbooks for errors",
+        "requiring deterministic verification of AI outputs"
+      ],
+      "doNotUseWhen": [
+        "not working with AI-generated analysis or workbooks"
+      ],
+      "categories": [
+        "ai",
+        "verification",
+        "analysis"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.6.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gulmezeren2-byte/andon",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "b14d53cb068278ce9d2b3e7af369dfc95d716dd91dd195ffb0c1ebc82b657a79",
+      "contentHash": "1e4e8808c3d801b486f42d73ee00192daf115a65335074b752939a28d93f32c2"
+    },
+    {
+      "id": "mcp:io.github.gulmezeren2-byte/erp-report-engine",
+      "name": "ERP Report Engine",
+      "type": "mcp",
+      "summary": "This MCP server provides read-only access to an ERP's SQL database with a provably read-only guard and public benchmark.",
+      "useWhen": [
+        "needing read-only access to an ERP's SQL database",
+        "requiring a provably read-only guard for ERP data",
+        "benchmarking ERP performance"
+      ],
+      "doNotUseWhen": [
+        "requiring write access to the ERP database"
+      ],
+      "categories": [
+        "erp",
+        "database",
+        "read-only"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.7.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://gulmezeren2-byte.github.io/erp-report-engine/",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "194248163e89af4d186231380cebf29dcfd49b46ecd9cbb5b5be9cafcddfc18d",
+      "contentHash": "a986fd11278af09f55ce0ac74d99afbd13404ba64b0ccb8f8252347fb993ce97"
+    },
+    {
+      "id": "mcp:io.github.gulmezeren2-byte/ihalent",
+      "name": "ihalent",
+      "type": "mcp",
+      "summary": "Provides Turkish public-tender award intelligence",
+      "useWhen": [
+        "analyzing firm histories",
+        "evaluating discounts",
+        "assessing competition"
+      ],
+      "doNotUseWhen": [
+        "dealing with non-Turkish tenders"
+      ],
+      "categories": [
+        "database",
+        "analysis",
+        "tenders"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.3.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/gulmezeren2-byte/ihalent",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "53a9d8a9811a5f4030b54675fdeaf1d57a8cad1bd4330b6a509c22b2eab14fce",
+      "contentHash": "6571f12dd8b4f1b023817953e45302d5ef0fa7d370d41c7806a3ab6ef0992550"
+    },
+    {
+      "id": "mcp:io.github.helloo1568/sheetspec",
+      "name": "io.github.helloo1568/sheetspec",
+      "type": "mcp",
+      "summary": "Enables contract testing and quality gates for AI-created spreadsheets",
+      "useWhen": [
+        "creating spreadsheets with AI agents",
+        "testing spreadsheet quality",
+        "ensuring contract compliance"
+      ],
+      "doNotUseWhen": [
+        "working with manually created spreadsheets"
+      ],
+      "categories": [
+        "testing",
+        "spreadsheets",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/helloo1568/SheetSpec",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "5633f1489c4ae4ea39f11452054d19e06d82ed31f594adaccfb6a5cc11ad3169",
+      "contentHash": "57b051e7ffd151190a033d6f4838f66a54a8301f6b3816ac0dc32b740614690f"
+    },
+    {
+      "id": "mcp:io.github.hermoso-ai/hermoso",
+      "name": "Hermoso",
+      "type": "mcp",
+      "summary": "Generates video, image, and UGC ads using AI",
+      "useWhen": [
+        "creating ads for social media",
+        "generating video content",
+        "spying on competitor ads"
+      ],
+      "doNotUseWhen": [
+        "creating ads for non-digital platforms"
+      ],
+      "categories": [
+        "marketing",
+        "advertising",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials",
+        "network"
+      ],
+      "installation": {
+        "command": "npx -y hermoso",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "hermoso"
+          ]
+        },
+        "requiredSecrets": [
+          "HERMOSO_TOKEN",
+          "HERMOSO_API_BASE"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "0.1.8",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://hermoso.ai/mcp/",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "1ef08bf7c8a9ec0f49beed283e33b07eb27b24b0df2d5513f24b2ad7dcc30e9e",
+      "contentHash": "892c6180fbc5f0f08c8416b3dbf310f6807d3b876796bcf6d8f46a5acb1d6db1"
+    },
+    {
+      "id": "mcp:io.github.homeassistant-ai/ha-mcp",
+      "name": "io.github.homeassistant-ai/ha-mcp",
+      "type": "mcp",
+      "summary": "Manages Home Assistant through AI assistants",
+      "useWhen": [
+        "controlling home devices with AI",
+        "integrating Home Assistant with AI assistants",
+        "managing smart home devices"
+      ],
+      "doNotUseWhen": [
+        "using non-AI assistants"
+      ],
+      "categories": [
+        "smart home",
+        "ai",
+        "home assistant"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "7.14.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/homeassistant-ai/ha-mcp.git",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "e0abee8e589f5639c9060d9ff1ae567156e6f965366da469e9b4cddcb39c8fdc",
+      "contentHash": "05e3e67bba5830a2cca8f3f73fe9b6bd543ac8bb961c33267ccd3bbae2ce5896"
+    },
+    {
+      "id": "mcp:io.github.ideoshi/glyphloop",
+      "name": "Glyphloop",
+      "type": "mcp",
+      "summary": "Creates loop-perfect ASCII animations with AI",
+      "useWhen": [
+        "creating animations for websites",
+        "generating ASCII art",
+        "using AI for animation"
+      ],
+      "doNotUseWhen": [
+        "creating non-ASCII animations"
+      ],
+      "categories": [
+        "animation",
+        "ascii art",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y glyphloop",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "glyphloop"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.0-beta.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://glyphloop.art/",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "a276ff84dd664e3592fcdba391b0e4c97dc91b747ac6215e891cf62613164473",
+      "contentHash": "47ee39cd5bbfcef73335c07c049ecc3728e47f3978577281cb1b2d2db2dbbf71"
+    },
+    {
+      "id": "mcp:io.github.ignaciohermosillacornejo/copilot-money-mcp",
+      "name": "Copilot Money",
+      "type": "mcp",
+      "summary": "Manages Copilot Money personal finances with AI",
+      "useWhen": [
+        "tracking personal expenses with AI",
+        "managing finances with Copilot Money",
+        "using GraphQL for finance queries"
+      ],
+      "doNotUseWhen": [
+        "using non-Copilot Money finance tools"
+      ],
+      "categories": [
+        "personal finance",
+        "ai",
+        "graphql"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y copilot-money-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "copilot-money-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "2.3.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/ignaciohermosillacornejo/copilot-money-mcp#readme",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d90c84510b62994741894ead18575b5a27d14ef6282afbd7606eec6e6e2c6e5c",
+      "contentHash": "ecf00847132bdaa2e4606baa7fcf2d4c12d9ff10b24c69295efc6fb0dbb84d08"
+    },
+    {
+      "id": "mcp:io.github.inspirio-co/rootr-cli",
+      "name": "Rootr",
+      "type": "mcp",
+      "summary": "Connects team knowledge bases to AI agents",
+      "useWhen": [
+        "integrating team knowledge with AI",
+        "connecting CRM to AI",
+        "using AI for team data analysis"
+      ],
+      "doNotUseWhen": [
+        "using non-AI agents"
+      ],
+      "categories": [
+        "team management",
+        "ai",
+        "knowledge base"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://rootr.io/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.2.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://rootr.io",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "ab28c003268e58628b388e84b2e4f99d0feb45c3f867e4786339b784ea08c655",
+      "contentHash": "34b95a617f4637c1d1102c34a7b1a2b80ff5c2feede4574e813a2517c57890d0"
+    },
+    {
+      "id": "mcp:io.github.iowarp/scientific-catalog-mcp",
+      "name": "CLIO Scientific Catalog",
+      "type": "mcp",
+      "summary": "Enables scientific dataset discovery for remote agents",
+      "useWhen": [
+        "discovering scientific datasets with AI",
+        "using remote agents for data discovery",
+        "managing operator-owned datasets"
+      ],
+      "doNotUseWhen": [
+        "using non-scientific datasets"
+      ],
+      "categories": [
+        "scientific research",
+        "ai",
+        "dataset discovery"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "1.1.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/iowarp/clio-kit",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "15e87ba40b1aef00e49192adbe7f6d3d5717fef57708b0b253cb7b9f01670823",
+      "contentHash": "b60a82304bc2ad22ce408a65f75b12251f997c4db7a49f9fe365788de374f606"
+    },
+    {
+      "id": "mcp:io.github.ironclawdevs27/argus",
+      "name": "io.github.ironclawdevs27/argus",
+      "type": "mcp",
+      "summary": "Performs automated web QA via Chrome DevTools MCP",
+      "useWhen": [
+        "testing web applications with AI",
+        "using Chrome DevTools for QA",
+        "performing accessibility audits"
+      ],
+      "doNotUseWhen": [
+        "testing non-web applications"
+      ],
+      "categories": [
+        "web development",
+        "qa",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "installation": {
+        "command": "npx -y argusqa-os",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "argusqa-os"
+          ]
+        },
+        "requiredSecrets": [
+          "TARGET_DEV_URL",
+          "TARGET_STAGING_URL",
+          "SLACK_BOT_TOKEN",
+          "FIGMA_API_TOKEN",
+          "ARGUS_REDACT_SENSITIVE"
+        ]
+      },
+      "localCloud": "local",
+      "version": "10.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/ironclawdevs27/Argus",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "b703d50f47fb3067294b58f8f1a2c6b9a09c2855dbf9ed774c68eaf376c1a900",
+      "contentHash": "e866985888f9d56edee4b0f498ba65804eb2c95295070558f758de62f388867f"
+    },
+    {
+      "id": "mcp:io.github.isaacviannadev/spikeme",
+      "name": "SpikeMe",
+      "type": "mcp",
+      "summary": "Analyzes repo stacks and generates spike decision docs",
+      "useWhen": [
+        "analyzing repository stacks with AI",
+        "generating spike decision documents",
+        "using AI for repo analysis"
+      ],
+      "doNotUseWhen": [
+        "analyzing non-repo data"
+      ],
+      "categories": [
+        "repository management",
+        "ai",
+        "analysis"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y spikeme-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "spikeme-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "SPIKEME_TOKEN"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.5.5",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://spikeme.io/docs/mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "4518042026aa0c4df5f29efb8d039a90f24bf6ac65913b0ac5a4431e0f32d01a",
+      "contentHash": "3bf419e834784309b876595f370415b9bc951d16fee6a8129db078fe605aae64"
+    },
+    {
+      "id": "mcp:io.github.james-robson/push-realm",
+      "name": "Push Realm",
+      "type": "mcp",
+      "summary": "A cross-domain knowledge network for AI agents to search, share, and refine solutions via MCP.",
+      "useWhen": [
+        "knowledge discovery",
+        "solution sharing",
+        "collaborative problem-solving"
+      ],
+      "doNotUseWhen": [
+        "single-agent tasks"
+      ],
+      "categories": [
+        "knowledge",
+        "network",
+        "collaboration"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://api.pushrealm.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "4.3.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://pushrealm.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "8b0751a38013fbfb31300d7555c5d5504982419839ab757e46f5385e366839de",
+      "contentHash": "5928c82a34967d1c43008905aa977b87424f4a2b5cbc9dcee7628d424f221288"
+    },
+    {
+      "id": "mcp:io.github.jdhart81/green-router",
+      "name": "io.github.jdhart81/green-router",
+      "type": "mcp",
+      "summary": "A carbon-accounted agent compute service that provides free footprints with certificate-backed offset retirement.",
+      "useWhen": [
+        "carbon-neutral computing",
+        "environmentally friendly AI",
+        "offsetting emissions"
+      ],
+      "doNotUseWhen": [
+        "high-performance computing"
+      ],
+      "categories": [
+        "sustainability",
+        "environment",
+        "computing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.viridisconservation.com/green-router/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/jdhart81/viridis-agent-fleet",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "5404adc5b995a6093032a4d3dca0e55954a43f5d05f3d66951ccb4eb33621aea",
+      "contentHash": "4aee09db54611c6d21f7e782d2a0f053855deffa174a82ab93a2ef8e993aa359"
+    },
+    {
+      "id": "mcp:io.github.jdhart81/neurogenesis",
+      "name": "io.github.jdhart81/neurogenesis",
+      "type": "mcp",
+      "summary": "A developmental agent system that evolves from outcomes and routes to the cheapest reliable compute option.",
+      "useWhen": [
+        "evolutionary algorithms",
+        "adaptive systems",
+        "cost-effective computing"
+      ],
+      "doNotUseWhen": [
+        "real-time systems"
+      ],
+      "categories": [
+        "evolution",
+        "adaptation",
+        "computing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.viridisconservation.com/neurogenesis/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/jdhart81/viridis-agent-fleet",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "8be568aac66f92cba0fe0d531b857b4e2b6041a2817fd78ad7c776717e5eb4b2",
+      "contentHash": "54a70ebdfd39e03f3c2a1b6ece08f2ee05a2da6f9a17f9c635ae0fa1d09496ba"
+    },
+    {
+      "id": "mcp:io.github.jdhart81/verdigraph",
+      "name": "io.github.jdhart81/verdigraph",
+      "type": "mcp",
+      "summary": "A verifiable cognition system that maps agent files to deterministic content-addressed brain IDs.",
+      "useWhen": [
+        "verifiable computing",
+        "cognitive architectures",
+        "agent identification"
+      ],
+      "doNotUseWhen": [
+        "anonymous systems"
+      ],
+      "categories": [
+        "cognition",
+        "verification",
+        "identity"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.viridisconservation.com/verdigraph/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/jdhart81/viridis-agent-fleet",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "db954574b6ff65fa95ea2b2a1a3577345d6ca27f489aa13a79cb4454e62acdd1",
+      "contentHash": "a3e74627c2b4fdb1669a36ec75cd181fb6fcb15e5c6a3e59f5d94fbb88d9653e"
+    },
+    {
+      "id": "mcp:io.github.jimprivate/idml-mcp",
+      "name": "io.github.jimprivate/idml-mcp",
+      "type": "mcp",
+      "summary": "An MCP server for reading and safely editing Adobe InDesign IDML files without requiring InDesign.",
+      "useWhen": [
+        "IDML file editing",
+        "InDesign alternative",
+        "AI-assisted design"
+      ],
+      "doNotUseWhen": [
+        "InDesign-dependent workflows"
+      ],
+      "categories": [
+        "editing",
+        "design",
+        "idml"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y idml-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "idml-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/jimprivate/idmlkit",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "36eeb6702b41383ab4d6531e9af57bd0c85a013f3bcc2b80922821fbc6dcb3c3",
+      "contentHash": "c68d83c3926451a72892dca21c6d86964e164eda15ccc5728bdfad1b663e38a4"
+    },
+    {
+      "id": "mcp:io.github.jkawamoto/mcp-florence2",
+      "name": "io.github.jkawamoto/mcp-florence2",
+      "type": "mcp",
+      "summary": "An MCP server for processing images using the Florence-2 system.",
+      "useWhen": [
+        "image processing",
+        "computer vision",
+        "AI-assisted imaging"
+      ],
+      "doNotUseWhen": [
+        "non-image tasks"
+      ],
+      "categories": [
+        "image",
+        "processing",
+        "computer vision"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.3.15",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/jkawamoto/mcp-florence2",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "2263e31514bfc67de6949e22d6a9b95e9fc4c3fb114dc7c4552edf9517322782",
+      "contentHash": "a2d6f10237f8a65001b80804e0db62dd72f7881be0e087bf16f867b078e9ee4c"
+    },
+    {
+      "id": "mcp:io.github.john-broadway/proximo-proxmox",
+      "name": "Proximo — the Proxmox MCP you can hand the keys",
+      "type": "mcp",
+      "summary": "A Proxmox MCP server that provides a planned, audited, and undoable operation environment.",
+      "useWhen": [
+        "Proxmox management",
+        "planned operations",
+        "auditable systems"
+      ],
+      "doNotUseWhen": [
+        "unplanned operations"
+      ],
+      "categories": [
+        "proxmox",
+        "management",
+        "auditing"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "python"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.25.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/john-broadway/proximo",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "59d9e52985f014d2083b9a2e2c67c09beaad701e124e4316f71a148dfabafd40",
+      "contentHash": "a970c5cd09754422956864137a6b45a07c680c654514baf5acd89a0c5fa5da88"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/appstore-reviews",
+      "name": "io.github.johnisanerd/appstore-reviews",
+      "type": "mcp",
+      "summary": "A hosted MCP server providing Apple App Store reviews as structured JSON data via the Apify Reviews API Actor.",
+      "useWhen": [
+        "app store review analysis",
+        "sentiment analysis",
+        "market research"
+      ],
+      "doNotUseWhen": [
+        "non-App Store reviews"
+      ],
+      "categories": [
+        "reviews",
+        "app store",
+        "sentiment analysis"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/apple-app-store-reviews-api"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/apple-app-store-reviews-api?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "ae944aa23fd4b7192425cc08a65add463df29c44d80f9183d2f4952089546eeb",
+      "contentHash": "2e99d683e14af4a58970a81d622d617075799ba0ec7c13bf6ee94c976dfa290e"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/baidu-search",
+      "name": "io.github.johnisanerd/baidu-search",
+      "type": "mcp",
+      "summary": "A hosted MCP server providing Baidu search results and Chinese SERP data via the Apify Baidu Search Scraper.",
+      "useWhen": [
+        "Baidu search data",
+        "Chinese market research",
+        "SERP analysis"
+      ],
+      "doNotUseWhen": [
+        "non-Baidu search engines"
+      ],
+      "categories": [
+        "search",
+        "baidu",
+        "serp"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/Baidu-Search-Scraper"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/Baidu-Search-Scraper?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "b09d157b130023efcd69ce877a97f0266b4f9478e261f48283f25e05cf758f3c",
+      "contentHash": "5148ebba7d7975a8849a54d3e32ee32b6a31ad9d360938b393bb14265c926849"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/fuel-prices",
+      "name": "io.github.johnisanerd/fuel-prices",
+      "type": "mcp",
+      "summary": "A hosted MCP server providing gas and fuel prices by station and area as structured data.",
+      "useWhen": [
+        "fuel price monitoring",
+        "gas station data",
+        "geospatial analysis"
+      ],
+      "doNotUseWhen": [
+        "non-fuel price data"
+      ],
+      "categories": [
+        "fuel",
+        "prices",
+        "geospatial"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/fuelprices"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/fuelprices?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "f74999f6ac6c441db53554e8f463c728329f63cb41fb745b1c4b29ab2e7ee852",
+      "contentHash": "144552da544d60f478a953fdeac952e756432a874ea8ac1c11e4a1dccf99bbe4"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/google-ai-overview",
+      "name": "io.github.johnisanerd/google-ai-overview",
+      "type": "mcp",
+      "summary": "Provides Google AI overview answers and cited sources via the Apify Google AI Overview API",
+      "useWhen": [
+        "researching AI topics",
+        "needing cited sources for AI information",
+        "requiring Apify API integration"
+      ],
+      "doNotUseWhen": [
+        "local data storage is required"
+      ],
+      "categories": [
+        "web-search",
+        "docs",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/Google-AI-Overview-API"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/Google-AI-Overview-API?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "6c262434c210f3bdac50141712f810ec1b51a5c09d973025a6d9f9d165ed5a8a",
+      "contentHash": "11450d24d5676aeab213e6abf4ab385a29ba78b96a20aec28fe435bf94b9006b"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/google-events",
+      "name": "io.github.johnisanerd/google-events",
+      "type": "mcp",
+      "summary": "Offers Google Events listings with dates, venues, and ticket links via a hosted MCP server",
+      "useWhen": [
+        "planning events",
+        "needing event ticket links",
+        "requiring Google Events integration"
+      ],
+      "doNotUseWhen": [
+        "local event data is preferred"
+      ],
+      "categories": [
+        "web-search",
+        "events",
+        "calendar"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/google-events-api---access-google-events-data"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/google-events-api---access-google-events-data?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "2c7c2192ae4828e63057d16232e2cb22d210e845901f06422cdf60d1fd2305e2",
+      "contentHash": "c1c1294a8a473fec9247a06ee894618e4936a5166acc59ffe047876f6b59864f"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/google-flights",
+      "name": "io.github.johnisanerd/google-flights",
+      "type": "mcp",
+      "summary": "Provides Google Flights search data, including fares, routes, stops, and price insights",
+      "useWhen": [
+        "searching for flights",
+        "comparing flight prices",
+        "requiring Google Flights integration"
+      ],
+      "doNotUseWhen": [
+        "local flight data is preferred"
+      ],
+      "categories": [
+        "travel",
+        "web-search",
+        "database"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/Google-Flights-Data-Scraper-Flight-and-Price-Search"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/Google-Flights-Data-Scraper-Flight-and-Price-Search?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "1ed3cde6afdba2ceb204dc648297fe8e5a8243d9e66796c377a6c4d34246fbd6",
+      "contentHash": "419d42a1ee768c98a99377ada1309f7a2ffdd21ece07e27018ae5e590b58bbd1"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/google-hotels",
+      "name": "io.github.johnisanerd/google-hotels",
+      "type": "mcp",
+      "summary": "Offers Google Hotels prices, ratings, reviews, and photos via an Apify Actor",
+      "useWhen": [
+        "searching for hotels",
+        "comparing hotel prices",
+        "requiring Google Hotels integration"
+      ],
+      "doNotUseWhen": [
+        "local hotel data is preferred"
+      ],
+      "categories": [
+        "travel",
+        "web-search",
+        "database"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/google-hotels-search-scraper"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/google-hotels-search-scraper?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "933fff035cde687009f111031a0053d436be8b3e11c9dcb00c6ad1adb64db523",
+      "contentHash": "2d365db5526bd4369eb6da58ebdc8e316002c0881ee50fb281019a93d81ff478"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/google-news",
+      "name": "io.github.johnisanerd/google-news",
+      "type": "mcp",
+      "summary": "Provides Google News headlines, sources, and links via the Apify Google News API",
+      "useWhen": [
+        "staying up-to-date with news",
+        "requiring Google News integration",
+        "needing news article links"
+      ],
+      "doNotUseWhen": [
+        "local news data is preferred"
+      ],
+      "categories": [
+        "web-search",
+        "news",
+        "docs"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/GoogleNewsAPI"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/GoogleNewsAPI?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d4c50737179f76715afe32bcde4b49a6919a76a3420765f26a62beae647e017f",
+      "contentHash": "23554d3d11cb997fde74fcfc638908d60c7098a4361fc0e2f8965a1225ee09ed"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/google-shopping",
+      "name": "io.github.johnisanerd/google-shopping",
+      "type": "mcp",
+      "summary": "Offers Google Shopping products, prices, sellers, and deals as structured data",
+      "useWhen": [
+        "shopping online",
+        "comparing product prices",
+        "requiring Google Shopping integration"
+      ],
+      "doNotUseWhen": [
+        "local product data is preferred"
+      ],
+      "categories": [
+        "web-search",
+        "e-commerce",
+        "database"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/google-shopping-api-google-shopping-products-prices-deals"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/google-shopping-api-google-shopping-products-prices-deals?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "a1ccecdb106bc334329db26d1ac6577f63c87a0f66527f2c18166c8a0f668446",
+      "contentHash": "bcd436dbab35fe480f9296c50f9d8261d498ab3575d828e132ca6e9264e13093"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/startup-investors",
+      "name": "io.github.johnisanerd/startup-investors",
+      "type": "mcp",
+      "summary": "Provides a curated investor database with contacts for VC, angel, PE, and family office firms",
+      "useWhen": [
+        "fundraising for a startup",
+        "requiring investor contact information",
+        "needing a curated investor database"
+      ],
+      "doNotUseWhen": [
+        "local investor data is preferred"
+      ],
+      "categories": [
+        "database",
+        "finance",
+        "business"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/startup-investors-data-scraper"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/startup-investors-data-scraper?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "e97303b1a9c209fbbe8e7ad69333903a2e29a630c8370fb5b73d435dad016c98",
+      "contentHash": "3daae4ef5a979276910dfaab2b19e3cbd3aa0bebd36da64b9ae69b49df41901e"
+    },
+    {
+      "id": "mcp:io.github.johnisanerd/us-congress-trades",
+      "name": "io.github.johnisanerd/us-congress-trades",
+      "type": "mcp",
+      "summary": "Offers US Congress stock trades and financial disclosures by member, ticker, or date",
+      "useWhen": [
+        "researching US Congress financial data",
+        "requiring stock trade information",
+        "needing financial disclosure data"
+      ],
+      "doNotUseWhen": [
+        "local financial data is preferred"
+      ],
+      "categories": [
+        "database",
+        "finance",
+        "government"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://mcp.apify.com/?tools=johnvc/us-congress-financial-disclosures-and-stock-trading-data"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.0.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://apify.com/johnvc/us-congress-financial-disclosures-and-stock-trading-data?fpr=9n7kx3&fp_sid=mcpregistry",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "444a9b490dae8e0e1188396c1e0df49245b23d4dbbd9090c216557550e9793bf",
+      "contentHash": "e3b09be762e9e96c7f431fd5bd13efccb0bda87275afce84bcd4e8a9e1bcfd56"
+    },
+    {
+      "id": "mcp:io.github.kitepon-rgb/aiterm-mcp",
+      "name": "io.github.kitepon-rgb/aiterm-mcp",
+      "type": "mcp",
+      "summary": "AI drives a persistent tmux terminal over MCP, with ssh, containers, and agent TUIs",
+      "useWhen": [
+        "requiring a persistent terminal interface",
+        "needing ssh and container integration",
+        "using AI-driven terminal interactions"
+      ],
+      "doNotUseWhen": [
+        "local terminal interfaces are preferred"
+      ],
+      "categories": [
+        "terminal",
+        "ai",
+        "containers"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "shell",
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y aiterm-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "aiterm-mcp"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.19.2",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/kitepon-rgb/aiterm-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "6c91ad8b26b92c3df2bca851b47ce4fdb21b223828a7955c2ca5c517841c7519",
+      "contentHash": "5bd924dc666cee5018c6b57f4f59d2f35d4c83332e0eca5d110047484a6312a9"
+    },
+    {
+      "id": "mcp:io.github.kjgueye/netintel-mcp",
+      "name": "io.github.kjgueye/netintel-mcp",
+      "type": "mcp",
+      "summary": "MCP server for NetIntel, providing DNS, SSL, WHOIS, email security, and OSINT via x402 micropayments",
+      "useWhen": [
+        "requiring NetIntel integration",
+        "needing DNS, SSL, and WHOIS data",
+        "using x402 micropayments"
+      ],
+      "doNotUseWhen": [
+        "local security data is preferred"
+      ],
+      "categories": [
+        "security",
+        "dns",
+        "osint"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network",
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y netintel-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "netintel-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "EVM_PRIVATE_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.1.32",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/kjgueye/netintel-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "85a460cbfb978c2f51e5e0da7786df07f1e5ba4152a4d6c03506ad8864785be3",
+      "contentHash": "222c1acd767f1555f3e0c4d21bc9c1318519a99a750ab2d74008905f1e6990b7"
+    },
+    {
+      "id": "mcp:io.github.klimPaskov/hoi4-agent-tools",
+      "name": "HOI4 Agent Tools",
+      "type": "mcp",
+      "summary": "Analyzes HOI4 events and data",
+      "useWhen": [
+        "Analyzing game data",
+        "Building focus trees",
+        "Creating maps"
+      ],
+      "doNotUseWhen": [
+        "Non-HOI4 related tasks"
+      ],
+      "categories": [
+        "gaming",
+        "tools",
+        "strategy"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "JavaScript"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "command": "npx -y hoi4-agent-tools",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "hoi4-agent-tools"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "2.3.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/klimPaskov/hoi4-agent-tools#readme",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "f1b045f9f6375557885f458eaccf0cf7b486671344412eeea5e7e9f6fc51aa1b",
+      "contentHash": "27f421035aba080367d6f2019dc52c00850ddfde3b1c7555de3867a54ea38966"
+    },
+    {
+      "id": "mcp:io.github.kofujimura/tctc-mcp",
+      "name": "io.github.kofujimura/tctc-mcp",
+      "type": "mcp",
+      "summary": "Manages token-controlled roles for AI agents",
+      "useWhen": [
+        "Managing permissions",
+        "Granting roles",
+        "Revoke permissions"
+      ],
+      "doNotUseWhen": [
+        "Non-blockchain tasks"
+      ],
+      "categories": [
+        "blockchain",
+        "security",
+        "permissions"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "JavaScript"
+      ],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y tctc-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "tctc-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "TCTC_ADMIN_PRIVATE_KEY"
+        ]
+      },
+      "localCloud": "local",
+      "version": "0.3.3",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/kofujimura/tctc-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "d51c7f90d571fe2047b94df1ef9b56764255d6b83d255541e68e28840247af00",
+      "contentHash": "fe8c01784c47a9d16146edf605b5db6ff66b97de94f97de1dcf96b843458b64e"
+    },
+    {
+      "id": "mcp:io.github.lifeodyssey/share-html",
+      "name": "Share HTML",
+      "type": "mcp",
+      "summary": "Creates sandboxed HTML previews",
+      "useWhen": [
+        "Sharing HTML content",
+        "Creating public previews",
+        "Protecting HTML content"
+      ],
+      "doNotUseWhen": [
+        "Non-HTML content"
+      ],
+      "categories": [
+        "web",
+        "sharing",
+        "security"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://share-html.zhenjiazhou0127.workers.dev/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/lifeodyssey/share-html",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "f22bd3aa19bcf028a276420d60c11ab38bb274a8767dff4c749ac1a66515f0e3",
+      "contentHash": "e74dffd09b6201624585383db79d3174dc83f669e01b1316fa672009d2d59b84"
+    },
+    {
+      "id": "mcp:io.github.livetennisapi/livetennisapi-mcp",
+      "name": "io.github.livetennisapi/livetennisapi-mcp",
+      "type": "mcp",
+      "summary": "Provides real-time tennis scores and data",
+      "useWhen": [
+        "Getting live tennis scores",
+        " Retrieving player data",
+        "Analyzing tennis odds"
+      ],
+      "doNotUseWhen": [
+        "Non-tennis related tasks"
+      ],
+      "categories": [
+        "sports",
+        "data",
+        "api"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "command": "npx -y livetennisapi-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "livetennisapi-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "LIVETENNISAPI_KEY"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "1.2.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://livetennisapi.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "c9a181dd921b37fd5337829640ca2a9c53795d5494c1252182cd057c5ea41e84",
+      "contentHash": "c7a4cd9f17b1032433675732a05ef6366b3c417a67d3cc6a6bee78e69613f862"
+    },
+    {
+      "id": "mcp:io.github.lordbasilaiassistant-sudo/broke2built-skills-mcp",
+      "name": "io.github.lordbasilaiassistant-sudo/broke2built-skills-mcp",
+      "type": "mcp",
+      "summary": "Provides live data skills for agents",
+      "useWhen": [
+        "Getting email intel",
+        "Performing web audits",
+        "Reading EVM data"
+      ],
+      "doNotUseWhen": [
+        "Non-data related tasks"
+      ],
+      "categories": [
+        "data",
+        "skills",
+        "ai"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "JavaScript"
+      ],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "command": "npx -y broke2built-skills-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "broke2built-skills-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "ALLY_KEY"
+        ]
+      },
+      "localCloud": "local",
+      "version": "1.1.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/lordbasilaiassistant-sudo/broke2built-skills-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "e3d73ec8e6744655b12eba28873946321d6aa9a3184072c491385736dc88bc96",
+      "contentHash": "e2a271ea951fbad0f89758f001c63e27c13f832d5f46f950ce5e20f7eebb42a6"
+    },
+    {
+      "id": "mcp:io.github.matematicsolutions/at-eli-mcp",
+      "name": "io.github.matematicsolutions/at-eli-mcp",
+      "type": "mcp",
+      "summary": "Provides Austrian RIS federal legislation data",
+      "useWhen": [
+        "Searching legislation",
+        "Citing laws",
+        "Understanding ELI identifiers"
+      ],
+      "doNotUseWhen": [
+        "Non-legislation related tasks"
+      ],
+      "categories": [
+        "law",
+        "legislation",
+        "data"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "Python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.3.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/matematicsolutions/at-eli-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "943affc5ed625b6dec4b35254243b2095aac2ad4bab41da75a98437258bc8269",
+      "contentHash": "0896eda78ce98a117abd499f67dba348eb81bf6a49f465ac41f53e89862c3d7b"
+    },
+    {
+      "id": "mcp:io.github.matematicsolutions/au-eli-mcp",
+      "name": "io.github.matematicsolutions/au-eli-mcp",
+      "type": "mcp",
+      "summary": "Provides Australian Federal Register of Legislation data",
+      "useWhen": [
+        "Searching legislation",
+        "Citing laws",
+        "Understanding ELI identifiers"
+      ],
+      "doNotUseWhen": [
+        "Non-legislation related tasks"
+      ],
+      "categories": [
+        "law",
+        "legislation",
+        "data"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "Python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.2.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/matematicsolutions/au-eli-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "7a402813095086539ba03a7a407759953af7623c6bb4875f695eb29e5c9c55bd",
+      "contentHash": "68a07ab8051ac7a0e2489256d2b011fa2bc84038a10a5d4b360e99f98dad308d"
+    },
+    {
+      "id": "mcp:io.github.matematicsolutions/be-eli-mcp",
+      "name": "io.github.matematicsolutions/be-eli-mcp",
+      "type": "mcp",
+      "summary": "Provides Belgian legislation data",
+      "useWhen": [
+        "Searching legislation",
+        "Citing laws",
+        "Understanding ELI identifiers"
+      ],
+      "doNotUseWhen": [
+        "Non-legislation related tasks"
+      ],
+      "categories": [
+        "law",
+        "legislation",
+        "data"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "Python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/matematicsolutions/be-eli-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "8da4ddf8729d815c69c8368925bff6607c055a45f1cd446c3d9a73a957c60200",
+      "contentHash": "cbdb63f7167e65edefdccd4932a51c623774c7fdf362fdec4e319656599d0be8"
+    },
+    {
+      "id": "mcp:io.github.matematicsolutions/boutique-mcp",
+      "name": "io.github.matematicsolutions/boutique-mcp",
+      "type": "mcp",
+      "summary": "Provides a local catalog of MateMatic Boutique",
+      "useWhen": [
+        "Finding legal-data connectors",
+        "Installing skills locally",
+        "Managing local catalogs"
+      ],
+      "doNotUseWhen": [
+        "Non-catalog related tasks"
+      ],
+      "categories": [
+        "catalog",
+        "management",
+        "local"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "Python"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.1.1",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/matematicsolutions/boutique-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-23",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "4a03d0fd7fec2f11bb813008199b1c002c435c2b02bc3b960900dd4e95eb1868",
+      "contentHash": "d66c74a4773c39efd4ee7b7dc44d2e661b14ec78a24bb3c242c06e5f2727b1fd"
+    }
+  ],
+  "updated": [
+    {
+      "id": "mcp:io.github.alex-odoo/myfinance-mcp",
+      "name": "io.github.alex-odoo/myfinance-mcp",
+      "type": "mcp",
+      "summary": "MyFinance MCP is a personal finance server that allows AI agents to manage expenses, receipts, and budgets via conversation.",
+      "useWhen": [
+        "You want to track your expenses",
+        "You need to import statements",
+        "You want to set budgets"
+      ],
+      "doNotUseWhen": [
+        "You don't have a personal finance account"
+      ],
+      "categories": [
+        "financial",
+        "personal"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://myfinance-mcp.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "0.12.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://myfinance-mcp.com",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "222dc40519e7447dedc33330317b1f248e1e58d90b985d217df74ea893c1b92b",
+      "contentHash": "02fba6d064a646d44a09198f0b916029ed450daef718be8a69cec323b2f9923c"
+    },
+    {
+      "id": "mcp:io.github.aliasunder/vault-cortex",
+      "name": "Vault Cortex",
+      "type": "mcp",
+      "summary": "Vault Cortex is a standalone MCP server for Obsidian vaults, providing hybrid search, notes, and files management.",
+      "useWhen": [
+        "You use Obsidian for note-taking",
+        "You need to search your notes",
+        "You want to manage your files"
+      ],
+      "doNotUseWhen": [
+        "You don't have an Obsidian vault"
+      ],
+      "categories": [
+        "notes",
+        "search",
+        "file management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "credentials"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "hybrid",
+      "version": "0.32.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/aliasunder/vault-cortex",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "6f9ed763f1b62cfe8a255d443c4c45f2e0b5b229a40e6d6c456ca1d2af8aee27",
+      "contentHash": "6ce5bf0525202d262aae956943a34a89d516da9e66e3fcb3248089d07e7363ba"
+    },
+    {
+      "id": "mcp:io.github.aryamthecodebreaker/fixmap",
+      "name": "io.github.aryamthecodebreaker/fixmap",
+      "type": "mcp",
+      "summary": "Fixmap provides a local-first repo context for coding agents with GitHub issue analysis.",
+      "useWhen": [
+        "for local-first repository management",
+        "to analyze GitHub issues",
+        "for coding agents"
+      ],
+      "doNotUseWhen": [
+        "for cloud-based repositories"
+      ],
+      "categories": [
+        "repository",
+        "github",
+        "issue"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [],
+      "installation": {
+        "command": "npx -y @aryam/fixmap",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@aryam/fixmap"
+          ]
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "0.7.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/aryamthecodebreaker/FixMap",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "55bdc2006fb0ba834498aa1bd2e70b31fd539a1aa7d7b4d8f09b8c9936d60b01",
+      "contentHash": "b8e2acac6ad49c9ff3d4091ed3afc346e8d230a89cbc83562c9bd0ef081d5f95"
+    },
+    {
+      "id": "mcp:io.github.brilliantdirectories/brilliant-directories-mcp",
+      "name": "io.github.brilliantdirectories/brilliant-directories-mcp",
+      "type": "mcp",
+      "summary": "Official MCP server for Brilliant Directories to manage members, posts, leads, and reviews.",
+      "useWhen": [
+        "managing Brilliant Directories",
+        "needing member or post data",
+        "requiring lead or review management"
+      ],
+      "doNotUseWhen": [
+        "alternative directory management tools are preferred"
+      ],
+      "categories": [
+        "directory-management",
+        "member-management",
+        "lead-management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [
+        "javascript"
+      ],
+      "permissions": [
+        "credentials"
+      ],
+      "installation": {
+        "command": "npx -y brilliant-directories-mcp",
+        "mcpConfig": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "brilliant-directories-mcp"
+          ]
+        },
+        "requiredSecrets": [
+          "BD_API_KEY",
+          "BD_SITE_URL"
+        ]
+      },
+      "localCloud": "cloud",
+      "version": "6.58.569",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://github.com/brilliantdirectories/brilliant-directories-mcp",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "68cd5b508a6c285ccca4c10ae8c5c041875d82d3bcd3b4f770fc80278a7599d8",
+      "contentHash": "9099f955b737adb6270c4ec58153469fae9d0945b58062478fc11fbfeb6fdebc"
+    },
+    {
+      "id": "mcp:io.github.devantler-tech/ksail",
+      "name": "KSail",
+      "type": "mcp",
+      "summary": "Provides an SDK for creating and managing Kubernetes clusters.",
+      "useWhen": [
+        "managing Kubernetes workloads",
+        "creating clusters",
+        "operating Kubernetes environments"
+      ],
+      "doNotUseWhen": [
+        "working with non-Kubernetes environments"
+      ],
+      "categories": [
+        "kubernetes",
+        "cluster",
+        "management"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "filesystem",
+        "network",
+        "shell"
+      ],
+      "installation": {
+        "requiredSecrets": []
+      },
+      "localCloud": "local",
+      "version": "7.176.8",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://ksail.devantler.tech",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-16",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "027311828c05db5d1187c0d160af5cdb5d95cbaf8b99c9825e01452b6d301771",
+      "contentHash": "b69997f4fdf4e2a358059bd89c1a8d89e5c8eac734b5d5605d9402783ec238f4"
+    },
+    {
+      "id": "mcp:io.github.marketeyeslive/market-eyes-live",
+      "name": "Market Eyes Live - stock ratings and mortgage-rate context",
+      "type": "mcp",
+      "summary": "Provides stock ratings and mortgage-rate context",
+      "useWhen": [
+        "Getting stock ratings",
+        "Analyzing mortgage rates",
+        "Understanding market context"
+      ],
+      "doNotUseWhen": [
+        "Non-market related tasks"
+      ],
+      "categories": [
+        "finance",
+        "market",
+        "data"
+      ],
+      "agents": [
+        "claude-code"
+      ],
+      "languages": [],
+      "permissions": [
+        "network"
+      ],
+      "installation": {
+        "mcpConfig": {
+          "type": "streamable-http",
+          "url": "https://marketeyeslive.com/mcp"
+        },
+        "requiredSecrets": []
+      },
+      "localCloud": "cloud",
+      "version": "1.1.0",
+      "status": "active",
+      "trust": "community",
+      "sources": [
+        {
+          "url": "https://marketeyeslive.com/what-is-market-eyes-live.html",
+          "kind": "registry"
+        }
+      ],
+      "firstSeen": "2026-07-18",
+      "lastChecked": "2026-07-23",
+      "sourceHash": "ac657e64ce5149dff5ea6791a9837d964bbef2d4b781d6270f88f1ea036faceb",
+      "contentHash": "45f95824ee7c67ec2448eef61f43be14f23152fc8c717bb3ad2568e01de3bb4a"
+    }
+  ],
+  "deprecated": []
+}
