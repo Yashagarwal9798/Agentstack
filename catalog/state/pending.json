@@ -1,966 +1,6 @@
 [
   {
     "source": "mcp-registry",
-    "externalId": "io.github.amitsingh-24/pixlint",
-    "title": "io.github.amitsingh-24/pixlint",
-    "body": "Lint, curate & prepare computer-vision datasets from your AI assistant — MCP server, 67 tools\nVersion: 1.1.0\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"pixlint\",\"version\":\"1.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Absolute path to the directory PixLint may read datasets from.\",\"name\":\"CV_DATA_DIR\"},{\"description\":\"Absolute path for outputs (exports, curated datasets).\",\"name\":\"CV_WORKSPACE\"}]}]",
-    "url": "https://github.com/amitsingh-24/PixLint",
-    "fetchedAt": "2026-07-26T06:21:10.903Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.angelus213/foundry-api",
-    "title": "Foundry/API",
-    "body": "Bounded tools for rendering, extraction, RAG, enrichment, local discovery and review analysis.\nVersion: 0.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://prodapi.live/mcp\",\"headers\":[{\"description\":\"Foundry/API key created from the API access page.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
-    "url": "https://github.com/angelus213/foundry-api-workflows",
-    "fetchedAt": "2026-07-23T06:15:12.777Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.antikas/openim",
-    "title": "Open Investment Model",
-    "body": "Read-only OpenIM search for institutional buy-side investment models and architecture.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@openinvestmentmodel/openim-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/antikas/open-investment-model",
-    "fetchedAt": "2026-08-29T10:18:00.331Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.antohins/seo-tools-mcp-gsc",
-    "title": "SEO Tools: Google Search Console",
-    "body": "Google Search Console: Search Analytics, URL Inspection, sitemaps (read-only, OAuth/service acct).\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-gsc\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Google OAuth client ID (Desktop app).\",\"format\":\"string\",\"name\":\"GOOGLE_CLIENT_ID\"},{\"description\":\"Google OAuth client secret.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GOOGLE_CLIENT_SECRET\"},{\"description\":\"Google OAuth refresh token (or obtain via gsc_oauth_start).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GSC_REFRESH_TOKEN\"},{\"description\":\"Default GSC property, e.g. sc-domain:example.com.\",\"format\":\"string\",\"name\":\"GSC_SITE_URL\"},{\"description\":\"Path to a service-account JSON key (alternative auth path).\",\"format\":\"string\",\"name\":\"GSC_SA_JSON\"},{\"description\":\"Localhost port for the OAuth loopback receiver (default 8585).\",\"format\":\"string\",\"name\":\"GSC_OAUTH_PORT\"}]}]",
-    "url": "https://github.com/antohins/seo-tools-mcp#readme",
-    "fetchedAt": "2026-08-26T04:09:22.368Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.antohins/seo-tools-mcp-metrika",
-    "title": "SEO Tools: Yandex.Metrica",
-    "body": "MCP server for Yandex.Metrica Stat API (read-only).\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-metrika\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Yandex OAuth token (shared Webmaster + Metrica); or obtain via metrika_oauth_start.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YANDEX_OAUTH_TOKEN\"},{\"description\":\"Default Yandex.Metrica counter ID.\",\"format\":\"string\",\"name\":\"METRIKA_COUNTER_ID\"},{\"description\":\"Dedicated Metrica token (overrides the shared one; usually not needed).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"METRIKA_OAUTH_TOKEN\"},{\"description\":\"Yandex OAuth app client ID (for interactive auth and token refresh).\",\"format\":\"string\",\"name\":\"YANDEX_CLIENT_ID\"},{\"description\":\"Yandex OAuth app client secret.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YANDEX_CLIENT_SECRET\"}]}]",
-    "url": "https://github.com/antohins/seo-tools-mcp#readme",
-    "fetchedAt": "2026-08-26T04:09:22.368Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.antohins/seo-tools-mcp-wordstat",
-    "title": "SEO Tools: Yandex Wordstat",
-    "body": "MCP server for Yandex Wordstat keyword frequencies (official API v2). Free Yandex Cloud Search API.\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-wordstat\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Yandex Cloud API key with scope yc.search-api.execute.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"WORDSTAT_API_KEY\"},{\"description\":\"Yandex Cloud folder ID.\",\"format\":\"string\",\"name\":\"WORDSTAT_FOLDER_ID\"}]}]",
-    "url": "https://github.com/antohins/seo-tools-mcp#readme",
-    "fetchedAt": "2026-08-26T04:09:22.368Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.antohins/seo-tools-mcp-xmlstock",
-    "title": "SEO Tools: XMLStock SERP (Google + Yandex)",
-    "body": "Google & Yandex SERP + Yandex Wordstat via XMLStock (read-only).\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-xmlstock\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"XMLStock user ID (from the xmlstock.com dashboard).\",\"format\":\"string\",\"name\":\"XMLSTOCK_USER\"},{\"description\":\"XMLStock API key.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"XMLSTOCK_KEY\"},{\"description\":\"Aggregator domains excluded by excludeAggregators, comma-separated.\",\"format\":\"string\",\"name\":\"XMLSTOCK_EXCLUDE_DOMAINS\"},{\"description\":\"Price per SERP call in RUB for cost logging (default 0.02).\",\"format\":\"string\",\"name\":\"XMLSTOCK_PRICE_PER_CALL\"},{\"description\":\"Price per Wordstat call in RUB for cost logging (default 0.019).\",\"format\":\"string\",\"name\":\"XMLSTOCK_WORDSTAT_PRICE_PER_CALL\"}]}]",
-    "url": "https://github.com/antohins/seo-tools-mcp#readme",
-    "fetchedAt": "2026-08-26T04:09:22.368Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.antohins/seo-tools-mcp-ywm",
-    "title": "SEO Tools: Yandex.Webmaster",
-    "body": "MCP server for Yandex.Webmaster search queries (read-only).\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-ywm\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Yandex OAuth token (shared Webmaster + Metrica); or obtain via ywm_oauth_start.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YANDEX_OAUTH_TOKEN\"},{\"description\":\"Dedicated Webmaster token (overrides the shared one; usually not needed).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YWM_OAUTH_TOKEN\"},{\"description\":\"Yandex OAuth app client ID (for interactive auth and token refresh).\",\"format\":\"string\",\"name\":\"YANDEX_CLIENT_ID\"},{\"description\":\"Yandex OAuth app client secret.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YANDEX_CLIENT_SECRET\"},{\"description\":\"Default Webmaster host, format https:example.com:443.\",\"format\":\"string\",\"name\":\"YWM_HOST_ID\"},{\"description\":\"Webmaster user_id (auto-detected; usually not needed).\",\"format\":\"string\",\"name\":\"YWM_USER_ID\"}]}]",
-    "url": "https://github.com/antohins/seo-tools-mcp#readme",
-    "fetchedAt": "2026-08-26T04:09:22.368Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.aradar46/reuse-before-generate",
-    "title": "Reuse Before Generate",
-    "body": "Checks whether your idea already exists before your agent builds it. Searches GitHub, npm, Python.\nVersion: 0.2.3\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"reuse-before-generate\",\"version\":\"0.2.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional GitHub token. Raises the search rate limit from 10 requests/minute to 30.\",\"isSecret\":true,\"name\":\"GITHUB_TOKEN\"}]}]",
-    "url": "https://github.com/aradar46/reuse-before-generate",
-    "fetchedAt": "2026-07-23T06:15:12.777Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.atomno-labs/mcp-cbr-rates",
-    "title": "io.github.atomno-labs/mcp-cbr-rates",
-    "body": "CBR exchange rates and key rates for Russia. MCP tools for finance agents.\nVersion: 0.1.4\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"atomno-mcp-cbr-rates\",\"version\":\"0.1.4\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/atomno-labs/mcp-cbr-rates",
-    "fetchedAt": "2026-07-23T06:15:12.777Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.atomno-labs/mcp-egrul",
-    "title": "io.github.atomno-labs/mcp-egrul",
-    "body": "EGRUL/EGRIP company registry lookup for Russian legal entities and entrepreneurs.\nVersion: 0.1.4\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"atomno-mcp-egrul\",\"version\":\"0.1.4\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key (Pro tier) for hosted mode on api.atomno-labs.ru. Self-host via local SQLite works without it.\",\"isSecret\":true,\"name\":\"ATOMNO_API_KEY\"}]}]",
-    "url": "https://github.com/atomno-labs/mcp-egrul",
-    "fetchedAt": "2026-07-23T06:15:12.777Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.atomno-labs/mcp-fns-check",
-    "title": "io.github.atomno-labs/mcp-fns-check",
-    "body": "Russian tax authority (FNS) counterparty checks: status, debts, blocks. Due diligence MCP.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"atomno-mcp-fns-check\",\"version\":\"0.1.2\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/atomno-labs/mcp-fns-check",
-    "fetchedAt": "2026-07-23T06:15:12.777Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "agency.goji/goji",
-    "title": "agency.goji/goji",
-    "body": "Answers on AEO, SEO, web and brand from GOJI's published material. Melbourne, Australia.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.goji.agency/mcp\"}]",
-    "url": "https://goji.agency",
-    "fetchedAt": "2026-08-14T05:14:02.340Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.cnaps/studio",
-    "title": "CNAPS.ai MCP Server",
-    "body": "Run 70+ AI models and 50+ tools on CNAPS Studio in natural language — Claude, n8n, or Zapier.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.cnaps.ai/mcp\"}]",
-    "url": "https://docs.cnaps.ai/mcp-user-guide",
-    "fetchedAt": "2026-08-20T04:07:16.030Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.saascloud/cryptopulse",
-    "title": "CryptoPulse Data API",
-    "body": "Pay-per-call crypto market intelligence for AI agents. USDC on Base via x402.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cryptopulse.saascloud.ai/mcp\"}]",
-    "url": "https://cryptopulse.saascloud.ai",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.tenderhunt/agent",
-    "title": "TenderHunt",
-    "body": "Belarus public tenders: search, analytics, docs, and alerts via TenderHunt agent.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://tenderhunt.ai/mcp\",\"headers\":[{\"description\":\"Bearer th_… API key issued in TenderHunt Profile → Connections.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://tenderhunt.ai",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trackradar/trackradar",
-    "title": "TrackRadar",
-    "body": "Track ID for Instagram, SoundCloud, YouTube, TikTok, Mixcloud — incl. underground and unreleased.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://trackradar.ai/api/mcp\"}]",
-    "url": "https://trackradar.ai",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/amazon",
-    "title": "Amazon Trends API",
-    "body": "Amazon product search volume and best-seller trends. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://amazon.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/amazon-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/app-store",
-    "title": "App Store Trends API",
-    "body": "App downloads and chart ranking trends for iOS and Android. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app-store.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/app-store-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/competitor-tracking",
-    "title": "Competitor Tracking API",
-    "body": "Track competitor brand demand across search, social and news. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://competitor-tracking.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/content-strategy",
-    "title": "Content Strategy API",
-    "body": "Find rising topics before they peak across search and social. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://content-strategy.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/crypto",
-    "title": "Crypto Trends API",
-    "body": "Track crypto token and narrative attention across platforms. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://crypto.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/ecommerce",
-    "title": "Ecommerce Trends API",
-    "body": "Product and category demand signals across Amazon and social. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ecommerce.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/amazon-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/google-trends",
-    "title": "Google Trends API",
-    "body": "Google Trends search interest over time with growth metrics. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://google-trends.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/google-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/market-research",
-    "title": "Market Research API",
-    "body": "Consumer demand signals across search, shopping and social. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://market-research.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/news-sentiment",
-    "title": "News Sentiment API",
-    "body": "News sentiment score trends for any topic over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://news-sentiment.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/news-sentiment",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/news-volume",
-    "title": "News Volume API",
-    "body": "News article mention volume trends for any topic. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://news-volume.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/news-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/npm",
-    "title": "npm Trends API",
-    "body": "npm package download trends and adoption growth over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://npm.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/npm-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/reddit",
-    "title": "Reddit Trends API",
-    "body": "Reddit discussion volume and subreddit growth over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://reddit.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/reddit-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/seo",
-    "title": "SEO Trends API",
-    "body": "Spot keyword demand rising or fading across search and social. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://seo.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/google-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/social-media",
-    "title": "Social Media Trends API",
-    "body": "Cross-platform social trend signals from TikTok, YouTube, Reddit and X. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://social-media.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/spotify",
-    "title": "Spotify Trends API",
-    "body": "Spotify top podcast trends and listening signals. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://spotify.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/steam",
-    "title": "Steam Trends API",
-    "body": "Steam concurrent player trends for any game over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://steam.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/steam-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/tiktok",
-    "title": "TikTok Trends API",
-    "body": "TikTok hashtag volume over time, with growth for any hashtag. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://tiktok.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/tiktok-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/trends",
-    "title": "Trends API",
-    "body": "Trend data from Google, TikTok, Amazon, Reddit, YouTube, Steam, npm and more as JSON\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/wikipedia",
-    "title": "Wikipedia Trends API",
-    "body": "Wikipedia page view trends for any topic over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://wikipedia.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/wikipedia-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/x-twitter",
-    "title": "X (Twitter) Trends API",
-    "body": "X trending topics and discussion volume over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://x-twitter.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsapi/youtube",
-    "title": "YouTube Trends API",
-    "body": "YouTube search volume and trending videos over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://youtube.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsapi.ai/trends/youtube-trends",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/amazon",
-    "title": "Amazon Trends MCP",
-    "body": "Amazon product search demand over time, with growth for any keyword. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://amazon.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/app-store",
-    "title": "App Store Trends MCP",
-    "body": "App Store and Play downloads and charts over time, Android uses bundle ID. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app-store.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/competitor-tracking",
-    "title": "Competitor Tracking Trends MCP",
-    "body": "Brand and competitor trend volume over time, with growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://competitor-tracking.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/content-strategy",
-    "title": "Content Strategy Trends MCP",
-    "body": "Topics gaining momentum before they peak. Trend volume and growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://content-strategy.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/crypto",
-    "title": "Crypto Trends MCP",
-    "body": "Crypto token and narrative trend volume over time, with growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://crypto.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/ecommerce",
-    "title": "Ecommerce Trends MCP",
-    "body": "Product and category demand trend volume over time, with growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ecommerce.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/google-trends",
-    "title": "Google Trends MCP",
-    "body": "Google Trends: Search, Images, News, Shopping over time, growth metrics. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://google-trends.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/market-research",
-    "title": "Market Research Trends MCP",
-    "body": "See if a market is heating or cooling. Trend volume and growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://market-research.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/news-sentiment",
-    "title": "News Sentiment Trends MCP",
-    "body": "News sentiment scores over time, with growth for any topic. Free key at trendsmcp.ai\nVersion: 1.0.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://news-sentiment.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/news-volume",
-    "title": "News Volume Trends MCP",
-    "body": "News article volume over time, with growth for any topic. Free key at trendsmcp.ai\nVersion: 1.0.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://news-volume.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/npm",
-    "title": "npm Trends MCP",
-    "body": "npm package trends and weekly downloads over time. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://npm.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/reddit",
-    "title": "Reddit Trends MCP",
-    "body": "Reddit trend data over time, with growth for any topic or brand. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://reddit.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/seo",
-    "title": "SEO Trends MCP",
-    "body": "Spot keyword demand rising or fading. Trend volume and growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://seo.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/social-media",
-    "title": "Social Media Intelligence MCP",
-    "body": "Cross-platform social media intelligence. Trend volume and growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://social-media.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/spotify",
-    "title": "Spotify Trends MCP",
-    "body": "Spotify podcast and artist trends over time, with growth metrics. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://spotify.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/steam",
-    "title": "Steam Trends MCP",
-    "body": "Steam concurrent players by game over time, monthly trends and growth. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://steam.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/tiktok",
-    "title": "TikTok Trends MCP",
-    "body": "TikTok hashtag volume over time, with growth for any hashtag. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://tiktok.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/trends",
-    "title": "Trends MCP",
-    "body": "Trend data from Google Trends, YouTube, TikTok, Reddit, Amazon, Wikipedia, npm, Steam and more\nVersion: 1.0.7\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/wikipedia",
-    "title": "Wikipedia Trends MCP",
-    "body": "Wikipedia page views over time, with growth for any article topic. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://wikipedia.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/x-twitter",
-    "title": "X (Twitter) Trends MCP",
-    "body": "Twitter (X) trends over time, with growth for any keyword. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://x-twitter.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.trendsmcp/youtube",
-    "title": "YouTube Trends MCP",
-    "body": "YouTube search interest and trend data over time, with growth metrics. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://youtube.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://trendsmcp.ai",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.unquant/unquant",
-    "title": "Unquant",
-    "body": "Financial data MCP for market, company, news, macro, and US Congress research.\nVersion: 3.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://unquant.ai/mcp\"}]",
-    "url": "https://unquant.ai",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.vruum/mcp",
-    "title": "ai.vruum/mcp",
-    "body": "Vruum AI revenue platform — outbound, deals, pipeline & CRM automation over one MCP.\nVersion: 0.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.vruum.ai/mcp\",\"headers\":[{\"description\":\"Bearer token using a Vruum personal access token (vk_live_…). Generate one in the Vruum web app under Settings → API tokens. Format: 'Bearer vk_live_…'.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@vruum/mcp\",\"version\":\"0.3.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/vruum-gtm/mcp",
-    "fetchedAt": "2026-08-08T04:34:25.409Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.vruum/vruum",
-    "title": "Vruum",
-    "body": "B2B revenue lifecycle: research, sourcing, email and LinkedIn outreach, pipeline, revenue truth.\nVersion: 0.81.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.vruum.ai/mcp\"}]",
-    "url": "https://vruum.ai",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "app.era/context",
-    "title": "Era Context",
-    "body": "Personal finance, bank account, and shared memory connector for Claude, ChatGPT, Gemini Spark & more\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://context.era.app/mcp\"}]",
-    "url": "https://era.app/context",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "app.loveoracle/tarot",
-    "title": "Love Oracle — Tarot",
-    "body": "Tarot card meanings for love, and answers to the most-asked love questions, in 22 languages.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.loveoracle.app/api/mcp\"}]",
-    "url": "https://github.com/Misko4b/love-oracle-tarot-dataset",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "app.miniaccountant/mini-accountant",
-    "title": "Mini Accountant",
-    "body": "Hosted MCP server for Mini Accountant: invoices, expenses, customers, analytics, tax estimates.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.miniaccountant.app/v1beta\"}]",
-    "url": "https://ad.miniaccountant.app",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "app.priorify/priorify",
-    "title": "Priorify",
-    "body": "Agent-complete, permission-scoped product operations for Priorify workspaces.\nVersion: 0.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://priorify.app/mcp\"}]",
-    "url": "https://priorify.app/docs/mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "app.safeship/mcp",
-    "title": "Safeship",
-    "body": "API monitoring from your editor. Checks the JSON your endpoints return, not just the status code.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.safeship.app/mcp\",\"headers\":[{\"description\":\"Safeship API key, created under Settings then API Keys at https://safeship.app. Starts with sk_live_.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
-    "url": "https://safeship.app/mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ar.com.ninox/ninoxnet",
-    "title": "NinoxNet",
-    "body": "Ninox ERP by NinoxNet: manage inventory, sales, HR and goals, and build in-app dashboards.\nVersion: 2.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.ninox.com.ar/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ar.com.ninox%2Fninoxnet",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "au.com.aiframework/governance-framework-generator",
-    "title": "au.com.aiframework/governance-framework-generator",
-    "body": "Identifies the Australian legislation triggered by a business's use of AI, and frames governance.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://aiframework.com.au/api/mcp.php\"}]",
-    "url": "https://aiframework.com.au",
-    "fetchedAt": "2026-08-10T05:05:14.711Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "au.com.feasibly/planning",
-    "title": "au.com.feasibly/planning",
-    "body": "Australian planning data for ~455 councils, 7 states — clause-cited, confidence-tagged.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.feasibly.com.au/mcp\",\"headers\":[{\"description\":\"Bearer YOUR_FEASIBLY_API_KEY — free tier (20 lookups/month) at https://app.feasibly.com.au/register\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://feasibly.com.au",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "blog.tenjin/tenjin",
-    "title": "Tenjin",
-    "body": "Search, read & publish paid essays. Pay-per-read in USDC on Base (x402); wallet-only, no account.\nVersion: 0.8.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://tenjin.sh/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"tenjin-cli\",\"version\":\"0.1.0-alpha.15\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}]}]",
-    "url": "https://tenjin.sh/agents",
-    "fetchedAt": "2026-08-27T14:25:48.570Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "cloud.wavehouse/mcp",
-    "title": "WaveHouse Cloud",
-    "body": "Browse, query, and administer your managed WaveHouse + ClickHouse projects (schema, pipes, policy).\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.wavehouse.cloud/mcp\"}]",
-    "url": "https://wavehouse.cloud",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "coach.prose/prose-coach",
-    "title": "Prose Coach",
-    "body": "Deterministic writing filter. Marks 43 AI patterns with the line and the fix.\nVersion: 1.5.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.prose.coach/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=coach.prose%2Fprose-coach",
-    "fetchedAt": "2026-09-01T08:49:57.248Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.agilitycms/mcp-server",
-    "title": "com.agilitycms/mcp-server",
-    "body": "An MCP server that provides access to Agility CMS.  See https://mcp.agilitycms.com for more details.\nVersion: 2.4.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.agilitycms.com/api/mcp\"}]",
-    "url": "https://github.com/agility/mcp-server",
-    "fetchedAt": "2026-08-21T04:08:51.949Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.aicandidatehub/mcp",
-    "title": "com.aicandidatehub/mcp",
-    "body": "Profile, CV, jobs, compensation & application-tracking tools for AI agents, by aicandidatehub.com.\nVersion: 0.5.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@aicandidatehub/mcp\",\"version\":\"0.5.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Personal Access Token minted at https://www.aicandidatehub.com/account/mcp-tokens (format chmcp_…). Required by all API-backed tools; the server starts and lists tools without it.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"CANDIDATEHUB_TOKEN\"},{\"description\":\"API base URL (defaults to https://www.aicandidatehub.com).\",\"name\":\"CANDIDATEHUB_API_BASE\"}]}]",
-    "url": "https://www.aicandidatehub.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.aigramx/aigramx",
-    "title": "AiGramX",
-    "body": "Social platform where AI agents and robots post their work. Read the feed, search, publish.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://aigramx.com/api/v1/mcp\"}]",
-    "url": "https://aigramx.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.blackswancausallabs/robins-i-mcp",
-    "title": "ROBINS-I V2 MCP",
-    "body": "ROBINS-I V2 (not V1): risk of bias in one result of a non-randomized cohort study\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"robins-i-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.careranks/careranks-data",
-    "title": "CareRanks Data",
-    "body": "CMS quality ratings, payer-negotiated prices, and clinician data for 41K+ US healthcare facilities.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://careranks.com/mcp\"}]",
-    "url": "https://careranks.com/docs/data/",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.choosehelp/directory",
-    "title": "ChooseHelp Treatment Directory",
-    "body": "Editorially independent addiction & mental-health directory — facilities, therapists, expert Q&A.\nVersion: 1.2.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.choosehelp.com/mcp\"}]",
-    "url": "https://www.choosehelp.com",
-    "fetchedAt": "2026-08-06T06:09:48.453Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.cituna/cituna-mcp",
-    "title": "com.cituna/cituna-mcp",
-    "body": "Track how 6 AI engines cite your brand, daily, with live Google Search Console.\nVersion: 1.5.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"cituna-mcp\",\"version\":\"1.5.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Personal API key from the Cituna app: Integrations, then \\\"Claude / MCP access\\\", then Generate token. Looks like cituna_sk_...\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"CITUNA_API_KEY\"},{\"description\":\"Backend base URL. Defaults to https://cituna.com; set this only to point at a different backend.\",\"format\":\"string\",\"name\":\"CITUNA_API_URL\"}]}]",
-    "url": "https://github.com/cituna/cituna-mcp",
-    "fetchedAt": "2026-08-26T04:09:22.368Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.commonelements/data",
-    "title": "com.commonelements/data",
-    "body": "Query 390,000+ HOA and condo association records, statutes, rosters, and flood risk data.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://commonelements.com/api/mcp\"}]",
-    "url": "https://commonelements.com/developers/mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.cve-security/cve-intelligence",
-    "title": "com.cve-security/cve-intelligence",
-    "body": "CVE intelligence: exploitation (KEV/EPSS), detection coverage, fixed versions. All tools keyless.\nVersion: 1.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cve-security.com/api/mcp\"}]",
-    "url": "https://cve-security.com",
-    "fetchedAt": "2026-08-11T04:48:40.622Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.cymosoft/cymosoft",
-    "title": "Cymosoft",
-    "body": "Cymosoft JSC profile and case studies (EN/JA) plus Japanese text utilities (文字数・全角半角・和暦)\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cymosoft.com/mcp\"}]",
-    "url": "https://cymosoft.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.dashboardbase/mcp",
-    "title": "Dashboardbase",
-    "body": "Validate Dashboardbase widget endpoint responses and setup files against the live contract.\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@dashboardbase/mcp\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of the Dashboardbase API. Defaults to https://api.dashboardbase.com.\",\"name\":\"DASHBOARDBASE_API_URL\"}]}]",
-    "url": "https://dashboardbase.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.defici/marketplace",
-    "title": "Defici Marketplace MCP Server",
-    "body": "Search and browse global classifieds across 80 markets. No auth required for read-only access.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://defici.com/api/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.defici%2Fmarketplace",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.domduck/domduck",
-    "title": "Domduck",
-    "body": "Domain reputation over time: Domain Rating, Tranco rank, TLS, and AI crawler policy.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://domduck.com/api/mcp\",\"headers\":[{\"description\":\"Bearer ddk_... Create a key at https://domduck.com/settings/api-keys\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]},{\"type\":\"streamable-http\",\"url\":\"https://domduck.com/api/mcp/public\"}]",
-    "url": "https://domduck.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.enconvert/mcp",
-    "title": "EnConvert",
-    "body": "Unified web ingestion for AI agents: perceive, discover, search, extract, ingest, watch, convert.\nVersion: 0.5.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@enconvert/mcp\",\"version\":\"0.5.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://enconvert.com",
-    "fetchedAt": "2026-08-07T05:12:10.976Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.fininfostation/tw-finance",
-    "title": "com.fininfostation/tw-finance",
-    "body": "Taiwan finance open data: ETF, funds, TAIEX, sentiment, business climate, FX. Free & read-only.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://fininfostation.com/mcp\"}]",
-    "url": "https://fininfostation.com/for-ai-agents",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.getpanes/panes",
-    "title": "Panes — a private feed on your phone",
-    "body": "Send notifications, updates and daily digests to a person's phone — typed cards in a private feed.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://getpanes.com/api/mcp\"}]",
-    "url": "https://getpanes.com",
-    "fetchedAt": "2026-08-05T06:05:41.650Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.gocushy/mcp",
-    "title": "com.gocushy/mcp",
-    "body": "The checkout your AI runs — bumps, upsells, subscriptions, tax and affiliates on your own Stripe.\nVersion: 0.15.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.gocushy.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@gocushy/mcp\",\"version\":\"0.15.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Your gocushy API key (gc_...) — create an account at https://gocushy.com/signup\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"GOCUSHY_API_KEY\"},{\"description\":\"API base URL (defaults to https://api.gocushy.com)\",\"format\":\"string\",\"name\":\"GOCUSHY_API_URL\"}]}]",
-    "url": "https://gocushy.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.keenielts/mcp",
-    "title": "KeenIELTS",
-    "body": "Free IELTS prep: band-scored student essays and interactive Listening/Reading drills graded in-chat.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://keenielts.com/mcp\"}]",
-    "url": "https://keenielts.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.lodekeep/memory",
-    "title": "com.lodekeep/memory",
-    "body": "Portable memory for AI agents: capture once, recall across Claude, Cursor, and any MCP client.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://lodekeep.com/mcp\"}]",
-    "url": "https://lodekeep.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.makerreels/makerreels",
-    "title": "MakerReels",
-    "body": "Turn an app into TikTok-style video ads: agents pull rendered ad batches, captions, posting kits.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://makerreels.com/api/mcp\",\"headers\":[{\"description\":\"Bearer mr_live_YOUR_KEY — create a key at makerreels.com/studio/settings (Connect your agent)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://makerreels.com/connect",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.markmesh/trademarks",
-    "title": "MarkMesh",
-    "body": "Trademark search, monitoring and conflict research across 30+ registers, with provenance.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://markmesh.com/api/v1/mcp\",\"headers\":[{\"description\":\"Bearer <API key>. Create one in MarkMesh under Developers → API keys. Use an mm_test_ key for sandbox or mm_live_ for a real portfolio.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://markmesh.com/agents",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.meertrack/mcp-server",
-    "title": "Meertrack",
-    "body": "Competitive intelligence - track what competitors ship each week. 8 tools, 3 prompt workflows.\nVersion: 2.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.meertrack.com/mcp\",\"headers\":[{\"description\":\"Either `Bearer mt_live_…` (static API key) or an OAuth 2.1 access token obtained via the authorization server advertised at `/.well-known/oauth-protected-resource/mcp`.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@meertrack/mcp\",\"version\":\"2.2.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Meertrack production API key (mt_live_…). Mint at Settings → API Keys.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"MEERTRACK_API_KEY\"},{\"description\":\"Optional upstream override; defaults to https://api.meertrack.com/v1.\",\"name\":\"MEERTRACK_API_BASE_URL\"}]}]",
-    "url": "https://meertrack.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.merlonix/monitoring",
-    "title": "Merlonix Monitoring",
-    "body": "Monitoring for agencies — uptime, SSL, DNS, blocklists, AI visibility, MCP health. 8 no-auth tools.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.merlonix.com/mcp\"}]",
-    "url": "https://merlonix.com",
-    "fetchedAt": "2026-08-05T06:05:41.650Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.mographr/motion-tools",
-    "title": "com.mographr/motion-tools",
-    "body": "Render animated motion-graphics overlays as MP4: lower thirds, titles, callouts\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.mographr.com/mcp\"}]",
-    "url": "https://www.mographr.com/mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.papacasper/mcp-toolbelt",
-    "title": "mcp-toolbelt",
-    "body": "29 pay-per-call DNS, SEO, SSL, security, and dev tools for AI agents. x402, no API key.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://papacasper.com/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.papacasper%2Fmcp-toolbelt",
-    "fetchedAt": "2026-08-31T09:58:53.166Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.pdfgate/mcp-server",
-    "title": "com.pdfgate/mcp-server",
-    "body": "MCP server for the PDFGate API. Generate PDFs, manage documents and handle e-signatures.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.pdfgate.com/server\",\"headers\":[{\"description\":\"Your PDFGate API key (live_ for production, test_ for sandbox). Optional: omit to authenticate with OAuth instead.\",\"isSecret\":true,\"name\":\"X-API-KEY\"}]}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@pdfgate/mcp-server\",\"version\":\"1.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Your PDFGate API key (starts with live_ for production or test_ for sandbox)\",\"name\":\"PDFGATE_API_KEY\"},{\"description\":\"Port for the local webhook listener (default: 3599)\",\"name\":\"PDFGATE_WEBHOOK_PORT\"}]}]",
-    "url": "https://pdfgate.com",
-    "fetchedAt": "2026-09-05T07:47:19.143Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.postrippl/postrippl",
-    "title": "com.postrippl/postrippl",
-    "body": "Schedule social media posts to 10 platforms: Instagram, TikTok, X, YouTube, LinkedIn, and more\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://postrippl.com/api/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.postrippl%2Fpostrippl",
-    "fetchedAt": "2026-08-08T04:34:25.409Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.prismfact/hub",
-    "title": "PrismFact",
-    "body": "Факты о бизнесе Томской области по ИНН: деньги, налоги, долг, статус. С источником и датой.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://prismfact.com/mcp\"}]",
-    "url": "https://prismfact.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.redpanda/docs-mcp",
-    "title": "com.redpanda/docs-mcp",
-    "body": "Get authoritative answers about Redpanda documentation and search API references.\nVersion: 2026.814.190\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://docs.redpanda.com/mcp\"}]",
-    "url": "https://github.com/redpanda-data/docs-site",
-    "fetchedAt": "2026-08-15T04:03:23.815Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.rolnia/mcp",
-    "title": "com.rolnia/mcp",
-    "body": "Profile, CV, jobs, compensation & application-tracking tools for AI agents, by rolnia.com.\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@rolnia/mcp\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Personal Access Token minted at https://www.rolnia.com/account/mcp-tokens (format chmcp_…). Required by all API-backed tools; the server starts and lists tools without it.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"CANDIDATEHUB_TOKEN\"},{\"description\":\"API base URL (defaults to https://www.rolnia.com).\",\"name\":\"CANDIDATEHUB_API_BASE\"}]}]",
-    "url": "https://www.rolnia.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.spannhq/stays",
-    "title": "Spann Stays",
-    "body": "Read-only sample stays, booking constraints, and staged reservation actions for review.\nVersion: 0.2.1+canonical.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.spannhq.com/mcp\"}]",
-    "url": "https://spannhq.com/protocol/mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.the-automator/downloads-search",
-    "title": "the-Automator AutoHotkey Downloads Search",
-    "body": "Semantic search over 438 AutoHotkey tools, scripts and courses at the-automator.com\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://edd-downloads-a2a.joe-glines.workers.dev/mcp\",\"headers\":[{\"description\":\"Bearer token. Get a free key at https://www.the-automator.com/ai-search — enter an email and the key is shown immediately. Send as: Bearer <your-key>\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://www.the-automator.com/ai-search",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.vibrai/vibrai",
-    "title": "Vibrai — arrangement engine for Ableton Live",
-    "body": "Arrange your own clips and instruments into finished song structures in Ableton Live 12.\nVersion: 1.7.2\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/cssllcio/vibrai-releases/releases/download/v1.7.2/Vibrai-1.7.2.mcpb\",\"version\":\"1.7.2\",\"fileSha256\":\"aac19afcf363df444ac3cc154dc4aea291849176ae8e4704b62a4976c9ef4164\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://vibrai.com",
-    "fetchedAt": "2026-09-04T08:11:49.015Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.1social/1social",
-    "title": "1Social",
-    "body": "Publish, schedule and verify social posts across seven networks from your AI assistant.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.1social.dev/mcp\"}]",
-    "url": "https://1social.dev/mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "fit.portfolio/portfoliofit",
-    "title": "PortfolioFit",
-    "body": "Check normalized portfolios against mandates and calculate allocation constraints.\nVersion: 0.1.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://portfolio.fit/mcp\"}]",
-    "url": "https://portfolio.fit/mcp-docs/",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "global.rootz.private/companies",
-    "title": "global.rootz.private/companies",
-    "body": "Confirm a US business is real and find who controls it. 32.6M official registry records.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://private.rootz.global/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=global.rootz.private%2Fcompanies",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.campaignstack/campaignstack",
-    "title": "io.campaignstack/campaignstack",
-    "body": "Run B2B outreach from your AI agent: 250+ tools for campaigns, leads, LinkedIn and email workflows.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.campaignstack.io/mcp\",\"headers\":[{\"description\":\"Bearer token using a CampaignStack API key (workspace or user key, created in the dashboard under Settings)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://campaignstack.io",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.draw/mcp",
-    "title": "draw.io",
-    "body": "Create diagrams in chat, rendered as live interactive draw.io diagrams. 10,000+ searchable shapes.\nVersion: 1.0.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.draw.io/mcp\"}]",
-    "url": "https://www.drawio.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.elaan/mcp",
-    "title": "io.elaan/mcp",
-    "body": "Create Elaan notification types, templates and brands, trigger sends, and debug delivery.\nVersion: 0.1.3\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@elaanio/mcp\",\"version\":\"0.1.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Elaan service key (sk_...) from console.elaan.io. Read from the environment only, never passed as a tool argument.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"ELAAN_API_KEY\"}]}]",
-    "url": "https://elaan.io/docs.html",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.AncientiCe/palace-rs",
-    "title": "Palace",
-    "body": "Local-first memory for coding agents — MCP server, single SQLite file, local embeddings\nVersion: 0.14.1\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/AncientiCe/palace-rs/releases/download/v0.14.1/palace-0.14.1.mcpb\",\"version\":\"0.14.1\",\"fileSha256\":\"508f2469fb6dc520c3cc7a08ae3b26ba2bb6217d15c0d6069a30debe0b002f2e\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/AncientiCe/palace-rs",
-    "fetchedAt": "2026-09-02T08:02:33.709Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.AugustusW/sharedoc-mcp",
-    "title": "io.github.AugustusW/sharedoc-mcp",
-    "body": "Share agent-generated Markdown as links — GitHub gists today, your own server tomorrow.\nVersion: 2.1.4\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"sharedoc-mcp\",\"version\":\"2.1.4\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Storage backend: 'gist' (secret gists via logged-in gh CLI, default) or 'selfhost' (local SQLite + built-in viewer)\",\"format\":\"string\",\"name\":\"SHAREDOC_BACKEND\"},{\"description\":\"URL prefix used in share links (selfhost) — set to your tunnel or reverse-proxy hostname\",\"format\":\"string\",\"name\":\"SHAREDOC_PUBLIC_URL\"}]}]",
-    "url": "https://github.com/AugustusW/sharedoc-mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.BUYMYAGENT-TECHNOLOGIES-INC/marketplace",
-    "title": "Buy My Agent",
-    "body": "Search a curated, human-reviewed AI agent marketplace, and post what you could not find.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.buy-my-agent.com/api/mcp\"}]",
-    "url": "https://www.buy-my-agent.com",
-    "fetchedAt": "2026-09-05T07:47:19.143Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.BenyD/haypile",
-    "title": "Haypile",
-    "body": "Hybrid search over your local documents, with file and page citations. One binary, fully local.\nVersion: 0.3.1\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_darwin_arm64.mcpb\",\"fileSha256\":\"a39ce52f514df9b144c4464618fb5a450f0062384b6e1993c3da8deffe3705be\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_darwin_amd64.mcpb\",\"fileSha256\":\"488a1b4cfcd2ccb6f8610b5815a3cdbf76d67bb08f56d366cf9d66a765099058\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_linux_arm64.mcpb\",\"fileSha256\":\"dbb1e737941a45013db95100e5af59d5367d65dd7f3c6d2c22e4888fe9febcc5\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_linux_amd64.mcpb\",\"fileSha256\":\"e88ab5e58280faaaf9190d61d3d317f7fc10a3ab99c01774493da00d0f684041\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_windows_amd64.mcpb\",\"fileSha256\":\"69a9cd3728489a6de4dabf87df866cf378f20dcc1aa25bee0d84637afb55703a\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://haypile.sh",
-    "fetchedAt": "2026-08-08T04:34:25.409Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.BharatDharmaAcademy/bda-mcp",
-    "title": "io.github.BharatDharmaAcademy/bda-mcp",
-    "body": "Jyotish, Panchang, Hindu festival and Sanatan Dharma knowledge tools with citations.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://jyotish-api.bda.ai/mcp\"}]",
-    "url": "https://jyotish-api.bda.ai/docs/mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.BlueStarSystem/aura-ui",
-    "title": "Aura UI",
-    "body": "Discover and install Aura UI Blade components for Laravel, Livewire and Tailwind CSS 4.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://aura-ui.com/mcp/aura\"}]",
-    "url": "https://aura-ui.com",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.DamianoTobasco/sync-socials-agent",
-    "title": "Sync Socials",
-    "body": "Create, schedule and publish social posts to TikTok, Instagram, Facebook and YouTube.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app.sync-socials.com/api/mcp\",\"headers\":[{\"description\":\"Sync Socials API key as a bearer token. Generate one in your workspace settings at app.sync-socials.com, then use the format: Bearer YOUR_API_KEY\",\"isRequired\":true,\"isSecret\":true,\"placeholder\":\"Bearer YOUR_SYNC_SOCIALS_API_KEY\",\"name\":\"Authorization\"}]}]",
-    "url": "https://sync-socials.com/ai-social-media-agent.html",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Dhi13man/oorep-mcp",
-    "title": "io.github.Dhi13man/oorep-mcp",
-    "body": "MCP server and TypeScript SDK for OOREP homeopathic repertory and materia medica reference data.\nVersion: 1.2.3\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"oorep-mcp\",\"version\":\"1.2.3\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/Dhi13man/oorep-mcp",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
     "externalId": "io.github.FerhatDundar/ghcli-mcp-connector",
     "title": "io.github.FerhatDundar/ghcli-mcp-connector",
     "body": "MCP server for the GitHub CLI (gh). Read-only by default; single Go binary.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-darwin-arm64.zip\",\"version\":\"0.1.1\",\"fileSha256\":\"ca961b3ed03be1b32e62c436b84086b1a5d480edb0ad6c784dd50d42f9f54e7a\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"gh CLI token. Leave unset to use whatever `gh auth login` already configured (OS keychain).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GH_TOKEN\"},{\"description\":\"Target a GitHub Enterprise hostname instead of github.com.\",\"format\":\"string\",\"name\":\"GH_HOST\"},{\"description\":\"Set to \\\"true\\\" to permit state-changing gh commands. Defaults to read-only.\",\"format\":\"string\",\"name\":\"GHCLI_MCP_ALLOW_WRITE\"},{\"description\":\"Optional comma-separated allowlist of \\\"owner/repo\\\" values, enforced when -R/--repo is passed. Unset allows all.\",\"format\":\"string\",\"name\":\"GHCLI_MCP_ALLOWED_REPOS\"},{\"description\":\"Optional path to the gh binary. Defaults to \\\"gh\\\" resolved via PATH.\",\"format\":\"string\",\"name\":\"GHCLI_MCP_CLI_PATH\"}]},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/FerhatDundar/ghcli-mcp-connector/releases/download/v0.1.1/ghcli-mcp-connector-plugin-v0.1.1-darwin-amd64.zip\",\"version\":\"0.1.1\",\"fileSha256\":\"6f9349d6aa1e658359bc5eeb5a0646a2fcfa77cfd245413140a6ae9fa42a6584\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"gh CLI token. Leave unset to use whatever `gh auth login` already configured (OS keychain).\",\"format\":\"string\",\"",
@@ -105358,5 +104398,1021 @@
     "body": "Article URL: https://github.com/mindify-ai/VACT-P Comments URL: https://news.ycombinator.com/item?id=49142206 Points: 2 # Comments: 0",
     "url": "https://github.com/mindify-ai/VACT-P",
     "fetchedAt": "2026-08-03T06:43:55.440Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=49606981",
+    "title": "Show HN: Use Strava's official MCP with other chatbots",
+    "body": "Strava gives subscribers access to a MCP to access their strava data, which is very helpful to understand training plans and trends https://support.strava.com/en-us/articles/15401531-strava-mc... But unfortunately, they have limited official support to Anthropic This small repo gives Strava users a way to run a small personal gateway that connects directly to the official MCP, for other chatbots like ChatGPT, etc… Comments URL: https://news.ycombinator.com/item?id=49606981 Points: 1 # Comments: 0",
+    "url": "https://github.com/leecjohnny/strava-mcp-gateway",
+    "fetchedAt": "2026-09-08T08:15:29.365Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=49606267",
+    "title": "0Pirate – AST-level code anonymizer and MCP proxy for frontier LLMs",
+    "body": "Article URL: https://pypi.org/project/0pirate/ Comments URL: https://news.ycombinator.com/item?id=49606267 Points: 1 # Comments: 0",
+    "url": "https://pypi.org/project/0pirate/",
+    "fetchedAt": "2026-09-08T08:15:29.365Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=49602848",
+    "title": "Girder – an MCP server that gives coding agents a code graph",
+    "body": "Article URL: https://github.com/dhishwasher/Girder Comments URL: https://news.ycombinator.com/item?id=49602848 Points: 2 # Comments: 0",
+    "url": "https://github.com/dhishwasher/Girder",
+    "fetchedAt": "2026-09-08T08:15:29.365Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=49601919",
+    "title": "MCP server for 340k SVG icons",
+    "body": "Article URL: https://github.com/LeulAria/Aria-Icons Comments URL: https://news.ycombinator.com/item?id=49601919 Points: 1 # Comments: 0",
+    "url": "https://github.com/LeulAria/Aria-Icons",
+    "fetchedAt": "2026-09-08T08:15:29.365Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=49600216",
+    "title": "MCP server architecture for platform teams",
+    "body": "Article URL: https://pipelineandprompts.com/posts/mcp-server-architecture-platform-engineering-kubernetes/ Comments URL: https://news.ycombinator.com/item?id=49600216 Points: 1 # Comments: 0",
+    "url": "https://pipelineandprompts.com/posts/mcp-server-architecture-platform-engineering-kubernetes/",
+    "fetchedAt": "2026-09-08T08:15:29.365Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=49598774",
+    "title": "Show HN: A local visual tool cli/mcp for agents to propose architecture changes",
+    "body": "Author here. I built this because I've always had a hard time focusing on large swathes of pure text. I love visualizations for understanding architecture and changes. So I wanted a visual tool to make me more effective at collaborating with my agents: visual architecture, visual change proposal, human or AI reviews, backed by git. It's still a very early tool. I'd like to add more kinds of diagrams and richer editors and make it even easier for agents to use. Would anyone else be interested in something like this? Contributions and feedback are very welcome Comments URL: https://news.ycombinator.com/item?id=49598774 Points: 1 # Comments: 0",
+    "url": "https://github.com/luiscleto/WorkBraid",
+    "fetchedAt": "2026-09-08T08:15:29.365Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=49598681",
+    "title": "Openfork – a public idea board where AI agents can post, roast, and fork via MCP",
+    "body": "Article URL: https://openfork.co/ Comments URL: https://news.ycombinator.com/item?id=49598681 Points: 1 # Comments: 0",
+    "url": "https://openfork.co/",
+    "fetchedAt": "2026-09-08T08:15:29.365Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.amitsingh-24/pixlint",
+    "title": "io.github.amitsingh-24/pixlint",
+    "body": "Lint, curate & prepare computer-vision datasets from your AI assistant — MCP server, 67 tools\nVersion: 1.1.0\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"pixlint\",\"version\":\"1.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Absolute path to the directory PixLint may read datasets from.\",\"name\":\"CV_DATA_DIR\"},{\"description\":\"Absolute path for outputs (exports, curated datasets).\",\"name\":\"CV_WORKSPACE\"}]}]",
+    "url": "https://github.com/amitsingh-24/PixLint",
+    "fetchedAt": "2026-07-26T06:21:10.903Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.angelus213/foundry-api",
+    "title": "Foundry/API",
+    "body": "Bounded tools for rendering, extraction, RAG, enrichment, local discovery and review analysis.\nVersion: 0.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://prodapi.live/mcp\",\"headers\":[{\"description\":\"Foundry/API key created from the API access page.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
+    "url": "https://github.com/angelus213/foundry-api-workflows",
+    "fetchedAt": "2026-07-23T06:15:12.777Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.antikas/openim",
+    "title": "Open Investment Model",
+    "body": "Read-only OpenIM search for institutional buy-side investment models and architecture.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@openinvestmentmodel/openim-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/antikas/open-investment-model",
+    "fetchedAt": "2026-08-29T10:18:00.331Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.antohins/seo-tools-mcp-gsc",
+    "title": "SEO Tools: Google Search Console",
+    "body": "Google Search Console: Search Analytics, URL Inspection, sitemaps (read-only, OAuth/service acct).\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-gsc\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Google OAuth client ID (Desktop app).\",\"format\":\"string\",\"name\":\"GOOGLE_CLIENT_ID\"},{\"description\":\"Google OAuth client secret.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GOOGLE_CLIENT_SECRET\"},{\"description\":\"Google OAuth refresh token (or obtain via gsc_oauth_start).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GSC_REFRESH_TOKEN\"},{\"description\":\"Default GSC property, e.g. sc-domain:example.com.\",\"format\":\"string\",\"name\":\"GSC_SITE_URL\"},{\"description\":\"Path to a service-account JSON key (alternative auth path).\",\"format\":\"string\",\"name\":\"GSC_SA_JSON\"},{\"description\":\"Localhost port for the OAuth loopback receiver (default 8585).\",\"format\":\"string\",\"name\":\"GSC_OAUTH_PORT\"}]}]",
+    "url": "https://github.com/antohins/seo-tools-mcp#readme",
+    "fetchedAt": "2026-08-26T04:09:22.368Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.antohins/seo-tools-mcp-metrika",
+    "title": "SEO Tools: Yandex.Metrica",
+    "body": "MCP server for Yandex.Metrica Stat API (read-only).\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-metrika\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Yandex OAuth token (shared Webmaster + Metrica); or obtain via metrika_oauth_start.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YANDEX_OAUTH_TOKEN\"},{\"description\":\"Default Yandex.Metrica counter ID.\",\"format\":\"string\",\"name\":\"METRIKA_COUNTER_ID\"},{\"description\":\"Dedicated Metrica token (overrides the shared one; usually not needed).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"METRIKA_OAUTH_TOKEN\"},{\"description\":\"Yandex OAuth app client ID (for interactive auth and token refresh).\",\"format\":\"string\",\"name\":\"YANDEX_CLIENT_ID\"},{\"description\":\"Yandex OAuth app client secret.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YANDEX_CLIENT_SECRET\"}]}]",
+    "url": "https://github.com/antohins/seo-tools-mcp#readme",
+    "fetchedAt": "2026-08-26T04:09:22.368Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.antohins/seo-tools-mcp-wordstat",
+    "title": "SEO Tools: Yandex Wordstat",
+    "body": "MCP server for Yandex Wordstat keyword frequencies (official API v2). Free Yandex Cloud Search API.\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-wordstat\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Yandex Cloud API key with scope yc.search-api.execute.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"WORDSTAT_API_KEY\"},{\"description\":\"Yandex Cloud folder ID.\",\"format\":\"string\",\"name\":\"WORDSTAT_FOLDER_ID\"}]}]",
+    "url": "https://github.com/antohins/seo-tools-mcp#readme",
+    "fetchedAt": "2026-08-26T04:09:22.368Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.antohins/seo-tools-mcp-xmlstock",
+    "title": "SEO Tools: XMLStock SERP (Google + Yandex)",
+    "body": "Google & Yandex SERP + Yandex Wordstat via XMLStock (read-only).\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-xmlstock\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"XMLStock user ID (from the xmlstock.com dashboard).\",\"format\":\"string\",\"name\":\"XMLSTOCK_USER\"},{\"description\":\"XMLStock API key.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"XMLSTOCK_KEY\"},{\"description\":\"Aggregator domains excluded by excludeAggregators, comma-separated.\",\"format\":\"string\",\"name\":\"XMLSTOCK_EXCLUDE_DOMAINS\"},{\"description\":\"Price per SERP call in RUB for cost logging (default 0.02).\",\"format\":\"string\",\"name\":\"XMLSTOCK_PRICE_PER_CALL\"},{\"description\":\"Price per Wordstat call in RUB for cost logging (default 0.019).\",\"format\":\"string\",\"name\":\"XMLSTOCK_WORDSTAT_PRICE_PER_CALL\"}]}]",
+    "url": "https://github.com/antohins/seo-tools-mcp#readme",
+    "fetchedAt": "2026-08-26T04:09:22.368Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.antohins/seo-tools-mcp-ywm",
+    "title": "SEO Tools: Yandex.Webmaster",
+    "body": "MCP server for Yandex.Webmaster search queries (read-only).\nVersion: 1.8.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"seo-tools-mcp-ywm\",\"version\":\"1.8.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Yandex OAuth token (shared Webmaster + Metrica); or obtain via ywm_oauth_start.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YANDEX_OAUTH_TOKEN\"},{\"description\":\"Dedicated Webmaster token (overrides the shared one; usually not needed).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YWM_OAUTH_TOKEN\"},{\"description\":\"Yandex OAuth app client ID (for interactive auth and token refresh).\",\"format\":\"string\",\"name\":\"YANDEX_CLIENT_ID\"},{\"description\":\"Yandex OAuth app client secret.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"YANDEX_CLIENT_SECRET\"},{\"description\":\"Default Webmaster host, format https:example.com:443.\",\"format\":\"string\",\"name\":\"YWM_HOST_ID\"},{\"description\":\"Webmaster user_id (auto-detected; usually not needed).\",\"format\":\"string\",\"name\":\"YWM_USER_ID\"}]}]",
+    "url": "https://github.com/antohins/seo-tools-mcp#readme",
+    "fetchedAt": "2026-08-26T04:09:22.368Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.aradar46/reuse-before-generate",
+    "title": "Reuse Before Generate",
+    "body": "Checks whether your idea already exists before your agent builds it. Searches GitHub, npm, Python.\nVersion: 0.2.3\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"reuse-before-generate\",\"version\":\"0.2.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional GitHub token. Raises the search rate limit from 10 requests/minute to 30.\",\"isSecret\":true,\"name\":\"GITHUB_TOKEN\"}]}]",
+    "url": "https://github.com/aradar46/reuse-before-generate",
+    "fetchedAt": "2026-07-23T06:15:12.777Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.atomno-labs/mcp-cbr-rates",
+    "title": "io.github.atomno-labs/mcp-cbr-rates",
+    "body": "CBR exchange rates and key rates for Russia. MCP tools for finance agents.\nVersion: 0.1.4\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"atomno-mcp-cbr-rates\",\"version\":\"0.1.4\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/atomno-labs/mcp-cbr-rates",
+    "fetchedAt": "2026-07-23T06:15:12.777Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.atomno-labs/mcp-egrul",
+    "title": "io.github.atomno-labs/mcp-egrul",
+    "body": "EGRUL/EGRIP company registry lookup for Russian legal entities and entrepreneurs.\nVersion: 0.1.4\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"atomno-mcp-egrul\",\"version\":\"0.1.4\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key (Pro tier) for hosted mode on api.atomno-labs.ru. Self-host via local SQLite works without it.\",\"isSecret\":true,\"name\":\"ATOMNO_API_KEY\"}]}]",
+    "url": "https://github.com/atomno-labs/mcp-egrul",
+    "fetchedAt": "2026-07-23T06:15:12.777Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.atomno-labs/mcp-fns-check",
+    "title": "io.github.atomno-labs/mcp-fns-check",
+    "body": "Russian tax authority (FNS) counterparty checks: status, debts, blocks. Due diligence MCP.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"atomno-mcp-fns-check\",\"version\":\"0.1.2\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/atomno-labs/mcp-fns-check",
+    "fetchedAt": "2026-07-23T06:15:12.777Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "agency.goji/goji",
+    "title": "agency.goji/goji",
+    "body": "Answers on AEO, SEO, web and brand from GOJI's published material. Melbourne, Australia.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.goji.agency/mcp\"}]",
+    "url": "https://goji.agency",
+    "fetchedAt": "2026-08-14T05:14:02.340Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.cnaps/studio",
+    "title": "CNAPS.ai MCP Server",
+    "body": "Run 70+ AI models and 50+ tools on CNAPS Studio in natural language — Claude, n8n, or Zapier.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.cnaps.ai/mcp\"}]",
+    "url": "https://docs.cnaps.ai/mcp-user-guide",
+    "fetchedAt": "2026-08-20T04:07:16.030Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.saascloud/cryptopulse",
+    "title": "CryptoPulse Data API",
+    "body": "Pay-per-call crypto market intelligence for AI agents. USDC on Base via x402.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cryptopulse.saascloud.ai/mcp\"}]",
+    "url": "https://cryptopulse.saascloud.ai",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.tenderhunt/agent",
+    "title": "TenderHunt",
+    "body": "Belarus public tenders: search, analytics, docs, and alerts via TenderHunt agent.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://tenderhunt.ai/mcp\",\"headers\":[{\"description\":\"Bearer th_… API key issued in TenderHunt Profile → Connections.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://tenderhunt.ai",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trackradar/trackradar",
+    "title": "TrackRadar",
+    "body": "Track ID for Instagram, SoundCloud, YouTube, TikTok, Mixcloud — incl. underground and unreleased.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://trackradar.ai/api/mcp\"}]",
+    "url": "https://trackradar.ai",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/amazon",
+    "title": "Amazon Trends API",
+    "body": "Amazon product search volume and best-seller trends. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://amazon.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/amazon-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/app-store",
+    "title": "App Store Trends API",
+    "body": "App downloads and chart ranking trends for iOS and Android. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app-store.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/app-store-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/competitor-tracking",
+    "title": "Competitor Tracking API",
+    "body": "Track competitor brand demand across search, social and news. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://competitor-tracking.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/content-strategy",
+    "title": "Content Strategy API",
+    "body": "Find rising topics before they peak across search and social. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://content-strategy.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/crypto",
+    "title": "Crypto Trends API",
+    "body": "Track crypto token and narrative attention across platforms. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://crypto.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/ecommerce",
+    "title": "Ecommerce Trends API",
+    "body": "Product and category demand signals across Amazon and social. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ecommerce.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/amazon-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/google-trends",
+    "title": "Google Trends API",
+    "body": "Google Trends search interest over time with growth metrics. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://google-trends.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/google-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/market-research",
+    "title": "Market Research API",
+    "body": "Consumer demand signals across search, shopping and social. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://market-research.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/news-sentiment",
+    "title": "News Sentiment API",
+    "body": "News sentiment score trends for any topic over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://news-sentiment.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/news-sentiment",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/news-volume",
+    "title": "News Volume API",
+    "body": "News article mention volume trends for any topic. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://news-volume.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/news-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/npm",
+    "title": "npm Trends API",
+    "body": "npm package download trends and adoption growth over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://npm.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/npm-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/reddit",
+    "title": "Reddit Trends API",
+    "body": "Reddit discussion volume and subreddit growth over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://reddit.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/reddit-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/seo",
+    "title": "SEO Trends API",
+    "body": "Spot keyword demand rising or fading across search and social. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://seo.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/google-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/social-media",
+    "title": "Social Media Trends API",
+    "body": "Cross-platform social trend signals from TikTok, YouTube, Reddit and X. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://social-media.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/spotify",
+    "title": "Spotify Trends API",
+    "body": "Spotify top podcast trends and listening signals. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://spotify.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/steam",
+    "title": "Steam Trends API",
+    "body": "Steam concurrent player trends for any game over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://steam.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/steam-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/tiktok",
+    "title": "TikTok Trends API",
+    "body": "TikTok hashtag volume over time, with growth for any hashtag. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://tiktok.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/tiktok-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/trends",
+    "title": "Trends API",
+    "body": "Trend data from Google, TikTok, Amazon, Reddit, YouTube, Steam, npm and more as JSON\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/wikipedia",
+    "title": "Wikipedia Trends API",
+    "body": "Wikipedia page view trends for any topic over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://wikipedia.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/wikipedia-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/x-twitter",
+    "title": "X (Twitter) Trends API",
+    "body": "X trending topics and discussion volume over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://x-twitter.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsapi/youtube",
+    "title": "YouTube Trends API",
+    "body": "YouTube search volume and trending videos over time. Free key at trendsapi.ai\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://youtube.api.trendsapi.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsapi.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsapi.ai/trends/youtube-trends",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/amazon",
+    "title": "Amazon Trends MCP",
+    "body": "Amazon product search demand over time, with growth for any keyword. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://amazon.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/app-store",
+    "title": "App Store Trends MCP",
+    "body": "App Store and Play downloads and charts over time, Android uses bundle ID. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app-store.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/competitor-tracking",
+    "title": "Competitor Tracking Trends MCP",
+    "body": "Brand and competitor trend volume over time, with growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://competitor-tracking.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/content-strategy",
+    "title": "Content Strategy Trends MCP",
+    "body": "Topics gaining momentum before they peak. Trend volume and growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://content-strategy.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/crypto",
+    "title": "Crypto Trends MCP",
+    "body": "Crypto token and narrative trend volume over time, with growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://crypto.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/ecommerce",
+    "title": "Ecommerce Trends MCP",
+    "body": "Product and category demand trend volume over time, with growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ecommerce.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/google-trends",
+    "title": "Google Trends MCP",
+    "body": "Google Trends: Search, Images, News, Shopping over time, growth metrics. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://google-trends.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/market-research",
+    "title": "Market Research Trends MCP",
+    "body": "See if a market is heating or cooling. Trend volume and growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://market-research.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/news-sentiment",
+    "title": "News Sentiment Trends MCP",
+    "body": "News sentiment scores over time, with growth for any topic. Free key at trendsmcp.ai\nVersion: 1.0.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://news-sentiment.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/news-volume",
+    "title": "News Volume Trends MCP",
+    "body": "News article volume over time, with growth for any topic. Free key at trendsmcp.ai\nVersion: 1.0.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://news-volume.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/npm",
+    "title": "npm Trends MCP",
+    "body": "npm package trends and weekly downloads over time. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://npm.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/reddit",
+    "title": "Reddit Trends MCP",
+    "body": "Reddit trend data over time, with growth for any topic or brand. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://reddit.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/seo",
+    "title": "SEO Trends MCP",
+    "body": "Spot keyword demand rising or fading. Trend volume and growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://seo.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/social-media",
+    "title": "Social Media Intelligence MCP",
+    "body": "Cross-platform social media intelligence. Trend volume and growth signals. Free key at trendsmcp.ai\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://social-media.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/spotify",
+    "title": "Spotify Trends MCP",
+    "body": "Spotify podcast and artist trends over time, with growth metrics. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://spotify.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/steam",
+    "title": "Steam Trends MCP",
+    "body": "Steam concurrent players by game over time, monthly trends and growth. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://steam.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/tiktok",
+    "title": "TikTok Trends MCP",
+    "body": "TikTok hashtag volume over time, with growth for any hashtag. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://tiktok.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/trends",
+    "title": "Trends MCP",
+    "body": "Trend data from Google Trends, YouTube, TikTok, Reddit, Amazon, Wikipedia, npm, Steam and more\nVersion: 1.0.7\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/wikipedia",
+    "title": "Wikipedia Trends MCP",
+    "body": "Wikipedia page views over time, with growth for any article topic. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://wikipedia.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/x-twitter",
+    "title": "X (Twitter) Trends MCP",
+    "body": "Twitter (X) trends over time, with growth for any keyword. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://x-twitter.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.trendsmcp/youtube",
+    "title": "YouTube Trends MCP",
+    "body": "YouTube search interest and trend data over time, with growth metrics. Free key at trendsmcp.ai\nVersion: 1.0.6\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://youtube.api.trendsmcp.ai/mcp\",\"headers\":[{\"description\":\"Bearer token. Get your free API key at https://trendsmcp.ai\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://trendsmcp.ai",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.unquant/unquant",
+    "title": "Unquant",
+    "body": "Financial data MCP for market, company, news, macro, and US Congress research.\nVersion: 3.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://unquant.ai/mcp\"}]",
+    "url": "https://unquant.ai",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.vruum/mcp",
+    "title": "ai.vruum/mcp",
+    "body": "Vruum AI revenue platform — outbound, deals, pipeline & CRM automation over one MCP.\nVersion: 0.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.vruum.ai/mcp\",\"headers\":[{\"description\":\"Bearer token using a Vruum personal access token (vk_live_…). Generate one in the Vruum web app under Settings → API tokens. Format: 'Bearer vk_live_…'.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@vruum/mcp\",\"version\":\"0.3.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/vruum-gtm/mcp",
+    "fetchedAt": "2026-08-08T04:34:25.409Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.vruum/vruum",
+    "title": "Vruum",
+    "body": "B2B revenue lifecycle: research, sourcing, email and LinkedIn outreach, pipeline, revenue truth.\nVersion: 0.81.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.vruum.ai/mcp\"}]",
+    "url": "https://vruum.ai",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "app.era/context",
+    "title": "Era Context",
+    "body": "Personal finance, bank account, and shared memory connector for Claude, ChatGPT, Gemini Spark & more\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://context.era.app/mcp\"}]",
+    "url": "https://era.app/context",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "app.loveoracle/tarot",
+    "title": "Love Oracle — Tarot",
+    "body": "Tarot card meanings for love, and answers to the most-asked love questions, in 22 languages.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.loveoracle.app/api/mcp\"}]",
+    "url": "https://github.com/Misko4b/love-oracle-tarot-dataset",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "app.miniaccountant/mini-accountant",
+    "title": "Mini Accountant",
+    "body": "Hosted MCP server for Mini Accountant: invoices, expenses, customers, analytics, tax estimates.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.miniaccountant.app/v1beta\"}]",
+    "url": "https://ad.miniaccountant.app",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "app.priorify/priorify",
+    "title": "Priorify",
+    "body": "Agent-complete, permission-scoped product operations for Priorify workspaces.\nVersion: 0.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://priorify.app/mcp\"}]",
+    "url": "https://priorify.app/docs/mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "app.safeship/mcp",
+    "title": "Safeship",
+    "body": "API monitoring from your editor. Checks the JSON your endpoints return, not just the status code.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.safeship.app/mcp\",\"headers\":[{\"description\":\"Safeship API key, created under Settings then API Keys at https://safeship.app. Starts with sk_live_.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
+    "url": "https://safeship.app/mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ar.com.ninox/ninoxnet",
+    "title": "NinoxNet",
+    "body": "Ninox ERP by NinoxNet: manage inventory, sales, HR and goals, and build in-app dashboards.\nVersion: 2.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.ninox.com.ar/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ar.com.ninox%2Fninoxnet",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "au.com.aiframework/governance-framework-generator",
+    "title": "au.com.aiframework/governance-framework-generator",
+    "body": "Identifies the Australian legislation triggered by a business's use of AI, and frames governance.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://aiframework.com.au/api/mcp.php\"}]",
+    "url": "https://aiframework.com.au",
+    "fetchedAt": "2026-08-10T05:05:14.711Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "au.com.feasibly/planning",
+    "title": "au.com.feasibly/planning",
+    "body": "Australian planning data for ~455 councils, 7 states — clause-cited, confidence-tagged.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.feasibly.com.au/mcp\",\"headers\":[{\"description\":\"Bearer YOUR_FEASIBLY_API_KEY — free tier (20 lookups/month) at https://app.feasibly.com.au/register\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://feasibly.com.au",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "blog.tenjin/tenjin",
+    "title": "Tenjin",
+    "body": "Search, read & publish paid essays. Pay-per-read in USDC on Base (x402); wallet-only, no account.\nVersion: 0.8.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://tenjin.sh/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"tenjin-cli\",\"version\":\"0.1.0-alpha.15\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}]}]",
+    "url": "https://tenjin.sh/agents",
+    "fetchedAt": "2026-08-27T14:25:48.570Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "cloud.wavehouse/mcp",
+    "title": "WaveHouse Cloud",
+    "body": "Browse, query, and administer your managed WaveHouse + ClickHouse projects (schema, pipes, policy).\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.wavehouse.cloud/mcp\"}]",
+    "url": "https://wavehouse.cloud",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "coach.prose/prose-coach",
+    "title": "Prose Coach",
+    "body": "Deterministic writing filter. Marks 43 AI patterns with the line and the fix.\nVersion: 1.5.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.prose.coach/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=coach.prose%2Fprose-coach",
+    "fetchedAt": "2026-09-01T08:49:57.248Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.agilitycms/mcp-server",
+    "title": "com.agilitycms/mcp-server",
+    "body": "An MCP server that provides access to Agility CMS.  See https://mcp.agilitycms.com for more details.\nVersion: 2.4.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.agilitycms.com/api/mcp\"}]",
+    "url": "https://github.com/agility/mcp-server",
+    "fetchedAt": "2026-08-21T04:08:51.949Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.aicandidatehub/mcp",
+    "title": "com.aicandidatehub/mcp",
+    "body": "Profile, CV, jobs, compensation & application-tracking tools for AI agents, by aicandidatehub.com.\nVersion: 0.5.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@aicandidatehub/mcp\",\"version\":\"0.5.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Personal Access Token minted at https://www.aicandidatehub.com/account/mcp-tokens (format chmcp_…). Required by all API-backed tools; the server starts and lists tools without it.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"CANDIDATEHUB_TOKEN\"},{\"description\":\"API base URL (defaults to https://www.aicandidatehub.com).\",\"name\":\"CANDIDATEHUB_API_BASE\"}]}]",
+    "url": "https://www.aicandidatehub.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.aigramx/aigramx",
+    "title": "AiGramX",
+    "body": "Social platform where AI agents and robots post their work. Read the feed, search, publish.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://aigramx.com/api/v1/mcp\"}]",
+    "url": "https://aigramx.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.blackswancausallabs/robins-i-mcp",
+    "title": "ROBINS-I V2 MCP",
+    "body": "ROBINS-I V2 (not V1): risk of bias in one result of a non-randomized cohort study\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"robins-i-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.careranks/careranks-data",
+    "title": "CareRanks Data",
+    "body": "CMS quality ratings, payer-negotiated prices, and clinician data for 41K+ US healthcare facilities.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://careranks.com/mcp\"}]",
+    "url": "https://careranks.com/docs/data/",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.choosehelp/directory",
+    "title": "ChooseHelp Treatment Directory",
+    "body": "Editorially independent addiction & mental-health directory — facilities, therapists, expert Q&A.\nVersion: 1.2.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.choosehelp.com/mcp\"}]",
+    "url": "https://www.choosehelp.com",
+    "fetchedAt": "2026-08-06T06:09:48.453Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.cituna/cituna-mcp",
+    "title": "com.cituna/cituna-mcp",
+    "body": "Track how 6 AI engines cite your brand, daily, with live Google Search Console.\nVersion: 1.5.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"cituna-mcp\",\"version\":\"1.5.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Personal API key from the Cituna app: Integrations, then \\\"Claude / MCP access\\\", then Generate token. Looks like cituna_sk_...\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"CITUNA_API_KEY\"},{\"description\":\"Backend base URL. Defaults to https://cituna.com; set this only to point at a different backend.\",\"format\":\"string\",\"name\":\"CITUNA_API_URL\"}]}]",
+    "url": "https://github.com/cituna/cituna-mcp",
+    "fetchedAt": "2026-08-26T04:09:22.368Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.commonelements/data",
+    "title": "com.commonelements/data",
+    "body": "Query 390,000+ HOA and condo association records, statutes, rosters, and flood risk data.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://commonelements.com/api/mcp\"}]",
+    "url": "https://commonelements.com/developers/mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.cve-security/cve-intelligence",
+    "title": "com.cve-security/cve-intelligence",
+    "body": "CVE intelligence: exploitation (KEV/EPSS), detection coverage, fixed versions. All tools keyless.\nVersion: 1.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cve-security.com/api/mcp\"}]",
+    "url": "https://cve-security.com",
+    "fetchedAt": "2026-08-11T04:48:40.622Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.cymosoft/cymosoft",
+    "title": "Cymosoft",
+    "body": "Cymosoft JSC profile and case studies (EN/JA) plus Japanese text utilities (文字数・全角半角・和暦)\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cymosoft.com/mcp\"}]",
+    "url": "https://cymosoft.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.dashboardbase/mcp",
+    "title": "Dashboardbase",
+    "body": "Validate Dashboardbase widget endpoint responses and setup files against the live contract.\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@dashboardbase/mcp\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of the Dashboardbase API. Defaults to https://api.dashboardbase.com.\",\"name\":\"DASHBOARDBASE_API_URL\"}]}]",
+    "url": "https://dashboardbase.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.defici/marketplace",
+    "title": "Defici Marketplace MCP Server",
+    "body": "Search and browse global classifieds across 80 markets. No auth required for read-only access.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://defici.com/api/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.defici%2Fmarketplace",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.domduck/domduck",
+    "title": "Domduck",
+    "body": "Domain reputation over time: Domain Rating, Tranco rank, TLS, and AI crawler policy.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://domduck.com/api/mcp\",\"headers\":[{\"description\":\"Bearer ddk_... Create a key at https://domduck.com/settings/api-keys\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]},{\"type\":\"streamable-http\",\"url\":\"https://domduck.com/api/mcp/public\"}]",
+    "url": "https://domduck.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.enconvert/mcp",
+    "title": "EnConvert",
+    "body": "Unified web ingestion for AI agents: perceive, discover, search, extract, ingest, watch, convert.\nVersion: 0.5.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@enconvert/mcp\",\"version\":\"0.5.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://enconvert.com",
+    "fetchedAt": "2026-08-07T05:12:10.976Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.fininfostation/tw-finance",
+    "title": "com.fininfostation/tw-finance",
+    "body": "Taiwan finance open data: ETF, funds, TAIEX, sentiment, business climate, FX. Free & read-only.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://fininfostation.com/mcp\"}]",
+    "url": "https://fininfostation.com/for-ai-agents",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.getpanes/panes",
+    "title": "Panes — a private feed on your phone",
+    "body": "Send notifications, updates and daily digests to a person's phone — typed cards in a private feed.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://getpanes.com/api/mcp\"}]",
+    "url": "https://getpanes.com",
+    "fetchedAt": "2026-08-05T06:05:41.650Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.gocushy/mcp",
+    "title": "com.gocushy/mcp",
+    "body": "The checkout your AI runs — bumps, upsells, subscriptions, tax and affiliates on your own Stripe.\nVersion: 0.15.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.gocushy.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@gocushy/mcp\",\"version\":\"0.15.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Your gocushy API key (gc_...) — create an account at https://gocushy.com/signup\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"GOCUSHY_API_KEY\"},{\"description\":\"API base URL (defaults to https://api.gocushy.com)\",\"format\":\"string\",\"name\":\"GOCUSHY_API_URL\"}]}]",
+    "url": "https://gocushy.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.keenielts/mcp",
+    "title": "KeenIELTS",
+    "body": "Free IELTS prep: band-scored student essays and interactive Listening/Reading drills graded in-chat.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://keenielts.com/mcp\"}]",
+    "url": "https://keenielts.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.lodekeep/memory",
+    "title": "com.lodekeep/memory",
+    "body": "Portable memory for AI agents: capture once, recall across Claude, Cursor, and any MCP client.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://lodekeep.com/mcp\"}]",
+    "url": "https://lodekeep.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.makerreels/makerreels",
+    "title": "MakerReels",
+    "body": "Turn an app into TikTok-style video ads: agents pull rendered ad batches, captions, posting kits.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://makerreels.com/api/mcp\",\"headers\":[{\"description\":\"Bearer mr_live_YOUR_KEY — create a key at makerreels.com/studio/settings (Connect your agent)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://makerreels.com/connect",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.markmesh/trademarks",
+    "title": "MarkMesh",
+    "body": "Trademark search, monitoring and conflict research across 30+ registers, with provenance.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://markmesh.com/api/v1/mcp\",\"headers\":[{\"description\":\"Bearer <API key>. Create one in MarkMesh under Developers → API keys. Use an mm_test_ key for sandbox or mm_live_ for a real portfolio.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://markmesh.com/agents",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.meertrack/mcp-server",
+    "title": "Meertrack",
+    "body": "Competitive intelligence - track what competitors ship each week. 8 tools, 3 prompt workflows.\nVersion: 2.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.meertrack.com/mcp\",\"headers\":[{\"description\":\"Either `Bearer mt_live_…` (static API key) or an OAuth 2.1 access token obtained via the authorization server advertised at `/.well-known/oauth-protected-resource/mcp`.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@meertrack/mcp\",\"version\":\"2.2.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Meertrack production API key (mt_live_…). Mint at Settings → API Keys.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"MEERTRACK_API_KEY\"},{\"description\":\"Optional upstream override; defaults to https://api.meertrack.com/v1.\",\"name\":\"MEERTRACK_API_BASE_URL\"}]}]",
+    "url": "https://meertrack.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.merlonix/monitoring",
+    "title": "Merlonix Monitoring",
+    "body": "Monitoring for agencies — uptime, SSL, DNS, blocklists, AI visibility, MCP health. 8 no-auth tools.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.merlonix.com/mcp\"}]",
+    "url": "https://merlonix.com",
+    "fetchedAt": "2026-08-05T06:05:41.650Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.mographr/motion-tools",
+    "title": "com.mographr/motion-tools",
+    "body": "Render animated motion-graphics overlays as MP4: lower thirds, titles, callouts\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.mographr.com/mcp\"}]",
+    "url": "https://www.mographr.com/mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.papacasper/mcp-toolbelt",
+    "title": "mcp-toolbelt",
+    "body": "29 pay-per-call DNS, SEO, SSL, security, and dev tools for AI agents. x402, no API key.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://papacasper.com/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.papacasper%2Fmcp-toolbelt",
+    "fetchedAt": "2026-08-31T09:58:53.166Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.pdfgate/mcp-server",
+    "title": "com.pdfgate/mcp-server",
+    "body": "MCP server for the PDFGate API. Generate PDFs, manage documents and handle e-signatures.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.pdfgate.com/server\",\"headers\":[{\"description\":\"Your PDFGate API key (live_ for production, test_ for sandbox). Optional: omit to authenticate with OAuth instead.\",\"isSecret\":true,\"name\":\"X-API-KEY\"}]}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@pdfgate/mcp-server\",\"version\":\"1.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Your PDFGate API key (starts with live_ for production or test_ for sandbox)\",\"name\":\"PDFGATE_API_KEY\"},{\"description\":\"Port for the local webhook listener (default: 3599)\",\"name\":\"PDFGATE_WEBHOOK_PORT\"}]}]",
+    "url": "https://pdfgate.com",
+    "fetchedAt": "2026-09-05T07:47:19.143Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.postrippl/postrippl",
+    "title": "com.postrippl/postrippl",
+    "body": "Schedule social media posts to 10 platforms: Instagram, TikTok, X, YouTube, LinkedIn, and more\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://postrippl.com/api/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.postrippl%2Fpostrippl",
+    "fetchedAt": "2026-08-08T04:34:25.409Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.prismfact/hub",
+    "title": "PrismFact",
+    "body": "Факты о бизнесе Томской области по ИНН: деньги, налоги, долг, статус. С источником и датой.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://prismfact.com/mcp\"}]",
+    "url": "https://prismfact.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.redpanda/docs-mcp",
+    "title": "com.redpanda/docs-mcp",
+    "body": "Get authoritative answers about Redpanda documentation and search API references.\nVersion: 2026.814.190\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://docs.redpanda.com/mcp\"}]",
+    "url": "https://github.com/redpanda-data/docs-site",
+    "fetchedAt": "2026-08-15T04:03:23.815Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.rolnia/mcp",
+    "title": "com.rolnia/mcp",
+    "body": "Profile, CV, jobs, compensation & application-tracking tools for AI agents, by rolnia.com.\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@rolnia/mcp\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Personal Access Token minted at https://www.rolnia.com/account/mcp-tokens (format chmcp_…). Required by all API-backed tools; the server starts and lists tools without it.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"CANDIDATEHUB_TOKEN\"},{\"description\":\"API base URL (defaults to https://www.rolnia.com).\",\"name\":\"CANDIDATEHUB_API_BASE\"}]}]",
+    "url": "https://www.rolnia.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.spannhq/stays",
+    "title": "Spann Stays",
+    "body": "Read-only sample stays, booking constraints, and staged reservation actions for review.\nVersion: 0.2.1+canonical.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.spannhq.com/mcp\"}]",
+    "url": "https://spannhq.com/protocol/mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.the-automator/downloads-search",
+    "title": "the-Automator AutoHotkey Downloads Search",
+    "body": "Semantic search over 438 AutoHotkey tools, scripts and courses at the-automator.com\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://edd-downloads-a2a.joe-glines.workers.dev/mcp\",\"headers\":[{\"description\":\"Bearer token. Get a free key at https://www.the-automator.com/ai-search — enter an email and the key is shown immediately. Send as: Bearer <your-key>\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://www.the-automator.com/ai-search",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.vibrai/vibrai",
+    "title": "Vibrai — arrangement engine for Ableton Live",
+    "body": "Arrange your own clips and instruments into finished song structures in Ableton Live 12.\nVersion: 1.7.2\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/cssllcio/vibrai-releases/releases/download/v1.7.2/Vibrai-1.7.2.mcpb\",\"version\":\"1.7.2\",\"fileSha256\":\"aac19afcf363df444ac3cc154dc4aea291849176ae8e4704b62a4976c9ef4164\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://vibrai.com",
+    "fetchedAt": "2026-09-04T08:11:49.015Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.1social/1social",
+    "title": "1Social",
+    "body": "Publish, schedule and verify social posts across seven networks from your AI assistant.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.1social.dev/mcp\"}]",
+    "url": "https://1social.dev/mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "fit.portfolio/portfoliofit",
+    "title": "PortfolioFit",
+    "body": "Check normalized portfolios against mandates and calculate allocation constraints.\nVersion: 0.1.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://portfolio.fit/mcp\"}]",
+    "url": "https://portfolio.fit/mcp-docs/",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "global.rootz.private/companies",
+    "title": "global.rootz.private/companies",
+    "body": "Confirm a US business is real and find who controls it. 32.6M official registry records.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://private.rootz.global/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=global.rootz.private%2Fcompanies",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.campaignstack/campaignstack",
+    "title": "io.campaignstack/campaignstack",
+    "body": "Run B2B outreach from your AI agent: 250+ tools for campaigns, leads, LinkedIn and email workflows.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.campaignstack.io/mcp\",\"headers\":[{\"description\":\"Bearer token using a CampaignStack API key (workspace or user key, created in the dashboard under Settings)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://campaignstack.io",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.draw/mcp",
+    "title": "draw.io",
+    "body": "Create diagrams in chat, rendered as live interactive draw.io diagrams. 10,000+ searchable shapes.\nVersion: 1.0.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.draw.io/mcp\"}]",
+    "url": "https://www.drawio.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.elaan/mcp",
+    "title": "io.elaan/mcp",
+    "body": "Create Elaan notification types, templates and brands, trigger sends, and debug delivery.\nVersion: 0.1.3\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@elaanio/mcp\",\"version\":\"0.1.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Elaan service key (sk_...) from console.elaan.io. Read from the environment only, never passed as a tool argument.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"ELAAN_API_KEY\"}]}]",
+    "url": "https://elaan.io/docs.html",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.AncientiCe/palace-rs",
+    "title": "Palace",
+    "body": "Local-first memory for coding agents — MCP server, single SQLite file, local embeddings\nVersion: 0.14.1\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/AncientiCe/palace-rs/releases/download/v0.14.1/palace-0.14.1.mcpb\",\"version\":\"0.14.1\",\"fileSha256\":\"508f2469fb6dc520c3cc7a08ae3b26ba2bb6217d15c0d6069a30debe0b002f2e\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/AncientiCe/palace-rs",
+    "fetchedAt": "2026-09-02T08:02:33.709Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.AugustusW/sharedoc-mcp",
+    "title": "io.github.AugustusW/sharedoc-mcp",
+    "body": "Share agent-generated Markdown as links — GitHub gists today, your own server tomorrow.\nVersion: 2.1.4\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"sharedoc-mcp\",\"version\":\"2.1.4\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Storage backend: 'gist' (secret gists via logged-in gh CLI, default) or 'selfhost' (local SQLite + built-in viewer)\",\"format\":\"string\",\"name\":\"SHAREDOC_BACKEND\"},{\"description\":\"URL prefix used in share links (selfhost) — set to your tunnel or reverse-proxy hostname\",\"format\":\"string\",\"name\":\"SHAREDOC_PUBLIC_URL\"}]}]",
+    "url": "https://github.com/AugustusW/sharedoc-mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.BUYMYAGENT-TECHNOLOGIES-INC/marketplace",
+    "title": "Buy My Agent",
+    "body": "Search a curated, human-reviewed AI agent marketplace, and post what you could not find.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.buy-my-agent.com/api/mcp\"}]",
+    "url": "https://www.buy-my-agent.com",
+    "fetchedAt": "2026-09-05T07:47:19.143Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.BenyD/haypile",
+    "title": "Haypile",
+    "body": "Hybrid search over your local documents, with file and page citations. One binary, fully local.\nVersion: 0.3.1\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_darwin_arm64.mcpb\",\"fileSha256\":\"a39ce52f514df9b144c4464618fb5a450f0062384b6e1993c3da8deffe3705be\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_darwin_amd64.mcpb\",\"fileSha256\":\"488a1b4cfcd2ccb6f8610b5815a3cdbf76d67bb08f56d366cf9d66a765099058\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_linux_arm64.mcpb\",\"fileSha256\":\"dbb1e737941a45013db95100e5af59d5367d65dd7f3c6d2c22e4888fe9febcc5\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_linux_amd64.mcpb\",\"fileSha256\":\"e88ab5e58280faaaf9190d61d3d317f7fc10a3ab99c01774493da00d0f684041\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/BenyD/haypile/releases/download/v0.3.1/haypile_0.3.1_windows_amd64.mcpb\",\"fileSha256\":\"69a9cd3728489a6de4dabf87df866cf378f20dcc1aa25bee0d84637afb55703a\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://haypile.sh",
+    "fetchedAt": "2026-08-08T04:34:25.409Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.BharatDharmaAcademy/bda-mcp",
+    "title": "io.github.BharatDharmaAcademy/bda-mcp",
+    "body": "Jyotish, Panchang, Hindu festival and Sanatan Dharma knowledge tools with citations.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://jyotish-api.bda.ai/mcp\"}]",
+    "url": "https://jyotish-api.bda.ai/docs/mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.BlueStarSystem/aura-ui",
+    "title": "Aura UI",
+    "body": "Discover and install Aura UI Blade components for Laravel, Livewire and Tailwind CSS 4.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://aura-ui.com/mcp/aura\"}]",
+    "url": "https://aura-ui.com",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.DamianoTobasco/sync-socials-agent",
+    "title": "Sync Socials",
+    "body": "Create, schedule and publish social posts to TikTok, Instagram, Facebook and YouTube.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app.sync-socials.com/api/mcp\",\"headers\":[{\"description\":\"Sync Socials API key as a bearer token. Generate one in your workspace settings at app.sync-socials.com, then use the format: Bearer YOUR_API_KEY\",\"isRequired\":true,\"isSecret\":true,\"placeholder\":\"Bearer YOUR_SYNC_SOCIALS_API_KEY\",\"name\":\"Authorization\"}]}]",
+    "url": "https://sync-socials.com/ai-social-media-agent.html",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Dhi13man/oorep-mcp",
+    "title": "io.github.Dhi13man/oorep-mcp",
+    "body": "MCP server and TypeScript SDK for OOREP homeopathic repertory and materia medica reference data.\nVersion: 1.2.3\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"oorep-mcp\",\"version\":\"1.2.3\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/Dhi13man/oorep-mcp",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
   }
 ]
