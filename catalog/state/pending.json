@@ -1,966 +1,6 @@
 [
   {
     "source": "mcp-registry",
-    "externalId": "io.github.DoughyJoeyD/friday-seller-tools",
-    "title": "Friday Seller Tools",
-    "body": "Marketplace-seller tools: listing audits, PPC kits, pricing, compliance. Paid via x402 or card.\nVersion: 0.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://friday-seller-tools-production.up.railway.app/mcp\"}]",
-    "url": "https://friday-seller-tools-production.up.railway.app",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Faouzi122/arsenal-decision-engine",
-    "title": "Arsenal Decision Engine",
-    "body": "R_net LP risk evaluator for DeFAI agents. IL + Breakeven Corridor O(1). L402 Lightning paywall.\nVersion: 2.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.arsenal-quant.com/mcp\"}]",
-    "url": "https://github.com/Faouzi122/Arsenal-Quant-Project",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.IBazylchuk/paparats-mcp",
-    "title": "Paparats – Local Semantic Code Search MCP",
-    "body": "Local-first semantic code search across all your repos. Private context for AI coding assistants.\nVersion: 2.7.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@paparats/cli\",\"version\":\"2.7.0\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:9876\"}}]",
-    "url": "https://github.com/IBazylchuk/paparats-mcp#readme",
-    "fetchedAt": "2026-09-04T08:11:49.015Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.IPGeolocation/ipgeolocation-io-mcp",
-    "title": "IPGeolocation.io MCP Server",
-    "body": "Official MCP server for IP geolocation, security, ASN, abuse, timezone, astronomy, and user-agent.\nVersion: 2.0.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"ipgeolocation-io-mcp\",\"version\":\"2.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key for ipgeolocation.io. Free and paid keys are supported.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"placeholder\":\"<IPGEOLOCATION_API_KEY>\",\"name\":\"IPGEOLOCATION_API_KEY\"}]}]",
-    "url": "https://github.com/IPGeolocation/ipgeolocation-io-mcp#readme",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.KryptosAI/mcp-observatory",
-    "title": "io.github.KryptosAI/mcp-observatory",
-    "body": "MCP security scanner. CI-native testing, attack simulation, health scoring, and SARIF.\nVersion: 1.36.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@kryptosai/mcp-observatory\",\"version\":\"1.36.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/KryptosAI/mcp-observatory",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.KyaniteLabs/kinocut",
-    "title": "Kinocut",
-    "body": "Guardrailed video editing for AI agents: FFmpeg, captions, effects, Hyperframes, and receipts.\nVersion: 1.15.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"kinocut\",\"version\":\"1.15.1\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://kinocut.dev/",
-    "fetchedAt": "2026-08-31T09:58:53.166Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.LedgerProof/laen",
-    "title": "io.github.LedgerProof/laen",
-    "body": "On-demand unblocking for AI agents: find blockers free, pay via x402 on Base, get anchored proof.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://jmspfggpztykyubyzvlx.supabase.co/functions/v1/laen-mcp\"}]",
-    "url": "https://ledgerproofhq.io",
-    "fetchedAt": "2026-08-02T06:17:08.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.LuptonM/casenode-legal-graph",
-    "title": "CaseNode Case Law API",
-    "body": "UK case law MCP (21 tools). Free API key: casenode.ai/api/signup → Dashboard → API keys.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.casenode.ai/mcp\",\"headers\":[{\"description\":\"Free key: sign up at casenode.ai/api/signup → Dashboard → API keys (prefix cng_). Send as X-API-Key header.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
-    "url": "https://casenode.ai/api/signup",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Lykhoyda/ask-antigravity",
-    "title": "io.github.Lykhoyda/ask-antigravity",
-    "body": "Bridge Claude with Google's Antigravity CLI (agy) for code review and second opinions\nVersion: 0.6.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/antigravity-mcp\",\"version\":\"0.6.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Timeout for Antigravity (agy) execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"ASK_ANTIGRAVITY_TIMEOUT_MS\"},{\"description\":\"Set to '0' to drop agy's --sandbox flag if it blocks --add-dir context reads (default: sandbox on)\",\"format\":\"string\",\"default\":\"1\",\"name\":\"ASK_ANTIGRAVITY_SANDBOX\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
-    "url": "https://github.com/Lykhoyda/ask-llm",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Lykhoyda/ask-claude",
-    "title": "io.github.Lykhoyda/ask-claude",
-    "body": "Bridge Codex and other MCP clients with Anthropic Claude Code CLI for read-only second opinions\nVersion: 0.1.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/claude-mcp\",\"version\":\"0.1.5\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Default Claude model alias or full model name (default: opus)\",\"format\":\"string\",\"default\":\"opus\",\"name\":\"ASK_CLAUDE_MODEL\"},{\"description\":\"Claude CLI fallback when the default is overloaded or unavailable (default: sonnet)\",\"format\":\"string\",\"default\":\"sonnet\",\"name\":\"ASK_CLAUDE_FALLBACK_MODEL\"},{\"description\":\"Timeout for Claude CLI execution in milliseconds (default: 600000 = 10 minutes)\",\"format\":\"string\",\"default\":\"600000\",\"name\":\"ASK_CLAUDE_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
-    "url": "https://github.com/Lykhoyda/ask-llm",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Lykhoyda/ask-codex",
-    "title": "io.github.Lykhoyda/ask-codex",
-    "body": "Bridge Claude with OpenAI Codex CLI for AI-to-AI collaboration, code review, and second opinions\nVersion: 0.7.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/codex-mcp\",\"version\":\"0.7.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Timeout for Codex CLI execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"GMCPT_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
-    "url": "https://github.com/Lykhoyda/ask-llm",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Lykhoyda/ask-gemini",
-    "title": "io.github.Lykhoyda/ask-gemini",
-    "body": "Bridge Claude with Gemini CLI for AI-to-AI collaboration, code review, and second opinions\nVersion: 1.7.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/gemini-mcp\",\"version\":\"1.7.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Timeout for Gemini CLI execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"GMCPT_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
-    "url": "https://github.com/Lykhoyda/ask-llm",
-    "fetchedAt": "2026-07-27T06:48:28.418Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Lykhoyda/ask-llm",
-    "title": "io.github.Lykhoyda/ask-llm",
-    "body": "Unified MCP server — auto-detects Gemini, Codex, Claude, Ollama, and Antigravity providers\nVersion: 0.6.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/mcp\",\"version\":\"0.6.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Default Claude model alias or full model name (default: opus)\",\"format\":\"string\",\"default\":\"opus\",\"name\":\"ASK_CLAUDE_MODEL\"},{\"description\":\"Claude CLI fallback when Opus is overloaded or unavailable (default: sonnet)\",\"format\":\"string\",\"default\":\"sonnet\",\"name\":\"ASK_CLAUDE_FALLBACK_MODEL\"},{\"description\":\"Timeout for Claude CLI execution in milliseconds (default: 600000 = 10 minutes)\",\"format\":\"string\",\"default\":\"600000\",\"name\":\"ASK_CLAUDE_TIMEOUT_MS\"},{\"description\":\"Ollama server address (default: http://localhost:11434)\",\"format\":\"string\",\"default\":\"http://localhost:11434\",\"name\":\"OLLAMA_HOST\"},{\"description\":\"Timeout for Antigravity (agy) execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"ASK_ANTIGRAVITY_TIMEOUT_MS\"},{\"description\":\"Set to '0' to drop agy's --sandbox flag if it blocks --add-dir context reads (default: sandbox on)\",\"format\":\"string\",\"default\":\"1\",\"name\":\"ASK_ANTIGRAVITY_SANDBOX\"},{\"description\":\"Timeout for CLI execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"GMCPT_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
-    "url": "https://github.com/Lykhoyda/ask-llm",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Lykhoyda/ask-ollama",
-    "title": "io.github.Lykhoyda/ask-ollama",
-    "body": "Bridge Claude with local Ollama LLMs for private AI-to-AI collaboration — no API keys, fully local\nVersion: 0.5.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/ollama-mcp\",\"version\":\"0.5.5\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Ollama server address (default: http://localhost:11434)\",\"format\":\"string\",\"default\":\"http://localhost:11434\",\"name\":\"OLLAMA_HOST\"},{\"description\":\"Timeout for Ollama execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"GMCPT_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
-    "url": "https://github.com/Lykhoyda/ask-llm",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Mouthfully/zwitchy-store",
-    "title": "io.github.Mouthfully/zwitchy-store",
-    "body": "Travel eSIM catalog: search plans, check availability, and get exact quotes with checkout links.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://zwitchy.io/api/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Mouthfully%2Fzwitchy-store",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Odrin/rhizome-mcp",
-    "title": "Rhizome MCP",
-    "body": "Local-first MCP server for task tracking and coordination of autonomous AI coding agents.\nVersion: 1.5.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"rhizome-mcp\",\"version\":\"1.5.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://odrin.github.io/rhizome-mcp/",
-    "fetchedAt": "2026-09-18T08:24:48.044Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.OpenHeritageOnline/public-search",
-    "title": "OpenHeritage Public Search",
-    "body": "Read-only OpenHeritage search for genealogy and cultural heritage records.\nVersion: 2.11.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://openheritage.online/mcp\"}]",
-    "url": "https://github.com/OpenHeritageOnline/agent-tooling",
-    "fetchedAt": "2026-09-04T08:11:49.015Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.ProvarTesting/provar",
-    "title": "Provar MCP Server",
-    "body": "Provar MCP: AI-powered Salesforce test automation. Generate, validate, migrate, and run tests.\nVersion: 1.6.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@provartesting/provardx-cli\",\"version\":\"1.6.5\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"value\":\"provar\",\"type\":\"positional\"},{\"value\":\"mcp\",\"type\":\"positional\"},{\"value\":\"start\",\"type\":\"positional\"},{\"description\":\"Filesystem path(s) the MCP server is allowed to read and write. Typically your Provar project root.\",\"isRequired\":true,\"value\":\"{workspaceFolder}\",\"type\":\"named\",\"name\":\"--allowed-paths\"}]}]",
-    "url": "https://github.com/ProvarTesting/provardx-cli/blob/main/docs/mcp.md",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.RepoAssay/repo-test-architect",
-    "title": "Repo Test Architect",
-    "body": "Audit-first test strategy MCP server for repository-native test planning.\nVersion: 1.0.0-beta.1\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"repo-test-architect\",\"version\":\"1.0.0-beta.1\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}]}]",
-    "url": "https://github.com/repoassay/repo-test-architect",
-    "fetchedAt": "2026-08-12T05:13:23.306Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.RodrigueDev13/obambu-cpanel-mcp",
-    "title": "Obambu cPanel MCP",
-    "body": "MCP server exposing cPanel UAPI (domains, DNS, email, MySQL, files) as tools for AI assistants.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"obambu-cpanel-mcp\",\"version\":\"0.1.2\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"cPanel server hostname or IP address\",\"isRequired\":true,\"name\":\"CPANEL_HOST\"},{\"description\":\"cPanel API port\",\"default\":\"2083\",\"name\":\"CPANEL_PORT\"},{\"description\":\"cPanel account username\",\"isRequired\":true,\"name\":\"CPANEL_USERNAME\"},{\"description\":\"cPanel API token (Security -> Manage API Tokens)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"CPANEL_API_TOKEN\"}]}]",
-    "url": "https://github.com/RodrigueDev13/obambu-cpanel-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.SolveaCX/voc-mcp",
-    "title": "VOC OpenAPI MCP",
-    "body": "VOC OpenAPI gives AI agents authorized review and product data for insights, tagging, and listings.\nVersion: 1.0.5\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://open.voc.ai/mcp/catalog\",\"headers\":[{\"description\":\"Credential required by VOC OpenAPI MCP\",\"isRequired\":true,\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
-    "url": "https://voc.ai",
-    "fetchedAt": "2026-08-04T06:09:30.174Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.TVLSS/hirejack-mcp",
-    "title": "io.github.TVLSS/hirejack-mcp",
-    "body": "Tech job market intelligence: jobs, companies, salaries, skill velocity, hiring trends.\nVersion: 0.3.10\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://hirejack.com/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@hirejack/mcp\",\"version\":\"0.3.10\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://hirejack.com",
-    "fetchedAt": "2026-07-26T06:21:10.903Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Tarotoo-com/tarotoo-mcp-server",
-    "title": "Tarotoo Tarot",
-    "body": "All 78 tarot card meanings (Rider-Waite-Smith): lookup, search, yes/no answers, and random draws.\nVersion: 2.0.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"tarotoo-mcp-server\",\"version\":\"2.0.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://tarotoo.com",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Timwal78/mcp-x402",
-    "title": "mcp-x402 — MCP server for agents with autonomous USDC/RLUSD payments",
-    "body": "85+ pay-per-call MCP tools: trading, federal grants/contracts, SEC, FTD. x402 USDC/RLUSD. No keys.\nVersion: 2.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp-x402.onrender.com/mcp\"},{\"type\":\"sse\",\"url\":\"https://mcp-x402.onrender.com/sse\"}]",
-    "url": "https://github.com/timwal78/SML_Portfolio",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.UseJunior/email-agent-mcp",
-    "title": "Agent Email",
-    "body": "Local email connectivity for AI agents — read, draft, send, and organize Outlook mail via MCP\nVersion: 0.3.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"email-agent-mcp\",\"version\":\"0.3.1\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/UseJunior/email-agent-mcp",
-    "fetchedAt": "2026-09-02T08:02:33.709Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.VOYAGER-Inc/excel-vision-mcp",
-    "title": "io.github.VOYAGER-Inc/excel-vision-mcp",
-    "body": "Excel MCP with image extraction and write support — AI agents see and edit xlsx files\nVersion: 1.2.1\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"excel-vision-mcp\",\"version\":\"1.2.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/VOYAGER-Inc/excel-vision-mcp",
-    "fetchedAt": "2026-07-31T06:28:33.899Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.VictoriaMetrics/mcp-vmanomaly",
-    "title": "io.github.VictoriaMetrics/mcp-vmanomaly",
-    "body": "MCP Server for vmanomaly - VictoriaMetrics anomaly detection\nVersion: 0.4.1\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/victoriametrics/mcp-vmanomaly:0.4.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"vmanomaly server endpoint URL (e.g., http://localhost:8490)\",\"isRequired\":true,\"format\":\"string\",\"name\":\"VMANOMALY_ENDPOINT\"},{\"description\":\"Bearer token for authenticating with vmanomaly API\",\"format\":\"string\",\"isSecret\":true,\"name\":\"VMANOMALY_BEARER_TOKEN\"},{\"description\":\"Path to a file containing a bearer token; mutually exclusive with VMANOMALY_BEARER_TOKEN\",\"format\":\"string\",\"name\":\"VMANOMALY_BEARER_TOKEN_FILE\"},{\"description\":\"Custom HTTP headers for vmanomaly requests (comma-separated key=value pairs, e.g., X-Custom-Header=value1,X-Another=value2)\",\"format\":\"string\",\"name\":\"VMANOMALY_HEADERS\"},{\"description\":\"MCP server mode: stdio (default), sse, or http\",\"format\":\"string\",\"name\":\"MCP_SERVER_MODE\"},{\"description\":\"Listen address for SSE/HTTP modes (default: localhost:8080)\",\"format\":\"string\",\"name\":\"MCP_LISTEN_ADDR\"},{\"description\":\"Log level: debug, info (default), warn, or error\",\"format\":\"string\",\"name\":\"MCP_LOG_LEVEL\"},{\"description\":\"Log file path (empty = stderr)\",\"format\":\"string\",\"name\":\"MCP_LOG_FILE\"},{\"description\":\"Comma-separated positive allowlist of tools; empty enables all registered tools\",\"format\":\"string\",\"name\":\"MCP_ENABLED_TOOLS\"},{\"description\":\"Comma-separated denylist of tools; takes precedence over MCP_ENABLED_TOOLS\",\"format\":\"string\",\"name\":\"MCP_DISABLED_TOOLS\"},{\"description\":\"Heartbeat inter",
-    "url": "https://github.com/VictoriaMetrics/mcp-vmanomaly",
-    "fetchedAt": "2026-09-18T08:24:48.044Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Viventine-Space/orbit-sentinel-mcp",
-    "title": "Orbit Sentinel — Space Regulatory Filings",
-    "body": "Search 950K+ space regulatory filings from FCC, ITU, UNOOSA, FAA-AST: entities, spectrum, dossiers.\nVersion: 0.6.6\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/viventine-space/orbit-sentinel-mcp:0.6.6\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://viventine.com/orbit-sentinel/",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Yummybait-fin/uniswap-tx-builder-mcp",
-    "title": "io.github.Yummybait-fin/uniswap-tx-builder-mcp",
-    "body": "Builds and simulates unsigned Uniswap v3 liquidity-position transactions — keyless, never signs.\nVersion: 0.4.3\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@yummybait/uniswap-tx-builder-mcp\",\"version\":\"0.4.3\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/yummybait-fin/uniswap-tx-builder-mcp:0.4.3\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/Yummybait-fin/uniswap-tx-builder-mcp",
-    "fetchedAt": "2026-07-29T06:13:22.820Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.abhishekjkrsna/swapi-mcp",
-    "title": "io.github.abhishekjkrsna/swapi-mcp",
-    "body": "MCP server for SWAPI API\nVersion: 1.0.4\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@abhishekjkrsna/swapi-mcp\",\"version\":\"1.0.4\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/abhishekjkrsna/swapi-mcp",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.acrylicfiddle/x402tools",
-    "title": "io.github.acrylicfiddle/x402tools",
-    "body": "10 pay-per-call tools for AI agents: QR, screenshots, DNS, OCR, PDF, email & more. USDC on Base.\nVersion: 1.8.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.x402tools.xyz/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@x402-tools/mcp\",\"version\":\"1.8.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://x402tools.xyz",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.adigold/tracktag-mcp",
-    "title": "io.github.adigold/tracktag-mcp",
-    "body": "AI music analysis for agents: BPM, key, genres, moods, instruments and 35+ tags per track.\nVersion: 0.2.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"tracktag-mcp\",\"version\":\"0.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"TrackTag API key (tt_live_...) — create at https://tracktag.me/studio, API & MCP tab\",\"isRequired\":true,\"isSecret\":true,\"name\":\"TRACKTAG_API_KEY\"}]}]",
-    "url": "https://github.com/adigold/tracktag-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.admin978/canvas-mcp",
-    "title": "io.github.admin978/canvas-mcp",
-    "body": "Local-first MCP server for Canvas LMS. Stdio transport, no third-party broker.\nVersion: 0.1.3\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"canvas-local-mcp\",\"version\":\"0.1.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Canvas institution root URL (no /api/v1 suffix), e.g. https://your-institution.instructure.com\",\"isRequired\":true,\"format\":\"string\",\"name\":\"CANVAS_BASE_URL\"},{\"description\":\"Canvas personal access token (Account -> Settings -> Approved Integrations -> New Access Token)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"CANVAS_TOKEN\"}]}]",
-    "url": "https://github.com/admin978/canvas-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.algolia/algolia-productivity",
-    "title": "Algolia Productivity",
-    "body": "Connect LLM tools to your Algolia account with user-scoped access for internal workflows.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.algolia.com/mcp\"}]",
-    "url": "https://www.algolia.com/doc/guides/model-context-protocol/productivity-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.amitesh-m/wealthville",
-    "title": "Wealthville",
-    "body": "Solana + EVM liquidity-pool scores: Enter/Hold/Exit verdicts and 0-100 Wealthville Score.\nVersion: 0.3.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://wealthville.net/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@wealthville/mcp-server\",\"version\":\"0.3.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional free partner key for a higher rate limit (anonymous works at 60 req/min)\",\"isSecret\":true,\"name\":\"WEALTHVILLE_API_KEY\"},{\"description\":\"Override the API base URL (default https://wealthville.net)\",\"name\":\"WEALTHVILLE_API_URL\"}]}]",
-    "url": "https://wealthville.net/mcp",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.appkitstudio/chalk-mcp",
-    "title": "Chalk",
-    "body": "Chalk's bundled MCP server for drawing diagrams on macOS via Claude, Cursor, VS Code\nVersion: 0.1.0",
-    "url": "https://chalk.appkit.studio/ai",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.asokore/statcite",
-    "title": "StatCite — Verified Economic Statistics",
-    "body": "Cited economic statistics: World Bank, IMF, BIS, ECB, Caribbean central banks. Verify any figure.\nVersion: 1.14.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://statcite.com/mcp\"}]",
-    "url": "https://statcite.com",
-    "fetchedAt": "2026-09-20T08:44:37.596Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.awpthorp/posterly",
-    "title": "posterly",
-    "body": "Validate, schedule, publish, and analyze social content across 18 platforms with posterly.\nVersion: 0.27.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.poster.ly/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"posterly-mcp-server\",\"version\":\"0.27.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"posterly API key. Optional for public signup tools; required for authenticated tools.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"POSTERLY_API_KEY\"}]}]",
-    "url": "https://www.poster.ly/mcp",
-    "fetchedAt": "2026-07-31T06:28:33.899Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.briefroom/mcp",
-    "title": "io.github.briefroom/mcp",
-    "body": "briefroom stdio MCP server — expose the briefroom CLI to Claude Code, Codex, and other agents.\nVersion: 0.3.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@briefroom/mcp\",\"version\":\"0.3.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/briefroom/mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.browser-gateway/browser-gateway",
-    "title": "io.github.browser-gateway/browser-gateway",
-    "body": "AI browser tools with Chrome CDP. Navigate, screenshot, interact. Multi-provider failover.\nVersion: 0.4.22\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"browser-gateway\",\"version\":\"0.4.22\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Authentication token for gateway access (optional, only needed with remote providers)\",\"format\":\"string\",\"isSecret\":true,\"name\":\"BG_TOKEN\"}]}]",
-    "url": "https://github.com/browser-gateway/browser-gateway",
-    "fetchedAt": "2026-09-21T09:11:47.736Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.bruchris/canvas-lms-mcp",
-    "title": "io.github.bruchris/canvas-lms-mcp",
-    "body": "TypeScript MCP server for Canvas LMS — 165 tools across 42 domains.\nVersion: 1.30.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"canvas-lms-mcp\",\"version\":\"1.30.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Canvas personal access token (Account → Settings → Approved Integrations → New Access Token)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"CANVAS_API_TOKEN\"},{\"description\":\"Canvas instance base URL, origin only with no path, e.g. https://school.instructure.com\",\"isRequired\":true,\"format\":\"string\",\"name\":\"CANVAS_BASE_URL\"}]}]",
-    "url": "https://github.com/bruchris/canvas-lms-mcp",
-    "fetchedAt": "2026-09-21T09:11:47.736Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.buttacavoligiuse/deltamesh",
-    "title": "DeltaMesh Web Freshness",
-    "body": "Free public web freshness and response-metadata checks for AI agents.\nVersion: 4.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://deltamesh-agent-beacon.giuelvy.workers.dev/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.buttacavoligiuse%2Fdeltamesh",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.chadnewbry/nyc-restaurant-week-mcp",
-    "title": "NYC Restaurant Week",
-    "body": "All 636 NYC Restaurant Week Summer 2026 restaurants — filter by cuisine, borough, price, and date.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nycrestaurantweek.app/mcp\"}]",
-    "url": "https://nycrestaurantweek.app",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.claytono/go-unifi-mcp",
-    "title": "io.github.claytono/go-unifi-mcp",
-    "body": "Manage UniFi sites, devices, clients, networks, port forwarding, DNS, and firewall\nVersion: 0.3.1\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/claytono/go-unifi-mcp:v0.3.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/claytono/go-unifi-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.clearcheck-uk/voltix-mcp",
-    "title": "io.github.clearcheck-uk/voltix-mcp",
-    "body": "DeFi intelligence for Claude: whale tracking, alpha signals, yields, token safety. USDC on Base.\nVersion: 1.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"voltix-mcp\",\"version\":\"1.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Private key (0x-prefixed hex) for a Base wallet holding USDC — used to sign micropayments for each tool call\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"PRIVATE_KEY\"}]}]",
-    "url": "https://github.com/clearcheck-uk/voltix-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.clouatre-labs/aptu-coder",
-    "title": "Aptu Coder",
-    "body": "MCP server for code structure analysis using tree-sitter.\nVersion: 0.35.0\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/clouatre-labs/aptu-coder/releases/download/v0.35.0/aptu-coder-0.35.0-aarch64-apple-darwin.mcpb\",\"fileSha256\":\"247f2f6e7b71fb6b156dfe663aabb6b6bf6473862b0d566056fcbc28c6c5bd8b\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/clouatre-labs/aptu-coder/releases/download/v0.35.0/aptu-coder-0.35.0-aarch64-unknown-linux-musl.mcpb\",\"fileSha256\":\"1ac8171d81068ae7796e8d44f00903fbd54a59e2f151732383bf981c8faef5e9\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/clouatre-labs/aptu-coder/releases/download/v0.35.0/aptu-coder-0.35.0-x86_64-unknown-linux-musl.mcpb\",\"fileSha256\":\"65aeff29f5c6fe0af4235ad52096afd98d7b176c3aed54da24d381b02fa6d703\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/clouatre-labs/aptu-coder",
-    "fetchedAt": "2026-09-20T08:44:37.596Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.commitshow/legitshow-search",
-    "title": "io.github.commitshow/legitshow-search",
-    "body": "Search launched software (SaaS, AI tools, MCP servers) by measured production-readiness.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"legitshow-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://legit.show",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.contentfactory/eu-verify",
-    "title": "io.github.contentfactory/eu-verify",
-    "body": "European business verification for AI agents: registry, VAT, sanctions, IBAN. Pay-per-call x402.\nVersion: 1.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://data.greeneris.io/mcp\"}]",
-    "url": "https://data.greeneris.io",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.cyanheads/gdelt-mcp-server",
-    "title": "io.github.cyanheads/gdelt-mcp-server",
-    "body": "Search and analyze global news coverage and US TV transcripts via the GDELT Project APIs.\nVersion: 0.4.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://gdelt.caseyjhand.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/gdelt-mcp-server\",\"version\":\"0.4.2\",\"runtimeHint\":\"node\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:stdio\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"Override the base URL for the GDELT DOC and TV APIs.\",\"format\":\"string\",\"default\":\"https://api.gdeltproject.org/api/v2\",\"name\":\"GDELT_BASE_URL\"},{\"description\":\"Minimum milliseconds between GDELT requests, enforcing the 1 req/5s rate limit.\",\"format\":\"string\",\"default\":\"5300\",\"name\":\"GDELT_REQUEST_DELAY_MS\"},{\"description\":\"Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').\",\"format\":\"string\",\"default\":\"info\",\"name\":\"MCP_LOG_LEVEL\"}]},{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/gdelt-mcp-server\",\"version\":\"0.4.2\",\"runtimeHint\":\"node\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:3010/mcp\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:http\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"Override the base URL for the GDELT DOC and TV APIs.\",\"format\":\"string\",\"default\":\"https://api.gdeltproject.org/api/v2\",\"name\":\"GDELT_BASE_URL\"},{\"description\":\"Minimum milliseconds between GDELT requests, enforcing the 1 req/5s rate limit.\",\"format\":\"string\",\"default\":\"5300\",\"name\":\"GDELT_REQUEST_DELAY_MS\"},{\"description\":\"The hostname for the HTTP ser",
-    "url": "https://github.com/cyanheads/gdelt-mcp-server",
-    "fetchedAt": "2026-09-20T08:44:37.596Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.daniel3303/equibles",
-    "title": "io.github.daniel3303/equibles",
-    "body": "90+ free tools, Claude & ChatGPT: prices, options, SEC filings, 13F, insider, congress, transcripts.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.equibles.com/mcp\",\"headers\":[{\"description\":\"Bearer API key (eq_...). Required unless your client signs in over OAuth — tool calls without either are rejected. Free tier: 100 requests/day.\",\"value\":\"Bearer {api_key}\",\"isSecret\":true,\"variables\":{\"api_key\":{\"description\":\"Your Equibles API key, from https://equibles.com/dashboard/apikeys (free account, no credit card). Leave blank only if your client supports OAuth sign-in.\",\"isSecret\":true}},\"name\":\"Authorization\"}]}]",
-    "url": "https://github.com/daniel3303/stock-market-mcp-server",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.davidgringras/scrutica",
-    "title": "Scrutica",
-    "body": "AI compute infrastructure intelligence: facilities, supply chains, sovereign AI, export controls.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://scrutica.com/api/mcp\"}]",
-    "url": "https://scrutica.com",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.dengyu123456/crochet-engine",
-    "title": "io.github.dengyu123456/crochet-engine",
-    "body": "Deterministic photo-to-crochet-chart engine: stitch counts, 5 techniques, yarn estimates.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"crochetpatterngen-engine\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"crochetpatterngen-engine[mcp]\",\"type\":\"named\",\"name\":\"--from\"},{\"value\":\"crochetpatterngen-mcp\",\"type\":\"positional\"}]}]",
-    "url": "https://github.com/dengyu123456/crochet-engine",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.developerz-ai/ui-debugger-mcp",
-    "title": "io.github.developerz-ai/ui-debugger-mcp",
-    "body": "Autonomous UI debugging MCP server: an agent drives the browser/desktop, reports bugs + UX issues.\nVersion: 1.9.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@developerz.ai/ui-debugger-mcp\",\"version\":\"1.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key for the LLM provider (OpenRouter default)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"OPENAI_API_KEY\"},{\"description\":\"Base URL for the LLM provider (defaults to OpenRouter)\",\"name\":\"OPENAI_BASE_URL\"}]}]",
-    "url": "https://github.com/developerz-ai/ui-debugger-mcp#readme",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.divyanshu-iitian/searchforge",
-    "title": "SearchForge",
-    "body": "Free open-source web search and page reading for LLMs, AI agents, and RAG.\nVersion: 0.2.0\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/divyanshu-iitian/searchforge-mcp:0.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional URL of a self-hosted SearXNG instance\",\"name\":\"SEARCHFORGE_SEARXNG_URL\"},{\"description\":\"Optional GitHub token for higher public API quotas\",\"isSecret\":true,\"name\":\"GITHUB_TOKEN\"},{\"description\":\"Optional email address for Crossref polite-pool routing\",\"name\":\"CROSSREF_MAILTO\"},{\"description\":\"Optional Brave Search API key\",\"isSecret\":true,\"name\":\"BRAVE_SEARCH_API_KEY\"}]}]",
-    "url": "https://divyanshu-iitian.github.io/SearchForge/",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.dizpers/polystrike",
-    "title": "Polystrike",
-    "body": "Live Elon Musk & Ted Cruz tweet feed, tweet counters, and Polymarket tweet-count market data.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://polystrike.xyz/mcp\",\"headers\":[{\"description\":\"Optional. The free tier is keyless and delayed 30 minutes (counters, deltas, market prices); a Data key (ps_pro_...) unlocks live data and history. $29/month at https://polystrike.xyz/#pricing\",\"isSecret\":true,\"name\":\"x-api-key\"}]},{\"type\":\"sse\",\"url\":\"https://polystrike.xyz/mcp/sse\",\"headers\":[{\"description\":\"Optional. The free tier is keyless and delayed 30 minutes (counters, deltas, market prices); a Data key (ps_pro_...) unlocks live data and history. $29/month at https://polystrike.xyz/#pricing\",\"isSecret\":true,\"name\":\"x-api-key\"}]}]",
-    "url": "https://polystrike.xyz",
-    "fetchedAt": "2026-09-16T08:45:45.626Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.documentero/documentero-mcp",
-    "title": "Documentero",
-    "body": "List Documentero templates, inspect field schemas, and generate Word/PDF/Excel documents.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@documentero/mcp\",\"version\":\"0.1.2\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Company API key from Documentero Account settings\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"DOCUMENTERO_API_KEY\"},{\"description\":\"Optional Cloud API base URL (default: https://app.documentero.com/api)\",\"format\":\"string\",\"name\":\"DOCUMENTERO_BASE_URL\"}]}]",
-    "url": "https://www.documentero.com",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.drhelius/gearboy",
-    "title": "Gearboy MCP Server",
-    "body": "MCP server for Gearboy Nintendo Game Boy / Game Boy Color emulator\nVersion: 3.8.15\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"1deeed7842c1635ebd5c21f4db2bebf85abf72afbe9e8d416a2866b710cc9046\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-macos-x64.mcpb\",\"fileSha256\":\"730ee0e325c7e26bfba7544a913315e4594c6c7c7f9dda362fdf39c462d500ed\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"2cc2ec8aa19f95bae25d09e8fd397055f33db2bcd6d8d59e32f7424c448d1072\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-windows-x64.mcpb\",\"fileSha256\":\"624d628a7f7ccec3abee97ea497ebd6230c218252e7d28fb8b95684435e12fa2\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-linux-x64.mcpb\",\"fileSha256\":\"dd3a5bf69e8cd4c94ba77c2d05dc1f86846ddb36e34511dc065698e0037ebd91\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"d2ddf7ff6eaf4a4df8d065f713b87dda9c18eaa1505eb143e4f19e973b8606e5\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/drhelius/gearboy",
-    "fetchedAt": "2026-09-02T08:02:33.709Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.drhelius/gearcoleco",
-    "title": "Gearcoleco MCP Server",
-    "body": "MCP server for Gearcoleco ColecoVision emulator\nVersion: 1.6.13\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"86ec61e78fce941c25638adc2f8f3ff687954cda52b4b157c3c3da9197f4c5f3\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-macos-x64.mcpb\",\"fileSha256\":\"7f09876685abc165d4661462f817c8e2d2a32bf99f25ab71890bb9c228aefbc6\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"c332577f06d8bc98b00fdd02e95742ed9169166eff3722c7a9105d940d4fe4d6\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-windows-x64.mcpb\",\"fileSha256\":\"2883a8ce2cb64c5926cb9af4bf46913764aa2fcde38cbd4eb2a4f53af75f9f26\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-linux-x64.mcpb\",\"fileSha256\":\"70e8481536e04b8c5025f2e21b4a5fccb396241b689eb97e84e92895e2793e82\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"c465a322f8d7b62d25d22ee923fcb52f0592820012986d598251c5cc17c307c3\",\"transport\":{\"type\"",
-    "url": "https://github.com/drhelius/gearcoleco",
-    "fetchedAt": "2026-09-02T08:02:33.709Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.drhelius/geargrafx",
-    "title": "Geargrafx MCP Server",
-    "body": "MCP server for Geargrafx PC Engine / TurboGrafx-16 emulator\nVersion: 1.7.22\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"80e97ffb0ba821c1bfb83a3ae70671a21b201f30ff91f6d1e22ae3c9ae50ff68\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-macos-x64.mcpb\",\"fileSha256\":\"9e8dd3e54806eeda3d18de931a44edf3b97f757aef1777f91b5f0ff46a0be1a7\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"06e3651e32e5d375f658ebfd17add4f343b02408fd135d29c2dbb263aea39f84\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-windows-x64.mcpb\",\"fileSha256\":\"6e89064c720e2cefefe56376368607d01f7295c8b6bec99e5932599b0efffcf6\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-linux-x64.mcpb\",\"fileSha256\":\"a9cf0c79a99c4a0bbfeb466a634948913e4fe0526aed4aeb82b38acc11a9b46c\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"dadc5326ce5a95ed108bf3491baed9f327e65d8d83893a5acfb3c2d660fb96a5\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/drhelius/geargrafx",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.drhelius/gearlynx",
-    "title": "Gearlynx MCP Server",
-    "body": "MCP server for Gearlynx Atari Lynx emulator\nVersion: 1.2.31\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"17ab6e00e3cad8ba961ca327010fe32ec1505134667ef184a09f4d7200e8c44c\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-macos-x64.mcpb\",\"fileSha256\":\"56c398e1176008a3ac42ebcc87c58fb78c7cbb949359878554d60885963ac58c\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"7db805ab19faa8db153ca28e7e1947ecab416aaff07454e5ccdc47b6826ad2e5\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-windows-x64.mcpb\",\"fileSha256\":\"be90e679577ee3aeabc252c7499d50201c83647931054116f98f55563aa5ccce\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-linux-x64.mcpb\",\"fileSha256\":\"c28a115ea198967cbcd8d6f039a0a1751ea3437923a8403218e700032c2ad52c\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"8db012f99e4dbc588cd9d9f956f5a300d48fba249628ea36225f2c5e6a39f867\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.drhelius%2Fgearlynx",
-    "fetchedAt": "2026-09-02T08:02:33.709Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.drhelius/gearsystem",
-    "title": "Gearsystem MCP Server",
-    "body": "MCP server for Gearsystem Sega Master System / Game Gear / SG-1000 emulator\nVersion: 3.9.18\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"3651d702461c99a7edca1cf197de135c752c67e1d53338373e11eda12ac4f6a6\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-macos-x64.mcpb\",\"fileSha256\":\"500a0a96f815856972ba4ec77948acfc62758d53ef67e99460ce2b893d293779\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"f117a1c377cd779022f7c3aa4dc7dcf2ea25081a9d7204a6901e9a45232b25f9\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-windows-x64.mcpb\",\"fileSha256\":\"51a98610d05e42f58e8720fdb8558e0adcb0dd0522620256e2b924e9160da8ad\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-linux-x64.mcpb\",\"fileSha256\":\"4c02ae55ea6e69869325dd0841a41d1ada5439403fda601b28a78003ae30cf0d\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"644b40c6c685c487594d397cb237b175fb9f81fd19aa3d0f651eaf73567cefa3\",\"transport\":{\"type\"",
-    "url": "https://github.com/drhelius/gearsystem",
-    "fetchedAt": "2026-09-02T08:02:33.709Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.droidrun/mobilerun",
-    "title": "io.github.droidrun/mobilerun",
-    "body": "Control real Android and iOS devices with LLM agents — tap, swipe, type, automate flows.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mobilerun.ai/v1/mcp\",\"headers\":[{\"description\":\"Bearer token — Mobilerun API key (dr_sk_...), from the app under AI & Agents.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://github.com/droidrun/mobilerun",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.elViRafa/memory-fabric",
-    "title": "Memory Fabric",
-    "body": "File-first, local-first MCP memory for AI coding assistants: Markdown + YAML, no vector DB.\nVersion: 1.4.1\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"memory-fabric\",\"version\":\"1.4.1\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"value\":\"memory-fabric[mcp]==1.4.1\",\"type\":\"named\",\"name\":\"--from\"},{\"value\":\"memory-fabric-mcp\",\"type\":\"positional\"}]}]",
-    "url": "https://github.com/elViRafa/agentic-memory",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.elninyo-ops/baseline-mcp",
-    "title": "io.github.elninyo-ops/baseline-mcp",
-    "body": "Statistically rigorous weather and climate context: forecast plus 35-year historical ranking.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"baseline-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of the Baseline API instance to query.\",\"isRequired\":true,\"format\":\"string\",\"name\":\"BASELINE_API_URL\"},{\"description\":\"API key for the Baseline API. Contact chadmcnutt@gmail.com for a key -- self-serve signup is not yet available.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BASELINE_API_KEY\"}]}]",
-    "url": "https://github.com/elninyo-ops/baseline-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.fathyshalaby/specky",
-    "title": "io.github.fathyshalaby/specky",
-    "body": "Turn raw customer feedback into evidence-cited specs (free, no key) plus 16 PM tools.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.specky.space/api/mcp\"}]",
-    "url": "https://specky.space/for-agents",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.forcedreamai/mcp-server",
-    "title": "io.github.forcedreamai/mcp-server",
-    "body": "Discover, invoke, and trustlessly verify ForceDream AI agents with cryptographic proofs. 17 tools.\nVersion: 0.12.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.forcedream.ai/v1/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@forcedream/mcp-server\",\"version\":\"0.12.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Your ForceDream billing key (fd_live_...). Required only to invoke agents, which spends your balance. Omit to use search_agents and verify_proof only, which need no key.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"FD_API_KEY\"}]}]",
-    "url": "https://github.com/forcedreamai/forcedream-mcp",
-    "fetchedAt": "2026-08-22T04:04:48.747Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.ganapativs/microcharts",
-    "title": "io.github.ganapativs/microcharts",
-    "body": "Find, wire, and render microcharts — word-sized React charts with generated alt text.\nVersion: 0.1.17\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@microcharts/mcp\",\"version\":\"0.1.17\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://microcharts.dev/docs/mcp",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.githubscum/lotor",
-    "title": "Lotor",
-    "body": "A local receipt and approval gate for AI agent sessions. The agent can act, but it cannot sign.\nVersion: 1.0.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"lotor-mcp\",\"version\":\"1.0.2\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://ikeanalytics.com/lotor/",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.groupdocs-conversion/groupdocs-conversion-mcp",
-    "title": "io.github.groupdocs-conversion/groupdocs-conversion-mcp",
-    "body": "MCP server for GroupDocs.Conversion — convert, inspect, and list supported formats via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Conversion.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
-    "url": "https://github.com/groupdocs-conversion/GroupDocs.Conversion.Mcp",
-    "fetchedAt": "2026-09-05T07:47:19.143Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.groupdocs-markdown/groupdocs-markdown-mcp",
-    "title": "io.github.groupdocs-markdown/groupdocs-markdown-mcp",
-    "body": "MCP server for GroupDocs.Markdown — convert documents to Markdown via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Markdown.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
-    "url": "https://github.com/groupdocs-markdown/GroupDocs.Markdown.Mcp",
-    "fetchedAt": "2026-09-05T07:47:19.143Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.groupdocs-metadata/groupdocs-metadata-mcp",
-    "title": "io.github.groupdocs-metadata/groupdocs-metadata-mcp",
-    "body": "MCP server for GroupDocs.Metadata — read, search, write, and remove document metadata.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Metadata.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
-    "url": "https://github.com/groupdocs-metadata/GroupDocs.Metadata.Mcp",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.groupdocs-parser/groupdocs-parser-mcp",
-    "title": "io.github.groupdocs-parser/groupdocs-parser-mcp",
-    "body": "MCP server for GroupDocs.Parser — extract text, images, metadata, tables, barcodes via AI.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/groupdocs-parser/parser-net-mcp:26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"}]}]",
-    "url": "https://github.com/groupdocs-parser/GroupDocs.Parser.Mcp",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.groupdocs-redaction/groupdocs-redaction-mcp",
-    "title": "io.github.groupdocs-redaction/groupdocs-redaction-mcp",
-    "body": "MCP server for GroupDocs.Redaction — redact text, metadata, annotations, image areas via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Redaction.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
-    "url": "https://github.com/groupdocs-redaction/GroupDocs.Redaction.Mcp",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.groupdocs-signature/groupdocs-signature-mcp",
-    "title": "io.github.groupdocs-signature/groupdocs-signature-mcp",
-    "body": "MCP server for GroupDocs.Signature — sign, search and verify document signatures via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Signature.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
-    "url": "https://github.com/groupdocs-signature/GroupDocs.Signature.Mcp",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.groupdocs-total/groupdocs-total-mcp",
-    "title": "io.github.groupdocs-total/groupdocs-total-mcp",
-    "body": "MCP server for GroupDocs.Total — annotate, sign, convert, watermark, parse, redact documents via AI.\nVersion: 26.7.3\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/groupdocs-total/total-net-mcp:26.7.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"}]}]",
-    "url": "https://github.com/groupdocs-total/GroupDocs.Total.Mcp",
-    "fetchedAt": "2026-07-26T06:21:10.903Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.groupdocs-viewer/groupdocs-viewer-mcp",
-    "title": "io.github.groupdocs-viewer/groupdocs-viewer-mcp",
-    "body": "MCP server for GroupDocs.Viewer — render pages as PNG and inspect view info via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Viewer.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
-    "url": "https://github.com/groupdocs-viewer/GroupDocs.Viewer.Mcp",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.humanity4ai/project-human",
-    "title": "io.github.humanity4ai/project-human",
-    "body": "9 humanity skills for AI agents — crisis detection, WCAG 2.2, empathy, cultural sensitivity\nVersion: 1.0.6\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@humanity4ai/mcp-servers\",\"version\":\"1.0.6\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/humanity4ai/project_human",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.igorsaevets/page2ai-mcp",
-    "title": "Page2AI — Web to Markdown",
-    "body": "Convert web pages or HTML to clean Markdown for LLM context. Local, no external API calls.\nVersion: 0.2.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@page2ai/mcp\",\"version\":\"0.2.5\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/igorsaevets/page2ai-mcp#readme",
-    "fetchedAt": "2026-08-29T10:18:00.331Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.ilyautov/consilium-principis",
-    "title": "Consilium Principis",
-    "body": "AI advisory board (MCP): quotes verified word-for-word against public-domain texts, fail-closed\nVersion: 0.1.3\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/ilyautov/consilium-principis/releases/download/v0.1.3/consilium-principis.mcpb\",\"fileSha256\":\"9ceac586191e580e79e16169cfb5a933433a364d453a1b89b9902886843f44af\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/ilyautov/consilium-principis",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.invigil/invigil",
-    "title": "io.github.invigil/invigil",
-    "body": "Linters check your code. Invigil checks whether your repo is legible — to newcomers and AI agents.\nVersion: 1.7.1\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"invigil\",\"version\":\"1.7.1\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"value\":\"invigil[mcp]\",\"type\":\"named\",\"name\":\"--from\"}],\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}]}]",
-    "url": "https://github.com/invigil/invigil",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jaimenbell/bus-mcp",
-    "title": "io.github.jaimenbell/bus-mcp",
-    "body": "MCP server fronting a self-hosted coordination-bus HTTP API: post/read/claim/release/heartbeat.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"bus-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jaimenbell/bus-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jaimenbell/desktop-mcp",
-    "title": "io.github.jaimenbell/desktop-mcp",
-    "body": "Windows desktop-control MCP server: screenshot, window mgmt, mouse/keyboard input, recording.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"desktop-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jaimenbell/desktop-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jaimenbell/discord-mcp",
-    "title": "io.github.jaimenbell/discord-mcp",
-    "body": "MCP server for the Discord REST API: 5 read tools always on, 7 write tools env-gated, default off.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"jaimenbell-discord-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jaimenbell/discord-mcp",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jaimenbell/github-mcp",
-    "title": "io.github.jaimenbell/github-mcp",
-    "body": "MCP server for the GitHub REST API: issues, PRs, repos; read always on, write env-gated.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"jaimenbell-github-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jaimenbell/github-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jaimenbell/mcp-factory",
-    "title": "io.github.jaimenbell/mcp-factory",
-    "body": "Manifest-driven MCP server scaffolder and runtime hub for tool integrations.\nVersion: 0.1.3\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"jaimenbell-mcp-factory\",\"version\":\"0.1.3\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jaimenbell/MCP-Factory",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jaimenbell/rag-mcp",
-    "title": "io.github.jaimenbell/rag-mcp",
-    "body": "Minimal RAG-over-a-corpus MCP retrieval: search_knowledge returns cited chunks. Local embeddings.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"jaimenbell-rag-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jaimenbell/rag-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jaimenbell/rails-mcp",
-    "title": "io.github.jaimenbell/rails-mcp",
-    "body": "Default-deny action registry, append-only spend ledger, and human sign-off audit trail (MCP tools).\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"rails-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jaimenbell/rails-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jaimenbell/vllm-ops-mcp",
-    "title": "io.github.jaimenbell/vllm-ops-mcp",
-    "body": "Read-only ops/health MCP server for a local vLLM instance: health tiers, GPU/VRAM, service status.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"vllm-ops-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jaimenbell/vllm-ops-mcp",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jfarcand/mirroir-mcp",
-    "title": "io.github.jfarcand/mirroir-mcp",
-    "body": "Control a real iPhone through macOS iPhone Mirroring: screenshot, tap, swipe, type.\nVersion: 0.39.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"mirroir-mcp\",\"version\":\"0.39.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/jfarcand/mirroir-mcp",
-    "fetchedAt": "2026-09-01T08:49:57.248Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jonny-1812/corebee",
-    "title": "Corebee AI Customer Support",
-    "body": "Run AI customer support from your terminal: conversations, knowledge base, and chat widget.\nVersion: 2.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://corebee.ai/api/v1/mcp/stream\"}]",
-    "url": "https://corebee.ai",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.kensaurus/mushi-mushi",
-    "title": "Mushi Mushi",
-    "body": "Bug translation for vibe coders: plain-English diagnosis + paste-ready fix in your AI coding agent\nVersion: 0.20.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://dxptnwrhwsqckaftyymj.supabase.co/functions/v1/mcp\",\"headers\":[{\"description\":\"Bearer <MUSHI_API_KEY> — a project API key with the mcp:read (and optionally mcp:write) scope.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@mushi-mushi/mcp\",\"version\":\"0.20.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Project ingest/admin API key minted in the Mushi console (Settings → API Keys). Scope mcp:read for triage, mcp:write to dispatch fixes.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"MUSHI_API_KEY\"},{\"description\":\"Project UUID the key belongs to. Optional for single-project account keys.\",\"name\":\"MUSHI_PROJECT_ID\"},{\"description\":\"Override the API base URL (self-hosted deployments). Defaults to the hosted Mushi Cloud endpoint.\",\"name\":\"MUSHI_API_ENDPOINT\"},{\"description\":\"Comma-separated feature groups to expose (triage,fixes,inventory,setup,docs). Defaults to the lean catalog; use 'all' for the full tool set.\",\"name\":\"MUSHI_FEATURES\"}]}]",
-    "url": "https://kensaur.us/mushi-mushi/docs/quickstart/mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.kewelin/ecpro-mcp",
-    "title": "io.github.kewelin/ecpro-mcp",
-    "body": "台灣電商情報與商品比價：跨通路查 momo、PChome、品牌官網即時價格與歷史最低價、偵測網站電商技術、搜尋電商知識庫。資料來源 ecpro.tw。\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ecpro.tw/mcp\"}]",
-    "url": "https://ecpro.tw/price/",
-    "fetchedAt": "2026-07-25T06:02:04.982Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.adoraads/beauty",
-    "title": "ai.adoraads/beauty",
-    "body": "AI-native beauty ads, sponsored product discovery, and brand recommendations.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.adoraads.ai/beauty\"}]",
-    "url": "https://github.com/DIGIBIZ360-COM/adoraads",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.adplane/google-ads",
-    "title": "ai.adplane/google-ads",
-    "body": "Google Ads reporting and campaign management. Everything it creates starts paused.\nVersion: 1.29.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.adplane.ai\"}]",
-    "url": "https://adplane.ai",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.memoryrouter/memoryrouter",
-    "title": "MemoryRouter",
-    "body": "Persistent AI memory shared across Claude, ChatGPT, coding agents, and compatible MCP clients.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.memoryrouter.ai/mcp\"}]",
-    "url": "https://memoryrouter.ai",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.note1/mcp",
-    "title": "note1.ai",
-    "body": "Search meetings, export summaries and transcripts, and manage recordings from any AI tool.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.note1.ai/mcp\"}]",
-    "url": "https://note1.ai/docs/mcp-server",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.rise2/figlime",
-    "title": "ai.rise2/figlime",
-    "body": "Read Figlime jobs, screening questions, and candidate responses; draft screening questions.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app.rise2.ai/mcp\"}]",
-    "url": "https://app.rise2.ai/docs/mcp",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "app.meistron/meistron",
-    "title": "Meistron",
-    "body": "Auftraege, Rechnungen, Material und Zeiten eines Handwerksbetriebs abfragen und pflegen.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://meistron.app/api/mcp\"}]",
-    "url": "https://meistron.app/ki-zugang",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "app.promptcoin/giveaway-raffle-winner-picker",
-    "title": "Giveaway & Raffle Winner Picker (provably fair)",
-    "body": "Pick giveaway and raffle winners nobody can rig — verifiable by anyone, no API key.\nVersion: 1.0.4\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"provably-fair-mcp\",\"version\":\"1.0.4\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://promptcoin.app/fair",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "app.promptcoin/provably-fair",
-    "title": "Provably Fair",
-    "body": "Pick giveaway and raffle winners nobody can rig — verifiable by anyone, no API key.\nVersion: 1.0.1\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"provably-fair-mcp\",\"version\":\"1.0.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://promptcoin.app/fair",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "clinic.enmente/mcp",
-    "title": "clinic.enmente/mcp",
-    "body": "Chilean online mental-health clinic (Spanish): articles, professionals, availability, tests.\nVersion: 0.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://enmente.clinic/api/mcp/\"}]",
-    "url": "https://enmente.clinic",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.83blue.upload/transfer",
-    "title": "com.83blue.upload/transfer",
-    "body": "Free no-signup file transfer + static site hosting for AI agents. Share or publish by URL.\nVersion: 1.0.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://upload.83blue.com/mcp\"}]",
-    "url": "https://upload.83blue.com/",
-    "fetchedAt": "2026-09-15T08:52:02.662Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.agentfenster/agentfenster",
-    "title": "agentfenster",
-    "body": "Windows GUI automation on a hidden second desktop, driven from Claude Code over MCP.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"agentfenster-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://agentfenster.com/mcp",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.ainetcafe/netcafe-almanac",
-    "title": "com.ainetcafe/netcafe-almanac",
-    "body": "Chinese almanac: lunar calendar, BaZi 八字, daily 宜忌, lucky-day picker, public holidays.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ainetcafe.com/mcp/almanac?s=registry\"}]",
-    "url": "https://ainetcafe.com/tools",
-    "fetchedAt": "2026-08-14T05:14:02.340Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.ainetcafe/netcafe-live-data",
-    "title": "com.ainetcafe/netcafe-live-data",
-    "body": "Live data: weather, air quality, FX, CN/HK/US stocks, IP geo, domain, SSL, China reachability.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ainetcafe.com/mcp/data?s=registry\"}]",
-    "url": "https://ainetcafe.com/tools",
-    "fetchedAt": "2026-08-14T05:14:02.340Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.aiwebsitepipeline/indexnow-toolkit",
-    "title": "com.aiwebsitepipeline/indexnow-toolkit",
-    "body": "Build and validate IndexNow payloads, check key files, and diff sitemaps into a submission list.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://indexnow-toolkit-mcp.lipmichal.workers.dev/mcp\"}]",
-    "url": "https://aiwebsitepipeline.com/method.html",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.appfigures/mcp",
-    "title": "Appfigures",
-    "body": "Access your app analytics, ASO tools, and app market intelligence with Appfigures.\nVersion: 3.0.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@appfigures/cli\",\"version\":\"3.0.0\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"Appfigures personal access token. Optional; omit it to sign in with `af auth login` instead. Read more at https://help.appfigures.com/en/article/1chf6wf\",\"isSecret\":true,\"name\":\"APPFIGURES_API_KEY\"}]}]",
-    "url": "https://appfigures.com",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.asharehub/mcp",
-    "title": "AShareHub — Chinese A-Share Market Data",
-    "body": "Cloud MCP server for Chinese A-share and ETF market data, news, financials and capital flows.\nVersion: 0.1.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://asharehub.com/mcp/sse?api_key={api_key}\",\"variables\":{\"api_key\":{\"description\":\"AShareHub API key from the official website\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true}}}]",
-    "url": "https://asharehub.com/en/docs#mcp-setup",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.bankstatementsheet/bank-statement-sheet-mcp",
-    "title": "Bank Statement Sheet",
-    "body": "Convert PDF bank statements into transactions that arrive with a pass/fail reconciliation verdict.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"bank-statement-sheet-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional API key from bankstatementsheet.com/dashboard. Without it the free anonymous tier applies (5 conversions/month, Excel and CSV).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"BSS_API_KEY\"},{\"description\":\"Directories PDFs may be read from (path-delimited). Defaults to the working directory and ~/Downloads.\",\"format\":\"string\",\"name\":\"BSS_ALLOWED_DIRS\"},{\"description\":\"Maximum PDF size in MB before upload is refused locally. Default 50.\",\"format\":\"number\",\"name\":\"BSS_MAX_FILE_MB\"}]}]",
-    "url": "https://bankstatementsheet.com",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.beforevibe/mcp",
-    "title": "BEFOREVIBE",
-    "body": "PRD, logo, and AI UI mockups from any app idea — PRD free, logo 1 credit, screens 1 credit each.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://beforevibe.com/api/mcp\"}]",
-    "url": "https://beforevibe.com/mcp",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.built2winweb/built2winweb",
-    "title": "BuiltToWinWeb",
-    "body": "Search BuiltToWinWeb's services, industries and blog. Flat-fee custom PHP sites for small business.\nVersion: 2.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://built2winweb.com/mcp\"}]",
-    "url": "https://built2winweb.com",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.cytado/cytado",
-    "title": "com.cytado/cytado",
-    "body": "Real academic citations with printed page numbers - verified sources or an honest not-found.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cytado.com/api/mcp\"}]",
-    "url": "https://cytado.com/claude-mcp-citations",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.danielsdesignstudio/mirror-ai-citability",
-    "title": "The Mirror System — AI Citability",
-    "body": "Request a Brand Discovery Record: the human-approved facts AI cites. One tool, then a person.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.danielsdesignstudio.com/mcp\"}]",
-    "url": "https://danielsdesignstudio.com/agents",
-    "fetchedAt": "2026-09-20T08:44:37.596Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.focusgts/aep",
-    "title": "com.focusgts/aep",
-    "body": "Full-CRUD server for AEP, Journey Optimizer and CJA. 61 tools from one OAuth credential.\nVersion: 0.11.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@focusgts/aep-mcp-server\",\"version\":\"0.11.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Adobe I/O client ID from an OAuth Server-to-Server credential in the Adobe Developer Console.\",\"isRequired\":true,\"name\":\"AEP_CLIENT_ID\"},{\"description\":\"Adobe I/O client secret paired with AEP_CLIENT_ID.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"AEP_CLIENT_SECRET\"},{\"description\":\"Adobe IMS organization ID, in the form xxxxxxxxx@AdobeOrg.\",\"isRequired\":true,\"name\":\"AEP_ORG_ID\"},{\"description\":\"AEP sandbox to scope every call to. Defaults to 'prod'. Use a development sandbox to enable write operations.\",\"default\":\"prod\",\"name\":\"AEP_SANDBOX_NAME\"},{\"description\":\"Write posture: 'read-only' (no mutation anywhere), 'safe' (default — writes only in sandboxes Adobe classifies as development), or 'production' (writes anywhere). Reads are never restricted.\",\"default\":\"safe\",\"name\":\"AEP_MODE\"},{\"description\":\"Pino log level. Logs go to stderr; stdout is reserved for the MCP JSON-RPC stream.\",\"default\":\"info\",\"name\":\"LOG_LEVEL\"}]}]",
-    "url": "https://github.com/Focus-GTS/aep-mcp-server",
-    "fetchedAt": "2026-08-31T09:58:53.166Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.handsofflinks/link-followability",
-    "title": "com.handsofflinks/link-followability",
-    "body": "Check if a link on a live page is followable: rel tokens, meta robots and X-Robots-Tag\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://handsofflinks-mcp.lipmichal.workers.dev\"}]",
-    "url": "https://handsofflinks.com/",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.instaseer/mcp",
-    "title": "InstaSeer",
-    "body": "Use saved Instagram reports in AI assistants; compare evidence and prepare owner-reviewed research.\nVersion: 1.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.instaseer.com/mcp\"}]",
-    "url": "https://www.instaseer.com/mcp",
-    "fetchedAt": "2026-09-16T08:45:45.626Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.iridiumhqmcp/iridium",
-    "title": "Iridium",
-    "body": "LinkedIn outreach, commenting, scheduling, and data via Claude and human approval gates.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.iridiumhqmcp.com/mcp\"}]",
-    "url": "https://iridiumhqmcp.com",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.localcan/mcp",
-    "title": "LocalCan",
-    "body": "Give AI agents Public URLs (tunnels), captured HTTP traffic, Snapshots, and access control.\nVersion: 1.0.0",
-    "url": "https://www.localcan.com/docs/ai-agents/mcp",
-    "fetchedAt": "2026-08-09T04:44:58.121Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.logospell/logospell",
-    "title": "Logospell",
-    "body": "AI-agent image generation: cohesive sets & illustrations. Resize a set or export icons, free.\nVersion: 3.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.logospell.com/mcp\",\"headers\":[{\"description\":\"Bearer <your Logospell API key>. Get a free key at https://logospell.com; free starter credits, no card required.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://logospell.com",
-    "fetchedAt": "2026-09-02T08:02:33.709Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.luneresearch/lune",
-    "title": "Lune Research",
-    "body": "Search peer-reviewed papers and research methodology guidance from your AI agent.\nVersion: 2.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.luneresearch.com\",\"headers\":[{\"description\":\"Bearer token. Create a Lune PAT at https://luneresearch.com/dashboard/settings/credentials, or let an OAuth-capable MCP client sign in through server discovery.\",\"isRequired\":true,\"value\":\"Bearer {api_key}\",\"isSecret\":true,\"variables\":{\"api_key\":{\"description\":\"Lune personal access token (lune_...).\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true}},\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@retrograde-labs/lune-mcp-server\",\"version\":\"2.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Lune personal access token. Generate one at https://luneresearch.com/dashboard/settings/credentials.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"LUNE_API_KEY\"}]}]",
-    "url": "https://luneresearch.com",
-    "fetchedAt": "2026-08-25T04:07:39.706Z"
-  },
-  {
-    "source": "mcp-registry",
     "externalId": "com.lvlltd/skill-market",
     "title": "com.lvlltd/skill-market",
     "body": "x402 skill catalog on lvlltd.com — search, quote, pay with Base USDC, unlock sealed packs.\nVersion: 1.5.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://lvlltd.com/api/mcp\"}]",
@@ -127422,5 +126462,965 @@
     "body": "Article URL: https://medium.com/@parthmghayal/mcp-in-the-enterprise-0d40b64a866b Comments URL: https://news.ycombinator.com/item?id=49207469 Points: 1 # Comments: 0",
     "url": "https://medium.com/@parthmghayal/mcp-in-the-enterprise-0d40b64a866b",
     "fetchedAt": "2026-08-08T04:34:42.236Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.DoughyJoeyD/friday-seller-tools",
+    "title": "Friday Seller Tools",
+    "body": "Marketplace-seller tools: listing audits, PPC kits, pricing, compliance. Paid via x402 or card.\nVersion: 0.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://friday-seller-tools-production.up.railway.app/mcp\"}]",
+    "url": "https://friday-seller-tools-production.up.railway.app",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Faouzi122/arsenal-decision-engine",
+    "title": "Arsenal Decision Engine",
+    "body": "R_net LP risk evaluator for DeFAI agents. IL + Breakeven Corridor O(1). L402 Lightning paywall.\nVersion: 2.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.arsenal-quant.com/mcp\"}]",
+    "url": "https://github.com/Faouzi122/Arsenal-Quant-Project",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.IBazylchuk/paparats-mcp",
+    "title": "Paparats – Local Semantic Code Search MCP",
+    "body": "Local-first semantic code search across all your repos. Private context for AI coding assistants.\nVersion: 2.7.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@paparats/cli\",\"version\":\"2.7.0\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:9876\"}}]",
+    "url": "https://github.com/IBazylchuk/paparats-mcp#readme",
+    "fetchedAt": "2026-09-04T08:11:49.015Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.IPGeolocation/ipgeolocation-io-mcp",
+    "title": "IPGeolocation.io MCP Server",
+    "body": "Official MCP server for IP geolocation, security, ASN, abuse, timezone, astronomy, and user-agent.\nVersion: 2.0.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"ipgeolocation-io-mcp\",\"version\":\"2.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key for ipgeolocation.io. Free and paid keys are supported.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"placeholder\":\"<IPGEOLOCATION_API_KEY>\",\"name\":\"IPGEOLOCATION_API_KEY\"}]}]",
+    "url": "https://github.com/IPGeolocation/ipgeolocation-io-mcp#readme",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.KryptosAI/mcp-observatory",
+    "title": "io.github.KryptosAI/mcp-observatory",
+    "body": "MCP security scanner. CI-native testing, attack simulation, health scoring, and SARIF.\nVersion: 1.36.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@kryptosai/mcp-observatory\",\"version\":\"1.36.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/KryptosAI/mcp-observatory",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.KyaniteLabs/kinocut",
+    "title": "Kinocut",
+    "body": "Guardrailed video editing for AI agents: FFmpeg, captions, effects, Hyperframes, and receipts.\nVersion: 1.15.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"kinocut\",\"version\":\"1.15.1\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://kinocut.dev/",
+    "fetchedAt": "2026-08-31T09:58:53.166Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.LedgerProof/laen",
+    "title": "io.github.LedgerProof/laen",
+    "body": "On-demand unblocking for AI agents: find blockers free, pay via x402 on Base, get anchored proof.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://jmspfggpztykyubyzvlx.supabase.co/functions/v1/laen-mcp\"}]",
+    "url": "https://ledgerproofhq.io",
+    "fetchedAt": "2026-08-02T06:17:08.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.LuptonM/casenode-legal-graph",
+    "title": "CaseNode Case Law API",
+    "body": "UK case law MCP (21 tools). Free API key: casenode.ai/api/signup → Dashboard → API keys.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.casenode.ai/mcp\",\"headers\":[{\"description\":\"Free key: sign up at casenode.ai/api/signup → Dashboard → API keys (prefix cng_). Send as X-API-Key header.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
+    "url": "https://casenode.ai/api/signup",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Lykhoyda/ask-antigravity",
+    "title": "io.github.Lykhoyda/ask-antigravity",
+    "body": "Bridge Claude with Google's Antigravity CLI (agy) for code review and second opinions\nVersion: 0.6.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/antigravity-mcp\",\"version\":\"0.6.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Timeout for Antigravity (agy) execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"ASK_ANTIGRAVITY_TIMEOUT_MS\"},{\"description\":\"Set to '0' to drop agy's --sandbox flag if it blocks --add-dir context reads (default: sandbox on)\",\"format\":\"string\",\"default\":\"1\",\"name\":\"ASK_ANTIGRAVITY_SANDBOX\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
+    "url": "https://github.com/Lykhoyda/ask-llm",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Lykhoyda/ask-claude",
+    "title": "io.github.Lykhoyda/ask-claude",
+    "body": "Bridge Codex and other MCP clients with Anthropic Claude Code CLI for read-only second opinions\nVersion: 0.1.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/claude-mcp\",\"version\":\"0.1.5\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Default Claude model alias or full model name (default: opus)\",\"format\":\"string\",\"default\":\"opus\",\"name\":\"ASK_CLAUDE_MODEL\"},{\"description\":\"Claude CLI fallback when the default is overloaded or unavailable (default: sonnet)\",\"format\":\"string\",\"default\":\"sonnet\",\"name\":\"ASK_CLAUDE_FALLBACK_MODEL\"},{\"description\":\"Timeout for Claude CLI execution in milliseconds (default: 600000 = 10 minutes)\",\"format\":\"string\",\"default\":\"600000\",\"name\":\"ASK_CLAUDE_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
+    "url": "https://github.com/Lykhoyda/ask-llm",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Lykhoyda/ask-codex",
+    "title": "io.github.Lykhoyda/ask-codex",
+    "body": "Bridge Claude with OpenAI Codex CLI for AI-to-AI collaboration, code review, and second opinions\nVersion: 0.7.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/codex-mcp\",\"version\":\"0.7.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Timeout for Codex CLI execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"GMCPT_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
+    "url": "https://github.com/Lykhoyda/ask-llm",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Lykhoyda/ask-gemini",
+    "title": "io.github.Lykhoyda/ask-gemini",
+    "body": "Bridge Claude with Gemini CLI for AI-to-AI collaboration, code review, and second opinions\nVersion: 1.7.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/gemini-mcp\",\"version\":\"1.7.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Timeout for Gemini CLI execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"GMCPT_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
+    "url": "https://github.com/Lykhoyda/ask-llm",
+    "fetchedAt": "2026-07-27T06:48:28.418Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Lykhoyda/ask-llm",
+    "title": "io.github.Lykhoyda/ask-llm",
+    "body": "Unified MCP server — auto-detects Gemini, Codex, Claude, Ollama, and Antigravity providers\nVersion: 0.6.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/mcp\",\"version\":\"0.6.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Default Claude model alias or full model name (default: opus)\",\"format\":\"string\",\"default\":\"opus\",\"name\":\"ASK_CLAUDE_MODEL\"},{\"description\":\"Claude CLI fallback when Opus is overloaded or unavailable (default: sonnet)\",\"format\":\"string\",\"default\":\"sonnet\",\"name\":\"ASK_CLAUDE_FALLBACK_MODEL\"},{\"description\":\"Timeout for Claude CLI execution in milliseconds (default: 600000 = 10 minutes)\",\"format\":\"string\",\"default\":\"600000\",\"name\":\"ASK_CLAUDE_TIMEOUT_MS\"},{\"description\":\"Ollama server address (default: http://localhost:11434)\",\"format\":\"string\",\"default\":\"http://localhost:11434\",\"name\":\"OLLAMA_HOST\"},{\"description\":\"Timeout for Antigravity (agy) execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"ASK_ANTIGRAVITY_TIMEOUT_MS\"},{\"description\":\"Set to '0' to drop agy's --sandbox flag if it blocks --add-dir context reads (default: sandbox on)\",\"format\":\"string\",\"default\":\"1\",\"name\":\"ASK_ANTIGRAVITY_SANDBOX\"},{\"description\":\"Timeout for CLI execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"GMCPT_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
+    "url": "https://github.com/Lykhoyda/ask-llm",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Lykhoyda/ask-ollama",
+    "title": "io.github.Lykhoyda/ask-ollama",
+    "body": "Bridge Claude with local Ollama LLMs for private AI-to-AI collaboration — no API keys, fully local\nVersion: 0.5.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@ask-llm/ollama-mcp\",\"version\":\"0.5.5\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Ollama server address (default: http://localhost:11434)\",\"format\":\"string\",\"default\":\"http://localhost:11434\",\"name\":\"OLLAMA_HOST\"},{\"description\":\"Timeout for Ollama execution in milliseconds (default: 300000 = 5 minutes)\",\"format\":\"string\",\"default\":\"300000\",\"name\":\"GMCPT_TIMEOUT_MS\"},{\"description\":\"Log verbosity: debug, info, warn, error (default: warn)\",\"format\":\"string\",\"default\":\"warn\",\"name\":\"GMCPT_LOG_LEVEL\"}]}]",
+    "url": "https://github.com/Lykhoyda/ask-llm",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Mouthfully/zwitchy-store",
+    "title": "io.github.Mouthfully/zwitchy-store",
+    "body": "Travel eSIM catalog: search plans, check availability, and get exact quotes with checkout links.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://zwitchy.io/api/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Mouthfully%2Fzwitchy-store",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Odrin/rhizome-mcp",
+    "title": "Rhizome MCP",
+    "body": "Local-first MCP server for task tracking and coordination of autonomous AI coding agents.\nVersion: 1.5.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"rhizome-mcp\",\"version\":\"1.5.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://odrin.github.io/rhizome-mcp/",
+    "fetchedAt": "2026-09-18T08:24:48.044Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.OpenHeritageOnline/public-search",
+    "title": "OpenHeritage Public Search",
+    "body": "Read-only OpenHeritage search for genealogy and cultural heritage records.\nVersion: 2.11.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://openheritage.online/mcp\"}]",
+    "url": "https://github.com/OpenHeritageOnline/agent-tooling",
+    "fetchedAt": "2026-09-04T08:11:49.015Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.ProvarTesting/provar",
+    "title": "Provar MCP Server",
+    "body": "Provar MCP: AI-powered Salesforce test automation. Generate, validate, migrate, and run tests.\nVersion: 1.6.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@provartesting/provardx-cli\",\"version\":\"1.6.5\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"value\":\"provar\",\"type\":\"positional\"},{\"value\":\"mcp\",\"type\":\"positional\"},{\"value\":\"start\",\"type\":\"positional\"},{\"description\":\"Filesystem path(s) the MCP server is allowed to read and write. Typically your Provar project root.\",\"isRequired\":true,\"value\":\"{workspaceFolder}\",\"type\":\"named\",\"name\":\"--allowed-paths\"}]}]",
+    "url": "https://github.com/ProvarTesting/provardx-cli/blob/main/docs/mcp.md",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.RepoAssay/repo-test-architect",
+    "title": "Repo Test Architect",
+    "body": "Audit-first test strategy MCP server for repository-native test planning.\nVersion: 1.0.0-beta.1\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"repo-test-architect\",\"version\":\"1.0.0-beta.1\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}]}]",
+    "url": "https://github.com/repoassay/repo-test-architect",
+    "fetchedAt": "2026-08-12T05:13:23.306Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.RodrigueDev13/obambu-cpanel-mcp",
+    "title": "Obambu cPanel MCP",
+    "body": "MCP server exposing cPanel UAPI (domains, DNS, email, MySQL, files) as tools for AI assistants.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"obambu-cpanel-mcp\",\"version\":\"0.1.2\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"cPanel server hostname or IP address\",\"isRequired\":true,\"name\":\"CPANEL_HOST\"},{\"description\":\"cPanel API port\",\"default\":\"2083\",\"name\":\"CPANEL_PORT\"},{\"description\":\"cPanel account username\",\"isRequired\":true,\"name\":\"CPANEL_USERNAME\"},{\"description\":\"cPanel API token (Security -> Manage API Tokens)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"CPANEL_API_TOKEN\"}]}]",
+    "url": "https://github.com/RodrigueDev13/obambu-cpanel-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.SolveaCX/voc-mcp",
+    "title": "VOC OpenAPI MCP",
+    "body": "VOC OpenAPI gives AI agents authorized review and product data for insights, tagging, and listings.\nVersion: 1.0.5\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://open.voc.ai/mcp/catalog\",\"headers\":[{\"description\":\"Credential required by VOC OpenAPI MCP\",\"isRequired\":true,\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
+    "url": "https://voc.ai",
+    "fetchedAt": "2026-08-04T06:09:30.174Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.TVLSS/hirejack-mcp",
+    "title": "io.github.TVLSS/hirejack-mcp",
+    "body": "Tech job market intelligence: jobs, companies, salaries, skill velocity, hiring trends.\nVersion: 0.3.10\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://hirejack.com/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@hirejack/mcp\",\"version\":\"0.3.10\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://hirejack.com",
+    "fetchedAt": "2026-07-26T06:21:10.903Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Tarotoo-com/tarotoo-mcp-server",
+    "title": "Tarotoo Tarot",
+    "body": "All 78 tarot card meanings (Rider-Waite-Smith): lookup, search, yes/no answers, and random draws.\nVersion: 2.0.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"tarotoo-mcp-server\",\"version\":\"2.0.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://tarotoo.com",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Timwal78/mcp-x402",
+    "title": "mcp-x402 — MCP server for agents with autonomous USDC/RLUSD payments",
+    "body": "85+ pay-per-call MCP tools: trading, federal grants/contracts, SEC, FTD. x402 USDC/RLUSD. No keys.\nVersion: 2.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp-x402.onrender.com/mcp\"},{\"type\":\"sse\",\"url\":\"https://mcp-x402.onrender.com/sse\"}]",
+    "url": "https://github.com/timwal78/SML_Portfolio",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.UseJunior/email-agent-mcp",
+    "title": "Agent Email",
+    "body": "Local email connectivity for AI agents — read, draft, send, and organize Outlook mail via MCP\nVersion: 0.3.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"email-agent-mcp\",\"version\":\"0.3.1\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/UseJunior/email-agent-mcp",
+    "fetchedAt": "2026-09-02T08:02:33.709Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.VOYAGER-Inc/excel-vision-mcp",
+    "title": "io.github.VOYAGER-Inc/excel-vision-mcp",
+    "body": "Excel MCP with image extraction and write support — AI agents see and edit xlsx files\nVersion: 1.2.1\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"excel-vision-mcp\",\"version\":\"1.2.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/VOYAGER-Inc/excel-vision-mcp",
+    "fetchedAt": "2026-07-31T06:28:33.899Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.VictoriaMetrics/mcp-vmanomaly",
+    "title": "io.github.VictoriaMetrics/mcp-vmanomaly",
+    "body": "MCP Server for vmanomaly - VictoriaMetrics anomaly detection\nVersion: 0.4.1\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/victoriametrics/mcp-vmanomaly:0.4.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"vmanomaly server endpoint URL (e.g., http://localhost:8490)\",\"isRequired\":true,\"format\":\"string\",\"name\":\"VMANOMALY_ENDPOINT\"},{\"description\":\"Bearer token for authenticating with vmanomaly API\",\"format\":\"string\",\"isSecret\":true,\"name\":\"VMANOMALY_BEARER_TOKEN\"},{\"description\":\"Path to a file containing a bearer token; mutually exclusive with VMANOMALY_BEARER_TOKEN\",\"format\":\"string\",\"name\":\"VMANOMALY_BEARER_TOKEN_FILE\"},{\"description\":\"Custom HTTP headers for vmanomaly requests (comma-separated key=value pairs, e.g., X-Custom-Header=value1,X-Another=value2)\",\"format\":\"string\",\"name\":\"VMANOMALY_HEADERS\"},{\"description\":\"MCP server mode: stdio (default), sse, or http\",\"format\":\"string\",\"name\":\"MCP_SERVER_MODE\"},{\"description\":\"Listen address for SSE/HTTP modes (default: localhost:8080)\",\"format\":\"string\",\"name\":\"MCP_LISTEN_ADDR\"},{\"description\":\"Log level: debug, info (default), warn, or error\",\"format\":\"string\",\"name\":\"MCP_LOG_LEVEL\"},{\"description\":\"Log file path (empty = stderr)\",\"format\":\"string\",\"name\":\"MCP_LOG_FILE\"},{\"description\":\"Comma-separated positive allowlist of tools; empty enables all registered tools\",\"format\":\"string\",\"name\":\"MCP_ENABLED_TOOLS\"},{\"description\":\"Comma-separated denylist of tools; takes precedence over MCP_ENABLED_TOOLS\",\"format\":\"string\",\"name\":\"MCP_DISABLED_TOOLS\"},{\"description\":\"Heartbeat inter",
+    "url": "https://github.com/VictoriaMetrics/mcp-vmanomaly",
+    "fetchedAt": "2026-09-18T08:24:48.044Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Viventine-Space/orbit-sentinel-mcp",
+    "title": "Orbit Sentinel — Space Regulatory Filings",
+    "body": "Search 950K+ space regulatory filings from FCC, ITU, UNOOSA, FAA-AST: entities, spectrum, dossiers.\nVersion: 0.6.6\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/viventine-space/orbit-sentinel-mcp:0.6.6\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://viventine.com/orbit-sentinel/",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Yummybait-fin/uniswap-tx-builder-mcp",
+    "title": "io.github.Yummybait-fin/uniswap-tx-builder-mcp",
+    "body": "Builds and simulates unsigned Uniswap v3 liquidity-position transactions — keyless, never signs.\nVersion: 0.4.3\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@yummybait/uniswap-tx-builder-mcp\",\"version\":\"0.4.3\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/yummybait-fin/uniswap-tx-builder-mcp:0.4.3\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/Yummybait-fin/uniswap-tx-builder-mcp",
+    "fetchedAt": "2026-07-29T06:13:22.820Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.abhishekjkrsna/swapi-mcp",
+    "title": "io.github.abhishekjkrsna/swapi-mcp",
+    "body": "MCP server for SWAPI API\nVersion: 1.0.4\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@abhishekjkrsna/swapi-mcp\",\"version\":\"1.0.4\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/abhishekjkrsna/swapi-mcp",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.acrylicfiddle/x402tools",
+    "title": "io.github.acrylicfiddle/x402tools",
+    "body": "10 pay-per-call tools for AI agents: QR, screenshots, DNS, OCR, PDF, email & more. USDC on Base.\nVersion: 1.8.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.x402tools.xyz/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@x402-tools/mcp\",\"version\":\"1.8.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://x402tools.xyz",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.adigold/tracktag-mcp",
+    "title": "io.github.adigold/tracktag-mcp",
+    "body": "AI music analysis for agents: BPM, key, genres, moods, instruments and 35+ tags per track.\nVersion: 0.2.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"tracktag-mcp\",\"version\":\"0.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"TrackTag API key (tt_live_...) — create at https://tracktag.me/studio, API & MCP tab\",\"isRequired\":true,\"isSecret\":true,\"name\":\"TRACKTAG_API_KEY\"}]}]",
+    "url": "https://github.com/adigold/tracktag-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.admin978/canvas-mcp",
+    "title": "io.github.admin978/canvas-mcp",
+    "body": "Local-first MCP server for Canvas LMS. Stdio transport, no third-party broker.\nVersion: 0.1.3\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"canvas-local-mcp\",\"version\":\"0.1.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Canvas institution root URL (no /api/v1 suffix), e.g. https://your-institution.instructure.com\",\"isRequired\":true,\"format\":\"string\",\"name\":\"CANVAS_BASE_URL\"},{\"description\":\"Canvas personal access token (Account -> Settings -> Approved Integrations -> New Access Token)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"CANVAS_TOKEN\"}]}]",
+    "url": "https://github.com/admin978/canvas-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.algolia/algolia-productivity",
+    "title": "Algolia Productivity",
+    "body": "Connect LLM tools to your Algolia account with user-scoped access for internal workflows.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.algolia.com/mcp\"}]",
+    "url": "https://www.algolia.com/doc/guides/model-context-protocol/productivity-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.amitesh-m/wealthville",
+    "title": "Wealthville",
+    "body": "Solana + EVM liquidity-pool scores: Enter/Hold/Exit verdicts and 0-100 Wealthville Score.\nVersion: 0.3.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://wealthville.net/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@wealthville/mcp-server\",\"version\":\"0.3.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional free partner key for a higher rate limit (anonymous works at 60 req/min)\",\"isSecret\":true,\"name\":\"WEALTHVILLE_API_KEY\"},{\"description\":\"Override the API base URL (default https://wealthville.net)\",\"name\":\"WEALTHVILLE_API_URL\"}]}]",
+    "url": "https://wealthville.net/mcp",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.appkitstudio/chalk-mcp",
+    "title": "Chalk",
+    "body": "Chalk's bundled MCP server for drawing diagrams on macOS via Claude, Cursor, VS Code\nVersion: 0.1.0",
+    "url": "https://chalk.appkit.studio/ai",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.asokore/statcite",
+    "title": "StatCite — Verified Economic Statistics",
+    "body": "Cited economic statistics: World Bank, IMF, BIS, ECB, Caribbean central banks. Verify any figure.\nVersion: 1.14.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://statcite.com/mcp\"}]",
+    "url": "https://statcite.com",
+    "fetchedAt": "2026-09-20T08:44:37.596Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.awpthorp/posterly",
+    "title": "posterly",
+    "body": "Validate, schedule, publish, and analyze social content across 18 platforms with posterly.\nVersion: 0.27.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.poster.ly/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"posterly-mcp-server\",\"version\":\"0.27.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"posterly API key. Optional for public signup tools; required for authenticated tools.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"POSTERLY_API_KEY\"}]}]",
+    "url": "https://www.poster.ly/mcp",
+    "fetchedAt": "2026-07-31T06:28:33.899Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.briefroom/mcp",
+    "title": "io.github.briefroom/mcp",
+    "body": "briefroom stdio MCP server — expose the briefroom CLI to Claude Code, Codex, and other agents.\nVersion: 0.3.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@briefroom/mcp\",\"version\":\"0.3.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/briefroom/mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.browser-gateway/browser-gateway",
+    "title": "io.github.browser-gateway/browser-gateway",
+    "body": "AI browser tools with Chrome CDP. Navigate, screenshot, interact. Multi-provider failover.\nVersion: 0.4.22\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"browser-gateway\",\"version\":\"0.4.22\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Authentication token for gateway access (optional, only needed with remote providers)\",\"format\":\"string\",\"isSecret\":true,\"name\":\"BG_TOKEN\"}]}]",
+    "url": "https://github.com/browser-gateway/browser-gateway",
+    "fetchedAt": "2026-09-21T09:11:47.736Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.bruchris/canvas-lms-mcp",
+    "title": "io.github.bruchris/canvas-lms-mcp",
+    "body": "TypeScript MCP server for Canvas LMS — 165 tools across 42 domains.\nVersion: 1.30.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"canvas-lms-mcp\",\"version\":\"1.30.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Canvas personal access token (Account → Settings → Approved Integrations → New Access Token)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"CANVAS_API_TOKEN\"},{\"description\":\"Canvas instance base URL, origin only with no path, e.g. https://school.instructure.com\",\"isRequired\":true,\"format\":\"string\",\"name\":\"CANVAS_BASE_URL\"}]}]",
+    "url": "https://github.com/bruchris/canvas-lms-mcp",
+    "fetchedAt": "2026-09-21T09:11:47.736Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.buttacavoligiuse/deltamesh",
+    "title": "DeltaMesh Web Freshness",
+    "body": "Free public web freshness and response-metadata checks for AI agents.\nVersion: 4.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://deltamesh-agent-beacon.giuelvy.workers.dev/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.buttacavoligiuse%2Fdeltamesh",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.chadnewbry/nyc-restaurant-week-mcp",
+    "title": "NYC Restaurant Week",
+    "body": "All 636 NYC Restaurant Week Summer 2026 restaurants — filter by cuisine, borough, price, and date.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nycrestaurantweek.app/mcp\"}]",
+    "url": "https://nycrestaurantweek.app",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.claytono/go-unifi-mcp",
+    "title": "io.github.claytono/go-unifi-mcp",
+    "body": "Manage UniFi sites, devices, clients, networks, port forwarding, DNS, and firewall\nVersion: 0.3.1\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/claytono/go-unifi-mcp:v0.3.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/claytono/go-unifi-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.clearcheck-uk/voltix-mcp",
+    "title": "io.github.clearcheck-uk/voltix-mcp",
+    "body": "DeFi intelligence for Claude: whale tracking, alpha signals, yields, token safety. USDC on Base.\nVersion: 1.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"voltix-mcp\",\"version\":\"1.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Private key (0x-prefixed hex) for a Base wallet holding USDC — used to sign micropayments for each tool call\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"PRIVATE_KEY\"}]}]",
+    "url": "https://github.com/clearcheck-uk/voltix-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.clouatre-labs/aptu-coder",
+    "title": "Aptu Coder",
+    "body": "MCP server for code structure analysis using tree-sitter.\nVersion: 0.35.0\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/clouatre-labs/aptu-coder/releases/download/v0.35.0/aptu-coder-0.35.0-aarch64-apple-darwin.mcpb\",\"fileSha256\":\"247f2f6e7b71fb6b156dfe663aabb6b6bf6473862b0d566056fcbc28c6c5bd8b\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/clouatre-labs/aptu-coder/releases/download/v0.35.0/aptu-coder-0.35.0-aarch64-unknown-linux-musl.mcpb\",\"fileSha256\":\"1ac8171d81068ae7796e8d44f00903fbd54a59e2f151732383bf981c8faef5e9\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/clouatre-labs/aptu-coder/releases/download/v0.35.0/aptu-coder-0.35.0-x86_64-unknown-linux-musl.mcpb\",\"fileSha256\":\"65aeff29f5c6fe0af4235ad52096afd98d7b176c3aed54da24d381b02fa6d703\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/clouatre-labs/aptu-coder",
+    "fetchedAt": "2026-09-20T08:44:37.596Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.commitshow/legitshow-search",
+    "title": "io.github.commitshow/legitshow-search",
+    "body": "Search launched software (SaaS, AI tools, MCP servers) by measured production-readiness.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"legitshow-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://legit.show",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.contentfactory/eu-verify",
+    "title": "io.github.contentfactory/eu-verify",
+    "body": "European business verification for AI agents: registry, VAT, sanctions, IBAN. Pay-per-call x402.\nVersion: 1.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://data.greeneris.io/mcp\"}]",
+    "url": "https://data.greeneris.io",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.cyanheads/gdelt-mcp-server",
+    "title": "io.github.cyanheads/gdelt-mcp-server",
+    "body": "Search and analyze global news coverage and US TV transcripts via the GDELT Project APIs.\nVersion: 0.4.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://gdelt.caseyjhand.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/gdelt-mcp-server\",\"version\":\"0.4.2\",\"runtimeHint\":\"node\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:stdio\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"Override the base URL for the GDELT DOC and TV APIs.\",\"format\":\"string\",\"default\":\"https://api.gdeltproject.org/api/v2\",\"name\":\"GDELT_BASE_URL\"},{\"description\":\"Minimum milliseconds between GDELT requests, enforcing the 1 req/5s rate limit.\",\"format\":\"string\",\"default\":\"5300\",\"name\":\"GDELT_REQUEST_DELAY_MS\"},{\"description\":\"Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').\",\"format\":\"string\",\"default\":\"info\",\"name\":\"MCP_LOG_LEVEL\"}]},{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/gdelt-mcp-server\",\"version\":\"0.4.2\",\"runtimeHint\":\"node\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:3010/mcp\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:http\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"Override the base URL for the GDELT DOC and TV APIs.\",\"format\":\"string\",\"default\":\"https://api.gdeltproject.org/api/v2\",\"name\":\"GDELT_BASE_URL\"},{\"description\":\"Minimum milliseconds between GDELT requests, enforcing the 1 req/5s rate limit.\",\"format\":\"string\",\"default\":\"5300\",\"name\":\"GDELT_REQUEST_DELAY_MS\"},{\"description\":\"The hostname for the HTTP ser",
+    "url": "https://github.com/cyanheads/gdelt-mcp-server",
+    "fetchedAt": "2026-09-20T08:44:37.596Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.daniel3303/equibles",
+    "title": "io.github.daniel3303/equibles",
+    "body": "90+ free tools, Claude & ChatGPT: prices, options, SEC filings, 13F, insider, congress, transcripts.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.equibles.com/mcp\",\"headers\":[{\"description\":\"Bearer API key (eq_...). Required unless your client signs in over OAuth — tool calls without either are rejected. Free tier: 100 requests/day.\",\"value\":\"Bearer {api_key}\",\"isSecret\":true,\"variables\":{\"api_key\":{\"description\":\"Your Equibles API key, from https://equibles.com/dashboard/apikeys (free account, no credit card). Leave blank only if your client supports OAuth sign-in.\",\"isSecret\":true}},\"name\":\"Authorization\"}]}]",
+    "url": "https://github.com/daniel3303/stock-market-mcp-server",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.davidgringras/scrutica",
+    "title": "Scrutica",
+    "body": "AI compute infrastructure intelligence: facilities, supply chains, sovereign AI, export controls.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://scrutica.com/api/mcp\"}]",
+    "url": "https://scrutica.com",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.dengyu123456/crochet-engine",
+    "title": "io.github.dengyu123456/crochet-engine",
+    "body": "Deterministic photo-to-crochet-chart engine: stitch counts, 5 techniques, yarn estimates.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"crochetpatterngen-engine\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"crochetpatterngen-engine[mcp]\",\"type\":\"named\",\"name\":\"--from\"},{\"value\":\"crochetpatterngen-mcp\",\"type\":\"positional\"}]}]",
+    "url": "https://github.com/dengyu123456/crochet-engine",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.developerz-ai/ui-debugger-mcp",
+    "title": "io.github.developerz-ai/ui-debugger-mcp",
+    "body": "Autonomous UI debugging MCP server: an agent drives the browser/desktop, reports bugs + UX issues.\nVersion: 1.9.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@developerz.ai/ui-debugger-mcp\",\"version\":\"1.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key for the LLM provider (OpenRouter default)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"OPENAI_API_KEY\"},{\"description\":\"Base URL for the LLM provider (defaults to OpenRouter)\",\"name\":\"OPENAI_BASE_URL\"}]}]",
+    "url": "https://github.com/developerz-ai/ui-debugger-mcp#readme",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.divyanshu-iitian/searchforge",
+    "title": "SearchForge",
+    "body": "Free open-source web search and page reading for LLMs, AI agents, and RAG.\nVersion: 0.2.0\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/divyanshu-iitian/searchforge-mcp:0.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional URL of a self-hosted SearXNG instance\",\"name\":\"SEARCHFORGE_SEARXNG_URL\"},{\"description\":\"Optional GitHub token for higher public API quotas\",\"isSecret\":true,\"name\":\"GITHUB_TOKEN\"},{\"description\":\"Optional email address for Crossref polite-pool routing\",\"name\":\"CROSSREF_MAILTO\"},{\"description\":\"Optional Brave Search API key\",\"isSecret\":true,\"name\":\"BRAVE_SEARCH_API_KEY\"}]}]",
+    "url": "https://divyanshu-iitian.github.io/SearchForge/",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.dizpers/polystrike",
+    "title": "Polystrike",
+    "body": "Live Elon Musk & Ted Cruz tweet feed, tweet counters, and Polymarket tweet-count market data.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://polystrike.xyz/mcp\",\"headers\":[{\"description\":\"Optional. The free tier is keyless and delayed 30 minutes (counters, deltas, market prices); a Data key (ps_pro_...) unlocks live data and history. $29/month at https://polystrike.xyz/#pricing\",\"isSecret\":true,\"name\":\"x-api-key\"}]},{\"type\":\"sse\",\"url\":\"https://polystrike.xyz/mcp/sse\",\"headers\":[{\"description\":\"Optional. The free tier is keyless and delayed 30 minutes (counters, deltas, market prices); a Data key (ps_pro_...) unlocks live data and history. $29/month at https://polystrike.xyz/#pricing\",\"isSecret\":true,\"name\":\"x-api-key\"}]}]",
+    "url": "https://polystrike.xyz",
+    "fetchedAt": "2026-09-16T08:45:45.626Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.documentero/documentero-mcp",
+    "title": "Documentero",
+    "body": "List Documentero templates, inspect field schemas, and generate Word/PDF/Excel documents.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@documentero/mcp\",\"version\":\"0.1.2\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Company API key from Documentero Account settings\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"DOCUMENTERO_API_KEY\"},{\"description\":\"Optional Cloud API base URL (default: https://app.documentero.com/api)\",\"format\":\"string\",\"name\":\"DOCUMENTERO_BASE_URL\"}]}]",
+    "url": "https://www.documentero.com",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.drhelius/gearboy",
+    "title": "Gearboy MCP Server",
+    "body": "MCP server for Gearboy Nintendo Game Boy / Game Boy Color emulator\nVersion: 3.8.15\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"1deeed7842c1635ebd5c21f4db2bebf85abf72afbe9e8d416a2866b710cc9046\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-macos-x64.mcpb\",\"fileSha256\":\"730ee0e325c7e26bfba7544a913315e4594c6c7c7f9dda362fdf39c462d500ed\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"2cc2ec8aa19f95bae25d09e8fd397055f33db2bcd6d8d59e32f7424c448d1072\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-windows-x64.mcpb\",\"fileSha256\":\"624d628a7f7ccec3abee97ea497ebd6230c218252e7d28fb8b95684435e12fa2\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-linux-x64.mcpb\",\"fileSha256\":\"dd3a5bf69e8cd4c94ba77c2d05dc1f86846ddb36e34511dc065698e0037ebd91\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearboy/releases/download/3.8.15/Gearboy-3.8.15-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"d2ddf7ff6eaf4a4df8d065f713b87dda9c18eaa1505eb143e4f19e973b8606e5\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/drhelius/gearboy",
+    "fetchedAt": "2026-09-02T08:02:33.709Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.drhelius/gearcoleco",
+    "title": "Gearcoleco MCP Server",
+    "body": "MCP server for Gearcoleco ColecoVision emulator\nVersion: 1.6.13\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"86ec61e78fce941c25638adc2f8f3ff687954cda52b4b157c3c3da9197f4c5f3\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-macos-x64.mcpb\",\"fileSha256\":\"7f09876685abc165d4661462f817c8e2d2a32bf99f25ab71890bb9c228aefbc6\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"c332577f06d8bc98b00fdd02e95742ed9169166eff3722c7a9105d940d4fe4d6\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-windows-x64.mcpb\",\"fileSha256\":\"2883a8ce2cb64c5926cb9af4bf46913764aa2fcde38cbd4eb2a4f53af75f9f26\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-linux-x64.mcpb\",\"fileSha256\":\"70e8481536e04b8c5025f2e21b4a5fccb396241b689eb97e84e92895e2793e82\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearcoleco/releases/download/1.6.13/Gearcoleco-1.6.13-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"c465a322f8d7b62d25d22ee923fcb52f0592820012986d598251c5cc17c307c3\",\"transport\":{\"type\"",
+    "url": "https://github.com/drhelius/gearcoleco",
+    "fetchedAt": "2026-09-02T08:02:33.709Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.drhelius/geargrafx",
+    "title": "Geargrafx MCP Server",
+    "body": "MCP server for Geargrafx PC Engine / TurboGrafx-16 emulator\nVersion: 1.7.22\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"80e97ffb0ba821c1bfb83a3ae70671a21b201f30ff91f6d1e22ae3c9ae50ff68\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-macos-x64.mcpb\",\"fileSha256\":\"9e8dd3e54806eeda3d18de931a44edf3b97f757aef1777f91b5f0ff46a0be1a7\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"06e3651e32e5d375f658ebfd17add4f343b02408fd135d29c2dbb263aea39f84\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-windows-x64.mcpb\",\"fileSha256\":\"6e89064c720e2cefefe56376368607d01f7295c8b6bec99e5932599b0efffcf6\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-linux-x64.mcpb\",\"fileSha256\":\"a9cf0c79a99c4a0bbfeb466a634948913e4fe0526aed4aeb82b38acc11a9b46c\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/geargrafx/releases/download/1.7.22/Geargrafx-1.7.22-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"dadc5326ce5a95ed108bf3491baed9f327e65d8d83893a5acfb3c2d660fb96a5\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/drhelius/geargrafx",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.drhelius/gearlynx",
+    "title": "Gearlynx MCP Server",
+    "body": "MCP server for Gearlynx Atari Lynx emulator\nVersion: 1.2.31\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"17ab6e00e3cad8ba961ca327010fe32ec1505134667ef184a09f4d7200e8c44c\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-macos-x64.mcpb\",\"fileSha256\":\"56c398e1176008a3ac42ebcc87c58fb78c7cbb949359878554d60885963ac58c\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"7db805ab19faa8db153ca28e7e1947ecab416aaff07454e5ccdc47b6826ad2e5\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-windows-x64.mcpb\",\"fileSha256\":\"be90e679577ee3aeabc252c7499d50201c83647931054116f98f55563aa5ccce\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-linux-x64.mcpb\",\"fileSha256\":\"c28a115ea198967cbcd8d6f039a0a1751ea3437923a8403218e700032c2ad52c\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearlynx/releases/download/1.2.31/Gearlynx-1.2.31-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"8db012f99e4dbc588cd9d9f956f5a300d48fba249628ea36225f2c5e6a39f867\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.drhelius%2Fgearlynx",
+    "fetchedAt": "2026-09-02T08:02:33.709Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.drhelius/gearsystem",
+    "title": "Gearsystem MCP Server",
+    "body": "MCP server for Gearsystem Sega Master System / Game Gear / SG-1000 emulator\nVersion: 3.9.18\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-macos-arm64.mcpb\",\"fileSha256\":\"3651d702461c99a7edca1cf197de135c752c67e1d53338373e11eda12ac4f6a6\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-macos-x64.mcpb\",\"fileSha256\":\"500a0a96f815856972ba4ec77948acfc62758d53ef67e99460ce2b893d293779\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-windows-arm64.mcpb\",\"fileSha256\":\"f117a1c377cd779022f7c3aa4dc7dcf2ea25081a9d7204a6901e9a45232b25f9\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-windows-x64.mcpb\",\"fileSha256\":\"51a98610d05e42f58e8720fdb8558e0adcb0dd0522620256e2b924e9160da8ad\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-linux-x64.mcpb\",\"fileSha256\":\"4c02ae55ea6e69869325dd0841a41d1ada5439403fda601b28a78003ae30cf0d\",\"transport\":{\"type\":\"stdio\"}},{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/drhelius/gearsystem/releases/download/3.9.18/Gearsystem-3.9.18-mcpb-linux-arm64.mcpb\",\"fileSha256\":\"644b40c6c685c487594d397cb237b175fb9f81fd19aa3d0f651eaf73567cefa3\",\"transport\":{\"type\"",
+    "url": "https://github.com/drhelius/gearsystem",
+    "fetchedAt": "2026-09-02T08:02:33.709Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.droidrun/mobilerun",
+    "title": "io.github.droidrun/mobilerun",
+    "body": "Control real Android and iOS devices with LLM agents — tap, swipe, type, automate flows.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mobilerun.ai/v1/mcp\",\"headers\":[{\"description\":\"Bearer token — Mobilerun API key (dr_sk_...), from the app under AI & Agents.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://github.com/droidrun/mobilerun",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.elViRafa/memory-fabric",
+    "title": "Memory Fabric",
+    "body": "File-first, local-first MCP memory for AI coding assistants: Markdown + YAML, no vector DB.\nVersion: 1.4.1\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"memory-fabric\",\"version\":\"1.4.1\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"value\":\"memory-fabric[mcp]==1.4.1\",\"type\":\"named\",\"name\":\"--from\"},{\"value\":\"memory-fabric-mcp\",\"type\":\"positional\"}]}]",
+    "url": "https://github.com/elViRafa/agentic-memory",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.elninyo-ops/baseline-mcp",
+    "title": "io.github.elninyo-ops/baseline-mcp",
+    "body": "Statistically rigorous weather and climate context: forecast plus 35-year historical ranking.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"baseline-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of the Baseline API instance to query.\",\"isRequired\":true,\"format\":\"string\",\"name\":\"BASELINE_API_URL\"},{\"description\":\"API key for the Baseline API. Contact chadmcnutt@gmail.com for a key -- self-serve signup is not yet available.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BASELINE_API_KEY\"}]}]",
+    "url": "https://github.com/elninyo-ops/baseline-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.fathyshalaby/specky",
+    "title": "io.github.fathyshalaby/specky",
+    "body": "Turn raw customer feedback into evidence-cited specs (free, no key) plus 16 PM tools.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.specky.space/api/mcp\"}]",
+    "url": "https://specky.space/for-agents",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.forcedreamai/mcp-server",
+    "title": "io.github.forcedreamai/mcp-server",
+    "body": "Discover, invoke, and trustlessly verify ForceDream AI agents with cryptographic proofs. 17 tools.\nVersion: 0.12.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.forcedream.ai/v1/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@forcedream/mcp-server\",\"version\":\"0.12.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Your ForceDream billing key (fd_live_...). Required only to invoke agents, which spends your balance. Omit to use search_agents and verify_proof only, which need no key.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"FD_API_KEY\"}]}]",
+    "url": "https://github.com/forcedreamai/forcedream-mcp",
+    "fetchedAt": "2026-08-22T04:04:48.747Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.ganapativs/microcharts",
+    "title": "io.github.ganapativs/microcharts",
+    "body": "Find, wire, and render microcharts — word-sized React charts with generated alt text.\nVersion: 0.1.17\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@microcharts/mcp\",\"version\":\"0.1.17\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://microcharts.dev/docs/mcp",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.githubscum/lotor",
+    "title": "Lotor",
+    "body": "A local receipt and approval gate for AI agent sessions. The agent can act, but it cannot sign.\nVersion: 1.0.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"lotor-mcp\",\"version\":\"1.0.2\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://ikeanalytics.com/lotor/",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.groupdocs-conversion/groupdocs-conversion-mcp",
+    "title": "io.github.groupdocs-conversion/groupdocs-conversion-mcp",
+    "body": "MCP server for GroupDocs.Conversion — convert, inspect, and list supported formats via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Conversion.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
+    "url": "https://github.com/groupdocs-conversion/GroupDocs.Conversion.Mcp",
+    "fetchedAt": "2026-09-05T07:47:19.143Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.groupdocs-markdown/groupdocs-markdown-mcp",
+    "title": "io.github.groupdocs-markdown/groupdocs-markdown-mcp",
+    "body": "MCP server for GroupDocs.Markdown — convert documents to Markdown via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Markdown.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
+    "url": "https://github.com/groupdocs-markdown/GroupDocs.Markdown.Mcp",
+    "fetchedAt": "2026-09-05T07:47:19.143Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.groupdocs-metadata/groupdocs-metadata-mcp",
+    "title": "io.github.groupdocs-metadata/groupdocs-metadata-mcp",
+    "body": "MCP server for GroupDocs.Metadata — read, search, write, and remove document metadata.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Metadata.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
+    "url": "https://github.com/groupdocs-metadata/GroupDocs.Metadata.Mcp",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.groupdocs-parser/groupdocs-parser-mcp",
+    "title": "io.github.groupdocs-parser/groupdocs-parser-mcp",
+    "body": "MCP server for GroupDocs.Parser — extract text, images, metadata, tables, barcodes via AI.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/groupdocs-parser/parser-net-mcp:26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"}]}]",
+    "url": "https://github.com/groupdocs-parser/GroupDocs.Parser.Mcp",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.groupdocs-redaction/groupdocs-redaction-mcp",
+    "title": "io.github.groupdocs-redaction/groupdocs-redaction-mcp",
+    "body": "MCP server for GroupDocs.Redaction — redact text, metadata, annotations, image areas via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Redaction.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
+    "url": "https://github.com/groupdocs-redaction/GroupDocs.Redaction.Mcp",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.groupdocs-signature/groupdocs-signature-mcp",
+    "title": "io.github.groupdocs-signature/groupdocs-signature-mcp",
+    "body": "MCP server for GroupDocs.Signature — sign, search and verify document signatures via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Signature.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
+    "url": "https://github.com/groupdocs-signature/GroupDocs.Signature.Mcp",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.groupdocs-total/groupdocs-total-mcp",
+    "title": "io.github.groupdocs-total/groupdocs-total-mcp",
+    "body": "MCP server for GroupDocs.Total — annotate, sign, convert, watermark, parse, redact documents via AI.\nVersion: 26.7.3\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/groupdocs-total/total-net-mcp:26.7.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"}]}]",
+    "url": "https://github.com/groupdocs-total/GroupDocs.Total.Mcp",
+    "fetchedAt": "2026-07-26T06:21:10.903Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.groupdocs-viewer/groupdocs-viewer-mcp",
+    "title": "io.github.groupdocs-viewer/groupdocs-viewer-mcp",
+    "body": "MCP server for GroupDocs.Viewer — render pages as PNG and inspect view info via AI agents.\nVersion: 26.9.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"GroupDocs.Viewer.Mcp\",\"version\":\"26.9.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"value\":\"{storage_path}\",\"variables\":{\"storage_path\":{\"description\":\"Base folder for input and output files. Defaults to the current working directory.\"}},\"name\":\"GROUPDOCS_MCP_STORAGE_PATH\"},{\"value\":\"{output_path}\",\"variables\":{\"output_path\":{\"description\":\"Optional — separate folder for output files. Defaults to GROUPDOCS_MCP_STORAGE_PATH.\"}},\"name\":\"GROUPDOCS_MCP_OUTPUT_PATH\"},{\"value\":\"{license_path}\",\"variables\":{\"license_path\":{\"description\":\"Path to the GroupDocs.Total.lic license file. Omit to run in evaluation mode.\"}},\"name\":\"GROUPDOCS_LICENSE_PATH\"},{\"value\":\"{metered_public_key}\",\"variables\":{\"metered_public_key\":{\"description\":\"Metered (pay-per-use) public key. Requires GROUPDOCS_METERED_PRIVATE_KEY as well. Takes precedence over GROUPDOCS_LICENSE_PATH. Metered mode reports usage to GroupDocs servers, so it needs outbound connectivity.\"}},\"name\":\"GROUPDOCS_METERED_PUBLIC_KEY\"},{\"value\":\"{metered_private_key}\",\"variables\":{\"metered_private_key\":{\"description\":\"Metered (pay-per-use) private key. Treat as a secret: supply it via an environment variable or a secret store, never hardcoded in a committed MCP client config.\",\"isSecret\":true}},\"name\":\"GROUPDOCS_METERED_PRIVATE_KEY\"}]}]",
+    "url": "https://github.com/groupdocs-viewer/GroupDocs.Viewer.Mcp",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.humanity4ai/project-human",
+    "title": "io.github.humanity4ai/project-human",
+    "body": "9 humanity skills for AI agents — crisis detection, WCAG 2.2, empathy, cultural sensitivity\nVersion: 1.0.6\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@humanity4ai/mcp-servers\",\"version\":\"1.0.6\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/humanity4ai/project_human",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.igorsaevets/page2ai-mcp",
+    "title": "Page2AI — Web to Markdown",
+    "body": "Convert web pages or HTML to clean Markdown for LLM context. Local, no external API calls.\nVersion: 0.2.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@page2ai/mcp\",\"version\":\"0.2.5\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/igorsaevets/page2ai-mcp#readme",
+    "fetchedAt": "2026-08-29T10:18:00.331Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.ilyautov/consilium-principis",
+    "title": "Consilium Principis",
+    "body": "AI advisory board (MCP): quotes verified word-for-word against public-domain texts, fail-closed\nVersion: 0.1.3\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/ilyautov/consilium-principis/releases/download/v0.1.3/consilium-principis.mcpb\",\"fileSha256\":\"9ceac586191e580e79e16169cfb5a933433a364d453a1b89b9902886843f44af\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/ilyautov/consilium-principis",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.invigil/invigil",
+    "title": "io.github.invigil/invigil",
+    "body": "Linters check your code. Invigil checks whether your repo is legible — to newcomers and AI agents.\nVersion: 1.7.1\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"invigil\",\"version\":\"1.7.1\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"value\":\"invigil[mcp]\",\"type\":\"named\",\"name\":\"--from\"}],\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}]}]",
+    "url": "https://github.com/invigil/invigil",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jaimenbell/bus-mcp",
+    "title": "io.github.jaimenbell/bus-mcp",
+    "body": "MCP server fronting a self-hosted coordination-bus HTTP API: post/read/claim/release/heartbeat.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"bus-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jaimenbell/bus-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jaimenbell/desktop-mcp",
+    "title": "io.github.jaimenbell/desktop-mcp",
+    "body": "Windows desktop-control MCP server: screenshot, window mgmt, mouse/keyboard input, recording.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"desktop-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jaimenbell/desktop-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jaimenbell/discord-mcp",
+    "title": "io.github.jaimenbell/discord-mcp",
+    "body": "MCP server for the Discord REST API: 5 read tools always on, 7 write tools env-gated, default off.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"jaimenbell-discord-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jaimenbell/discord-mcp",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jaimenbell/github-mcp",
+    "title": "io.github.jaimenbell/github-mcp",
+    "body": "MCP server for the GitHub REST API: issues, PRs, repos; read always on, write env-gated.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"jaimenbell-github-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jaimenbell/github-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jaimenbell/mcp-factory",
+    "title": "io.github.jaimenbell/mcp-factory",
+    "body": "Manifest-driven MCP server scaffolder and runtime hub for tool integrations.\nVersion: 0.1.3\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"jaimenbell-mcp-factory\",\"version\":\"0.1.3\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jaimenbell/MCP-Factory",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jaimenbell/rag-mcp",
+    "title": "io.github.jaimenbell/rag-mcp",
+    "body": "Minimal RAG-over-a-corpus MCP retrieval: search_knowledge returns cited chunks. Local embeddings.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"jaimenbell-rag-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jaimenbell/rag-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jaimenbell/rails-mcp",
+    "title": "io.github.jaimenbell/rails-mcp",
+    "body": "Default-deny action registry, append-only spend ledger, and human sign-off audit trail (MCP tools).\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"rails-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jaimenbell/rails-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jaimenbell/vllm-ops-mcp",
+    "title": "io.github.jaimenbell/vllm-ops-mcp",
+    "body": "Read-only ops/health MCP server for a local vLLM instance: health tiers, GPU/VRAM, service status.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"vllm-ops-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jaimenbell/vllm-ops-mcp",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jfarcand/mirroir-mcp",
+    "title": "io.github.jfarcand/mirroir-mcp",
+    "body": "Control a real iPhone through macOS iPhone Mirroring: screenshot, tap, swipe, type.\nVersion: 0.39.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"mirroir-mcp\",\"version\":\"0.39.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/jfarcand/mirroir-mcp",
+    "fetchedAt": "2026-09-01T08:49:57.248Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jonny-1812/corebee",
+    "title": "Corebee AI Customer Support",
+    "body": "Run AI customer support from your terminal: conversations, knowledge base, and chat widget.\nVersion: 2.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://corebee.ai/api/v1/mcp/stream\"}]",
+    "url": "https://corebee.ai",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.kensaurus/mushi-mushi",
+    "title": "Mushi Mushi",
+    "body": "Bug translation for vibe coders: plain-English diagnosis + paste-ready fix in your AI coding agent\nVersion: 0.20.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://dxptnwrhwsqckaftyymj.supabase.co/functions/v1/mcp\",\"headers\":[{\"description\":\"Bearer <MUSHI_API_KEY> — a project API key with the mcp:read (and optionally mcp:write) scope.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@mushi-mushi/mcp\",\"version\":\"0.20.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Project ingest/admin API key minted in the Mushi console (Settings → API Keys). Scope mcp:read for triage, mcp:write to dispatch fixes.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"MUSHI_API_KEY\"},{\"description\":\"Project UUID the key belongs to. Optional for single-project account keys.\",\"name\":\"MUSHI_PROJECT_ID\"},{\"description\":\"Override the API base URL (self-hosted deployments). Defaults to the hosted Mushi Cloud endpoint.\",\"name\":\"MUSHI_API_ENDPOINT\"},{\"description\":\"Comma-separated feature groups to expose (triage,fixes,inventory,setup,docs). Defaults to the lean catalog; use 'all' for the full tool set.\",\"name\":\"MUSHI_FEATURES\"}]}]",
+    "url": "https://kensaur.us/mushi-mushi/docs/quickstart/mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.kewelin/ecpro-mcp",
+    "title": "io.github.kewelin/ecpro-mcp",
+    "body": "台灣電商情報與商品比價：跨通路查 momo、PChome、品牌官網即時價格與歷史最低價、偵測網站電商技術、搜尋電商知識庫。資料來源 ecpro.tw。\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ecpro.tw/mcp\"}]",
+    "url": "https://ecpro.tw/price/",
+    "fetchedAt": "2026-07-25T06:02:04.982Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.adoraads/beauty",
+    "title": "ai.adoraads/beauty",
+    "body": "AI-native beauty ads, sponsored product discovery, and brand recommendations.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.adoraads.ai/beauty\"}]",
+    "url": "https://github.com/DIGIBIZ360-COM/adoraads",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.adplane/google-ads",
+    "title": "ai.adplane/google-ads",
+    "body": "Google Ads reporting and campaign management. Everything it creates starts paused.\nVersion: 1.29.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.adplane.ai\"}]",
+    "url": "https://adplane.ai",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.memoryrouter/memoryrouter",
+    "title": "MemoryRouter",
+    "body": "Persistent AI memory shared across Claude, ChatGPT, coding agents, and compatible MCP clients.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.memoryrouter.ai/mcp\"}]",
+    "url": "https://memoryrouter.ai",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.note1/mcp",
+    "title": "note1.ai",
+    "body": "Search meetings, export summaries and transcripts, and manage recordings from any AI tool.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.note1.ai/mcp\"}]",
+    "url": "https://note1.ai/docs/mcp-server",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.rise2/figlime",
+    "title": "ai.rise2/figlime",
+    "body": "Read Figlime jobs, screening questions, and candidate responses; draft screening questions.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app.rise2.ai/mcp\"}]",
+    "url": "https://app.rise2.ai/docs/mcp",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "app.meistron/meistron",
+    "title": "Meistron",
+    "body": "Auftraege, Rechnungen, Material und Zeiten eines Handwerksbetriebs abfragen und pflegen.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://meistron.app/api/mcp\"}]",
+    "url": "https://meistron.app/ki-zugang",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "app.promptcoin/giveaway-raffle-winner-picker",
+    "title": "Giveaway & Raffle Winner Picker (provably fair)",
+    "body": "Pick giveaway and raffle winners nobody can rig — verifiable by anyone, no API key.\nVersion: 1.0.4\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"provably-fair-mcp\",\"version\":\"1.0.4\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://promptcoin.app/fair",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "app.promptcoin/provably-fair",
+    "title": "Provably Fair",
+    "body": "Pick giveaway and raffle winners nobody can rig — verifiable by anyone, no API key.\nVersion: 1.0.1\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"provably-fair-mcp\",\"version\":\"1.0.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://promptcoin.app/fair",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "clinic.enmente/mcp",
+    "title": "clinic.enmente/mcp",
+    "body": "Chilean online mental-health clinic (Spanish): articles, professionals, availability, tests.\nVersion: 0.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://enmente.clinic/api/mcp/\"}]",
+    "url": "https://enmente.clinic",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.83blue.upload/transfer",
+    "title": "com.83blue.upload/transfer",
+    "body": "Free no-signup file transfer + static site hosting for AI agents. Share or publish by URL.\nVersion: 1.0.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://upload.83blue.com/mcp\"}]",
+    "url": "https://upload.83blue.com/",
+    "fetchedAt": "2026-09-15T08:52:02.662Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.agentfenster/agentfenster",
+    "title": "agentfenster",
+    "body": "Windows GUI automation on a hidden second desktop, driven from Claude Code over MCP.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"agentfenster-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://agentfenster.com/mcp",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.ainetcafe/netcafe-almanac",
+    "title": "com.ainetcafe/netcafe-almanac",
+    "body": "Chinese almanac: lunar calendar, BaZi 八字, daily 宜忌, lucky-day picker, public holidays.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ainetcafe.com/mcp/almanac?s=registry\"}]",
+    "url": "https://ainetcafe.com/tools",
+    "fetchedAt": "2026-08-14T05:14:02.340Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.ainetcafe/netcafe-live-data",
+    "title": "com.ainetcafe/netcafe-live-data",
+    "body": "Live data: weather, air quality, FX, CN/HK/US stocks, IP geo, domain, SSL, China reachability.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ainetcafe.com/mcp/data?s=registry\"}]",
+    "url": "https://ainetcafe.com/tools",
+    "fetchedAt": "2026-08-14T05:14:02.340Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.aiwebsitepipeline/indexnow-toolkit",
+    "title": "com.aiwebsitepipeline/indexnow-toolkit",
+    "body": "Build and validate IndexNow payloads, check key files, and diff sitemaps into a submission list.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://indexnow-toolkit-mcp.lipmichal.workers.dev/mcp\"}]",
+    "url": "https://aiwebsitepipeline.com/method.html",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.appfigures/mcp",
+    "title": "Appfigures",
+    "body": "Access your app analytics, ASO tools, and app market intelligence with Appfigures.\nVersion: 3.0.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@appfigures/cli\",\"version\":\"3.0.0\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"Appfigures personal access token. Optional; omit it to sign in with `af auth login` instead. Read more at https://help.appfigures.com/en/article/1chf6wf\",\"isSecret\":true,\"name\":\"APPFIGURES_API_KEY\"}]}]",
+    "url": "https://appfigures.com",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.asharehub/mcp",
+    "title": "AShareHub — Chinese A-Share Market Data",
+    "body": "Cloud MCP server for Chinese A-share and ETF market data, news, financials and capital flows.\nVersion: 0.1.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://asharehub.com/mcp/sse?api_key={api_key}\",\"variables\":{\"api_key\":{\"description\":\"AShareHub API key from the official website\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true}}}]",
+    "url": "https://asharehub.com/en/docs#mcp-setup",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.bankstatementsheet/bank-statement-sheet-mcp",
+    "title": "Bank Statement Sheet",
+    "body": "Convert PDF bank statements into transactions that arrive with a pass/fail reconciliation verdict.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"bank-statement-sheet-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional API key from bankstatementsheet.com/dashboard. Without it the free anonymous tier applies (5 conversions/month, Excel and CSV).\",\"format\":\"string\",\"isSecret\":true,\"name\":\"BSS_API_KEY\"},{\"description\":\"Directories PDFs may be read from (path-delimited). Defaults to the working directory and ~/Downloads.\",\"format\":\"string\",\"name\":\"BSS_ALLOWED_DIRS\"},{\"description\":\"Maximum PDF size in MB before upload is refused locally. Default 50.\",\"format\":\"number\",\"name\":\"BSS_MAX_FILE_MB\"}]}]",
+    "url": "https://bankstatementsheet.com",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.beforevibe/mcp",
+    "title": "BEFOREVIBE",
+    "body": "PRD, logo, and AI UI mockups from any app idea — PRD free, logo 1 credit, screens 1 credit each.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://beforevibe.com/api/mcp\"}]",
+    "url": "https://beforevibe.com/mcp",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.built2winweb/built2winweb",
+    "title": "BuiltToWinWeb",
+    "body": "Search BuiltToWinWeb's services, industries and blog. Flat-fee custom PHP sites for small business.\nVersion: 2.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://built2winweb.com/mcp\"}]",
+    "url": "https://built2winweb.com",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.cytado/cytado",
+    "title": "com.cytado/cytado",
+    "body": "Real academic citations with printed page numbers - verified sources or an honest not-found.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cytado.com/api/mcp\"}]",
+    "url": "https://cytado.com/claude-mcp-citations",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.danielsdesignstudio/mirror-ai-citability",
+    "title": "The Mirror System — AI Citability",
+    "body": "Request a Brand Discovery Record: the human-approved facts AI cites. One tool, then a person.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.danielsdesignstudio.com/mcp\"}]",
+    "url": "https://danielsdesignstudio.com/agents",
+    "fetchedAt": "2026-09-20T08:44:37.596Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.focusgts/aep",
+    "title": "com.focusgts/aep",
+    "body": "Full-CRUD server for AEP, Journey Optimizer and CJA. 61 tools from one OAuth credential.\nVersion: 0.11.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@focusgts/aep-mcp-server\",\"version\":\"0.11.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Adobe I/O client ID from an OAuth Server-to-Server credential in the Adobe Developer Console.\",\"isRequired\":true,\"name\":\"AEP_CLIENT_ID\"},{\"description\":\"Adobe I/O client secret paired with AEP_CLIENT_ID.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"AEP_CLIENT_SECRET\"},{\"description\":\"Adobe IMS organization ID, in the form xxxxxxxxx@AdobeOrg.\",\"isRequired\":true,\"name\":\"AEP_ORG_ID\"},{\"description\":\"AEP sandbox to scope every call to. Defaults to 'prod'. Use a development sandbox to enable write operations.\",\"default\":\"prod\",\"name\":\"AEP_SANDBOX_NAME\"},{\"description\":\"Write posture: 'read-only' (no mutation anywhere), 'safe' (default — writes only in sandboxes Adobe classifies as development), or 'production' (writes anywhere). Reads are never restricted.\",\"default\":\"safe\",\"name\":\"AEP_MODE\"},{\"description\":\"Pino log level. Logs go to stderr; stdout is reserved for the MCP JSON-RPC stream.\",\"default\":\"info\",\"name\":\"LOG_LEVEL\"}]}]",
+    "url": "https://github.com/Focus-GTS/aep-mcp-server",
+    "fetchedAt": "2026-08-31T09:58:53.166Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.handsofflinks/link-followability",
+    "title": "com.handsofflinks/link-followability",
+    "body": "Check if a link on a live page is followable: rel tokens, meta robots and X-Robots-Tag\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://handsofflinks-mcp.lipmichal.workers.dev\"}]",
+    "url": "https://handsofflinks.com/",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.instaseer/mcp",
+    "title": "InstaSeer",
+    "body": "Use saved Instagram reports in AI assistants; compare evidence and prepare owner-reviewed research.\nVersion: 1.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.instaseer.com/mcp\"}]",
+    "url": "https://www.instaseer.com/mcp",
+    "fetchedAt": "2026-09-16T08:45:45.626Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.iridiumhqmcp/iridium",
+    "title": "Iridium",
+    "body": "LinkedIn outreach, commenting, scheduling, and data via Claude and human approval gates.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.iridiumhqmcp.com/mcp\"}]",
+    "url": "https://iridiumhqmcp.com",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.localcan/mcp",
+    "title": "LocalCan",
+    "body": "Give AI agents Public URLs (tunnels), captured HTTP traffic, Snapshots, and access control.\nVersion: 1.0.0",
+    "url": "https://www.localcan.com/docs/ai-agents/mcp",
+    "fetchedAt": "2026-08-09T04:44:58.121Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.logospell/logospell",
+    "title": "Logospell",
+    "body": "AI-agent image generation: cohesive sets & illustrations. Resize a set or export icons, free.\nVersion: 3.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.logospell.com/mcp\",\"headers\":[{\"description\":\"Bearer <your Logospell API key>. Get a free key at https://logospell.com; free starter credits, no card required.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://logospell.com",
+    "fetchedAt": "2026-09-02T08:02:33.709Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.luneresearch/lune",
+    "title": "Lune Research",
+    "body": "Search peer-reviewed papers and research methodology guidance from your AI agent.\nVersion: 2.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.luneresearch.com\",\"headers\":[{\"description\":\"Bearer token. Create a Lune PAT at https://luneresearch.com/dashboard/settings/credentials, or let an OAuth-capable MCP client sign in through server discovery.\",\"isRequired\":true,\"value\":\"Bearer {api_key}\",\"isSecret\":true,\"variables\":{\"api_key\":{\"description\":\"Lune personal access token (lune_...).\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true}},\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@retrograde-labs/lune-mcp-server\",\"version\":\"2.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Lune personal access token. Generate one at https://luneresearch.com/dashboard/settings/credentials.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"LUNE_API_KEY\"}]}]",
+    "url": "https://luneresearch.com",
+    "fetchedAt": "2026-08-25T04:07:39.706Z"
   }
 ]
