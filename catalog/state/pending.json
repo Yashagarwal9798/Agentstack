@@ -1,966 +1,6 @@
 [
   {
     "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/cpf_receita-mcp",
-    "title": "Cadastro PF + Receita Federal",
-    "body": "Registration data for an individual with the Federal Revenue status, from a CPF. Platform-hosted, no\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_cpf_receita\"}]",
-    "url": "https://github.com/mcp-dir/cpf_receita-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/credito_dossie-mcp",
-    "title": "Dossiê de Crédito Completo",
-    "body": "Full credit dossier of a person or company: registration data, risk score, and delinquencies. Platfo\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_dossie\"}]",
-    "url": "https://github.com/mcp-dir/credito_dossie-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/credito_negativo-mcp",
-    "title": "Detalhamento Negativo",
-    "body": "Delinquencies of a person or company: protests, lawsuits, recoveries, and other restrictions. Platfo\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_negativo\"}]",
-    "url": "https://github.com/mcp-dir/credito_negativo-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/credito_pf-mcp",
-    "title": "Análise de Crédito PF",
-    "body": "Consumer credit check from a CPF: registration data, score, delinquencies, and history. Platform-hos\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_pf\"}]",
-    "url": "https://github.com/mcp-dir/credito_pf-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/credito_pf_completo-mcp",
-    "title": "Análise de Crédito PF Completa",
-    "body": "Full consumer credit analysis from a CPF: registration data, score, delinquencies, and history. Plat\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_pf_completo\"}]",
-    "url": "https://github.com/mcp-dir/credito_pf_completo-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/credito_pj_limite-mcp",
-    "title": "Limite de Crédito PJ",
-    "body": "Full business credit analysis from a CNPJ, with a suggested credit limit. Platform-hosted, no creden\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_pj_limite\"}]",
-    "url": "https://github.com/mcp-dir/credito_pj_limite-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/credito_pj_risco-mcp",
-    "title": "Risco de Crédito PJ",
-    "body": "Business credit risk indicator from a CNPJ, for safer analysis. Platform-hosted, no credentials, pay\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_pj_risco\"}]",
-    "url": "https://github.com/mcp-dir/credito_pj_risco-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/credito_score-mcp",
-    "title": "Score de Crédito",
-    "body": "Credit score and risk analysis of a person or company. Platform-hosted, no credentials, pay per quer\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_score\"}]",
-    "url": "https://github.com/mcp-dir/credito_score-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/cvm-mcp",
-    "title": "CVM (Valores Mobiliários)",
-    "body": "Looks up the registration of a person or company at the Brazilian Securities Commission (CVM) from t\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_cvm\"}]",
-    "url": "https://github.com/mcp-dir/cvm-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/cvm_processos_sancionadores-mcp",
-    "title": "CVM Processos Sancionadores",
-    "body": "Looks up enforcement (sanctioning) administrative proceedings for a person or company at the CVM fro\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_cvm_processos_sancionadores\"}]",
-    "url": "https://github.com/mcp-dir/cvm_processos_sancionadores-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/dap_pronaf_pf-mcp",
-    "title": "DAP Pronaf PF",
-    "body": "Looks up the Pronaf eligibility declaration (DAP) of an individual from the CPF and date of birth. P\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_dap_pronaf_pf\"}]",
-    "url": "https://github.com/mcp-dir/dap_pronaf_pf-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/dap_pronaf_pj-mcp",
-    "title": "DAP Pronaf PJ",
-    "body": "Looks up the Pronaf eligibility declaration (DAP) of a company from the CNPJ. Platform-hosted, no cr\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_dap_pronaf_pj\"}]",
-    "url": "https://github.com/mcp-dir/dap_pronaf_pj-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/enriquecimento_lead-mcp",
-    "title": "Enriquecimento de Lead",
-    "body": "Enriches a contact from a mobile number and email, returning the associated registration data. Platf\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_enriquecimento_lead\"}]",
-    "url": "https://github.com/mcp-dir/enriquecimento_lead-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/fbi_most_wanted-mcp",
-    "title": "FBI Most Wanted",
-    "body": "Checks whether a name is on the FBI Most Wanted list, for compliance and AML due diligence. Platform\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_fbi_most_wanted\"}]",
-    "url": "https://github.com/mcp-dir/fbi_most_wanted-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/fgts_regularidade-mcp",
-    "title": "Regularidade FGTS (CRF)",
-    "body": "Issues the FGTS employer clearance certificate (CRF) from the CNPJ. Platform-hosted, no credentials,\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_fgts_regularidade\"}]",
-    "url": "https://github.com/mcp-dir/fgts_regularidade-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/fincen-mcp",
-    "title": "FinCEN (EUA)",
-    "body": "Checks whether a name is on the FinCEN (US financial crimes) lists, for compliance and AML due dilig\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_fincen\"}]",
-    "url": "https://github.com/mcp-dir/fincen-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/garantia_safra-mcp",
-    "title": "Garantia Safra",
-    "body": "Checks a farmer's link with the Garantia Safra program from the CPF and NIS. Platform-hosted, no cre\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_garantia_safra\"}]",
-    "url": "https://github.com/mcp-dir/garantia_safra-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/ibama_autuacoes-mcp",
-    "title": "IBAMA Autuações",
-    "body": "Looks up IBAMA environmental fines for a person or company from the CPF or CNPJ. Platform-hosted, no\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ibama_autuacoes\"}]",
-    "url": "https://github.com/mcp-dir/ibama_autuacoes-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/ibama_debitos-mcp",
-    "title": "IBAMA Débitos",
-    "body": "Issues the environmental debt clearance from IBAMA for a person or company from the CPF or CNPJ. Pla\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ibama_debitos\"}]",
-    "url": "https://github.com/mcp-dir/ibama_debitos-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/ibama_embargos-mcp",
-    "title": "IBAMA Embargos",
-    "body": "Issues the environmental embargo clearance from IBAMA for a person or company from the CPF or CNPJ. \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ibama_embargos\"}]",
-    "url": "https://github.com/mcp-dir/ibama_embargos-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/ibama_regularidade-mcp",
-    "title": "IBAMA Regularidade",
-    "body": "Issues the environmental compliance certificate from IBAMA for a person or company from the CPF or C\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ibama_regularidade\"}]",
-    "url": "https://github.com/mcp-dir/ibama_regularidade-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/identidade_ar-mcp",
-    "title": "Verificação de Identidade (Argentina)",
-    "body": "Verifies a person's identity in Argentina by matching the provided data (DNI, name, birth, address).\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_identidade_ar\"}]",
-    "url": "https://github.com/mcp-dir/identidade_ar-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/interpol-mcp",
-    "title": "Interpol",
-    "body": "Checks whether a name is on Interpol notices, from the name, surname, and date of birth, for complia\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_interpol\"}]",
-    "url": "https://github.com/mcp-dir/interpol-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/mandados_prisao-mcp",
-    "title": "Mandados de Prisão (CNJ)",
-    "body": "Checks for open arrest warrants in the CNJ national database for a person, from the CPF and name. Pl\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mandados_prisao\"}]",
-    "url": "https://github.com/mcp-dir/mandados_prisao-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/mpf_certidao-mcp",
-    "title": "Certidão MPF",
-    "body": "Issues the clearance certificate from the Federal Public Prosecutor's Office (MPF) for a person or c\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mpf_certidao\"}]",
-    "url": "https://github.com/mcp-dir/mpf_certidao-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/mpmt_procedimentos-mcp",
-    "title": "MP Mato Grosso (Procedimentos)",
-    "body": "Looks up out-of-court investigative proceedings of the Mato Grosso Public Prosecutor's Office for a \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mpmt_procedimentos\"}]",
-    "url": "https://github.com/mcp-dir/mpmt_procedimentos-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/mpt-mcp",
-    "title": "MPT (Ministério Público do Trabalho)",
-    "body": "Looks up records of a person or company at the Labor Public Prosecutor's Office (MPT) from the CPF o\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mpt\"}]",
-    "url": "https://github.com/mcp-dir/mpt-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/mte_infracoes-mcp",
-    "title": "Infrações Trabalhistas (MTE)",
-    "body": "Looks up labor violations recorded by the Ministry of Labor for a person or company from the CPF or \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mte_infracoes\"}]",
-    "url": "https://github.com/mcp-dir/mte_infracoes-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/nfe_completa-mcp",
-    "title": "NFe Completa",
-    "body": "Looks up the full data of an electronic invoice (NFe) from the access key. Platform-hosted, no crede\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_nfe_completa\"}]",
-    "url": "https://github.com/mcp-dir/nfe_completa-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/nfe_inutilizacao-mcp",
-    "title": "NFe Inutilizações",
-    "body": "Looks up the electronic invoice numbering voidings for a company from the CNPJ and year. Platform-ho\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_nfe_inutilizacao\"}]",
-    "url": "https://github.com/mcp-dir/nfe_inutilizacao-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/oab_advogados-mcp",
-    "title": "OAB Cadastro de Advogados",
-    "body": "Looks up the national lawyer registry at the Brazilian Bar (OAB) by name and registration number. Pl\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_oab_advogados\"}]",
-    "url": "https://github.com/mcp-dir/oab_advogados-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/obito-mcp",
-    "title": "Óbito",
-    "body": "Checks for indication of death of a person from the CPF, in official databases. Platform-hosted, no \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_obito\"}]",
-    "url": "https://github.com/mcp-dir/obito-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/ofac-mcp",
-    "title": "OFAC (Sanções EUA)",
-    "body": "Checks whether a name is on OFAC (US) sanctions lists, including SDN and Non-SDN, for compliance and\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ofac\"}]",
-    "url": "https://github.com/mcp-dir/ofac-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/offshore_leaks-mcp",
-    "title": "Offshore Leaks (ICIJ)",
-    "body": "Checks whether a name appears in the ICIJ Offshore Leaks database (offshore structures), for complia\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_offshore_leaks\"}]",
-    "url": "https://github.com/mcp-dir/offshore_leaks-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/pep-mcp",
-    "title": "PEP (Pessoa Exposta Politicamente)",
-    "body": "Checks whether a person is a Politically Exposed Person (PEP) from the CPF, for compliance and AML d\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_pep\"}]",
-    "url": "https://github.com/mcp-dir/pep-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/pep_parentescos-mcp",
-    "title": "PEP Estendida (Parentescos)",
-    "body": "Checks whether a person is Politically Exposed (PEP) or is related to a PEP, from the CPF. Platform-\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_pep_parentescos\"}]",
-    "url": "https://github.com/mcp-dir/pep_parentescos-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/peti_trabalho_infantil-mcp",
-    "title": "PETI (Trabalho Infantil)",
-    "body": "Checks a person's link with the Child Labor Eradication Program (PETI) from the CPF and NIS. Platfor\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_peti_trabalho_infantil\"}]",
-    "url": "https://github.com/mcp-dir/peti_trabalho_infantil-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/pgfn_devedores-mcp",
-    "title": "Devedores da União (PGFN)",
-    "body": "Checks whether a person or company is on the federal debtors list (PGFN) from the CPF or CNPJ. Platf\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_pgfn_devedores\"}]",
-    "url": "https://github.com/mcp-dir/pgfn_devedores-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/pis-mcp",
-    "title": "PIS (Ministério do Trabalho)",
-    "body": "Looks up the PIS number and associated data for a person from the CPF, in the Labor Ministry base. P\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_pis\"}]",
-    "url": "https://github.com/mcp-dir/pis-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/prf_infracoes-mcp",
-    "title": "Infrações da PRF",
-    "body": "History of traffic fines recorded by Brazil's Federal Highway Police by RENAVAM, including canceled,\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_prf_infracoes\"}]",
-    "url": "https://github.com/mcp-dir/prf_infracoes-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/processos_judiciais_agrupada-mcp",
-    "title": "Processos Judiciais (Agrupada)",
-    "body": "Grouped lookup of a person's or company's lawsuits from the CPF or CNPJ, with a summary view by cour\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_processos_judiciais_agrupada\"}]",
-    "url": "https://github.com/mcp-dir/processos_judiciais_agrupada-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/processos_judiciais_completa-mcp",
-    "title": "Processos Judiciais (Completa)",
-    "body": "Full lookup of a person's or company's lawsuits from the CPF or CNPJ, with per-case detail. Platform\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_processos_judiciais_completa\"}]",
-    "url": "https://github.com/mcp-dir/processos_judiciais_completa-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/processos_judiciais_simplificada-mcp",
-    "title": "Processos Judiciais (Simplificada)",
-    "body": "Simplified lookup of a person's or company's lawsuits from the CPF or CNPJ. Platform-hosted, no cred\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_processos_judiciais_simplificada\"}]",
-    "url": "https://github.com/mcp-dir/processos_judiciais_simplificada-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/protestos_nacional-mcp",
-    "title": "Protestos Nacional",
-    "body": "Existence and details of protests for people and companies in registry offices across Brazil. Platfo\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_protestos_nacional\"}]",
-    "url": "https://github.com/mcp-dir/protestos_nacional-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/protestos_sp-mcp",
-    "title": "Protestos SP",
-    "body": "Existence and details of protests for people and companies in São Paulo state registry offices. Plat\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_protestos_sp\"}]",
-    "url": "https://github.com/mcp-dir/protestos_sp-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/receita_pf-mcp",
-    "title": "Receita Federal PF",
-    "body": "Looks up the registration status of an individual at the Federal Revenue from the CPF and date of bi\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_receita_pf\"}]",
-    "url": "https://github.com/mcp-dir/receita_pf-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/receita_pj-mcp",
-    "title": "Receita Federal PJ",
-    "body": "Looks up a company's registration data at the Federal Revenue from the CNPJ, optionally with the own\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_receita_pj\"}]",
-    "url": "https://github.com/mcp-dir/receita_pj-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/receita_pj_qsa-mcp",
-    "title": "Receita PJ QSA + Participação",
-    "body": "Looks up a company's ownership structure and the partners' holdings in other companies, from the CNP\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_receita_pj_qsa\"}]",
-    "url": "https://github.com/mcp-dir/receita_pj_qsa-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/registro_pf_ar-mcp",
-    "title": "Dados Cadastrais PF (Argentina)",
-    "body": "Registration data for an individual in Argentina from the DNI. Platform-hosted, no credentials, pay \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_registro_pf_ar\"}]",
-    "url": "https://github.com/mcp-dir/registro_pf_ar-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/registro_pf_br-mcp",
-    "title": "Dados Cadastrais PF (Brasil)",
-    "body": "Registration data for an individual in Brazil from the CPF and name. Platform-hosted, no credentials\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_registro_pf_br\"}]",
-    "url": "https://github.com/mcp-dir/registro_pf_br-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/registro_pf_mx-mcp",
-    "title": "Dados Cadastrais PF (México)",
-    "body": "Registration data for an individual in Mexico from the CURP. Platform-hosted, no credentials, pay pe\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_registro_pf_mx\"}]",
-    "url": "https://github.com/mcp-dir/registro_pf_mx-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/renda_estimada-mcp",
-    "title": "Nível Socioeconômico e Renda Estimada",
-    "body": "Estimated socioeconomic level and income of a person from a CPF, based on income, occupation, and ed\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_renda_estimada\"}]",
-    "url": "https://github.com/mcp-dir/renda_estimada-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/restituicao_irpf-mcp",
-    "title": "Restituição IRPF",
-    "body": "Looks up an individual's income tax refund status from the CPF, date of birth, and tax year. Platfor\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_restituicao_irpf\"}]",
-    "url": "https://github.com/mcp-dir/restituicao_irpf-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sancoes_australia-mcp",
-    "title": "Sanções Austrália (DFAT)",
-    "body": "Checks whether a name is on Australia's international sanctions list (DFAT), for compliance and AML \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_australia\"}]",
-    "url": "https://github.com/mcp-dir/sancoes_australia-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sancoes_canada-mcp",
-    "title": "Sanções Canadá (SEMA)",
-    "body": "Checks whether a name is on Canada's international sanctions list (SEMA), for compliance and AML due\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_canada\"}]",
-    "url": "https://github.com/mcp-dir/sancoes_canada-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sancoes_onu-mcp",
-    "title": "Sanções ONU (Conselho de Segurança)",
-    "body": "Checks whether a name is on the UN Security Council consolidated sanctions list, for compliance and \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_onu\"}]",
-    "url": "https://github.com/mcp-dir/sancoes_onu-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sancoes_reino_unido-mcp",
-    "title": "Sanções Reino Unido (HM Treasury)",
-    "body": "Checks whether a name is on the UK's financial sanctions list (HM Treasury), for compliance and AML \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_reino_unido\"}]",
-    "url": "https://github.com/mcp-dir/sancoes_reino_unido-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sancoes_suica-mcp",
-    "title": "Sanções Suíça (SECO)",
-    "body": "Checks whether a name is on Switzerland's international sanctions list (SECO), for compliance and AM\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_suica\"}]",
-    "url": "https://github.com/mcp-dir/sancoes_suica-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sancoes_ue-mcp",
-    "title": "Sanções União Europeia",
-    "body": "Checks whether a name is on the European Union's financial sanctions list, for compliance and AML du\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_ue\"}]",
-    "url": "https://github.com/mcp-dir/sancoes_ue-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/scr_bacen-mcp",
-    "title": "SCR Banco Central (Resumo)",
-    "body": "Summary of a person's or company's credit operations in Brazil's Central Bank credit information sys\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_scr_bacen\"}]",
-    "url": "https://github.com/mcp-dir/scr_bacen-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/scr_bacen_detalhado-mcp",
-    "title": "SCR Banco Central (Detalhado)",
-    "body": "Detailed breakdown of a person's or company's credit operations in Brazil's Central Bank SCR, by ref\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_scr_bacen_detalhado\"}]",
-    "url": "https://github.com/mcp-dir/scr_bacen_detalhado-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/seguro_defeso-mcp",
-    "title": "Seguro Defeso",
-    "body": "Checks receipt of the closed-season fishing insurance by a beneficiary from the CPF and NIS. Platfor\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_seguro_defeso\"}]",
-    "url": "https://github.com/mcp-dir/seguro_defeso-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/similaridade_ar-mcp",
-    "title": "Similaridade de Identidade (Argentina)",
-    "body": "Compares the provided data of a person in Argentina (DNI, name, birth, address) and returns the simi\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_similaridade_ar\"}]",
-    "url": "https://github.com/mcp-dir/similaridade_ar-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/similaridade_br-mcp",
-    "title": "Similaridade de Identidade (Brasil)",
-    "body": "Compares the provided data of a person in Brazil (CPF, name, birth, address) and returns the similar\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_similaridade_br\"}]",
-    "url": "https://github.com/mcp-dir/similaridade_br-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/similaridade_mx-mcp",
-    "title": "Similaridade de Identidade (México)",
-    "body": "Compares the provided data of a person in Mexico (CURP, name, birth, address) and returns the simila\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_similaridade_mx\"}]",
-    "url": "https://github.com/mcp-dir/similaridade_mx-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/simples_nacional-mcp",
-    "title": "Simples Nacional",
-    "body": "Looks up a company's status in the Simples Nacional tax regime from the CNPJ, including opt-in and b\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_simples_nacional\"}]",
-    "url": "https://github.com/mcp-dir/simples_nacional-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sintegra-mcp",
-    "title": "Sintegra (Cadastros Estaduais)",
-    "body": "Looks up the state taxpayer registration of a person or company in Sintegra from the CPF or CNPJ, st\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sintegra\"}]",
-    "url": "https://github.com/mcp-dir/sintegra-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sintegra_ccc-mcp",
-    "title": "Sintegra CCC",
-    "body": "Looks up the centralized taxpayer registry (CCC) in Sintegra for a person or company from the CPF or\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sintegra_ccc\"}]",
-    "url": "https://github.com/mcp-dir/sintegra_ccc-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/sintegra_ccc_completa-mcp",
-    "title": "Sintegra CCC Completa",
-    "body": "Full lookup of the centralized taxpayer registry (CCC) in Sintegra for a person or company from the \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sintegra_ccc_completa\"}]",
-    "url": "https://github.com/mcp-dir/sintegra_ccc_completa-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/situacao_eleitoral-mcp",
-    "title": "Situação Eleitoral (TSE)",
-    "body": "Looks up a person's voter status at the Electoral Court (TSE) from the name, date of birth, CPF, and\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_situacao_eleitoral\"}]",
-    "url": "https://github.com/mcp-dir/situacao_eleitoral-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/stm_certidao-mcp",
-    "title": "Certidão STM (Justiça Militar)",
-    "body": "Issues the clearance certificate from the Superior Military Court (STM) for a person from the name, \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_stm_certidao\"}]",
-    "url": "https://github.com/mcp-dir/stm_certidao-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/suframa-mcp",
-    "title": "Suframa",
-    "body": "Looks up a company's status at Suframa (Manaus Free Trade Zone) from the CNPJ. Platform-hosted, no c\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_suframa\"}]",
-    "url": "https://github.com/mcp-dir/suframa-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/tcu_consolidada_pj-mcp",
-    "title": "TCU Consolidada PJ",
-    "body": "Consolidated lookup of a company at the Federal Audit Court (TCU) from the CNPJ, gathering sanctions\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tcu_consolidada_pj\"}]",
-    "url": "https://github.com/mcp-dir/tcu_consolidada_pj-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/tcu_inidoneo-mcp",
-    "title": "TCU (Licitante Inidôneo)",
-    "body": "Issues the disreputable-bidder clearance at the Federal Audit Court (TCU) for a person or company fr\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tcu_inidoneo\"}]",
-    "url": "https://github.com/mcp-dir/tcu_inidoneo-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/titulo_votacao-mcp",
-    "title": "Título e Local de Votação (TSE)",
-    "body": "Looks up a person's voter ID and polling place at the Electoral Court (TSE) from the name, CPF, vote\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_titulo_votacao\"}]",
-    "url": "https://github.com/mcp-dir/titulo_votacao-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/tj_certidao-mcp",
-    "title": "Certidão TJ (Cível, Criminal e Fiscal)",
-    "body": "Issues the civil, criminal, and tax clearance of a person or company at the state Court of Justice, \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tj_certidao\"}]",
-    "url": "https://github.com/mcp-dir/tj_certidao-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/tj_processos-mcp",
-    "title": "Processos TJ (Tribunal de Justiça)",
-    "body": "Looks up cases in the state Court of Justice by CPF, CNPJ, party name, case number, instance, and st\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tj_processos\"}]",
-    "url": "https://github.com/mcp-dir/tj_processos-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/trabalho_forcado-mcp",
-    "title": "Trabalho Forçado (Lista Suja)",
-    "body": "Checks whether an employer is on the forced/slave-like labor list from the CPF or CNPJ. Platform-hos\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_trabalho_forcado\"}]",
-    "url": "https://github.com/mcp-dir/trabalho_forcado-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/transparencia_indicadores_pf-mcp",
-    "title": "Indicadores PF (Transparência)",
-    "body": "Indicators for an individual in the Federal Transparency Portal from the CPF and NIS. Platform-hoste\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_indicadores_pf\"}]",
-    "url": "https://github.com/mcp-dir/transparencia_indicadores_pf-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/transparencia_indicadores_pj-mcp",
-    "title": "Indicadores PJ (Transparência)",
-    "body": "Indicators for a company in the Federal Transparency Portal from the CNPJ, such as sanctions, agreem\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_indicadores_pj\"}]",
-    "url": "https://github.com/mcp-dir/transparencia_indicadores_pj-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/transparencia_servidores-mcp",
-    "title": "Servidores Federais (Transparência)",
-    "body": "Data on a Federal Executive public servant in the Transparency Portal from the CPF. Platform-hosted,\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_servidores\"}]",
-    "url": "https://github.com/mcp-dir/transparencia_servidores-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/transparencia_servidores_completa-mcp",
-    "title": "Servidores Federais Completa (Transparência)",
-    "body": "Full data on a Federal Executive public servant in the Transparency Portal from the CPF, including c\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_servidores_completa\"}]",
-    "url": "https://github.com/mcp-dir/transparencia_servidores_completa-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/transparencia_servidores_remuneracao-mcp",
-    "title": "Remuneração de Servidores (Transparência)",
-    "body": "Compensation of a Federal Executive public servant in the Transparency Portal from the CPF and month\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_servidores_remuneracao\"}]",
-    "url": "https://github.com/mcp-dir/transparencia_servidores_remuneracao-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/transparencia_servidores_viagens-mcp",
-    "title": "Viagens de Servidores (Transparência)",
-    "body": "Travel and expenses of a Federal Executive public servant in the Transparency Portal from the CPF. P\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_servidores_viagens\"}]",
-    "url": "https://github.com/mcp-dir/transparencia_servidores_viagens-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/trf_certidao-mcp",
-    "title": "Certidão TRF",
-    "body": "Issues the civil, electoral, or criminal clearance of a person or company at the Federal Regional Co\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_trf_certidao\"}]",
-    "url": "https://github.com/mcp-dir/trf_certidao-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/trt_processos-mcp",
-    "title": "Processos TRT (Justiça do Trabalho)",
-    "body": "Looks up cases of a person or company at the Regional Labor Court (TRT) from the CPF or CNPJ and reg\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_trt_processos\"}]",
-    "url": "https://github.com/mcp-dir/trt_processos-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/tse_crimes_eleitorais-mcp",
-    "title": "Certidão de Crimes Eleitorais (TSE)",
-    "body": "Issues a person's electoral crimes clearance at the Electoral Court (TSE) from the name, CPF, voter \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tse_crimes_eleitorais\"}]",
-    "url": "https://github.com/mcp-dir/tse_crimes_eleitorais-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/tse_quitacao_eleitoral-mcp",
-    "title": "Certidão de Quitação Eleitoral (TSE)",
-    "body": "Issues a person's voter good-standing clearance at the Electoral Court (TSE) from the name, CPF, vot\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tse_quitacao_eleitoral\"}]",
-    "url": "https://github.com/mcp-dir/tse_quitacao_eleitoral-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/tst_cndt-mcp",
-    "title": "CNDT (Débitos Trabalhistas)",
-    "body": "Issues the labor debt clearance certificate (CNDT) from the TST for a person or company from the CPF\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tst_cndt\"}]",
-    "url": "https://github.com/mcp-dir/tst_cndt-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/veiculo_estadual-mcp",
-    "title": "Consulta Veicular Estadual",
-    "body": "Vehicle data from its plate sourced directly from state traffic databases (DETRAN), including debts \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_estadual\"}]",
-    "url": "https://github.com/mcp-dir/veiculo_estadual-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/veiculo_fipe-mcp",
-    "title": "Valor FIPE do Veículo",
-    "body": "Vehicle data from its plate or chassis, with the market value from the FIPE table. Platform-hosted, \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_fipe\"}]",
-    "url": "https://github.com/mcp-dir/veiculo_fipe-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/veiculo_frotas-mcp",
-    "title": "Veículos do Proprietário",
-    "body": "Lists the vehicles linked to a CPF or CNPJ nationwide, from the document provided. Platform-hosted, \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_frotas\"}]",
-    "url": "https://github.com/mcp-dir/veiculo_frotas-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/veiculo_historico-mcp",
-    "title": "Histórico Veicular Nacional",
-    "body": "History of vehicles linked to a CPF or CNPJ nationwide. Platform-hosted, no credentials, pay per que\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_historico\"}]",
-    "url": "https://github.com/mcp-dir/veiculo_historico-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/veiculo_historico_sp-mcp",
-    "title": "Histórico Veicular SP",
-    "body": "History of vehicles linked to a CPF or CNPJ in the state of São Paulo. Platform-hosted, no credentia\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_historico_sp\"}]",
-    "url": "https://github.com/mcp-dir/veiculo_historico_sp-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/veiculo_nacional-mcp",
-    "title": "Consulta Veicular Nacional",
-    "body": "Registration data for a vehicle from its plate in a national database: make, model, year, color, and\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_nacional\"}]",
-    "url": "https://github.com/mcp-dir/veiculo_nacional-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/vinculo_empregaticio-mcp",
-    "title": "Vínculo Empregatício",
-    "body": "Looks up employment relationships associated with a company from the CNPJ. Platform-hosted, no crede\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_vinculo_empregaticio\"}]",
-    "url": "https://github.com/mcp-dir/vinculo_empregaticio-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.mcp-dir/vinculos_societarios-mcp",
-    "title": "Vínculos Societários",
-    "body": "Maps the corporate ownership ties of a person or company from the CPF or CNPJ, showing holdings and \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_vinculos_societarios\"}]",
-    "url": "https://github.com/mcp-dir/vinculos_societarios-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.michaelyousrie/mailpal",
-    "title": "io.github.michaelyousrie/mailpal",
-    "body": "List, inspect, and run saved HTTP requests from MailPal collections; write tools on Pro\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"mailpal-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Folder containing the .mailpal collections directory\",\"format\":\"string\",\"name\":\"MAILPAL_WORKSPACE\"},{\"description\":\"Where run history is written (default ~/.mailpal/history)\",\"format\":\"string\",\"name\":\"MAILPAL_HISTORY_DIR\"}]}]",
-    "url": "https://marketplace.visualstudio.com/items?itemName=MichaelYousrie.mailpal",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.nevse/dotnet-debugger-mcp",
-    "title": ".NET Debugger for MCP",
-    "body": "Give an AI agent a real .NET debugger: breakpoints, stepping, locals, expression evaluation.\nVersion: 0.5.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"DotnetDebugger.Mcp\",\"version\":\"0.5.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/nevse/dotnet-debugger-mcp",
-    "fetchedAt": "2026-09-16T08:45:45.626Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.nivethaug/dreamagent",
-    "title": "DreamAgent",
-    "body": "Build and deploy websites, Telegram and Discord bots from chat via the DreamAgent platform.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.dreamagent.cloud/mcp\"}]",
-    "url": "https://dreamagent.cloud",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.nworks3d/thor",
-    "title": "THOR",
-    "body": "Local memory for coding agents. A rule with a runnable proof can refuse a wrong command.\nVersion: 2.2.1\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/nworks3d/thor-mcp:2.2.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/nworks3d/THOR-memory-bible-for-AI",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.ogasurfproject-jpg/jidec",
-    "title": "JIDEC: Bitcoin-anchored public verification ledger (NENRIN)",
-    "body": "Cite and independently verify Bitcoin-anchored construction-estimate audit records.\nVersion: 1.2.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://jidec.horizonshield.dev/mcp\"}]",
-    "url": "https://ledger.horizonshield.dev/llms.txt",
-    "fetchedAt": "2026-09-05T07:47:19.143Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.okmr2217/clipnote",
-    "title": "Clipnote",
-    "body": "AIとのやり取りで生成したHTML/Markdown/プレーンテキストのクリップを一覧取得・参照・作成・更新できるMCPサーバー。\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.clipnote.paritto.dev/mcp\",\"headers\":[{\"description\":\"APIキー方式で接続する場合に 'Bearer cn_live_...' を指定。OAuth 2.1（動的クライアント登録に対応したクライアント、claude.ai等）で接続する場合は不要（401応答からの自動ディスカバリで認可される）。\",\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://clipnote.paritto.dev",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.orieg/yaml-workflow",
-    "title": "YAML Workflow",
-    "body": "Expose declarative YAML-defined workflows as MCP tools over stdio\nVersion: 0.9.6\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"yaml-workflow\",\"version\":\"0.9.6\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"description\":\"Install the package with the [mcp] extra so the serve-mcp command is available\",\"value\":\"yaml-workflow[mcp]\",\"type\":\"named\",\"name\":\"--from\"}],\"packageArguments\":[{\"value\":\"serve-mcp\",\"type\":\"positional\"},{\"description\":\"Directory containing workflow YAML definitions to expose as tools\",\"isRequired\":true,\"value\":\"{workflow_dir}\",\"variables\":{\"workflow_dir\":{\"description\":\"Path to the directory of workflow definitions\",\"isRequired\":true,\"format\":\"filepath\",\"default\":\"workflows\"}},\"type\":\"named\",\"name\":\"--dir\"}]}]",
-    "url": "https://github.com/orieg/yaml-workflow",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.oscarlopez-gif/ai-vendor-data-trust-index",
-    "title": "io.github.oscarlopez-gif/ai-vendor-data-trust-index",
-    "body": "Source-cited data-handling comparison of 11 AI vendors: training, retention, opt-out.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://trust.oscar-lopez.com/mcp\"}]",
-    "url": "https://github.com/oscarlopez-gif/ai-vendor-data-trust-index",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.oscarlopez-gif/argentina-price-index",
-    "title": "io.github.oscarlopez-gif/argentina-price-index",
-    "body": "Daily Argentina food & beverage price index, source-cited from public retailer prices.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.oscar-lopez.com/mcp\"}]",
-    "url": "https://github.com/oscarlopez-gif/argentina-price-index",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.professoryilmaz1/impocor-ai-nexus",
-    "title": "IMPOCOR-AI Nexus",
-    "body": "Agent-native security, trust, reliability, data and procurement tools for AI workflows.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ai.impocorgroup.com/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.professoryilmaz1%2Fimpocor-ai-nexus",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.raditotev/agent-marketplace",
-    "title": "AgentMarketplace",
-    "body": "MCP Server for an Agent Task Marketplace\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://agent-marketplace.radi.pro/mcp\"}]",
-    "url": "https://github.com/raditotev/agent-marketplace",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.ryansilk/apexvol-mcp",
-    "title": "ApexVol Options Analytics",
-    "body": "Options analytics for AI assistants: chains, IV rank, VRP, Greeks, GEX, expected moves, screeners.\nVersion: 0.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://apexvol.com/mcp-server\"}]\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"apexvol-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"ApexVol API token (avmcp_...), self-served at apexvol.com/account under API Access on any paid plan\",\"isRequired\":true,\"isSecret\":true,\"name\":\"APEXVOL_API_TOKEN\"}]}]",
-    "url": "https://apexvol.com/learn/claude-options-data-mcp",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.santhosh-005/bevigil",
-    "title": "BeVigil OSINT",
-    "body": "Discover mobile app attack surfaces via BeVigil OSINT — hosts, subdomains, URLs, and more.\nVersion: 1.1.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"bevigil-mcp-server\",\"version\":\"1.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"BeVigil OSINT API key. Get one free at https://bevigil.com/osint-api\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BEVIGIL_API_KEY\"}]}]",
-    "url": "https://github.com/santhosh-005/bevigil-mcp-server",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.shawn1905/generation-ship",
-    "title": "io.github.shawn1905/generation-ship",
-    "body": "Generation Ship MCP — multi-AI future world. Read blank cells, read canon, submit artifacts.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"generation-ship-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional GitHub token — when set, submit_artifact auto-opens an Issue (full auto-review pipeline); without it, returns a pre-filled submission link\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GITHUB_TOKEN\"}]}]",
-    "url": "https://github.com/shawn1905/generation-ship",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.smigolsmigol/llmkit",
-    "title": "io.github.smigolsmigol/llmkit",
-    "body": "AI cost tracking: 11 tools for spend, budgets, and Claude Code + Cursor + Cline costs\nVersion: 0.4.9\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@f3d1/llmkit-mcp-server\",\"version\":\"0.4.9\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"LLMKit API key. Optional: local tools work without it.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"LLMKIT_API_KEY\"},{\"description\":\"LLMKit proxy URL (defaults to hosted service)\",\"format\":\"string\",\"name\":\"LLMKIT_PROXY_URL\"}]}]",
-    "url": "https://github.com/smigolsmigol/llmkit",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.starwind-ui/mcp",
-    "title": "Starwind UI MCP Server",
-    "body": "Framework-aware Starwind UI v3 tools for Astro and React setup, components, docs, and migration.\nVersion: 0.5.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@starwind-ui/mcp\",\"version\":\"0.5.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://starwind.dev/docs/getting-started/mcp/",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.swnotmetal/koma-core-mcp",
-    "title": "Koma Core MCP",
-    "body": "Protected RAG storage — agents discover public metadata, content only by access token.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"koma-core-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"HKDF master key for content tokens (demo key fallback if unset)\",\"isSecret\":true,\"name\":\"KOMA_MASTER_KEY\"}]}]",
-    "url": "https://github.com/swnotmetal/Project-Koma/blob/main/packages/koma-core-mcp/README.md",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.swnotmetal/koma-gate-mcp",
-    "title": "Koma Gate MCP",
-    "body": "Classifies prompt injection, jailbreaks, and out-of-scope user input before agents act on it.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"koma-gate-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"LLM provider: openai, anthropic, google, deepseek, or ollama (default: google)\",\"name\":\"KOMA_PROVIDER\"},{\"description\":\"Optional model override for the selected provider\",\"name\":\"KOMA_MODEL\"},{\"description\":\"Google Gemini API key (used by the default provider)\",\"isSecret\":true,\"name\":\"GEMINI_API_KEY\"},{\"description\":\"OpenAI API key when KOMA_PROVIDER=openai\",\"isSecret\":true,\"name\":\"OPENAI_API_KEY\"},{\"description\":\"Anthropic API key when KOMA_PROVIDER=anthropic\",\"isSecret\":true,\"name\":\"ANTHROPIC_API_KEY\"},{\"description\":\"DeepSeek API key when KOMA_PROVIDER=deepseek\",\"isSecret\":true,\"name\":\"DEEPSEEK_API_KEY\"}]}]",
-    "url": "https://github.com/swnotmetal/Project-Koma/blob/main/packages/koma-gate-mcp/README.md",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.techleadevelopers/chainfx-mcp",
-    "title": "ChainFX Capability Network",
-    "body": "Agent Pay and planning graph for stablecoin commerce.\nVersion: 1.6.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.chainfx.store/mcp/initialize\",\"headers\":[{\"description\":\"Optional for discovery. Required as Bearer ChainFX API key for purchases, execution, private status and M2M payments.\",\"value\":\"Bearer \",\"name\":\"Authorization\"}]}]",
-    "url": "https://www.chainfx.store",
-    "fetchedAt": "2026-08-21T04:08:51.949Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.tinhien11/remem-mcp",
-    "title": "remem-mcp — Local-first MCP Memory + CodeGraph + Wiki",
-    "body": "Local-first memory for AI coding agents. Memory + CodeGraph + Wiki in one SQLite file.\nVersion: 0.5.18\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"remem-mcp\",\"version\":\"0.5.17\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/tinhien11/remem-mcp#readme",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.tridevils/gmca-certainty-matrix-validate",
-    "title": "GMCA Certainty Matrix Validate",
-    "body": "GMCA Certainty Matrix Validate: 11 vragen om een project te screenen vóór investering.\nVersion: 1.0.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://gmca-researchapp.web.app/mcp\"}]",
-    "url": "https://gmca.be",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.tvstat1/agent-data-provider",
-    "title": "AgentsHub Web Search",
-    "body": "Live web search for AI agents. $0.001/call, x402 on Base, no API key.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.agentshub.dev/mcp\"}]",
-    "url": "https://api.agentshub.dev/docs",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.uxlint-net/uxlint",
-    "title": "uxlint",
-    "body": "Audit a site's UX the way a design-literate reviewer would, with a concrete fix for every finding.\nVersion: 0.1.30\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@uxlint-net/uxlint\",\"version\":\"0.1.30\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://uxlint.net",
-    "fetchedAt": "2026-08-16T04:07:04.779Z"
-  },
-  {
-    "source": "mcp-registry",
     "externalId": "io.github.verixiaapps/trustdex-x402",
     "title": "io.github.verixiaapps/trustdex-x402",
     "body": "Free token-safety scans + paid x402 verdicts, signals, radar & EVM swap quotes for AI agents.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://trustdex.app/api/v1/mcp\"}]",
@@ -148253,6 +147293,966 @@
     "title": "Cadastro PF Plus",
     "body": "Extended registration data for an individual from a CPF, beyond the basics. Platform-hosted, no cred\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_cpf_cadastral_plus\"}]",
     "url": "https://github.com/mcp-dir/cpf_cadastral_plus-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/cpf_receita-mcp",
+    "title": "Cadastro PF + Receita Federal",
+    "body": "Registration data for an individual with the Federal Revenue status, from a CPF. Platform-hosted, no\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_cpf_receita\"}]",
+    "url": "https://github.com/mcp-dir/cpf_receita-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/credito_dossie-mcp",
+    "title": "Dossiê de Crédito Completo",
+    "body": "Full credit dossier of a person or company: registration data, risk score, and delinquencies. Platfo\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_dossie\"}]",
+    "url": "https://github.com/mcp-dir/credito_dossie-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/credito_negativo-mcp",
+    "title": "Detalhamento Negativo",
+    "body": "Delinquencies of a person or company: protests, lawsuits, recoveries, and other restrictions. Platfo\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_negativo\"}]",
+    "url": "https://github.com/mcp-dir/credito_negativo-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/credito_pf-mcp",
+    "title": "Análise de Crédito PF",
+    "body": "Consumer credit check from a CPF: registration data, score, delinquencies, and history. Platform-hos\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_pf\"}]",
+    "url": "https://github.com/mcp-dir/credito_pf-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/credito_pf_completo-mcp",
+    "title": "Análise de Crédito PF Completa",
+    "body": "Full consumer credit analysis from a CPF: registration data, score, delinquencies, and history. Plat\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_pf_completo\"}]",
+    "url": "https://github.com/mcp-dir/credito_pf_completo-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/credito_pj_limite-mcp",
+    "title": "Limite de Crédito PJ",
+    "body": "Full business credit analysis from a CNPJ, with a suggested credit limit. Platform-hosted, no creden\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_pj_limite\"}]",
+    "url": "https://github.com/mcp-dir/credito_pj_limite-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/credito_pj_risco-mcp",
+    "title": "Risco de Crédito PJ",
+    "body": "Business credit risk indicator from a CNPJ, for safer analysis. Platform-hosted, no credentials, pay\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_pj_risco\"}]",
+    "url": "https://github.com/mcp-dir/credito_pj_risco-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/credito_score-mcp",
+    "title": "Score de Crédito",
+    "body": "Credit score and risk analysis of a person or company. Platform-hosted, no credentials, pay per quer\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_credito_score\"}]",
+    "url": "https://github.com/mcp-dir/credito_score-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/cvm-mcp",
+    "title": "CVM (Valores Mobiliários)",
+    "body": "Looks up the registration of a person or company at the Brazilian Securities Commission (CVM) from t\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_cvm\"}]",
+    "url": "https://github.com/mcp-dir/cvm-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/cvm_processos_sancionadores-mcp",
+    "title": "CVM Processos Sancionadores",
+    "body": "Looks up enforcement (sanctioning) administrative proceedings for a person or company at the CVM fro\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_cvm_processos_sancionadores\"}]",
+    "url": "https://github.com/mcp-dir/cvm_processos_sancionadores-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/dap_pronaf_pf-mcp",
+    "title": "DAP Pronaf PF",
+    "body": "Looks up the Pronaf eligibility declaration (DAP) of an individual from the CPF and date of birth. P\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_dap_pronaf_pf\"}]",
+    "url": "https://github.com/mcp-dir/dap_pronaf_pf-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/dap_pronaf_pj-mcp",
+    "title": "DAP Pronaf PJ",
+    "body": "Looks up the Pronaf eligibility declaration (DAP) of a company from the CNPJ. Platform-hosted, no cr\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_dap_pronaf_pj\"}]",
+    "url": "https://github.com/mcp-dir/dap_pronaf_pj-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/enriquecimento_lead-mcp",
+    "title": "Enriquecimento de Lead",
+    "body": "Enriches a contact from a mobile number and email, returning the associated registration data. Platf\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_enriquecimento_lead\"}]",
+    "url": "https://github.com/mcp-dir/enriquecimento_lead-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/fbi_most_wanted-mcp",
+    "title": "FBI Most Wanted",
+    "body": "Checks whether a name is on the FBI Most Wanted list, for compliance and AML due diligence. Platform\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_fbi_most_wanted\"}]",
+    "url": "https://github.com/mcp-dir/fbi_most_wanted-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/fgts_regularidade-mcp",
+    "title": "Regularidade FGTS (CRF)",
+    "body": "Issues the FGTS employer clearance certificate (CRF) from the CNPJ. Platform-hosted, no credentials,\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_fgts_regularidade\"}]",
+    "url": "https://github.com/mcp-dir/fgts_regularidade-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/fincen-mcp",
+    "title": "FinCEN (EUA)",
+    "body": "Checks whether a name is on the FinCEN (US financial crimes) lists, for compliance and AML due dilig\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_fincen\"}]",
+    "url": "https://github.com/mcp-dir/fincen-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/garantia_safra-mcp",
+    "title": "Garantia Safra",
+    "body": "Checks a farmer's link with the Garantia Safra program from the CPF and NIS. Platform-hosted, no cre\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_garantia_safra\"}]",
+    "url": "https://github.com/mcp-dir/garantia_safra-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/ibama_autuacoes-mcp",
+    "title": "IBAMA Autuações",
+    "body": "Looks up IBAMA environmental fines for a person or company from the CPF or CNPJ. Platform-hosted, no\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ibama_autuacoes\"}]",
+    "url": "https://github.com/mcp-dir/ibama_autuacoes-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/ibama_debitos-mcp",
+    "title": "IBAMA Débitos",
+    "body": "Issues the environmental debt clearance from IBAMA for a person or company from the CPF or CNPJ. Pla\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ibama_debitos\"}]",
+    "url": "https://github.com/mcp-dir/ibama_debitos-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/ibama_embargos-mcp",
+    "title": "IBAMA Embargos",
+    "body": "Issues the environmental embargo clearance from IBAMA for a person or company from the CPF or CNPJ. \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ibama_embargos\"}]",
+    "url": "https://github.com/mcp-dir/ibama_embargos-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/ibama_regularidade-mcp",
+    "title": "IBAMA Regularidade",
+    "body": "Issues the environmental compliance certificate from IBAMA for a person or company from the CPF or C\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ibama_regularidade\"}]",
+    "url": "https://github.com/mcp-dir/ibama_regularidade-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/identidade_ar-mcp",
+    "title": "Verificação de Identidade (Argentina)",
+    "body": "Verifies a person's identity in Argentina by matching the provided data (DNI, name, birth, address).\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_identidade_ar\"}]",
+    "url": "https://github.com/mcp-dir/identidade_ar-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/interpol-mcp",
+    "title": "Interpol",
+    "body": "Checks whether a name is on Interpol notices, from the name, surname, and date of birth, for complia\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_interpol\"}]",
+    "url": "https://github.com/mcp-dir/interpol-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/mandados_prisao-mcp",
+    "title": "Mandados de Prisão (CNJ)",
+    "body": "Checks for open arrest warrants in the CNJ national database for a person, from the CPF and name. Pl\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mandados_prisao\"}]",
+    "url": "https://github.com/mcp-dir/mandados_prisao-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/mpf_certidao-mcp",
+    "title": "Certidão MPF",
+    "body": "Issues the clearance certificate from the Federal Public Prosecutor's Office (MPF) for a person or c\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mpf_certidao\"}]",
+    "url": "https://github.com/mcp-dir/mpf_certidao-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/mpmt_procedimentos-mcp",
+    "title": "MP Mato Grosso (Procedimentos)",
+    "body": "Looks up out-of-court investigative proceedings of the Mato Grosso Public Prosecutor's Office for a \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mpmt_procedimentos\"}]",
+    "url": "https://github.com/mcp-dir/mpmt_procedimentos-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/mpt-mcp",
+    "title": "MPT (Ministério Público do Trabalho)",
+    "body": "Looks up records of a person or company at the Labor Public Prosecutor's Office (MPT) from the CPF o\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mpt\"}]",
+    "url": "https://github.com/mcp-dir/mpt-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/mte_infracoes-mcp",
+    "title": "Infrações Trabalhistas (MTE)",
+    "body": "Looks up labor violations recorded by the Ministry of Labor for a person or company from the CPF or \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_mte_infracoes\"}]",
+    "url": "https://github.com/mcp-dir/mte_infracoes-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/nfe_completa-mcp",
+    "title": "NFe Completa",
+    "body": "Looks up the full data of an electronic invoice (NFe) from the access key. Platform-hosted, no crede\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_nfe_completa\"}]",
+    "url": "https://github.com/mcp-dir/nfe_completa-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/nfe_inutilizacao-mcp",
+    "title": "NFe Inutilizações",
+    "body": "Looks up the electronic invoice numbering voidings for a company from the CNPJ and year. Platform-ho\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_nfe_inutilizacao\"}]",
+    "url": "https://github.com/mcp-dir/nfe_inutilizacao-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/oab_advogados-mcp",
+    "title": "OAB Cadastro de Advogados",
+    "body": "Looks up the national lawyer registry at the Brazilian Bar (OAB) by name and registration number. Pl\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_oab_advogados\"}]",
+    "url": "https://github.com/mcp-dir/oab_advogados-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/obito-mcp",
+    "title": "Óbito",
+    "body": "Checks for indication of death of a person from the CPF, in official databases. Platform-hosted, no \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_obito\"}]",
+    "url": "https://github.com/mcp-dir/obito-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/ofac-mcp",
+    "title": "OFAC (Sanções EUA)",
+    "body": "Checks whether a name is on OFAC (US) sanctions lists, including SDN and Non-SDN, for compliance and\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_ofac\"}]",
+    "url": "https://github.com/mcp-dir/ofac-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/offshore_leaks-mcp",
+    "title": "Offshore Leaks (ICIJ)",
+    "body": "Checks whether a name appears in the ICIJ Offshore Leaks database (offshore structures), for complia\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_offshore_leaks\"}]",
+    "url": "https://github.com/mcp-dir/offshore_leaks-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/pep-mcp",
+    "title": "PEP (Pessoa Exposta Politicamente)",
+    "body": "Checks whether a person is a Politically Exposed Person (PEP) from the CPF, for compliance and AML d\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_pep\"}]",
+    "url": "https://github.com/mcp-dir/pep-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/pep_parentescos-mcp",
+    "title": "PEP Estendida (Parentescos)",
+    "body": "Checks whether a person is Politically Exposed (PEP) or is related to a PEP, from the CPF. Platform-\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_pep_parentescos\"}]",
+    "url": "https://github.com/mcp-dir/pep_parentescos-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/peti_trabalho_infantil-mcp",
+    "title": "PETI (Trabalho Infantil)",
+    "body": "Checks a person's link with the Child Labor Eradication Program (PETI) from the CPF and NIS. Platfor\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_peti_trabalho_infantil\"}]",
+    "url": "https://github.com/mcp-dir/peti_trabalho_infantil-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/pgfn_devedores-mcp",
+    "title": "Devedores da União (PGFN)",
+    "body": "Checks whether a person or company is on the federal debtors list (PGFN) from the CPF or CNPJ. Platf\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_pgfn_devedores\"}]",
+    "url": "https://github.com/mcp-dir/pgfn_devedores-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/pis-mcp",
+    "title": "PIS (Ministério do Trabalho)",
+    "body": "Looks up the PIS number and associated data for a person from the CPF, in the Labor Ministry base. P\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_pis\"}]",
+    "url": "https://github.com/mcp-dir/pis-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/prf_infracoes-mcp",
+    "title": "Infrações da PRF",
+    "body": "History of traffic fines recorded by Brazil's Federal Highway Police by RENAVAM, including canceled,\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_prf_infracoes\"}]",
+    "url": "https://github.com/mcp-dir/prf_infracoes-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/processos_judiciais_agrupada-mcp",
+    "title": "Processos Judiciais (Agrupada)",
+    "body": "Grouped lookup of a person's or company's lawsuits from the CPF or CNPJ, with a summary view by cour\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_processos_judiciais_agrupada\"}]",
+    "url": "https://github.com/mcp-dir/processos_judiciais_agrupada-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/processos_judiciais_completa-mcp",
+    "title": "Processos Judiciais (Completa)",
+    "body": "Full lookup of a person's or company's lawsuits from the CPF or CNPJ, with per-case detail. Platform\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_processos_judiciais_completa\"}]",
+    "url": "https://github.com/mcp-dir/processos_judiciais_completa-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/processos_judiciais_simplificada-mcp",
+    "title": "Processos Judiciais (Simplificada)",
+    "body": "Simplified lookup of a person's or company's lawsuits from the CPF or CNPJ. Platform-hosted, no cred\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_processos_judiciais_simplificada\"}]",
+    "url": "https://github.com/mcp-dir/processos_judiciais_simplificada-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/protestos_nacional-mcp",
+    "title": "Protestos Nacional",
+    "body": "Existence and details of protests for people and companies in registry offices across Brazil. Platfo\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_protestos_nacional\"}]",
+    "url": "https://github.com/mcp-dir/protestos_nacional-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/protestos_sp-mcp",
+    "title": "Protestos SP",
+    "body": "Existence and details of protests for people and companies in São Paulo state registry offices. Plat\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_protestos_sp\"}]",
+    "url": "https://github.com/mcp-dir/protestos_sp-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/receita_pf-mcp",
+    "title": "Receita Federal PF",
+    "body": "Looks up the registration status of an individual at the Federal Revenue from the CPF and date of bi\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_receita_pf\"}]",
+    "url": "https://github.com/mcp-dir/receita_pf-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/receita_pj-mcp",
+    "title": "Receita Federal PJ",
+    "body": "Looks up a company's registration data at the Federal Revenue from the CNPJ, optionally with the own\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_receita_pj\"}]",
+    "url": "https://github.com/mcp-dir/receita_pj-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/receita_pj_qsa-mcp",
+    "title": "Receita PJ QSA + Participação",
+    "body": "Looks up a company's ownership structure and the partners' holdings in other companies, from the CNP\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_receita_pj_qsa\"}]",
+    "url": "https://github.com/mcp-dir/receita_pj_qsa-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/registro_pf_ar-mcp",
+    "title": "Dados Cadastrais PF (Argentina)",
+    "body": "Registration data for an individual in Argentina from the DNI. Platform-hosted, no credentials, pay \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_registro_pf_ar\"}]",
+    "url": "https://github.com/mcp-dir/registro_pf_ar-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/registro_pf_br-mcp",
+    "title": "Dados Cadastrais PF (Brasil)",
+    "body": "Registration data for an individual in Brazil from the CPF and name. Platform-hosted, no credentials\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_registro_pf_br\"}]",
+    "url": "https://github.com/mcp-dir/registro_pf_br-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/registro_pf_mx-mcp",
+    "title": "Dados Cadastrais PF (México)",
+    "body": "Registration data for an individual in Mexico from the CURP. Platform-hosted, no credentials, pay pe\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_registro_pf_mx\"}]",
+    "url": "https://github.com/mcp-dir/registro_pf_mx-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/renda_estimada-mcp",
+    "title": "Nível Socioeconômico e Renda Estimada",
+    "body": "Estimated socioeconomic level and income of a person from a CPF, based on income, occupation, and ed\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_renda_estimada\"}]",
+    "url": "https://github.com/mcp-dir/renda_estimada-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/restituicao_irpf-mcp",
+    "title": "Restituição IRPF",
+    "body": "Looks up an individual's income tax refund status from the CPF, date of birth, and tax year. Platfor\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_restituicao_irpf\"}]",
+    "url": "https://github.com/mcp-dir/restituicao_irpf-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sancoes_australia-mcp",
+    "title": "Sanções Austrália (DFAT)",
+    "body": "Checks whether a name is on Australia's international sanctions list (DFAT), for compliance and AML \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_australia\"}]",
+    "url": "https://github.com/mcp-dir/sancoes_australia-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sancoes_canada-mcp",
+    "title": "Sanções Canadá (SEMA)",
+    "body": "Checks whether a name is on Canada's international sanctions list (SEMA), for compliance and AML due\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_canada\"}]",
+    "url": "https://github.com/mcp-dir/sancoes_canada-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sancoes_onu-mcp",
+    "title": "Sanções ONU (Conselho de Segurança)",
+    "body": "Checks whether a name is on the UN Security Council consolidated sanctions list, for compliance and \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_onu\"}]",
+    "url": "https://github.com/mcp-dir/sancoes_onu-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sancoes_reino_unido-mcp",
+    "title": "Sanções Reino Unido (HM Treasury)",
+    "body": "Checks whether a name is on the UK's financial sanctions list (HM Treasury), for compliance and AML \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_reino_unido\"}]",
+    "url": "https://github.com/mcp-dir/sancoes_reino_unido-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sancoes_suica-mcp",
+    "title": "Sanções Suíça (SECO)",
+    "body": "Checks whether a name is on Switzerland's international sanctions list (SECO), for compliance and AM\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_suica\"}]",
+    "url": "https://github.com/mcp-dir/sancoes_suica-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sancoes_ue-mcp",
+    "title": "Sanções União Europeia",
+    "body": "Checks whether a name is on the European Union's financial sanctions list, for compliance and AML du\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sancoes_ue\"}]",
+    "url": "https://github.com/mcp-dir/sancoes_ue-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/scr_bacen-mcp",
+    "title": "SCR Banco Central (Resumo)",
+    "body": "Summary of a person's or company's credit operations in Brazil's Central Bank credit information sys\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_scr_bacen\"}]",
+    "url": "https://github.com/mcp-dir/scr_bacen-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/scr_bacen_detalhado-mcp",
+    "title": "SCR Banco Central (Detalhado)",
+    "body": "Detailed breakdown of a person's or company's credit operations in Brazil's Central Bank SCR, by ref\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_scr_bacen_detalhado\"}]",
+    "url": "https://github.com/mcp-dir/scr_bacen_detalhado-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/seguro_defeso-mcp",
+    "title": "Seguro Defeso",
+    "body": "Checks receipt of the closed-season fishing insurance by a beneficiary from the CPF and NIS. Platfor\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_seguro_defeso\"}]",
+    "url": "https://github.com/mcp-dir/seguro_defeso-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/similaridade_ar-mcp",
+    "title": "Similaridade de Identidade (Argentina)",
+    "body": "Compares the provided data of a person in Argentina (DNI, name, birth, address) and returns the simi\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_similaridade_ar\"}]",
+    "url": "https://github.com/mcp-dir/similaridade_ar-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/similaridade_br-mcp",
+    "title": "Similaridade de Identidade (Brasil)",
+    "body": "Compares the provided data of a person in Brazil (CPF, name, birth, address) and returns the similar\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_similaridade_br\"}]",
+    "url": "https://github.com/mcp-dir/similaridade_br-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/similaridade_mx-mcp",
+    "title": "Similaridade de Identidade (México)",
+    "body": "Compares the provided data of a person in Mexico (CURP, name, birth, address) and returns the simila\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_similaridade_mx\"}]",
+    "url": "https://github.com/mcp-dir/similaridade_mx-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/simples_nacional-mcp",
+    "title": "Simples Nacional",
+    "body": "Looks up a company's status in the Simples Nacional tax regime from the CNPJ, including opt-in and b\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_simples_nacional\"}]",
+    "url": "https://github.com/mcp-dir/simples_nacional-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sintegra-mcp",
+    "title": "Sintegra (Cadastros Estaduais)",
+    "body": "Looks up the state taxpayer registration of a person or company in Sintegra from the CPF or CNPJ, st\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sintegra\"}]",
+    "url": "https://github.com/mcp-dir/sintegra-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sintegra_ccc-mcp",
+    "title": "Sintegra CCC",
+    "body": "Looks up the centralized taxpayer registry (CCC) in Sintegra for a person or company from the CPF or\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sintegra_ccc\"}]",
+    "url": "https://github.com/mcp-dir/sintegra_ccc-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/sintegra_ccc_completa-mcp",
+    "title": "Sintegra CCC Completa",
+    "body": "Full lookup of the centralized taxpayer registry (CCC) in Sintegra for a person or company from the \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_sintegra_ccc_completa\"}]",
+    "url": "https://github.com/mcp-dir/sintegra_ccc_completa-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/situacao_eleitoral-mcp",
+    "title": "Situação Eleitoral (TSE)",
+    "body": "Looks up a person's voter status at the Electoral Court (TSE) from the name, date of birth, CPF, and\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_situacao_eleitoral\"}]",
+    "url": "https://github.com/mcp-dir/situacao_eleitoral-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/stm_certidao-mcp",
+    "title": "Certidão STM (Justiça Militar)",
+    "body": "Issues the clearance certificate from the Superior Military Court (STM) for a person from the name, \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_stm_certidao\"}]",
+    "url": "https://github.com/mcp-dir/stm_certidao-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/suframa-mcp",
+    "title": "Suframa",
+    "body": "Looks up a company's status at Suframa (Manaus Free Trade Zone) from the CNPJ. Platform-hosted, no c\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_suframa\"}]",
+    "url": "https://github.com/mcp-dir/suframa-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/tcu_consolidada_pj-mcp",
+    "title": "TCU Consolidada PJ",
+    "body": "Consolidated lookup of a company at the Federal Audit Court (TCU) from the CNPJ, gathering sanctions\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tcu_consolidada_pj\"}]",
+    "url": "https://github.com/mcp-dir/tcu_consolidada_pj-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/tcu_inidoneo-mcp",
+    "title": "TCU (Licitante Inidôneo)",
+    "body": "Issues the disreputable-bidder clearance at the Federal Audit Court (TCU) for a person or company fr\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tcu_inidoneo\"}]",
+    "url": "https://github.com/mcp-dir/tcu_inidoneo-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/titulo_votacao-mcp",
+    "title": "Título e Local de Votação (TSE)",
+    "body": "Looks up a person's voter ID and polling place at the Electoral Court (TSE) from the name, CPF, vote\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_titulo_votacao\"}]",
+    "url": "https://github.com/mcp-dir/titulo_votacao-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/tj_certidao-mcp",
+    "title": "Certidão TJ (Cível, Criminal e Fiscal)",
+    "body": "Issues the civil, criminal, and tax clearance of a person or company at the state Court of Justice, \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tj_certidao\"}]",
+    "url": "https://github.com/mcp-dir/tj_certidao-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/tj_processos-mcp",
+    "title": "Processos TJ (Tribunal de Justiça)",
+    "body": "Looks up cases in the state Court of Justice by CPF, CNPJ, party name, case number, instance, and st\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tj_processos\"}]",
+    "url": "https://github.com/mcp-dir/tj_processos-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/trabalho_forcado-mcp",
+    "title": "Trabalho Forçado (Lista Suja)",
+    "body": "Checks whether an employer is on the forced/slave-like labor list from the CPF or CNPJ. Platform-hos\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_trabalho_forcado\"}]",
+    "url": "https://github.com/mcp-dir/trabalho_forcado-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/transparencia_indicadores_pf-mcp",
+    "title": "Indicadores PF (Transparência)",
+    "body": "Indicators for an individual in the Federal Transparency Portal from the CPF and NIS. Platform-hoste\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_indicadores_pf\"}]",
+    "url": "https://github.com/mcp-dir/transparencia_indicadores_pf-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/transparencia_indicadores_pj-mcp",
+    "title": "Indicadores PJ (Transparência)",
+    "body": "Indicators for a company in the Federal Transparency Portal from the CNPJ, such as sanctions, agreem\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_indicadores_pj\"}]",
+    "url": "https://github.com/mcp-dir/transparencia_indicadores_pj-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/transparencia_servidores-mcp",
+    "title": "Servidores Federais (Transparência)",
+    "body": "Data on a Federal Executive public servant in the Transparency Portal from the CPF. Platform-hosted,\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_servidores\"}]",
+    "url": "https://github.com/mcp-dir/transparencia_servidores-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/transparencia_servidores_completa-mcp",
+    "title": "Servidores Federais Completa (Transparência)",
+    "body": "Full data on a Federal Executive public servant in the Transparency Portal from the CPF, including c\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_servidores_completa\"}]",
+    "url": "https://github.com/mcp-dir/transparencia_servidores_completa-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/transparencia_servidores_remuneracao-mcp",
+    "title": "Remuneração de Servidores (Transparência)",
+    "body": "Compensation of a Federal Executive public servant in the Transparency Portal from the CPF and month\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_servidores_remuneracao\"}]",
+    "url": "https://github.com/mcp-dir/transparencia_servidores_remuneracao-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/transparencia_servidores_viagens-mcp",
+    "title": "Viagens de Servidores (Transparência)",
+    "body": "Travel and expenses of a Federal Executive public servant in the Transparency Portal from the CPF. P\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_transparencia_servidores_viagens\"}]",
+    "url": "https://github.com/mcp-dir/transparencia_servidores_viagens-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/trf_certidao-mcp",
+    "title": "Certidão TRF",
+    "body": "Issues the civil, electoral, or criminal clearance of a person or company at the Federal Regional Co\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_trf_certidao\"}]",
+    "url": "https://github.com/mcp-dir/trf_certidao-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/trt_processos-mcp",
+    "title": "Processos TRT (Justiça do Trabalho)",
+    "body": "Looks up cases of a person or company at the Regional Labor Court (TRT) from the CPF or CNPJ and reg\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_trt_processos\"}]",
+    "url": "https://github.com/mcp-dir/trt_processos-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/tse_crimes_eleitorais-mcp",
+    "title": "Certidão de Crimes Eleitorais (TSE)",
+    "body": "Issues a person's electoral crimes clearance at the Electoral Court (TSE) from the name, CPF, voter \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tse_crimes_eleitorais\"}]",
+    "url": "https://github.com/mcp-dir/tse_crimes_eleitorais-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/tse_quitacao_eleitoral-mcp",
+    "title": "Certidão de Quitação Eleitoral (TSE)",
+    "body": "Issues a person's voter good-standing clearance at the Electoral Court (TSE) from the name, CPF, vot\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tse_quitacao_eleitoral\"}]",
+    "url": "https://github.com/mcp-dir/tse_quitacao_eleitoral-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/tst_cndt-mcp",
+    "title": "CNDT (Débitos Trabalhistas)",
+    "body": "Issues the labor debt clearance certificate (CNDT) from the TST for a person or company from the CPF\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_tst_cndt\"}]",
+    "url": "https://github.com/mcp-dir/tst_cndt-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/veiculo_estadual-mcp",
+    "title": "Consulta Veicular Estadual",
+    "body": "Vehicle data from its plate sourced directly from state traffic databases (DETRAN), including debts \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_estadual\"}]",
+    "url": "https://github.com/mcp-dir/veiculo_estadual-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/veiculo_fipe-mcp",
+    "title": "Valor FIPE do Veículo",
+    "body": "Vehicle data from its plate or chassis, with the market value from the FIPE table. Platform-hosted, \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_fipe\"}]",
+    "url": "https://github.com/mcp-dir/veiculo_fipe-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/veiculo_frotas-mcp",
+    "title": "Veículos do Proprietário",
+    "body": "Lists the vehicles linked to a CPF or CNPJ nationwide, from the document provided. Platform-hosted, \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_frotas\"}]",
+    "url": "https://github.com/mcp-dir/veiculo_frotas-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/veiculo_historico-mcp",
+    "title": "Histórico Veicular Nacional",
+    "body": "History of vehicles linked to a CPF or CNPJ nationwide. Platform-hosted, no credentials, pay per que\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_historico\"}]",
+    "url": "https://github.com/mcp-dir/veiculo_historico-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/veiculo_historico_sp-mcp",
+    "title": "Histórico Veicular SP",
+    "body": "History of vehicles linked to a CPF or CNPJ in the state of São Paulo. Platform-hosted, no credentia\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_historico_sp\"}]",
+    "url": "https://github.com/mcp-dir/veiculo_historico_sp-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/veiculo_nacional-mcp",
+    "title": "Consulta Veicular Nacional",
+    "body": "Registration data for a vehicle from its plate in a national database: make, model, year, color, and\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_veiculo_nacional\"}]",
+    "url": "https://github.com/mcp-dir/veiculo_nacional-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/vinculo_empregaticio-mcp",
+    "title": "Vínculo Empregatício",
+    "body": "Looks up employment relationships associated with a company from the CNPJ. Platform-hosted, no crede\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_vinculo_empregaticio\"}]",
+    "url": "https://github.com/mcp-dir/vinculo_empregaticio-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.mcp-dir/vinculos_societarios-mcp",
+    "title": "Vínculos Societários",
+    "body": "Maps the corporate ownership ties of a person or company from the CPF or CNPJ, showing holdings and \nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.mcp.ai/p_vinculos_societarios\"}]",
+    "url": "https://github.com/mcp-dir/vinculos_societarios-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.michaelyousrie/mailpal",
+    "title": "io.github.michaelyousrie/mailpal",
+    "body": "List, inspect, and run saved HTTP requests from MailPal collections; write tools on Pro\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"mailpal-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Folder containing the .mailpal collections directory\",\"format\":\"string\",\"name\":\"MAILPAL_WORKSPACE\"},{\"description\":\"Where run history is written (default ~/.mailpal/history)\",\"format\":\"string\",\"name\":\"MAILPAL_HISTORY_DIR\"}]}]",
+    "url": "https://marketplace.visualstudio.com/items?itemName=MichaelYousrie.mailpal",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.nevse/dotnet-debugger-mcp",
+    "title": ".NET Debugger for MCP",
+    "body": "Give an AI agent a real .NET debugger: breakpoints, stepping, locals, expression evaluation.\nVersion: 0.5.0\nPackages: [{\"registryType\":\"nuget\",\"registryBaseUrl\":\"https://api.nuget.org/v3/index.json\",\"identifier\":\"DotnetDebugger.Mcp\",\"version\":\"0.5.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/nevse/dotnet-debugger-mcp",
+    "fetchedAt": "2026-09-16T08:45:45.626Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.nivethaug/dreamagent",
+    "title": "DreamAgent",
+    "body": "Build and deploy websites, Telegram and Discord bots from chat via the DreamAgent platform.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.dreamagent.cloud/mcp\"}]",
+    "url": "https://dreamagent.cloud",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.nworks3d/thor",
+    "title": "THOR",
+    "body": "Local memory for coding agents. A rule with a runnable proof can refuse a wrong command.\nVersion: 2.2.1\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/nworks3d/thor-mcp:2.2.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/nworks3d/THOR-memory-bible-for-AI",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.ogasurfproject-jpg/jidec",
+    "title": "JIDEC: Bitcoin-anchored public verification ledger (NENRIN)",
+    "body": "Cite and independently verify Bitcoin-anchored construction-estimate audit records.\nVersion: 1.2.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://jidec.horizonshield.dev/mcp\"}]",
+    "url": "https://ledger.horizonshield.dev/llms.txt",
+    "fetchedAt": "2026-09-05T07:47:19.143Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.okmr2217/clipnote",
+    "title": "Clipnote",
+    "body": "AIとのやり取りで生成したHTML/Markdown/プレーンテキストのクリップを一覧取得・参照・作成・更新できるMCPサーバー。\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.clipnote.paritto.dev/mcp\",\"headers\":[{\"description\":\"APIキー方式で接続する場合に 'Bearer cn_live_...' を指定。OAuth 2.1（動的クライアント登録に対応したクライアント、claude.ai等）で接続する場合は不要（401応答からの自動ディスカバリで認可される）。\",\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://clipnote.paritto.dev",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.orieg/yaml-workflow",
+    "title": "YAML Workflow",
+    "body": "Expose declarative YAML-defined workflows as MCP tools over stdio\nVersion: 0.9.6\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"yaml-workflow\",\"version\":\"0.9.6\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"description\":\"Install the package with the [mcp] extra so the serve-mcp command is available\",\"value\":\"yaml-workflow[mcp]\",\"type\":\"named\",\"name\":\"--from\"}],\"packageArguments\":[{\"value\":\"serve-mcp\",\"type\":\"positional\"},{\"description\":\"Directory containing workflow YAML definitions to expose as tools\",\"isRequired\":true,\"value\":\"{workflow_dir}\",\"variables\":{\"workflow_dir\":{\"description\":\"Path to the directory of workflow definitions\",\"isRequired\":true,\"format\":\"filepath\",\"default\":\"workflows\"}},\"type\":\"named\",\"name\":\"--dir\"}]}]",
+    "url": "https://github.com/orieg/yaml-workflow",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.oscarlopez-gif/ai-vendor-data-trust-index",
+    "title": "io.github.oscarlopez-gif/ai-vendor-data-trust-index",
+    "body": "Source-cited data-handling comparison of 11 AI vendors: training, retention, opt-out.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://trust.oscar-lopez.com/mcp\"}]",
+    "url": "https://github.com/oscarlopez-gif/ai-vendor-data-trust-index",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.oscarlopez-gif/argentina-price-index",
+    "title": "io.github.oscarlopez-gif/argentina-price-index",
+    "body": "Daily Argentina food & beverage price index, source-cited from public retailer prices.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.oscar-lopez.com/mcp\"}]",
+    "url": "https://github.com/oscarlopez-gif/argentina-price-index",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.professoryilmaz1/impocor-ai-nexus",
+    "title": "IMPOCOR-AI Nexus",
+    "body": "Agent-native security, trust, reliability, data and procurement tools for AI workflows.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ai.impocorgroup.com/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.professoryilmaz1%2Fimpocor-ai-nexus",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.raditotev/agent-marketplace",
+    "title": "AgentMarketplace",
+    "body": "MCP Server for an Agent Task Marketplace\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://agent-marketplace.radi.pro/mcp\"}]",
+    "url": "https://github.com/raditotev/agent-marketplace",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.ryansilk/apexvol-mcp",
+    "title": "ApexVol Options Analytics",
+    "body": "Options analytics for AI assistants: chains, IV rank, VRP, Greeks, GEX, expected moves, screeners.\nVersion: 0.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://apexvol.com/mcp-server\"}]\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"apexvol-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"ApexVol API token (avmcp_...), self-served at apexvol.com/account under API Access on any paid plan\",\"isRequired\":true,\"isSecret\":true,\"name\":\"APEXVOL_API_TOKEN\"}]}]",
+    "url": "https://apexvol.com/learn/claude-options-data-mcp",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.santhosh-005/bevigil",
+    "title": "BeVigil OSINT",
+    "body": "Discover mobile app attack surfaces via BeVigil OSINT — hosts, subdomains, URLs, and more.\nVersion: 1.1.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"bevigil-mcp-server\",\"version\":\"1.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"BeVigil OSINT API key. Get one free at https://bevigil.com/osint-api\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BEVIGIL_API_KEY\"}]}]",
+    "url": "https://github.com/santhosh-005/bevigil-mcp-server",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.shawn1905/generation-ship",
+    "title": "io.github.shawn1905/generation-ship",
+    "body": "Generation Ship MCP — multi-AI future world. Read blank cells, read canon, submit artifacts.\nVersion: 0.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"generation-ship-mcp\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional GitHub token — when set, submit_artifact auto-opens an Issue (full auto-review pipeline); without it, returns a pre-filled submission link\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GITHUB_TOKEN\"}]}]",
+    "url": "https://github.com/shawn1905/generation-ship",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.smigolsmigol/llmkit",
+    "title": "io.github.smigolsmigol/llmkit",
+    "body": "AI cost tracking: 11 tools for spend, budgets, and Claude Code + Cursor + Cline costs\nVersion: 0.4.9\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@f3d1/llmkit-mcp-server\",\"version\":\"0.4.9\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"LLMKit API key. Optional: local tools work without it.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"LLMKIT_API_KEY\"},{\"description\":\"LLMKit proxy URL (defaults to hosted service)\",\"format\":\"string\",\"name\":\"LLMKIT_PROXY_URL\"}]}]",
+    "url": "https://github.com/smigolsmigol/llmkit",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.starwind-ui/mcp",
+    "title": "Starwind UI MCP Server",
+    "body": "Framework-aware Starwind UI v3 tools for Astro and React setup, components, docs, and migration.\nVersion: 0.5.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@starwind-ui/mcp\",\"version\":\"0.5.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://starwind.dev/docs/getting-started/mcp/",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.swnotmetal/koma-core-mcp",
+    "title": "Koma Core MCP",
+    "body": "Protected RAG storage — agents discover public metadata, content only by access token.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"koma-core-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"HKDF master key for content tokens (demo key fallback if unset)\",\"isSecret\":true,\"name\":\"KOMA_MASTER_KEY\"}]}]",
+    "url": "https://github.com/swnotmetal/Project-Koma/blob/main/packages/koma-core-mcp/README.md",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.swnotmetal/koma-gate-mcp",
+    "title": "Koma Gate MCP",
+    "body": "Classifies prompt injection, jailbreaks, and out-of-scope user input before agents act on it.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"koma-gate-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"LLM provider: openai, anthropic, google, deepseek, or ollama (default: google)\",\"name\":\"KOMA_PROVIDER\"},{\"description\":\"Optional model override for the selected provider\",\"name\":\"KOMA_MODEL\"},{\"description\":\"Google Gemini API key (used by the default provider)\",\"isSecret\":true,\"name\":\"GEMINI_API_KEY\"},{\"description\":\"OpenAI API key when KOMA_PROVIDER=openai\",\"isSecret\":true,\"name\":\"OPENAI_API_KEY\"},{\"description\":\"Anthropic API key when KOMA_PROVIDER=anthropic\",\"isSecret\":true,\"name\":\"ANTHROPIC_API_KEY\"},{\"description\":\"DeepSeek API key when KOMA_PROVIDER=deepseek\",\"isSecret\":true,\"name\":\"DEEPSEEK_API_KEY\"}]}]",
+    "url": "https://github.com/swnotmetal/Project-Koma/blob/main/packages/koma-gate-mcp/README.md",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.techleadevelopers/chainfx-mcp",
+    "title": "ChainFX Capability Network",
+    "body": "Agent Pay and planning graph for stablecoin commerce.\nVersion: 1.6.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.chainfx.store/mcp/initialize\",\"headers\":[{\"description\":\"Optional for discovery. Required as Bearer ChainFX API key for purchases, execution, private status and M2M payments.\",\"value\":\"Bearer \",\"name\":\"Authorization\"}]}]",
+    "url": "https://www.chainfx.store",
+    "fetchedAt": "2026-08-21T04:08:51.949Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.tinhien11/remem-mcp",
+    "title": "remem-mcp — Local-first MCP Memory + CodeGraph + Wiki",
+    "body": "Local-first memory for AI coding agents. Memory + CodeGraph + Wiki in one SQLite file.\nVersion: 0.5.18\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"remem-mcp\",\"version\":\"0.5.17\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/tinhien11/remem-mcp#readme",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.tridevils/gmca-certainty-matrix-validate",
+    "title": "GMCA Certainty Matrix Validate",
+    "body": "GMCA Certainty Matrix Validate: 11 vragen om een project te screenen vóór investering.\nVersion: 1.0.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://gmca-researchapp.web.app/mcp\"}]",
+    "url": "https://gmca.be",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.tvstat1/agent-data-provider",
+    "title": "AgentsHub Web Search",
+    "body": "Live web search for AI agents. $0.001/call, x402 on Base, no API key.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.agentshub.dev/mcp\"}]",
+    "url": "https://api.agentshub.dev/docs",
+    "fetchedAt": "2026-08-16T04:07:04.779Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.uxlint-net/uxlint",
+    "title": "uxlint",
+    "body": "Audit a site's UX the way a design-literate reviewer would, with a concrete fix for every finding.\nVersion: 0.1.30\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@uxlint-net/uxlint\",\"version\":\"0.1.30\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://uxlint.net",
     "fetchedAt": "2026-08-16T04:07:04.779Z"
   }
 ]
