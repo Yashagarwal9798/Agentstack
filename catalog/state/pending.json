@@ -1,966 +1,6 @@
 [
   {
     "source": "mcp-registry",
-    "externalId": "co.getvalyou/valyou",
-    "title": "ValYou",
-    "body": "Read-only access to your net worth, wealth percentile, projections, splits and budget.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://kojwpbbznaxyoxyqfacc.supabase.co/functions/v1/mcp\"}]",
-    "url": "https://getvalyou.co/ai",
-    "fetchedAt": "2026-07-31T06:28:33.899Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.a2awire/a2awire",
-    "title": "A2AWire",
-    "body": "Escrow, reputation, and payments for agent-to-agent commerce. Non-custodial USDC/Base L2.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://a2awire.com/mcp/http\"},{\"type\":\"sse\",\"url\":\"https://a2awire.com/mcp/sse\"}]",
-    "url": "https://github.com/ee324/a2awire",
-    "fetchedAt": "2026-08-12T05:13:23.306Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.aiakiv/aiakiv",
-    "title": "AiAkiv Memory",
-    "body": "Shared long-term memory for AI agents: save and recall context as a searchable knowledge graph.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.aiakiv.com/mcp\"}]",
-    "url": "https://www.aiakiv.com",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.aiakiv/memory",
-    "title": "AiAkiv Memory",
-    "body": "Shared long-term memory for AI agents: save and recall context as a searchable knowledge graph.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.aiakiv.com/mcp?apps=all\"}]",
-    "url": "https://www.aiakiv.com",
-    "fetchedAt": "2026-10-10T10:02:48.419Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.alamavar.taskrail/taskrail",
-    "title": "TaskRail",
-    "body": "Delivered-price deals, cancel/refund paths, used-value comparisons, and compatibility checks.\nVersion: 1.3.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://taskrail.alamavar.com/mcp\"}]",
-    "url": "https://taskrail.alamavar.com",
-    "fetchedAt": "2026-07-30T06:05:40.105Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.alpinedataworks/adw-intelligence-server",
-    "title": "AlpineDataWorks Intelligence Server",
-    "body": "Agent-ready economic, market & geo-health intelligence — 318 MCP tools, 309 driver-backed indices.\nVersion: 0.3.7\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.alpinedataworks.com/mcp\",\"headers\":[{\"description\":\"Bearer API key. Free demo: 'Bearer adw_free_demo'. Get your own at https://api.alpinedataworks.com/signup. Call adw.catalog first, then adw.adw_NNN.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://alpinedataworks.com",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.babyagecalculator/baby-age",
-    "title": "com.babyagecalculator/baby-age",
-    "body": "Free hosted MCP server by Baby Age Calculator: exact baby age, zodiac, and milestone dates. No key.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://babyagecalculator.com/api/mcp/\"}]",
-    "url": "https://babyagecalculator.com/mcp/",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.boxtoplay/mcp",
-    "title": "BoxToPlay",
-    "body": "MCP-ready hosting provider for Minecraft, BungeeCord, TeamSpeak, VPS and many other game servers.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.boxtoplay.com/mcp\"}]",
-    "url": "https://www.boxtoplay.com/",
-    "fetchedAt": "2026-08-03T06:43:36.171Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.contrastcyber/api",
-    "title": "ContrastAPI",
-    "body": "55 tools, 7 Resources, Sigma rules, email SPF/DMARC, MITRE, CVE/KEV, risk_score. No key.\nVersion: 1.36.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.contrastcyber.com/mcp/\"}]",
-    "url": "https://api.contrastcyber.com",
-    "fetchedAt": "2026-08-25T04:07:39.706Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.cortexpad/cortexpad",
-    "title": "com.cortexpad/cortexpad",
-    "body": "Google Keep-style notes app with an MCP server for AI agents to read/write notes.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.cortexpad.com/mcp\",\"headers\":[{\"description\":\"Your CortexPad API token. Generate one from Settings → API Tokens in the app.\",\"isRequired\":true,\"value\":\"Bearer {token}\",\"isSecret\":true,\"variables\":{\"token\":{\"isRequired\":true,\"isSecret\":true}},\"name\":\"Authorization\"}]}]",
-    "url": "https://cortexpad.com",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.crisphive/mcp",
-    "title": "com.crisphive/mcp",
-    "body": "Field operations on a deterministic solver — run jobs, crews & fleet from Claude or ChatGPT.\nVersion: 2.5.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.crisphive.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@crisphive/mcp\",\"version\":\"2.5.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Crisphive Developer API key (chsk_live_... = production data, chsk_test_... = isolated sandbox). Create one in the dashboard under Developers -> API keys.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"CRISPHIVE_API_KEY\"},{\"description\":\"API origin override. Defaults to https://api.crisphive.com.\",\"name\":\"CRISPHIVE_BASE_URL\"}]}]",
-    "url": "https://docs.crisphive.com/mcp",
-    "fetchedAt": "2026-10-04T09:59:32.750Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.dialmcp/dialmcp",
-    "title": "DialMCP",
-    "body": "Let AI agents place real phone calls from your verified number, with transcripts and recordings.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.dialmcp.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"dialmcp-connector\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://dialmcp.com",
-    "fetchedAt": "2026-07-28T06:07:51.679Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.energyaisolution/energyai",
-    "title": "com.energyaisolution/energyai",
-    "body": "Solar, weatherization, EV charging, battery and heat-pump decision tools for AI agents.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.energyaisolution.com/mcp\",\"headers\":[{\"description\":\"Optional Bearer key. Start with 20 anonymous informational calls/24h; free key: 100/30d. Operator-authorized activation includes three eligible commercial trials on the full endpoint. Builder: $19/month with $20 tool credit. Live pricing and supported jobs: /agents.\",\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://energyaisolution.com/agents",
-    "fetchedAt": "2026-09-12T08:03:13.695Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.awardcast/federal-contracts",
-    "title": "AwardCast Federal Contracts",
-    "body": "US federal contracting data: open solicitations, buying agencies, contractors, price history.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://awardcast.ai/mcp\"}]",
-    "url": "https://awardcast.ai",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.elicitly/elicitly",
-    "title": "Elicitly",
-    "body": "Human-in-the-loop for AI agents over MCP elicitation: confirm/form dialogs plus a capability doctor\nVersion: 0.8.3\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"elicitly\",\"version\":\"0.8.3\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://www.elicitly.ai",
-    "fetchedAt": "2026-10-10T10:02:48.419Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.elicitly/pro",
-    "title": "Elicitly Pro",
-    "body": "Human-in-the-loop for AI agents over MCP: durable approvals with a hosted review page & audit trail\nVersion: 2026.8.19\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.elicitly.ai/mcp\"}]",
-    "url": "https://www.elicitly.ai",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.fullmakt/fullmakt",
-    "title": "Fullmakt",
-    "body": "Credential broker for AI agents: scoped, revocable API access with policy enforcement and audit.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://fullmakt.ai/mcp\"}]",
-    "url": "https://fullmakt.ai",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.justonce/memory",
-    "title": "JustOnce",
-    "body": "Persistent memory for AI assistants — one shared, OAuth-secured vault for every MCP client.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.justonce.ai\"}]",
-    "url": "https://justonce.ai",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.kaiv/commerce-demo",
-    "title": "ai.kaiv/commerce-demo",
-    "body": "Kaiva Bridge live demo: a commerce dataset as a hosted, read-only MCP server (6 tools).\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api-demo.kaiv.ai/api/bridge/mcp/commerce-demo\",\"headers\":[{\"value\":\"Bearer kv_live_commerce_demo_public_ro\",\"name\":\"Authorization\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.kaiv%2Fcommerce-demo",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.mentu/navigator",
-    "title": "ai.mentu/navigator",
-    "body": "Read-only repo navigation and progressive disclosure; BM25 locator with registered evidence.\nVersion: 1.0.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"mentu-navigator\",\"version\":\"1.0.2\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/mentu-ai/mentu-navigator",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.radmail/radmail-mcp",
-    "title": "ai.radmail/radmail-mcp",
-    "body": "Email OS for agents - real-inbox search, triage, commitments, and a verifiable BEC hard-stop.\nVersion: 0.5.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://radmail.ai/api/mcp/sandbox\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"radmail-mcp\",\"version\":\"0.5.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://radmail.ai/for-agents",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.reglayer/instant-decision-briefs",
-    "title": "RegLayer Instant Decision Briefs",
-    "body": "Company-specific regulatory assessments for concrete business questions, as structured data or PDF.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://reglayer.ai/mcp\"}]",
-    "url": "https://reglayer.ai/agents",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.seendb/seendb",
-    "title": "ai.seendb/seendb",
-    "body": "Video knowledge base for agents: search your library's transcripts, keyframes and on-screen text.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.seendb.ai/mcp\"}]",
-    "url": "https://www.seendb.ai",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.starreel/starreel",
-    "title": "ai.starreel/starreel",
-    "body": "Turn a script into a finished, downloadable short-drama episode — via MCP or REST.\nVersion: 0.1.136\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@starreel/mcp\",\"version\":\"0.1.136\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"StarReel API key (create in Settings → API Keys)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"STARREEL_API_KEY\"}]}]",
-    "url": "https://starreel.ai",
-    "fetchedAt": "2026-10-10T10:02:48.419Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.susurration/playground",
-    "title": "Susurration",
-    "body": "A playground built for AI agents: run a flock, leave verified traces, propose exhibits. Be curious.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://susurration.ai/mcp\"}]",
-    "url": "https://susurration.ai",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ai.weftly/weftly",
-    "title": "Weftly",
-    "body": "Find & cut horizontal and vertical video clips (Shorts/Reels), transcribe & summarize. Pay per job.\nVersion: 0.35.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.weftly.ai/mcp\"}]",
-    "url": "https://weftly.ai",
-    "fetchedAt": "2026-10-11T10:13:22.236Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "bio.atlarium/habitat-database",
-    "title": "Atlarium Habitat Database MCP",
-    "body": "Structured habitat data and advisory tools for aquariums, marine tanks, terrariums and paludariums.\nVersion: 2.0.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.atlarium.bio/mcp\"}]",
-    "url": "https://github.com/techgardeners/atlarium-mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "cat.2022/catalunya-2022",
-    "title": "Catalunya 2022",
-    "body": "Cerca de text complet al pla Catalunya 2022 - RESET: 3 àmbits, 12 objectius, 91 accions. CA/EN/ES.\nVersion: 2.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.2022.cat\"}]",
-    "url": "https://2022.cat",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "co.fingersai/fingers",
-    "title": "co.fingersai/fingers",
-    "body": "The honest trust index for x402: check who you're paying before your agent pays.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://fingersai.co/mcp\"}]",
-    "url": "https://fingersai.co",
-    "fetchedAt": "2026-08-23T04:08:29.331Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "co.schoolscope/mcp",
-    "title": "SchoolScope",
-    "body": "California school data for AI agents — scores, profiles, comparisons, feeder paths, UC pipelines.\nVersion: 3.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.schoolscope.co/mcp\"}]",
-    "url": "https://schoolscope.co",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.aiskills402/mcp",
-    "title": "AISkills402",
-    "body": "Tested AI agent skill files (SKILL.md), bought once over x402 for cents on Base. Free MCP search.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.aiskills402.com/mcp\"}]",
-    "url": "https://aiskills402.com",
-    "fetchedAt": "2026-10-08T10:49:20.368Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.caribooks/quickbooks",
-    "title": "Caribooks (QuickBooks Online)",
-    "body": "QuickBooks Online in Claude and ChatGPT: 221 tools, full ledger, multi-company, Canada + US, FR/EN.\nVersion: 1.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://caribooks.com/api/mcp\"}]",
-    "url": "https://caribooks.com",
-    "fetchedAt": "2026-09-09T08:18:14.513Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.donebear/donebear",
-    "title": "Done Bear",
-    "body": "Local-first task manager: create, edit, and complete tasks, projects, and checklists via MCP.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.donebear.com/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.donebear%2Fdonebear",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.edwyna/fax",
-    "title": "Edwyna Fax API",
-    "body": "Send individual transactional faxes with prepaid credit, delivery status, and safeguards.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://edwyna.com/mcp\"}]",
-    "url": "https://edwyna.com/mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.flightpowers/google-flights-mcp",
-    "title": "Flight Search (Real-Time Fares)",
-    "body": "Real-time flight search: one-way and round-trip fares across date ranges, with price verdicts.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://google-flights-mcp.flightpowers.com/mcp\",\"headers\":[{\"description\":\"Your own RapidAPI key for the Google Flights Live API. Free tier available at https://rapidapi.com/mtnrabi/api/google-flights-live-api\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"x-rapidapi-key\"}]}]",
-    "url": "https://github.com/mtnrabi/travel-agent-skills",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.getarcresearch/arc-research",
-    "title": "Arc Research",
-    "body": "Commodities research MCP: knowledge graph, COT, NG storage/weather, quotes, and stories.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.getarcresearch.com/mcp\",\"headers\":[{\"description\":\"Bearer token from Account → MCP access (arc_mcp_...). Requires Arc Research Starter.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://www.getarcresearch.com/docs/mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.haulbound/haulbound",
-    "title": "com.haulbound/haulbound",
-    "body": "Run an eBay seller account from your AI assistant: orders, listings, stock, fees and payouts.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://haulbound.com/mcp\"}]",
-    "url": "https://haulbound.com",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.heliciel/heliciel",
-    "title": "Heliciel — Propeller & Wing Design",
-    "body": "Real BEM engineering for propellers, wings and turbines — design, optimize, visualize, export.\nVersion: 12.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.heliciel.com/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.heliciel%2Fheliciel",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.heybuna/buna",
-    "title": "Buna",
-    "body": "The family food app your agent operates.\nVersion: 1.45.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.heybuna.com/mcp\"}]",
-    "url": "https://heybuna.com",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.hungry-esim/esim",
-    "title": "Hungry eSIM",
-    "body": "Travel eSIMs: unlimited data, pick your days, top up existing eSIMs, card checkout, no API key.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.hungry-esim.com/mcp\"}]",
-    "url": "https://hungry-esim.com/for-agents",
-    "fetchedAt": "2026-08-25T04:07:39.706Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.incisory/incisory",
-    "title": "Incisory",
-    "body": "Audit whether ChatGPT, Gemini & Perplexity recommend a business — verbatim proof, then fix it.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://incisory.com/mcp\"}]",
-    "url": "https://incisory.com",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.itsnum/num",
-    "title": "NUM",
-    "body": "Real places for your agent. Search 2.5M+ travel places; submit a business for human review.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://itsnum.com/mcp\",\"headers\":[{\"description\":\"Optional. Bearer numa_live_… key from POST https://itsnum.com/api/agent/signup. Leave empty to sign in with OAuth instead.\",\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://itsnum.com/agents/",
-    "fetchedAt": "2026-09-18T08:24:48.044Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.killbottleneck/killbottleneck",
-    "title": "com.killbottleneck/killbottleneck",
-    "body": "Goal and process maps for humans and AI agents on your own server.\nVersion: 0.63.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"killbottleneck-mcp\",\"version\":\"0.63.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Address of your killBottleneck instance, e.g. https://company.killbottleneck.com or http://192.168.1.10:8090\",\"isRequired\":true,\"format\":\"string\",\"name\":\"KB_URL\"},{\"description\":\"API key issued in the app (user menu -> API keys). Use a read-write scope for editing.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"KB_API_KEY\"}]}]",
-    "url": "https://github.com/tengolabs/killbottleneck",
-    "fetchedAt": "2026-09-21T09:11:47.736Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.mambabuilt/mcp-page-finder-extractor",
-    "title": "com.mambabuilt/mcp-page-finder-extractor",
-    "body": "Find a named page type on a company's own website from its domain, in 11 languages.\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@mambalabsdev/mcp-page-finder-extractor\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Apify API token from https://console.apify.com/account/integrations\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"APIFY_TOKEN\"}]}]",
-    "url": "https://github.com/mambalabsdev/mcp-page-finder-extractor",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.mentionry/mentionry",
-    "title": "Mentionry",
-    "body": "Find who links to your competitors but not you, judge each opening, and draft the pitch.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mentionry.com/api/mcp\",\"headers\":[{\"description\":\"Bearer <your Mentionry API key>. Create one free at https://mentionry.com/dashboard/account\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://mentionry.com/mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.rqmtechnologies/waveengine",
-    "title": "RQM WaveEngine Jobs",
-    "body": "Delegate 20 typed, evidence-backed WaveEngine signal work products with fixed-request x402.\nVersion: 1.6.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://jobs.rqmtechnologies.com/mcp/waveengine\"}]",
-    "url": "https://www.rqmtechnologies.com/waveengine/mcp",
-    "fetchedAt": "2026-08-20T04:07:16.030Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.stalsoft/stalsoft",
-    "title": "Stalsoft – Dr. Alex Stolz, IT- und KI-Beratung",
-    "body": "Öffentliche Inhalte von stalsoft.com: Profil, Leistungen, FAQ, Publikationen, Kontakt, Suche.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.stalsoft.com/mcp\"}]",
-    "url": "https://www.stalsoft.com",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.stierproducts/tier-lists",
-    "title": "stierproducts tier lists",
-    "body": "S-to-F tier lists for 208 product categories. Every placement cited, with barcodes.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.stierproducts.com/mcp\"}]",
-    "url": "https://stierproducts.com/mcp",
-    "fetchedAt": "2026-08-23T04:08:29.331Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.texttoquant/texttoquant",
-    "title": "TextToQuant Backtesting and Quant Research",
-    "body": "Backtest plain-English trading strategies on real market data: graded results, honesty flags.\nVersion: 2.6.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.texttoquant.com/api/mcp\"}]",
-    "url": "https://www.texttoquant.com",
-    "fetchedAt": "2026-09-15T08:52:02.662Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.twelvepermissions/twelve-permissions",
-    "title": "Twelve Permissions",
-    "body": "Browse, verify and buy Twelve Permissions NFTs on XRP Ledger. Every claim is checkable.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://twelvepermissions.com/mcp\"}]",
-    "url": "https://twelvepermissions.com",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.upshiftsites/mcp",
-    "title": "Upshift",
-    "body": "Audit a site's structured data and llms.txt, match a trade to a template, and quote real prices.\nVersion: 1.0.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.upshiftsites.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"upshift-mcp\",\"version\":\"1.0.3\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://mcp.upshiftsites.com/",
-    "fetchedAt": "2026-08-19T04:07:05.433Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "com.wauldo/wauldo",
-    "title": "Wauldo",
-    "body": "Stateless agentic tools over MCP: concept extraction, long-context, knowledge graph, planning.\nVersion: 1.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.wauldo.com/mcp\"}]",
-    "url": "https://wauldo.com",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "de.fewo-bruno-gap/ferienwohnung-bruno",
-    "title": "Ferienwohnung Bruno – Garmisch-Partenkirchen",
-    "body": "Ferienwohnung Garmisch-Partenkirchen: Infos, FAQ, Preise, Angebote, Verfügbarkeit, Preisrechner\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.fewo-bruno-gap.de/mcp\"}]",
-    "url": "https://www.fewo-bruno-gap.de",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.districtapi/districtapi-mcp",
-    "title": "DistrictAPI",
-    "body": "US public school districts and schools by address — enrollment, demographics, boundaries\nVersion: 0.1.2\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"districtapi-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key from https://districtapi.dev (free tier: 500 requests/month)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"DISTRICTAPI_KEY\"}]}]",
-    "url": "https://districtapi.dev",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.ffpipe/ffpipe",
-    "title": "ffpipe — video conversion, probe & frames",
-    "body": "Convert, probe, and split video into frames — real FFmpeg, paid per job with x402 on Base.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ffpipe.dev/mcp\"}]",
-    "url": "https://ffpipe.dev",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.libraryapi/libraryapi-mcp",
-    "title": "LibraryAPI",
-    "body": "US public libraries and branches near any address, with collections from the IMLS survey\nVersion: 0.1.2\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"libraryapi-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key from https://libraryapi.dev (free tier: 500 requests/month)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"LIBRARYAPI_KEY\"}]}]",
-    "url": "https://libraryapi.dev",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.mory/trendflow",
-    "title": "TrendFlow",
-    "body": "Google Trends data: interest over time, by region, related queries, and trending now.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://trendflow.mory.dev/mcp\"}]",
-    "url": "https://trendflow.mory.dev/docs/mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.publicsafetyapi/publicsafetyapi-mcp",
-    "title": "PublicSafetyAPI",
-    "body": "US police, fire, EMS and hospital locations near any address, from federal HIFLD data\nVersion: 0.1.2\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"publicsafetyapi-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key from https://publicsafetyapi.dev (free tier: 500 requests/month)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"PUBLICSAFETYAPI_KEY\"}]}]",
-    "url": "https://publicsafetyapi.dev",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.workers.3labsio.kingofthehill/king-of-the-hill",
-    "title": "dev.workers.3labsio.kingofthehill/king-of-the-hill",
-    "body": "x402 game: take the crown, each take raises the next price 1.5x. hill_status is free.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://kingofthehill.3labsio.workers.dev/mcp\"}]",
-    "url": "https://kingofthehill.3labsio.workers.dev",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.workers.3labsio.policy-gate/policy-gate",
-    "title": "dev.workers.3labsio.policy-gate/policy-gate",
-    "body": "Deterministic allow/require_approval/deny verdicts for agent actions, before they happen.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://policy-gate.3labsio.workers.dev/mcp\"}]",
-    "url": "https://github.com/fieldproofhq/policy-gate",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "eu.nordicmcp/fortnox",
-    "title": "NordicMCP — Fortnox",
-    "body": "Hosted Fortnox MCP server: ~120 tools over Fortnox API v3. OAuth2 handled by NordicMCP.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nordicmcp.eu/mcp/fortnox/{token}\",\"variables\":{\"token\":{\"description\":\"Your NordicMCP API token (36-char UUID) for the Fortnox integration — create one at https://nordicmcp.eu after connecting your Fortnox account\",\"isRequired\":true,\"isSecret\":true}}}]",
-    "url": "https://nordicmcp.eu/docs/integrations/fortnox",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "eu.nordicmcp/google-mail",
-    "title": "NordicMCP — Google Mail",
-    "body": "Hosted Gmail MCP server: read, search, and manage messages. Google OAuth2 handled by NordicMCP.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nordicmcp.eu/mcp/google-mail/{token}\",\"variables\":{\"token\":{\"description\":\"Your NordicMCP API token (36-char UUID) for the Google Mail integration — create one at https://nordicmcp.eu after connecting your Google account\",\"isRequired\":true,\"isSecret\":true}}}]",
-    "url": "https://nordicmcp.eu/docs/integrations/google-mail",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "eu.nordicmcp/stripe",
-    "title": "NordicMCP — Stripe",
-    "body": "Hosted Stripe MCP server: 18 tools for payments, subscriptions, invoicing, customers, and reporting.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nordicmcp.eu/mcp/stripe/{token}\",\"variables\":{\"token\":{\"description\":\"Your NordicMCP API token (36-char UUID) for the Stripe integration — create one at https://nordicmcp.eu after adding your Stripe key\",\"isRequired\":true,\"isSecret\":true}}}]",
-    "url": "https://nordicmcp.eu/docs/integrations/stripe",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "eu.nordicmcp/weather",
-    "title": "NordicMCP — Weather",
-    "body": "Hosted Weather MCP server (Open-Meteo): current, forecast, and historical weather by location.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nordicmcp.eu/mcp/weather/{token}\",\"variables\":{\"token\":{\"description\":\"Your NordicMCP API token (36-char UUID) for the Weather integration — create one at https://nordicmcp.eu\",\"isRequired\":true,\"isSecret\":true}}}]",
-    "url": "https://nordicmcp.eu/docs/integrations/weather",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "fi.northpoint/marketing-compliance",
-    "title": "fi.northpoint/marketing-compliance",
-    "body": "Crypto marketing compliance rulesets over MCP: MiCA, FCA, GDPR, SEC, MAS, VARA. Not legal advice.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://northpoint.fi/api/mcp\"}]",
-    "url": "https://northpoint.fi",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "fr.monappamoi/apps",
-    "title": "monappamoi",
-    "body": "Host AI-generated single-file HTML apps with JSON persistence. No signup.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://monappamoi.fr/mcp\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=fr.monappamoi%2Fapps",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.aimeat/aimeat",
-    "title": "AIMEAT",
-    "body": "AIMEAT - the Linux of AI. An open, federated, self-hosted AI operating system you own. MIT.\nVersion: 3.15.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://aimeat.io/v1/mcp\"}]",
-    "url": "https://aimeat.io",
-    "fetchedAt": "2026-09-15T08:52:02.662Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.autosophia/agent-video",
-    "title": "Autosophia Agent Video",
-    "body": "Script in, finished 1080p narrated video out. Pay per call in USDC via x402.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.autosophia.io/mcp\"}]",
-    "url": "https://autosophia.io",
-    "fetchedAt": "2026-09-04T08:11:49.015Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.autosophia/solana-lens",
-    "title": "Autosophia Solana Lens",
-    "body": "Screen tokens, inspect wallets, simulate transactions, price priority fees. $0.02 in USDC.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://chain.autosophia.io/mcp\"}]",
-    "url": "https://autosophia.io",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.carrierscore/carrierscore",
-    "title": "io.carrierscore/carrierscore",
-    "body": "FMCSA motor-carrier risk scores, monitoring, and carrier-selection evidence reports for AI agents.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.carrierscore.io/mcp\"}]",
-    "url": "https://carrierscore.io",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.dozier/exposure-audit",
-    "title": "io.dozier/exposure-audit",
-    "body": "Free AI-visibility and competitive Exposure Audit for any domain. No account, no API key.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://dozier.io/backend/mcp\"}]",
-    "url": "https://dozier.io/mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Async23/chrome-devtools-mcp",
-    "title": "Chrome DevTools MCP",
-    "body": "MCP server for Chrome DevTools\nVersion: 1.7.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@async23/chrome-devtools-mcp\",\"version\":\"1.7.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/Async23/chrome-devtools-mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Ataraxy-Labs/sem",
-    "title": "io.github.Ataraxy-Labs/sem",
-    "body": "Entity-level code intelligence: semantic diff, impact analysis, blame, and context for AI agents\nVersion: 0.23.1\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@ataraxy-labs/sem\",\"version\":\"0.23.1\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}]}]",
-    "url": "https://ataraxy-labs.com",
-    "fetchedAt": "2026-08-23T04:08:29.331Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Battam1111/omniseek",
-    "title": "OmniSeek",
-    "body": "Your agent seeks what search can't find. A self-hosted perception MCP server.\nVersion: 0.2.1\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"omniseek\",\"version\":\"0.2.1\",\"runtimeHint\":\"python\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:8765/mcp\"}},{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/battam1111/omniseek:v0.2.1\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:8765/mcp\"}}]",
-    "url": "https://battam1111.github.io/omniseek",
-    "fetchedAt": "2026-09-15T08:52:02.662Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Bluesoul-Technology/justonce-memory",
-    "title": "io.github.Bluesoul-Technology/justonce-memory",
-    "body": "Persistent, portable, bitemporal memory layer — recalled proactively across your AI tools.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.justonce.ai\"}]",
-    "url": "https://justonce.ai",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.CSOAI-ORG/gspc",
-    "title": "Council of AI GSPC",
-    "body": "12 HTTP tools (8 free, 4 x402). GSPC board + Ed25519 + trust counts. Measure, never certify.\nVersion: 1.4.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://councilof.ai/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"csoai-gspc-mcp\",\"version\":\"0.2.2\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://councilof.ai",
-    "fetchedAt": "2026-09-15T08:52:02.662Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Deviank88/knowledge-rail",
-    "title": "KnowledgeRail",
-    "body": "Persistent, evidence-backed project knowledge and task context for coding agents.\nVersion: 2.8.7\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"knowledge-rail\",\"version\":\"2.8.7\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/Deviank88/KnowledgeRail",
-    "fetchedAt": "2026-10-11T10:13:22.236Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Everyways/upsalt-booking",
-    "title": "Upsalt Booking",
-    "body": "Search Upsalt venues, check availability, and book, view, or cancel a reservation.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ai.upsalt.io/mcp/booking\"}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Everyways%2Fupsalt-booking",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/m2mcent",
-    "title": "io.github.Evozim/m2mcent",
-    "body": "x402 payment wrapper for AI Agents and MCP Servers. USDC settlements on Base L2.\nVersion: 1.0.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"m2mcent-sdk\",\"version\":\"1.0.5\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base Mainnet RPC endpoint URL\",\"isRequired\":true,\"format\":\"string\",\"name\":\"BASE_RPC_URL\"},{\"description\":\"Relayer wallet private key for on-chain settlement\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"RELAYER_PRIVATE_KEY\"},{\"description\":\"Treasury wallet address to receive payments\",\"isRequired\":true,\"format\":\"string\",\"name\":\"TREASURY_ADDRESS\"}]}]",
-    "url": "https://github.com/Evozim/m2mcent-sdk",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Fish-Tacos/sati-grumpy",
-    "title": "io.github.Fish-Tacos/sati-grumpy",
-    "body": "MCP commerce surface for refurbished datacenter hardware, with x402 agent-payment discovery.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://sati-grumpy.fly.dev/mcp\"}]",
-    "url": "https://github.com/Fish-Tacos/sati-grumpy-demo",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Jcjimenezglez/rosetta-mcp",
-    "title": "Rosetta PDF",
-    "body": "Parse, extract, split, and ask over digital PDFs (text layer, no OCR) from Cursor and Claude.\nVersion: 0.2.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://rosettafolio.com/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"rosetta-mcp\",\"version\":\"0.2.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key from the Rosetta dashboard (shown once on create/rotate)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"ROSETTA_API_KEY\"},{\"description\":\"Rosetta API base URL\",\"format\":\"string\",\"default\":\"https://rosettafolio.com\",\"name\":\"ROSETTA_API_URL\"}]}]",
-    "url": "https://github.com/Jcjimenezglez/docchat",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.MM-sheng/404-directory",
-    "title": "404.directory",
-    "body": "Risk preflight for AI Agent tool actions and Polymarket settlement and execution checks.\nVersion: 0.10.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://404.directory/mcp\",\"headers\":[{\"description\":\"Stable random, non-personal identifier for this Agent installation. Used only for privacy-safe de-duplicated adoption measurement; never use an email, user name, or device name.\",\"isRequired\":true,\"placeholder\":\"agent:550e8400-e29b-41d4-a716-446655440000\",\"name\":\"X-404-Agent-ID\"},{\"description\":\"Non-personal attribution label for this installation source.\",\"default\":\"official-registry\",\"name\":\"X-404-Source\"}]}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@mmvv1638/404-directory-mcp\",\"version\":\"0.10.3\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"official-registry\",\"type\":\"named\",\"name\":\"--source\"}]}]",
-    "url": "https://404.directory",
-    "fetchedAt": "2026-08-30T09:23:42.118Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.MediaShareORG/yourimageshare",
-    "title": "io.github.MediaShareORG/yourimageshare",
-    "body": "MCP server exposing the YourImageShare upload API (upload/list/delete) as tools for AI agents.\nVersion: 1.0.6\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"yourimageshare-mcp\",\"version\":\"1.0.6\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Your YourImageShare API key. Get one at yourimageshare.com/my-account under the API tab.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"YIS_API_KEY\"}]}]",
-    "url": "https://github.com/MediaShareORG/yourimageshare",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Mgnlockii/reelfy",
-    "title": "Reelfy Agent Tools",
-    "body": "Pay-per-use AI and data tools via x402: image, video, music, voice, search, crypto. USDC.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.reelfy.online/mcp\",\"headers\":[{\"description\":\"Optional. Solana secret key (base58) holding USDC — pays per call via x402. Without it you can browse the 16-tool catalog for free.\",\"isSecret\":true,\"name\":\"x-solana-key\"}]}]",
-    "url": "https://api.reelfy.online",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.MuhammadTalhaMT/intercom",
-    "title": "io.github.MuhammadTalhaMT/intercom",
-    "body": "Relays messages between two Claude Code sessions on different machines using the Channels API\nVersion: 2.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"claude-intercom\",\"version\":\"2.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Label for this instance, e.g. backend or frontend. Appears in message tags so the other side knows who is talking.\",\"isRequired\":true,\"format\":\"string\",\"name\":\"MY_ROLE\"},{\"description\":\"Address of the other machine as host:port. A Tailscale address is recommended over a public one.\",\"isRequired\":true,\"format\":\"string\",\"name\":\"REMOTE_HOST\"},{\"description\":\"Shared secret authenticating messages between the two instances. Must match on both sides. There is no default: without it the intercom starts unpaired, binds no port, and refuses to send.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"placeholder\":\"output of: openssl rand -base64 32\",\"name\":\"INTERCOM_SECRET\"},{\"description\":\"Port to listen on for incoming messages. Defaults to 8788.\",\"format\":\"number\",\"name\":\"INTERCOM_PORT\"},{\"description\":\"Interface to bind the listener to. Defaults to 0.0.0.0. Set 127.0.0.1 when a tunnel fronts the intercom, so only the tunnel can connect.\",\"format\":\"string\",\"name\":\"INTERCOM_HOST\"},{\"description\":\"How long an outbound POST may hang before giving up. Defaults to 10000.\",\"format\":\"number\",\"name\":\"INTERCOM_SEND_TIMEOUT_MS\"}]}]",
-    "url": "https://github.com/MuhammadTalhaMT/claude-intercom",
-    "fetchedAt": "2026-08-20T04:07:16.030Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.OptimNow/cloud-finops",
-    "title": "Cloud FinOps Skill & MCP",
-    "body": "Cloud cost + FinOps knowledge for AI agents: AWS/Azure/GCP optimisation, AI spend, waste playbooks.\nVersion: 1.37.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cloud-finops-mcp.fly.dev/mcp\"}]\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"cloud-finops-mcp\",\"version\":\"1.37.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/OptimNow/cloud-finops-skills",
-    "fetchedAt": "2026-09-27T09:26:27.392Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Ric-Lavers/electron-dance",
-    "title": "electron.dance",
-    "body": "electron.dance MCP server: upcoming gigs, community links, RSVP, and Spotify top tracks.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://electron.dance/api/mcp\"}]",
-    "url": "https://electron.dance",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Shxnque/quesen",
-    "title": "Quesen Deterministic Agent Decision Layer",
-    "body": "Deterministic decision layer for autonomous agents: reproducible PROCEED/REVIEW/SKIP verdicts.\nVersion: 1.10.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://web-production-3df26.up.railway.app/mcp\",\"headers\":[{\"description\":\"Quesen API key issued via https://senueren.co.za/quesen. Required for quesen.validate / quesen.simulate / quesen.report; not required for quesen.health / quesen.version.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
-    "url": "https://github.com/Shxnque/quesen",
-    "fetchedAt": "2026-09-16T08:45:45.626Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Vladimir-Human/ru-marketplace-mcp",
-    "title": "ru-marketplace-mcp",
-    "body": "Read-only MCP servers for Russian marketplaces: prices, stock, ratings, reviews, seller identity\nVersion: 2.4.2\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/vladimir-human/ru-marketplace-mcp:2.4.2\",\"runtimeHint\":\"docker\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/Vladimir-Human/ru-marketplace-mcp",
-    "fetchedAt": "2026-09-20T08:44:37.596Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.aaronsb/google-workspace",
-    "title": "Google Workspace",
-    "body": "Give AI agents access to Gmail, Calendar, Drive, and more — multi-account, manifest-driven\nVersion: 4.5.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@aaronsb/google-workspace-mcp\",\"version\":\"4.5.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Google OAuth 2.0 Client ID (Desktop application)\",\"name\":\"GOOGLE_CLIENT_ID\"},{\"description\":\"Google OAuth 2.0 Client Secret\",\"name\":\"GOOGLE_CLIENT_SECRET\"}]}]",
-    "url": "https://github.com/aaronsb/google-workspace-mcp#readme",
-    "fetchedAt": "2026-09-01T08:49:57.248Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.aleksUIX/rtblint",
-    "title": "RTBlint",
-    "body": "Validate OpenRTB bid requests and responses against IAB specs. ARTF, Rust core.\nVersion: 0.8.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://rtblint.org/mcp\"}]",
-    "url": "https://github.com/aleksUIX/rtblint",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.alexar76/aimarket-hub",
-    "title": "AIMarket — live agent marketplace",
-    "body": "Search and invoke real AI capabilities on modelmarket.dev. Free trial, then USDC on Base.\nVersion: 3.2.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://modelmarket.dev/mcp\"}]",
-    "url": "https://github.com/alexar76/aimarket-hub",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.antonio-mello-ai/mcp-proxmox",
-    "title": "io.github.antonio-mello-ai/mcp-proxmox",
-    "body": "Manage Proxmox VE clusters through AI assistants — VMs, containers, and more\nVersion: 1.2.2\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"mcp-proxmox\",\"version\":\"1.2.2\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/antonio-mello-ai/mcp-proxmox",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.armin5872/optiqra-mcp",
-    "title": "io.github.armin5872/optiqra-mcp",
-    "body": "MCP server exposing OptiQra's website audit tools: SEO, GEO, AEO, and AI-generated fixes.\nVersion: 1.0.4\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"optiqra-mcp\",\"version\":\"1.0.4\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of the OptiQra instance to call. Defaults to https://optiqra.vercel.app.\",\"name\":\"OPTIQRA_BASE_URL\"},{\"description\":\"Default AI-provider API key used by the ai-fix/ai-insights/ai-test tools if the caller doesn't pass one.\",\"isSecret\":true,\"name\":\"OPTIQRA_PROVIDER_API_KEY\"},{\"description\":\"Request timeout in milliseconds. Defaults to 120000.\",\"name\":\"OPTIQRA_TIMEOUT_MS\"}]}]",
-    "url": "https://optiqra.vercel.app",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.beepboop2025/pdf-suite-mcp",
-    "title": "io.github.beepboop2025/pdf-suite-mcp",
-    "body": "37 tools to read, create, merge, split, watermark, fill, redact & search PDFs. Local, no API key.\nVersion: 2.1.3\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"pdf-suite-mcp\",\"version\":\"2.1.2\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/beepboop2025/pdf-suite-mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.beepboop2025/pdf-toolkit-mcp",
-    "title": "io.github.beepboop2025/pdf-toolkit-mcp",
-    "body": "Legacy PDF Toolkit identity, pinned to its 2.1.1 package; maintained successor: PDF Suite MCP.\nVersion: 2.1.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"pdf-suite-mcp\",\"version\":\"2.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/beepboop2025/pdf-suite-mcp",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.beepboop2025/riptide",
-    "title": "Riptide — public risk and event research",
-    "body": "Read-only paper risk evidence and policy-gated committed event research. No real orders.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.seiche.info/riptide/mcp\"}]",
-    "url": "https://api.seiche.info/riptide/",
-    "fetchedAt": "2026-09-06T08:01:56.944Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.beepboop2025/umbra-proof",
-    "title": "io.github.beepboop2025/umbra-proof",
-    "body": "Verify Umbra bridge accountability proofs (signed receipts, checkpoints, Merkle inclusion).\nVersion: 0.1.2\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/beepboop2025/umbra-proof-mcp:v0.1.2\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/beepboop2025/umbra-xmr-bridge",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.beydemirfurkan/todox",
-    "title": "io.github.beydemirfurkan/todox",
-    "body": "Memory for coding agents: the decisions, the dead ends, and where the last session stopped.\nVersion: 0.1.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.todox.dev/api/mcp\",\"headers\":[{\"description\":\"Bearer <token>. Create an agent token on the Account page at https://www.todox.dev/account.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://www.todox.dev",
-    "fetchedAt": "2026-09-19T08:12:24.302Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.beyondnetcode/evolith",
-    "title": "Evolith Architecture Governance",
-    "body": "Executable architecture governance: an unevaluated rule is reported as a failure, never a pass.\nVersion: 1.3.3\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@beyondnet/evolith-mcp\",\"version\":\"1.3.3\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://beyondnetcode.github.io/evolith_arch32/",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.chrischall/accessoticketing-mcp",
-    "title": "io.github.chrischall/accessoticketing-mcp",
-    "body": "Read accesso mobile ticket links: orders, admissions, barcodes and Google Wallet passes.\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@chrischall/accessoticketing-mcp\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional default accesso ticket link from an order-confirmation email.\",\"isSecret\":true,\"name\":\"ACCESSO_TICKET_URL\"},{\"description\":\"Optional directory for saved barcode images.\",\"name\":\"ACCESSO_OUTPUT_DIR\"}]}]",
-    "url": "https://github.com/chrischall/accessoticketing-mcp",
-    "fetchedAt": "2026-09-20T08:44:37.596Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.chrischall/pickuppatrol-mcp",
-    "title": "io.github.chrischall/pickuppatrol-mcp",
-    "body": "Read and change your children's school dismissal plans in PickUp Patrol\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@chrischall/pickuppatrol-mcp\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/chrischall/pickuppatrol-mcp",
-    "fetchedAt": "2026-09-20T08:44:37.596Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.chrzanowy/agent-tollbooth",
-    "title": "tollbooth",
-    "body": "Stateful backend for AI agents: memory, watch, render, execute, and shared boards with digests.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/chrzanowy/agent-tollbooth:v0.1.2\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:4402/mcp\"}}]",
-    "url": "https://github.com/chrzanowy/agent-tollbooth",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.cyanheads/congressgov-mcp-server",
-    "title": "io.github.cyanheads/congressgov-mcp-server",
-    "body": "Access U.S. congressional data - bills, votes, members, committees - via MCP.\nVersion: 0.7.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://congressgov.caseyjhand.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/congressgov-mcp-server\",\"version\":\"0.7.3\",\"runtimeHint\":\"bun\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:stdio\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"API key from api.data.gov — optional (falls back to DEMO_KEY: 30 req/hr). Own key: 5000 req/hr. Free signup at api.data.gov.\",\"format\":\"string\",\"name\":\"CONGRESS_API_KEY\"},{\"description\":\"Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').\",\"format\":\"string\",\"default\":\"info\",\"name\":\"MCP_LOG_LEVEL\"}]},{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/congressgov-mcp-server\",\"version\":\"0.7.3\",\"runtimeHint\":\"bun\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:3010/mcp\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:http\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"API key from api.data.gov — optional (falls back to DEMO_KEY: 30 req/hr). Own key: 5000 req/hr. Free signup at api.data.gov.\",\"format\":\"string\",\"name\":\"CONGRESS_API_KEY\"},{\"description\":\"The hostname for the HTTP server.\",\"format\":\"string\",\"default\":\"127.0.0.1\",\"name\":\"MCP_HTTP_HOST\"},{\"description\":\"The port to run the HTTP server on.\",\"format\":\"string\",\"default\":\"3010\",\"name\":\"MCP_HTTP_PORT\"},{\"description\":\"The endpoint path for the MCP server.\",\"format\":\"string\",\"default\":\"/m",
-    "url": "https://github.com/cyanheads/congressgov-mcp-server",
-    "fetchedAt": "2026-09-27T09:26:27.392Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.cyanheads/sanctions-screening-mcp-server",
-    "title": "io.github.cyanheads/sanctions-screening-mcp-server",
-    "body": "Screen names against OFAC, EU, UK, UN sanctions lists; resolve entities via GLEIF. Screening aid.\nVersion: 0.1.12\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://sanctions-screening.caseyjhand.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/sanctions-screening-mcp-server\",\"version\":\"0.1.12\",\"runtimeHint\":\"node\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:stdio\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').\",\"format\":\"string\",\"default\":\"info\",\"name\":\"MCP_LOG_LEVEL\"},{\"description\":\"Filesystem path for the local SQLite mirror. All sources are keyless; no API key is required. Populate the mirror out-of-band with `bun run mirror:init`.\",\"format\":\"string\",\"default\":\"./data/sanctions.db\",\"name\":\"SANCTIONS_MIRROR_PATH\"},{\"description\":\"Default Jaro-Winkler similarity floor (0-1) for fuzzy matches when the caller omits minScore.\",\"format\":\"string\",\"default\":\"0.85\",\"name\":\"SANCTIONS_FUZZY_MIN_SCORE\"},{\"description\":\"Hard cap on fuzzy candidates scored per query, to bound work on short queries.\",\"format\":\"string\",\"default\":\"50\",\"name\":\"SANCTIONS_FUZZY_MAX_RESULTS\"}]},{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/sanctions-screening-mcp-server\",\"version\":\"0.1.12\",\"runtimeHint\":\"node\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:3010/mcp\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:http\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"The hostname for the HTTP server.\",\"format\":\"stri",
-    "url": "https://github.com/cyanheads/sanctions-screening-mcp-server",
-    "fetchedAt": "2026-09-21T09:11:47.736Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.docracy1/chasa",
-    "title": "io.github.docracy1/chasa",
-    "body": "AI invoice follow-up emails for freelancers. Draft-only, never sends for you.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.chasa.io/mcp\"}]",
-    "url": "https://github.com/docracy1/chasa",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.docracy1/docracy",
-    "title": "io.github.docracy1/docracy",
-    "body": "Free, no-signup e-signatures. check_status free for anyone; find_documents needs paid key.\nVersion: 1.0.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.docracy.io/mcp\"}]",
-    "url": "https://github.com/docracy1/docracy",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.dot-billy/small-site",
-    "title": "Small Site",
-    "body": "Validate and publish built static websites to a public Small Site URL.\nVersion: 0.5.0\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/dot-billy/small-site-mcp/releases/download/v0.5.0/small-site-mcp-0.5.0.mcpb\",\"version\":\"0.5.0\",\"fileSha256\":\"09356aabe43311d0a61bc9d318fcca66dfe842c1500c9b239178744e9c0eb83e\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://rw0.io/how-to-put-an-ai-generated-website-online/",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.evolutionlabs-dev/signal-bureau",
-    "title": "io.github.evolutionlabs-dev/signal-bureau",
-    "body": "SigB (Signal Bureau): maintained, source-traced record of entities and world events. Free, no key.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.signalbureau.ai/api/mcp\"}]",
-    "url": "https://sigb.ai",
-    "fetchedAt": "2026-09-01T08:49:57.248Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.fatihbaltaci/godrop",
-    "title": "GoDrop",
-    "body": "Self-hosted file host: upload a file, get a public URL an agent can paste into a pull request.\nVersion: 1.3.1\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/fatihbaltaci/godrop:1.3.1\",\"runtimeHint\":\"docker\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"value\":\"run\",\"type\":\"positional\",\"valueHint\":\"run\"},{\"description\":\"Keep stdin open, which is the whole transport.\",\"type\":\"named\",\"name\":\"-i\"},{\"description\":\"The process holds no state, so nothing is left behind.\",\"type\":\"named\",\"name\":\"--rm\"},{\"description\":\"Where your instance answers.\",\"value\":\"GODROP_URL\",\"type\":\"named\",\"name\":\"-e\",\"isRepeated\":true},{\"description\":\"The token that authorises uploads.\",\"value\":\"GODROP_TOKEN\",\"type\":\"named\",\"name\":\"-e\",\"isRepeated\":true}],\"packageArguments\":[{\"description\":\"Serve MCP on stdin and stdout instead of starting a server.\",\"value\":\"mcp\",\"type\":\"positional\",\"valueHint\":\"mcp\"}],\"environmentVariables\":[{\"description\":\"The base URL of the GoDrop you host, such as https://files.example.com.\",\"isRequired\":true,\"format\":\"string\",\"name\":\"GODROP_URL\"},{\"description\":\"An API token from that instance: godrop token create --name mcp.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"GODROP_TOKEN\"}]}]",
-    "url": "https://godrop.sh",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.getcyphrex/cyphrex-mcp",
-    "title": "Cyphrex",
-    "body": "Blockchain SSN for AI agents. MCP gateway that blocks at the point of action, tamper evident audit.\nVersion: 0.2.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.cyphrex.io/mcp\",\"headers\":[{\"description\":\"Your Cyphrex API key (format: Bearer cprx_live_...)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
-    "url": "https://github.com/getcyphrex/platform",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.glongusmain/glongus-mcp",
-    "title": "io.github.glongusmain/glongus-mcp",
-    "body": "MCP server for Glongus, an escrow-secured marketplace where AI agents trade physical goods\nVersion: 0.1.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"glongus-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Owner API key from glongus.com/connect. Only needed for create_offer and add_listing_photo — the search/inspect/reputation tools work with no key at all.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GLONGUS_API_KEY\"},{\"description\":\"Override the Glongus API base URL (defaults to https://api.glongus.com).\",\"format\":\"string\",\"name\":\"GLONGUS_API_URL\"}]}]",
-    "url": "https://github.com/glongusmain/glongus-mcp",
-    "fetchedAt": "2026-08-22T04:04:48.747Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.guniweb/guniweb-sap-mcp",
-    "title": "GuniWeb SAP MCP",
-    "body": "SAP S/4HANA and ECC: OData V2/V4, IDoc and RFC/BAPI for n8n and other MCP clients\nVersion: 0.4.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"guniweb-sap-mcp\",\"version\":\"0.4.2\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of the SAP system, including any path segment in front of /sap/opu/odata (e.g. https://s4.example.com or https://gateway.example.com/prefix)\",\"isRequired\":true,\"name\":\"SAP_BASE_URL\"},{\"description\":\"Authentication type: basic, oauth2, apikey, ias, xsuaa, btp-principal, saml-bearer\",\"default\":\"basic\",\"name\":\"SAP_AUTH_TYPE\"},{\"description\":\"SAP client (Mandant). Appended to every request — a client-dependent Gateway answers 401 without it\",\"default\":\"100\",\"name\":\"SAP_CLIENT\"},{\"description\":\"SAP user for basic authentication\",\"name\":\"SAP_USERNAME\"},{\"description\":\"Password for basic authentication\",\"isSecret\":true,\"name\":\"SAP_PASSWORD\"},{\"description\":\"Set to true to start a built-in mock S/4HANA instead of connecting to a real system. No SAP_* configuration needed — for trying the server out\",\"default\":\"false\",\"name\":\"SAP_MCP_DEMO\"}]}]",
-    "url": "https://github.com/guniweb/guniweb-sap-mcp#readme",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.hashgraph-online/hol-guard",
-    "title": "HOL Guard",
-    "body": "Local-first AI agent security evidence and approval workflows through HOL Guard's stdio MCP server.\nVersion: 3.6.3\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"hol-guard\",\"version\":\"3.6.3\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"},{\"value\":\"serve\",\"type\":\"positional\"},{\"value\":\"--stdio\",\"type\":\"positional\"}]}]",
-    "url": "https://hol.org/guard",
-    "fetchedAt": "2026-09-27T09:26:27.392Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.hjqcan/goodmemory",
-    "title": "GoodMemory",
-    "body": "Durable user/project memory for MCP clients: recall context and remember selected facts.\nVersion: 0.7.5\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"goodmemory\",\"version\":\"0.7.5\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"},{\"value\":\"serve\",\"type\":\"positional\"},{\"description\":\"Run the standalone read-only MCP server without an installed host.\",\"type\":\"named\",\"name\":\"--standalone\"},{\"description\":\"Stable GoodMemory user id that scopes this client's memory.\",\"isRequired\":true,\"value\":\"{user_id}\",\"variables\":{\"user_id\":{\"description\":\"Your stable GoodMemory user id.\",\"isRequired\":true,\"format\":\"string\"}},\"type\":\"named\",\"name\":\"--user-id\"}]}]",
-    "url": "https://github.com/hjqcan/GoodMemory#readme",
-    "fetchedAt": "2026-08-23T04:08:29.331Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.hmdmph/bamboo-mcp",
-    "title": "Bamboo MCP Server",
-    "body": "Read-only MCP server for self-hosted Atlassian Bamboo CI/CD\nVersion: 0.1.2\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/hmdmph/bamboo-mcp:0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of your Bamboo server, e.g. https://bamboo.example.com\",\"isRequired\":true,\"format\":\"string\",\"name\":\"BAMBOO_URL\"},{\"description\":\"Bamboo personal access token. Read permission is sufficient.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BAMBOO_TOKEN\"},{\"description\":\"Transport mode. Must be stdio when the client runs the container.\",\"isRequired\":true,\"format\":\"string\",\"default\":\"stdio\",\"name\":\"MCP_TRANSPORT\"},{\"description\":\"HTTP proxy URL, if Bamboo is only reachable via a proxy.\",\"format\":\"string\",\"name\":\"BAMBOO_PROXY\"},{\"description\":\"Bitbucket base URL, used to build source links in build results.\",\"format\":\"string\",\"name\":\"BITBUCKET_URL\"},{\"description\":\"Set to true to log requests and errors to stderr.\",\"format\":\"string\",\"default\":\"false\",\"name\":\"VERBOSE\"}]}]",
-    "url": "https://github.com/hmdmph/bamboo-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.iTophua/iterminal",
-    "title": "io.github.iTophua/iterminal",
-    "body": "MCP Server for iTerminal SSH Connection Manager - Control SSH servers through Claude.\nVersion: 2.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"iterminal-mcp-server\",\"version\":\"2.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/iTophua/iterminal",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.iksnerd/adb-mcp",
-    "title": "adb-mcp: Android emulator and device control over adb",
-    "body": "Drive an Android emulator or device over adb: screenshot, inspect UI, tap, type, build and test.\nVersion: 0.23.0\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/iksnerd/adb-mcp:0.23.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://adb-mcp.com",
-    "fetchedAt": "2026-08-26T04:09:22.368Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.jyswee/comiceditorial",
-    "title": "io.github.jyswee/comiceditorial",
-    "body": "Comic publishing for coding agents. Comics, chapters, AI panels, CBZ export. stdio + remote SSE.\nVersion: 0.1.1\nRemotes: [{\"type\":\"sse\",\"url\":\"https://mcp.comiceditorial.com/sse\",\"headers\":[{\"description\":\"Bearer token using your ComicEditorial API key: 'Bearer cts_...'. Optional: without one the server starts in onboarding mode and can self-signup via the comiceditorial_signup tool.\",\"isSecret\":true,\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"comiceditorial\",\"version\":\"0.1.1\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"isRequired\":true,\"value\":\"mcp-serve\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"ComicEditorial API key (cts_...). Optional: without a key the server starts in onboarding mode and can self-signup.\",\"isSecret\":true,\"name\":\"CMED_API_KEY\"}]}]",
-    "url": "https://comiceditorial.com",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.khs0927/qwen38-free-gateway",
-    "title": "io.github.khs0927/qwen38-free-gateway",
-    "body": "Free Qwen3.8-27B gateway with isolated Minis provider, SSE, retry/failover, and MCP.\nVersion: 0.6.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api-v2.appdeploy.ai/app/qwen3-8-free-gateway-n995yy/api/mcp\"}]",
-    "url": "https://minis-eve-glm52-provider.vercel.app/qwen/setup",
-    "fetchedAt": "2026-08-17T04:10:39.900Z"
-  },
-  {
-    "source": "mcp-registry",
     "externalId": "io.github.krystiangw/zen",
     "title": "io.github.krystiangw/zen",
     "body": "Unofficial MCP server for the ZEN.com Payment Gateway: payment links, transactions, refunds.\nVersion: 0.1.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@krystiangw/zen-mcp\",\"version\":\"0.1.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"ZEN Terminal API Key (Authorization header)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"ZEN_API_KEY\"},{\"description\":\"ZEN paywall secret for request signing (required for write ops)\",\"format\":\"string\",\"isSecret\":true,\"name\":\"ZEN_PAYWALL_SECRET\"},{\"description\":\"ZEN IPN secret for webhook verification\",\"format\":\"string\",\"isSecret\":true,\"name\":\"ZEN_IPN_SECRET\"},{\"description\":\"sandbox (default) or production\",\"format\":\"string\",\"name\":\"ZEN_ENV\"}]}]",
@@ -148374,5 +147414,1053 @@
     "body": "Hi HN, I’m Jaime. I’m a VFX artist with over 20 years of experience, and I’ve been building Velorn as a solo developer. Velorn is a GPLv3 desktop video editor for Windows, macOS, and Linux. It has a multi track video/audio timeline and works as a normal editor without any AI generation setup. You can import existing media, edit and layer clips, add effects, text and keyframes, transcribe locally with Whisper, mix audio, and export through FFmpeg. For me, AI generated footage is raw material. The creative part is still what happens afterward: selection, timing, sound, pacing, effects, captions, and narrative structure. I wanted an app where generation and editing could exist in the same workflow, even editing live action footage with AI generations, so I started building Velorn. One of the parts I've been especially interested in is MCP. Velorn runs a local, loopback only MCP server that lets clients such as Codex and Claude Code interact with the project that's actually open in the editor. Rather than putting a chatbot next to the timeline, I wanted to expose structured editing operations to the agent. It can inspect the project and timeline, look at media and frames, propose and perform edits, work with captions and effects, organize assets, and prepare exports and generation jobs. Here's a short example using Codex: https://www.youtube.com/watch?v=Owel8zkMWkY For this demo I gave Codex almost no creative direction. I basically told it, you're live on YouTube, use Velorn to create a really cool motion graphics video. Just make something. I wanted to see what would happen when the agent had access to an actual editing environment rather than asking it to execute a predetermined sequence of edits. The video is about 3.5 minutes. I fast forward through some of the time where the agent is thinking, but otherwise it shows the interaction and the resulting work inside Velorn. ComfyUI is not required for editing, captions, MCP, project management, or exporting. All generation in Velorn currently goes through a locally running ComfyUI instance on the same machine. For local models, your own GPU performs the work and Velorn doesn't charge credits. Generated results are brought back into the active project so they can immediately become part of the edit. Some ComfyUI workflows can also use paid Partner Nodes/API services. Those may perform the actual computation in the cloud and require Comfy.org credentials and credits, but the workflow is still submitted through the user's local ComfyUI. Velorn doesn't currently operate a separate cloud generation backend. So someone can download Velorn and use it as an editor with MCP without configuring ComfyUI at all. ComfyUI is only required when using Velorn's current generation features. Velorn uses Electron, React, Zustand for project/timeline state, FFmpeg for media processing and export, local Whisper for transcription, ComfyUI's API for generation, and a local MCP server exposing structured editorial operations. I chose Electron because it gave me one cross platform editor implementation while still allowing integration with the filesystem, FFmpeg, local processes, ComfyUI, and MCP. The project has picked up 400+ GitHub stars so far as a solo developer, I'm particularly interested in hearing from people who actually edit video or are experimenting with agents. I would really love some feedback. Velorn is free and open source. Try it! To see longer MCP interactions without the agent's thinking being fast forwarded, I also recorded two uncut examples: https://www.youtube.com/watch?v=_r4jf7ZDT2o https://www.youtube.com/watch?v=AT9usQS3m48 Here's a music video that I made in just 2 days with Velorn that has gotten some attention: https://www.youtube.com/watch?v=iX-YdjVMDhg GitHub: https://github.com/VelornLabs/velorn Website: https://velorn.ai Thanks for looking! Comments URL: https://news.ycombinator.com/item?id=49311785 Points: 2 # Comments: 0",
     "url": "https://github.com/VelornLabs/velorn",
     "fetchedAt": "2026-08-16T04:07:20.217Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50115150",
+    "title": "Show HN: I built 7 B2B APIs and 5 MCP servers for compliance and trade",
+    "body": "Article URL: https://jsonexlab.com Comments URL: https://news.ycombinator.com/item?id=50115150 Points: 1 # Comments: 0",
+    "url": "https://jsonexlab.com",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50111640",
+    "title": "OpenTodo, a Todoist killer with MCP integration",
+    "body": "Article URL: https://open-todo.app/ Comments URL: https://news.ycombinator.com/item?id=50111640 Points: 2 # Comments: 1",
+    "url": "https://open-todo.app/",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50111042",
+    "title": "Visual Nerve, Free workflow visualization and simulation with MCP",
+    "body": "Article URL: https://www.visualnerve.com/ Comments URL: https://news.ycombinator.com/item?id=50111042 Points: 1 # Comments: 0",
+    "url": "https://www.visualnerve.com/",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50109689",
+    "title": "PostHog MCP Leaderboard",
+    "body": "Article URL: https://posthog.com/mcp/leaderboard Comments URL: https://news.ycombinator.com/item?id=50109689 Points: 11 # Comments: 1",
+    "url": "https://posthog.com/mcp/leaderboard",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50108054",
+    "title": "Show HN: CoolDock – a second Dock for macOS with live widgets and an MCP server",
+    "body": "I always hated desktop widgets because I never see them. They sit behind every window I have open. Same problem with Notification Center, it's hidden away so I never use it. The dock, however, is always there, it's already taking the real estate from the bottom of my screen, so why not add a second dock on the exact same real estate, that shows up as soon as the dock hides and vice versa, but not for apps - for widgets! CoolDock is that solution with 20+ widget categories - music, weather, AI usage, 3rd party integrations, mail, todo, habit tracker, posture reminder, water reminder and over 150 wallpapers to switch to based on my mood. And the best part is that it looks completely native with Liquid Glass, doesn't require disabling the macOS default dock and runs completely local, no telemetry, no account, only widgets and your integrations. Oh and best part #2 - I added an MCP server so I don't actually have to clickops my way to complete setup, I could just ask my AI to add a widget and configure it however I want it (MCP starts as read-only, you can choose to give it permission to actually change things). I actually acquired CoolDock from its original developer, and it's the second dock app I acquired from a developer (ExtraDock was the first). CoolDock currently has passed 1,200 users I am constantly adding new widgets based on user requests, currently at 160+ widgets to choose from, you can see them on the website https://cooldock.app Happy to answer any question! Comments URL: https://news.ycombinator.com/item?id=50108054 Points: 4 # Comments: 0",
+    "url": "https://cooldock.app/",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50105780",
+    "title": "A misbehaving test MCP server for stress-testing your MCP client",
+    "body": "We needed an MCP server that misbehaves on our command to test our own MCP gateway at work, but could only find well-behaved MCPs. That’s why we built a misbehaving MCP server ourselves and now share it on here, might be helpful for others building MCP gateways. It’s similar to the MCP Inspector, but lets you test your client not your server. We called it MCP Test Kitchen and it’s a (also hosted) MCP server that lets you: * Connect any client that takes a URL and an Authorization header (Cursor, Claude Desktop or your own). It answers both 2025-11-25 and 2026-07-28 clients and logs which protocol revision each request declared. * Pick one of 6 scenarios: HTTP transport errors, JSON-RPC error responses, tool results flagged isError, elicitation, multi round-trip requests (MRTR) via a C# SDK v2 scenario, and a baseline with a configurable delay. JSON-RPC and tool errors can be set to fail on a specific call, so the first call succeeds and the second fails. Resources and prompts are always on, each with a deliberately broken variant. If you want other scenarios, let us know. * Watch every request in a live log with timing, method, caller, status and protocol version. * Clone a TypeScript reference client, pinned to the latest spec, with full source. You can run it yourself, it’s open source. If you’d rather test it live, we also hosted it, but you need to login (Google or GitHub, needed for the token) and can get started immediately. We’d appreciate feedback, that’s why we're posting. In the live tool, there is a box that emails us directly. We’re around to check feedback + other scenarios you wish it had. * Link to the repo here: https://github.com/cakewalk-security/cakewalk-mcp-test-kitch... * Live tool access here: https://mcp-test-kitchen.cakewalk.security/login * More information on why we built this: https://www.cakewalk.security/mcp-test-kitchen/blog/wtf-simu... Comments URL: https://news.ycombinator.com/item?id=50105780 Points: 3 # Comments: 1",
+    "url": "https://news.ycombinator.com/item?id=50105780",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50104829",
+    "title": "Designing an MCP tool: the definition and the result",
+    "body": "Article URL: https://pournasserian.com/writing/mcp-2026-tool-definitions Comments URL: https://news.ycombinator.com/item?id=50104829 Points: 1 # Comments: 0",
+    "url": "https://pournasserian.com/writing/mcp-2026-tool-definitions",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50104239",
+    "title": "Muslim Prayer Reminder MCP: Astronomical prayer calculation engine",
+    "body": "Article URL: https://github.com/tareq7/muslim-prayer-mcp Comments URL: https://news.ycombinator.com/item?id=50104239 Points: 1 # Comments: 0",
+    "url": "https://github.com/tareq7/muslim-prayer-mcp",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50103638",
+    "title": "Show HN: Imagor MCP – agent-written image layouts that compile to one URL",
+    "body": "Article URL: https://github.com/cshum/imagor-mcp Comments URL: https://news.ycombinator.com/item?id=50103638 Points: 2 # Comments: 0",
+    "url": "https://github.com/cshum/imagor-mcp",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50102102",
+    "title": "Show HN: Official MCP Servers",
+    "body": "We maintain an updated list of official MCP servers repo: 390+ well-known and widely used projects, all from the companies behind the products or actively maintained open source. Feedback and PRs welcome. Comments URL: https://news.ycombinator.com/item?id=50102102 Points: 2 # Comments: 0",
+    "url": "https://github.com/VoltAgent/official-mcp-servers",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "rss",
+    "externalId": "https://news.ycombinator.com/item?id=50100970",
+    "title": "WSP MCP – Free WordPress MCP for Connecting AI Coding Agents",
+    "body": "Article URL: https://github.com/bilalnaseer/wsp-wordpress-mcp Comments URL: https://news.ycombinator.com/item?id=50100970 Points: 1 # Comments: 0",
+    "url": "https://github.com/bilalnaseer/wsp-wordpress-mcp",
+    "fetchedAt": "2026-10-16T08:23:13.331Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "co.getvalyou/valyou",
+    "title": "ValYou",
+    "body": "Read-only access to your net worth, wealth percentile, projections, splits and budget.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://kojwpbbznaxyoxyqfacc.supabase.co/functions/v1/mcp\"}]",
+    "url": "https://getvalyou.co/ai",
+    "fetchedAt": "2026-07-31T06:28:33.899Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.a2awire/a2awire",
+    "title": "A2AWire",
+    "body": "Escrow, reputation, and payments for agent-to-agent commerce. Non-custodial USDC/Base L2.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://a2awire.com/mcp/http\"},{\"type\":\"sse\",\"url\":\"https://a2awire.com/mcp/sse\"}]",
+    "url": "https://github.com/ee324/a2awire",
+    "fetchedAt": "2026-08-12T05:13:23.306Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.aiakiv/aiakiv",
+    "title": "AiAkiv Memory",
+    "body": "Shared long-term memory for AI agents: save and recall context as a searchable knowledge graph.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.aiakiv.com/mcp\"}]",
+    "url": "https://www.aiakiv.com",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.aiakiv/memory",
+    "title": "AiAkiv Memory",
+    "body": "Shared long-term memory for AI agents: save and recall context as a searchable knowledge graph.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.aiakiv.com/mcp?apps=all\"}]",
+    "url": "https://www.aiakiv.com",
+    "fetchedAt": "2026-10-10T10:02:48.419Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.alamavar.taskrail/taskrail",
+    "title": "TaskRail",
+    "body": "Delivered-price deals, cancel/refund paths, used-value comparisons, and compatibility checks.\nVersion: 1.3.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://taskrail.alamavar.com/mcp\"}]",
+    "url": "https://taskrail.alamavar.com",
+    "fetchedAt": "2026-07-30T06:05:40.105Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.alpinedataworks/adw-intelligence-server",
+    "title": "AlpineDataWorks Intelligence Server",
+    "body": "Agent-ready economic, market & geo-health intelligence — 318 MCP tools, 309 driver-backed indices.\nVersion: 0.3.7\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.alpinedataworks.com/mcp\",\"headers\":[{\"description\":\"Bearer API key. Free demo: 'Bearer adw_free_demo'. Get your own at https://api.alpinedataworks.com/signup. Call adw.catalog first, then adw.adw_NNN.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://alpinedataworks.com",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.babyagecalculator/baby-age",
+    "title": "com.babyagecalculator/baby-age",
+    "body": "Free hosted MCP server by Baby Age Calculator: exact baby age, zodiac, and milestone dates. No key.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://babyagecalculator.com/api/mcp/\"}]",
+    "url": "https://babyagecalculator.com/mcp/",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.boxtoplay/mcp",
+    "title": "BoxToPlay",
+    "body": "MCP-ready hosting provider for Minecraft, BungeeCord, TeamSpeak, VPS and many other game servers.\nVersion: 1.0.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.boxtoplay.com/mcp\"}]",
+    "url": "https://www.boxtoplay.com/",
+    "fetchedAt": "2026-08-03T06:43:36.171Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.contrastcyber/api",
+    "title": "ContrastAPI",
+    "body": "55 tools, 7 Resources, Sigma rules, email SPF/DMARC, MITRE, CVE/KEV, risk_score. No key.\nVersion: 1.36.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.contrastcyber.com/mcp/\"}]",
+    "url": "https://api.contrastcyber.com",
+    "fetchedAt": "2026-08-25T04:07:39.706Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.cortexpad/cortexpad",
+    "title": "com.cortexpad/cortexpad",
+    "body": "Google Keep-style notes app with an MCP server for AI agents to read/write notes.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.cortexpad.com/mcp\",\"headers\":[{\"description\":\"Your CortexPad API token. Generate one from Settings → API Tokens in the app.\",\"isRequired\":true,\"value\":\"Bearer {token}\",\"isSecret\":true,\"variables\":{\"token\":{\"isRequired\":true,\"isSecret\":true}},\"name\":\"Authorization\"}]}]",
+    "url": "https://cortexpad.com",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.crisphive/mcp",
+    "title": "com.crisphive/mcp",
+    "body": "Field operations on a deterministic solver — run jobs, crews & fleet from Claude or ChatGPT.\nVersion: 2.5.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.crisphive.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@crisphive/mcp\",\"version\":\"2.5.0\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Crisphive Developer API key (chsk_live_... = production data, chsk_test_... = isolated sandbox). Create one in the dashboard under Developers -> API keys.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"CRISPHIVE_API_KEY\"},{\"description\":\"API origin override. Defaults to https://api.crisphive.com.\",\"name\":\"CRISPHIVE_BASE_URL\"}]}]",
+    "url": "https://docs.crisphive.com/mcp",
+    "fetchedAt": "2026-10-04T09:59:32.750Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.dialmcp/dialmcp",
+    "title": "DialMCP",
+    "body": "Let AI agents place real phone calls from your verified number, with transcripts and recordings.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.dialmcp.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"dialmcp-connector\",\"version\":\"0.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://dialmcp.com",
+    "fetchedAt": "2026-07-28T06:07:51.679Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.energyaisolution/energyai",
+    "title": "com.energyaisolution/energyai",
+    "body": "Solar, weatherization, EV charging, battery and heat-pump decision tools for AI agents.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.energyaisolution.com/mcp\",\"headers\":[{\"description\":\"Optional Bearer key. Start with 20 anonymous informational calls/24h; free key: 100/30d. Operator-authorized activation includes three eligible commercial trials on the full endpoint. Builder: $19/month with $20 tool credit. Live pricing and supported jobs: /agents.\",\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://energyaisolution.com/agents",
+    "fetchedAt": "2026-09-12T08:03:13.695Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.awardcast/federal-contracts",
+    "title": "AwardCast Federal Contracts",
+    "body": "US federal contracting data: open solicitations, buying agencies, contractors, price history.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://awardcast.ai/mcp\"}]",
+    "url": "https://awardcast.ai",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.elicitly/elicitly",
+    "title": "Elicitly",
+    "body": "Human-in-the-loop for AI agents over MCP elicitation: confirm/form dialogs plus a capability doctor\nVersion: 0.8.3\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"elicitly\",\"version\":\"0.8.3\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://www.elicitly.ai",
+    "fetchedAt": "2026-10-10T10:02:48.419Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.elicitly/pro",
+    "title": "Elicitly Pro",
+    "body": "Human-in-the-loop for AI agents over MCP: durable approvals with a hosted review page & audit trail\nVersion: 2026.8.19\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.elicitly.ai/mcp\"}]",
+    "url": "https://www.elicitly.ai",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.fullmakt/fullmakt",
+    "title": "Fullmakt",
+    "body": "Credential broker for AI agents: scoped, revocable API access with policy enforcement and audit.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://fullmakt.ai/mcp\"}]",
+    "url": "https://fullmakt.ai",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.justonce/memory",
+    "title": "JustOnce",
+    "body": "Persistent memory for AI assistants — one shared, OAuth-secured vault for every MCP client.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.justonce.ai\"}]",
+    "url": "https://justonce.ai",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.kaiv/commerce-demo",
+    "title": "ai.kaiv/commerce-demo",
+    "body": "Kaiva Bridge live demo: a commerce dataset as a hosted, read-only MCP server (6 tools).\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api-demo.kaiv.ai/api/bridge/mcp/commerce-demo\",\"headers\":[{\"value\":\"Bearer kv_live_commerce_demo_public_ro\",\"name\":\"Authorization\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=ai.kaiv%2Fcommerce-demo",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.mentu/navigator",
+    "title": "ai.mentu/navigator",
+    "body": "Read-only repo navigation and progressive disclosure; BM25 locator with registered evidence.\nVersion: 1.0.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"mentu-navigator\",\"version\":\"1.0.2\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/mentu-ai/mentu-navigator",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.radmail/radmail-mcp",
+    "title": "ai.radmail/radmail-mcp",
+    "body": "Email OS for agents - real-inbox search, triage, commitments, and a verifiable BEC hard-stop.\nVersion: 0.5.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://radmail.ai/api/mcp/sandbox\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"radmail-mcp\",\"version\":\"0.5.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://radmail.ai/for-agents",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.reglayer/instant-decision-briefs",
+    "title": "RegLayer Instant Decision Briefs",
+    "body": "Company-specific regulatory assessments for concrete business questions, as structured data or PDF.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://reglayer.ai/mcp\"}]",
+    "url": "https://reglayer.ai/agents",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.seendb/seendb",
+    "title": "ai.seendb/seendb",
+    "body": "Video knowledge base for agents: search your library's transcripts, keyframes and on-screen text.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.seendb.ai/mcp\"}]",
+    "url": "https://www.seendb.ai",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.starreel/starreel",
+    "title": "ai.starreel/starreel",
+    "body": "Turn a script into a finished, downloadable short-drama episode — via MCP or REST.\nVersion: 0.1.136\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@starreel/mcp\",\"version\":\"0.1.136\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"StarReel API key (create in Settings → API Keys)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"STARREEL_API_KEY\"}]}]",
+    "url": "https://starreel.ai",
+    "fetchedAt": "2026-10-10T10:02:48.419Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.susurration/playground",
+    "title": "Susurration",
+    "body": "A playground built for AI agents: run a flock, leave verified traces, propose exhibits. Be curious.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://susurration.ai/mcp\"}]",
+    "url": "https://susurration.ai",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ai.weftly/weftly",
+    "title": "Weftly",
+    "body": "Find & cut horizontal and vertical video clips (Shorts/Reels), transcribe & summarize. Pay per job.\nVersion: 0.35.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.weftly.ai/mcp\"}]",
+    "url": "https://weftly.ai",
+    "fetchedAt": "2026-10-11T10:13:22.236Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "bio.atlarium/habitat-database",
+    "title": "Atlarium Habitat Database MCP",
+    "body": "Structured habitat data and advisory tools for aquariums, marine tanks, terrariums and paludariums.\nVersion: 2.0.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.atlarium.bio/mcp\"}]",
+    "url": "https://github.com/techgardeners/atlarium-mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "cat.2022/catalunya-2022",
+    "title": "Catalunya 2022",
+    "body": "Cerca de text complet al pla Catalunya 2022 - RESET: 3 àmbits, 12 objectius, 91 accions. CA/EN/ES.\nVersion: 2.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.2022.cat\"}]",
+    "url": "https://2022.cat",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "co.fingersai/fingers",
+    "title": "co.fingersai/fingers",
+    "body": "The honest trust index for x402: check who you're paying before your agent pays.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://fingersai.co/mcp\"}]",
+    "url": "https://fingersai.co",
+    "fetchedAt": "2026-08-23T04:08:29.331Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "co.schoolscope/mcp",
+    "title": "SchoolScope",
+    "body": "California school data for AI agents — scores, profiles, comparisons, feeder paths, UC pipelines.\nVersion: 3.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.schoolscope.co/mcp\"}]",
+    "url": "https://schoolscope.co",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.aiskills402/mcp",
+    "title": "AISkills402",
+    "body": "Tested AI agent skill files (SKILL.md), bought once over x402 for cents on Base. Free MCP search.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.aiskills402.com/mcp\"}]",
+    "url": "https://aiskills402.com",
+    "fetchedAt": "2026-10-08T10:49:20.368Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.caribooks/quickbooks",
+    "title": "Caribooks (QuickBooks Online)",
+    "body": "QuickBooks Online in Claude and ChatGPT: 221 tools, full ledger, multi-company, Canada + US, FR/EN.\nVersion: 1.4.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://caribooks.com/api/mcp\"}]",
+    "url": "https://caribooks.com",
+    "fetchedAt": "2026-09-09T08:18:14.513Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.donebear/donebear",
+    "title": "Done Bear",
+    "body": "Local-first task manager: create, edit, and complete tasks, projects, and checklists via MCP.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.donebear.com/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.donebear%2Fdonebear",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.edwyna/fax",
+    "title": "Edwyna Fax API",
+    "body": "Send individual transactional faxes with prepaid credit, delivery status, and safeguards.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://edwyna.com/mcp\"}]",
+    "url": "https://edwyna.com/mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.flightpowers/google-flights-mcp",
+    "title": "Flight Search (Real-Time Fares)",
+    "body": "Real-time flight search: one-way and round-trip fares across date ranges, with price verdicts.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://google-flights-mcp.flightpowers.com/mcp\",\"headers\":[{\"description\":\"Your own RapidAPI key for the Google Flights Live API. Free tier available at https://rapidapi.com/mtnrabi/api/google-flights-live-api\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"x-rapidapi-key\"}]}]",
+    "url": "https://github.com/mtnrabi/travel-agent-skills",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.getarcresearch/arc-research",
+    "title": "Arc Research",
+    "body": "Commodities research MCP: knowledge graph, COT, NG storage/weather, quotes, and stories.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.getarcresearch.com/mcp\",\"headers\":[{\"description\":\"Bearer token from Account → MCP access (arc_mcp_...). Requires Arc Research Starter.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://www.getarcresearch.com/docs/mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.haulbound/haulbound",
+    "title": "com.haulbound/haulbound",
+    "body": "Run an eBay seller account from your AI assistant: orders, listings, stock, fees and payouts.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://haulbound.com/mcp\"}]",
+    "url": "https://haulbound.com",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.heliciel/heliciel",
+    "title": "Heliciel — Propeller & Wing Design",
+    "body": "Real BEM engineering for propellers, wings and turbines — design, optimize, visualize, export.\nVersion: 12.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.heliciel.com/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=com.heliciel%2Fheliciel",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.heybuna/buna",
+    "title": "Buna",
+    "body": "The family food app your agent operates.\nVersion: 1.45.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.heybuna.com/mcp\"}]",
+    "url": "https://heybuna.com",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.hungry-esim/esim",
+    "title": "Hungry eSIM",
+    "body": "Travel eSIMs: unlimited data, pick your days, top up existing eSIMs, card checkout, no API key.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.hungry-esim.com/mcp\"}]",
+    "url": "https://hungry-esim.com/for-agents",
+    "fetchedAt": "2026-08-25T04:07:39.706Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.incisory/incisory",
+    "title": "Incisory",
+    "body": "Audit whether ChatGPT, Gemini & Perplexity recommend a business — verbatim proof, then fix it.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://incisory.com/mcp\"}]",
+    "url": "https://incisory.com",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.itsnum/num",
+    "title": "NUM",
+    "body": "Real places for your agent. Search 2.5M+ travel places; submit a business for human review.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://itsnum.com/mcp\",\"headers\":[{\"description\":\"Optional. Bearer numa_live_… key from POST https://itsnum.com/api/agent/signup. Leave empty to sign in with OAuth instead.\",\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://itsnum.com/agents/",
+    "fetchedAt": "2026-09-18T08:24:48.044Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.killbottleneck/killbottleneck",
+    "title": "com.killbottleneck/killbottleneck",
+    "body": "Goal and process maps for humans and AI agents on your own server.\nVersion: 0.63.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"killbottleneck-mcp\",\"version\":\"0.63.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Address of your killBottleneck instance, e.g. https://company.killbottleneck.com or http://192.168.1.10:8090\",\"isRequired\":true,\"format\":\"string\",\"name\":\"KB_URL\"},{\"description\":\"API key issued in the app (user menu -> API keys). Use a read-write scope for editing.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"KB_API_KEY\"}]}]",
+    "url": "https://github.com/tengolabs/killbottleneck",
+    "fetchedAt": "2026-09-21T09:11:47.736Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.mambabuilt/mcp-page-finder-extractor",
+    "title": "com.mambabuilt/mcp-page-finder-extractor",
+    "body": "Find a named page type on a company's own website from its domain, in 11 languages.\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@mambalabsdev/mcp-page-finder-extractor\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Apify API token from https://console.apify.com/account/integrations\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"APIFY_TOKEN\"}]}]",
+    "url": "https://github.com/mambalabsdev/mcp-page-finder-extractor",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.mentionry/mentionry",
+    "title": "Mentionry",
+    "body": "Find who links to your competitors but not you, judge each opening, and draft the pitch.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mentionry.com/api/mcp\",\"headers\":[{\"description\":\"Bearer <your Mentionry API key>. Create one free at https://mentionry.com/dashboard/account\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://mentionry.com/mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.rqmtechnologies/waveengine",
+    "title": "RQM WaveEngine Jobs",
+    "body": "Delegate 20 typed, evidence-backed WaveEngine signal work products with fixed-request x402.\nVersion: 1.6.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://jobs.rqmtechnologies.com/mcp/waveengine\"}]",
+    "url": "https://www.rqmtechnologies.com/waveengine/mcp",
+    "fetchedAt": "2026-08-20T04:07:16.030Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.stalsoft/stalsoft",
+    "title": "Stalsoft – Dr. Alex Stolz, IT- und KI-Beratung",
+    "body": "Öffentliche Inhalte von stalsoft.com: Profil, Leistungen, FAQ, Publikationen, Kontakt, Suche.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.stalsoft.com/mcp\"}]",
+    "url": "https://www.stalsoft.com",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.stierproducts/tier-lists",
+    "title": "stierproducts tier lists",
+    "body": "S-to-F tier lists for 208 product categories. Every placement cited, with barcodes.\nVersion: 1.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.stierproducts.com/mcp\"}]",
+    "url": "https://stierproducts.com/mcp",
+    "fetchedAt": "2026-08-23T04:08:29.331Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.texttoquant/texttoquant",
+    "title": "TextToQuant Backtesting and Quant Research",
+    "body": "Backtest plain-English trading strategies on real market data: graded results, honesty flags.\nVersion: 2.6.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.texttoquant.com/api/mcp\"}]",
+    "url": "https://www.texttoquant.com",
+    "fetchedAt": "2026-09-15T08:52:02.662Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.twelvepermissions/twelve-permissions",
+    "title": "Twelve Permissions",
+    "body": "Browse, verify and buy Twelve Permissions NFTs on XRP Ledger. Every claim is checkable.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://twelvepermissions.com/mcp\"}]",
+    "url": "https://twelvepermissions.com",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.upshiftsites/mcp",
+    "title": "Upshift",
+    "body": "Audit a site's structured data and llms.txt, match a trade to a template, and quote real prices.\nVersion: 1.0.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.upshiftsites.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"upshift-mcp\",\"version\":\"1.0.3\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://mcp.upshiftsites.com/",
+    "fetchedAt": "2026-08-19T04:07:05.433Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "com.wauldo/wauldo",
+    "title": "Wauldo",
+    "body": "Stateless agentic tools over MCP: concept extraction, long-context, knowledge graph, planning.\nVersion: 1.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.wauldo.com/mcp\"}]",
+    "url": "https://wauldo.com",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "de.fewo-bruno-gap/ferienwohnung-bruno",
+    "title": "Ferienwohnung Bruno – Garmisch-Partenkirchen",
+    "body": "Ferienwohnung Garmisch-Partenkirchen: Infos, FAQ, Preise, Angebote, Verfügbarkeit, Preisrechner\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.fewo-bruno-gap.de/mcp\"}]",
+    "url": "https://www.fewo-bruno-gap.de",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.districtapi/districtapi-mcp",
+    "title": "DistrictAPI",
+    "body": "US public school districts and schools by address — enrollment, demographics, boundaries\nVersion: 0.1.2\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"districtapi-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key from https://districtapi.dev (free tier: 500 requests/month)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"DISTRICTAPI_KEY\"}]}]",
+    "url": "https://districtapi.dev",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.ffpipe/ffpipe",
+    "title": "ffpipe — video conversion, probe & frames",
+    "body": "Convert, probe, and split video into frames — real FFmpeg, paid per job with x402 on Base.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ffpipe.dev/mcp\"}]",
+    "url": "https://ffpipe.dev",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.libraryapi/libraryapi-mcp",
+    "title": "LibraryAPI",
+    "body": "US public libraries and branches near any address, with collections from the IMLS survey\nVersion: 0.1.2\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"libraryapi-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key from https://libraryapi.dev (free tier: 500 requests/month)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"LIBRARYAPI_KEY\"}]}]",
+    "url": "https://libraryapi.dev",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.mory/trendflow",
+    "title": "TrendFlow",
+    "body": "Google Trends data: interest over time, by region, related queries, and trending now.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://trendflow.mory.dev/mcp\"}]",
+    "url": "https://trendflow.mory.dev/docs/mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.publicsafetyapi/publicsafetyapi-mcp",
+    "title": "PublicSafetyAPI",
+    "body": "US police, fire, EMS and hospital locations near any address, from federal HIFLD data\nVersion: 0.1.2\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"publicsafetyapi-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key from https://publicsafetyapi.dev (free tier: 500 requests/month)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"PUBLICSAFETYAPI_KEY\"}]}]",
+    "url": "https://publicsafetyapi.dev",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.workers.3labsio.kingofthehill/king-of-the-hill",
+    "title": "dev.workers.3labsio.kingofthehill/king-of-the-hill",
+    "body": "x402 game: take the crown, each take raises the next price 1.5x. hill_status is free.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://kingofthehill.3labsio.workers.dev/mcp\"}]",
+    "url": "https://kingofthehill.3labsio.workers.dev",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.workers.3labsio.policy-gate/policy-gate",
+    "title": "dev.workers.3labsio.policy-gate/policy-gate",
+    "body": "Deterministic allow/require_approval/deny verdicts for agent actions, before they happen.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://policy-gate.3labsio.workers.dev/mcp\"}]",
+    "url": "https://github.com/fieldproofhq/policy-gate",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "eu.nordicmcp/fortnox",
+    "title": "NordicMCP — Fortnox",
+    "body": "Hosted Fortnox MCP server: ~120 tools over Fortnox API v3. OAuth2 handled by NordicMCP.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nordicmcp.eu/mcp/fortnox/{token}\",\"variables\":{\"token\":{\"description\":\"Your NordicMCP API token (36-char UUID) for the Fortnox integration — create one at https://nordicmcp.eu after connecting your Fortnox account\",\"isRequired\":true,\"isSecret\":true}}}]",
+    "url": "https://nordicmcp.eu/docs/integrations/fortnox",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "eu.nordicmcp/google-mail",
+    "title": "NordicMCP — Google Mail",
+    "body": "Hosted Gmail MCP server: read, search, and manage messages. Google OAuth2 handled by NordicMCP.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nordicmcp.eu/mcp/google-mail/{token}\",\"variables\":{\"token\":{\"description\":\"Your NordicMCP API token (36-char UUID) for the Google Mail integration — create one at https://nordicmcp.eu after connecting your Google account\",\"isRequired\":true,\"isSecret\":true}}}]",
+    "url": "https://nordicmcp.eu/docs/integrations/google-mail",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "eu.nordicmcp/stripe",
+    "title": "NordicMCP — Stripe",
+    "body": "Hosted Stripe MCP server: 18 tools for payments, subscriptions, invoicing, customers, and reporting.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nordicmcp.eu/mcp/stripe/{token}\",\"variables\":{\"token\":{\"description\":\"Your NordicMCP API token (36-char UUID) for the Stripe integration — create one at https://nordicmcp.eu after adding your Stripe key\",\"isRequired\":true,\"isSecret\":true}}}]",
+    "url": "https://nordicmcp.eu/docs/integrations/stripe",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "eu.nordicmcp/weather",
+    "title": "NordicMCP — Weather",
+    "body": "Hosted Weather MCP server (Open-Meteo): current, forecast, and historical weather by location.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://nordicmcp.eu/mcp/weather/{token}\",\"variables\":{\"token\":{\"description\":\"Your NordicMCP API token (36-char UUID) for the Weather integration — create one at https://nordicmcp.eu\",\"isRequired\":true,\"isSecret\":true}}}]",
+    "url": "https://nordicmcp.eu/docs/integrations/weather",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "fi.northpoint/marketing-compliance",
+    "title": "fi.northpoint/marketing-compliance",
+    "body": "Crypto marketing compliance rulesets over MCP: MiCA, FCA, GDPR, SEC, MAS, VARA. Not legal advice.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://northpoint.fi/api/mcp\"}]",
+    "url": "https://northpoint.fi",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "fr.monappamoi/apps",
+    "title": "monappamoi",
+    "body": "Host AI-generated single-file HTML apps with JSON persistence. No signup.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://monappamoi.fr/mcp\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=fr.monappamoi%2Fapps",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.aimeat/aimeat",
+    "title": "AIMEAT",
+    "body": "AIMEAT - the Linux of AI. An open, federated, self-hosted AI operating system you own. MIT.\nVersion: 3.15.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://aimeat.io/v1/mcp\"}]",
+    "url": "https://aimeat.io",
+    "fetchedAt": "2026-09-15T08:52:02.662Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.autosophia/agent-video",
+    "title": "Autosophia Agent Video",
+    "body": "Script in, finished 1080p narrated video out. Pay per call in USDC via x402.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.autosophia.io/mcp\"}]",
+    "url": "https://autosophia.io",
+    "fetchedAt": "2026-09-04T08:11:49.015Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.autosophia/solana-lens",
+    "title": "Autosophia Solana Lens",
+    "body": "Screen tokens, inspect wallets, simulate transactions, price priority fees. $0.02 in USDC.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://chain.autosophia.io/mcp\"}]",
+    "url": "https://autosophia.io",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.carrierscore/carrierscore",
+    "title": "io.carrierscore/carrierscore",
+    "body": "FMCSA motor-carrier risk scores, monitoring, and carrier-selection evidence reports for AI agents.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.carrierscore.io/mcp\"}]",
+    "url": "https://carrierscore.io",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.dozier/exposure-audit",
+    "title": "io.dozier/exposure-audit",
+    "body": "Free AI-visibility and competitive Exposure Audit for any domain. No account, no API key.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://dozier.io/backend/mcp\"}]",
+    "url": "https://dozier.io/mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Async23/chrome-devtools-mcp",
+    "title": "Chrome DevTools MCP",
+    "body": "MCP server for Chrome DevTools\nVersion: 1.7.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@async23/chrome-devtools-mcp\",\"version\":\"1.7.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/Async23/chrome-devtools-mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Ataraxy-Labs/sem",
+    "title": "io.github.Ataraxy-Labs/sem",
+    "body": "Entity-level code intelligence: semantic diff, impact analysis, blame, and context for AI agents\nVersion: 0.23.1\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@ataraxy-labs/sem\",\"version\":\"0.23.1\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"}]}]",
+    "url": "https://ataraxy-labs.com",
+    "fetchedAt": "2026-08-23T04:08:29.331Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Battam1111/omniseek",
+    "title": "OmniSeek",
+    "body": "Your agent seeks what search can't find. A self-hosted perception MCP server.\nVersion: 0.2.1\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"omniseek\",\"version\":\"0.2.1\",\"runtimeHint\":\"python\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:8765/mcp\"}},{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/battam1111/omniseek:v0.2.1\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:8765/mcp\"}}]",
+    "url": "https://battam1111.github.io/omniseek",
+    "fetchedAt": "2026-09-15T08:52:02.662Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Bluesoul-Technology/justonce-memory",
+    "title": "io.github.Bluesoul-Technology/justonce-memory",
+    "body": "Persistent, portable, bitemporal memory layer — recalled proactively across your AI tools.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.justonce.ai\"}]",
+    "url": "https://justonce.ai",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.CSOAI-ORG/gspc",
+    "title": "Council of AI GSPC",
+    "body": "12 HTTP tools (8 free, 4 x402). GSPC board + Ed25519 + trust counts. Measure, never certify.\nVersion: 1.4.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://councilof.ai/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"csoai-gspc-mcp\",\"version\":\"0.2.2\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://councilof.ai",
+    "fetchedAt": "2026-09-15T08:52:02.662Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Deviank88/knowledge-rail",
+    "title": "KnowledgeRail",
+    "body": "Persistent, evidence-backed project knowledge and task context for coding agents.\nVersion: 2.8.7\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"knowledge-rail\",\"version\":\"2.8.7\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/Deviank88/KnowledgeRail",
+    "fetchedAt": "2026-10-11T10:13:22.236Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Everyways/upsalt-booking",
+    "title": "Upsalt Booking",
+    "body": "Search Upsalt venues, check availability, and book, view, or cancel a reservation.\nVersion: 1.0.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://ai.upsalt.io/mcp/booking\"}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Everyways%2Fupsalt-booking",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/m2mcent",
+    "title": "io.github.Evozim/m2mcent",
+    "body": "x402 payment wrapper for AI Agents and MCP Servers. USDC settlements on Base L2.\nVersion: 1.0.5\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"m2mcent-sdk\",\"version\":\"1.0.5\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base Mainnet RPC endpoint URL\",\"isRequired\":true,\"format\":\"string\",\"name\":\"BASE_RPC_URL\"},{\"description\":\"Relayer wallet private key for on-chain settlement\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"RELAYER_PRIVATE_KEY\"},{\"description\":\"Treasury wallet address to receive payments\",\"isRequired\":true,\"format\":\"string\",\"name\":\"TREASURY_ADDRESS\"}]}]",
+    "url": "https://github.com/Evozim/m2mcent-sdk",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Fish-Tacos/sati-grumpy",
+    "title": "io.github.Fish-Tacos/sati-grumpy",
+    "body": "MCP commerce surface for refurbished datacenter hardware, with x402 agent-payment discovery.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://sati-grumpy.fly.dev/mcp\"}]",
+    "url": "https://github.com/Fish-Tacos/sati-grumpy-demo",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Jcjimenezglez/rosetta-mcp",
+    "title": "Rosetta PDF",
+    "body": "Parse, extract, split, and ask over digital PDFs (text layer, no OCR) from Cursor and Claude.\nVersion: 0.2.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://rosettafolio.com/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"rosetta-mcp\",\"version\":\"0.2.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key from the Rosetta dashboard (shown once on create/rotate)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"ROSETTA_API_KEY\"},{\"description\":\"Rosetta API base URL\",\"format\":\"string\",\"default\":\"https://rosettafolio.com\",\"name\":\"ROSETTA_API_URL\"}]}]",
+    "url": "https://github.com/Jcjimenezglez/docchat",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.MM-sheng/404-directory",
+    "title": "404.directory",
+    "body": "Risk preflight for AI Agent tool actions and Polymarket settlement and execution checks.\nVersion: 0.10.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://404.directory/mcp\",\"headers\":[{\"description\":\"Stable random, non-personal identifier for this Agent installation. Used only for privacy-safe de-duplicated adoption measurement; never use an email, user name, or device name.\",\"isRequired\":true,\"placeholder\":\"agent:550e8400-e29b-41d4-a716-446655440000\",\"name\":\"X-404-Agent-ID\"},{\"description\":\"Non-personal attribution label for this installation source.\",\"default\":\"official-registry\",\"name\":\"X-404-Source\"}]}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@mmvv1638/404-directory-mcp\",\"version\":\"0.10.3\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"official-registry\",\"type\":\"named\",\"name\":\"--source\"}]}]",
+    "url": "https://404.directory",
+    "fetchedAt": "2026-08-30T09:23:42.118Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.MediaShareORG/yourimageshare",
+    "title": "io.github.MediaShareORG/yourimageshare",
+    "body": "MCP server exposing the YourImageShare upload API (upload/list/delete) as tools for AI agents.\nVersion: 1.0.6\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"yourimageshare-mcp\",\"version\":\"1.0.6\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Your YourImageShare API key. Get one at yourimageshare.com/my-account under the API tab.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"YIS_API_KEY\"}]}]",
+    "url": "https://github.com/MediaShareORG/yourimageshare",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Mgnlockii/reelfy",
+    "title": "Reelfy Agent Tools",
+    "body": "Pay-per-use AI and data tools via x402: image, video, music, voice, search, crypto. USDC.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.reelfy.online/mcp\",\"headers\":[{\"description\":\"Optional. Solana secret key (base58) holding USDC — pays per call via x402. Without it you can browse the 16-tool catalog for free.\",\"isSecret\":true,\"name\":\"x-solana-key\"}]}]",
+    "url": "https://api.reelfy.online",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.MuhammadTalhaMT/intercom",
+    "title": "io.github.MuhammadTalhaMT/intercom",
+    "body": "Relays messages between two Claude Code sessions on different machines using the Channels API\nVersion: 2.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"claude-intercom\",\"version\":\"2.1.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Label for this instance, e.g. backend or frontend. Appears in message tags so the other side knows who is talking.\",\"isRequired\":true,\"format\":\"string\",\"name\":\"MY_ROLE\"},{\"description\":\"Address of the other machine as host:port. A Tailscale address is recommended over a public one.\",\"isRequired\":true,\"format\":\"string\",\"name\":\"REMOTE_HOST\"},{\"description\":\"Shared secret authenticating messages between the two instances. Must match on both sides. There is no default: without it the intercom starts unpaired, binds no port, and refuses to send.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"placeholder\":\"output of: openssl rand -base64 32\",\"name\":\"INTERCOM_SECRET\"},{\"description\":\"Port to listen on for incoming messages. Defaults to 8788.\",\"format\":\"number\",\"name\":\"INTERCOM_PORT\"},{\"description\":\"Interface to bind the listener to. Defaults to 0.0.0.0. Set 127.0.0.1 when a tunnel fronts the intercom, so only the tunnel can connect.\",\"format\":\"string\",\"name\":\"INTERCOM_HOST\"},{\"description\":\"How long an outbound POST may hang before giving up. Defaults to 10000.\",\"format\":\"number\",\"name\":\"INTERCOM_SEND_TIMEOUT_MS\"}]}]",
+    "url": "https://github.com/MuhammadTalhaMT/claude-intercom",
+    "fetchedAt": "2026-08-20T04:07:16.030Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.OptimNow/cloud-finops",
+    "title": "Cloud FinOps Skill & MCP",
+    "body": "Cloud cost + FinOps knowledge for AI agents: AWS/Azure/GCP optimisation, AI spend, waste playbooks.\nVersion: 1.37.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://cloud-finops-mcp.fly.dev/mcp\"}]\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"cloud-finops-mcp\",\"version\":\"1.37.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/OptimNow/cloud-finops-skills",
+    "fetchedAt": "2026-09-27T09:26:27.392Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Ric-Lavers/electron-dance",
+    "title": "electron.dance",
+    "body": "electron.dance MCP server: upcoming gigs, community links, RSVP, and Spotify top tracks.\nVersion: 0.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://electron.dance/api/mcp\"}]",
+    "url": "https://electron.dance",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Shxnque/quesen",
+    "title": "Quesen Deterministic Agent Decision Layer",
+    "body": "Deterministic decision layer for autonomous agents: reproducible PROCEED/REVIEW/SKIP verdicts.\nVersion: 1.10.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://web-production-3df26.up.railway.app/mcp\",\"headers\":[{\"description\":\"Quesen API key issued via https://senueren.co.za/quesen. Required for quesen.validate / quesen.simulate / quesen.report; not required for quesen.health / quesen.version.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"X-API-Key\"}]}]",
+    "url": "https://github.com/Shxnque/quesen",
+    "fetchedAt": "2026-09-16T08:45:45.626Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Vladimir-Human/ru-marketplace-mcp",
+    "title": "ru-marketplace-mcp",
+    "body": "Read-only MCP servers for Russian marketplaces: prices, stock, ratings, reviews, seller identity\nVersion: 2.4.2\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/vladimir-human/ru-marketplace-mcp:2.4.2\",\"runtimeHint\":\"docker\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/Vladimir-Human/ru-marketplace-mcp",
+    "fetchedAt": "2026-09-20T08:44:37.596Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.aaronsb/google-workspace",
+    "title": "Google Workspace",
+    "body": "Give AI agents access to Gmail, Calendar, Drive, and more — multi-account, manifest-driven\nVersion: 4.5.1\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@aaronsb/google-workspace-mcp\",\"version\":\"4.5.1\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Google OAuth 2.0 Client ID (Desktop application)\",\"name\":\"GOOGLE_CLIENT_ID\"},{\"description\":\"Google OAuth 2.0 Client Secret\",\"name\":\"GOOGLE_CLIENT_SECRET\"}]}]",
+    "url": "https://github.com/aaronsb/google-workspace-mcp#readme",
+    "fetchedAt": "2026-09-01T08:49:57.248Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.aleksUIX/rtblint",
+    "title": "RTBlint",
+    "body": "Validate OpenRTB bid requests and responses against IAB specs. ARTF, Rust core.\nVersion: 0.8.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://rtblint.org/mcp\"}]",
+    "url": "https://github.com/aleksUIX/rtblint",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.alexar76/aimarket-hub",
+    "title": "AIMarket — live agent marketplace",
+    "body": "Search and invoke real AI capabilities on modelmarket.dev. Free trial, then USDC on Base.\nVersion: 3.2.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://modelmarket.dev/mcp\"}]",
+    "url": "https://github.com/alexar76/aimarket-hub",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.antonio-mello-ai/mcp-proxmox",
+    "title": "io.github.antonio-mello-ai/mcp-proxmox",
+    "body": "Manage Proxmox VE clusters through AI assistants — VMs, containers, and more\nVersion: 1.2.2\nPackages: [{\"registryType\":\"pypi\",\"identifier\":\"mcp-proxmox\",\"version\":\"1.2.2\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/antonio-mello-ai/mcp-proxmox",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.armin5872/optiqra-mcp",
+    "title": "io.github.armin5872/optiqra-mcp",
+    "body": "MCP server exposing OptiQra's website audit tools: SEO, GEO, AEO, and AI-generated fixes.\nVersion: 1.0.4\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"optiqra-mcp\",\"version\":\"1.0.4\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of the OptiQra instance to call. Defaults to https://optiqra.vercel.app.\",\"name\":\"OPTIQRA_BASE_URL\"},{\"description\":\"Default AI-provider API key used by the ai-fix/ai-insights/ai-test tools if the caller doesn't pass one.\",\"isSecret\":true,\"name\":\"OPTIQRA_PROVIDER_API_KEY\"},{\"description\":\"Request timeout in milliseconds. Defaults to 120000.\",\"name\":\"OPTIQRA_TIMEOUT_MS\"}]}]",
+    "url": "https://optiqra.vercel.app",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.beepboop2025/pdf-suite-mcp",
+    "title": "io.github.beepboop2025/pdf-suite-mcp",
+    "body": "37 tools to read, create, merge, split, watermark, fill, redact & search PDFs. Local, no API key.\nVersion: 2.1.3\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"pdf-suite-mcp\",\"version\":\"2.1.2\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/beepboop2025/pdf-suite-mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.beepboop2025/pdf-toolkit-mcp",
+    "title": "io.github.beepboop2025/pdf-toolkit-mcp",
+    "body": "Legacy PDF Toolkit identity, pinned to its 2.1.1 package; maintained successor: PDF Suite MCP.\nVersion: 2.1.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"pdf-suite-mcp\",\"version\":\"2.1.1\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/beepboop2025/pdf-suite-mcp",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.beepboop2025/riptide",
+    "title": "Riptide — public risk and event research",
+    "body": "Read-only paper risk evidence and policy-gated committed event research. No real orders.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.seiche.info/riptide/mcp\"}]",
+    "url": "https://api.seiche.info/riptide/",
+    "fetchedAt": "2026-09-06T08:01:56.944Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.beepboop2025/umbra-proof",
+    "title": "io.github.beepboop2025/umbra-proof",
+    "body": "Verify Umbra bridge accountability proofs (signed receipts, checkpoints, Merkle inclusion).\nVersion: 0.1.2\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/beepboop2025/umbra-proof-mcp:v0.1.2\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/beepboop2025/umbra-xmr-bridge",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.beydemirfurkan/todox",
+    "title": "io.github.beydemirfurkan/todox",
+    "body": "Memory for coding agents: the decisions, the dead ends, and where the last session stopped.\nVersion: 0.1.4\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://www.todox.dev/api/mcp\",\"headers\":[{\"description\":\"Bearer <token>. Create an agent token on the Account page at https://www.todox.dev/account.\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://www.todox.dev",
+    "fetchedAt": "2026-09-19T08:12:24.302Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.beyondnetcode/evolith",
+    "title": "Evolith Architecture Governance",
+    "body": "Executable architecture governance: an unevaluated rule is reported as a failure, never a pass.\nVersion: 1.3.3\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@beyondnet/evolith-mcp\",\"version\":\"1.3.3\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://beyondnetcode.github.io/evolith_arch32/",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.chrischall/accessoticketing-mcp",
+    "title": "io.github.chrischall/accessoticketing-mcp",
+    "body": "Read accesso mobile ticket links: orders, admissions, barcodes and Google Wallet passes.\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@chrischall/accessoticketing-mcp\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Optional default accesso ticket link from an order-confirmation email.\",\"isSecret\":true,\"name\":\"ACCESSO_TICKET_URL\"},{\"description\":\"Optional directory for saved barcode images.\",\"name\":\"ACCESSO_OUTPUT_DIR\"}]}]",
+    "url": "https://github.com/chrischall/accessoticketing-mcp",
+    "fetchedAt": "2026-09-20T08:44:37.596Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.chrischall/pickuppatrol-mcp",
+    "title": "io.github.chrischall/pickuppatrol-mcp",
+    "body": "Read and change your children's school dismissal plans in PickUp Patrol\nVersion: 1.0.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@chrischall/pickuppatrol-mcp\",\"version\":\"1.0.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/chrischall/pickuppatrol-mcp",
+    "fetchedAt": "2026-09-20T08:44:37.596Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.chrzanowy/agent-tollbooth",
+    "title": "tollbooth",
+    "body": "Stateful backend for AI agents: memory, watch, render, execute, and shared boards with digests.\nVersion: 0.1.2\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/chrzanowy/agent-tollbooth:v0.1.2\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:4402/mcp\"}}]",
+    "url": "https://github.com/chrzanowy/agent-tollbooth",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.cyanheads/congressgov-mcp-server",
+    "title": "io.github.cyanheads/congressgov-mcp-server",
+    "body": "Access U.S. congressional data - bills, votes, members, committees - via MCP.\nVersion: 0.7.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://congressgov.caseyjhand.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/congressgov-mcp-server\",\"version\":\"0.7.3\",\"runtimeHint\":\"bun\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:stdio\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"API key from api.data.gov — optional (falls back to DEMO_KEY: 30 req/hr). Own key: 5000 req/hr. Free signup at api.data.gov.\",\"format\":\"string\",\"name\":\"CONGRESS_API_KEY\"},{\"description\":\"Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').\",\"format\":\"string\",\"default\":\"info\",\"name\":\"MCP_LOG_LEVEL\"}]},{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/congressgov-mcp-server\",\"version\":\"0.7.3\",\"runtimeHint\":\"bun\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:3010/mcp\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:http\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"API key from api.data.gov — optional (falls back to DEMO_KEY: 30 req/hr). Own key: 5000 req/hr. Free signup at api.data.gov.\",\"format\":\"string\",\"name\":\"CONGRESS_API_KEY\"},{\"description\":\"The hostname for the HTTP server.\",\"format\":\"string\",\"default\":\"127.0.0.1\",\"name\":\"MCP_HTTP_HOST\"},{\"description\":\"The port to run the HTTP server on.\",\"format\":\"string\",\"default\":\"3010\",\"name\":\"MCP_HTTP_PORT\"},{\"description\":\"The endpoint path for the MCP server.\",\"format\":\"string\",\"default\":\"/m",
+    "url": "https://github.com/cyanheads/congressgov-mcp-server",
+    "fetchedAt": "2026-09-27T09:26:27.392Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.cyanheads/sanctions-screening-mcp-server",
+    "title": "io.github.cyanheads/sanctions-screening-mcp-server",
+    "body": "Screen names against OFAC, EU, UK, UN sanctions lists; resolve entities via GLEIF. Screening aid.\nVersion: 0.1.12\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://sanctions-screening.caseyjhand.com/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/sanctions-screening-mcp-server\",\"version\":\"0.1.12\",\"runtimeHint\":\"node\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:stdio\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').\",\"format\":\"string\",\"default\":\"info\",\"name\":\"MCP_LOG_LEVEL\"},{\"description\":\"Filesystem path for the local SQLite mirror. All sources are keyless; no API key is required. Populate the mirror out-of-band with `bun run mirror:init`.\",\"format\":\"string\",\"default\":\"./data/sanctions.db\",\"name\":\"SANCTIONS_MIRROR_PATH\"},{\"description\":\"Default Jaro-Winkler similarity floor (0-1) for fuzzy matches when the caller omits minScore.\",\"format\":\"string\",\"default\":\"0.85\",\"name\":\"SANCTIONS_FUZZY_MIN_SCORE\"},{\"description\":\"Hard cap on fuzzy candidates scored per query, to bound work on short queries.\",\"format\":\"string\",\"default\":\"50\",\"name\":\"SANCTIONS_FUZZY_MAX_RESULTS\"}]},{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"@cyanheads/sanctions-screening-mcp-server\",\"version\":\"0.1.12\",\"runtimeHint\":\"node\",\"transport\":{\"type\":\"streamable-http\",\"url\":\"http://localhost:3010/mcp\"},\"packageArguments\":[{\"value\":\"run\",\"type\":\"positional\"},{\"value\":\"start:http\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"The hostname for the HTTP server.\",\"format\":\"stri",
+    "url": "https://github.com/cyanheads/sanctions-screening-mcp-server",
+    "fetchedAt": "2026-09-21T09:11:47.736Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.docracy1/chasa",
+    "title": "io.github.docracy1/chasa",
+    "body": "AI invoice follow-up emails for freelancers. Draft-only, never sends for you.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.chasa.io/mcp\"}]",
+    "url": "https://github.com/docracy1/chasa",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.docracy1/docracy",
+    "title": "io.github.docracy1/docracy",
+    "body": "Free, no-signup e-signatures. check_status free for anyone; find_documents needs paid key.\nVersion: 1.0.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.docracy.io/mcp\"}]",
+    "url": "https://github.com/docracy1/docracy",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.dot-billy/small-site",
+    "title": "Small Site",
+    "body": "Validate and publish built static websites to a public Small Site URL.\nVersion: 0.5.0\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/dot-billy/small-site-mcp/releases/download/v0.5.0/small-site-mcp-0.5.0.mcpb\",\"version\":\"0.5.0\",\"fileSha256\":\"09356aabe43311d0a61bc9d318fcca66dfe842c1500c9b239178744e9c0eb83e\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://rw0.io/how-to-put-an-ai-generated-website-online/",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.evolutionlabs-dev/signal-bureau",
+    "title": "io.github.evolutionlabs-dev/signal-bureau",
+    "body": "SigB (Signal Bureau): maintained, source-traced record of entities and world events. Free, no key.\nVersion: 1.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.signalbureau.ai/api/mcp\"}]",
+    "url": "https://sigb.ai",
+    "fetchedAt": "2026-09-01T08:49:57.248Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.fatihbaltaci/godrop",
+    "title": "GoDrop",
+    "body": "Self-hosted file host: upload a file, get a public URL an agent can paste into a pull request.\nVersion: 1.3.1\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/fatihbaltaci/godrop:1.3.1\",\"runtimeHint\":\"docker\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"value\":\"run\",\"type\":\"positional\",\"valueHint\":\"run\"},{\"description\":\"Keep stdin open, which is the whole transport.\",\"type\":\"named\",\"name\":\"-i\"},{\"description\":\"The process holds no state, so nothing is left behind.\",\"type\":\"named\",\"name\":\"--rm\"},{\"description\":\"Where your instance answers.\",\"value\":\"GODROP_URL\",\"type\":\"named\",\"name\":\"-e\",\"isRepeated\":true},{\"description\":\"The token that authorises uploads.\",\"value\":\"GODROP_TOKEN\",\"type\":\"named\",\"name\":\"-e\",\"isRepeated\":true}],\"packageArguments\":[{\"description\":\"Serve MCP on stdin and stdout instead of starting a server.\",\"value\":\"mcp\",\"type\":\"positional\",\"valueHint\":\"mcp\"}],\"environmentVariables\":[{\"description\":\"The base URL of the GoDrop you host, such as https://files.example.com.\",\"isRequired\":true,\"format\":\"string\",\"name\":\"GODROP_URL\"},{\"description\":\"An API token from that instance: godrop token create --name mcp.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"GODROP_TOKEN\"}]}]",
+    "url": "https://godrop.sh",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.getcyphrex/cyphrex-mcp",
+    "title": "Cyphrex",
+    "body": "Blockchain SSN for AI agents. MCP gateway that blocks at the point of action, tamper evident audit.\nVersion: 0.2.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.cyphrex.io/mcp\",\"headers\":[{\"description\":\"Your Cyphrex API key (format: Bearer cprx_live_...)\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}]}]",
+    "url": "https://github.com/getcyphrex/platform",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.glongusmain/glongus-mcp",
+    "title": "io.github.glongusmain/glongus-mcp",
+    "body": "MCP server for Glongus, an escrow-secured marketplace where AI agents trade physical goods\nVersion: 0.1.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"glongus-mcp\",\"version\":\"0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Owner API key from glongus.com/connect. Only needed for create_offer and add_listing_photo — the search/inspect/reputation tools work with no key at all.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"GLONGUS_API_KEY\"},{\"description\":\"Override the Glongus API base URL (defaults to https://api.glongus.com).\",\"format\":\"string\",\"name\":\"GLONGUS_API_URL\"}]}]",
+    "url": "https://github.com/glongusmain/glongus-mcp",
+    "fetchedAt": "2026-08-22T04:04:48.747Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.guniweb/guniweb-sap-mcp",
+    "title": "GuniWeb SAP MCP",
+    "body": "SAP S/4HANA and ECC: OData V2/V4, IDoc and RFC/BAPI for n8n and other MCP clients\nVersion: 0.4.2\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"guniweb-sap-mcp\",\"version\":\"0.4.2\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of the SAP system, including any path segment in front of /sap/opu/odata (e.g. https://s4.example.com or https://gateway.example.com/prefix)\",\"isRequired\":true,\"name\":\"SAP_BASE_URL\"},{\"description\":\"Authentication type: basic, oauth2, apikey, ias, xsuaa, btp-principal, saml-bearer\",\"default\":\"basic\",\"name\":\"SAP_AUTH_TYPE\"},{\"description\":\"SAP client (Mandant). Appended to every request — a client-dependent Gateway answers 401 without it\",\"default\":\"100\",\"name\":\"SAP_CLIENT\"},{\"description\":\"SAP user for basic authentication\",\"name\":\"SAP_USERNAME\"},{\"description\":\"Password for basic authentication\",\"isSecret\":true,\"name\":\"SAP_PASSWORD\"},{\"description\":\"Set to true to start a built-in mock S/4HANA instead of connecting to a real system. No SAP_* configuration needed — for trying the server out\",\"default\":\"false\",\"name\":\"SAP_MCP_DEMO\"}]}]",
+    "url": "https://github.com/guniweb/guniweb-sap-mcp#readme",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.hashgraph-online/hol-guard",
+    "title": "HOL Guard",
+    "body": "Local-first AI agent security evidence and approval workflows through HOL Guard's stdio MCP server.\nVersion: 3.6.3\nPackages: [{\"registryType\":\"pypi\",\"registryBaseUrl\":\"https://pypi.org\",\"identifier\":\"hol-guard\",\"version\":\"3.6.3\",\"runtimeHint\":\"uvx\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"},{\"value\":\"serve\",\"type\":\"positional\"},{\"value\":\"--stdio\",\"type\":\"positional\"}]}]",
+    "url": "https://hol.org/guard",
+    "fetchedAt": "2026-09-27T09:26:27.392Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.hjqcan/goodmemory",
+    "title": "GoodMemory",
+    "body": "Durable user/project memory for MCP clients: recall context and remember selected facts.\nVersion: 0.7.5\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"goodmemory\",\"version\":\"0.7.5\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"packageArguments\":[{\"value\":\"mcp\",\"type\":\"positional\"},{\"value\":\"serve\",\"type\":\"positional\"},{\"description\":\"Run the standalone read-only MCP server without an installed host.\",\"type\":\"named\",\"name\":\"--standalone\"},{\"description\":\"Stable GoodMemory user id that scopes this client's memory.\",\"isRequired\":true,\"value\":\"{user_id}\",\"variables\":{\"user_id\":{\"description\":\"Your stable GoodMemory user id.\",\"isRequired\":true,\"format\":\"string\"}},\"type\":\"named\",\"name\":\"--user-id\"}]}]",
+    "url": "https://github.com/hjqcan/GoodMemory#readme",
+    "fetchedAt": "2026-08-23T04:08:29.331Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.hmdmph/bamboo-mcp",
+    "title": "Bamboo MCP Server",
+    "body": "Read-only MCP server for self-hosted Atlassian Bamboo CI/CD\nVersion: 0.1.2\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/hmdmph/bamboo-mcp:0.1.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Base URL of your Bamboo server, e.g. https://bamboo.example.com\",\"isRequired\":true,\"format\":\"string\",\"name\":\"BAMBOO_URL\"},{\"description\":\"Bamboo personal access token. Read permission is sufficient.\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BAMBOO_TOKEN\"},{\"description\":\"Transport mode. Must be stdio when the client runs the container.\",\"isRequired\":true,\"format\":\"string\",\"default\":\"stdio\",\"name\":\"MCP_TRANSPORT\"},{\"description\":\"HTTP proxy URL, if Bamboo is only reachable via a proxy.\",\"format\":\"string\",\"name\":\"BAMBOO_PROXY\"},{\"description\":\"Bitbucket base URL, used to build source links in build results.\",\"format\":\"string\",\"name\":\"BITBUCKET_URL\"},{\"description\":\"Set to true to log requests and errors to stderr.\",\"format\":\"string\",\"default\":\"false\",\"name\":\"VERBOSE\"}]}]",
+    "url": "https://github.com/hmdmph/bamboo-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.iTophua/iterminal",
+    "title": "io.github.iTophua/iterminal",
+    "body": "MCP Server for iTerminal SSH Connection Manager - Control SSH servers through Claude.\nVersion: 2.1.0\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"iterminal-mcp-server\",\"version\":\"2.1.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/iTophua/iterminal",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.iksnerd/adb-mcp",
+    "title": "adb-mcp: Android emulator and device control over adb",
+    "body": "Drive an Android emulator or device over adb: screenshot, inspect UI, tap, type, build and test.\nVersion: 0.23.0\nPackages: [{\"registryType\":\"oci\",\"identifier\":\"ghcr.io/iksnerd/adb-mcp:0.23.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://adb-mcp.com",
+    "fetchedAt": "2026-08-26T04:09:22.368Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.jyswee/comiceditorial",
+    "title": "io.github.jyswee/comiceditorial",
+    "body": "Comic publishing for coding agents. Comics, chapters, AI panels, CBZ export. stdio + remote SSE.\nVersion: 0.1.1\nRemotes: [{\"type\":\"sse\",\"url\":\"https://mcp.comiceditorial.com/sse\",\"headers\":[{\"description\":\"Bearer token using your ComicEditorial API key: 'Bearer cts_...'. Optional: without one the server starts in onboarding mode and can self-signup via the comiceditorial_signup tool.\",\"isSecret\":true,\"name\":\"Authorization\"}]}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"comiceditorial\",\"version\":\"0.1.1\",\"runtimeHint\":\"npx\",\"transport\":{\"type\":\"stdio\"},\"runtimeArguments\":[{\"isRequired\":true,\"value\":\"mcp-serve\",\"type\":\"positional\"}],\"environmentVariables\":[{\"description\":\"ComicEditorial API key (cts_...). Optional: without a key the server starts in onboarding mode and can self-signup.\",\"isSecret\":true,\"name\":\"CMED_API_KEY\"}]}]",
+    "url": "https://comiceditorial.com",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.khs0927/qwen38-free-gateway",
+    "title": "io.github.khs0927/qwen38-free-gateway",
+    "body": "Free Qwen3.8-27B gateway with isolated Minis provider, SSE, retry/failover, and MCP.\nVersion: 0.6.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api-v2.appdeploy.ai/app/qwen3-8-free-gateway-n995yy/api/mcp\"}]",
+    "url": "https://minis-eve-glm52-provider.vercel.app/qwen/setup",
+    "fetchedAt": "2026-08-17T04:10:39.900Z"
   }
 ]
