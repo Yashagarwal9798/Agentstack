@@ -1,966 +1,6 @@
 [
   {
     "source": "mcp-registry",
-    "externalId": "dev.memofs/mcp-server",
-    "title": "MemoFS MCP Server",
-    "body": "Persistent memory and virtual filesystem MCP server for AI agents.\nVersion: 1.3.0-beta.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://memofs.dev/api/v1/projects/{projectId}/mcp\",\"headers\":[{\"description\":\"Bearer token using your MemoFS Cloud API key\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}],\"variables\":{\"projectId\":{\"description\":\"MemoFS Cloud Project ID\",\"isRequired\":true}}}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@memofs/mcp-server\",\"version\":\"1.3.0-beta.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key for MemoFS Cloud synchronization (required for hybrid mode)\",\"isSecret\":true,\"name\":\"MEMOFS_API_KEY\"},{\"description\":\"Runtime mode: local or hybrid\",\"default\":\"local\",\"choices\":[\"local\",\"hybrid\"],\"name\":\"MEMOFS_RUNTIME\"}]}]",
-    "url": "https://memofs.dev",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.workers.marvin-odigo.mcp/krabbot-devtools",
-    "title": "dev.workers.marvin-odigo.mcp/krabbot-devtools",
-    "body": "AI-agent-run devtools: package install risk, stack EOL/CVE checks, scored OSS bounties.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.marvin-odigo.workers.dev/mcp\"}]",
-    "url": "https://mcp.marvin-odigo.workers.dev",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "dev.workers.mattskowronis.live-listing-proof/verify-listing",
-    "title": "Live Listing Proof",
-    "body": "Verify a public listing URL and return source-supported facts or explicit fail-closed states.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://live-listing-proof.mattskowronis.workers.dev/mcp\"}]",
-    "url": "https://live-listing-proof.mattskowronis.workers.dev",
-    "fetchedAt": "2026-08-23T04:08:29.331Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "ee.stacktr/publish",
-    "title": "Stacktree",
-    "body": "Publish HTML to private, unguessable, replace-in-place URLs from any MCP-compatible AI agent.\nVersion: 0.6.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.stacktr.ee/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"stacktree-mcp\",\"version\":\"0.6.0\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://stacktr.ee",
-    "fetchedAt": "2026-08-20T04:07:16.030Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "gg.machina/world-cup-intelligence",
-    "title": "Machina World Cup Intelligence",
-    "body": "World Cup 2026 match, team, player and market context from Machina Sports, the sports AI platform.\nVersion: 0.1.1\nRemotes: [{\"type\":\"sse\",\"url\":\"https://worldcup-mcp.org.machina.gg/sse\",\"headers\":[{\"description\":\"Machina product API key. Tool discovery works without it; tool calls require it. Request access via https://machina.gg/contact\",\"isRequired\":true,\"isSecret\":true,\"name\":\"X-Api-Token\"}]}]",
-    "url": "https://machina.gg/world-cup-api",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "golf.caddence/caddence",
-    "title": "golf.caddence/caddence",
-    "body": "Live UK golf club prices across 40 retailers: offers, price history and deal ratings in GBP.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://caddence.golf/mcp\"}]",
-    "url": "https://caddence.golf/docs/mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "il.co.trus/truss",
-    "title": "Truss",
-    "body": "Public MCP for Truss, Pniel Cohen's development & consultancy business: overview, services, contact\nVersion: 1.1.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.trus.co.il/mcp\"}]",
-    "url": "https://trus.co.il",
-    "fetchedAt": "2026-09-04T08:11:49.015Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.0rkz/byte-protocol",
-    "title": "io.github.0rkz/byte-protocol",
-    "body": "PayPerByte — per-byte data for AI agents: x402 USDC on Base, EIP-712-attested. No token.\nVersion: 0.13.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.payperbyte.io/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"byte-mcp-server\",\"version\":\"0.13.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Ethereum private key for write/buy tools (subscribe, unsubscribe, publish, buy_data). buy_data spends real Base-mainnet USDC — use a dedicated wallet. Not required for read-only tools.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"PRIVATE_KEY\"},{\"description\":\"RPC for the on-chain library + EIP-712 attestation layer (Arbitrum Sepolia, eip155:421614). The x402 buy rail settles USDC on Base mainnet and needs no RPC here. Defaults to Arbitrum Sepolia public RPC.\",\"format\":\"string\",\"name\":\"RPC_URL\"},{\"description\":\"Gateway attester address byte_buy_data pins receipts against. Defaults to the current PayPerByte gateway attester (rotated 2026-08-19; previous default 0x77c86a...C472 is retired). Override only if the gateway discloses a rotation you need ahead of a package update - see /.well-known/agent.json receipt.attester and receipt.retiredAttesters.\",\"format\":\"string\",\"name\":\"BYTE_GATEWAY_ATTESTER\"}]}]",
-    "url": "https://github.com/0rkz/byte-mcp-server",
-    "fetchedAt": "2026-09-15T08:52:02.662Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.1nzpainter/painting-lessons",
-    "title": "My Painting Club — Painting Lessons",
-    "body": "Search transcribed painting lessons. Results cite the exact lesson and Vimeo timestamp.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mypaintingclub.com/kb/mcp\"}]",
-    "url": "https://mypaintingclub.com/kb/docs",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.AAH20/agent-action-gate",
-    "title": "Agent Action Gate",
-    "body": "Gate/Prove: deny unattended destructive agent tools. Instant Audit $499 on a2zsoc.com.\nVersion: 0.2.0\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/AAH20/agent-action-gate/releases/download/v0.2.0/agent-action-gate.mcpb\",\"fileSha256\":\"4c74429173ec412ebdebd701f59d4aba9c37aad501d35ab9022920ddca2f7f28\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://a2zsoc.com/consultation",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Apomera/alloflow-remediation",
-    "title": "AlloFlow Document Remediation",
-    "body": "Local-first document accessibility remediation using the canonical AlloFlow app pipeline.\nVersion: 0.3.5\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/Apomera/AlloFlow/releases/download/mcpb-v0.3.5/alloflow-remediation.mcpb\",\"fileSha256\":\"1f83599d7c345452f8f5daae8ac259589a8a0bd88e07f459de45bdfaa88c6a31\",\"transport\":{\"type\":\"stdio\"}}]",
-    "url": "https://github.com/Apomera/AlloFlow",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.AshwinSathian/booklet",
-    "title": "io.github.AshwinSathian/booklet",
-    "body": "Publish Markdown incident reports, ADRs, RFCs and runbooks as web pages, with team spaces.\nVersion: 4.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://booklet-mcp.ashwinsathian.com/mcp\"}]",
-    "url": "https://booklet.ashwinsathian.com/mcp-setup",
-    "fetchedAt": "2026-10-11T10:13:22.236Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Bitget-AI/bitget-agent-mcp",
-    "title": "io.github.Bitget-AI/bitget-agent-mcp",
-    "body": "Official Bitget MCP Server for the Unified Trading Account (UTA v3) API.\nVersion: 3.0.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@bitget-ai/bitget-agent-mcp\",\"version\":\"3.0.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Bitget API key from API Management\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BITGET_API_KEY\"},{\"description\":\"Bitget API secret key\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BITGET_SECRET_KEY\"},{\"description\":\"Bitget API passphrase\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BITGET_PASSPHRASE\"}]}]",
-    "url": "https://github.com/Bitget-AI/agent-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.ColinVaughn/synaptic",
-    "title": "Synaptic Code Intelligence",
-    "body": "Code intelligence for repository graphs, change impact, test selection, and engineering memory.\nVersion: 1.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://synapticgraph.com/api/mcp/projects/{project_id}\",\"headers\":[{\"description\":\"Bearer token from the Synaptic MCP dashboard, including the Bearer prefix\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}],\"variables\":{\"project_id\":{\"description\":\"Synaptic project UUID from the MCP dashboard\",\"isRequired\":true}}}]",
-    "url": "https://synapticgraph.com",
-    "fetchedAt": "2026-08-30T09:23:42.118Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.DevinoSolutions/upapi-mcp",
-    "title": "upAPI",
-    "body": "All public upAPI operations as MCP tools: web scraping, search, screenshots, PDF, OCR and more.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app.upapi.io/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@upapi/mcp\",\"version\":\"0.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"upAPI API key (create one at https://app.upapi.io/dashboard/api-keys)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"UPAPI_API_KEY\"},{\"description\":\"Tool table: full (default), directory (curated named tools) or compact.\",\"format\":\"string\",\"name\":\"UPAPI_TOOL_MODE\"}]}]",
-    "url": "https://upapi.io/docs",
-    "fetchedAt": "2026-09-05T07:47:19.143Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/3d-meshweaver-mcp",
-    "title": "Execute 3d-meshweaver-mcp",
-    "body": "Premium agentic endpoint for 3d-meshweaver-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/3d-meshweaver-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F3d-meshweaver-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/3d-pallet-packing-mcp",
-    "title": "Execute 3d-pallet-packing-mcp",
-    "body": "Premium agentic endpoint for 3d-pallet-packing-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/3d-pallet-packing-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F3d-pallet-packing-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/4-20ma-analog-converter-mcp",
-    "title": "Execute 4-20ma-analog-converter-mcp",
-    "body": "Premium agentic endpoint for 4-20ma-analog-converter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/4-20ma-analog-converter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F4-20ma-analog-converter-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/5g-core-nfv-mcp",
-    "title": "Execute 5g-core-nfv-mcp",
-    "body": "Premium agentic endpoint for 5g-core-nfv-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/5g-core-nfv-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F5g-core-nfv-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/90-percent-liquidity-advance-mcp",
-    "title": "Execute 90-percent-liquidity-advance-mcp",
-    "body": "Premium agentic endpoint for 90-percent-liquidity-advance-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/90-percent-liquidity-advance-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.5 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F90-percent-liquidity-advance-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/accounts-receivable-ledger-mcp",
-    "title": "Execute accounts-receivable-ledger-mcp",
-    "body": "Premium agentic endpoint for accounts-receivable-ledger-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/accounts-receivable-ledger-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.5 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faccounts-receivable-ledger-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/acoustic-reverb-simulator-mcp",
-    "title": "Execute acoustic-reverb-simulator-mcp",
-    "body": "Premium agentic endpoint for acoustic-reverb-simulator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/acoustic-reverb-simulator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Facoustic-reverb-simulator-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/active-seat-metering-mcp",
-    "title": "Execute active-seat-metering-mcp",
-    "body": "Premium agentic endpoint for active-seat-metering-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/active-seat-metering-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Factive-seat-metering-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/actuarial-life-table-mcp",
-    "title": "Execute actuarial-life-table-mcp",
-    "body": "Premium agentic endpoint for actuarial-life-table-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/actuarial-life-table-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Factuarial-life-table-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ad-fraud-click-detector-mcp",
-    "title": "Execute ad-fraud-click-detector-mcp",
-    "body": "Premium agentic endpoint for ad-fraud-click-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ad-fraud-click-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fad-fraud-click-detector-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ad-sniper-mcp",
-    "title": "Execute ad-sniper-mcp",
-    "body": "Premium agentic endpoint for ad-sniper-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ad-sniper-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fad-sniper-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ad-spend-auditor-mcp",
-    "title": "Execute ad-spend-auditor-mcp",
-    "body": "Premium agentic endpoint for ad-spend-auditor-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ad-spend-auditor-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fad-spend-auditor-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/adsb-flight-tracker-mcp",
-    "title": "Execute adsb-flight-tracker-mcp",
-    "body": "Premium agentic endpoint for adsb-flight-tracker-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/adsb-flight-tracker-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fadsb-flight-tracker-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/adversarial-prompt-shield-mcp",
-    "title": "Execute adversarial-prompt-shield-mcp",
-    "body": "Premium agentic endpoint for adversarial-prompt-shield-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/adversarial-prompt-shield-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.22 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fadversarial-prompt-shield-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/adversarial-suffix-mcp",
-    "title": "Execute adversarial-suffix-mcp",
-    "body": "Premium agentic endpoint for adversarial-suffix-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/adversarial-suffix-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fadversarial-suffix-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/aegis-policy-mcp",
-    "title": "Execute aegis-policy-mcp",
-    "body": "Premium agentic endpoint for aegis-policy-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/aegis-policy-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faegis-policy-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/affiliate-link-attribution-mcp",
-    "title": "Execute affiliate-link-attribution-mcp",
-    "body": "Premium agentic endpoint for affiliate-link-attribution-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/affiliate-link-attribution-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faffiliate-link-attribution-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/afforestation-satellite-mcp",
-    "title": "Execute afforestation-satellite-mcp",
-    "body": "Premium agentic endpoint for afforestation-satellite-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/afforestation-satellite-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fafforestation-satellite-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agent-collision-preventer-mcp",
-    "title": "Execute agent-collision-preventer-mcp",
-    "body": "Premium agentic endpoint for agent-collision-preventer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-collision-preventer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.02 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-collision-preventer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agent-collusion-detector-mcp",
-    "title": "Execute agent-collusion-detector-mcp",
-    "body": "Premium agentic endpoint for agent-collusion-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-collusion-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.3 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-collusion-detector-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agent-council-voting-mcp",
-    "title": "Execute agent-council-voting-mcp",
-    "body": "Premium agentic endpoint for agent-council-voting-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-council-voting-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-council-voting-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agent-credit-history-mcp",
-    "title": "Execute agent-credit-history-mcp",
-    "body": "Premium agentic endpoint for agent-credit-history-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-credit-history-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.28 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-credit-history-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agent-phone-mcp",
-    "title": "Execute agent-phone-mcp",
-    "body": "Premium agentic endpoint for agent-phone-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-phone-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-phone-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agent-reputation-zk-shield-mcp",
-    "title": "Execute agent-reputation-zk-shield-mcp",
-    "body": "Premium agentic endpoint for agent-reputation-zk-shield-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-reputation-zk-shield-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-reputation-zk-shield-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agent-slashing-protocol-mcp",
-    "title": "Execute agent-slashing-protocol-mcp",
-    "body": "Premium agentic endpoint for agent-slashing-protocol-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-slashing-protocol-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.5 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-slashing-protocol-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agent-telephony-mcp",
-    "title": "Execute agent-telephony-mcp",
-    "body": "Premium agentic endpoint for agent-telephony-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-telephony-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-telephony-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agentic-credit-line-issuer-mcp",
-    "title": "Execute agentic-credit-line-issuer-mcp",
-    "body": "Premium agentic endpoint for agentic-credit-line-issuer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agentic-credit-line-issuer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.5 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagentic-credit-line-issuer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agentic-ip-reputation-guard-mcp",
-    "title": "Execute agentic-ip-reputation-guard-mcp",
-    "body": "Premium agentic endpoint for agentic-ip-reputation-guard-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agentic-ip-reputation-guard-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagentic-ip-reputation-guard-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agentic-payroll-processor-mcp",
-    "title": "Execute agentic-payroll-processor-mcp",
-    "body": "Premium agentic endpoint for agentic-payroll-processor-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agentic-payroll-processor-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagentic-payroll-processor-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agentphone-ai-mcp",
-    "title": "Execute agentphone-ai-mcp",
-    "body": "Premium agentic endpoint for agentphone-ai-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agentphone-ai-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagentphone-ai-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/agile-sprint-mcp",
-    "title": "Execute agile-sprint-mcp",
-    "body": "Premium agentic endpoint for agile-sprint-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agile-sprint-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagile-sprint-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ai-fleet-cards-mcp",
-    "title": "Execute ai-fleet-cards-mcp",
-    "body": "Premium agentic endpoint for ai-fleet-cards-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-fleet-cards-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-fleet-cards-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ai-humanizer-mcp",
-    "title": "Execute ai-humanizer-mcp",
-    "body": "Premium agentic endpoint for ai-humanizer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-humanizer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-humanizer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ai-right-to-opt-out-gate-mcp",
-    "title": "Execute ai-right-to-opt-out-gate-mcp",
-    "body": "Premium agentic endpoint for ai-right-to-opt-out-gate-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-right-to-opt-out-gate-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-right-to-opt-out-gate-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ai-safety-incident-logger-mcp",
-    "title": "Execute ai-safety-incident-logger-mcp",
-    "body": "Premium agentic endpoint for ai-safety-incident-logger-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-safety-incident-logger-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-safety-incident-logger-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ai-watermark-provenance-verifier-mcp",
-    "title": "Execute ai-watermark-provenance-verifier-mcp",
-    "body": "Premium agentic endpoint for ai-watermark-provenance-verifier-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-watermark-provenance-verifier-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-watermark-provenance-verifier-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/air-freight-waybill-mcp",
-    "title": "Execute air-freight-waybill-mcp",
-    "body": "Premium agentic endpoint for air-freight-waybill-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/air-freight-waybill-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fair-freight-waybill-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/airbnb-host-analyzer-mcp",
-    "title": "Execute airbnb-host-analyzer-mcp",
-    "body": "Premium agentic endpoint for airbnb-host-analyzer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/airbnb-host-analyzer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fairbnb-host-analyzer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/airbnb-smart-lock-mcp",
-    "title": "Execute airbnb-smart-lock-mcp",
-    "body": "Premium agentic endpoint for airbnb-smart-lock-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/airbnb-smart-lock-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fairbnb-smart-lock-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/airport-slot-allocator-mcp",
-    "title": "Execute airport-slot-allocator-mcp",
-    "body": "Premium agentic endpoint for airport-slot-allocator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/airport-slot-allocator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fairport-slot-allocator-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ais-vessel-tracker-mcp",
-    "title": "Execute ais-vessel-tracker-mcp",
-    "body": "Premium agentic endpoint for ais-vessel-tracker-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ais-vessel-tracker-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fais-vessel-tracker-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/akamai-bot-manager-bypass-mcp",
-    "title": "Execute akamai-bot-manager-bypass-mcp",
-    "body": "Premium agentic endpoint for akamai-bot-manager-bypass-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/akamai-bot-manager-bypass-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fakamai-bot-manager-bypass-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/albedo-delighter-mcp",
-    "title": "Execute albedo-delighter-mcp",
-    "body": "Premium agentic endpoint for albedo-delighter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/albedo-delighter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Falbedo-delighter-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/algorithmic-bias-scrubber-mcp",
-    "title": "Execute algorithmic-bias-scrubber-mcp",
-    "body": "Premium agentic endpoint for algorithmic-bias-scrubber-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/algorithmic-bias-scrubber-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Falgorithmic-bias-scrubber-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/alibaba-supplier-intel-mcp",
-    "title": "Execute alibaba-supplier-intel-mcp",
-    "body": "Premium agentic endpoint for alibaba-supplier-intel-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/alibaba-supplier-intel-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Falibaba-supplier-intel-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/aliexpress-dropship-finder-mcp",
-    "title": "Execute aliexpress-dropship-finder-mcp",
-    "body": "Premium agentic endpoint for aliexpress-dropship-finder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/aliexpress-dropship-finder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faliexpress-dropship-finder-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/amazon-price-tracker-mcp",
-    "title": "Execute amazon-price-tracker-mcp",
-    "body": "Premium agentic endpoint for amazon-price-tracker-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/amazon-price-tracker-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Famazon-price-tracker-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ambient-occlusion-map-mcp",
-    "title": "Execute ambient-occlusion-map-mcp",
-    "body": "Premium agentic endpoint for ambient-occlusion-map-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ambient-occlusion-map-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fambient-occlusion-map-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ambisonics-b-format-encoder-mcp",
-    "title": "Execute ambisonics-b-format-encoder-mcp",
-    "body": "Premium agentic endpoint for ambisonics-b-format-encoder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ambisonics-b-format-encoder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fambisonics-b-format-encoder-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/amr-fleet-dispatcher-mcp",
-    "title": "Execute amr-fleet-dispatcher-mcp",
-    "body": "Premium agentic endpoint for amr-fleet-dispatcher-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/amr-fleet-dispatcher-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.35 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Famr-fleet-dispatcher-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/angellist-startup-jobs-mcp",
-    "title": "Execute angellist-startup-jobs-mcp",
-    "body": "Premium agentic endpoint for angellist-startup-jobs-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/angellist-startup-jobs-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fangellist-startup-jobs-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/anomaly-detection-sentinel-mcp",
-    "title": "Execute anomaly-detection-sentinel-mcp",
-    "body": "Premium agentic endpoint for anomaly-detection-sentinel-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anomaly-detection-sentinel-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanomaly-detection-sentinel-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/anonymous-credential-issuer-mcp",
-    "title": "Execute anonymous-credential-issuer-mcp",
-    "body": "Premium agentic endpoint for anonymous-credential-issuer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anonymous-credential-issuer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanonymous-credential-issuer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/anti-collusion-detector-mcp",
-    "title": "Execute anti-collusion-detector-mcp",
-    "body": "Premium agentic endpoint for anti-collusion-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anti-collusion-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.35 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanti-collusion-detector-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/anti-sandwich-slippage-mcp",
-    "title": "Execute anti-sandwich-slippage-mcp",
-    "body": "Premium agentic endpoint for anti-sandwich-slippage-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anti-sandwich-slippage-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanti-sandwich-slippage-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/anti-stuxnet-plc-mcp",
-    "title": "Execute anti-stuxnet-plc-mcp",
-    "body": "Premium agentic endpoint for anti-stuxnet-plc-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anti-stuxnet-plc-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.4 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanti-stuxnet-plc-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/api-key-load-balancer-mcp",
-    "title": "Execute api-key-load-balancer-mcp",
-    "body": "Premium agentic endpoint for api-key-load-balancer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/api-key-load-balancer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapi-key-load-balancer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/api-quota-balancer-mcp",
-    "title": "Execute api-quota-balancer-mcp",
-    "body": "Premium agentic endpoint for api-quota-balancer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/api-quota-balancer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.02 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapi-quota-balancer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/api-rate-limit-enforcer-mcp",
-    "title": "Execute api-rate-limit-enforcer-mcp",
-    "body": "Premium agentic endpoint for api-rate-limit-enforcer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/api-rate-limit-enforcer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapi-rate-limit-enforcer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/apify-native-mcp",
-    "title": "Execute apify-native-mcp",
-    "body": "Premium agentic endpoint for apify-native-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/apify-native-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapify-native-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/apollo-io-lead-gen-mcp",
-    "title": "Execute apollo-io-lead-gen-mcp",
-    "body": "Premium agentic endpoint for apollo-io-lead-gen-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/apollo-io-lead-gen-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapollo-io-lead-gen-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/app-store-builder-mcp",
-    "title": "Execute app-store-builder-mcp",
-    "body": "Premium agentic endpoint for app-store-builder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/app-store-builder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapp-store-builder-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/apple-vision-pro-optimizer-mcp",
-    "title": "Execute apple-vision-pro-optimizer-mcp",
-    "body": "Premium agentic endpoint for apple-vision-pro-optimizer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/apple-vision-pro-optimizer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapple-vision-pro-optimizer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ar-kit-blendshape-mcp",
-    "title": "Execute ar-kit-blendshape-mcp",
-    "body": "Premium agentic endpoint for ar-kit-blendshape-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ar-kit-blendshape-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.3 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Far-kit-blendshape-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ar-plane-detector-mcp",
-    "title": "Execute ar-plane-detector-mcp",
-    "body": "Premium agentic endpoint for ar-plane-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ar-plane-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.22 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Far-plane-detector-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/arabic-calligraphy-parser-mcp",
-    "title": "Execute arabic-calligraphy-parser-mcp",
-    "body": "Premium agentic endpoint for arabic-calligraphy-parser-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/arabic-calligraphy-parser-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Farabic-calligraphy-parser-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/arbitration-fee-splitter-mcp",
-    "title": "Execute arbitration-fee-splitter-mcp",
-    "body": "Premium agentic endpoint for arbitration-fee-splitter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/arbitration-fee-splitter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.4 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Farbitration-fee-splitter-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/architecture-dna-mcp",
-    "title": "Execute architecture-dna-mcp",
-    "body": "Premium agentic endpoint for architecture-dna-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/architecture-dna-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Farchitecture-dna-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/ashrae-compliance-mcp",
-    "title": "Execute ashrae-compliance-mcp",
-    "body": "Premium agentic endpoint for ashrae-compliance-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ashrae-compliance-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fashrae-compliance-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/atomic-swap-coordinator-mcp",
-    "title": "Execute atomic-swap-coordinator-mcp",
-    "body": "Premium agentic endpoint for atomic-swap-coordinator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/atomic-swap-coordinator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fatomic-swap-coordinator-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/audio-anonymizer-voice-scrambler-mcp",
-    "title": "Execute audio-anonymizer-voice-scrambler-mcp",
-    "body": "Premium agentic endpoint for audio-anonymizer-voice-scrambler-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/audio-anonymizer-voice-scrambler-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faudio-anonymizer-voice-scrambler-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/audio-description-mcp",
-    "title": "Execute audio-description-mcp",
-    "body": "Premium agentic endpoint for audio-description-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/audio-description-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faudio-description-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/audio-watermarking-detector-mcp",
-    "title": "Execute audio-watermarking-detector-mcp",
-    "body": "Premium agentic endpoint for audio-watermarking-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/audio-watermarking-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faudio-watermarking-detector-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/auth-sentinel-mcp",
-    "title": "Execute auth-sentinel-mcp",
-    "body": "Premium agentic endpoint for auth-sentinel-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/auth-sentinel-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fauth-sentinel-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/auto-telematics-policy-mcp",
-    "title": "Execute auto-telematics-policy-mcp",
-    "body": "Premium agentic endpoint for auto-telematics-policy-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/auto-telematics-policy-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fauto-telematics-policy-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/automated-amendment-negotiator-mcp",
-    "title": "Execute automated-amendment-negotiator-mcp",
-    "body": "Premium agentic endpoint for automated-amendment-negotiator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-amendment-negotiator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-amendment-negotiator-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/automated-debt-collector-mcp",
-    "title": "Execute automated-debt-collector-mcp",
-    "body": "Premium agentic endpoint for automated-debt-collector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-debt-collector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-debt-collector-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/automated-dpia-reporter-mcp",
-    "title": "Execute automated-dpia-reporter-mcp",
-    "body": "Premium agentic endpoint for automated-dpia-reporter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-dpia-reporter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.4 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-dpia-reporter-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/automated-invoice-factoring-gate-mcp",
-    "title": "Execute automated-invoice-factoring-gate-mcp",
-    "body": "Premium agentic endpoint for automated-invoice-factoring-gate-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-invoice-factoring-gate-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-invoice-factoring-gate-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/automated-xml-invoicing-mcp",
-    "title": "Execute automated-xml-invoicing-mcp",
-    "body": "Premium agentic endpoint for automated-xml-invoicing-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-xml-invoicing-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-xml-invoicing-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/automation-weaver-mcp",
-    "title": "Execute automation-weaver-mcp",
-    "body": "Premium agentic endpoint for automation-weaver-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automation-weaver-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomation-weaver-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/autonomous-haul-truck-mcp",
-    "title": "Execute autonomous-haul-truck-mcp",
-    "body": "Premium agentic endpoint for autonomous-haul-truck-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/autonomous-haul-truck-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautonomous-haul-truck-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/autonomous-tractor-path-mcp",
-    "title": "Execute autonomous-tractor-path-mcp",
-    "body": "Premium agentic endpoint for autonomous-tractor-path-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/autonomous-tractor-path-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautonomous-tractor-path-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/aws-builder-mcp",
-    "title": "Execute aws-builder-mcp",
-    "body": "Premium agentic endpoint for aws-builder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/aws-builder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faws-builder-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/aws-key-revoker-webhook-mcp",
-    "title": "Execute aws-key-revoker-webhook-mcp",
-    "body": "Premium agentic endpoint for aws-key-revoker-webhook-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/aws-key-revoker-webhook-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faws-key-revoker-webhook-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/b2b-contract-renewal-mcp",
-    "title": "Execute b2b-contract-renewal-mcp",
-    "body": "Premium agentic endpoint for b2b-contract-renewal-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/b2b-contract-renewal-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fb2b-contract-renewal-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/b2b-lead-closer-mcp",
-    "title": "Execute b2b-lead-closer-mcp",
-    "body": "Premium agentic endpoint for b2b-lead-closer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/b2b-lead-closer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fb2b-lead-closer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/b2b-legal-contract-parser-mcp",
-    "title": "Execute b2b-legal-contract-parser-mcp",
-    "body": "Premium agentic endpoint for b2b-legal-contract-parser-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/b2b-legal-contract-parser-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fb2b-legal-contract-parser-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/backhaul-empty-return-mcp",
-    "title": "Execute backhaul-empty-return-mcp",
-    "body": "Premium agentic endpoint for backhaul-empty-return-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/backhaul-empty-return-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbackhaul-empty-return-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/backrun-arbitrage-blocker-mcp",
-    "title": "Execute backrun-arbitrage-blocker-mcp",
-    "body": "Premium agentic endpoint for backrun-arbitrage-blocker-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/backrun-arbitrage-blocker-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbackrun-arbitrage-blocker-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/bacnet-ip-discovery-mcp",
-    "title": "Execute bacnet-ip-discovery-mcp",
-    "body": "Premium agentic endpoint for bacnet-ip-discovery-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bacnet-ip-discovery-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbacnet-ip-discovery-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/baidu-china-search-mcp",
-    "title": "Execute baidu-china-search-mcp",
-    "body": "Premium agentic endpoint for baidu-china-search-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/baidu-china-search-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbaidu-china-search-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/bandwidth-micro-marketplace-mcp",
-    "title": "Execute bandwidth-micro-marketplace-mcp",
-    "body": "Premium agentic endpoint for bandwidth-micro-marketplace-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bandwidth-micro-marketplace-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.02 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbandwidth-micro-marketplace-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/bankruptcy-asset-liquidator-mcp",
-    "title": "Execute bankruptcy-asset-liquidator-mcp",
-    "body": "Premium agentic endpoint for bankruptcy-asset-liquidator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bankruptcy-asset-liquidator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbankruptcy-asset-liquidator-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/barcode-qr-decoder-mcp",
-    "title": "Execute barcode-qr-decoder-mcp",
-    "body": "Premium agentic endpoint for barcode-qr-decoder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/barcode-qr-decoder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbarcode-qr-decoder-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/base-to-polygon-relayer-mcp",
-    "title": "Execute base-to-polygon-relayer-mcp",
-    "body": "Premium agentic endpoint for base-to-polygon-relayer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/base-to-polygon-relayer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbase-to-polygon-relayer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/base64-payload-decoder-mcp",
-    "title": "Execute base64-payload-decoder-mcp",
-    "body": "Premium agentic endpoint for base64-payload-decoder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/base64-payload-decoder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbase64-payload-decoder-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/batch-request-bundler-mcp",
-    "title": "Execute batch-request-bundler-mcp",
-    "body": "Premium agentic endpoint for batch-request-bundler-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/batch-request-bundler-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbatch-request-bundler-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/battery-return-home-mcp",
-    "title": "Execute battery-return-home-mcp",
-    "body": "Premium agentic endpoint for battery-return-home-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/battery-return-home-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbattery-return-home-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/battery-swap-station-mcp",
-    "title": "Execute battery-swap-station-mcp",
-    "body": "Premium agentic endpoint for battery-swap-station-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/battery-swap-station-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbattery-swap-station-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/behance-portfolio-scraper-mcp",
-    "title": "Execute behance-portfolio-scraper-mcp",
-    "body": "Premium agentic endpoint for behance-portfolio-scraper-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/behance-portfolio-scraper-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbehance-portfolio-scraper-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/best-and-final-offer-mcp",
-    "title": "Execute best-and-final-offer-mcp",
-    "body": "Premium agentic endpoint for best-and-final-offer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/best-and-final-offer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.35 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbest-and-final-offer-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/bestbuy-deal-alerter-mcp",
-    "title": "Execute bestbuy-deal-alerter-mcp",
-    "body": "Premium agentic endpoint for bestbuy-deal-alerter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bestbuy-deal-alerter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbestbuy-deal-alerter-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/bft-swarm-vote-aggregator-mcp",
-    "title": "Execute bft-swarm-vote-aggregator-mcp",
-    "body": "Premium agentic endpoint for bft-swarm-vote-aggregator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bft-swarm-vote-aggregator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbft-swarm-vote-aggregator-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
-    "externalId": "io.github.Evozim/bias-auditor-mcp",
-    "title": "Execute bias-auditor-mcp",
-    "body": "Premium agentic endpoint for bias-auditor-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bias-auditor-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.3 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
-    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbias-auditor-mcp",
-    "fetchedAt": "2026-08-18T04:06:26.312Z"
-  },
-  {
-    "source": "mcp-registry",
     "externalId": "io.github.Evozim/bias-drift-monitor-mcp",
     "title": "Execute bias-drift-monitor-mcp",
     "body": "Premium agentic endpoint for bias-drift-monitor-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bias-drift-monitor-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.22 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
@@ -151557,6 +150597,966 @@
     "title": "dev.hatchloop/url-shortener",
     "body": "Zero-auth URL shortener for AI agents. Deterministic: same URL always returns the same code.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://hatchloop.dev/mcp/url-shortener/mcp\"}]",
     "url": "https://registry.modelcontextprotocol.io/v0/servers?search=dev.hatchloop%2Furl-shortener",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.memofs/mcp-server",
+    "title": "MemoFS MCP Server",
+    "body": "Persistent memory and virtual filesystem MCP server for AI agents.\nVersion: 1.3.0-beta.3\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://memofs.dev/api/v1/projects/{projectId}/mcp\",\"headers\":[{\"description\":\"Bearer token using your MemoFS Cloud API key\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}],\"variables\":{\"projectId\":{\"description\":\"MemoFS Cloud Project ID\",\"isRequired\":true}}}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@memofs/mcp-server\",\"version\":\"1.3.0-beta.3\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"API key for MemoFS Cloud synchronization (required for hybrid mode)\",\"isSecret\":true,\"name\":\"MEMOFS_API_KEY\"},{\"description\":\"Runtime mode: local or hybrid\",\"default\":\"local\",\"choices\":[\"local\",\"hybrid\"],\"name\":\"MEMOFS_RUNTIME\"}]}]",
+    "url": "https://memofs.dev",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.workers.marvin-odigo.mcp/krabbot-devtools",
+    "title": "dev.workers.marvin-odigo.mcp/krabbot-devtools",
+    "body": "AI-agent-run devtools: package install risk, stack EOL/CVE checks, scored OSS bounties.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.marvin-odigo.workers.dev/mcp\"}]",
+    "url": "https://mcp.marvin-odigo.workers.dev",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "dev.workers.mattskowronis.live-listing-proof/verify-listing",
+    "title": "Live Listing Proof",
+    "body": "Verify a public listing URL and return source-supported facts or explicit fail-closed states.\nVersion: 1.3.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://live-listing-proof.mattskowronis.workers.dev/mcp\"}]",
+    "url": "https://live-listing-proof.mattskowronis.workers.dev",
+    "fetchedAt": "2026-08-23T04:08:29.331Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "ee.stacktr/publish",
+    "title": "Stacktree",
+    "body": "Publish HTML to private, unguessable, replace-in-place URLs from any MCP-compatible AI agent.\nVersion: 0.6.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://api.stacktr.ee/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"stacktree-mcp\",\"version\":\"0.6.0\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://stacktr.ee",
+    "fetchedAt": "2026-08-20T04:07:16.030Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "gg.machina/world-cup-intelligence",
+    "title": "Machina World Cup Intelligence",
+    "body": "World Cup 2026 match, team, player and market context from Machina Sports, the sports AI platform.\nVersion: 0.1.1\nRemotes: [{\"type\":\"sse\",\"url\":\"https://worldcup-mcp.org.machina.gg/sse\",\"headers\":[{\"description\":\"Machina product API key. Tool discovery works without it; tool calls require it. Request access via https://machina.gg/contact\",\"isRequired\":true,\"isSecret\":true,\"name\":\"X-Api-Token\"}]}]",
+    "url": "https://machina.gg/world-cup-api",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "golf.caddence/caddence",
+    "title": "golf.caddence/caddence",
+    "body": "Live UK golf club prices across 40 retailers: offers, price history and deal ratings in GBP.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://caddence.golf/mcp\"}]",
+    "url": "https://caddence.golf/docs/mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "il.co.trus/truss",
+    "title": "Truss",
+    "body": "Public MCP for Truss, Pniel Cohen's development & consultancy business: overview, services, contact\nVersion: 1.1.2\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.trus.co.il/mcp\"}]",
+    "url": "https://trus.co.il",
+    "fetchedAt": "2026-09-04T08:11:49.015Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.0rkz/byte-protocol",
+    "title": "io.github.0rkz/byte-protocol",
+    "body": "PayPerByte — per-byte data for AI agents: x402 USDC on Base, EIP-712-attested. No token.\nVersion: 0.13.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mcp.payperbyte.io/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"registryBaseUrl\":\"https://registry.npmjs.org\",\"identifier\":\"byte-mcp-server\",\"version\":\"0.13.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Ethereum private key for write/buy tools (subscribe, unsubscribe, publish, buy_data). buy_data spends real Base-mainnet USDC — use a dedicated wallet. Not required for read-only tools.\",\"format\":\"string\",\"isSecret\":true,\"name\":\"PRIVATE_KEY\"},{\"description\":\"RPC for the on-chain library + EIP-712 attestation layer (Arbitrum Sepolia, eip155:421614). The x402 buy rail settles USDC on Base mainnet and needs no RPC here. Defaults to Arbitrum Sepolia public RPC.\",\"format\":\"string\",\"name\":\"RPC_URL\"},{\"description\":\"Gateway attester address byte_buy_data pins receipts against. Defaults to the current PayPerByte gateway attester (rotated 2026-08-19; previous default 0x77c86a...C472 is retired). Override only if the gateway discloses a rotation you need ahead of a package update - see /.well-known/agent.json receipt.attester and receipt.retiredAttesters.\",\"format\":\"string\",\"name\":\"BYTE_GATEWAY_ATTESTER\"}]}]",
+    "url": "https://github.com/0rkz/byte-mcp-server",
+    "fetchedAt": "2026-09-15T08:52:02.662Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.1nzpainter/painting-lessons",
+    "title": "My Painting Club — Painting Lessons",
+    "body": "Search transcribed painting lessons. Results cite the exact lesson and Vimeo timestamp.\nVersion: 1.0.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://mypaintingclub.com/kb/mcp\"}]",
+    "url": "https://mypaintingclub.com/kb/docs",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.AAH20/agent-action-gate",
+    "title": "Agent Action Gate",
+    "body": "Gate/Prove: deny unattended destructive agent tools. Instant Audit $499 on a2zsoc.com.\nVersion: 0.2.0\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/AAH20/agent-action-gate/releases/download/v0.2.0/agent-action-gate.mcpb\",\"fileSha256\":\"4c74429173ec412ebdebd701f59d4aba9c37aad501d35ab9022920ddca2f7f28\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://a2zsoc.com/consultation",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Apomera/alloflow-remediation",
+    "title": "AlloFlow Document Remediation",
+    "body": "Local-first document accessibility remediation using the canonical AlloFlow app pipeline.\nVersion: 0.3.5\nPackages: [{\"registryType\":\"mcpb\",\"identifier\":\"https://github.com/Apomera/AlloFlow/releases/download/mcpb-v0.3.5/alloflow-remediation.mcpb\",\"fileSha256\":\"1f83599d7c345452f8f5daae8ac259589a8a0bd88e07f459de45bdfaa88c6a31\",\"transport\":{\"type\":\"stdio\"}}]",
+    "url": "https://github.com/Apomera/AlloFlow",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.AshwinSathian/booklet",
+    "title": "io.github.AshwinSathian/booklet",
+    "body": "Publish Markdown incident reports, ADRs, RFCs and runbooks as web pages, with team spaces.\nVersion: 4.1.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://booklet-mcp.ashwinsathian.com/mcp\"}]",
+    "url": "https://booklet.ashwinsathian.com/mcp-setup",
+    "fetchedAt": "2026-10-11T10:13:22.236Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Bitget-AI/bitget-agent-mcp",
+    "title": "io.github.Bitget-AI/bitget-agent-mcp",
+    "body": "Official Bitget MCP Server for the Unified Trading Account (UTA v3) API.\nVersion: 3.0.2\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@bitget-ai/bitget-agent-mcp\",\"version\":\"3.0.2\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"Bitget API key from API Management\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BITGET_API_KEY\"},{\"description\":\"Bitget API secret key\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BITGET_SECRET_KEY\"},{\"description\":\"Bitget API passphrase\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"BITGET_PASSPHRASE\"}]}]",
+    "url": "https://github.com/Bitget-AI/agent-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.ColinVaughn/synaptic",
+    "title": "Synaptic Code Intelligence",
+    "body": "Code intelligence for repository graphs, change impact, test selection, and engineering memory.\nVersion: 1.1.1\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://synapticgraph.com/api/mcp/projects/{project_id}\",\"headers\":[{\"description\":\"Bearer token from the Synaptic MCP dashboard, including the Bearer prefix\",\"isRequired\":true,\"isSecret\":true,\"name\":\"Authorization\"}],\"variables\":{\"project_id\":{\"description\":\"Synaptic project UUID from the MCP dashboard\",\"isRequired\":true}}}]",
+    "url": "https://synapticgraph.com",
+    "fetchedAt": "2026-08-30T09:23:42.118Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.DevinoSolutions/upapi-mcp",
+    "title": "upAPI",
+    "body": "All public upAPI operations as MCP tools: web scraping, search, screenshots, PDF, OCR and more.\nVersion: 0.2.0\nRemotes: [{\"type\":\"streamable-http\",\"url\":\"https://app.upapi.io/api/mcp\"}]\nPackages: [{\"registryType\":\"npm\",\"identifier\":\"@upapi/mcp\",\"version\":\"0.2.0\",\"transport\":{\"type\":\"stdio\"},\"environmentVariables\":[{\"description\":\"upAPI API key (create one at https://app.upapi.io/dashboard/api-keys)\",\"isRequired\":true,\"format\":\"string\",\"isSecret\":true,\"name\":\"UPAPI_API_KEY\"},{\"description\":\"Tool table: full (default), directory (curated named tools) or compact.\",\"format\":\"string\",\"name\":\"UPAPI_TOOL_MODE\"}]}]",
+    "url": "https://upapi.io/docs",
+    "fetchedAt": "2026-09-05T07:47:19.143Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/3d-meshweaver-mcp",
+    "title": "Execute 3d-meshweaver-mcp",
+    "body": "Premium agentic endpoint for 3d-meshweaver-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/3d-meshweaver-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F3d-meshweaver-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/3d-pallet-packing-mcp",
+    "title": "Execute 3d-pallet-packing-mcp",
+    "body": "Premium agentic endpoint for 3d-pallet-packing-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/3d-pallet-packing-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F3d-pallet-packing-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/4-20ma-analog-converter-mcp",
+    "title": "Execute 4-20ma-analog-converter-mcp",
+    "body": "Premium agentic endpoint for 4-20ma-analog-converter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/4-20ma-analog-converter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F4-20ma-analog-converter-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/5g-core-nfv-mcp",
+    "title": "Execute 5g-core-nfv-mcp",
+    "body": "Premium agentic endpoint for 5g-core-nfv-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/5g-core-nfv-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F5g-core-nfv-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/90-percent-liquidity-advance-mcp",
+    "title": "Execute 90-percent-liquidity-advance-mcp",
+    "body": "Premium agentic endpoint for 90-percent-liquidity-advance-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/90-percent-liquidity-advance-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.5 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2F90-percent-liquidity-advance-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/accounts-receivable-ledger-mcp",
+    "title": "Execute accounts-receivable-ledger-mcp",
+    "body": "Premium agentic endpoint for accounts-receivable-ledger-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/accounts-receivable-ledger-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.5 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faccounts-receivable-ledger-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/acoustic-reverb-simulator-mcp",
+    "title": "Execute acoustic-reverb-simulator-mcp",
+    "body": "Premium agentic endpoint for acoustic-reverb-simulator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/acoustic-reverb-simulator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Facoustic-reverb-simulator-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/active-seat-metering-mcp",
+    "title": "Execute active-seat-metering-mcp",
+    "body": "Premium agentic endpoint for active-seat-metering-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/active-seat-metering-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Factive-seat-metering-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/actuarial-life-table-mcp",
+    "title": "Execute actuarial-life-table-mcp",
+    "body": "Premium agentic endpoint for actuarial-life-table-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/actuarial-life-table-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Factuarial-life-table-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ad-fraud-click-detector-mcp",
+    "title": "Execute ad-fraud-click-detector-mcp",
+    "body": "Premium agentic endpoint for ad-fraud-click-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ad-fraud-click-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fad-fraud-click-detector-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ad-sniper-mcp",
+    "title": "Execute ad-sniper-mcp",
+    "body": "Premium agentic endpoint for ad-sniper-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ad-sniper-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fad-sniper-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ad-spend-auditor-mcp",
+    "title": "Execute ad-spend-auditor-mcp",
+    "body": "Premium agentic endpoint for ad-spend-auditor-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ad-spend-auditor-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fad-spend-auditor-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/adsb-flight-tracker-mcp",
+    "title": "Execute adsb-flight-tracker-mcp",
+    "body": "Premium agentic endpoint for adsb-flight-tracker-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/adsb-flight-tracker-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fadsb-flight-tracker-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/adversarial-prompt-shield-mcp",
+    "title": "Execute adversarial-prompt-shield-mcp",
+    "body": "Premium agentic endpoint for adversarial-prompt-shield-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/adversarial-prompt-shield-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.22 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fadversarial-prompt-shield-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/adversarial-suffix-mcp",
+    "title": "Execute adversarial-suffix-mcp",
+    "body": "Premium agentic endpoint for adversarial-suffix-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/adversarial-suffix-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fadversarial-suffix-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/aegis-policy-mcp",
+    "title": "Execute aegis-policy-mcp",
+    "body": "Premium agentic endpoint for aegis-policy-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/aegis-policy-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faegis-policy-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/affiliate-link-attribution-mcp",
+    "title": "Execute affiliate-link-attribution-mcp",
+    "body": "Premium agentic endpoint for affiliate-link-attribution-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/affiliate-link-attribution-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faffiliate-link-attribution-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/afforestation-satellite-mcp",
+    "title": "Execute afforestation-satellite-mcp",
+    "body": "Premium agentic endpoint for afforestation-satellite-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/afforestation-satellite-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fafforestation-satellite-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agent-collision-preventer-mcp",
+    "title": "Execute agent-collision-preventer-mcp",
+    "body": "Premium agentic endpoint for agent-collision-preventer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-collision-preventer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.02 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-collision-preventer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agent-collusion-detector-mcp",
+    "title": "Execute agent-collusion-detector-mcp",
+    "body": "Premium agentic endpoint for agent-collusion-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-collusion-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.3 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-collusion-detector-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agent-council-voting-mcp",
+    "title": "Execute agent-council-voting-mcp",
+    "body": "Premium agentic endpoint for agent-council-voting-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-council-voting-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-council-voting-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agent-credit-history-mcp",
+    "title": "Execute agent-credit-history-mcp",
+    "body": "Premium agentic endpoint for agent-credit-history-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-credit-history-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.28 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-credit-history-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agent-phone-mcp",
+    "title": "Execute agent-phone-mcp",
+    "body": "Premium agentic endpoint for agent-phone-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-phone-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-phone-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agent-reputation-zk-shield-mcp",
+    "title": "Execute agent-reputation-zk-shield-mcp",
+    "body": "Premium agentic endpoint for agent-reputation-zk-shield-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-reputation-zk-shield-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-reputation-zk-shield-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agent-slashing-protocol-mcp",
+    "title": "Execute agent-slashing-protocol-mcp",
+    "body": "Premium agentic endpoint for agent-slashing-protocol-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-slashing-protocol-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.5 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-slashing-protocol-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agent-telephony-mcp",
+    "title": "Execute agent-telephony-mcp",
+    "body": "Premium agentic endpoint for agent-telephony-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agent-telephony-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagent-telephony-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agentic-credit-line-issuer-mcp",
+    "title": "Execute agentic-credit-line-issuer-mcp",
+    "body": "Premium agentic endpoint for agentic-credit-line-issuer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agentic-credit-line-issuer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.5 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagentic-credit-line-issuer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agentic-ip-reputation-guard-mcp",
+    "title": "Execute agentic-ip-reputation-guard-mcp",
+    "body": "Premium agentic endpoint for agentic-ip-reputation-guard-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agentic-ip-reputation-guard-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagentic-ip-reputation-guard-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agentic-payroll-processor-mcp",
+    "title": "Execute agentic-payroll-processor-mcp",
+    "body": "Premium agentic endpoint for agentic-payroll-processor-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agentic-payroll-processor-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagentic-payroll-processor-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agentphone-ai-mcp",
+    "title": "Execute agentphone-ai-mcp",
+    "body": "Premium agentic endpoint for agentphone-ai-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agentphone-ai-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagentphone-ai-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/agile-sprint-mcp",
+    "title": "Execute agile-sprint-mcp",
+    "body": "Premium agentic endpoint for agile-sprint-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/agile-sprint-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fagile-sprint-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ai-fleet-cards-mcp",
+    "title": "Execute ai-fleet-cards-mcp",
+    "body": "Premium agentic endpoint for ai-fleet-cards-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-fleet-cards-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-fleet-cards-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ai-humanizer-mcp",
+    "title": "Execute ai-humanizer-mcp",
+    "body": "Premium agentic endpoint for ai-humanizer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-humanizer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-humanizer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ai-right-to-opt-out-gate-mcp",
+    "title": "Execute ai-right-to-opt-out-gate-mcp",
+    "body": "Premium agentic endpoint for ai-right-to-opt-out-gate-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-right-to-opt-out-gate-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-right-to-opt-out-gate-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ai-safety-incident-logger-mcp",
+    "title": "Execute ai-safety-incident-logger-mcp",
+    "body": "Premium agentic endpoint for ai-safety-incident-logger-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-safety-incident-logger-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-safety-incident-logger-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ai-watermark-provenance-verifier-mcp",
+    "title": "Execute ai-watermark-provenance-verifier-mcp",
+    "body": "Premium agentic endpoint for ai-watermark-provenance-verifier-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ai-watermark-provenance-verifier-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fai-watermark-provenance-verifier-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/air-freight-waybill-mcp",
+    "title": "Execute air-freight-waybill-mcp",
+    "body": "Premium agentic endpoint for air-freight-waybill-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/air-freight-waybill-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fair-freight-waybill-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/airbnb-host-analyzer-mcp",
+    "title": "Execute airbnb-host-analyzer-mcp",
+    "body": "Premium agentic endpoint for airbnb-host-analyzer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/airbnb-host-analyzer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fairbnb-host-analyzer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/airbnb-smart-lock-mcp",
+    "title": "Execute airbnb-smart-lock-mcp",
+    "body": "Premium agentic endpoint for airbnb-smart-lock-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/airbnb-smart-lock-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fairbnb-smart-lock-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/airport-slot-allocator-mcp",
+    "title": "Execute airport-slot-allocator-mcp",
+    "body": "Premium agentic endpoint for airport-slot-allocator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/airport-slot-allocator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fairport-slot-allocator-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ais-vessel-tracker-mcp",
+    "title": "Execute ais-vessel-tracker-mcp",
+    "body": "Premium agentic endpoint for ais-vessel-tracker-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ais-vessel-tracker-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fais-vessel-tracker-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/akamai-bot-manager-bypass-mcp",
+    "title": "Execute akamai-bot-manager-bypass-mcp",
+    "body": "Premium agentic endpoint for akamai-bot-manager-bypass-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/akamai-bot-manager-bypass-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fakamai-bot-manager-bypass-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/albedo-delighter-mcp",
+    "title": "Execute albedo-delighter-mcp",
+    "body": "Premium agentic endpoint for albedo-delighter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/albedo-delighter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Falbedo-delighter-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/algorithmic-bias-scrubber-mcp",
+    "title": "Execute algorithmic-bias-scrubber-mcp",
+    "body": "Premium agentic endpoint for algorithmic-bias-scrubber-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/algorithmic-bias-scrubber-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Falgorithmic-bias-scrubber-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/alibaba-supplier-intel-mcp",
+    "title": "Execute alibaba-supplier-intel-mcp",
+    "body": "Premium agentic endpoint for alibaba-supplier-intel-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/alibaba-supplier-intel-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Falibaba-supplier-intel-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/aliexpress-dropship-finder-mcp",
+    "title": "Execute aliexpress-dropship-finder-mcp",
+    "body": "Premium agentic endpoint for aliexpress-dropship-finder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/aliexpress-dropship-finder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faliexpress-dropship-finder-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/amazon-price-tracker-mcp",
+    "title": "Execute amazon-price-tracker-mcp",
+    "body": "Premium agentic endpoint for amazon-price-tracker-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/amazon-price-tracker-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Famazon-price-tracker-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ambient-occlusion-map-mcp",
+    "title": "Execute ambient-occlusion-map-mcp",
+    "body": "Premium agentic endpoint for ambient-occlusion-map-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ambient-occlusion-map-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fambient-occlusion-map-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ambisonics-b-format-encoder-mcp",
+    "title": "Execute ambisonics-b-format-encoder-mcp",
+    "body": "Premium agentic endpoint for ambisonics-b-format-encoder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ambisonics-b-format-encoder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fambisonics-b-format-encoder-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/amr-fleet-dispatcher-mcp",
+    "title": "Execute amr-fleet-dispatcher-mcp",
+    "body": "Premium agentic endpoint for amr-fleet-dispatcher-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/amr-fleet-dispatcher-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.35 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Famr-fleet-dispatcher-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/angellist-startup-jobs-mcp",
+    "title": "Execute angellist-startup-jobs-mcp",
+    "body": "Premium agentic endpoint for angellist-startup-jobs-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/angellist-startup-jobs-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fangellist-startup-jobs-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/anomaly-detection-sentinel-mcp",
+    "title": "Execute anomaly-detection-sentinel-mcp",
+    "body": "Premium agentic endpoint for anomaly-detection-sentinel-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anomaly-detection-sentinel-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanomaly-detection-sentinel-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/anonymous-credential-issuer-mcp",
+    "title": "Execute anonymous-credential-issuer-mcp",
+    "body": "Premium agentic endpoint for anonymous-credential-issuer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anonymous-credential-issuer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanonymous-credential-issuer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/anti-collusion-detector-mcp",
+    "title": "Execute anti-collusion-detector-mcp",
+    "body": "Premium agentic endpoint for anti-collusion-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anti-collusion-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.35 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanti-collusion-detector-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/anti-sandwich-slippage-mcp",
+    "title": "Execute anti-sandwich-slippage-mcp",
+    "body": "Premium agentic endpoint for anti-sandwich-slippage-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anti-sandwich-slippage-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanti-sandwich-slippage-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/anti-stuxnet-plc-mcp",
+    "title": "Execute anti-stuxnet-plc-mcp",
+    "body": "Premium agentic endpoint for anti-stuxnet-plc-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/anti-stuxnet-plc-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.4 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fanti-stuxnet-plc-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/api-key-load-balancer-mcp",
+    "title": "Execute api-key-load-balancer-mcp",
+    "body": "Premium agentic endpoint for api-key-load-balancer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/api-key-load-balancer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapi-key-load-balancer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/api-quota-balancer-mcp",
+    "title": "Execute api-quota-balancer-mcp",
+    "body": "Premium agentic endpoint for api-quota-balancer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/api-quota-balancer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.02 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapi-quota-balancer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/api-rate-limit-enforcer-mcp",
+    "title": "Execute api-rate-limit-enforcer-mcp",
+    "body": "Premium agentic endpoint for api-rate-limit-enforcer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/api-rate-limit-enforcer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapi-rate-limit-enforcer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/apify-native-mcp",
+    "title": "Execute apify-native-mcp",
+    "body": "Premium agentic endpoint for apify-native-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/apify-native-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapify-native-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/apollo-io-lead-gen-mcp",
+    "title": "Execute apollo-io-lead-gen-mcp",
+    "body": "Premium agentic endpoint for apollo-io-lead-gen-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/apollo-io-lead-gen-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapollo-io-lead-gen-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/app-store-builder-mcp",
+    "title": "Execute app-store-builder-mcp",
+    "body": "Premium agentic endpoint for app-store-builder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/app-store-builder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapp-store-builder-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/apple-vision-pro-optimizer-mcp",
+    "title": "Execute apple-vision-pro-optimizer-mcp",
+    "body": "Premium agentic endpoint for apple-vision-pro-optimizer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/apple-vision-pro-optimizer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fapple-vision-pro-optimizer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ar-kit-blendshape-mcp",
+    "title": "Execute ar-kit-blendshape-mcp",
+    "body": "Premium agentic endpoint for ar-kit-blendshape-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ar-kit-blendshape-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.3 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Far-kit-blendshape-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ar-plane-detector-mcp",
+    "title": "Execute ar-plane-detector-mcp",
+    "body": "Premium agentic endpoint for ar-plane-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ar-plane-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.22 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Far-plane-detector-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/arabic-calligraphy-parser-mcp",
+    "title": "Execute arabic-calligraphy-parser-mcp",
+    "body": "Premium agentic endpoint for arabic-calligraphy-parser-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/arabic-calligraphy-parser-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.12 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Farabic-calligraphy-parser-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/arbitration-fee-splitter-mcp",
+    "title": "Execute arbitration-fee-splitter-mcp",
+    "body": "Premium agentic endpoint for arbitration-fee-splitter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/arbitration-fee-splitter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.4 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Farbitration-fee-splitter-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/architecture-dna-mcp",
+    "title": "Execute architecture-dna-mcp",
+    "body": "Premium agentic endpoint for architecture-dna-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/architecture-dna-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Farchitecture-dna-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/ashrae-compliance-mcp",
+    "title": "Execute ashrae-compliance-mcp",
+    "body": "Premium agentic endpoint for ashrae-compliance-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/ashrae-compliance-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fashrae-compliance-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/atomic-swap-coordinator-mcp",
+    "title": "Execute atomic-swap-coordinator-mcp",
+    "body": "Premium agentic endpoint for atomic-swap-coordinator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/atomic-swap-coordinator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fatomic-swap-coordinator-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/audio-anonymizer-voice-scrambler-mcp",
+    "title": "Execute audio-anonymizer-voice-scrambler-mcp",
+    "body": "Premium agentic endpoint for audio-anonymizer-voice-scrambler-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/audio-anonymizer-voice-scrambler-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faudio-anonymizer-voice-scrambler-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/audio-description-mcp",
+    "title": "Execute audio-description-mcp",
+    "body": "Premium agentic endpoint for audio-description-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/audio-description-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faudio-description-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/audio-watermarking-detector-mcp",
+    "title": "Execute audio-watermarking-detector-mcp",
+    "body": "Premium agentic endpoint for audio-watermarking-detector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/audio-watermarking-detector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faudio-watermarking-detector-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/auth-sentinel-mcp",
+    "title": "Execute auth-sentinel-mcp",
+    "body": "Premium agentic endpoint for auth-sentinel-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/auth-sentinel-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fauth-sentinel-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/auto-telematics-policy-mcp",
+    "title": "Execute auto-telematics-policy-mcp",
+    "body": "Premium agentic endpoint for auto-telematics-policy-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/auto-telematics-policy-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fauto-telematics-policy-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/automated-amendment-negotiator-mcp",
+    "title": "Execute automated-amendment-negotiator-mcp",
+    "body": "Premium agentic endpoint for automated-amendment-negotiator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-amendment-negotiator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-amendment-negotiator-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/automated-debt-collector-mcp",
+    "title": "Execute automated-debt-collector-mcp",
+    "body": "Premium agentic endpoint for automated-debt-collector-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-debt-collector-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-debt-collector-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/automated-dpia-reporter-mcp",
+    "title": "Execute automated-dpia-reporter-mcp",
+    "body": "Premium agentic endpoint for automated-dpia-reporter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-dpia-reporter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.4 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-dpia-reporter-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/automated-invoice-factoring-gate-mcp",
+    "title": "Execute automated-invoice-factoring-gate-mcp",
+    "body": "Premium agentic endpoint for automated-invoice-factoring-gate-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-invoice-factoring-gate-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-invoice-factoring-gate-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/automated-xml-invoicing-mcp",
+    "title": "Execute automated-xml-invoicing-mcp",
+    "body": "Premium agentic endpoint for automated-xml-invoicing-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automated-xml-invoicing-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.18 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomated-xml-invoicing-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/automation-weaver-mcp",
+    "title": "Execute automation-weaver-mcp",
+    "body": "Premium agentic endpoint for automation-weaver-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/automation-weaver-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautomation-weaver-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/autonomous-haul-truck-mcp",
+    "title": "Execute autonomous-haul-truck-mcp",
+    "body": "Premium agentic endpoint for autonomous-haul-truck-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/autonomous-haul-truck-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautonomous-haul-truck-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/autonomous-tractor-path-mcp",
+    "title": "Execute autonomous-tractor-path-mcp",
+    "body": "Premium agentic endpoint for autonomous-tractor-path-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/autonomous-tractor-path-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fautonomous-tractor-path-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/aws-builder-mcp",
+    "title": "Execute aws-builder-mcp",
+    "body": "Premium agentic endpoint for aws-builder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/aws-builder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faws-builder-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/aws-key-revoker-webhook-mcp",
+    "title": "Execute aws-key-revoker-webhook-mcp",
+    "body": "Premium agentic endpoint for aws-key-revoker-webhook-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/aws-key-revoker-webhook-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Faws-key-revoker-webhook-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/b2b-contract-renewal-mcp",
+    "title": "Execute b2b-contract-renewal-mcp",
+    "body": "Premium agentic endpoint for b2b-contract-renewal-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/b2b-contract-renewal-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fb2b-contract-renewal-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/b2b-lead-closer-mcp",
+    "title": "Execute b2b-lead-closer-mcp",
+    "body": "Premium agentic endpoint for b2b-lead-closer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/b2b-lead-closer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fb2b-lead-closer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/b2b-legal-contract-parser-mcp",
+    "title": "Execute b2b-legal-contract-parser-mcp",
+    "body": "Premium agentic endpoint for b2b-legal-contract-parser-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/b2b-legal-contract-parser-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fb2b-legal-contract-parser-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/backhaul-empty-return-mcp",
+    "title": "Execute backhaul-empty-return-mcp",
+    "body": "Premium agentic endpoint for backhaul-empty-return-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/backhaul-empty-return-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbackhaul-empty-return-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/backrun-arbitrage-blocker-mcp",
+    "title": "Execute backrun-arbitrage-blocker-mcp",
+    "body": "Premium agentic endpoint for backrun-arbitrage-blocker-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/backrun-arbitrage-blocker-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbackrun-arbitrage-blocker-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/bacnet-ip-discovery-mcp",
+    "title": "Execute bacnet-ip-discovery-mcp",
+    "body": "Premium agentic endpoint for bacnet-ip-discovery-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bacnet-ip-discovery-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbacnet-ip-discovery-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/baidu-china-search-mcp",
+    "title": "Execute baidu-china-search-mcp",
+    "body": "Premium agentic endpoint for baidu-china-search-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/baidu-china-search-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbaidu-china-search-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/bandwidth-micro-marketplace-mcp",
+    "title": "Execute bandwidth-micro-marketplace-mcp",
+    "body": "Premium agentic endpoint for bandwidth-micro-marketplace-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bandwidth-micro-marketplace-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.02 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbandwidth-micro-marketplace-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/bankruptcy-asset-liquidator-mcp",
+    "title": "Execute bankruptcy-asset-liquidator-mcp",
+    "body": "Premium agentic endpoint for bankruptcy-asset-liquidator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bankruptcy-asset-liquidator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbankruptcy-asset-liquidator-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/barcode-qr-decoder-mcp",
+    "title": "Execute barcode-qr-decoder-mcp",
+    "body": "Premium agentic endpoint for barcode-qr-decoder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/barcode-qr-decoder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.08 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbarcode-qr-decoder-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/base-to-polygon-relayer-mcp",
+    "title": "Execute base-to-polygon-relayer-mcp",
+    "body": "Premium agentic endpoint for base-to-polygon-relayer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/base-to-polygon-relayer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.2 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbase-to-polygon-relayer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/base64-payload-decoder-mcp",
+    "title": "Execute base64-payload-decoder-mcp",
+    "body": "Premium agentic endpoint for base64-payload-decoder-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/base64-payload-decoder-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbase64-payload-decoder-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/batch-request-bundler-mcp",
+    "title": "Execute batch-request-bundler-mcp",
+    "body": "Premium agentic endpoint for batch-request-bundler-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/batch-request-bundler-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.05 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbatch-request-bundler-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/battery-return-home-mcp",
+    "title": "Execute battery-return-home-mcp",
+    "body": "Premium agentic endpoint for battery-return-home-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/battery-return-home-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.25 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbattery-return-home-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/battery-swap-station-mcp",
+    "title": "Execute battery-swap-station-mcp",
+    "body": "Premium agentic endpoint for battery-swap-station-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/battery-swap-station-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbattery-swap-station-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/behance-portfolio-scraper-mcp",
+    "title": "Execute behance-portfolio-scraper-mcp",
+    "body": "Premium agentic endpoint for behance-portfolio-scraper-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/behance-portfolio-scraper-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.15 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbehance-portfolio-scraper-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/best-and-final-offer-mcp",
+    "title": "Execute best-and-final-offer-mcp",
+    "body": "Premium agentic endpoint for best-and-final-offer-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/best-and-final-offer-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.35 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbest-and-final-offer-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/bestbuy-deal-alerter-mcp",
+    "title": "Execute bestbuy-deal-alerter-mcp",
+    "body": "Premium agentic endpoint for bestbuy-deal-alerter-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bestbuy-deal-alerter-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbestbuy-deal-alerter-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/bft-swarm-vote-aggregator-mcp",
+    "title": "Execute bft-swarm-vote-aggregator-mcp",
+    "body": "Premium agentic endpoint for bft-swarm-vote-aggregator-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bft-swarm-vote-aggregator-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.1 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbft-swarm-vote-aggregator-mcp",
+    "fetchedAt": "2026-08-18T04:06:26.312Z"
+  },
+  {
+    "source": "mcp-registry",
+    "externalId": "io.github.Evozim/bias-auditor-mcp",
+    "title": "Execute bias-auditor-mcp",
+    "body": "Premium agentic endpoint for bias-auditor-mcp.\nVersion: 2.0.0\nRemotes: [{\"type\":\"sse\",\"url\":\"https://api.m2mcent.com/bias-auditor-mcp/sse\",\"headers\":[{\"description\":\"Base64-encoded EIP-3009 TransferWithAuthorization signature for x402 V2 settlement on Base Mainnet ($0.3 USDC).\",\"isSecret\":true,\"name\":\"Payment-Signature\"}]}]",
+    "url": "https://registry.modelcontextprotocol.io/v0/servers?search=io.github.Evozim%2Fbias-auditor-mcp",
     "fetchedAt": "2026-08-18T04:06:26.312Z"
   }
 ]
